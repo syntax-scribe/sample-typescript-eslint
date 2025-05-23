@@ -1,0 +1,82 @@
+[⬅️ Back to Table of Contents](../../../../../../../index.md)
+
+# 📄 `fixture.ts`
+
+## 📚 Table of Contents
+
+- [Functions](#functions)
+- [Classes](#classes)
+
+## 📊 Analysis Summary
+
+- **Functions**: 1
+- **Classes**: 1
+- **Imports**: 0
+- **Interfaces**: 0
+- **Type Aliases**: 0
+
+## 🛠️ File Location:
+📂 **`packages/ast-spec/src/legacy-fixtures/basics/fixtures/declare-class-with-optional-method/fixture.ts`**
+
+## 📦 Imports
+
+> No imports found in this file.
+
+
+---
+
+## Functions
+
+### `Foo.bar(): any`
+
+<details><summary>Code</summary>
+
+```ts
+bar?(): any;
+```
+</details>
+
+- **Return Type**: `any`
+
+---
+
+## Classes
+
+### `Foo`
+
+<details><summary>Class Code</summary>
+
+```ts
+declare class Foo {
+  bar?(): any;
+}
+```
+</details>
+
+#### Methods
+
+##### `bar(): any`
+
+<details><summary>Code</summary>
+
+```ts
+bar?(): any;
+```
+</details>
+
+
+---
+
+## Interfaces
+
+> No interfaces found in this file.
+
+
+---
+
+## Type Aliases
+
+> No type aliases found in this file.
+
+
+---

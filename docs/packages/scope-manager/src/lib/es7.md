@@ -1,0 +1,58 @@
+[⬅️ Back to Table of Contents](../../../../index.md)
+
+# 📄 `es7.ts`
+
+## 📚 Table of Contents
+
+- [Imports](#imports)
+
+## 📊 Analysis Summary
+
+- **Functions**: 0
+- **Classes**: 0
+- **Imports**: 4
+- **Interfaces**: 0
+- **Type Aliases**: 0
+
+## 🛠️ File Location:
+📂 **`packages/scope-manager/src/lib/es7.ts`**
+
+## 📦 Imports
+
+| Name | Source |
+|------|--------|
+| `LibDefinition` | `../variable` |
+| `es2015` | `./es2015` |
+| `es2016_array_include` | `./es2016.array.include` |
+| `es2016_intl` | `./es2016.intl` |
+
+
+---
+
+## 🔧 Functions
+
+> No functions found in this file.
+
+
+---
+
+## Classes
+
+> No classes found in this file.
+
+
+---
+
+## Interfaces
+
+> No interfaces found in this file.
+
+
+---
+
+## Type Aliases
+
+> No type aliases found in this file.
+
+
+---
