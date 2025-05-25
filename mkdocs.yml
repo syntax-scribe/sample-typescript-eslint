@@ -10,14 +10,6 @@ theme:
     text: Merriweather Sans
     code: Red Hat Mono
   palette: 
-     # Dark Mode
-    - scheme: slate
-      toggle:
-        icon: material/weather-sunny
-        name: Dark mode
-      primary: orange
-      accent: deep purple
-
     # Light Mode
     - scheme: default
       toggle:
@@ -25,6 +17,15 @@ theme:
         name: Light mode
       primary: blue
       accent: deep orange
+
+
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+      primary: orange
+      accent: deep purple
     
 markdown_extensions:
   - attr_list
