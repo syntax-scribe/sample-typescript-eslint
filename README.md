@@ -45,4 +45,4 @@ Found an issue with the documentation? Please report it on the [official TypeScr
 
 ---
 
-*Documentation generated on [current date] from TypeScript ESLint source code*
+*Documentation generated on May 23, 2025 from TypeScript ESLint source code*

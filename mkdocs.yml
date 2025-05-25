@@ -2,6 +2,7 @@ site_name: Eslint Docs
 site_url: https://syntax-scribe.github.io/sample-typescript-eslint/
 repo_url: https://github.com/syntax-scribe/sample-typescript-eslint
 repo_name: syntax-scribe/sample-typescript-eslint
+edit_uri: edit/main/docs/
 theme:
   name: material
   language: en
