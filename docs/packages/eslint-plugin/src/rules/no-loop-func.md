@@ -2,19 +2,29 @@
 
 # 📄 `no-loop-func.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 6 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 7 |
+| 📊 Variables & Constants | 14 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 6
-- **Classes**: 0
-- **Imports**: 7
-- **Interfaces**: 0
-- **Type Aliases**: 2
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/no-loop-func.ts`**
@@ -30,6 +40,39 @@
 | `InferOptionsTypeFromRule` | `../util` |
 | `createRule` | `../util` |
 | `getESLintCoreRule` | `../util/getESLintCoreRule` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `SKIPPED_IIFE_NODES` | `Set<any>` | const | `new Set<
+      | TSESTree.ArrowFunctionExpression
+      | TSESTree.FunctionDeclaration
+      | TSESTree.FunctionExpression
+    >()` | ✗ |
+| `parent` | `any` | const | `currentNode.parent` | ✗ |
+| `border` | `any` | const | `excludedNode ? excludedNode.range[1] : 0` | ✗ |
+| `retv` | `TSESTree.Node` | let/var | `node` | ✗ |
+| `containingLoopNode` | `TSESTree.Node | null` | let/var | `node` | ✗ |
+| `variable` | `any` | const | `reference.resolved` | ✗ |
+| `definition` | `any` | const | `variable?.defs[0]` | ✗ |
+| `declaration` | `any` | const | `definition?.parent` | ✗ |
+| `kind` | `any` | const | `declaration?.type === AST_NODE_TYPES.VariableDeclaration
+          ? declaration.kind
+          : ''` | ✗ |
+| `border` | `any` | const | `getTopLoopNode(
+        loopNode,
+        kind === 'let' ? declaration : null,
+      ).range[0]` | ✗ |
+| `id` | `any` | const | `upperRef.identifier` | ✗ |
+| `references` | `any` | const | `context.sourceCode.getScope(node).through` | ✗ |
+| `isFunctionExpression` | `boolean` | const | `node.type === AST_NODE_TYPES.FunctionExpression` | ✗ |
+| `isFunctionReferenced` | `any` | const | `isFunctionExpression && node.id
+            ? references.some(r => r.identifier.name === node.id?.name)
+            : false` | ✗ |
 
 
 ---
@@ -427,20 +470,6 @@ function isIIFE(
     | TSESTree.FunctionDeclaration
     | TSESTree.FunctionExpression`
 - **Return Type**: `boolean`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
 
 ---
 

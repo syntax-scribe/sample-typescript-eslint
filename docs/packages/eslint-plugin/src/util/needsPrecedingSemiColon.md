@@ -2,18 +2,28 @@
 
 # 📄 `needsPrecedingSemiColon.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 6 |
+| 📊 Variables & Constants | 8 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 6
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/util/needsPrecedingSemiColon.ts`**
@@ -28,6 +38,49 @@
 | `AST_TOKEN_TYPES` | `@typescript-eslint/utils` |
 | `isClosingBraceToken` | `@typescript-eslint/utils/ast-utils` |
 | `isClosingParenToken` | `@typescript-eslint/utils/ast-utils` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `BREAK_OR_CONTINUE` | `Set<any>` | const | `new Set([
+  AST_NODE_TYPES.BreakStatement,
+  AST_NODE_TYPES.ContinueStatement,
+])` | ✗ |
+| `DECLARATIONS` | `Set<any>` | const | `new Set([
+  AST_NODE_TYPES.ExportAllDeclaration,
+  AST_NODE_TYPES.ExportNamedDeclaration,
+  AST_NODE_TYPES.ImportDeclaration,
+])` | ✗ |
+| `IDENTIFIER_OR_KEYWORD` | `Set<any>` | const | `new Set([
+  AST_NODE_TYPES.Identifier,
+  AST_TOKEN_TYPES.Keyword,
+])` | ✗ |
+| `NODE_TYPES_BY_KEYWORD` | `Record<string, TSESTree.AST_NODE_TYPES | null>` | const | `{
+  __proto__: null,
+  break: AST_NODE_TYPES.BreakStatement,
+  continue: AST_NODE_TYPES.ContinueStatement,
+  debugger: AST_NODE_TYPES.DebuggerStatement,
+  do: AST_NODE_TYPES.DoWhileStatement,
+  else: AST_NODE_TYPES.IfStatement,
+  return: AST_NODE_TYPES.ReturnStatement,
+  yield: AST_NODE_TYPES.YieldExpression,
+}` | ✗ |
+| `PUNCTUATORS` | `Set<string>` | const | `new Set(['--', ';', ':', '{', '++', '=>'])` | ✗ |
+| `STATEMENTS` | `Set<any>` | const | `new Set([
+  AST_NODE_TYPES.DoWhileStatement,
+  AST_NODE_TYPES.ForInStatement,
+  AST_NODE_TYPES.ForOfStatement,
+  AST_NODE_TYPES.ForStatement,
+  AST_NODE_TYPES.IfStatement,
+  AST_NODE_TYPES.WhileStatement,
+  AST_NODE_TYPES.WithStatement,
+])` | ✗ |
+| `keyword` | `any` | const | `prevToken.value` | ✗ |
+| `nodeType` | `any` | const | `NODE_TYPES_BY_KEYWORD[keyword]` | ✗ |
 
 
 ---
@@ -124,26 +177,5 @@ export function needsPrecedingSemicolon(
   - `IDENTIFIER_OR_KEYWORD.has`
   - `BREAK_OR_CONTINUE.has`
   - `DECLARATIONS.has`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

@@ -2,19 +2,29 @@
 
 # 📄 `discriminateAnyType.test.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 2 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 4 |
+| 📊 Variables & Constants | 5 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 1 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 2
-- **Classes**: 0
-- **Imports**: 4
-- **Interfaces**: 0
-- **Type Aliases**: 1
 
 ## 🛠️ File Location:
 📂 **`packages/type-utils/tests/discriminateAnyType.test.ts`**
@@ -27,6 +37,31 @@
 | `AnyType` | `../src/index.js` |
 | `discriminateAnyType` | `../src/index.js` |
 | `parseCodeForEslint` | `./test-utils/custom-matchers/custom-matchers.js` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `declaration` | `TSESTree.VariableDeclaration` | const | `ast.body.at(-1) as TSESTree.VariableDeclaration` | ✗ |
+| `code` | `"\nclass Foo {\n  foo() {\n    return this;\n  }\n  protected then(resolve: () => void): void {\n    resolve();\n  }\n};\n        "` | const | ``
+class Foo {
+  foo() {
+    return this;
+  }
+  protected then(resolve: () => void): void {
+    resolve();
+  }
+};
+        `` | ✗ |
+| `classDeclration` | `TSESTree.ClassDeclaration` | const | `ast.body[0] as TSESTree.ClassDeclaration` | ✗ |
+| `method` | `TSESTree.MethodDefinition` | const | `classDeclration.body
+          .body[0] as TSESTree.MethodDefinition` | ✗ |
+| `returnStatement` | `TSESTree.ReturnStatement` | const | `method.value.body?.body.at(
+          -1,
+        ) as TSESTree.ReturnStatement` | ✗ |
 
 
 ---
@@ -80,20 +115,6 @@ function getTypes(code: string, getNode: GetNode) {
   - `services.getTypeAtLocation`
   - `services.program.getTypeChecker`
   - `services.esTreeNodeToTSNodeMap.get`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
 
 ---
 

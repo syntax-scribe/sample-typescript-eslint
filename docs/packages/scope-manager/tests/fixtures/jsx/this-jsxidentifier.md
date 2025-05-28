@@ -2,25 +2,50 @@
 
 # 📄 `this-jsxidentifier.tsx`
 
-## 📚 Table of Contents
-
-- [Functions](#functions)
-- [Classes](#classes)
-
 ## 📊 Analysis Summary
 
-- **Functions**: 3
-- **Classes**: 1
-- **Imports**: 0
-- **Interfaces**: 0
-- **Type Aliases**: 0
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 3 |
+| 🧱 Classes | 1 |
+| 📦 Imports | 0 |
+| 📊 Variables & Constants | 1 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 4 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
+## 📚 Table of Contents
+
+- [Variables & Constants](#variables-constants)
+- [JSX Elements](#jsx-elements)
+- [Functions](#functions)
+- [Classes](#classes)
 
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/tests/fixtures/jsx/this-jsxidentifier.tsx`**
 
-## 📦 Imports
+## Variables & Constants
 
-> No imports found in this file.
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `React` | `any` | let/var | `*not shown*` | ✗ |
+
+
+---
+
+## JSX Elements
+
+| Component | Type | Props | Children |
+|-----------|------|-------|----------|
+| `div` | element | *none* | *none* |
+| `this.foo` | element | *none* | *none* |
+| `Div.Element` | component | *none* | *none* |
+| `this` | element | *none* | *none* |
 
 
 ---
@@ -98,20 +123,6 @@ method() {
   }
 ```
 </details>
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

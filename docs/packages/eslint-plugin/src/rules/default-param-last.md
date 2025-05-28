@@ -2,18 +2,28 @@
 
 # 📄 `default-param-last.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 3 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 3 |
+| 📊 Variables & Constants | 3 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 3
-- **Classes**: 0
-- **Imports**: 3
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/default-param-last.ts`**
@@ -25,6 +35,19 @@
 | `TSESTree` | `@typescript-eslint/utils` |
 | `AST_NODE_TYPES` | `@typescript-eslint/utils` |
 | `createRule` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `hasSeenPlainParam` | `boolean` | let/var | `false` | ✗ |
+| `current` | `any` | const | `node.params[i]` | ✗ |
+| `param` | `any` | const | `current.type === AST_NODE_TYPES.TSParameterProperty
+            ? current.parameter
+            : current` | ✗ |
 
 
 ---
@@ -137,26 +160,5 @@ function checkDefaultParamLast(
   - `isPlainParam`
   - `isOptionalParam`
   - `context.report`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

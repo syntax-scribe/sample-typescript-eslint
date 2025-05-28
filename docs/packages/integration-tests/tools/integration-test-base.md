@@ -2,18 +2,29 @@
 
 # 📄 `integration-test-base.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 3 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 2 |
+| 📊 Variables & Constants | 1 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 4 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
+- [Async/Await Patterns](#asyncawait-patterns)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 3
-- **Classes**: 0
-- **Imports**: 2
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/integration-tests/tools/integration-test-base.ts`**
@@ -24,6 +35,47 @@
 |------|--------|
 | `execFile` | `./pack-packages.js` |
 | `FIXTURES_DESTINATION_DIR` | `./pack-packages.js` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `stderr` | `string` | let/var | `''` | ✗ |
+
+
+---
+
+## Async/Await Patterns
+
+| Type | Function | Await Expressions | Promise Chains |
+|------|----------|-------------------|----------------|
+| await-expression | `integrationTest` | executeTest(testFolder) | *none* |
+| await-expression | `eslintIntegrationTest` | execFile(
+        'yarn',
+        [
+          'eslint',
+          '--format',
+          'json',
+          '--output-file',
+          outFile,
+          '--fix-dry-run',
+          filesGlob,
+        ],
+        {
+          cwd: testFolder,
+          shell: true,
+        },
+      ), fs.readFile(outFile, { encoding: 'utf-8' }) | *none* |
+| promise-chain | `typescriptIntegrationTest` | *none* | Promise.allSettled |
+| await-expression | `typescriptIntegrationTest` | Promise.allSettled([
+      execFile('yarn', ['tsc', '--noEmit', '--skipLibCheck', ...tscArgs], {
+        cwd: testFolder,
+        shell: true,
+      }),
+    ]) | *none* |
 
 
 ---
@@ -229,27 +281,6 @@ export function typescriptIntegrationTest(
 // the tmp util does not include that prefix folder
 // TS logs nothing when it succeeds (x5)
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

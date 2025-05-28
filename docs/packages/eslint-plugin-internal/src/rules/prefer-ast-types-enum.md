@@ -2,18 +2,28 @@
 
 # 📄 `prefer-ast-types-enum.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 10 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 5 |
+| 📊 Variables & Constants | 1 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 6
-- **Classes**: 0
-- **Imports**: 5
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin-internal/src/rules/prefer-ast-types-enum.ts`**
@@ -27,6 +37,15 @@
 | `AST_NODE_TYPES` | `@typescript-eslint/utils` |
 | `AST_TOKEN_TYPES` | `@typescript-eslint/utils` |
 | `createRule` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `value` | `any` | const | `node.value` | ✗ |
 
 
 ---
@@ -132,26 +151,65 @@ fixer =>
 - **Return Type**: `any`
 - **Calls**:
   - `fixer.replaceText`
+### `fix(fixer: any): any`
 
----
+<details><summary>Code</summary>
 
-## Classes
+```ts
+fixer =>
+          fixer.replaceText(literal, `${enumName}.${literal.value}`)
+```
+</details>
 
-> No classes found in this file.
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
 
+<details><summary>Code</summary>
 
----
+```ts
+fixer =>
+          fixer.replaceText(literal, `${enumName}.${literal.value}`)
+```
+</details>
 
-## Interfaces
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
 
-> No interfaces found in this file.
+<details><summary>Code</summary>
 
+```ts
+fixer =>
+          fixer.replaceText(literal, `${enumName}.${literal.value}`)
+```
+</details>
 
----
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
 
-## Type Aliases
+<details><summary>Code</summary>
 
-> No type aliases found in this file.
+```ts
+fixer =>
+          fixer.replaceText(literal, `${enumName}.${literal.value}`)
+```
+</details>
 
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
 
 ---

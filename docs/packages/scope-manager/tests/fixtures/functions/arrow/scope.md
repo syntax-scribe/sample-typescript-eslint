@@ -2,24 +2,38 @@
 
 # 📄 `scope.ts`
 
-## 📚 Table of Contents
-
-- [Functions](#functions)
-
 ## 📊 Analysis Summary
 
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 0
-- **Interfaces**: 0
-- **Type Aliases**: 0
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 0 |
+| 📊 Variables & Constants | 3 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
+## 📚 Table of Contents
+
+- [Variables & Constants](#variables-constants)
+- [Functions](#functions)
 
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/tests/fixtures/functions/arrow/scope.ts`**
 
-## 📦 Imports
+## Variables & Constants
 
-> No imports found in this file.
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `i` | `number` | let/var | `0` | ✗ |
+| `j` | `number` | let/var | `20` | ✗ |
+| `unresolved` | `any` | const | `j` | ✗ |
 
 
 ---
@@ -41,26 +55,5 @@
 </details>
 
 - **Return Type**: `void`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

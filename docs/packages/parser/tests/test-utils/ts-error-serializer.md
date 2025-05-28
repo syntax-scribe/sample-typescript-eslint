@@ -2,18 +2,28 @@
 
 # 📄 `ts-error-serializer.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 9 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 2 |
+| 📊 Variables & Constants | 1 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 6
-- **Classes**: 0
-- **Imports**: 2
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/parser/tests/test-utils/ts-error-serializer.ts`**
@@ -24,6 +34,29 @@
 |------|--------|
 | `SnapshotSerializer` | `vitest` |
 | `TSError` | `@typescript-eslint/typescript-estree` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `serializer` | `SnapshotSerializer` | const | `{
+  serialize(val: TSError, config, indentation, depth, refs, printer) {
+    const format = (value: unknown): string =>
+      printer(value, config, indentation, depth + 1, refs);
+    return (
+      `${val.name} {\n` +
+      `${config.indent}"column": ${format(val.column)},\n` +
+      `${config.indent}"index": ${format(val.index)},\n` +
+      `${config.indent}"lineNumber": ${format(val.lineNumber)},\n` +
+      `${config.indent}"message": ${format(val.message)},\n` +
+      `}`
+    );
+  },
+  test: (val: unknown): val is TSError => val instanceof TSError,
+}` | ✓ |
 
 
 ---
@@ -45,6 +78,42 @@
 - **Return Type**: `string`
 - **Calls**:
   - `printer`
+### `test(val: unknown): val is TSError`
+
+<details><summary>Code</summary>
+
+```ts
+(val: unknown): val is TSError => val instanceof TSError
+```
+</details>
+
+- **Parameters**:
+  - `val: unknown`
+- **Return Type**: `val is TSError`
+### `test(val: unknown): val is TSError`
+
+<details><summary>Code</summary>
+
+```ts
+(val: unknown): val is TSError => val instanceof TSError
+```
+</details>
+
+- **Parameters**:
+  - `val: unknown`
+- **Return Type**: `val is TSError`
+### `test(val: unknown): val is TSError`
+
+<details><summary>Code</summary>
+
+```ts
+(val: unknown): val is TSError => val instanceof TSError
+```
+</details>
+
+- **Parameters**:
+  - `val: unknown`
+- **Return Type**: `val is TSError`
 ### `test(val: unknown): val is TSError`
 
 <details><summary>Code</summary>
@@ -124,26 +193,5 @@ serialize(val: TSError, config, indentation, depth, refs, printer) {
 - **Parameters**:
   - `val: unknown`
 - **Return Type**: `val is TSError`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

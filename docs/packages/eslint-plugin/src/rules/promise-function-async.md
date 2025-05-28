@@ -2,19 +2,29 @@
 
 # 📄 `promise-function-async.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 5 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 10 |
+| 📊 Variables & Constants | 5 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 5
-- **Classes**: 0
-- **Imports**: 10
-- **Interfaces**: 0
-- **Type Aliases**: 2
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/promise-function-async.ts`**
@@ -33,6 +43,30 @@
 | `isTypeFlagSet` | `../util` |
 | `nullThrows` | `../util` |
 | `NullThrowsReasons` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `allAllowedPromiseNames` | `Set<any>` | const | `new Set([
+      'Promise',
+      // https://github.com/typescript-eslint/typescript-eslint/issues/5439
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+      ...allowedPromiseNames!,
+    ])` | ✗ |
+| `method` | `any` | const | `node.parent` | ✗ |
+| `lastDecorator` | `any` | const | `method.decorators[method.decorators.length - 1]` | ✗ |
+| `insertSpace` | `boolean` | const | `!context.sourceCode.isSpaceBetween(
+                nullThrows(
+                  context.sourceCode.getTokenBefore(keyToken),
+                  NullThrowsReasons.MissingToken('token', 'keyword'),
+                ),
+                keyToken,
+              )` | ✗ |
+| `code` | `string` | let/var | `'async '` | ✗ |
 
 
 ---
@@ -555,20 +589,6 @@ fixer => {
 // if current token is a keyword like `static` or `public` then skip it
 // check if there is a space between key and previous token (x2)
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
 
 
 ---

@@ -2,18 +2,28 @@
 
 # 📄 `generateObjectType.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 8 |
+| 📊 Variables & Constants | 4 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 8
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/rule-schema-to-typescript-types/src/generateObjectType.ts`**
@@ -30,6 +40,22 @@
 | `RefMap` | `./types` |
 | `generateType` | `./generateType` |
 | `getCommentLines` | `./getCommentLines` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `indexSignature` | `AST | null` | let/var | `null` | ✗ |
+| `properties` | `ObjectAST['properties']` | const | `[]` | ✗ |
+| `required` | `Set<unknown>` | const | `new Set(
+    TSUtils.isArray(schema.required) ? schema.required : [],
+  )` | ✗ |
+| `sanitisedPropName` | `string` | const | `requiresQuoting(propName)
+        ? `'${propName}'`
+        : propName` | ✗ |
 
 
 ---
@@ -108,27 +134,6 @@ export function generateObjectType(
 ```
 // eslint-disable-next-line @typescript-eslint/internal/eqeq-nullish (x3)
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

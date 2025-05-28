@@ -2,24 +2,48 @@
 
 # 📄 `fixture.tsx`
 
-## 📚 Table of Contents
-
-- [Interfaces](#interfaces)
-
 ## 📊 Analysis Summary
 
-- **Functions**: 0
-- **Classes**: 0
-- **Imports**: 0
-- **Interfaces**: 1
-- **Type Aliases**: 0
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 0 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 0 |
+| 📊 Variables & Constants | 2 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 2 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
+## 📚 Table of Contents
+
+- [Variables & Constants](#variables-constants)
+- [JSX Elements](#jsx-elements)
+- [Interfaces](#interfaces)
 
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/jsx/JSXNamespacedName/fixtures/component-dashed/fixture.tsx`**
 
-## 📦 Imports
+## Variables & Constants
 
-> No imports found in this file.
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `componentBasic` | `any` | const | `<foo />` | ✗ |
+| `componentDashed` | `any` | const | `<foo-bar:baz-bam />` | ✗ |
+
+
+---
+
+## JSX Elements
+
+| Component | Type | Props | Children |
+|-----------|------|-------|----------|
+| `foo` | element | *none* | *none* |
+| `foo-bar:baz-bam` | element | *none* | *none* |
 
 
 ---
@@ -27,13 +51,6 @@
 ## 🔧 Functions
 
 > No functions found in this file.
-
-
----
-
-## Classes
-
-> No classes found in this file.
 
 
 ---
@@ -58,13 +75,6 @@ interface IntrinsicElements {
 |------|------|----------|-------------|
 | `foo` | `any` | ✗ |  |
 | `'foo-bar:baz-bam'` | `any` | ✗ |  |
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

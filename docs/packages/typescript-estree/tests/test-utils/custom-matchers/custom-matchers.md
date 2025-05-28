@@ -2,18 +2,28 @@
 
 # 📄 `custom-matchers.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 2 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 1 |
+| 📊 Variables & Constants | 6 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 2
-- **Classes**: 0
-- **Imports**: 1
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/typescript-estree/tests/test-utils/custom-matchers/custom-matchers.ts`**
@@ -23,6 +33,35 @@
 | Name | Source |
 |------|--------|
 | `ParserServices` | `../../../src/index.js` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `negate` | `boolean` | const | `utils.flag(this, 'negate') ?? false` | ✗ |
+| `assertion` | `Assertion` | const | `new chai.Assertion(services, errorMessage, ssfi, true)` | ✗ |
+| `negate` | `boolean` | const | `utils.flag(this, 'negate') ?? false` | ✗ |
+| `nodeTypeAssertion` | `Assertion` | const | `new chai.Assertion(
+      nodeType,
+      errorMessage,
+      ssfi,
+      true,
+    )` | ✗ |
+| `typeArgumentsAssertion` | `Assertion` | const | `new chai.Assertion(
+      typeArguments,
+      errorMessage,
+      ssfi,
+      true,
+    )` | ✗ |
+| `firstTypeArgumentAssertion` | `Assertion` | const | `new chai.Assertion(
+      typeArguments[0],
+      errorMessage,
+      ssfi,
+      true,
+    )` | ✗ |
 
 
 ---
@@ -203,26 +242,5 @@ function TSNodeOfNumberArrayType(
   - `firstTypeArgumentAssertion.to.have
         .property('flags')
         .that.equals`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

@@ -2,18 +2,28 @@
 
 # 📄 `index.tsx`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 2 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 9 |
+| 📊 Variables & Constants | 0 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 8 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [JSX Elements](#jsx-elements)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 2
-- **Classes**: 0
-- **Imports**: 9
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/website/src/theme/BlogSidebar/Content/index.tsx`**
@@ -31,6 +41,22 @@
 | `React` | `react` |
 | `Markdown` | `react-markdown` |
 | `styles` | `./styles.module.css` |
+
+
+---
+
+## JSX Elements
+
+| Component | Type | Props | Children |
+|-----------|------|-------|----------|
+| `div` | element | className={styles.blogSidebarContent}, role="group" | <Heading>, {children} |
+| `Heading` | component | as="h3", className={yearGroupHeadingClassName} | {year} |
+| `Markdown` | component | *none* | {item.title} |
+| `Fragment` | fragment | *none* | *none* |
+| `BlogSidebarYearGroup` | component | key={year}, year={year}, yearGroupHeadingClassName={yearGroupHeadingClassName} | <ListComponent> |
+| `ListComponent` | component | items={yearItems} | *none* |
+| `div` | element | className={styles.blogSidebarContent} | <ListComponent> |
+| `ListComponent` | component | items={items} | *none* |
 
 
 ---
@@ -141,26 +167,5 @@ function BlogSidebarContent({
   - `useThemeConfig (from @docusaurus/theme-common)`
   - `groupBlogSidebarItemsByYear (from @docusaurus/plugin-content-blog/client)`
   - `itemsByYear.map`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

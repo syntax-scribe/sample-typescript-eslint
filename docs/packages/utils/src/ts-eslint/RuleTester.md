@@ -2,6 +2,23 @@
 
 # 📄 `RuleTester.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 2 |
+| 🧱 Classes | 2 |
+| 📦 Imports | 10 |
+| 📊 Variables & Constants | 0 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 6 |
+| 📑 Type Aliases | 1 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
@@ -9,14 +26,6 @@
 - [Classes](#classes)
 - [Interfaces](#interfaces)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 2
-- **Classes**: 2
-- **Imports**: 10
-- **Interfaces**: 6
-- **Type Aliases**: 1
 
 ## 🛠️ File Location:
 📂 **`packages/utils/src/ts-eslint/RuleTester.ts`**

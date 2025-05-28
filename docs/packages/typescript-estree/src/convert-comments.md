@@ -2,18 +2,28 @@
 
 # 📄 `convert-comments.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 3 |
+| 📊 Variables & Constants | 5 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 3
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/typescript-estree/src/convert-comments.ts`**
@@ -25,6 +35,25 @@
 | `TSESTree` | `./ts-estree` |
 | `getLocFor` | `./node-utils` |
 | `AST_TOKEN_TYPES` | `./ts-estree` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `comments` | `TSESTree.Comment[]` | const | `[]` | ✗ |
+| `type` | `any` | const | `comment.kind === ts.SyntaxKind.SingleLineCommentTrivia
+          ? AST_TOKEN_TYPES.Line
+          : AST_TOKEN_TYPES.Block` | ✗ |
+| `range` | `TSESTree.Range` | const | `[comment.pos, comment.end]` | ✗ |
+| `textStart` | `any` | const | `range[0] + 2` | ✗ |
+| `textEnd` | `number` | const | `comment.kind === ts.SyntaxKind.SingleLineCommentTrivia
+          ? // single line comments end at the end
+            range[1] - textStart
+          : // multiline comments end 2 characters early
+            range[1] - textStart - 2` | ✗ |
 
 
 ---
@@ -99,27 +128,6 @@ export function convertComments(
 ```
 // both comments start with 2 characters - /* or // (x2)
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

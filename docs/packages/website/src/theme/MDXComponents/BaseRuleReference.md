@@ -2,19 +2,30 @@
 
 # 📄 `BaseRuleReference.tsx`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 1 |
+| 📊 Variables & Constants | 1 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 2 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
+- [JSX Elements](#jsx-elements)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 1
-- **Interfaces**: 1
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/website/src/theme/MDXComponents/BaseRuleReference.tsx`**
@@ -24,6 +35,25 @@
 | Name | Source |
 |------|--------|
 | `React` | `react` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `href` | `string` | const | ``https://github.com/eslint/eslint/blob/main/docs/src/rules/${baseRule}.md`` | ✗ |
+
+
+---
+
+## JSX Elements
+
+| Component | Type | Props | Children |
+|-----------|------|-------|----------|
+| `sup` | element | *none* | text: "Taken with ❤️ from", <a>, text: "." |
+| `a` | element | href={href} | text: "ESLint core" |
 
 
 ---
@@ -59,13 +89,6 @@ export function BaseRuleReference({
 
 ---
 
-## Classes
-
-> No classes found in this file.
-
-
----
-
 ## Interfaces
 
 ### `BaseRuleReferenceProps`
@@ -84,13 +107,6 @@ export interface BaseRuleReferenceProps {
 | Name | Type | Optional | Description |
 |------|------|----------|-------------|
 | `baseRule` | `string` | ✗ |  |
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

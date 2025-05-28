@@ -2,18 +2,28 @@
 
 # 📄 `prefer-optional-chain.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 17 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 14 |
+| 📊 Variables & Constants | 8 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 17
-- **Classes**: 0
-- **Imports**: 14
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/prefer-optional-chain.ts`**
@@ -36,6 +46,27 @@
 | `checkNullishAndReport` | `./prefer-optional-chain-utils/checkNullishAndReport` |
 | `gatherLogicalOperands` | `./prefer-optional-chain-utils/gatherLogicalOperands` |
 | `OperandValidity` | `./prefer-optional-chain-utils/gatherLogicalOperands` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `seenLogicals` | `Set<TSESTree.LogicalExpression>` | const | `new Set<TSESTree.LogicalExpression>()` | ✗ |
+| `currentChain` | `ValidOperand[]` | let/var | `[]` | ✗ |
+| `leftNode` | `any` | const | `node.left` | ✗ |
+| `rightNode` | `any` | const | `node.right` | ✗ |
+| `parentNode` | `any` | const | `node.parent` | ✗ |
+| `isRightNodeAnEmptyObjectLiteral` | `boolean` | const | `rightNode.type === AST_NODE_TYPES.ObjectExpression &&
+          rightNode.properties.length === 0` | ✗ |
+| `maybeWrappedLeftNode` | `any` | const | `isLeftSideLowerPrecedence()
+                  ? `(${leftNodeText})`
+                  : leftNodeText` | ✗ |
+| `maybeWrappedProperty` | `any` | const | `parentNode.computed
+                  ? `[${propertyToBeOptionalText}]`
+                  : propertyToBeOptionalText` | ✗ |
 
 
 ---
@@ -655,27 +686,6 @@ function isLeftSideLowerPrecedence(): boolean {
 ```
 // Any node that is made of an operator with higher or equal precedence, (x2)
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

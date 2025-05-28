@@ -2,18 +2,29 @@
 
 # 📄 `astUtils.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 3 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 3 |
+| 📊 Variables & Constants | 2 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 1 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
+- [Re-exports](#re-exports)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 3
-- **Classes**: 0
-- **Imports**: 3
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/util/astUtils.ts`**
@@ -25,6 +36,31 @@
 | `TSESLint` | `@typescript-eslint/utils` |
 | `TSESTree` | `@typescript-eslint/utils` |
 | `escapeRegExp` | `./escapeRegExp` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `namePattern` | `RegExp` | const | `new RegExp(
+    `[\\s,]${escapeRegExp(name)}(?:$|[\\s,:])`,
+    'gu',
+  )` | ✗ |
+| `end` | `{ column: any; line: any; }` | const | `{
+    column: start.column + (match ? name.length : 1),
+    line: start.line,
+  }` | ✗ |
+
+
+---
+
+## Re-exports
+
+| Type | Source | Exported Names |
+|------|--------|----------------|
+| namespace | `@typescript-eslint/utils/ast-utils` | * |
 
 
 ---
@@ -179,26 +215,5 @@ function traverse(node: ts.Node): T | undefined {
 - **Calls**:
   - `visitor`
   - `ts.forEachChild`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

@@ -2,18 +2,28 @@
 
 # 📄 `resolveProjectList.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 4 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 10 |
+| 📊 Variables & Constants | 5 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 4
-- **Classes**: 0
-- **Imports**: 10
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/typescript-estree/src/parseSettings/resolveProjectList.ts`**
@@ -32,6 +42,35 @@
 | `getCanonicalFileName` | `../create-program/shared` |
 | `DEFAULT_TSCONFIG_CACHE_DURATION_SECONDS` | `./ExpiringCache` |
 | `ExpiringCache` | `./ExpiringCache` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `RESOLUTION_CACHE` | `ExpiringCache<
+  string,
+  ReadonlyMap<CanonicalPath, string>
+> | null` | let/var | `null` | ✗ |
+| `sanitizedProjects` | `string[]` | const | `[]` | ✗ |
+| `globProjectPaths` | `string[]` | let/var | `[]` | ✗ |
+| `uniqueCanonicalProjectPaths` | `Map<CanonicalPath, string>` | const | `new Map(
+    [...nonGlobProjects, ...globProjectPaths].map(project => [
+      getCanonicalFileName(
+        ensureAbsolutePath(project, options.tsconfigRootDir),
+      ),
+      ensureAbsolutePath(project, options.tsconfigRootDir),
+    ]),
+  )` | ✗ |
+| `hashObject` | `{ tsconfigRootDir: string; project: readonly string[]; projectFolderIgnoreList: string[]; }` | const | `{
+    tsconfigRootDir,
+    // the project order does matter and can impact the resolved globs
+    project,
+    // the ignore order won't doesn't ever matter
+    projectFolderIgnoreList: [...projectFolderIgnoreList].sort(),
+  }` | ✗ |
 
 
 ---
@@ -285,26 +324,5 @@ export function clearGlobResolutionCache(): void {
 - **Return Type**: `void`
 - **Calls**:
   - `RESOLUTION_CACHE?.clear`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

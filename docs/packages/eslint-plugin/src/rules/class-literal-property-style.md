@@ -2,20 +2,30 @@
 
 # 📄 `class-literal-property-style.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 5 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 9 |
+| 📊 Variables & Constants | 5 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 2 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 5
-- **Classes**: 0
-- **Imports**: 9
-- **Interfaces**: 2
-- **Type Aliases**: 2
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/class-literal-property-style.ts`**
@@ -33,6 +43,26 @@
 | `isFunction` | `../util` |
 | `isStaticMemberAccessOfValue` | `../util` |
 | `nullThrows` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `propertiesInfoStack` | `PropertiesInfo[]` | const | `[]` | ✗ |
+| `text` | `string` | let/var | `''` | ✗ |
+| `hasDuplicateKeySetter` | `any` | const | `name &&
+            node.parent.body.some(element => {
+              return (
+                element.type === AST_NODE_TYPES.MethodDefinition &&
+                element.kind === 'set' &&
+                isStaticMemberAccessOfValue(element, context, name)
+              );
+            })` | ✗ |
+| `text` | `string` | let/var | `''` | ✗ |
+| `parent` | `TSESTree.Node | undefined` | let/var | `node.parent` | ✗ |
 
 
 ---
@@ -192,13 +222,6 @@ function excludeAssignedProperty(node: TSESTree.MemberExpression): void {
   - `isAssignee (from ../util)`
   - `getStaticMemberAccessValue (from ../util)`
   - `excludeSet.add`
-
----
-
-## Classes
-
-> No classes found in this file.
-
 
 ---
 

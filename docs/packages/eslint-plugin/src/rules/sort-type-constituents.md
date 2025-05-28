@@ -2,19 +2,30 @@
 
 # 📄 `sort-type-constituents.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 4 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 6 |
+| 📊 Variables & Constants | 5 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 1 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 4
-- **Classes**: 0
-- **Imports**: 6
-- **Interfaces**: 0
-- **Type Aliases**: 2
+- [Enums](#enums)
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/sort-type-constituents.ts`**
@@ -29,6 +40,29 @@
 | `createRule` | `../util` |
 | `getEnumNames` | `../util` |
 | `typeNodeRequiresParentheses` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `collator` | `Collator` | const | `new Intl.Collator('en', {
+      numeric: true,
+      sensitivity: 'base',
+    })` | ✗ |
+| `group` | `any` | const | `groupOrder?.indexOf(getGroup(type)) ?? -1` | ✗ |
+| `count` | `any` | const | `context.sourceCode.getCommentsBefore(type).length +
+          context.sourceCode.getCommentsAfter(type).length` | ✗ |
+| `messageId` | `MessageIds` | let/var | `'notSorted'` | ✗ |
+| `data` | `{ name: string; type: string; }` | const | `{
+            name: '',
+            type:
+              node.type === AST_NODE_TYPES.TSIntersectionType
+                ? 'Intersection'
+                : 'Union',
+          }` | ✗ |
 
 
 ---
@@ -312,20 +346,6 @@ fixer => {
 
 ---
 
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
 ## Type Aliases
 
 ### `Options`
@@ -346,6 +366,50 @@ type Options = [
 ```ts
 type MessageIds = 'notSorted' | 'notSortedNamed' | 'suggestFix';
 ```
+
+
+---
+
+## Enums
+
+### `enum Group`
+
+<details><summary>Enum Code</summary>
+
+```ts
+enum Group {
+  conditional = 'conditional',
+  function = 'function',
+  import = 'import',
+  intersection = 'intersection',
+  keyword = 'keyword',
+  nullish = 'nullish',
+  literal = 'literal',
+  named = 'named',
+  object = 'object',
+  operator = 'operator',
+  tuple = 'tuple',
+  union = 'union',
+}
+```
+</details>
+
+#### Members
+
+| Name | Value | Description |
+|------|-------|-------------|
+| `conditional` | `conditional` |  |
+| `function` | `function` |  |
+| `import` | `import` |  |
+| `intersection` | `intersection` |  |
+| `keyword` | `keyword` |  |
+| `nullish` | `nullish` |  |
+| `literal` | `literal` |  |
+| `named` | `named` |  |
+| `object` | `object` |  |
+| `operator` | `operator` |  |
+| `tuple` | `tuple` |  |
+| `union` | `union` |  |
 
 
 ---

@@ -2,18 +2,28 @@
 
 # 📄 `validator.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 8 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 16 |
+| 📊 Variables & Constants | 16 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 8
-- **Classes**: 0
-- **Imports**: 16
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/naming-convention-utils/validator.ts`**
@@ -38,6 +48,51 @@
 | `isMetaSelector` | `./shared` |
 | `isMethodOrPropertySelector` | `./shared` |
 | `selectorTypeToMessageString` | `./shared` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `selectorType` | `Selectors` | const | `Selectors[type]` | ✗ |
+| `originalName` | `any` | const | `node.type === AST_NODE_TYPES.Identifier ||
+      node.type === AST_NODE_TYPES.PrivateIdentifier
+        ? node.name
+        : `${node.value}`` | ✗ |
+| `name` | `string | null` | let/var | `originalName` | ✗ |
+| `option` | `UnderscoreOptions` | const | `position === 'leading'
+        ? config.leadingUnderscore
+        : config.trailingUnderscore` | ✗ |
+| `hasSingleUnderscore` | `() => boolean` | const | `position === 'leading'
+        ? (): boolean => name.startsWith('_')
+        : (): boolean => name.endsWith('_')` | ✗ |
+| `trimSingleUnderscore` | `() => string` | const | `position === 'leading'
+        ? (): string => name.slice(1)
+        : (): string => name.slice(0, -1)` | ✗ |
+| `hasDoubleUnderscore` | `() => boolean` | const | `position === 'leading'
+        ? (): boolean => name.startsWith('__')
+        : (): boolean => name.endsWith('__')` | ✗ |
+| `trimDoubleUnderscore` | `() => string` | const | `position === 'leading'
+        ? (): string => name.slice(2)
+        : (): string => name.slice(0, -2)` | ✗ |
+| `affixes` | `string[]` | const | `config[position]` | ✗ |
+| `hasAffix` | `boolean` | const | `position === 'prefix' ? name.startsWith(affix) : name.endsWith(affix)` | ✗ |
+| `trimAffix` | `() => string` | const | `position === 'prefix'
+          ? (): string => name.slice(affix.length)
+          : (): string => name.slice(0, -affix.length)` | ✗ |
+| `custom` | `NormalizedMatchRegex` | const | `config.custom` | ✗ |
+| `formats` | `PredefinedFormats[]` | const | `config.format` | ✗ |
+| `checker` | `(name: string) => boolean` | const | `PredefinedFormatToCheckFunction[format]` | ✗ |
+| `SelectorsAllowedToHaveTypes` | `number` | const | `Selectors.variable |
+  Selectors.parameter |
+  Selectors.classProperty |
+  Selectors.objectLiteralProperty |
+  Selectors.typeProperty |
+  Selectors.parameterProperty |
+  Selectors.classicAccessor` | ✗ |
+| `allowedTypeString` | `string` | const | `TypeModifiers[allowedType]` | ✗ |
 
 
 ---
@@ -1071,26 +1126,5 @@ function isAllTypesMatch(
   - `type.isUnion`
   - `type.types.every`
   - `cb`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

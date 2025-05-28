@@ -2,19 +2,29 @@
 
 # 📄 `prefer-ts-expect-error.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 5 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 5 |
+| 📊 Variables & Constants | 2 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 1 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 5
-- **Classes**: 0
-- **Imports**: 5
-- **Interfaces**: 0
-- **Type Aliases**: 1
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/prefer-ts-expect-error.ts`**
@@ -28,6 +38,16 @@
 | `RuleFixer` | `@typescript-eslint/utils/ts-eslint` |
 | `AST_TOKEN_TYPES` | `@typescript-eslint/utils` |
 | `createRule` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `tsIgnoreRegExpSingleLine` | `RegExp` | const | `/^\s*\/?\s*@ts-ignore/` | ✗ |
+| `tsIgnoreRegExpMultiLine` | `RegExp` | const | `/^\s*(?:\/|\*)*\s*@ts-ignore/` | ✗ |
 
 
 ---
@@ -137,20 +157,6 @@ function isValidTsIgnorePresent(comment: TSESTree.Comment): boolean {
 - **Return Type**: `RuleFix`
 - **Calls**:
   - `fixer.replaceText`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
 
 ---
 

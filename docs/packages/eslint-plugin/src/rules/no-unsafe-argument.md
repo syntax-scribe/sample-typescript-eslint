@@ -2,20 +2,31 @@
 
 # 📄 `no-unsafe-argument.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 7 |
+| 🧱 Classes | 1 |
+| 📦 Imports | 9 |
+| 📊 Variables & Constants | 7 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 1 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Classes](#classes)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 7
-- **Classes**: 1
-- **Imports**: 9
-- **Interfaces**: 0
-- **Type Aliases**: 2
+- [Enums](#enums)
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/no-unsafe-argument.ts`**
@@ -33,6 +44,21 @@
 | `isTypeAnyType` | `../util` |
 | `isUnsafeAssignment` | `../util` |
 | `nullThrows` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `paramTypes` | `ts.Type[]` | const | `[]` | ✗ |
+| `restType` | `RestType | null` | let/var | `null` | ✗ |
+| `param` | `any` | const | `parameters[i]` | ✗ |
+| `decl` | `any` | const | `param.getDeclarations()?.[0]` | ✗ |
+| `index` | `number` | const | `this.parameterTypeIndex` | ✗ |
+| `typeArguments` | `readonly ts.Type[]` | const | `this.restType.typeArguments` | ✗ |
+| `typeIndex` | `number` | const | `index - this.restType.index` | ✗ |
 
 
 ---
@@ -638,13 +664,6 @@ public getNextParameterType(): ts.Type | null {
 
 ---
 
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
 ## Type Aliases
 
 ### `MessageIds`
@@ -675,6 +694,32 @@ type RestType = | {
       typeArguments: readonly ts.Type[];
     };
 ```
+
+
+---
+
+## Enums
+
+### `const enum RestTypeKind`
+
+<details><summary>Enum Code</summary>
+
+```ts
+const enum RestTypeKind {
+  Array,
+  Tuple,
+  Other,
+}
+```
+</details>
+
+#### Members
+
+| Name | Value | Description |
+|------|-------|-------------|
+| `Array` | *auto* |  |
+| `Tuple` | *auto* |  |
+| `Other` | *auto* |  |
 
 
 ---

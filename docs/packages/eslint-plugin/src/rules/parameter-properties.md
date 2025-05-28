@@ -2,20 +2,30 @@
 
 # 📄 `parameter-properties.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 3 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 4 |
+| 📊 Variables & Constants | 5 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 4 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 3
-- **Classes**: 0
-- **Imports**: 4
-- **Interfaces**: 1
-- **Type Aliases**: 4
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/parameter-properties.ts`**
@@ -28,6 +38,22 @@
 | `AST_NODE_TYPES` | `@typescript-eslint/utils` |
 | `createRule` | `../util` |
 | `nullThrows` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `modifiers` | `Modifier[]` | const | `[]` | ✗ |
+| `name` | `any` | const | `node.parameter.type === AST_NODE_TYPES.Identifier
+                ? node.parameter.name
+                : // has to be an Identifier or TSC will throw an error
+                  (node.parameter.left as TSESTree.Identifier).name` | ✗ |
+| `propertyNodesByNameStack` | `Map<string, PropertyNodes>[]` | const | `[]` | ✗ |
+| `propertyNodesByName` | `Map<string, PropertyNodes>` | const | `propertyNodesByNameStack[propertyNodesByNameStack.length - 1]` | ✗ |
+| `created` | `PropertyNodes` | const | `{}` | ✗ |
 
 
 ---
@@ -128,13 +154,6 @@ function typeAnnotationsMatch(
 - **Return Type**: `boolean`
 - **Calls**:
   - `context.sourceCode.getText`
-
----
-
-## Classes
-
-> No classes found in this file.
-
 
 ---
 

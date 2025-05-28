@@ -2,20 +2,30 @@
 
 # 📄 `analyzeChain.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 9 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 23 |
+| 📊 Variables & Constants | 13 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 1 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 9
-- **Classes**: 0
-- **Imports**: 23
-- **Interfaces**: 1
-- **Type Aliases**: 1
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/prefer-optional-chain-utils/analyzeChain.ts`**
@@ -47,6 +57,31 @@
 | `compareNodes` | `./compareNodes` |
 | `NodeComparisonResult` | `./compareNodes` |
 | `NullishComparisonType` | `./gatherLogicalOperands` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `typeFlag` | `number` | const | `typeFlagIn | ts.TypeFlags.Any | ts.TypeFlags.Unknown` | ✗ |
+| `leftNode` | `TSESTree.Expression` | const | `chain[0].node` | ✗ |
+| `rightNode` | `TSESTree.Expression` | const | `chain[chain.length - 1].node` | ✗ |
+| `lastOperand` | `ValidOperand` | const | `chain[chain.length - 1]` | ✗ |
+| `useSuggestionFixer` | `boolean` | let/var | `*not shown*` | ✗ |
+| `parts` | `any[]` | const | `[]` | ✗ |
+| `str` | `string` | let/var | `''` | ✗ |
+| `operator` | `any` | const | `lastOperand.node.operator` | ✗ |
+| `unaryOperator` | `string` | const | `lastOperand.node.right.type === AST_NODE_TYPES.UnaryExpression
+            ? `${lastOperand.node.right.operator} `
+            : ''` | ✗ |
+| `unaryOperator` | `string` | const | `lastOperand.node.left.type === AST_NODE_TYPES.UnaryExpression
+          ? `${lastOperand.node.left.operator} `
+          : ''` | ✗ |
+| `subChain` | `(readonly ValidOperand[] | ValidOperand)[]` | let/var | `[]` | ✗ |
+| `operand` | `ValidOperand` | const | `chain[i]` | ✗ |
+| `currentOperand` | `ValidOperand` | const | `validatedOperands[0]` | ✗ |
 
 
 ---
@@ -1089,13 +1124,6 @@ export function analyzeChain(
 //                          ^^^^^^^^^^^ newChainSeed (x3)
 //                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ second chain (x3)
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
 
 
 ---

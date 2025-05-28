@@ -2,19 +2,29 @@
 
 # 📄 `AlertBlock.tsx`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 1 |
+| 📊 Variables & Constants | 0 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 2 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [JSX Elements](#jsx-elements)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 1
-- **Interfaces**: 1
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/website/src/components/layout/AlertBlock.tsx`**
@@ -24,6 +34,16 @@
 | Name | Source |
 |------|--------|
 | `React` | `react` |
+
+
+---
+
+## JSX Elements
+
+| Component | Type | Props | Children |
+|-----------|------|-------|----------|
+| `div` | element | className={`admonition alert alert--${props.type}`} | <div> |
+| `div` | element | className="admonition-content" | {props.children} |
 
 
 ---
@@ -51,13 +71,6 @@ function AlertBlock(props: AlertBlockProps): React.JSX.Element {
 
 ---
 
-## Classes
-
-> No classes found in this file.
-
-
----
-
 ## Interfaces
 
 ### `AlertBlockProps`
@@ -78,13 +91,6 @@ export interface AlertBlockProps {
 |------|------|----------|-------------|
 | `children` | `React.ReactNode` | ✗ |  |
 | `type` | `'danger' | 'info' | 'note' | 'success' | 'warning'` | ✗ |  |
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

@@ -2,19 +2,29 @@
 
 # 📄 `plugin-test-formatting.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 15 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 6 |
+| 📊 Variables & Constants | 21 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 3 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 15
-- **Classes**: 0
-- **Imports**: 6
-- **Interfaces**: 0
-- **Type Aliases**: 3
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin-internal/src/rules/plugin-test-formatting.ts`**
@@ -29,6 +39,44 @@
 | `AST_NODE_TYPES` | `@typescript-eslint/utils` |
 | `ESLintUtils` | `@typescript-eslint/utils` |
 | `createRule` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `prettierConfig` | `any` | const | `prettier.resolveConfig(__dirname) ?? {}` | ✗ |
+| `START_OF_LINE_WHITESPACE_MATCHER` | `RegExp` | const | `/^( *)/` | ✗ |
+| `BACKTICK_REGEX` | `RegExp` | const | `/`/g` | ✗ |
+| `TEMPLATE_EXPR_OPENER` | `RegExp` | const | `/\$\{/g` | ✗ |
+| `lineIdx` | `number` | const | `node.loc.start.line - 1` | ✗ |
+| `indent` | `string` | const | `START_OF_LINE_WHITESPACE_MATCHER.exec(
+    sourceCodeLines[lineIdx],
+  )![1]` | ✗ |
+| `fixed` | `string` | let/var | `code` | ✗ |
+| `checkedObjects` | `Set<TSESTree.ObjectExpression>` | const | `new Set<TSESTree.ObjectExpression>()` | ✗ |
+| `message` | `string` | let/var | `formatted.message` | ✗ |
+| `quote` | `string` | const | `quoteIn ?? getQuote(output)` | ✗ |
+| `text` | `any` | const | `literal.quasis[0].value.cooked` | ✗ |
+| `lastLine` | `any` | const | `lines[lines.length - 1]` | ✗ |
+| `isStartEmpty` | `boolean` | const | `lines[0].trimEnd() === ''` | ✗ |
+| `isEndEmpty` | `boolean` | const | `lastLine.trimStart() === ''` | ✗ |
+| `expectedIndent` | `number` | const | `parentIndent + 2` | ✗ |
+| `firstLineIndent` | `string` | const | `START_OF_LINE_WHITESPACE_MATCHER.exec(
+        lines[0],
+      )![1]` | ✗ |
+| `requiresIndent` | `boolean` | const | `firstLineIndent.length > 0` | ✗ |
+| `matches` | `RegExpExecArray` | const | `START_OF_LINE_WHITESPACE_MATCHER.exec(line)!` | ✗ |
+| `indent` | `string` | const | `matches[1]` | ✗ |
+| `formattedIndented` | `string` | const | `requiresIndent
+          ? formatted
+              .split('\n')
+              .map(l => doIndent(l, expectedIndent))
+              .join('\n')
+          : formatted` | ✗ |
+| `memberExpr` | `any` | const | `callExpr.callee` | ✗ |
 
 
 ---
@@ -734,20 +782,6 @@ function checkValidTest(tests: TSESTree.ArrayExpression): void {
 ```
 // delegate object-style tests to the invalid checker (x3)
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
 
 
 ---

@@ -2,25 +2,50 @@
 
 # 📄 `fixture.tsx`
 
-## 📚 Table of Contents
-
-- [Functions](#functions)
-- [Interfaces](#interfaces)
-
 ## 📊 Analysis Summary
 
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 0
-- **Interfaces**: 1
-- **Type Aliases**: 0
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 0 |
+| 📊 Variables & Constants | 2 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 3 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
+## 📚 Table of Contents
+
+- [Variables & Constants](#variables-constants)
+- [JSX Elements](#jsx-elements)
+- [Functions](#functions)
+- [Interfaces](#interfaces)
 
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/jsx/JSXNamespacedName/fixtures/component/fixture.tsx`**
 
-## 📦 Imports
+## Variables & Constants
 
-> No imports found in this file.
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `x` | `any` | const | `<NamespacePropComponent a:b="tight spacing" />` | ✗ |
+| `y` | `any` | const | `<NamespacePropComponent a:b="loose spacing" />` | ✗ |
+
+
+---
+
+## JSX Elements
+
+| Component | Type | Props | Children |
+|-----------|------|-------|----------|
+| `NamespacePropComponent` | component | a:b="tight spacing" | *none* |
+| `NamespacePropComponent` | component | a:b="loose spacing" | *none* |
+| `div` | element | *none* | {props['a:b']} |
 
 
 ---
@@ -44,13 +69,6 @@ function NamespacePropComponent(props: NamespacePropComponentProps) {
 
 ---
 
-## Classes
-
-> No classes found in this file.
-
-
----
-
 ## Interfaces
 
 ### `NamespacePropComponentProps`
@@ -69,13 +87,6 @@ interface NamespacePropComponentProps {
 | Name | Type | Optional | Description |
 |------|------|----------|-------------|
 | `'a:b'` | `string` | ✗ |  |
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

@@ -2,19 +2,30 @@
 
 # 📄 `misc.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 15 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 7 |
+| 📊 Variables & Constants | 5 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 4 |
+| 🎯 Enums | 1 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 15
-- **Classes**: 0
-- **Imports**: 7
-- **Interfaces**: 0
-- **Type Aliases**: 4
+- [Enums](#enums)
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/util/misc.ts`**
@@ -30,6 +41,23 @@
 | `AST_NODE_TYPES` | `@typescript-eslint/utils` |
 | `getStaticValue` | `./astUtils` |
 | `isParenthesized` | `./astUtils` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `DEFINITION_EXTENSIONS` | `readonly [any, any, any]` | const | `[
+  ts.Extension.Dts,
+  ts.Extension.Dcts,
+  ts.Extension.Dmts,
+] as const` | ✗ |
+| `groups` | `Map<Key, T[]>` | const | `new Map<Key, T[]>()` | ✗ |
+| `name` | `string` | const | ``${member.key.value}`` | ✗ |
+| `idx` | `number` | let/var | `members.length - 1` | ✗ |
+| `key` | `any` | const | `node.type === AST_NODE_TYPES.MemberExpression ? node.property : node.key` | ✗ |
 
 
 ---
@@ -578,20 +606,6 @@ export function getStaticMemberAccessValue(
 
 ---
 
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
 ## Type Aliases
 
 ### `Equal<T>`
@@ -625,6 +639,34 @@ type NodeWithKey = | TSESTree.AccessorProperty
   | TSESTree.TSAbstractMethodDefinition
   | TSESTree.TSAbstractPropertyDefinition;
 ```
+
+
+---
+
+## Enums
+
+### `enum MemberNameType`
+
+<details><summary>Enum Code</summary>
+
+```ts
+export enum MemberNameType {
+  Private = 1,
+  Quoted = 2,
+  Normal = 3,
+  Expression = 4,
+}
+```
+</details>
+
+#### Members
+
+| Name | Value | Description |
+|------|-------|-------------|
+| `Private` | `1` |  |
+| `Quoted` | `2` |  |
+| `Normal` | `3` |  |
+| `Expression` | `4` |  |
 
 
 ---

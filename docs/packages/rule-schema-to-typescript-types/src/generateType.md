@@ -2,18 +2,28 @@
 
 # 📄 `generateType.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 10 |
+| 📊 Variables & Constants | 1 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 10
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/rule-schema-to-typescript-types/src/generateType.ts`**
@@ -32,6 +42,24 @@
 | `generateObjectType` | `./generateObjectType` |
 | `generateUnionType` | `./generateUnionType` |
 | `getCommentLines` | `./getCommentLines` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `UNSUPPORTED_KEYWORDS` | `Set<string>` | const | `new Set([
+  'allOf',
+  'dependencies',
+  'extends',
+  'maxProperties',
+  'minProperties',
+  'multipleOf',
+  'not',
+  'patternProperties',
+])` | ✗ |
 
 
 ---
@@ -170,27 +198,6 @@ export function generateType(schema: JSONSchema4, refMap: RefMap): AST {
 // anyOf: [T, U, V] -> T | U | V | T & U | T & V | U & V
 // in practice though it is most used to emulate a oneOf
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

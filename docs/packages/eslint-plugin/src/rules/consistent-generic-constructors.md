@@ -2,19 +2,29 @@
 
 # 📄 `consistent-generic-constructors.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 2 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 5 |
+| 📊 Variables & Constants | 4 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 2
-- **Classes**: 0
-- **Imports**: 5
-- **Interfaces**: 0
-- **Type Aliases**: 2
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/consistent-generic-constructors.ts`**
@@ -28,6 +38,21 @@
 | `createRule` | `../util` |
 | `nullThrows` | `../util` |
 | `NullThrowsReasons` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `lhs` | `any` | const | `lhsName.typeAnnotation?.typeAnnotation` | ✗ |
+| `typeAnnotation` | `any` | const | `context.sourceCode.getText(callee) +
+              context.sourceCode.getText(typeArguments)` | ✗ |
+| `hasParens` | `boolean` | const | `context.sourceCode.getTokenAfter(rhs.callee)?.value === '('` | ✗ |
+| `extraComments` | `Set<unknown>` | const | `new Set(
+            context.sourceCode.getCommentsInside(lhs.parent),
+          )` | ✗ |
 
 
 ---
@@ -118,20 +143,6 @@ function getIDToAttachAnnotation():
 // If the property's computed, we have to attach the
 // annotation after the square bracket, not the enclosed expression
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
 
 
 ---

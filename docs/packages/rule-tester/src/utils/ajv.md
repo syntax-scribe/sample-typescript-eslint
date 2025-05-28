@@ -2,18 +2,28 @@
 
 # 📄 `ajv.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 2 |
+| 📊 Variables & Constants | 1 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 2
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/rule-tester/src/utils/ajv.ts`**
@@ -24,6 +34,23 @@
 |------|--------|
 | `Ajv` | `ajv` |
 | `metaSchema` | `ajv/lib/refs/json-schema-draft-04.json` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `ajv` | `any` | const | `new Ajv({
+    meta: false,
+    missingRefs: 'ignore',
+    schemaId: 'auto',
+    useDefaults: true,
+    validateSchema: false,
+    verbose: true,
+    ...additionalOptions,
+  })` | ✗ |
 
 
 ---
@@ -65,27 +92,6 @@ export function ajvBuilder(additionalOptions = {}): Ajv.Ajv {
 ```
 // @ts-expect-error -- this is an untyped part of the ajv API (x5)
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

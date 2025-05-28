@@ -2,18 +2,29 @@
 
 # 📄 `Playground.tsx`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 33 |
+| 📊 Variables & Constants | 1 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 23 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
+- [JSX Elements](#jsx-elements)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 33
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/website/src/components/Playground.tsx`**
@@ -55,6 +66,118 @@
 | `OptionsSelector` | `./OptionsSelector` |
 | `styles` | `./Playground.module.css` |
 | `TypesDetails` | `./typeDetails/TypesDetails` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `ActiveVisualEditor` | `any` | const | `!isLoading &&
+    {
+      code: undefined,
+      eslintrc: visualEslintRc && ConfigEslint,
+      tsconfig: visualTSConfig && ConfigTypeScript,
+    }[activeTab]` | ✗ |
+
+
+---
+
+## JSX Elements
+
+| Component | Type | Props | Children |
+|-----------|------|-------|----------|
+| `div` | element | className={styles.codeContainer} | <PanelGroup> |
+| `PanelGroup` | component | autoSaveId="playground-size", className={styles.panelGroup}, direction={windowSize === 'mobile' ? 'vertical' : 'horizontal'} | <Panel>, <PanelResizeHandle>, <Panel>, <PanelResizeHandle>, <Panel> |
+| `Panel` | component | className={styles.PanelColumn}, collapsible={true}, defaultSize={windowSize === 'mobile' ? 0 : optionsSize}, id="playgroundMenu", ref={playgroundMenuRef} | <div> |
+| `div` | element | className={styles.playgroundMenu} | <OptionsSelector> |
+| `OptionsSelector` | component | setState={setState}, state={state}, tsVersions={tsVersions} | *none* |
+| `PanelResizeHandle` | component | className={styles.PanelResizeHandle}, style={windowSize === 'mobile' ? { display: 'none' } : {}} | *none* |
+| `Panel` | component | className={styles.PanelColumn}, collapsible={true}, id="playgroundEditor" | {isLoading && <Loader />}, <EditorTabs>, {ActiveVisualEditor && (
+            <ActiveVisualEditor
+              className={styles.tabCode}
+              config={state[activeTab]}
+              onChange={setState}
+              ruleOptions={ruleNames}
+            />
+          )}, <div>, <LoadingEditor> |
+| `Loader` | component | *none* | *none* |
+| `EditorTabs` | component | active={activeTab}, change={setTab}, showModal={onVisualEditor}, showVisualEditor={activeTab !== 'code'}, tabs={['code', 'tsconfig', 'eslintrc']} | *none* |
+| `ActiveVisualEditor` | component | className={styles.tabCode}, config={state[activeTab]}, onChange={setState}, ruleOptions={ruleNames} | *none* |
+| `div` | element | className={clsx(
+              styles.tabCode,
+              ActiveVisualEditor && styles.hidden,
+            )}, key="monacoEditor" | <EditorEmbed> |
+| `EditorEmbed` | component | *none* | *none* |
+| `LoadingEditor` | component | activeTab={activeTab}, onASTChange={setAstModel}, onChange={setState}, onLoaded={onLoaded}, onMarkersChange={setMarkers}, onSelect={setPosition}, selectedRange={selectedRange} | *none* |
+| `PanelResizeHandle` | component | className={styles.PanelResizeHandle} | *none* |
+| `Panel` | component | className={styles.PanelColumn}, collapsible={true}, id="playgroundInfo" | <div>, <div> |
+| `div` | element | *none* | <EditorTabs>, {state.showAST === 'es' && (
+              <ESQueryFilter
+                defaultValue={state.esQuery?.filter}
+                onChange={(filter, selector) =>
+                  setState({ esQuery: { filter, selector } })
+                }
+                onError={setEsQueryError}
+              />
+            )} |
+| `EditorTabs` | component | active={state.showAST ?? false}, additionalTabsInfo={{
+                Errors:
+                  markers?.reduce((prev, cur) => prev + cur.items.length, 0) ||
+                  0,
+              }}, change={showAST => setState({ showAST })}, tabs={detailTabs} | *none* |
+| `ESQueryFilter` | component | defaultValue={state.esQuery?.filter}, onChange={(filter, selector) =>
+                  setState({ esQuery: { filter, selector } })
+                }, onError={setEsQueryError} | *none* |
+| `div` | element | className={styles.playgroundInfoContainer} | {state.showAST === 'es' && esQueryError ? (
+              <ErrorViewer
+                title="Invalid Selector"
+                type="warning"
+                value={esQueryError}
+              />
+            ) : state.showAST && astModel ? (
+              state.showAST === 'types' && astModel.storedTsAST ? (
+                <TypesDetails
+                  cursorPosition={position}
+                  onHoverNode={setSelectedRange}
+                  typeChecker={astModel.typeChecker}
+                  value={astModel.storedTsAST}
+                />
+              ) : (
+                <ASTViewer
+                  cursorPosition={position}
+                  enableScrolling={state.scroll}
+                  filter={
+                    state.showAST === 'es' ? state.esQuery?.selector : undefined
+                  }
+                  key={state.showAST}
+                  onHoverNode={setSelectedRange}
+                  showTokens={state.showTokens}
+                  value={
+                    state.showAST === 'types'
+                      ? undefined
+                      : astModel[
+                          `stored${({ es: 'AST', scope: 'Scope', ts: 'TsAST' } as const)[state.showAST]}` as const
+                        ]
+                  }
+                />
+              )
+            ) : (
+              <ErrorsViewer value={markers} />
+            )} |
+| `ErrorViewer` | component | title="Invalid Selector", type="warning", value={esQueryError} | *none* |
+| `TypesDetails` | component | cursorPosition={position}, onHoverNode={setSelectedRange}, typeChecker={astModel.typeChecker}, value={astModel.storedTsAST} | *none* |
+| `ASTViewer` | component | cursorPosition={position}, enableScrolling={state.scroll}, filter={
+                    state.showAST === 'es' ? state.esQuery?.selector : undefined
+                  }, key={state.showAST}, onHoverNode={setSelectedRange}, showTokens={state.showTokens}, value={
+                    state.showAST === 'types'
+                      ? undefined
+                      : astModel[
+                          `stored${({ es: 'AST', scope: 'Scope', ts: 'TsAST' } as const)[state.showAST]}` as const
+                        ]
+                  } | *none* |
+| `ErrorsViewer` | component | value={markers} | *none* |
 
 
 ---
@@ -286,26 +409,5 @@ function Playground(): React.JSX.Element {
   - `clsx (from clsx)`
   - `markers?.reduce`
   - `setState`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

@@ -2,19 +2,29 @@
 
 # 📄 `method-signature-style.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 37 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 8 |
+| 📊 Variables & Constants | 4 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 37
-- **Classes**: 0
-- **Imports**: 8
-- **Interfaces**: 0
-- **Type Aliases**: 2
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/method-signature-style.ts`**
@@ -31,6 +41,20 @@
 | `isOpeningParenToken` | `../util` |
 | `isSemicolonToken` | `../util` |
 | `nullThrows` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `params` | `string` | let/var | `'()'` | ✗ |
+| `parent` | `any` | const | `methodNode.parent` | ✗ |
+| `members` | `any` | const | `parent.type === AST_NODE_TYPES.TSInterfaceBody
+              ? parent.body
+              : parent.members` | ✗ |
+| `typeNode` | `any` | const | `propertyNode.typeAnnotation?.typeAnnotation` | ✗ |
 
 
 ---
@@ -1057,20 +1081,6 @@ fixer => {
   - `getMethodReturnType`
   - `getDelimiter`
   - `fixer.replaceText`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
 
 ---
 

@@ -2,25 +2,37 @@
 
 # 📄 `fixture.ts`
 
-## 📚 Table of Contents
-
-- [Functions](#functions)
-- [Classes](#classes)
-
 ## 📊 Analysis Summary
 
-- **Functions**: 1
-- **Classes**: 1
-- **Imports**: 0
-- **Interfaces**: 0
-- **Type Aliases**: 0
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 1 |
+| 📦 Imports | 0 |
+| 📊 Variables & Constants | 0 |
+| ✨ Decorators | 1 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
+## 📚 Table of Contents
+
+- [Decorators](#decorators)
+- [Functions](#functions)
+- [Classes](#classes)
 
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/legacy-fixtures/method-decorators/fixtures/method-decorator-instance-member/fixture.ts`**
 
-## 📦 Imports
+## Decorators
 
-> No imports found in this file.
+| Name | Target | Target Type | Arguments |
+|------|--------|-------------|----------|
+| `@onlyRead` | `A.instanceMethod` | method | *none* |
 
 
 ---
@@ -66,20 +78,6 @@ class A {
   instanceMethod() {}
 ```
 </details>
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

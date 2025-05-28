@@ -2,24 +2,36 @@
 
 # 📄 `component-intrinsic-name.tsx`
 
-## 📚 Table of Contents
-
-- [Functions](#functions)
-
 ## 📊 Analysis Summary
 
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 0
-- **Interfaces**: 0
-- **Type Aliases**: 0
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 0 |
+| 📊 Variables & Constants | 0 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 1 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
+## 📚 Table of Contents
+
+- [JSX Elements](#jsx-elements)
+- [Functions](#functions)
 
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/tests/fixtures/jsx/component-intrinsic-name.tsx`**
 
-## 📦 Imports
+## JSX Elements
 
-> No imports found in this file.
+| Component | Type | Props | Children |
+|-----------|------|-------|----------|
+| `div` | element | *none* | *none* |
 
 
 ---
@@ -36,26 +48,5 @@ function div() {}
 </details>
 
 - **Return Type**: `void`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

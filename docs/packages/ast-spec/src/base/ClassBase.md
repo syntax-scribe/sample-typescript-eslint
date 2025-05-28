@@ -2,18 +2,27 @@
 
 # 📄 `ClassBase.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 0 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 8 |
+| 📊 Variables & Constants | 0 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
 - [Interfaces](#interfaces)
-
-## 📊 Analysis Summary
-
-- **Functions**: 0
-- **Classes**: 0
-- **Imports**: 8
-- **Interfaces**: 1
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/base/ClassBase.ts`**
@@ -37,13 +46,6 @@
 ## 🔧 Functions
 
 > No functions found in this file.
-
-
----
-
-## Classes
-
-> No classes found in this file.
 
 
 ---
@@ -125,13 +127,6 @@ export interface ClassBase extends BaseNode {
 | `superClass` | `LeftHandSideExpression | null` | ✗ |  |
 | `superTypeArguments` | `TSTypeParameterInstantiation | undefined` | ✗ |  |
 | `typeParameters` | `TSTypeParameterDeclaration | undefined` | ✗ |  |
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

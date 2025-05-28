@@ -2,18 +2,29 @@
 
 # 📄 `no-unsafe-assignment.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 7 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 13 |
+| 📊 Variables & Constants | 8 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 1 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 7
-- **Classes**: 0
-- **Imports**: 13
-- **Interfaces**: 0
-- **Type Aliases**: 0
+- [Enums](#enums)
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/no-unsafe-assignment.ts`**
@@ -35,6 +46,32 @@
 | `isUnsafeAssignment` | `../util` |
 | `nullThrows` | `../util` |
 | `NullThrowsReasons` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `didReport` | `boolean` | let/var | `false` | ✗ |
+| `receiverElement` | `any` | const | `receiverNode.elements[receiverIndex]` | ✗ |
+| `senderType` | `any` | const | `tupleElements[receiverIndex] as ts.Type | undefined` | ✗ |
+| `properties` | `Map<unknown, unknown>` | const | `new Map(
+        senderType
+          .getProperties()
+          .map(property => [
+            property.getName(),
+            checker.getTypeOfSymbolAtLocation(property, senderNode),
+          ]),
+      )` | ✗ |
+| `didReport` | `boolean` | let/var | `false` | ✗ |
+| `key` | `string` | let/var | `*not shown*` | ✗ |
+| `receiverType` | `any` | const | `comparisonType === ComparisonType.Contextual
+          ? (getContextualType(checker, receiverTsNode as ts.Expression) ??
+            services.getTypeAtLocation(receiverNode))
+          : services.getTypeAtLocation(receiverNode)` | ✗ |
+| `messageId` | `'anyAssignment' | 'anyAssignmentThis'` | let/var | `'anyAssignment'` | ✗ |
 
 
 ---
@@ -460,23 +497,31 @@ function createData(
 
 ---
 
-## Classes
+## Enums
 
-> No classes found in this file.
+### `const enum ComparisonType`
 
+<details><summary>Enum Code</summary>
 
----
+```ts
+const enum ComparisonType {
+  /** Do no assignment comparison */
+  None,
+  /** Use the receiver's type for comparison */
+  Basic,
+  /** Use the sender's contextual type for comparison */
+  Contextual,
+}
+```
+</details>
 
-## Interfaces
+#### Members
 
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
+| Name | Value | Description |
+|------|-------|-------------|
+| `None` | *auto* | / Do no assignment comparison */ |
+| `Basic` | *auto* | / Use the receiver's type for comparison */ |
+| `Contextual` | *auto* | / Use the sender's contextual type for comparison */ |
 
 
 ---

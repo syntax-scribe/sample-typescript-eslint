@@ -2,27 +2,29 @@
 
 # 📄 `declare-function-with-typeof.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 0 |
+| 📊 Variables & Constants | 0 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Functions](#functions)
 
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 0
-- **Interfaces**: 0
-- **Type Aliases**: 0
-
 ## 🛠️ File Location:
 📂 **`packages/parser/tests/fixtures/scope-analysis/declare-function-with-typeof.ts`**
-
-## 📦 Imports
-
-> No imports found in this file.
-
-
----
 
 ## Functions
 
@@ -38,26 +40,5 @@ function eachr<Key, Value>(subject: Map<Key, Value>): typeof subject;
 - **Parameters**:
   - `subject: Map<Key, Value>`
 - **Return Type**: `typeof subject`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

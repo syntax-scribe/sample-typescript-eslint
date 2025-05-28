@@ -2,20 +2,30 @@
 
 # 📄 `SourceCodeFixer.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 4 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 2 |
+| 📊 Variables & Constants | 11 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 4
-- **Classes**: 0
-- **Imports**: 2
-- **Interfaces**: 1
-- **Type Aliases**: 2
 
 ## 🛠️ File Location:
 📂 **`packages/rule-tester/src/utils/SourceCodeFixer.ts`**
@@ -26,6 +36,25 @@
 |------|--------|
 | `Linter` | `@typescript-eslint/utils/ts-eslint` |
 | `hasOwnProperty` | `./hasOwnProperty` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `BOM` | `"﻿"` | const | `'\uFEFF'` | ✗ |
+| `remainingMessages` | `LintMessage[]` | const | `[]` | ✗ |
+| `fixes` | `LintMessageWithFix[]` | const | `[]` | ✗ |
+| `bom` | `"" | "﻿"` | const | `sourceText.startsWith(BOM) ? BOM : ''` | ✗ |
+| `text` | `string` | const | `bom ? sourceText.slice(1) : sourceText` | ✗ |
+| `lastPos` | `number` | let/var | `Number.NEGATIVE_INFINITY` | ✗ |
+| `output` | `string` | let/var | `bom` | ✗ |
+| `fix` | `any` | const | `problem.fix` | ✗ |
+| `start` | `any` | const | `fix.range[0]` | ✗ |
+| `end` | `any` | const | `fix.range[1]` | ✗ |
+| `fixesWereApplied` | `boolean` | let/var | `false` | ✗ |
 
 
 ---
@@ -268,13 +297,6 @@ function attemptFix(problem: LintMessageWithFix): boolean {
 // Remove BOM.
 // Make output to this fix. (x3)
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
 
 
 ---

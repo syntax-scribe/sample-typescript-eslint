@@ -2,19 +2,30 @@
 
 # 📄 `compareNodes.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 7 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 3 |
+| 📊 Variables & Constants | 14 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 1 |
+| 🎯 Enums | 1 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 7
-- **Classes**: 0
-- **Imports**: 3
-- **Interfaces**: 0
-- **Type Aliases**: 1
+- [Enums](#enums)
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/prefer-optional-chain-utils/compareNodes.ts`**
@@ -26,6 +37,35 @@
 | `TSESTree` | `@typescript-eslint/utils` |
 | `AST_NODE_TYPES` | `@typescript-eslint/utils` |
 | `visitorKeys` | `@typescript-eslint/visitor-keys` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `elB` | `unknown` | const | `arrayB[idx]` | ✗ |
+| `currentVisitorKeys` | `any` | const | `visitorKeys[nodeA.type]` | ✗ |
+| `nodeAChildOrChildren` | `unknown` | const | `nodeA[key] as unknown` | ✗ |
+| `nodeBChildOrChildren` | `unknown` | const | `nodeB[key] as unknown` | ✗ |
+| `arrayA` | `unknown[]` | const | `nodeAChildOrChildren as unknown[]` | ✗ |
+| `arrayB` | `unknown[]` | const | `nodeBChildOrChildren as unknown[]` | ✗ |
+| `nodeBCall` | `TSESTree.Node` | const | `nodeB as typeof nodeA` | ✗ |
+| `nodeBLiteral` | `TSESTree.Node` | const | `nodeB as typeof nodeA` | ✗ |
+| `nodeBMember` | `TSESTree.Node` | const | `nodeB as typeof nodeA` | ✗ |
+| `nodeBTemplate` | `TSESTree.Node` | const | `nodeB as typeof nodeA` | ✗ |
+| `elB` | `any` | const | `nodeBTemplate.quasis[idx]` | ✗ |
+| `areQuasisEqual` | `any` | const | `nodeA.quasis.length === nodeBTemplate.quasis.length &&
+        nodeA.quasis.every((elA, idx) => {
+          const elB = nodeBTemplate.quasis[idx];
+          return elA.value.cooked === elB.value.cooked;
+        })` | ✗ |
+| `nodeBElement` | `TSESTree.Node` | const | `nodeB as typeof nodeA` | ✗ |
+| `COMPARE_NODES_CACHE` | `WeakMap<TSESTree.Node, WeakMap<TSESTree.Node, NodeComparisonResult>>` | const | `new WeakMap<
+  TSESTree.Node,
+  WeakMap<TSESTree.Node, NodeComparisonResult>
+>()` | ✗ |
 
 
 ---
@@ -612,20 +652,6 @@ export function compareNodes(
 
 ---
 
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
 ## Type Aliases
 
 ### `CompareNodesArgument`
@@ -633,6 +659,35 @@ export function compareNodes(
 ```ts
 type CompareNodesArgument = TSESTree.Node | null | undefined;
 ```
+
+
+---
+
+## Enums
+
+### `const enum NodeComparisonResult`
+
+<details><summary>Enum Code</summary>
+
+```ts
+export const enum NodeComparisonResult {
+  /** the two nodes are comparably the same */
+  Equal = 'Equal',
+  /** the left node is a subset of the right node */
+  Subset = 'Subset',
+  /** the left node is not the same or is a superset of the right node */
+  Invalid = 'Invalid',
+}
+```
+</details>
+
+#### Members
+
+| Name | Value | Description |
+|------|-------|-------------|
+| `Equal` | `Equal` | / the two nodes are comparably the same */ |
+| `Subset` | `Subset` | / the left node is a subset of the right node */ |
+| `Invalid` | `Invalid` | / the left node is not the same or is a superset of the right node */ |
 
 
 ---

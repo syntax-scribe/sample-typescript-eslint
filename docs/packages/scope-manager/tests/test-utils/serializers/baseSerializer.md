@@ -2,19 +2,29 @@
 
 # 📄 `baseSerializer.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 1 |
+| 📊 Variables & Constants | 7 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 1 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 1
-- **Interfaces**: 0
-- **Type Aliases**: 1
 
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/tests/test-utils/serializers/baseSerializer.ts`**
@@ -24,6 +34,22 @@
 | Name | Source |
 |------|--------|
 | `NewPlugin` | `@vitest/pretty-format` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `SEEN_THINGS` | `Set<unknown>` | const | `new Set<unknown>()` | ✗ |
+| `id` | `string` | const | `thing.$id != null ? `$${thing.$id}` : ''` | ✗ |
+| `constructorName` | `string` | const | `(Object.getPrototypeOf(thing) as Object)
+        .constructor.name` | ✗ |
+| `name` | `string` | const | ``${constructorName}${id}`` | ✗ |
+| `outputLines` | `any[]` | const | `[]` | ✗ |
+| `childIndentation` | `any` | const | `indentation + config.indent` | ✗ |
+| `value` | `unknown` | let/var | `thing[key as string]` | ✗ |
 
 
 ---
@@ -46,20 +72,6 @@ export function createSerializer<Constructor extends ConstructorSignature>(
   - `type: Constructor`
   - `keys: (keyof InstanceType<Constructor>)[]`
 - **Return Type**: `NewPlugin`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
 
 ---
 

@@ -2,20 +2,31 @@
 
 # 📄 `Visitor.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 1 |
+| 📦 Imports | 6 |
+| 📊 Variables & Constants | 1 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 1 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
+- [Re-exports](#re-exports)
 - [Functions](#functions)
 - [Classes](#classes)
 - [Interfaces](#interfaces)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 1
-- **Imports**: 6
-- **Interfaces**: 1
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/src/referencer/Visitor.ts`**
@@ -30,6 +41,24 @@
 | `VisitorOptions` | `./VisitorBase` |
 | `PatternVisitor` | `./PatternVisitor` |
 | `VisitorBase` | `./VisitorBase` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `visitor` | `PatternVisitor` | const | `new PatternVisitor(this.#options, node, callback)` | ✗ |
+
+
+---
+
+## Re-exports
+
+| Type | Source | Exported Names |
+|------|--------|----------------|
+| named | `./VisitorBase` | VisitorBase, VisitorOptions |
 
 
 ---
@@ -163,13 +192,6 @@ interface VisitPatternOptions extends PatternVisitorOptions {
 | Name | Type | Optional | Description |
 |------|------|----------|-------------|
 | `processRightHandNodes` | `boolean` | ✓ |  |
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

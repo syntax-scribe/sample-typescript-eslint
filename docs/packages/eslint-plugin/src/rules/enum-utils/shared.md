@@ -2,18 +2,28 @@
 
 # 📄 `shared.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 4 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 1 |
+| 📊 Variables & Constants | 5 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 4
-- **Classes**: 0
-- **Imports**: 1
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/enum-utils/shared.ts`**
@@ -23,6 +33,19 @@
 | Name | Source |
 |------|--------|
 | `isTypeFlagSet` | `../../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `symbol` | `any` | const | `type.getSymbol()!` | ✗ |
+| `memberDeclaration` | `ts.EnumMember` | const | `symbol.valueDeclaration as ts.EnumMember` | ✗ |
+| `enumDeclaration` | `any` | const | `memberDeclaration.parent` | ✗ |
+| `memberNameIdentifier` | `any` | const | `memberDeclaration.name` | ✗ |
+| `enumName` | `any` | const | `enumDeclaration.name.text` | ✗ |
 
 
 ---
@@ -199,26 +222,5 @@ export function getEnumKeyForLiteral(
 - **Calls**:
   - `memberNameIdentifier.text.replaceAll`
   - `memberNameIdentifier.expression.getText`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

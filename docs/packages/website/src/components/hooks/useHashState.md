@@ -2,18 +2,28 @@
 
 # 📄 `useHashState.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 10 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 10 |
+| 📊 Variables & Constants | 13 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 10
-- **Classes**: 0
-- **Imports**: 10
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/website/src/components/hooks/useHashState.ts`**
@@ -32,6 +42,37 @@
 | `toJsonConfig` | `../lib/json` |
 | `shallowEqual` | `../lib/shallowEqual` |
 | `fileTypes` | `../options` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `searchParams` | `URLSearchParams` | const | `new URLSearchParams(hash)` | ✗ |
+| `eslintrc` | `string | undefined` | let/var | `*not shown*` | ✗ |
+| `tsconfig` | `string | undefined` | let/var | `*not shown*` | ✗ |
+| `esQuery` | `ConfigModel['esQuery'] | undefined` | let/var | `*not shown*` | ✗ |
+| `fileType` | ``${ts.Extension}`` | const | `searchParams.get('jsx') === 'true'
+        ? '.tsx'
+        : readFileType(searchParams.get('fileType'))` | ✗ |
+| `code` | `string` | const | `searchParams.has('code')
+      ? readQueryParam(searchParams.get('code'), '')
+      : ''` | ✗ |
+| `searchParams` | `URLSearchParams` | const | `new URLSearchParams()` | ✗ |
+| `state` | `Partial<ConfigModel>` | const | `{}` | ✗ |
+| `ts` | `unknown` | const | `config.ts` | ✗ |
+| `fileType` | `unknown` | const | `config.fileType` | ✗ |
+| `showAST` | `unknown` | const | `config.showAST` | ✗ |
+| `config` | `Partial<ConfigModel>` | const | `{
+    fileType: newState.fileType,
+    scroll: newState.scroll,
+    showAST: newState.showAST,
+    sourceType: newState.sourceType,
+    ts: newState.ts,
+  }` | ✗ |
+| `newState` | `any` | const | `{ ...oldState, ...cfg }` | ✗ |
 
 
 ---
@@ -412,26 +453,5 @@ export function useHashState(
   - `history.replace`
   - `writeStateToUrl`
   - `window.location.reload`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

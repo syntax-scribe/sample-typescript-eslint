@@ -2,18 +2,28 @@
 
 # 📄 `play.tsx`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 6 |
+| 📊 Variables & Constants | 0 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 6 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [JSX Elements](#jsx-elements)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 6
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/website/src/pages/play.tsx`**
@@ -28,6 +38,26 @@
 | `lazy` | `react` |
 | `Suspense` | `react` |
 | `React` | `react` |
+
+
+---
+
+## JSX Elements
+
+| Component | Type | Props | Children |
+|-----------|------|-------|----------|
+| `Layout` | component | description="Playground", noFooter={true}, title="Playground" | <BrowserOnly> |
+| `BrowserOnly` | component | fallback={<Loader />} | {(): React.JSX.Element => {
+          return (
+            <Suspense fallback={<Loader />}>
+              <Playground />
+            </Suspense>
+          );
+        }} |
+| `Loader` | component | *none* | *none* |
+| `Suspense` | component | fallback={<Loader />} | <Playground> |
+| `Loader` | component | *none* | *none* |
+| `Playground` | component | *none* | *none* |
 
 
 ---
@@ -58,26 +88,5 @@ function Play(): React.JSX.Element {
 </details>
 
 - **Return Type**: `React.JSX.Element`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

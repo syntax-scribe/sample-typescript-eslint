@@ -2,19 +2,29 @@
 
 # 📄 `no-duplicate-type-constituents.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 25 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 8 |
+| 📊 Variables & Constants | 11 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 3 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 21
-- **Classes**: 0
-- **Imports**: 8
-- **Interfaces**: 0
-- **Type Aliases**: 3
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/no-duplicate-type-constituents.ts`**
@@ -31,6 +41,28 @@
 | `isFunctionOrFunctionType` | `../util` |
 | `nullThrows` | `../util` |
 | `NullThrowsReasons` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `astIgnoreKeys` | `Set<string>` | const | `new Set(['loc', 'parent', 'range'])` | ✗ |
+| `afterUnionOrIntersectionToken` | `TSESTree.Token | undefined` | let/var | `*not shown*` | ✗ |
+| `bracketBeforeTokens` | `any` | let/var | `*not shown*` | ✗ |
+| `bracketAfterTokens` | `any` | let/var | `*not shown*` | ✗ |
+| `duplicatedPrevious` | `any` | const | `uniqueConstituents.find(ele => isSameAstNode(ele, constituentNode)) ??
+        cachedTypeMap.get(type)` | ✗ |
+| `cachedTypeMap` | `Map<Type, TSESTree.TypeNode>` | const | `new Map<Type, TSESTree.TypeNode>()` | ✗ |
+| `uniqueConstituents` | `TSESTree.TypeNode[]` | const | `[]` | ✗ |
+| `unionOrIntersection` | `"Intersection" | "Union"` | const | `node.type === AST_NODE_TYPES.TSIntersectionType
+          ? 'Intersection'
+          : 'Union'` | ✗ |
+| `maybeTypeAnnotation` | `any` | const | `node.parent` | ✗ |
+| `maybeIdentifier` | `any` | const | `maybeTypeAnnotation.parent` | ✗ |
+| `maybeFunction` | `any` | const | `maybeIdentifier.parent` | ✗ |
 
 
 ---
@@ -237,6 +269,36 @@ function report(
             constituentNode.parent.range[0] <= token.range[0] &&
             token.range[1] <= constituentNode.parent.range[1],
         }).at`
+### `filter(token: any): boolean`
+
+<details><summary>Code</summary>
+
+```ts
+token =>
+            ['&', '|'].includes(token.value) &&
+            constituentNode.parent.range[0] <= token.range[0] &&
+            token.range[1] <= constituentNode.parent.range[1]
+```
+</details>
+
+- **Parameters**:
+  - `token: any`
+- **Return Type**: `boolean`
+### `filter(token: any): boolean`
+
+<details><summary>Code</summary>
+
+```ts
+token =>
+            ['&', '|'].includes(token.value) &&
+            constituentNode.parent.range[0] <= token.range[0] &&
+            token.range[1] <= constituentNode.parent.range[1]
+```
+</details>
+
+- **Parameters**:
+  - `token: any`
+- **Return Type**: `boolean`
 ### `filter(token: any): boolean`
 
 <details><summary>Code</summary>
@@ -643,6 +705,36 @@ token =>
 - **Parameters**:
   - `token: any`
 - **Return Type**: `boolean`
+### `filter(token: any): boolean`
+
+<details><summary>Code</summary>
+
+```ts
+token =>
+            ['&', '|'].includes(token.value) &&
+            constituentNode.parent.range[0] <= token.range[0] &&
+            token.range[1] <= constituentNode.parent.range[1]
+```
+</details>
+
+- **Parameters**:
+  - `token: any`
+- **Return Type**: `boolean`
+### `filter(token: any): boolean`
+
+<details><summary>Code</summary>
+
+```ts
+token =>
+            ['&', '|'].includes(token.value) &&
+            constituentNode.parent.range[0] <= token.range[0] &&
+            token.range[1] <= constituentNode.parent.range[1]
+```
+</details>
+
+- **Parameters**:
+  - `token: any`
+- **Return Type**: `boolean`
 ### `fix(fixer: any): any[]`
 
 <details><summary>Code</summary>
@@ -873,20 +965,6 @@ fixer =>
   - `maybeFunction.params.includes`
   - `tsutils.isTypeFlagSet`
   - `report`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
 
 ---
 

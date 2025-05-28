@@ -2,19 +2,29 @@
 
 # 📄 `no-shadow.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 23 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 9 |
+| 📊 Variables & Constants | 29 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 23
-- **Classes**: 0
-- **Imports**: 9
-- **Interfaces**: 0
-- **Type Aliases**: 2
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/no-shadow.ts`**
@@ -32,6 +42,58 @@
 | `createRule` | `../util` |
 | `isDefinitionFile` | `../util` |
 | `isTypeImport` | `../util/isTypeImport` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `allowedFunctionVariableDefTypes` | `Set<any>` | const | `new Set([
+  AST_NODE_TYPES.TSCallSignatureDeclaration,
+  AST_NODE_TYPES.TSFunctionType,
+  AST_NODE_TYPES.TSMethodSignature,
+  AST_NODE_TYPES.TSEmptyBodyFunctionExpression,
+  AST_NODE_TYPES.TSDeclareFunction,
+  AST_NODE_TYPES.TSConstructSignatureDeclaration,
+  AST_NODE_TYPES.TSConstructorType,
+])` | ✗ |
+| `functionsHoistedNodes` | `Set<any>` | const | `new Set([AST_NODE_TYPES.FunctionDeclaration])` | ✗ |
+| `typesHoistedNodes` | `Set<any>` | const | `new Set([
+  AST_NODE_TYPES.TSInterfaceDeclaration,
+  AST_NODE_TYPES.TSTypeAliasDeclaration,
+])` | ✗ |
+| `isShadowedValue` | `any` | const | `!('isValueVariable' in shadowed) ||
+        !firstDefinition ||
+        (!isTypeImport(firstDefinition) && shadowed.isValueVariable)` | ✗ |
+| `isShadowedValue` | `any` | const | `'isValueVariable' in shadowed ? shadowed.isValueVariable : true` | ✗ |
+| `typeParameter` | `any` | const | `variable.identifiers[0].parent` | ✗ |
+| `typeParameterDecl` | `any` | const | `typeParameter.parent` | ✗ |
+| `functionExpr` | `any` | const | `typeParameterDecl.parent` | ✗ |
+| `methodDefinition` | `any` | const | `functionExpr.parent` | ✗ |
+| `typeParameter` | `any` | const | `variable.identifiers[0].parent` | ✗ |
+| `typeParameterDecl` | `any` | const | `typeParameter.parent` | ✗ |
+| `classDecl` | `any` | const | `typeParameterDecl.parent` | ✗ |
+| `block` | `any` | const | `variable.scope.block` | ✗ |
+| `block` | `any` | const | `variable.scope.block` | ✗ |
+| `currentNode` | `any` | let/var | `node` | ✗ |
+| `upper` | `any` | const | `scope.upper` | ✗ |
+| `fun` | `any` | const | `variableScope.block` | ✗ |
+| `node` | `any` | let/var | `outerDef.name as TSESTree.Node | undefined` | ✗ |
+| `location` | `any` | const | `callExpression.range[1]` | ✗ |
+| `outerScope` | `any` | const | `scopeVar.scope` | ✗ |
+| `outer` | `any` | const | `outerDef?.parent?.range` | ✗ |
+| `innerScope` | `any` | const | `variable.scope` | ✗ |
+| `inner` | `any` | const | `innerDef?.name.range` | ✗ |
+| `fileName` | `any` | const | `context.filename` | ✗ |
+| `variables` | `any` | const | `scope.variables` | ✗ |
+| `shadowed` | `any` | const | `scope.upper
+          ? ASTUtils.findVariable(scope.upper, variable.name)
+          : null` | ✗ |
+| `isESLintGlobal` | `boolean` | const | `'writeable' in shadowed` | ✗ |
+| `stack` | `any[]` | const | `[...globalScope.childScopes]` | ✗ |
+| `scope` | `any` | const | `stack.pop()!` | ✗ |
 
 
 ---
@@ -1037,20 +1099,6 @@ function checkForShadows(scope: TSESLint.Scope.Scope): void {
 // this is impossible for the scope analyser to understand
 // so we have to handle this manually in this rule
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
 
 
 ---

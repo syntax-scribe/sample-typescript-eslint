@@ -2,18 +2,28 @@
 
 # 📄 `getWrappingFixer.test.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 66 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 5 |
+| 📊 Variables & Constants | 1 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 18
-- **Classes**: 0
-- **Imports**: 5
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/tests/util/getWrappingFixer.test.ts`**
@@ -27,6 +37,22 @@
 | `createRule` | `../../src/util` |
 | `getWrappingFixer` | `../../src/util` |
 | `getFixturesRootDir` | `../RuleTester` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `ruleTester` | `any` | const | `new RuleTester({
+  languageOptions: {
+    parserOptions: {
+      project: './tsconfig.json',
+      tsconfigRootDir: rootPath,
+    },
+  },
+})` | ✗ |
 
 
 ---
@@ -59,6 +85,294 @@
   - `context.report`
   - `getWrappingFixer (from ../../src/util)`
   - `code.replaceAll`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => `void ${code.replaceAll('wrap', 'wrapped')}`
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => `void ${code.replaceAll('wrap', 'wrapped')}`
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => `void ${code.replaceAll('wrap', 'wrapped')}`
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => `void ${code.replaceAll('wrap', 'wrapped')}`
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => `void ${code.replaceAll('wrap', 'wrapped')}`
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => `void ${code.replaceAll('wrap', 'wrapped')}`
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => `void ${code.replaceAll('wrap', 'wrapped')}`
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => `void ${code.replaceAll('wrap', 'wrapped')}`
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => `void ${code.replaceAll('wrap', 'wrapped')}`
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => `void ${code.replaceAll('wrap', 'wrapped')}`
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => `void ${code.replaceAll('wrap', 'wrapped')}`
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => `void ${code.replaceAll('wrap', 'wrapped')}`
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => `void ${code.replaceAll('wrap', 'wrapped')}`
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => `void ${code.replaceAll('wrap', 'wrapped')}`
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => `void ${code.replaceAll('wrap', 'wrapped')}`
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => `void ${code.replaceAll('wrap', 'wrapped')}`
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => `void ${code.replaceAll('wrap', 'wrapped')}`
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => `void ${code.replaceAll('wrap', 'wrapped')}`
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => `void ${code.replaceAll('wrap', 'wrapped')}`
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => `void ${code.replaceAll('wrap', 'wrapped')}`
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => `void ${code.replaceAll('wrap', 'wrapped')}`
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => `void ${code.replaceAll('wrap', 'wrapped')}`
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => `void ${code.replaceAll('wrap', 'wrapped')}`
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => `void ${code.replaceAll('wrap', 'wrapped')}`
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
 ### `wrap(code: string): string`
 
 <details><summary>Code</summary>
@@ -277,26 +591,293 @@ code => code
 - **Parameters**:
   - `code: string`
 - **Return Type**: `string`
+### `wrap(code: string): string`
 
----
+<details><summary>Code</summary>
 
-## Classes
+```ts
+code => code
+```
+</details>
 
-> No classes found in this file.
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
 
+<details><summary>Code</summary>
 
----
+```ts
+code => code
+```
+</details>
 
-## Interfaces
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
 
-> No interfaces found in this file.
+<details><summary>Code</summary>
 
+```ts
+code => code
+```
+</details>
 
----
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
 
-## Type Aliases
+<details><summary>Code</summary>
 
-> No type aliases found in this file.
+```ts
+code => code
+```
+</details>
 
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => code
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => code
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => code
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => code
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => code
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => code
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => code
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => code
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => code
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => code
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => code
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => code
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => code
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => code
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => code
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => code
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => code
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => code
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => code
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
+### `wrap(code: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+code => code
+```
+</details>
+
+- **Parameters**:
+  - `code: string`
+- **Return Type**: `string`
 
 ---

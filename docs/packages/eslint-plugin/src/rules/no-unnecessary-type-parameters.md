@@ -2,20 +2,30 @@
 
 # 📄 `no-unnecessary-type-parameters.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 45 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 10 |
+| 📊 Variables & Constants | 18 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 2 |
+| 📑 Type Aliases | 1 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 29
-- **Classes**: 0
-- **Imports**: 10
-- **Interfaces**: 2
-- **Type Aliases**: 1
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/no-unnecessary-type-parameters.ts`**
@@ -34,6 +44,41 @@
 | `getWrappingFixer` | `../util` |
 | `nullThrows` | `../util` |
 | `NullThrowsReasons` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `tsNode` | `NodeWithTypeParameters` | const | `parserServices.esTreeNodeToTSNodeMap.get(
+        node,
+      ) as NodeWithTypeParameters` | ✗ |
+| `counts` | `Map<ts.Identifier, number> | undefined` | let/var | `*not shown*` | ✗ |
+| `constraint` | `any` | let/var | `esTypeParameter.constraint` | ✗ |
+| `constraintText` | `any` | let/var | `constraint != null &&
+                  constraint.type !== AST_NODE_TYPES.TSAnyKeyword
+                    ? context.sourceCode.getText(constraint)
+                    : 'unknown'` | ✗ |
+| `referenceNode` | `any` | let/var | `reference.identifier` | ✗ |
+| `isComplexType` | `boolean` | let/var | `constraint?.type === AST_NODE_TYPES.TSUnionType ||
+                      constraint?.type === AST_NODE_TYPES.TSIntersectionType ||
+                      constraint?.type === AST_NODE_TYPES.TSConditionalType` | ✗ |
+| `total` | `number` | let/var | `0` | ✗ |
+| `counts` | `Map<ts.Identifier, number>` | const | `new Map<ts.Identifier, number>()` | ✗ |
+| `visitedSymbolLists` | `Set<ts.Symbol[]>` | const | `new Set<ts.Symbol[]>()` | ✗ |
+| `typeUsages` | `Map<ts.Type, number>` | const | `new Map<ts.Type, number>()` | ✗ |
+| `visitedConstraints` | `Set<ts.TypeNode>` | const | `new Set<ts.TypeNode>()` | ✗ |
+| `functionLikeType` | `boolean` | let/var | `false` | ✗ |
+| `visitedDefault` | `boolean` | let/var | `false` | ✗ |
+| `declaration` | `any` | const | `type.getSymbol()?.getDeclarations()?.[0] as
+        | ts.TypeParameterDeclaration
+        | undefined` | ✗ |
+| `thisAssumeMultipleUses` | `boolean` | let/var | `fromClass || assumeMultipleUses` | ✗ |
+| `identifierCount` | `number` | const | `foundIdentifierUsages.get(id) ?? 0` | ✗ |
+| `value` | `1 | 2` | const | `assumeMultipleUses ? 2 : 1` | ✗ |
+| `count` | `number` | const | `(typeUsages.get(type) ?? 0) + 1` | ✗ |
 
 
 ---
@@ -252,6 +297,198 @@ function checkNode(node: TSESTree.FunctionLike, descriptor: string): void {
 // Remove the whole <T> generic syntax if we're removing the only type parameter in the list. (x2)
 ```
 
+### `wrap(constraintNode: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+constraintNode => constraintNode
+```
+</details>
+
+- **Parameters**:
+  - `constraintNode: string`
+- **Return Type**: `string`
+### `wrap(constraintNode: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+constraintNode => constraintNode
+```
+</details>
+
+- **Parameters**:
+  - `constraintNode: string`
+- **Return Type**: `string`
+### `wrap(constraintNode: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+constraintNode => constraintNode
+```
+</details>
+
+- **Parameters**:
+  - `constraintNode: string`
+- **Return Type**: `string`
+### `wrap(constraintNode: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+constraintNode => constraintNode
+```
+</details>
+
+- **Parameters**:
+  - `constraintNode: string`
+- **Return Type**: `string`
+### `wrap(constraintNode: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+constraintNode => constraintNode
+```
+</details>
+
+- **Parameters**:
+  - `constraintNode: string`
+- **Return Type**: `string`
+### `wrap(constraintNode: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+constraintNode => constraintNode
+```
+</details>
+
+- **Parameters**:
+  - `constraintNode: string`
+- **Return Type**: `string`
+### `wrap(constraintNode: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+constraintNode => constraintNode
+```
+</details>
+
+- **Parameters**:
+  - `constraintNode: string`
+- **Return Type**: `string`
+### `wrap(constraintNode: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+constraintNode => constraintNode
+```
+</details>
+
+- **Parameters**:
+  - `constraintNode: string`
+- **Return Type**: `string`
+### `wrap(constraintNode: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+constraintNode => constraintNode
+```
+</details>
+
+- **Parameters**:
+  - `constraintNode: string`
+- **Return Type**: `string`
+### `wrap(constraintNode: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+constraintNode => constraintNode
+```
+</details>
+
+- **Parameters**:
+  - `constraintNode: string`
+- **Return Type**: `string`
+### `wrap(constraintNode: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+constraintNode => constraintNode
+```
+</details>
+
+- **Parameters**:
+  - `constraintNode: string`
+- **Return Type**: `string`
+### `wrap(constraintNode: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+constraintNode => constraintNode
+```
+</details>
+
+- **Parameters**:
+  - `constraintNode: string`
+- **Return Type**: `string`
+### `wrap(constraintNode: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+constraintNode => constraintNode
+```
+</details>
+
+- **Parameters**:
+  - `constraintNode: string`
+- **Return Type**: `string`
+### `wrap(constraintNode: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+constraintNode => constraintNode
+```
+</details>
+
+- **Parameters**:
+  - `constraintNode: string`
+- **Return Type**: `string`
+### `wrap(constraintNode: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+constraintNode => constraintNode
+```
+</details>
+
+- **Parameters**:
+  - `constraintNode: string`
+- **Return Type**: `string`
+### `wrap(constraintNode: string): string`
+
+<details><summary>Code</summary>
+
+```ts
+constraintNode => constraintNode
+```
+</details>
+
+- **Parameters**:
+  - `constraintNode: string`
+- **Return Type**: `string`
 ### `wrap(constraintNode: string): string`
 
 <details><summary>Code</summary>
@@ -1253,13 +1490,6 @@ function isOperatorType(type: ts.Type): type is OperatorType {
 - **Parameters**:
   - `type: ts.Type`
 - **Return Type**: `type is OperatorType`
-
----
-
-## Classes
-
-> No classes found in this file.
-
 
 ---
 

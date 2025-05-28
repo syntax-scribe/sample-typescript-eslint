@@ -2,18 +2,28 @@
 
 # 📄 `eslint.config.js`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 7 |
+| 📊 Variables & Constants | 1 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 7
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/integration-tests/fixtures/flat-config-types-@types__eslint-v9/eslint.config.js`**
@@ -29,6 +39,19 @@
 | `deprecationPlugin` | `eslint-plugin-deprecation` |
 | `tseslint` | `typescript-eslint` |
 | `__dirname` | `./dirname.cjs` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `compat` | `any` | let/var | `new FlatCompat({
+  baseDirectory: __dirname,
+  recommendedConfig: {},
+  allConfig: {},
+})` | ✗ |
 
 
 ---
@@ -79,27 +102,6 @@ function _otherCases() {
 // these are just tests for the types and are not seen by eslint so they can be whatever (x4)
 // @ts-expect-error (x6)
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

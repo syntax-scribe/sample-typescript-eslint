@@ -2,20 +2,30 @@
 
 # 📄 `switch-exhaustiveness-check.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 9 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 10 |
+| 📊 Variables & Constants | 11 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 9
-- **Classes**: 0
-- **Imports**: 10
-- **Interfaces**: 1
-- **Type Aliases**: 2
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/switch-exhaustiveness-check.ts`**
@@ -34,6 +44,41 @@
 | `nullThrows` | `../util` |
 | `NullThrowsReasons` | `../util` |
 | `requiresQuoting` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `DEFAULT_COMMENT_PATTERN` | `RegExp` | const | `/^no default$/iu` | ✗ |
+| `commentRegExp` | `RegExp` | const | `defaultCaseCommentPattern != null
+        ? new RegExp(defaultCaseCommentPattern, 'u')
+        : DEFAULT_COMMENT_PATTERN` | ✗ |
+| `commentsAfterLastCase` | `any` | const | `lastCase
+        ? context.sourceCode.getCommentsAfter(lastCase)
+        : []` | ✗ |
+| `symbolName` | `string` | const | `discriminantType.getSymbol()?.escapedName as
+        | string
+        | undefined` | ✗ |
+| `caseTypes` | `Set<ts.Type>` | const | `new Set<ts.Type>()` | ✗ |
+| `missingLiteralBranchTypes` | `ts.Type[]` | const | `[]` | ✗ |
+| `lastCase` | `any` | const | `node.cases.length > 0 ? node.cases[node.cases.length - 1] : null` | ✗ |
+| `caseIndent` | `string` | const | `lastCase
+        ? ' '.repeat(lastCase.loc.start.column)
+        : // If there are no cases, use indentation of the switch statement and
+          // leave it to the user to format it correctly.
+          ' '.repeat(node.loc.start.column)` | ✗ |
+| `missingCases` | `any[]` | const | `[]` | ✗ |
+| `missingBranchName` | `any` | const | `missingBranchType.getSymbol()?.escapedName` | ✗ |
+| `caseTest` | `any` | let/var | `tsutils.isTypeFlagSet(
+          missingBranchType,
+          ts.TypeFlags.ESSymbolLike,
+        )
+          ? // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+            missingBranchName!
+          : typeToString(missingBranchType)` | ✗ |
 
 
 ---
@@ -539,13 +584,6 @@ function doesTypeContainNonLiteralType(type: ts.Type): boolean {
         .intersectionConstituents(type)
         .every`
   - `isTypeLiteralLikeType`
-
----
-
-## Classes
-
-> No classes found in this file.
-
 
 ---
 

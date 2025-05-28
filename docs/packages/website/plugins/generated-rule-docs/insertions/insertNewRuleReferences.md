@@ -2,18 +2,29 @@
 
 # 📄 `insertNewRuleReferences.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 3 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 8 |
+| 📊 Variables & Constants | 7 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 1 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
+- [Async/Await Patterns](#asyncawait-patterns)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 3
-- **Classes**: 0
-- **Imports**: 8
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/website/plugins/generated-rule-docs/insertions/insertNewRuleReferences.ts`**
@@ -30,6 +41,46 @@
 | `RuleDocsPage` | `../RuleDocsPage` |
 | `nodeIsHeading` | `../../utils/nodes` |
 | `convertToPlaygroundHash` | `../../utils/rules` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `COMPLICATED_RULE_OPTIONS` | `Set<string>` | const | `new Set([
+  'member-ordering',
+  'naming-convention',
+])` | ✗ |
+| `config` | `any` | let/var | `await prettier.resolveConfig(filepath, {
+    config: PRETTIER_CONFIG_PATH,
+  })` | ✗ |
+| `rules` | `string` | let/var | ``{
+    "@typescript-eslint/${page.file.stem}": "error"
+  }`` | ✗ |
+| `eslintrc` | `string` | let/var | ``{
+  "rules": ${rules}
+}`` | ✗ |
+| `eslintConfig` | `string` | let/var | ``{
+  rules: ${rules}
+}`` | ✗ |
+| `hasNoConfig` | `boolean` | let/var | `Array.isArray(page.rule.meta.schema)
+    ? page.rule.meta.schema.length === 0
+    : Object.keys(page.rule.meta.schema).length === 0` | ✗ |
+| `recommended` | `any` | const | `page.rule.meta.docs.recommended` | ✗ |
+
+
+---
+
+## Async/Await Patterns
+
+| Type | Function | Await Expressions | Promise Chains |
+|------|----------|-------------------|----------------|
+| async-function | `insertNewRuleReferences` | compile(page.rule.meta.schema, prettierConfig), prettier.format(
+            getRuleDefaultOptions(page),
+            await prettierConfig,
+          ), prettierConfig | *none* |
 
 
 ---
@@ -261,26 +312,5 @@ function getRuleDefaultOptions(page: RuleDocsPage): string {
         '// These options are merged on top of the recommended defaults',
         `const defaultOptionsStrict: Options = ${JSON.stringify(recommended.strict)};`,
       ].join`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

@@ -2,19 +2,30 @@
 
 # 📄 `index.tsx`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 13 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 20 |
+| 📊 Variables & Constants | 9 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 48 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 3 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
+- [JSX Elements](#jsx-elements)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 13
-- **Classes**: 0
-- **Imports**: 20
-- **Interfaces**: 0
-- **Type Aliases**: 3
 
 ## 🛠️ File Location:
 📂 **`packages/website/src/components/RulesTable/index.tsx`**
@@ -43,6 +54,121 @@
 | `SUGGESTIONS_EMOJI` | `../constants` |
 | `TYPE_INFORMATION_EMOJI` | `../constants` |
 | `styles` | `./styles.module.css` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `recommended` | `any` | const | `docs.recommended` | ✗ |
+| `filterModes` | `readonly ["neutral", "include", "exclude"]` | const | `['neutral', 'include', 'exclude'] as const` | ✗ |
+| `neutralFiltersState` | `FiltersState` | const | `{
+  deprecated: 'neutral',
+  extension: 'neutral',
+  fixable: 'neutral',
+  recommended: 'neutral',
+  strict: 'neutral',
+  stylistic: 'neutral',
+  suggestions: 'neutral',
+  typeInformation: 'neutral',
+}` | ✗ |
+| `paramValue` | `string` | const | `new URLSearchParams(search).get(paramsKey) ?? ''` | ✗ |
+| `newState` | `any` | const | `{ ...filtersState, [category]: mode }` | ✗ |
+| `searchParams` | `URLSearchParams` | const | `new URLSearchParams(history.location.search)` | ✗ |
+| `NEGATION_SYMBOL` | `"x"` | const | `'x'` | ✗ |
+| `res` | `FiltersState` | const | `{ ...neutralFiltersState }` | ✗ |
+| `key` | `string` | const | `exclude ? part.slice(1) : part` | ✗ |
+
+
+---
+
+## JSX Elements
+
+| Component | Type | Props | Children |
+|-----------|------|-------|----------|
+| `code` | element | key={i} | {v} |
+| `tr` | element | *none* | <td>, <td>, <td>, <td>, <td>, <td> |
+| `td` | element | *none* | <Link>, <br>, {interpolateCode(rule.docs.description)} |
+| `Link` | component | to={new URL(rule.docs.url).pathname} | <code> |
+| `code` | element | *none* | text: "@typescript-eslint/", {rule.name} |
+| `br` | element | *none* | *none* |
+| `td` | element | className={styles.attrCol}, title={actualRecommended} | {(() => {
+          switch (actualRecommended) {
+            case 'recommended':
+              return RECOMMENDED_CONFIG_EMOJI;
+            case 'strict':
+              return STRICT_CONFIG_EMOJI;
+            case 'stylistic':
+              return STYLISTIC_CONFIG_EMOJI;
+            default:
+              // for some reason the current version of babel loader won't elide
+              // this correctly recommended satisfies undefined;
+              return '';
+          }
+        })()} |
+| `td` | element | className={styles.attrCol}, title={
+          fixable && hasSuggestions
+            ? 'fixable and has suggestions'
+            : fixable
+              ? 'fixable'
+              : hasSuggestions
+                ? 'has suggestions'
+                : undefined
+        } | {fixable ? FIXABLE_EMOJI : ''}, {fixable && hasSuggestions ? <br /> : ''}, {hasSuggestions ? SUGGESTIONS_EMOJI : ''} |
+| `br` | element | *none* | *none* |
+| `td` | element | className={styles.attrCol}, title={requiresTypeChecking ? 'requires type information' : undefined} | {requiresTypeChecking ? TYPE_INFORMATION_EMOJI : ''} |
+| `td` | element | className={styles.attrCol}, title={extendsBaseRule ? 'extends base rule' : undefined} | {extendsBaseRule ? EXTENSION_RULE_EMOJI : ''} |
+| `td` | element | className={styles.attrCol}, title={deprecated ? 'deprecated' : undefined} | {deprecated ? DEPRECATED_RULE_EMOJI : ''} |
+| `li` | element | className={styles.checkboxListItem} | <button> |
+| `button` | element | aria-label={`Toggle the filter mode. Current: ${mode}`}, className={clsx(
+          styles.checkboxLabel,
+          mode === 'include' && styles.activated,
+          mode === 'exclude' && styles.deactivated,
+        )}, onClick={toNextMode}, onKeyDown={(e): void => {
+          if (e.key === 'Enter') {
+            toNextMode();
+          }
+        }}, type="button" | <div>, {label} |
+| `div` | element | aria-hidden, className={clsx(styles.visual, styles[`visual-${mode}`])} | *none* |
+| `Fragment` | fragment | *none* | <div>, <div>, <p>, <table> |
+| `div` | element | className={styles.checkboxListArea} | <em>, <ul> |
+| `em` | element | *none* | text: "Config Group (", {CONFIG_EMOJI}, text: ")" |
+| `ul` | element | className={clsx('clean-list', styles.checkboxList)} | <RuleFilterCheckBox>, <RuleFilterCheckBox>, <RuleFilterCheckBox> |
+| `RuleFilterCheckBox` | component | label={`${RECOMMENDED_CONFIG_EMOJI} recommended`}, mode={filters.recommended}, setMode={(newMode): void => changeFilter('recommended', newMode)} | *none* |
+| `RuleFilterCheckBox` | component | label={`${STRICT_CONFIG_EMOJI} strict`}, mode={filters.strict}, setMode={(newMode): void => changeFilter('strict', newMode)} | *none* |
+| `RuleFilterCheckBox` | component | label={`${STYLISTIC_CONFIG_EMOJI} stylistic`}, mode={filters.stylistic}, setMode={(newMode): void => changeFilter('stylistic', newMode)} | *none* |
+| `div` | element | className={styles.checkboxListArea} | <em>, <ul> |
+| `em` | element | *none* | text: "Metadata" |
+| `ul` | element | className={clsx('clean-list', styles.checkboxList)} | <RuleFilterCheckBox>, <RuleFilterCheckBox>, <RuleFilterCheckBox>, <RuleFilterCheckBox>, <RuleFilterCheckBox> |
+| `RuleFilterCheckBox` | component | label={`${FIXABLE_EMOJI} fixable`}, mode={filters.fixable}, setMode={(newMode): void => changeFilter('fixable', newMode)} | *none* |
+| `RuleFilterCheckBox` | component | label={`${SUGGESTIONS_EMOJI} has suggestions`}, mode={filters.suggestions}, setMode={(newMode): void => changeFilter('suggestions', newMode)} | *none* |
+| `RuleFilterCheckBox` | component | label={`${TYPE_INFORMATION_EMOJI} type checked`}, mode={filters.typeInformation}, setMode={(newMode): void =>
+              changeFilter('typeInformation', newMode)
+            } | *none* |
+| `RuleFilterCheckBox` | component | label={`${EXTENSION_RULE_EMOJI} extension`}, mode={filters.extension}, setMode={(newMode): void => changeFilter('extension', newMode)} | *none* |
+| `RuleFilterCheckBox` | component | label={`${DEPRECATED_RULE_EMOJI} deprecated`}, mode={filters.deprecated}, setMode={(newMode): void => changeFilter('deprecated', newMode)} | *none* |
+| `p` | element | *none* | text: "(These categories are explained in", {' '}, <a>, text: ".)" |
+| `a` | element | href="#filtering" | text: "more detail below" |
+| `table` | element | className={styles.rulesTable} | <thead>, <tbody> |
+| `thead` | element | *none* | <tr> |
+| `tr` | element | *none* | <th>, <th>, <th>, <th>, <th>, <th> |
+| `th` | element | className={styles.ruleCol} | text: "Rule" |
+| `th` | element | className={styles.attrCol} | <div> |
+| `div` | element | title="The config group that the rule belongs to, if any." | {CONFIG_EMOJI} |
+| `th` | element | className={styles.attrCol} | <div> |
+| `div` | element | title="Whether the rule has an auto-fixer and/or has suggestions." | {FIXABLE_EMOJI} |
+| `th` | element | className={styles.attrCol} | <div> |
+| `div` | element | title="Whether the rule requires type information from the TypeScript compiler." | {TYPE_INFORMATION_EMOJI} |
+| `th` | element | className={styles.attrCol} | <div> |
+| `div` | element | title="Whether the rule is an extension rule (i.e. based on a core ESLint rule)." | {EXTENSION_RULE_EMOJI} |
+| `th` | element | className={styles.attrCol} | <div> |
+| `div` | element | title="Whether the rule is deprecated." | {DEPRECATED_RULE_EMOJI} |
+| `tbody` | element | *none* | {relevantRules.map(rule => (
+            <RuleRow key={rule.name} rule={rule} />
+          ))} |
+| `RuleRow` | component | key={rule.name}, rule={rule} | *none* |
 
 
 ---
@@ -681,20 +807,6 @@ function parseFiltersState(str: string): FiltersState {
   - `part.startsWith`
   - `part.slice`
   - `Object.hasOwn`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
 
 ---
 

@@ -2,19 +2,29 @@
 
 # 📄 `strict-boolean-expressions.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 299 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 14 |
+| 📊 Variables & Constants | 4 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 5 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 299
-- **Classes**: 0
-- **Imports**: 14
-- **Interfaces**: 0
-- **Type Aliases**: 5
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/strict-boolean-expressions.ts`**
@@ -37,6 +47,22 @@
 | `isTypeArrayTypeOrUnionOfArrayTypes` | `../util` |
 | `nullThrows` | `../util` |
 | `findTruthinessAssertedArgument` | `../util/assertionFunctionUtils` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `traversedNodes` | `Set<TSESTree.Node>` | const | `new Set<TSESTree.Node>()` | ✗ |
+| `flattenTypes` | `unknown[]` | const | `[
+        ...new Set(
+          returnTypes.flatMap(type => tsutils.unionConstituents(type)),
+        ),
+      ]` | ✗ |
+| `suggestions` | `ReportSuggestionArray<MessageId>` | const | `[]` | ✗ |
+| `variantTypes` | `Set<VariantType>` | const | `new Set<VariantType>()` | ✗ |
 
 
 ---
@@ -4798,20 +4824,6 @@ function isBooleanType(expressionType: ts.Type): boolean {
 - **Return Type**: `boolean`
 - **Calls**:
   - `tsutils.isTypeFlagSet`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
 
 ---
 

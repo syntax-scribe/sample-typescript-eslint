@@ -2,27 +2,29 @@
 
 # 📄 `errors.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 0 |
+| 🧱 Classes | 2 |
+| 📦 Imports | 0 |
+| 📊 Variables & Constants | 0 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Classes](#classes)
 
-## 📊 Analysis Summary
-
-- **Functions**: 0
-- **Classes**: 2
-- **Imports**: 0
-- **Interfaces**: 0
-- **Type Aliases**: 0
-
 ## 🛠️ File Location:
 📂 **`packages/rule-schema-to-typescript-types/src/errors.ts`**
-
-## 📦 Imports
-
-> No imports found in this file.
-
-
----
 
 ## 🔧 Functions
 
@@ -64,20 +66,6 @@ export class UnexpectedError extends Error {
 }
 ```
 </details>
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

@@ -2,19 +2,29 @@
 
 # 📄 `no-unnecessary-type-arguments.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 15 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 6 |
+| 📊 Variables & Constants | 2 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 15
-- **Classes**: 0
-- **Imports**: 6
-- **Interfaces**: 0
-- **Type Aliases**: 2
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/no-unnecessary-type-arguments.ts`**
@@ -29,6 +39,16 @@
 | `findFirstResult` | `../util` |
 | `getParserServices` | `../util` |
 | `isTypeReferenceType` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `i` | `number` | const | `esParameters.params.length - 1` | ✗ |
+| `arg` | `any` | const | `esParameters.params[i]` | ✗ |
 
 
 ---
@@ -508,20 +528,6 @@ function getConstructSignatureDeclaration(
   - `checker.getTypeOfSymbol`
   - `type.getConstructSignatures`
   - `sig.at(0)?.getDeclaration`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
 
 ---
 

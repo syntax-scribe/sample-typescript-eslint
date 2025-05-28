@@ -2,18 +2,28 @@
 
 # 📄 `predicates.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 0 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 1 |
+| 📊 Variables & Constants | 22 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 5 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 0
-- **Classes**: 0
-- **Imports**: 1
-- **Interfaces**: 0
-- **Type Aliases**: 5
 
 ## 🛠️ File Location:
 📂 **`packages/utils/src/ast-utils/eslint-utils/predicates.ts`**
@@ -27,23 +37,39 @@
 
 ---
 
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `isArrowToken` | `IsPunctuatorTokenWithValueFunction<Value>` | const | `eslintUtils.isArrowToken as IsPunctuatorTokenWithValueFunction<'=>'>` | ✓ |
+| `isNotArrowToken` | `IsNotPunctuatorTokenWithValueFunction<Value>` | const | `eslintUtils.isNotArrowToken as IsNotPunctuatorTokenWithValueFunction<'=>'>` | ✓ |
+| `isClosingBraceToken` | `IsPunctuatorTokenWithValueFunction<Value>` | const | `eslintUtils.isClosingBraceToken as IsPunctuatorTokenWithValueFunction<'}'>` | ✓ |
+| `isNotClosingBraceToken` | `IsNotPunctuatorTokenWithValueFunction<Value>` | const | `eslintUtils.isNotClosingBraceToken as IsNotPunctuatorTokenWithValueFunction<'}'>` | ✓ |
+| `isClosingBracketToken` | `IsPunctuatorTokenWithValueFunction<Value>` | const | `eslintUtils.isClosingBracketToken as IsPunctuatorTokenWithValueFunction<']'>` | ✓ |
+| `isNotClosingBracketToken` | `IsNotPunctuatorTokenWithValueFunction<Value>` | const | `eslintUtils.isNotClosingBracketToken as IsNotPunctuatorTokenWithValueFunction<']'>` | ✓ |
+| `isClosingParenToken` | `IsPunctuatorTokenWithValueFunction<Value>` | const | `eslintUtils.isClosingParenToken as IsPunctuatorTokenWithValueFunction<')'>` | ✓ |
+| `isNotClosingParenToken` | `IsNotPunctuatorTokenWithValueFunction<Value>` | const | `eslintUtils.isNotClosingParenToken as IsNotPunctuatorTokenWithValueFunction<')'>` | ✓ |
+| `isColonToken` | `IsPunctuatorTokenWithValueFunction<Value>` | const | `eslintUtils.isColonToken as IsPunctuatorTokenWithValueFunction<':'>` | ✓ |
+| `isNotColonToken` | `IsNotPunctuatorTokenWithValueFunction<Value>` | const | `eslintUtils.isNotColonToken as IsNotPunctuatorTokenWithValueFunction<':'>` | ✓ |
+| `isCommaToken` | `IsPunctuatorTokenWithValueFunction<Value>` | const | `eslintUtils.isCommaToken as IsPunctuatorTokenWithValueFunction<','>` | ✓ |
+| `isNotCommaToken` | `IsNotPunctuatorTokenWithValueFunction<Value>` | const | `eslintUtils.isNotCommaToken as IsNotPunctuatorTokenWithValueFunction<','>` | ✓ |
+| `isCommentToken` | `IsSpecificTokenFunction<TSESTree.Comment>` | const | `eslintUtils.isCommentToken as IsSpecificTokenFunction<TSESTree.Comment>` | ✓ |
+| `isNotCommentToken` | `IsNotSpecificTokenFunction<TSESTree.Comment>` | const | `eslintUtils.isNotCommentToken as IsNotSpecificTokenFunction<TSESTree.Comment>` | ✓ |
+| `isOpeningBraceToken` | `IsPunctuatorTokenWithValueFunction<Value>` | const | `eslintUtils.isOpeningBraceToken as IsPunctuatorTokenWithValueFunction<'{'>` | ✓ |
+| `isNotOpeningBraceToken` | `IsNotPunctuatorTokenWithValueFunction<Value>` | const | `eslintUtils.isNotOpeningBraceToken as IsNotPunctuatorTokenWithValueFunction<'{'>` | ✓ |
+| `isOpeningBracketToken` | `IsPunctuatorTokenWithValueFunction<Value>` | const | `eslintUtils.isOpeningBracketToken as IsPunctuatorTokenWithValueFunction<'['>` | ✓ |
+| `isNotOpeningBracketToken` | `IsNotPunctuatorTokenWithValueFunction<Value>` | const | `eslintUtils.isNotOpeningBracketToken as IsNotPunctuatorTokenWithValueFunction<'['>` | ✓ |
+| `isOpeningParenToken` | `IsPunctuatorTokenWithValueFunction<Value>` | const | `eslintUtils.isOpeningParenToken as IsPunctuatorTokenWithValueFunction<'('>` | ✓ |
+| `isNotOpeningParenToken` | `IsNotPunctuatorTokenWithValueFunction<Value>` | const | `eslintUtils.isNotOpeningParenToken as IsNotPunctuatorTokenWithValueFunction<'('>` | ✓ |
+| `isSemicolonToken` | `IsPunctuatorTokenWithValueFunction<Value>` | const | `eslintUtils.isSemicolonToken as IsPunctuatorTokenWithValueFunction<';'>` | ✓ |
+| `isNotSemicolonToken` | `IsNotPunctuatorTokenWithValueFunction<Value>` | const | `eslintUtils.isNotSemicolonToken as IsNotPunctuatorTokenWithValueFunction<';'>` | ✓ |
+
+
+---
+
 ## 🔧 Functions
 
 > No functions found in this file.
-
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
 
 
 ---

@@ -2,18 +2,28 @@
 
 # 📄 `isHigherPrecedenceThanAwait.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 1 |
+| 📊 Variables & Constants | 1 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 1
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/util/isHigherPrecedenceThanAwait.ts`**
@@ -23,6 +33,17 @@
 | Name | Source |
 |------|--------|
 | `getOperatorPrecedence` | `./getOperatorPrecedence` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `operator` | `any` | const | `ts.isBinaryExpression(tsNode)
+    ? tsNode.operatorToken.kind
+    : ts.SyntaxKind.Unknown` | ✗ |
 
 
 ---
@@ -54,26 +75,5 @@ export function isHigherPrecedenceThanAwait(tsNode: ts.Node): boolean {
 - **Calls**:
   - `ts.isBinaryExpression`
   - `getOperatorPrecedence (from ./getOperatorPrecedence)`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

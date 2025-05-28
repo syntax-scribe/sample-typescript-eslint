@@ -2,20 +2,30 @@
 
 # 📄 `RuleTester.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 24 |
+| 🧱 Classes | 1 |
+| 📦 Imports | 42 |
+| 📊 Variables & Constants | 52 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Classes](#classes)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 24
-- **Classes**: 1
-- **Imports**: 42
-- **Interfaces**: 0
-- **Type Aliases**: 2
 
 ## 🛠️ File Location:
 📂 **`packages/rule-tester/src/RuleTester.ts`**
@@ -66,6 +76,122 @@
 | `sanitize` | `./utils/validationHelpers` |
 | `SUGGESTION_OBJECT_PARAMETERS` | `./utils/validationHelpers` |
 | `wrapParser` | `./utils/validationHelpers` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `RULE_TESTER_PLUGIN` | `"@rule-tester"` | const | `'@rule-tester'` | ✗ |
+| `RULE_TESTER_PLUGIN_PREFIX` | `"@rule-tester/"` | const | ``${RULE_TESTER_PLUGIN}/`` | ✗ |
+| `TYPESCRIPT_ESLINT_PARSER` | `"@typescript-eslint/parser"` | const | `'@typescript-eslint/parser'` | ✗ |
+| `DUPLICATE_PARSER_ERROR_MESSAGE` | `"Do not set the parser at the test level unless you want to use a parser other than \"@typescript-eslint/parser\""` | const | ``Do not set the parser at the test level unless you want to use a parser other than "${TYPESCRIPT_ESLINT_PARSER}"`` | ✗ |
+| `defaultParser` | `any` | const | `require(TYPESCRIPT_ESLINT_PARSER) as typeof ParserType` | ✗ |
+| `testerDefaultConfig` | `Readonly<TesterConfigWithDefaults>` | const | `{
+  defaultFilenames: { ts: 'file.ts', tsx: 'react.tsx' },
+  languageOptions: {
+    parser: defaultParser,
+  },
+  rules: {},
+}` | ✗ |
+| `defaultConfig` | `Mutable<Required<Pick<RuleTesterConfig, "defaultFilenames" | "languageOptions" | "rules">> & RuleTesterConfig>` | let/var | `deepMerge(
+  {},
+  testerDefaultConfig,
+) as TesterConfigWithDefaults` | ✗ |
+| `forbiddenMethods` | `readonly ["applyInlineConfig", "applyLanguageOptions", "finalize"]` | const | `[
+  'applyInlineConfig',
+  'applyLanguageOptions',
+  'finalize',
+] as const` | ✗ |
+| `forbiddenMethodCalls` | `Map<"applyInlineConfig" | "applyLanguageOptions" | "finalize", WeakSet<WeakKey>>` | const | `new Map(
+  forbiddenMethods.map(methodName => [methodName, new WeakSet()]),
+)` | ✗ |
+| `original` | `Prototype[MethodName]` | const | `prototype[methodName]` | ✗ |
+| `called` | `WeakSet<WeakKey>` | const | `forbiddenMethodCalls.get(methodName)!` | ✗ |
+| `constructor` | `typeof RuleTester` | const | `this.constructor as typeof RuleTester` | ✗ |
+| `basePath` | `string | undefined` | let/var | `this.#testerConfig.languageOptions.parserOptions?.tsconfigRootDir` | ✗ |
+| `linter` | `any` | const | `new Linter({
+          configType: 'flat',
+          cwd: basePath,
+        })` | ✗ |
+| `resolvedOptions` | `ParserOptions` | const | `deepMerge(
+        this.#testerConfig.languageOptions.parserOptions,
+        testOptions,
+      ) as ParserOptions` | ✗ |
+| `filename` | `string` | const | `originalFilename ??
+        (resolvedOptions.ecmaFeatures?.jsx
+          ? this.#testerConfig.defaultFilenames.tsx
+          : this.#testerConfig.defaultFilenames.ts)` | ✗ |
+| `normalizedTests` | `{ invalid: InvalidTestCase<MessageIds, Options>[]; valid: ValidTestCase<Options>[]; }` | const | `{
+      invalid: rawTests.invalid.map(normalizeTest),
+      valid: rawTests.valid
+        .map(test => {
+          if (typeof test === 'string') {
+            return { code: test };
+          }
+          return test;
+        })
+        .map(normalizeTest),
+    }` | ✗ |
+| `allTestsIterator` | `{ [Symbol.iterator](): Generator<ValidTestCase<Options>, void, any>; }` | const | `{
+      *[Symbol.iterator](): Generator<ValidTestCase<Options>, void> {
+        for (const testCase of normalizedTests.valid) {
+          yield testCase;
+        }
+        for (const testCase of normalizedTests.invalid) {
+          yield testCase;
+        }
+      },
+    }` | ✗ |
+| `constructor` | `typeof RuleTester` | const | `this.constructor as typeof RuleTester` | ✗ |
+| `scenarioErrors` | `string[]` | const | `[]` | ✗ |
+| `seenValidTestCases` | `Set<string>` | const | `new Set<string>()` | ✗ |
+| `seenInvalidTestCases` | `Set<string>` | const | `new Set<string>()` | ✗ |
+| `code` | `any` | let/var | `*not shown*` | ✗ |
+| `filename` | `any` | let/var | `*not shown*` | ✗ |
+| `beforeAST` | `TSESTree.Program` | let/var | `*not shown*` | ✗ |
+| `afterAST` | `TSESTree.Program` | let/var | `*not shown*` | ✗ |
+| `itemConfig` | `Record<string, unknown>` | const | `{ ...item }` | ✗ |
+| `prefixedRuleName` | `string` | const | ``${RULE_TESTER_PLUGIN_PREFIX}${ruleName}`` | ✗ |
+| `field` | `any` | const | `error.dataPath[0] === '.'
+                ? error.dataPath.slice(1)
+                : error.dataPath` | ✗ |
+| `initialMessages` | `Linter.LintMessage[] | null` | let/var | `null` | ✗ |
+| `messages` | `Linter.LintMessage[] | null` | let/var | `null` | ✗ |
+| `fixedResult` | `SourceCodeFixer.AppliedFixes | null` | let/var | `null` | ✗ |
+| `passNumber` | `number` | let/var | `0` | ✗ |
+| `outputs` | `string[]` | const | `[]` | ✗ |
+| `SourceCodePrototype` | `Record<"applyInlineConfig" | "applyLanguageOptions" | "finalize", ForbiddenFunction>` | const | `SourceCode.prototype as Record<
+        ForbiddenMethodName,
+        ForbiddenFunction
+      >` | ✗ |
+| `item` | `ValidTestCase<Options>` | const | `typeof itemIn === 'object' ? itemIn : { code: itemIn }` | ✗ |
+| `messages` | `Linter.LintMessage[]` | const | `result.messages` | ✗ |
+| `ruleHasMetaMessages` | `boolean` | const | `hasOwnProperty(rule, 'meta') && hasOwnProperty(rule.meta, 'messages')` | ✗ |
+| `friendlyIDList` | `string` | const | `ruleHasMetaMessages
+      ? `[${Object.keys(rule.meta.messages)
+          .map(key => `'${key}'`)
+          .join(', ')}]`
+      : null` | ✗ |
+| `seenMessageIndices` | `Map<string, number>` | const | `new Map<string, number>()` | ✗ |
+| `suggestionMessage` | `any` | const | `message.suggestions[i].desc` | ✗ |
+| `error` | `TestCaseError<MessageIds>` | const | `item.errors[i]` | ✗ |
+| `message` | `any` | const | `messages[i]` | ✗ |
+| `unformattedOriginalMessage` | `any` | const | `rule.meta.messages[error.messageId]` | ✗ |
+| `expectsSuggestions` | `boolean` | const | `Array.isArray(error.suggestions)
+              ? error.suggestions.length > 0
+              : Boolean(error.suggestions)` | ✗ |
+| `hasSuggestions` | `boolean` | const | `message.suggestions != null` | ✗ |
+| `messageSuggestions` | `any` | const | `message.suggestions!` | ✗ |
+| `actualSuggestion` | `any` | const | `messageSuggestions[index]` | ✗ |
+| `suggestionPrefix` | `string` | const | ``Error Suggestion at index ${index}:`` | ✗ |
+| `expectedDesc` | `string` | const | `expectedSuggestion.desc as string` | ✗ |
+| `unformattedMetaMessage` | `any` | const | `rule.meta.messages[expectedSuggestion.messageId]` | ✗ |
+| `codeWithAppliedSuggestion` | `string` | const | `SourceCodeFixer.applyFixes(item.code, [
+                        actualSuggestion,
+                      ]).output` | ✗ |
 
 
 ---
@@ -4588,13 +4714,6 @@ private runRuleForItem<
   }
 ```
 </details>
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
 
 
 ---

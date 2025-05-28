@@ -2,19 +2,29 @@
 
 # 📄 `no-unnecessary-type-conversion.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 178 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 9 |
+| 📊 Variables & Constants | 11 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 178
-- **Classes**: 0
-- **Imports**: 9
-- **Interfaces**: 0
-- **Type Aliases**: 2
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/no-unnecessary-type-conversion.ts`**
@@ -32,6 +42,54 @@
 | `getParserServices` | `../util` |
 | `getWrappingFixer` | `../util` |
 | `isTypeFlagSet` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `outerNode` | `any` | const | `isDoubleOperator ? node.parent : node` | ✗ |
+| `wrappingFixerParams` | `{ node: any; innerNode: any[]; sourceCode: any; }` | const | `{
+          node: outerNode,
+          innerNode: [node.argument],
+          sourceCode: context.sourceCode,
+        }` | ✗ |
+| `wrappingFixerParams` | `{ node: TSESTree.AssignmentExpression; innerNode: any[]; sourceCode: any; }` | const | `{
+            node,
+            innerNode: [node.left],
+            sourceCode: context.sourceCode,
+          }` | ✗ |
+| `wrappingFixerParams` | `{ node: TSESTree.BinaryExpression; innerNode: any[]; sourceCode: any; }` | const | `{
+            node,
+            innerNode: [node.left],
+            sourceCode: context.sourceCode,
+          }` | ✗ |
+| `wrappingFixerParams` | `{ node: TSESTree.BinaryExpression; innerNode: any[]; sourceCode: any; }` | const | `{
+            node,
+            innerNode: [node.right],
+            sourceCode: context.sourceCode,
+          }` | ✗ |
+| `nodeCallee` | `any` | const | `node.callee` | ✗ |
+| `builtInTypeFlags` | `{ BigInt: any; Boolean: any; Number: any; String: any; }` | const | `{
+          BigInt: ts.TypeFlags.BigIntLike,
+          Boolean: ts.TypeFlags.BooleanLike,
+          Number: ts.TypeFlags.NumberLike,
+          String: ts.TypeFlags.StringLike,
+        }` | ✗ |
+| `typeFlag` | `any` | const | `builtInTypeFlags[nodeCallee.name as keyof typeof builtInTypeFlags]` | ✗ |
+| `wrappingFixerParams` | `{ node: TSESTree.CallExpression; innerNode: any[]; sourceCode: any; }` | const | `{
+          node,
+          innerNode: [node.arguments[0]],
+          sourceCode: context.sourceCode,
+        }` | ✗ |
+| `memberExpr` | `TSESTree.MemberExpression` | const | `node.parent as TSESTree.MemberExpression` | ✗ |
+| `wrappingFixerParams` | `{ node: any; innerNode: any[]; sourceCode: any; }` | const | `{
+            node: memberExpr.parent,
+            innerNode: [memberExpr.object],
+            sourceCode: context.sourceCode,
+          }` | ✗ |
 
 
 ---
@@ -2238,20 +2296,6 @@ expr => `${expr} satisfies string`
 - **Parameters**:
   - `expr: string`
 - **Return Type**: `string`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
 
 ---
 

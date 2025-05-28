@@ -2,19 +2,29 @@
 
 # 📄 `config-validator.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 7 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 13 |
+| 📊 Variables & Constants | 11 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 1 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 7
-- **Classes**: 0
-- **Imports**: 13
-- **Interfaces**: 0
-- **Type Aliases**: 1
 
 ## 🛠️ File Location:
 📂 **`packages/rule-tester/src/utils/config-validator.ts`**
@@ -36,6 +46,39 @@
 | `flatConfigSchema` | `./flat-config-schema` |
 | `getRuleOptionsSchema` | `./getRuleOptionsSchema` |
 | `hasOwnProperty` | `./hasOwnProperty` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `ruleValidators` | `WeakMap<AnyRuleModule, ValidateFunction>` | const | `new WeakMap<AnyRuleModule, ValidateFunction>()` | ✗ |
+| `validateSchema` | `ValidateFunction | undefined` | let/var | `*not shown*` | ✗ |
+| `severityMap` | `{ readonly error: 2; readonly off: 0; readonly warn: 1; }` | const | `{
+  error: 2,
+  off: 0,
+  warn: 1,
+} as const` | ✗ |
+| `severity` | `any` | const | `Array.isArray(options) ? options[0] : options` | ✗ |
+| `normSeverity` | `number` | const | `typeof severity === 'string'
+      ? (severityMap[severity.toLowerCase() as Linter.SeverityString] as
+          | number
+          | undefined)
+      : (severity as number)` | ✗ |
+| `enhancedMessage` | `string` | const | ``Configuration for rule "${ruleId}" is invalid:\n${
+      (err as Error).message
+    }`` | ✗ |
+| `rule` | `any` | const | `getAdditionalRule(id) ?? builtinRules.get(id) ?? null` | ✗ |
+| `params` | `AdditionalPropertiesParams` | const | `error.params as AdditionalPropertiesParams` | ✗ |
+| `formattedPropertyPath` | `any` | const | `error.dataPath.length
+          ? `${error.dataPath.slice(1)}.${params.additionalProperty}`
+          : params.additionalProperty` | ✗ |
+| `formattedExpectedType` | `any` | const | `Array.isArray(error.schema)
+          ? error.schema.join('/')
+          : error.schema` | ✗ |
+| `field` | `any` | const | `error.dataPath[0] === '.' ? error.dataPath.slice(1) : error.dataPath` | ✗ |
 
 
 ---
@@ -434,20 +477,6 @@ export function validate(
 - **Calls**:
   - `validateConfigSchema`
   - `validateRules`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
 
 ---
 

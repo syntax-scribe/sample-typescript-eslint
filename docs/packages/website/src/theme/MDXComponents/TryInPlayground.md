@@ -2,18 +2,29 @@
 
 # 📄 `TryInPlayground.tsx`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 5 |
+| 📊 Variables & Constants | 1 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 1 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
+- [JSX Elements](#jsx-elements)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 5
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/website/src/theme/MDXComponents/TryInPlayground.tsx`**
@@ -27,6 +38,24 @@
 | `React` | `react` |
 | `fileTypes` | `../../components/options` |
 | `styles` | `./TryInPlayground.module.css` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `params` | `URLSearchParams` | const | `new URLSearchParams({ eslintrc: eslintrcHash })` | ✗ |
+
+
+---
+
+## JSX Elements
+
+| Component | Type | Props | Children |
+|-----------|------|-------|----------|
+| `Link` | component | className={clsx(styles.tryInPlaygroundLink, className)}, target="_blank", to={`/play#${params.toString()}`} | {children} |
 
 
 ---
@@ -117,27 +146,6 @@ export function TryInPlayground({
 ```
 // iterating over sorted array, so the longer extensions will be matched first
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

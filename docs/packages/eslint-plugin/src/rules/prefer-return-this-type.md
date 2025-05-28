@@ -2,19 +2,29 @@
 
 # 📄 `prefer-return-this-type.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 9 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 5 |
+| 📊 Variables & Constants | 5 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 9
-- **Classes**: 0
-- **Imports**: 5
-- **Interfaces**: 0
-- **Type Aliases**: 2
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/prefer-return-this-type.ts`**
@@ -28,6 +38,21 @@
 | `createRule` | `../util` |
 | `forEachReturnStatement` | `../util` |
 | `getParserServices` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `classType` | `ts.InterfaceType` | const | `services.getTypeAtLocation(
+        originalClass,
+      ) as ts.InterfaceType` | ✗ |
+| `hasReturnThis` | `boolean` | let/var | `false` | ✗ |
+| `hasReturnClassType` | `boolean` | let/var | `false as boolean` | ✗ |
+| `expr` | `any` | const | `stmt.expression` | ✗ |
+| `className` | `any` | const | `originalClass.id?.name` | ✗ |
 
 
 ---
@@ -292,20 +317,6 @@ fixer => fixer.replaceText(node, 'this')
 - **Return Type**: `any`
 - **Calls**:
   - `fixer.replaceText`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
 
 ---
 

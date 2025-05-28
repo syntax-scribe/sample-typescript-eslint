@@ -2,20 +2,30 @@
 
 # 📄 `Referencer.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 68 |
+| 🧱 Classes | 1 |
+| 📦 Imports | 26 |
+| 📊 Variables & Constants | 9 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Classes](#classes)
 - [Interfaces](#interfaces)
-
-## 📊 Analysis Summary
-
-- **Functions**: 68
-- **Classes**: 1
-- **Imports**: 26
-- **Interfaces**: 1
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/src/referencer/Referencer.ts`**
@@ -50,6 +60,35 @@
 | `ReferenceFlag` | `./Reference` |
 | `TypeVisitor` | `./TypeVisitor` |
 | `Visitor` | `./Visitor` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `flattenedLibs` | `Set<LibDefinition>` | const | `new Set<LibDefinition>()` | ✗ |
+| `scope` | `Scope` | let/var | `this.scopeManager.currentScope` | ✗ |
+| `maybeImplicitGlobal` | `{ node: any; pattern: TSESTree.Identifier; }` | const | `!this.currentScope().isStrict
+            ? {
+                node,
+                pattern,
+              }
+            : null` | ✗ |
+| `maybeImplicitGlobal` | `{ node: TSESTree.AssignmentExpression; pattern: TSESTree.Identifier; }` | const | `!this.currentScope().isStrict
+              ? {
+                  node,
+                  pattern,
+                }
+              : null` | ✗ |
+| `param` | `any` | const | `node.param` | ✗ |
+| `name` | `any` | const | `member.id` | ✗ |
+| `moduleIdentifier` | `any` | let/var | `node.moduleReference.left` | ✗ |
+| `variableTargetScope` | `FunctionScope | BlockScope | CatchScope | ClassFieldInitializerScope | ClassScope | ClassStaticBlockScope | ... 11 more ... | WithScope` | const | `node.kind === 'var'
+        ? this.currentScope().variableScope
+        : this.currentScope()` | ✗ |
+| `init` | `any` | const | `decl.init` | ✗ |
 
 
 ---
@@ -3905,13 +3944,6 @@ export interface ReferencerOptions extends VisitorOptions {
 | `jsxFragmentName` | `string | null` | ✗ |  |
 | `jsxPragma` | `string | null` | ✗ |  |
 | `lib` | `Lib[]` | ✗ |  |
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

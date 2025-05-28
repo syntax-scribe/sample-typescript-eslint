@@ -2,24 +2,50 @@
 
 # 📄 `path.js`
 
-## 📚 Table of Contents
-
-- [Functions](#functions)
-
 ## 📊 Analysis Summary
 
-- **Functions**: 12
-- **Classes**: 0
-- **Imports**: 0
-- **Interfaces**: 0
-- **Type Aliases**: 0
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 12 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 0 |
+| 📊 Variables & Constants | 15 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
+## 📚 Table of Contents
+
+- [Variables & Constants](#variables-constants)
+- [Functions](#functions)
 
 ## 🛠️ File Location:
 📂 **`packages/website-eslint/src/mock/path.js`**
 
-## 📦 Imports
+## Variables & Constants
 
-> No imports found in this file.
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `up` | `number` | let/var | `0` | ✗ |
+| `last` | `any` | let/var | `parts[i]` | ✗ |
+| `splitPathRe` | `RegExp` | let/var | `/^(\/?)([\s\S]*?)((?:\.{1,2}|[^/]+?)?(\.[^./]*|))\/*$/` | ✗ |
+| `resolvedPath` | `string` | let/var | `''` | ✗ |
+| `resolvedAbsolute` | `boolean` | let/var | `false` | ✗ |
+| `path` | `any` | let/var | `i >= 0 ? args[i] : '/'` | ✗ |
+| `start` | `number` | let/var | `0` | ✗ |
+| `end` | `number` | let/var | `arr.length - 1` | ✗ |
+| `samePartsLength` | `number` | let/var | `length` | ✗ |
+| `sep` | `"/"` | let/var | `'/'` | ✓ |
+| `delimiter` | `":"` | let/var | `':'` | ✓ |
+| `root` | `string` | let/var | `result[0]` | ✗ |
+| `dir` | `string` | let/var | `result[1]` | ✗ |
+| `f` | `string` | let/var | `splitPath(path)[2]` | ✗ |
+| `res` | `any[]` | let/var | `[]` | ✗ |
 
 
 ---
@@ -439,26 +465,5 @@ function filter(xs, f) {
   - `xs.filter`
   - `f`
   - `res.push`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

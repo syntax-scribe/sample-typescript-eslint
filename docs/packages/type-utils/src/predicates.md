@@ -2,18 +2,28 @@
 
 # 📄 `predicates.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 11 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 2 |
+| 📊 Variables & Constants | 4 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 11
-- **Classes**: 0
-- **Imports**: 2
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/type-utils/src/predicates.ts`**
@@ -24,6 +34,23 @@
 |------|--------|
 | `debug` | `debug` |
 | `isTypeFlagSet` | `./typeFlagUtils` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `Nullable` | `number` | const | `ts.TypeFlags.Undefined | ts.TypeFlags.Null` | ✗ |
+| `ObjectFlagsType` | `number` | const | `ts.TypeFlags.Any |
+  Nullable |
+  ts.TypeFlags.Never |
+  ts.TypeFlags.Object |
+  ts.TypeFlags.Union |
+  ts.TypeFlags.Intersection` | ✗ |
+| `objectTypeFlags` | `any` | const | `(type as ts.ObjectType).objectFlags` | ✗ |
+| `typeAndBaseTypes` | `ts.Type[]` | const | `[type]` | ✗ |
 
 
 ---
@@ -339,26 +366,5 @@ export function isTypeTemplateLiteralType(
 - **Return Type**: `type is ts.TemplateLiteralType`
 - **Calls**:
   - `isTypeFlagSet (from ./typeFlagUtils)`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

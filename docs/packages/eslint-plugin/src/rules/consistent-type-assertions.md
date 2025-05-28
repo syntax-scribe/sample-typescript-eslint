@@ -2,19 +2,29 @@
 
 # 📄 `consistent-type-assertions.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 15 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 10 |
+| 📊 Variables & Constants | 3 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 4 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 15
-- **Classes**: 0
-- **Imports**: 10
-- **Interfaces**: 0
-- **Type Aliases**: 4
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/consistent-type-assertions.ts`**
@@ -33,6 +43,17 @@
 | `getTextWithParentheses` | `../util` |
 | `isParenthesized` | `../util` |
 | `getWrappedCode` | `../util/getWrappedCode` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `messageId` | `any` | const | `options.assertionStyle` | ✗ |
+| `text` | `string` | const | ``${expressionCodeWrapped} as ${typeAnnotationCode}`` | ✗ |
+| `suggestions` | `TSESLint.ReportSuggestionArray<MessageIds>` | const | `[]` | ✗ |
 
 
 ---
@@ -543,20 +564,6 @@ fixer => [
 - **Parameters**:
   - `fixer: any`
 - **Return Type**: `any[]`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
 
 ---
 

@@ -2,18 +2,27 @@
 
 # 📄 `getParsedConfigFile.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 15 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 1 |
+| 📊 Variables & Constants | 0 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 11
-- **Classes**: 0
-- **Imports**: 1
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/tsconfig-utils/src/getParsedConfigFile.ts`**
@@ -134,7 +143,7 @@ diag => {
 - **Return Type**: `never`
 - **Calls**:
   - `formatDiagnostics`
-### `readFile(file: any): any`
+### `readFile(file: any): string`
 
 <details><summary>Code</summary>
 
@@ -149,7 +158,7 @@ file =>
 
 - **Parameters**:
   - `file: any`
-- **Return Type**: `any`
+- **Return Type**: `string`
 - **Calls**:
   - `fs.readFileSync`
 ### `onUnRecoverableConfigFileDiagnostic(diag: any): never`
@@ -168,7 +177,7 @@ diag => {
 - **Return Type**: `never`
 - **Calls**:
   - `formatDiagnostics`
-### `readFile(file: any): any`
+### `readFile(file: any): string`
 
 <details><summary>Code</summary>
 
@@ -183,7 +192,75 @@ file =>
 
 - **Parameters**:
   - `file: any`
-- **Return Type**: `any`
+- **Return Type**: `string`
+- **Calls**:
+  - `fs.readFileSync`
+### `onUnRecoverableConfigFileDiagnostic(diag: any): never`
+
+<details><summary>Code</summary>
+
+```ts
+diag => {
+        throw new Error(formatDiagnostics([diag])); // ensures that `parsed` is defined.
+      }
+```
+</details>
+
+- **Parameters**:
+  - `diag: any`
+- **Return Type**: `never`
+- **Calls**:
+  - `formatDiagnostics`
+### `readFile(file: any): string`
+
+<details><summary>Code</summary>
+
+```ts
+file =>
+        fs.readFileSync(
+          path.isAbsolute(file) ? file : path.join(getCurrentDirectory(), file),
+          'utf-8',
+        )
+```
+</details>
+
+- **Parameters**:
+  - `file: any`
+- **Return Type**: `string`
+- **Calls**:
+  - `fs.readFileSync`
+### `onUnRecoverableConfigFileDiagnostic(diag: any): never`
+
+<details><summary>Code</summary>
+
+```ts
+diag => {
+        throw new Error(formatDiagnostics([diag])); // ensures that `parsed` is defined.
+      }
+```
+</details>
+
+- **Parameters**:
+  - `diag: any`
+- **Return Type**: `never`
+- **Calls**:
+  - `formatDiagnostics`
+### `readFile(file: any): string`
+
+<details><summary>Code</summary>
+
+```ts
+file =>
+        fs.readFileSync(
+          path.isAbsolute(file) ? file : path.join(getCurrentDirectory(), file),
+          'utf-8',
+        )
+```
+</details>
+
+- **Parameters**:
+  - `file: any`
+- **Return Type**: `string`
 - **Calls**:
   - `fs.readFileSync`
 ### `getCurrentDirectory(): string`
@@ -265,26 +342,5 @@ f => f
 </details>
 
 - **Return Type**: `string`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

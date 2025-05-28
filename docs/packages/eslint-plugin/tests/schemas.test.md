@@ -2,18 +2,29 @@
 
 # 📄 `schemas.test.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 4 |
+| 📊 Variables & Constants | 10 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 1 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
+- [Async/Await Patterns](#asyncawait-patterns)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 4
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/tests/schemas.test.ts`**
@@ -26,6 +37,114 @@
 | `prettier` | `prettier` |
 | `rules` | `../src/rules/index.js` |
 | `areOptionsValid` | `./areOptionsValid.js` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `config` | `any` | let/var | `await prettier.resolveConfig(filepath, {
+    config: PRETTIER_CONFIG_PATH,
+  })` | ✗ |
+| `SKIPPED_RULES_FOR_TYPE_GENERATION` | `Set<string>` | const | `new Set(['indent'])` | ✗ |
+| `ONLY` | `""` | const | `''` | ✗ |
+| `PRETTIER_CONFIG` | `{ schema: prettier.Options; tsType: Promise<prettier.Options>; }` | let/var | `{
+    schema: await getPrettierConfig(SCHEMA_FILEPATH),
+    tsType: getPrettierConfig(TS_TYPE_FILEPATH),
+  }` | ✗ |
+| `schemaString` | `any` | let/var | `await prettier.format(
+        JSON.stringify(
+          ruleDef.meta.schema,
+          (k, v: unknown) => {
+            if (k === 'enum' && Array.isArray(v)) {
+              // sort enum arrays for consistency regardless of source order
+              v.sort();
+            } else if (
+              typeof v === 'object' &&
+              v != null &&
+              !Array.isArray(v)
+            ) {
+              // sort properties for consistency regardless of source order
+              return Object.fromEntries(
+                Object.entries(v).sort(([a], [b]) => a.localeCompare(b)),
+              );
+            }
+            return v;
+          },
+          // use the indent feature as it forces all objects to be multiline
+          // if we don't do this then prettier decides what objects are multiline
+          // based on what fits on a line - which looks less consistent
+          // and makes changes harder to understand as you can have multiple
+          // changes per line, or adding a prop can restructure an object
+          2,
+        ),
+        PRETTIER_CONFIG.schema,
+      )` | ✗ |
+| `compilationResult` | `any` | let/var | `await compile(
+        ruleDef.meta.schema,
+        PRETTIER_CONFIG.tsType,
+      )` | ✗ |
+| `files` | `string[]` | let/var | `await fs.readdir(snapshotFolder, { encoding: 'utf-8' })` | ✗ |
+| `names` | `Set<string>` | let/var | `new Set(
+    ruleEntries
+      .filter(([k]) => !SKIPPED_RULES_FOR_TYPE_GENERATION.has(k))
+      .map(([k]) => `${k}.shot`),
+  )` | ✗ |
+| `VALID_SCHEMA_PROPS` | `Set<"type" | "id" | "properties" | "extends" | "default" | "additionalProperties" | "enum" | "required" | "items" | "description" | "format" | "$defs" | "$ref" | "$schema" | "additionalItems" | ... 20 more ... | "uniqueItems">` | const | `new Set([
+  '$defs',
+  '$ref',
+  '$schema',
+  'additionalItems',
+  'additionalProperties',
+  'allOf',
+  'anyOf',
+  'default',
+  'definitions',
+  'dependencies',
+  'description',
+  'enum',
+  'exclusiveMaximum',
+  'exclusiveMinimum',
+  'extends',
+  'format',
+  'id',
+  'items',
+  'maximum',
+  'maxItems',
+  'maxLength',
+  'maxProperties',
+  'minimum',
+  'minItems',
+  'minLength',
+  'minProperties',
+  'multipleOf',
+  'not',
+  'oneOf',
+  'pattern',
+  'patternProperties',
+  'properties',
+  'required',
+  'title',
+  'type',
+  'uniqueItems',
+] as const)` | ✗ |
+| `overrideValidOptions` | `Record<string, unknown>` | const | `{
+    'func-call-spacing': ['never'],
+    semi: ['never'],
+  }` | ✗ |
+
+
+---
+
+## Async/Await Patterns
+
+| Type | Function | Await Expressions | Promise Chains |
+|------|----------|-------------------|----------------|
+| async-function | `getPrettierConfig` | prettier.resolveConfig(filepath, {
+    config: PRETTIER_CONFIG_PATH,
+  }) | *none* |
 
 
 ---
@@ -59,26 +178,5 @@ async (
 - **Return Type**: `Promise<prettier.Options>`
 - **Calls**:
   - `prettier.resolveConfig`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

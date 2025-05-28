@@ -2,19 +2,29 @@
 
 # 📄 `analyze.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 7 |
+| 📊 Variables & Constants | 4 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 7
-- **Interfaces**: 1
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/src/analyze.ts`**
@@ -30,6 +40,43 @@
 | `ReferencerOptions` | `./referencer` |
 | `Referencer` | `./referencer` |
 | `ScopeManager` | `./ScopeManager` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `DEFAULT_OPTIONS` | `Required<AnalyzeOptions>` | const | `{
+  childVisitorKeys: visitorKeys,
+  emitDecoratorMetadata: false,
+  globalReturn: false,
+  impliedStrict: false,
+  jsxFragmentName: null,
+  jsxPragma: 'React',
+  lib: ['es2018'],
+  sourceType: 'script',
+}` | ✗ |
+| `options` | `Required<AnalyzeOptions>` | const | `{
+    childVisitorKeys:
+      providedOptions?.childVisitorKeys ?? DEFAULT_OPTIONS.childVisitorKeys,
+    emitDecoratorMetadata: false,
+    globalReturn: providedOptions?.globalReturn ?? DEFAULT_OPTIONS.globalReturn,
+    impliedStrict:
+      providedOptions?.impliedStrict ?? DEFAULT_OPTIONS.impliedStrict,
+    jsxFragmentName:
+      providedOptions?.jsxFragmentName ?? DEFAULT_OPTIONS.jsxFragmentName,
+    jsxPragma:
+      // eslint-disable-next-line @typescript-eslint/internal/eqeq-nullish
+      providedOptions?.jsxPragma === undefined
+        ? DEFAULT_OPTIONS.jsxPragma
+        : providedOptions.jsxPragma,
+    lib: providedOptions?.lib ?? ['esnext'],
+    sourceType: providedOptions?.sourceType ?? DEFAULT_OPTIONS.sourceType,
+  }` | ✗ |
+| `scopeManager` | `ScopeManager` | const | `new ScopeManager(options)` | ✗ |
+| `referencer` | `Referencer` | const | `new Referencer(options, scopeManager)` | ✗ |
 
 
 ---
@@ -96,13 +143,6 @@ export function analyze(
 // eslint-disable-next-line @typescript-eslint/internal/eqeq-nullish (x4)
 // ensure the option is lower cased (x4)
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
 
 
 ---
@@ -183,13 +223,6 @@ export interface AnalyzeOptions {
 | `lib` | `Lib[]` | ✓ |  |
 | `sourceType` | `SourceType` | ✓ |  |
 | `emitDecoratorMetadata` | `boolean` | ✓ |  |
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

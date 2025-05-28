@@ -2,20 +2,30 @@
 
 # 📄 `consistent-type-exports.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 6 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 11 |
+| 📊 Variables & Constants | 11 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 2 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 6
-- **Classes**: 0
-- **Imports**: 11
-- **Interfaces**: 2
-- **Type Aliases**: 2
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/consistent-type-exports.ts`**
@@ -35,6 +45,39 @@
 | `isOpeningBraceToken` | `../util` |
 | `nullThrows` | `../util` |
 | `NullThrowsReasons` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `sourceExportsMap` | `Record<string, SourceExports>` | const | `{}` | ✗ |
+| `aliasedSymbol` | `any` | const | `tsutils.isSymbolFlagSet(
+        symbol,
+        ts.SymbolFlags.Alias,
+      )
+        ? checker.getAliasedSymbol(symbol)
+        : symbol` | ✗ |
+| `source` | `string` | const | `getSourceFromExport(node) ?? 'undefined'` | ✗ |
+| `sourceExports` | `SourceExports` | const | `(sourceExportsMap[source] ||= {
+          reportValueExports: [],
+          source,
+          typeOnlyNamedExport: null,
+          valueOnlyNamedExport: null,
+        })` | ✗ |
+| `typeBasedSpecifiers` | `TSESTree.ExportSpecifier[]` | const | `[]` | ✗ |
+| `inlineTypeSpecifiers` | `TSESTree.ExportSpecifier[]` | const | `[]` | ✗ |
+| `valueSpecifiers` | `TSESTree.ExportSpecifier[]` | const | `[]` | ✗ |
+| `exportNames` | `any` | const | `allExportNames[0]` | ✗ |
+| `typeSpecifiers` | `any[]` | let/var | `[...typeBasedSpecifiers, ...inlineTypeSpecifiers]` | ✗ |
+| `exportedName` | `any` | const | `specifier.exported.type === AST_NODE_TYPES.Literal
+      ? specifier.exported.raw
+      : specifier.exported.name` | ✗ |
+| `localName` | `any` | const | `specifier.local.type === AST_NODE_TYPES.Literal
+      ? specifier.local.raw
+      : specifier.local.name` | ✗ |
 
 
 ---
@@ -319,13 +362,6 @@ function getSpecifierText(specifier: TSESTree.ExportSpecifier): string {
 - **Parameters**:
   - `specifier: TSESTree.ExportSpecifier`
 - **Return Type**: `string`
-
----
-
-## Classes
-
-> No classes found in this file.
-
 
 ---
 

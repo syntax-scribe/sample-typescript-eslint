@@ -2,19 +2,29 @@
 
 # 📄 `prefer-destructuring.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 12 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 10 |
+| 📊 Variables & Constants | 5 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 5 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 9
-- **Classes**: 0
-- **Imports**: 10
-- **Interfaces**: 0
-- **Type Aliases**: 5
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/prefer-destructuring.ts`**
@@ -33,6 +43,71 @@
 | `getParserServices` | `../util` |
 | `isTypeAnyType` | `../util` |
 | `getESLintCoreRule` | `../util/getESLintCoreRule` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `destructuringTypeConfig` | `JSONSchema4` | const | `{
+  type: 'object',
+  additionalProperties: false,
+  properties: {
+    array: {
+      type: 'boolean',
+    },
+    object: {
+      type: 'boolean',
+    },
+  },
+}` | ✗ |
+| `schema` | `readonly JSONSchema4[]` | const | `[
+  {
+    oneOf: [
+      {
+        type: 'object',
+        additionalProperties: false,
+        properties: {
+          AssignmentExpression: destructuringTypeConfig,
+          VariableDeclarator: destructuringTypeConfig,
+        },
+      },
+      destructuringTypeConfig,
+    ],
+  },
+  {
+    type: 'object',
+    properties: {
+      enforceForDeclarationWithTypeAnnotation: {
+        type: 'boolean',
+        description:
+          'Whether to enforce destructuring on variable declarations with type annotations.',
+      },
+      enforceForRenamedProperties: {
+        type: 'boolean',
+        description:
+          'Whether to enforce destructuring that use a different variable name than the property name.',
+      },
+    },
+  },
+]` | ✗ |
+| `baseRulesWithoutFixCache` | `typeof baseRules | null` | let/var | `null` | ✗ |
+| `rules` | `any` | const | `leftNode.type === AST_NODE_TYPES.Identifier &&
+        leftNode.typeAnnotation == null
+          ? baseRules
+          : baseRulesWithoutFix()` | ✗ |
+| `customContext` | `{
+    report: Context['report'];
+  }` | const | `{
+    report: (descriptor): void => {
+      context.report({
+        ...descriptor,
+        fix: undefined,
+      });
+    },
+  }` | ✗ |
 
 
 ---
@@ -256,6 +331,63 @@ function noFixContext(context: Context): Context {
 - **Return Type**: `void`
 - **Calls**:
   - `context.report`
+### `report(descriptor: any): void`
+
+<details><summary>Code</summary>
+
+```ts
+(descriptor): void => {
+      context.report({
+        ...descriptor,
+        fix: undefined,
+      });
+    }
+```
+</details>
+
+- **Parameters**:
+  - `descriptor: any`
+- **Return Type**: `void`
+- **Calls**:
+  - `context.report`
+### `report(descriptor: any): void`
+
+<details><summary>Code</summary>
+
+```ts
+(descriptor): void => {
+      context.report({
+        ...descriptor,
+        fix: undefined,
+      });
+    }
+```
+</details>
+
+- **Parameters**:
+  - `descriptor: any`
+- **Return Type**: `void`
+- **Calls**:
+  - `context.report`
+### `report(descriptor: any): void`
+
+<details><summary>Code</summary>
+
+```ts
+(descriptor): void => {
+      context.report({
+        ...descriptor,
+        fix: undefined,
+      });
+    }
+```
+</details>
+
+- **Parameters**:
+  - `descriptor: any`
+- **Return Type**: `void`
+- **Calls**:
+  - `context.report`
 ### `isTypeAnyOrIterableType(type: ts.Type, typeChecker: ts.TypeChecker): boolean`
 
 <details><summary>Code</summary>
@@ -315,20 +447,6 @@ function isArrayLiteralIntegerIndexAccess(
 - **Return Type**: `node is TSESTree.MemberExpression`
 - **Calls**:
   - `Number.isInteger`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
 
 ---
 

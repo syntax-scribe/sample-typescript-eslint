@@ -2,19 +2,30 @@
 
 # 📄 `Sponsor.tsx`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 4 |
+| 📊 Variables & Constants | 1 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 3 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
+- [JSX Elements](#jsx-elements)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 4
-- **Interfaces**: 1
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/website/src/components/FinancialContributors/Sponsor.tsx`**
@@ -27,6 +38,26 @@
 | `React` | `react` |
 | `SponsorData` | `./types` |
 | `styles` | `./styles.module.css` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `children` | `any` | let/var | `<img alt={`${sponsor.name} logo`} src={sponsor.image} />` | ✗ |
+
+
+---
+
+## JSX Elements
+
+| Component | Type | Props | Children |
+|-----------|------|-------|----------|
+| `img` | element | alt={`${sponsor.name} logo`}, src={sponsor.image} | *none* |
+| `Fragment` | fragment | *none* | *none* |
+| `Link` | component | className={styles.sponsorLink}, href={sponsor.website}, title={sponsor.name}, rel="noopener sponsored" | {children} |
 
 
 ---
@@ -81,13 +112,6 @@ export function Sponsor({
 
 ---
 
-## Classes
-
-> No classes found in this file.
-
-
----
-
 ## Interfaces
 
 ### `SponsorProps`
@@ -108,13 +132,6 @@ interface SponsorProps {
 |------|------|----------|-------------|
 | `includeName` | `boolean` | ✓ |  |
 | `sponsor` | `SponsorData` | ✗ |  |
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

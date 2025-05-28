@@ -2,18 +2,28 @@
 
 # 📄 `babel.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 5 |
+| 📊 Variables & Constants | 2 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 5
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/tests/util/parsers/babel.ts`**
@@ -27,6 +37,25 @@
 | `Fixture` | `./parser-types.js` |
 | `ParserResponse` | `./parser-types.js` |
 | `ParserResponseType` | `./parser-types.js` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `PLUGINS` | `NonNullable<ParserOptions['plugins']>` | const | `[
+  'decoratorAutoAccessors',
+  // TODO - enable classFeatures instead of classProperties when we support it
+  // 'classFeatures',
+  'classProperties',
+  'decorators-legacy',
+  'explicitResourceManagement',
+  'importAssertions',
+  'typescript',
+]` | ✗ |
+| `plugins` | `any[]` | const | `[...PLUGINS]` | ✗ |
 
 
 ---
@@ -84,26 +113,5 @@ export function parseBabel(
 - **Calls**:
   - `plugins.push`
   - `parse (from @babel/eslint-parser)`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

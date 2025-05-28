@@ -2,19 +2,29 @@
 
 # 📄 `semanticInfo-singleRun.test.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 4 |
+| 📊 Variables & Constants | 12 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 4
-- **Interfaces**: 1
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/typescript-estree/tests/lib/semanticInfo-singleRun.test.ts`**
@@ -27,6 +37,52 @@
 | `clearParseAndGenerateServicesCalls` | `../../src/parser` |
 | `clearProgramCache` | `../../src/parser` |
 | `parseAndGenerateServices` | `../../src/parser` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `mockProgram` | `{ getCompilerOptions(): unknown; getSourceFile(): void; getTypeChecker(): void; }` | const | `{
+  getCompilerOptions(): unknown {
+    return {};
+  },
+  getSourceFile(): void {
+    return;
+  },
+  getTypeChecker(): void {
+    return;
+  },
+}` | ✗ |
+| `actual` | `any` | let/var | `await importOriginal()` | ✗ |
+| `actual` | `any` | let/var | `await importOriginal()` | ✗ |
+| `actual` | `any` | let/var | `await importOriginal()` | ✗ |
+| `code` | `"const foo = 5;"` | const | `'const foo = 5;'` | ✗ |
+| `tsconfigs` | `string[]` | const | `['./non-matching-tsconfig.json', './tsconfig.json']` | ✗ |
+| `options` | `{ readonly allowAutomaticSingleRunInference: true; readonly filePath: any; readonly loggerFn: false; readonly project: string[]; readonly tsconfigRootDir: string; }` | const | `{
+  allowAutomaticSingleRunInference: true,
+  filePath: testFiles[0],
+  loggerFn: false,
+  project: tsconfigs,
+  tsconfigRootDir: FIXTURES_DIR,
+} as const` | ✗ |
+| `resultProgram` | `any` | const | `parseAndGenerateServices(code, options).services
+        .program` | ✗ |
+| `resultProgram` | `any` | const | `parseAndGenerateServices(code, options).services
+        .program` | ✗ |
+| `resultProgram` | `any` | const | `parseAndGenerateServices(code, options).services
+        .program` | ✗ |
+| `optionsWithReversedTsconfigs` | `{ project: string[]; allowAutomaticSingleRunInference: true; filePath: any; loggerFn: false; tsconfigRootDir: string; }` | const | `{
+        ...options,
+        //  Now the matching tsconfig comes first
+        project: [...options.project].reverse(),
+      }` | ✗ |
+| `resultProgram` | `any` | const | `parseAndGenerateServices(
+        code,
+        optionsWithReversedTsconfigs,
+      ).services.program` | ✗ |
 
 
 ---
@@ -50,13 +106,6 @@
 
 ---
 
-## Classes
-
-> No classes found in this file.
-
-
----
-
 ## Interfaces
 
 ### `MockProgramWithConfigFile`
@@ -75,13 +124,6 @@ interface MockProgramWithConfigFile {
 | Name | Type | Optional | Description |
 |------|------|----------|-------------|
 | `__FROM_CONFIG_FILE__` | `string` | ✓ |  |
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

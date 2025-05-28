@@ -2,19 +2,29 @@
 
 # 📄 `explicit-function-return-type.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 5 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 8 |
+| 📊 Variables & Constants | 3 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 3 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 5
-- **Classes**: 0
-- **Imports**: 8
-- **Interfaces**: 0
-- **Type Aliases**: 3
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/explicit-function-return-type.ts`**
@@ -31,6 +41,17 @@
 | `ancestorHasReturnType` | `../util/explicitReturnTypeUtils` |
 | `checkFunctionReturnType` | `../util/explicitReturnTypeUtils` |
 | `isValidFunctionExpressionReturnType` | `../util/explicitReturnTypeUtils` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `functionInfoStack` | `FunctionInfo<FunctionNode>[]` | const | `[]` | ✗ |
+| `parent` | `any` | const | `node.parent` | ✗ |
+| `funcName` | `any` | let/var | `*not shown*` | ✗ |
 
 
 ---
@@ -230,20 +251,6 @@ function exitFunctionExpression(
   - `ancestorHasReturnType (from ../util/explicitReturnTypeUtils)`
   - `checkFunctionReturnType (from ../util/explicitReturnTypeUtils)`
   - `context.report`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
 
 ---
 

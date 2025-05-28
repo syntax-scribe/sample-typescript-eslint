@@ -2,20 +2,30 @@
 
 # 📄 `no-invalid-void-type.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 5 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 4 |
+| 📊 Variables & Constants | 4 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 1 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 5
-- **Classes**: 0
-- **Imports**: 4
-- **Interfaces**: 1
-- **Type Aliases**: 1
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/no-invalid-void-type.ts`**
@@ -28,6 +38,29 @@
 | `AST_NODE_TYPES` | `@typescript-eslint/utils` |
 | `createRule` | `../util` |
 | `hasOverloadSignatures` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `validParents` | `AST_NODE_TYPES[]` | const | `[
+      AST_NODE_TYPES.TSTypeAnnotation, //
+    ]` | ✗ |
+| `invalidGrandParents` | `AST_NODE_TYPES[]` | const | `[
+      AST_NODE_TYPES.TSPropertySignature,
+      AST_NODE_TYPES.CallExpression,
+      AST_NODE_TYPES.PropertyDefinition,
+      AST_NODE_TYPES.AccessorProperty,
+      AST_NODE_TYPES.Identifier,
+    ]` | ✗ |
+| `validUnionMembers` | `AST_NODE_TYPES[]` | const | `[
+      AST_NODE_TYPES.TSVoidKeyword,
+      AST_NODE_TYPES.TSNeverKeyword,
+    ]` | ✗ |
+| `current` | `any` | let/var | `node.parent` | ✗ |
 
 
 ---
@@ -240,13 +273,6 @@ function getParentFunctionDeclarationNode(
 - **Parameters**:
   - `node: TSESTree.Node`
 - **Return Type**: `TSESTree.FunctionDeclaration | TSESTree.MethodDefinition | null`
-
----
-
-## Classes
-
-> No classes found in this file.
-
 
 ---
 

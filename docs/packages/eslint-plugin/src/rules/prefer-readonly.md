@@ -2,20 +2,31 @@
 
 # 📄 `prefer-readonly.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 16 |
+| 🧱 Classes | 1 |
+| 📦 Imports | 9 |
+| 📊 Variables & Constants | 8 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 3 |
+| 🎯 Enums | 1 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Classes](#classes)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 16
-- **Classes**: 1
-- **Imports**: 9
-- **Interfaces**: 0
-- **Type Aliases**: 3
+- [Enums](#enums)
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/prefer-readonly.ts`**
@@ -33,6 +44,25 @@
 | `typeIsOrHasBaseType` | `../util` |
 | `getMemberHeadLoc` | `../util/getMemberHeadLoc` |
 | `getParameterPropertyHeadLoc` | `../util/getMemberHeadLoc` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `classScopeStack` | `ClassScope[]` | const | `[]` | ✗ |
+| `current` | `any` | let/var | `node.parent as ts.Node | undefined` | ✗ |
+| `parent` | `any` | const | `current.parent` | ✗ |
+| `tsNode` | `ts.PropertyAccessExpression` | const | `services.esTreeNodeToTSNodeMap.get(
+            node,
+          ) as ts.PropertyAccessExpression` | ✗ |
+| `OUTSIDE_CONSTRUCTOR` | `-1` | const | `-1` | ✗ |
+| `DIRECTLY_INSIDE_CONSTRUCTOR` | `0` | const | `0` | ✗ |
+| `result` | `TypeToClassRelation` | let/var | `TypeToClassRelation.None` | ✗ |
+| `typeIsClass` | `any` | const | `tsutils.isObjectType(type) &&
+      tsutils.isObjectFlagSet(type, ts.ObjectFlags.Anonymous)` | ✗ |
 
 
 ---
@@ -1010,13 +1040,6 @@ public memberHasConstructorModifications(name: string) {
 
 ---
 
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
 ## Type Aliases
 
 ### `MessageIds`
@@ -1041,6 +1064,34 @@ type Options = [
 type ParameterOrPropertyDeclaration = | ts.ParameterDeclaration
   | ts.PropertyDeclaration;
 ```
+
+
+---
+
+## Enums
+
+### `enum TypeToClassRelation`
+
+<details><summary>Enum Code</summary>
+
+```ts
+enum TypeToClassRelation {
+  ClassAndInstance,
+  Class,
+  Instance,
+  None,
+}
+```
+</details>
+
+#### Members
+
+| Name | Value | Description |
+|------|-------|-------------|
+| `ClassAndInstance` | *auto* |  |
+| `Class` | *auto* |  |
+| `Instance` | *auto* |  |
+| `None` | *auto* |  |
 
 
 ---

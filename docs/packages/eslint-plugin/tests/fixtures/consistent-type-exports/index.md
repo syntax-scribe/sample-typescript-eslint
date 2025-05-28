@@ -2,25 +2,38 @@
 
 # 📄 `index.ts`
 
-## 📚 Table of Contents
-
-- [Classes](#classes)
-- [Type Aliases](#type-aliases)
-
 ## 📊 Analysis Summary
 
-- **Functions**: 0
-- **Classes**: 1
-- **Imports**: 0
-- **Interfaces**: 0
-- **Type Aliases**: 2
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 0 |
+| 🧱 Classes | 1 |
+| 📦 Imports | 0 |
+| 📊 Variables & Constants | 2 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 0 |
+
+## 📚 Table of Contents
+
+- [Variables & Constants](#variables-constants)
+- [Classes](#classes)
+- [Type Aliases](#type-aliases)
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/tests/fixtures/consistent-type-exports/index.ts`**
 
-## 📦 Imports
+## Variables & Constants
 
-> No imports found in this file.
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `value1` | `2` | const | `2` | ✓ |
+| `value2` | `2` | const | `2` | ✓ |
 
 
 ---
@@ -42,13 +55,6 @@
 export class Class1 {}
 ```
 </details>
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
 
 
 ---

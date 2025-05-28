@@ -2,19 +2,30 @@
 
 # 📄 `CopyButton.tsx`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 2 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 7 |
+| 📊 Variables & Constants | 1 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 5 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
+- [JSX Elements](#jsx-elements)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
-
-## 📊 Analysis Summary
-
-- **Functions**: 2
-- **Classes**: 0
-- **Imports**: 7
-- **Interfaces**: 1
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/website/src/components/inputs/CopyButton.tsx`**
@@ -30,6 +41,28 @@
 | `useClipboard` | `../../hooks/useClipboard` |
 | `styles` | `./CopyButton.module.css` |
 | `Tooltip` | `./Tooltip` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `cache` | `Set<unknown>` | const | `new Set()` | ✗ |
+
+
+---
+
+## JSX Elements
+
+| Component | Type | Props | Children |
+|-----------|------|-------|----------|
+| `div` | element | className={styles.copyButtonContainer} | <Tooltip> |
+| `Tooltip` | component | open={on}, text="Copied" | <button> |
+| `button` | element | aria-label={!on ? 'Copy code to clipboard' : 'Copied'}, className={clsx(styles.copyButton, className, 'button')}, disabled={on}, onClick={onCopy} | <CopyIcon>, <CheckIcon> |
+| `CopyIcon` | component | className={styles.copyIcon}, height="18", width="18" | *none* |
+| `CheckIcon` | component | className={styles.checkIcon}, height="18", width="18" | *none* |
 
 
 ---
@@ -104,13 +137,6 @@ function CopyButton({ className, value }: CopyButtonProps): React.JSX.Element {
 
 ---
 
-## Classes
-
-> No classes found in this file.
-
-
----
-
 ## Interfaces
 
 ### `CopyButtonProps`
@@ -131,13 +157,6 @@ export interface CopyButtonProps {
 |------|------|----------|-------------|
 | `className` | `string` | ✓ |  |
 | `value` | `unknown` | ✗ |  |
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

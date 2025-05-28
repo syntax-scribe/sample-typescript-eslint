@@ -2,20 +2,30 @@
 
 # 📄 `unbound-method.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 7 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 7 |
+| 📊 Variables & Constants | 12 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 2 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 7
-- **Classes**: 0
-- **Imports**: 7
-- **Interfaces**: 2
-- **Type Aliases**: 2
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/unbound-method.ts`**
@@ -31,6 +41,73 @@
 | `getParserServices` | `../util` |
 | `isBuiltinSymbolLike` | `../util` |
 | `isSymbolFromDefaultLibrary` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `SUPPORTED_GLOBALS` | `readonly ["Number", "Object", "String", "RegExp", "Symbol", "Array", "Proxy", "Date", "Atomics", "Reflect", "console", "Math", "JSON", "Intl"]` | const | `[
+  'Number',
+  'Object',
+  'String', // eslint-disable-line @typescript-eslint/internal/prefer-ast-types-enum
+  'RegExp',
+  'Symbol',
+  'Array',
+  'Proxy',
+  'Date',
+  'Atomics',
+  'Reflect',
+  'console',
+  'Math',
+  'JSON',
+  'Intl',
+] as const` | ✗ |
+| `object` | `SymbolConstructor | Console | ObjectConstructor | RegExpConstructor | ArrayConstructor | ... 8 more ... | JSON` | const | `global[namespace]` | ✗ |
+| `nativelyBoundMembers` | `Set<string>` | const | `new Set(
+  SUPPORTED_GLOBALS.flatMap(namespace => {
+    if (!(namespace in global)) {
+      // node.js might not have namespaces like Intl depending on compilation options
+      // https://nodejs.org/api/intl.html#intl_options_for_building_node_js
+      return [];
+    }
+    const object = global[namespace];
+    return Object.getOwnPropertyNames(object)
+      .filter(
+        name =>
+          !name.startsWith('_') &&
+          typeof (object as Record<string, unknown>)[name] === 'function',
+      )
+      .map(name => `${namespace}.${name}`);
+  }),
+)` | ✗ |
+| `SUPPORTED_GLOBAL_TYPES` | `string[]` | const | `[
+  'NumberConstructor',
+  'ObjectConstructor',
+  'StringConstructor',
+  'SymbolConstructor',
+  'ArrayConstructor',
+  'Array',
+  'ProxyConstructor',
+  'Console',
+  'DateConstructor',
+  'Atomics',
+  'Math',
+  'JSON',
+]` | ✗ |
+| `BASE_MESSAGE` | `"Avoid referencing unbound methods which may cause unintentional scoping of `this`."` | const | `'Avoid referencing unbound methods which may cause unintentional scoping of `this`.'` | ✗ |
+| `notImported` | `boolean` | const | `objectSymbol != null &&
+          isNotImported(objectSymbol, currentSourceFile)` | ✗ |
+| `initNode` | `TSESTree.Node | null` | let/var | `null` | ✗ |
+| `parent` | `TSESTree.Node | undefined` | let/var | `node` | ✗ |
+| `assignee` | `any` | const | `(valueDeclaration as ts.PropertyAssignment).initializer` | ✗ |
+| `firstParamIsThis` | `boolean` | const | `firstParam?.name.kind === ts.SyntaxKind.Identifier &&
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-enum-comparison
+    firstParam.name.escapedText === 'this'` | ✗ |
+| `thisArgIsVoid` | `boolean` | const | `firstParamIsThis && firstParam.type?.kind === ts.SyntaxKind.VoidKeyword` | ✗ |
+| `parent` | `any` | const | `node.parent` | ✗ |
 
 
 ---
@@ -405,13 +482,6 @@ function isSafeUse(node: TSESTree.Node): boolean {
 // in all other cases, it's likely the logical expression will return the method ref
 // so make sure the parent is a safe usage
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
 
 
 ---

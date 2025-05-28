@@ -2,20 +2,29 @@
 
 # 📄 `ESLintShared.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 8 |
+| 🧱 Classes | 1 |
+| 📦 Imports | 2 |
+| 📊 Variables & Constants | 0 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 13 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
 - [Functions](#functions)
 - [Classes](#classes)
 - [Interfaces](#interfaces)
-
-## 📊 Analysis Summary
-
-- **Functions**: 8
-- **Classes**: 1
-- **Imports**: 2
-- **Interfaces**: 13
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/utils/src/ts-eslint/eslint/ESLintShared.ts`**
@@ -921,13 +930,6 @@ export interface Formatter {
 }
 ```
 </details>
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

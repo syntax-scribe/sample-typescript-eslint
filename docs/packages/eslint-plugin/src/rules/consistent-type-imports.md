@@ -2,20 +2,30 @@
 
 # 📄 `consistent-type-imports.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 10 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 14 |
+| 📊 Variables & Constants | 30 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 2 |
+| 📑 Type Aliases | 4 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 10
-- **Classes**: 0
-- **Imports**: 14
-- **Interfaces**: 2
-- **Type Aliases**: 4
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/consistent-type-imports.ts`**
@@ -38,6 +48,49 @@
 | `isTypeKeyword` | `../util` |
 | `nullThrows` | `../util` |
 | `NullThrowsReasons` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `prefer` | `any` | const | `option.prefer ?? 'type-imports'` | ✗ |
+| `disallowTypeAnnotations` | `boolean` | const | `option.disallowTypeAnnotations !== false` | ✗ |
+| `selectors` | `RuleListener` | const | `{}` | ✗ |
+| `fixStyle` | `any` | const | `option.fixStyle ?? 'separate-type-imports'` | ✗ |
+| `hasDecoratorMetadata` | `boolean` | let/var | `false` | ✗ |
+| `sourceImportsMap` | `Record<string, SourceImports>` | const | `{}` | ✗ |
+| `emitDecoratorMetadata` | `any` | const | `getParserServices(context, true).emitDecoratorMetadata ?? false` | ✗ |
+| `experimentalDecorators` | `any` | const | `getParserServices(context, true).experimentalDecorators ?? false` | ✗ |
+| `source` | `any` | const | `node.source.value` | ✗ |
+| `sourceImports` | `SourceImports` | const | `sourceImportsMap[source]` | ✗ |
+| `typeSpecifiers` | `TSESTree.ImportClause[]` | const | `[]` | ✗ |
+| `inlineTypeSpecifiers` | `TSESTree.ImportSpecifier[]` | const | `[]` | ✗ |
+| `valueSpecifiers` | `TSESTree.ImportClause[]` | const | `[]` | ✗ |
+| `unusedSpecifiers` | `TSESTree.ImportClause[]` | const | `[]` | ✗ |
+| `parent` | `any` | let/var | `ref.identifier.parent as TSESTree.Node | undefined` | ✗ |
+| `child` | `TSESTree.Node` | let/var | `ref.identifier` | ✗ |
+| `defaultSpecifier` | `any` | const | `node.specifiers[0].type === AST_NODE_TYPES.ImportDefaultSpecifier
+          ? node.specifiers[0]
+          : null` | ✗ |
+| `namespaceSpecifier` | `any` | const | `node.specifiers.find(
+          (specifier): specifier is TSESTree.ImportNamespaceSpecifier =>
+            specifier.type === AST_NODE_TYPES.ImportNamespaceSpecifier,
+        ) ?? null` | ✗ |
+| `typeNamedSpecifiersTexts` | `string[]` | const | `[]` | ✗ |
+| `removeTypeNamedSpecifiers` | `TSESLint.RuleFix[]` | const | `[]` | ✗ |
+| `namedSpecifierGroups` | `TSESTree.ImportSpecifier[][]` | const | `[]` | ✗ |
+| `group` | `TSESTree.ImportSpecifier[]` | let/var | `[]` | ✗ |
+| `first` | `TSESTree.ImportSpecifier` | const | `namedSpecifierGroup[0]` | ✗ |
+| `last` | `TSESTree.ImportSpecifier` | const | `namedSpecifierGroup[namedSpecifierGroup.length - 1]` | ✗ |
+| `removeRange` | `TSESTree.Range` | const | `[first.range[0], last.range[1]]` | ✗ |
+| `textRange` | `TSESTree.Range` | const | `[...removeRange]` | ✗ |
+| `isFirst` | `boolean` | const | `allNamedSpecifiers[0] === first` | ✗ |
+| `isLast` | `boolean` | const | `allNamedSpecifiers[allNamedSpecifiers.length - 1] === last` | ✗ |
+| `afterFixes` | `TSESLint.RuleFix[]` | let/var | `[]` | ✗ |
+| `fixesRemoveTypeNamespaceSpecifier` | `TSESLint.RuleFix[]` | let/var | `[]` | ✗ |
 
 
 ---
@@ -888,13 +941,6 @@ function* fixRemoveTypeSpecifierFromImportSpecifier(
 // import { type Foo } from 'foo' (x2)
 //          ^^^^ remove (x2)
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
 
 
 ---

@@ -2,19 +2,29 @@
 
 # 📄 `PackageLink.tsx`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 4 |
+| 📊 Variables & Constants | 0 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 1 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [JSX Elements](#jsx-elements)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 4
-- **Interfaces**: 1
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/website/src/theme/MDXComponents/PackageLink.tsx`**
@@ -27,6 +37,15 @@
 | `Npm` | `@uiw/react-shields/npm` |
 | `React` | `react` |
 | `styles` | `./PackageLink.module.css` |
+
+
+---
+
+## JSX Elements
+
+| Component | Type | Props | Children |
+|-----------|------|-------|----------|
+| `Npm.Version` | component | alt={`npm: ${fullPackageName} v${version}`}, anchor={{ target: '_blank' }}, className={styles.packageLink}, href={`https://npmjs.com/${fullPackageName}`}, packageName={packageName}, scope={scope} | *none* |
 
 
 ---
@@ -73,13 +92,6 @@ export function PackageLink({
 
 ---
 
-## Classes
-
-> No classes found in this file.
-
-
----
-
 ## Interfaces
 
 ### `PackageLinkProps`
@@ -100,13 +112,6 @@ export interface PackageLinkProps {
 |------|------|----------|-------------|
 | `packageName` | `string` | ✗ |  |
 | `scope` | `string` | ✓ |  |
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

@@ -2,19 +2,30 @@
 
 # 📄 `RuleAttributes.tsx`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 4 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 14 |
+| 📊 Variables & Constants | 4 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 15 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
+- [JSX Elements](#jsx-elements)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 4
-- **Classes**: 0
-- **Imports**: 14
-- **Interfaces**: 0
-- **Type Aliases**: 2
 
 ## 🛠️ File Location:
 📂 **`packages/website/src/theme/MDXComponents/RuleAttributes.tsx`**
@@ -37,6 +48,52 @@
 | `SUGGESTIONS_EMOJI` | `../../components/constants` |
 | `Feature` | `./Feature` |
 | `styles` | `./RuleAttributes.module.css` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `recommendations` | `{ recommended: string[]; strict: string[]; stylistic: string[]; }` | const | `{
+  recommended: [RECOMMENDED_CONFIG_EMOJI, 'recommended'],
+  strict: [STRICT_CONFIG_EMOJI, 'strict'],
+  stylistic: [STYLISTIC_CONFIG_EMOJI, 'stylistic'],
+}` | ✗ |
+| `recommended` | `any` | const | `docs.recommended` | ✗ |
+| `recommendation` | `any` | const | `recommendations[
+      typeof recommended === 'object'
+        ? resolveRecommendation(recommended)
+        : recommended
+    ]` | ✗ |
+| `features` | `FeatureProps[]` | const | `[]` | ✗ |
+
+
+---
+
+## JSX Elements
+
+| Component | Type | Props | Children |
+|-----------|------|-------|----------|
+| `Fragment` | fragment | *none* | text: "Extending", <Link>, text: "in an", <Link>, text: "enables this rule." |
+| `Link` | component | to={`/users/configs#${recommendation}`}, target="_blank" | <code> |
+| `code` | element | className={styles.code} | text: ""plugin:@typescript-eslint/", {recommendation}, text: """ |
+| `Link` | component | href="https://eslint.org/docs/latest/user-guide/configuring/configuration-files#extending-configuration-files" | text: "ESLint configuration" |
+| `Fragment` | fragment | *none* | text: "Some problems reported by this rule are automatically fixable by the", <Link>, text: "." |
+| `Link` | component | href="https://eslint.org/docs/latest/user-guide/command-line-interface#--fix" | <code>, text: "ESLint command line option" |
+| `code` | element | *none* | text: "--fix" |
+| `Fragment` | fragment | *none* | text: "Some problems reported by this rule are manually fixable by editor", <Link>, text: "." |
+| `Link` | component | href="https://eslint.org/docs/latest/developer-guide/working-with-rules#providing-suggestions" | text: "suggestions" |
+| `Fragment` | fragment | *none* | text: "This rule requires", <Link>, text: "to run, which comes with performance tradeoffs." |
+| `Link` | component | href="/getting-started/typed-linting", target="_blank" | text: "type information" |
+| `Fragment` | fragment | *none* | text: "This is an "extension" rule that replaces a core ESLint rule to work
+          with TypeScript. See", <Link>, text: "." |
+| `Link` | component | href="/rules#extension-rules" | text: "Rules &gt; Extension Rules" |
+| `div` | element | className={styles.features} | {features.map(feature => (
+        <Feature {...feature} key={feature.emoji} />
+      ))} |
+| `Feature` | component | key={feature.emoji} | *none* |
 
 
 ---
@@ -215,20 +272,6 @@ export function RuleAttributes({ name }: { name: string }): React.ReactNode {
   - `getRecommendation`
   - `features.push`
   - `features.map`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
 
 ---
 

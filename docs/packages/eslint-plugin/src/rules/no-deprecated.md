@@ -2,19 +2,29 @@
 
 # 📄 `no-deprecated.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 12 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 8 |
+| 📊 Variables & Constants | 9 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 4 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 12
-- **Classes**: 0
-- **Imports**: 8
-- **Interfaces**: 0
-- **Type Aliases**: 4
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/no-deprecated.ts`**
@@ -31,6 +41,27 @@
 | `nullThrows` | `../util` |
 | `typeOrValueSpecifiersSchema` | `../util` |
 | `typeMatchesSomeSpecifier` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `allow` | `any` | const | `options.allow` | ✗ |
+| `immediateAliasedSymbol` | `ts.Symbol | undefined` | const | `symbol.getDeclarations() && checker.getImmediateAliasedSymbol(symbol)` | ✗ |
+| `current` | `TSESTree.Node` | let/var | `node` | ✗ |
+| `jsDocTags` | `ts.JSDocTagInfo[] | undefined` | let/var | `*not shown*` | ✗ |
+| `displayParts` | `any` | const | `tag.text` | ✗ |
+| `callee` | `TSESTree.Node` | let/var | `node` | ✗ |
+| `aliasedSymbol` | `any` | const | `symbol != null && tsutils.isSymbolFlagSet(symbol, ts.SymbolFlags.Alias)
+          ? checker.getAliasedSymbol(symbol)
+          : symbol` | ✗ |
+| `symbolDeclarationKind` | `any` | const | `aliasedSymbol?.declarations?.[0].kind` | ✗ |
+| `propertyName` | `any` | const | `propertyType.isStringLiteral()
+          ? propertyType.value
+          : String(propertyType.value as number)` | ✗ |
 
 
 ---
@@ -622,20 +653,6 @@ function getReportedNodeName(node: IdentifierLike): string {
 - **Parameters**:
   - `node: IdentifierLike`
 - **Return Type**: `string`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
 
 ---
 

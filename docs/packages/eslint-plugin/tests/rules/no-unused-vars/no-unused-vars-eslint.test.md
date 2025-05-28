@@ -2,18 +2,28 @@
 
 # 📄 `no-unused-vars-eslint.test.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 6 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 6 |
+| 📊 Variables & Constants | 1 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 6
-- **Classes**: 0
-- **Imports**: 6
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/tests/rules/no-unused-vars/no-unused-vars-eslint.test.ts`**
@@ -28,6 +38,22 @@
 | `AST_NODE_TYPES` | `@typescript-eslint/utils` |
 | `MessageIds` | `../../../src/rules/no-unused-vars` |
 | `rule` | `../../../src/rules/no-unused-vars` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `ruleTester` | `any` | const | `new RuleTester({
+  languageOptions: {
+    parserOptions: {
+      // espree defaults to `script`, so we need to mirror it
+      sourceType: 'script',
+    },
+  },
+})` | ✗ |
 
 
 ---
@@ -231,26 +257,5 @@ function usedIgnoredError(
   - `additional: string`
   - `type: any`
 - **Return Type**: `TestCaseError<MessageIds>`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

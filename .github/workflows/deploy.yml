@@ -40,7 +40,7 @@ jobs:
       - name: Install MkDocs and dependencies
         run: |
           pip install --upgrade pip
-          pip install mkdocs mkdocs-material
+          pip install mkdocs mkdocs-material mkdocs-awesome-nav  mkdocs-glightbox
           # If you have a requirements.txt file:
           # pip install -r requirements.txt
 

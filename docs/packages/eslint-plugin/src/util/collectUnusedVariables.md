@@ -2,20 +2,30 @@
 
 # 📄 `collectUnusedVariables.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 34 |
+| 🧱 Classes | 1 |
+| 📦 Imports | 12 |
+| 📊 Variables & Constants | 35 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 2 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Classes](#classes)
 - [Interfaces](#interfaces)
-
-## 📊 Analysis Summary
-
-- **Functions**: 34
-- **Classes**: 1
-- **Imports**: 12
-- **Interfaces**: 2
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/util/collectUnusedVariables.ts`**
@@ -36,6 +46,55 @@
 | `TSESLint` | `@typescript-eslint/utils` |
 | `isTypeImport` | `./isTypeImport` |
 | `referenceContainsTypeQuery` | `./referenceContainsTypeQuery` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `visitor` | `UnusedVarsVisitor` | const | `new this(scopeManager)` | ✗ |
+| `identifier` | `TSESTree.Identifier | null` | let/var | `null` | ✗ |
+| `inner` | `boolean` | const | `currentNode.type !== AST_NODE_TYPES.Program` | ✗ |
+| `node` | `TSESTree.Node | undefined` | let/var | `currentNode` | ✗ |
+| `name` | `string` | let/var | `*not shown*` | ✗ |
+| `node` | `TSESTree.Node` | let/var | `*not shown*` | ✗ |
+| `scope` | `TSESLint.Scope.Scopes.ClassScope` | const | `this.getScope(node) as TSESLint.Scope.Scopes.ClassScope` | ✗ |
+| `idOrVariable` | `any` | let/var | `*not shown*` | ✗ |
+| `body` | `any` | let/var | `node.body` | ✗ |
+| `scope` | `TSESLint.Scope.Scope | null` | let/var | `ref.from` | ✗ |
+| `MERGABLE_TYPES` | `Set<any>` | const | `new Set([
+  AST_NODE_TYPES.ClassDeclaration,
+  AST_NODE_TYPES.FunctionDeclaration,
+  AST_NODE_TYPES.TSInterfaceDeclaration,
+  AST_NODE_TYPES.TSModuleDeclaration,
+  AST_NODE_TYPES.TSTypeAliasDeclaration,
+])` | ✗ |
+| `node` | `any` | let/var | `definition.node` | ✗ |
+| `LOGICAL_ASSIGNMENT_OPERATORS` | `Set<string>` | const | `new Set(['??=', '&&=', '||='])` | ✗ |
+| `functionDefinitions` | `Set<TSESTree.Node>` | const | `new Set<TSESTree.Node>()` | ✗ |
+| `nodes` | `Set<TSESTree.Node>` | const | `new Set<TSESTree.Node>()` | ✗ |
+| `nodes` | `Set<TSESTree.Node>` | const | `new Set<TSESTree.Node>()` | ✗ |
+| `nodes` | `Set<TSESTree.Node>` | const | `new Set<TSESTree.Node>()` | ✗ |
+| `parent` | `any` | const | `node.parent` | ✗ |
+| `isLastExpression` | `boolean` | const | `parent.expressions[parent.expressions.length - 1] === node` | ✗ |
+| `currentNode` | `TSESTree.Node | undefined` | let/var | `node` | ✗ |
+| `id` | `any` | const | `ref.identifier` | ✗ |
+| `parent` | `any` | const | `id.parent` | ✗ |
+| `refScope` | `any` | const | `ref.from.variableScope` | ✗ |
+| `varScope` | `any` | const | `ref.resolved!.scope.variableScope` | ✗ |
+| `canBeUsedLater` | `boolean` | const | `refScope !== varScope || isInLoop(id)` | ✗ |
+| `currentNode` | `TSESTree.Node | undefined` | let/var | `node` | ✗ |
+| `node` | `TSESTree.Node` | let/var | `funcNode` | ✗ |
+| `parent` | `any` | let/var | `funcNode.parent` | ✗ |
+| `id` | `any` | const | `ref.identifier` | ✗ |
+| `parent` | `any` | const | `id.parent` | ✗ |
+| `isFunctionDefinition` | `boolean` | const | `functionNodes.size > 0` | ✗ |
+| `isTypeDecl` | `boolean` | const | `typeDeclNodes.size > 0` | ✗ |
+| `isModuleDecl` | `boolean` | const | `moduleDeclNodes.size > 0` | ✗ |
+| `isEnumDecl` | `boolean` | const | `enumDeclNodes.size > 0` | ✗ |
+| `rhsNode` | `TSESTree.Node | null` | let/var | `null` | ✗ |
 
 
 ---
@@ -2895,13 +2954,6 @@ interface MutableVariableAnalysis {
 |------|------|----------|-------------|
 | `unusedVariables` | `Set<ScopeVariable>` | ✗ |  |
 | `usedVariables` | `Set<ScopeVariable>` | ✗ |  |
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

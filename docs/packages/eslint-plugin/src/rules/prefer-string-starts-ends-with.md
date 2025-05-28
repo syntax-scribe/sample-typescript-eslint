@@ -2,19 +2,29 @@
 
 # 📄 `prefer-string-starts-ends-with.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 16 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 14 |
+| 📊 Variables & Constants | 28 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 3 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 16
-- **Classes**: 0
-- **Imports**: 14
-- **Interfaces**: 0
-- **Type Aliases**: 3
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/prefer-string-starts-ends-with.ts`**
@@ -37,6 +47,55 @@
 | `nullThrows` | `../util` |
 | `NullThrowsReasons` | `../util` |
 | `skipChainExpression` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `EQ_OPERATORS` | `RegExp` | const | `/^[=!]=/` | ✗ |
+| `regexpp` | `any` | const | `new RegExpParser()` | ✗ |
+| `token1` | `any` | const | `tokens1[i]` | ✗ |
+| `token2` | `any` | const | `tokens2[i]` | ✗ |
+| `chars` | `any` | const | `ast.alternatives[0].elements` | ✗ |
+| `first` | `any` | const | `chars[0]` | ✗ |
+| `leftNode` | `any` | const | `node.type === AST_NODE_TYPES.CallExpression ? node.callee : node` | ✗ |
+| `indexNode` | `TSESTree.Node | null` | let/var | `null` | ✗ |
+| `isStartsWith` | `boolean` | const | `!isEndsWith && isNumber(indexNode, 0)` | ✗ |
+| `eqNode` | `TSESTree.BinaryExpression` | const | `parentNode` | ✗ |
+| `callNode` | `TSESTree.CallExpression` | const | `getParent(node) as TSESTree.CallExpression` | ✗ |
+| `callNode` | `TSESTree.CallExpression` | const | `getParent(node) as TSESTree.CallExpression` | ✗ |
+| `callNode` | `TSESTree.CallExpression` | const | `getParent(node) as TSESTree.CallExpression` | ✗ |
+| `parentNode` | `TSESTree.BinaryExpression` | const | `getParent(callNode) as TSESTree.BinaryExpression` | ✗ |
+| `parsed` | `{ isEndsWith: boolean; isStartsWith: boolean; text: string; }` | const | `callNode.arguments.length === 1
+            ? parseRegExp(callNode.arguments[0])
+            : null` | ✗ |
+| `callNode` | `TSESTree.CallExpression` | const | `getParent(node) as TSESTree.CallExpression` | ✗ |
+| `isEndsWith` | `boolean` | let/var | `false` | ✗ |
+| `isStartsWith` | `boolean` | let/var | `false` | ✗ |
+| `eqNode` | `TSESTree.BinaryExpression` | const | `parentNode` | ✗ |
+| `negativeIndexSupported` | `boolean` | const | `(node.property as TSESTree.Identifier).name === 'slice'` | ✗ |
+| `posNode` | `any` | const | `callNode.arguments[0]` | ✗ |
+| `posNodeIsAbsolutelyValid` | `boolean` | const | `(posNode.type === AST_NODE_TYPES.BinaryExpression &&
+                  posNode.operator === '-' &&
+                  isLengthExpression(posNode.left, node.object) &&
+                  isLengthExpression(posNode.right, eqNode.right)) ||
+                (negativeIndexSupported &&
+                  posNode.type === AST_NODE_TYPES.UnaryExpression &&
+                  posNode.operator === '-' &&
+                  isLengthExpression(posNode.argument, eqNode.right))` | ✗ |
+| `callNode` | `TSESTree.CallExpression` | const | `getParent(node) as TSESTree.CallExpression` | ✗ |
+| `parsed` | `{ isEndsWith: boolean; isStartsWith: boolean; text: string; }` | const | `callNode.arguments.length === 1 ? parseRegExp(node.object) : null` | ✗ |
+| `messageId` | `"preferEndsWith" | "preferStartsWith"` | const | `isStartsWith ? 'preferStartsWith' : 'preferEndsWith'` | ✗ |
+| `methodName` | `"startsWith" | "endsWith"` | const | `isStartsWith ? 'startsWith' : 'endsWith'` | ✗ |
+| `argNode` | `any` | let/var | `callNode.arguments[0]` | ✗ |
+| `needsParen` | `boolean` | let/var | `argNode.type !== AST_NODE_TYPES.Literal &&
+              argNode.type !== AST_NODE_TYPES.TemplateLiteral &&
+              argNode.type !== AST_NODE_TYPES.Identifier &&
+              argNode.type !== AST_NODE_TYPES.MemberExpression &&
+              argNode.type !== AST_NODE_TYPES.CallExpression` | ✗ |
 
 
 ---
@@ -664,20 +723,6 @@ function getParent(node: TSESTree.Node): TSESTree.Node {
 - **Return Type**: `TSESTree.Node`
 - **Calls**:
   - `nullThrows (from ../util)`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
 
 ---
 

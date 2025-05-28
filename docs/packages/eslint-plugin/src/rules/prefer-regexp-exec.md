@@ -2,18 +2,29 @@
 
 # 📄 `prefer-regexp-exec.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 52 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 8 |
+| 📊 Variables & Constants | 4 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 1 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 52
-- **Classes**: 0
-- **Imports**: 8
-- **Interfaces**: 0
-- **Type Aliases**: 0
+- [Enums](#enums)
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/prefer-regexp-exec.ts`**
@@ -30,6 +41,18 @@
 | `getTypeName` | `../util` |
 | `getWrappingFixer` | `../util` |
 | `isStaticMemberAccessOfValue` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `result` | `ArgumentType` | let/var | `ArgumentType.Other` | ✗ |
+| `objectNode` | `any` | const | `memberNode.object` | ✗ |
+| `callNode` | `TSESTree.CallExpression` | const | `memberNode.parent as TSESTree.CallExpression` | ✗ |
+| `regExp` | `RegExp` | let/var | `*not shown*` | ✗ |
 
 
 ---
@@ -796,23 +819,30 @@ objectCode => `${regExp.toString()}.exec(${objectCode})`
 
 ---
 
-## Classes
+## Enums
 
-> No classes found in this file.
+### `enum ArgumentType`
 
+<details><summary>Enum Code</summary>
 
----
+```ts
+enum ArgumentType {
+  Other = 0,
+  String = 1 << 0,
+  RegExp = 1 << 1,
+  Both = String | RegExp,
+}
+```
+</details>
 
-## Interfaces
+#### Members
 
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
+| Name | Value | Description |
+|------|-------|-------------|
+| `Other` | `0` |  |
+| `String` | `1 << 0` |  |
+| `RegExp` | `1 << 1` |  |
+| `Both` | `String | RegExp` |  |
 
 
 ---

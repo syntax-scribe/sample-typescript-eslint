@@ -2,18 +2,28 @@
 
 # 📄 `validationHelpers.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 6 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 4 |
+| 📊 Variables & Constants | 8 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 6
-- **Classes**: 0
-- **Imports**: 4
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/rule-tester/src/utils/validationHelpers.ts`**
@@ -26,6 +36,58 @@
 | `Parser` | `@typescript-eslint/utils/ts-eslint` |
 | `SourceCode` | `@typescript-eslint/utils/ts-eslint` |
 | `simpleTraverse` | `@typescript-eslint/typescript-estree` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `RULE_TESTER_PARAMETERS` | `readonly ["after", "before", "code", "defaultFilenames", "dependencyConstraints", "errors", "filename", "name", "only", "options", "output", "skip"]` | const | `[
+  'after',
+  'before',
+  'code',
+  'defaultFilenames',
+  'dependencyConstraints',
+  'errors',
+  'filename',
+  'name',
+  'only',
+  'options',
+  'output',
+  'skip',
+] as const` | ✓ |
+| `ERROR_OBJECT_PARAMETERS` | `ReadonlySet<string>` | const | `new Set([
+  'column',
+  'data',
+  'endColumn',
+  'endLine',
+  'line',
+  'message',
+  'messageId',
+  'suggestions',
+  'type',
+])` | ✓ |
+| `FRIENDLY_ERROR_OBJECT_PARAMETER_LIST` | `string` | const | ``[${[
+  ...ERROR_OBJECT_PARAMETERS,
+]
+  .map(key => `'${key}'`)
+  .join(', ')}]`` | ✓ |
+| `SUGGESTION_OBJECT_PARAMETERS` | `ReadonlySet<string>` | const | `new Set([
+  'data',
+  'desc',
+  'messageId',
+  'output',
+])` | ✓ |
+| `FRIENDLY_SUGGESTION_OBJECT_PARAMETER_LIST` | `string` | const | ``[${[
+  ...SUGGESTION_OBJECT_PARAMETERS,
+]
+  .map(key => `'${key}'`)
+  .join(', ')}]`` | ✓ |
+| `parsed` | `Parser.ParseResult` | const | `parser.parseForESLint(...args) as Parser.ParseResult` | ✗ |
+| `ast` | `TSESTree.Program` | const | `parser.parse(...args) as TSESTree.Program` | ✗ |
+| `REQUIRED_SCENARIOS` | `readonly ["valid", "invalid"]` | const | `['valid', 'invalid'] as const` | ✓ |
 
 
 ---
@@ -319,26 +381,5 @@ node => defineStartEndAsError('node', node)
 - **Return Type**: `void`
 - **Calls**:
   - `defineStartEndAsError`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

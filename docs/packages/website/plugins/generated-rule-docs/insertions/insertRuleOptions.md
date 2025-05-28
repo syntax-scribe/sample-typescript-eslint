@@ -2,18 +2,28 @@
 
 # 📄 `insertRuleOptions.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 3 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 6 |
+| 📊 Variables & Constants | 6 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 3
-- **Classes**: 0
-- **Imports**: 6
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/website/plugins/generated-rule-docs/insertions/insertRuleOptions.ts`**
@@ -28,6 +38,30 @@
 | `nodeIsHeading` | `../../utils/nodes` |
 | `nodeIsMdxFlowExpression` | `../../utils/nodes` |
 | `findHeadingIndex` | `../../utils/rules` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `knownSkippedRules` | `Set<string>` | const | `new Set([
+  'array-type',
+  'ban-ts-comment',
+  'member-ordering',
+])` | ✗ |
+| `emptyOptionDefaults` | `Map<unknown, unknown>` | const | `new Map<unknown, unknown>([
+  ['array', []],
+  ['boolean', false],
+])` | ✗ |
+| `defaultOptions` | `Record<string, unknown>` | const | `(page.rule.defaultOptions[0] ?? {}) as Record<
+    string,
+    unknown
+  >` | ✗ |
+| `defaultValue` | `unknown` | const | `defaultOptions[optionName] ?? emptyOptionDefaults.get(option.type)` | ✗ |
+| `OPTION_COMMENT` | `"/* insert option description */"` | const | ``/* insert option description */`` | ✗ |
+| `child` | `Node` | const | `children[i]` | ✗ |
 
 
 ---
@@ -194,26 +228,5 @@ function getOptionProperties(
 - **Calls**:
   - `options.oneOf.reduce`
   - `getOptionProperties`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

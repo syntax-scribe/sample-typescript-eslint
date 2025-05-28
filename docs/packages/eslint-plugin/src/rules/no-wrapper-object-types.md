@@ -2,18 +2,28 @@
 
 # 📄 `no-wrapper-object-types.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 5 |
+| 📊 Variables & Constants | 2 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 5
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/no-wrapper-object-types.ts`**
@@ -27,6 +37,25 @@
 | `AST_NODE_TYPES` | `@typescript-eslint/utils` |
 | `createRule` | `../util` |
 | `isReferenceToGlobalFunction` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `classNames` | `Set<string>` | const | `new Set([
+  'BigInt',
+  // eslint-disable-next-line @typescript-eslint/internal/prefer-ast-types-enum
+  'Boolean',
+  'Number',
+  'Object',
+  // eslint-disable-next-line @typescript-eslint/internal/prefer-ast-types-enum
+  'String',
+  'Symbol',
+])` | ✗ |
+| `typeName` | `any` | const | `node.type === AST_NODE_TYPES.Identifier && node.name` | ✗ |
 
 
 ---
@@ -75,26 +104,5 @@ function checkBannedTypes(
   - `typeName.toLowerCase`
   - `context.report`
   - `fixer.replaceText`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

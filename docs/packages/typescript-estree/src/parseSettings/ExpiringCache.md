@@ -2,20 +2,30 @@
 
 # 📄 `ExpiringCache.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 3 |
+| 🧱 Classes | 1 |
+| 📦 Imports | 1 |
+| 📊 Variables & Constants | 3 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Classes](#classes)
 - [Interfaces](#interfaces)
-
-## 📊 Analysis Summary
-
-- **Functions**: 3
-- **Classes**: 1
-- **Imports**: 1
-- **Interfaces**: 1
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/typescript-estree/src/parseSettings/ExpiringCache.ts`**
@@ -25,6 +35,17 @@
 | Name | Source |
 |------|--------|
 | `CacheDurationSeconds` | `@typescript-eslint/types` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `DEFAULT_TSCONFIG_CACHE_DURATION_SECONDS` | `30` | const | `30` | ✓ |
+| `ZERO_HR_TIME` | `[number, number]` | const | `[0, 0]` | ✗ |
+| `ageSeconds` | `number` | const | `process.hrtime(entry.lastSeen)[0]` | ✗ |
 
 
 ---
@@ -248,13 +269,6 @@ export interface CacheLike<Key, Value> {
 }
 ```
 </details>
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

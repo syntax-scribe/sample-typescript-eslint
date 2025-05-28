@@ -2,18 +2,28 @@
 
 # 📄 `insertBaseRuleReferences.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 4 |
+| 📊 Variables & Constants | 2 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 4
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/website/plugins/generated-rule-docs/insertions/insertBaseRuleReferences.ts`**
@@ -26,6 +36,20 @@
 | `RuleDocsPage` | `../RuleDocsPage` |
 | `convertToPlaygroundHash` | `../../utils/rules` |
 | `getRulesString` | `../../utils/rules` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `extendsBaseRuleName` | `any` | const | `typeof page.rule.meta.docs.extendsBaseRule === 'string'
+      ? page.rule.meta.docs.extendsBaseRule
+      : page.file.stem` | ✗ |
+| `eslintrc` | `string` | const | ``{
+  "rules": ${getRulesString(extendsBaseRuleName, page.file.stem, false)}
+}`` | ✗ |
 
 
 ---
@@ -141,26 +165,5 @@ export function insertBaseRuleReferences(page: RuleDocsPage): string {
   - `page.spliceChildren`
   - `getRulesString (from ../../utils/rules)`
   - `convertToPlaygroundHash (from ../../utils/rules)`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

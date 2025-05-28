@@ -2,18 +2,28 @@
 
 # 📄 `createParser.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 20 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 7 |
+| 📊 Variables & Constants | 5 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 20
-- **Classes**: 0
-- **Imports**: 7
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/website/src/components/linter/createParser.ts`**
@@ -29,6 +39,24 @@
 | `UpdateModel` | `./types` |
 | `WebLinterModule` | `./types` |
 | `defaultParseSettings` | `./config` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `registeredFiles` | `Set<string>` | const | `new Set<string>()` | ✗ |
+| `filePath` | `any` | const | `options.filePath ?? '/input.ts'` | ✗ |
+| `code` | `string` | const | `text || '\n'` | ✗ |
+| `parseSettings` | `ParseSettings` | const | `{
+        ...defaultParseSettings,
+        code,
+        codeFullText: code,
+        filePath,
+      }` | ✗ |
+| `tsAst` | `any` | const | `program.getSourceFile(filePath)!` | ✗ |
 
 
 ---
@@ -681,26 +709,5 @@ node =>
 - **Return Type**: `any`
 - **Calls**:
   - `checker.getTypeAtLocation`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

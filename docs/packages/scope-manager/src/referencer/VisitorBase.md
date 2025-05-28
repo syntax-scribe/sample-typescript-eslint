@@ -2,21 +2,32 @@
 
 # 📄 `VisitorBase.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 4 |
+| 🧱 Classes | 1 |
+| 📦 Imports | 4 |
+| 📊 Variables & Constants | 4 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 1 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 1 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
+- [Re-exports](#re-exports)
 - [Functions](#functions)
 - [Classes](#classes)
 - [Interfaces](#interfaces)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 4
-- **Classes**: 1
-- **Imports**: 4
-- **Interfaces**: 1
-- **Type Aliases**: 1
 
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/src/referencer/VisitorBase.ts`**
@@ -29,6 +40,27 @@
 | `TSESTree` | `@typescript-eslint/types` |
 | `VisitorKeys` | `@typescript-eslint/visitor-keys` |
 | `visitorKeys` | `@typescript-eslint/visitor-keys` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `exclude` | `Set<string>` | const | `new Set([...excludeArr, 'parent'] as string[])` | ✗ |
+| `children` | `any` | const | `this.#childVisitorKeys[node.type] ?? Object.keys(node)` | ✗ |
+| `child` | `unknown` | const | `node[key as keyof TSESTree.Node] as unknown` | ✗ |
+| `visitor` | `(node: TSESTree.Node) => void` | const | `(this as NodeVisitor)[node.type]` | ✗ |
+
+
+---
+
+## Re-exports
+
+| Type | Source | Exported Names |
+|------|--------|----------------|
+| named | `@typescript-eslint/visitor-keys` | VisitorKeys |
 
 
 ---

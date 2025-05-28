@@ -2,19 +2,29 @@
 
 # 📄 `ESQueryFilter.tsx`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 2 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 5 |
+| 📊 Variables & Constants | 0 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 2 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [JSX Elements](#jsx-elements)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
-
-## 📊 Analysis Summary
-
-- **Functions**: 2
-- **Classes**: 0
-- **Imports**: 5
-- **Interfaces**: 1
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/website/src/components/ESQueryFilter.tsx`**
@@ -28,6 +38,16 @@
 | `React` | `react` |
 | `styles` | `./ESQueryFilter.module.css` |
 | `Text` | `./inputs/Text` |
+
+
+---
+
+## JSX Elements
+
+| Component | Type | Props | Children |
+|-----------|------|-------|----------|
+| `div` | element | className={styles.searchContainer} | <Text> |
+| `Text` | component | name="esquery", onChange={changeEvent}, placeholder="ESQuery filter", type="search", value={value} | *none* |
 
 
 ---
@@ -119,13 +139,6 @@ export function ESQueryFilter({
 
 ---
 
-## Classes
-
-> No classes found in this file.
-
-
----
-
 ## Interfaces
 
 ### `ESQueryFilterProps`
@@ -148,13 +161,6 @@ export interface ESQueryFilterProps {
 | `defaultValue` | `string` | ✓ |  |
 | `onChange` | `(filter: string, selector: Selector) => void` | ✗ |  |
 | `onError` | `(value?: Error) => void` | ✗ |  |
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

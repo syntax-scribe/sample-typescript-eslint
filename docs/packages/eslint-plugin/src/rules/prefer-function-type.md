@@ -2,18 +2,28 @@
 
 # 📄 `prefer-function-type.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 3 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 5 |
+| 📊 Variables & Constants | 16 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 3
-- **Classes**: 0
-- **Imports**: 5
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/prefer-function-type.ts`**
@@ -27,6 +37,117 @@
 | `AST_NODE_TYPES` | `@typescript-eslint/utils` |
 | `AST_TOKEN_TYPES` | `@typescript-eslint/utils` |
 | `createRule` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `phrases` | `{ readonly [x: number]: "Interface" | "Type literal"; }` | const | `{
+  [AST_NODE_TYPES.TSInterfaceDeclaration]: 'Interface',
+  [AST_NODE_TYPES.TSTypeLiteral]: 'Type literal',
+} as const` | ✓ |
+| `expr` | `any` | const | `node.extends[0].expression` | ✗ |
+| `fixable` | `boolean` | const | `node.parent.type === AST_NODE_TYPES.ExportDefaultDeclaration` | ✗ |
+| `fixes` | `TSESLint.RuleFix[]` | const | `[]` | ✗ |
+| `start` | `any` | const | `member.range[0]` | ✗ |
+| `colonPos` | `number` | const | `member.returnType!.range[0] - start` | ✗ |
+| `comments` | `any[]` | const | `[
+                ...context.sourceCode.getCommentsBefore(member),
+                ...context.sourceCode.getCommentsAfter(member),
+              ]` | ✗ |
+| `suggestion` | `string` | let/var | ``${text.slice(0, colonPos)} =>${text.slice(
+                colonPos + 1,
+              )}`` | ✗ |
+| `lastChar` | `"" | ";"` | const | `suggestion.endsWith(';') ? ';' : ''` | ✗ |
+| `isParentExported` | `boolean` | const | `node.parent.type === AST_NODE_TYPES.ExportNamedDeclaration` | ✗ |
+| `commentText` | `string` | let/var | `comment.type === AST_TOKEN_TYPES.Line
+                      ? `//${comment.value}`
+                      : `/*${comment.value}*/`` | ✗ |
+| `isCommentOnTheSameLine` | `boolean` | const | `comment.loc.start.line === member.loc.start.line` | ✗ |
+| `fixStart` | `any` | const | `node.range[0]` | ✗ |
+| `fix` | `(fixer: TSESLint.RuleFixer) => TSESLint.RuleFix[]` | const | `fixable
+          ? null
+          : (fixer: TSESLint.RuleFixer): TSESLint.RuleFix[] => {
+              const fixes: TSESLint.RuleFix[] = [];
+              const start = member.range[0];
+              // https://github.com/microsoft/TypeScript/pull/56908
+              // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+              const colonPos = member.returnType!.range[0] - start;
+              const text = context.sourceCode
+                .getText()
+                .slice(start, member.range[1]);
+              const comments = [
+                ...context.sourceCode.getCommentsBefore(member),
+                ...context.sourceCode.getCommentsAfter(member),
+              ];
+              let suggestion = `${text.slice(0, colonPos)} =>${text.slice(
+                colonPos + 1,
+              )}`;
+              const lastChar = suggestion.endsWith(';') ? ';' : '';
+              if (lastChar) {
+                suggestion = suggestion.slice(0, -1);
+              }
+              if (shouldWrapSuggestion(node.parent)) {
+                suggestion = `(${suggestion})`;
+              }
+
+              if (node.type === AST_NODE_TYPES.TSInterfaceDeclaration) {
+                if (node.typeParameters != null) {
+                  suggestion = `type ${context.sourceCode
+                    .getText()
+                    .slice(
+                      node.id.range[0],
+                      node.typeParameters.range[1],
+                    )} = ${suggestion}${lastChar}`;
+                } else {
+                  suggestion = `type ${node.id.name} = ${suggestion}${lastChar}`;
+                }
+              }
+
+              const isParentExported =
+                node.parent.type === AST_NODE_TYPES.ExportNamedDeclaration;
+
+              if (
+                node.type === AST_NODE_TYPES.TSInterfaceDeclaration &&
+                isParentExported
+              ) {
+                const commentsText = comments
+                  .map(({ type, value }) =>
+                    type === AST_TOKEN_TYPES.Line
+                      ? `//${value}\n`
+                      : `/*${value}*/\n`,
+                  )
+                  .join('');
+                // comments should move before export and not between export and interface declaration
+                fixes.push(fixer.insertTextBefore(node.parent, commentsText));
+              } else {
+                comments.forEach(comment => {
+                  let commentText =
+                    comment.type === AST_TOKEN_TYPES.Line
+                      ? `//${comment.value}`
+                      : `/*${comment.value}*/`;
+                  const isCommentOnTheSameLine =
+                    comment.loc.start.line === member.loc.start.line;
+                  if (!isCommentOnTheSameLine) {
+                    commentText += '\n';
+                  } else {
+                    commentText += ' ';
+                  }
+                  suggestion = commentText + suggestion;
+                });
+              }
+
+              const fixStart = node.range[0];
+              fixes.push(
+                fixer.replaceTextRange([fixStart, node.range[1]], suggestion),
+              );
+              return fixes;
+            }` | ✗ |
+| `tsThisTypes` | `TSESTree.TSThisType[] | null` | let/var | `null` | ✗ |
+| `literalNesting` | `number` | let/var | `0` | ✗ |
 
 
 ---
@@ -269,27 +390,6 @@ function checkMember(
 // eslint-disable-next-line @typescript-eslint/no-non-null-assertion (x2)
 // comments should move before export and not between export and interface declaration (x4)
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

@@ -2,20 +2,31 @@
 
 # 📄 `useSandboxServices.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 16 |
+| 📊 Variables & Constants | 3 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 2 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 2 |
+| 📑 Type Aliases | 1 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
+- [Async/Await Patterns](#asyncawait-patterns)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 16
-- **Interfaces**: 2
-- **Type Aliases**: 1
 
 ## 🛠️ File Location:
 📂 **`packages/website/src/components/editor/useSandboxServices.ts`**
@@ -40,6 +51,120 @@
 | `createTwoslashInlayProvider` | `./createProvideTwoslashInlay` |
 | `editorEmbedId` | `./EditorEmbed` |
 | `sandboxSingleton` | `./loadSandbox` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `sandboxInstance` | `SandboxInstance | undefined` | let/var | `*not shown*` | ✗ |
+| `worker` | `TypeScriptWorker` | let/var | `await sandboxInstance.getWorkerProcess()` | ✗ |
+| `libs` | `any` | let/var | `await worker.getLibFiles()` | ✗ |
+
+
+---
+
+## Async/Await Patterns
+
+| Type | Function | Await Expressions | Promise Chains |
+|------|----------|-------------------|----------------|
+| promise-chain | `useSandboxServices` | *none* | sandboxSingleton(props.ts)
+      .then(async ({ lintUtils, main, sandboxFactory }) => {
+        const compilerOptions = createCompilerOptions();
+
+        sandboxInstance = sandboxFactory.createTypeScriptSandbox(
+          {
+            acquireTypes: true,
+            compilerOptions:
+              compilerOptions as Monaco.languages.typescript.CompilerOptions,
+            domID: editorEmbedId,
+            monacoSettings: {
+              autoIndent: 'full',
+              fontSize: 13,
+              formatOnPaste: true,
+              formatOnType: true,
+              hover: { above: false },
+              minimap: { enabled: false },
+              scrollBeyondLastLine: false,
+              smoothScrolling: true,
+              wordWrap: 'off',
+              wrappingIndent: 'same',
+            },
+            text: props.code,
+          },
+          main,
+          window.ts,
+        );
+        sandboxInstance.monaco.editor.setTheme(
+          colorMode === 'dark' ? 'vs-dark' : 'vs-light',
+        );
+
+        sandboxInstance.monaco.languages.registerInlayHintsProvider(
+          sandboxInstance.language,
+          createTwoslashInlayProvider(sandboxInstance),
+        );
+
+        const system = createFileSystem(props, sandboxInstance.tsvfs);
+
+        // Write files in vfs when a model is created in the editor (this is used only for ATA types)
+        sandboxInstance.monaco.editor.onDidCreateModel(model => {
+          if (!model.uri.path.includes('node_modules')) {
+            return;
+          }
+          const path = model.uri.path.replace('/file:///', '/');
+          system.writeFile(path, model.getValue());
+        });
+        // Delete files in vfs when a model is disposed in the editor (this is used only for ATA types)
+        sandboxInstance.monaco.editor.onWillDisposeModel(model => {
+          if (!model.uri.path.includes('node_modules')) {
+            return;
+          }
+          const path = model.uri.path.replace('/file:///', '/');
+          system.deleteFile(path);
+        });
+
+        // Load the lib files from typescript to vfs (eg. es2020.d.ts)
+        const worker = await sandboxInstance.getWorkerProcess();
+        if (worker.getLibFiles) {
+          const libs = await worker.getLibFiles();
+          for (const [key, value] of Object.entries(libs)) {
+            system.writeFile(`/${key}`, value);
+          }
+        }
+
+        window.system = system;
+        window.esquery = lintUtils.esquery;
+        window.visitorKeys = lintUtils.visitorKeys;
+
+        const webLinter = createLinter(
+          system,
+          lintUtils,
+          sandboxInstance.tsvfs,
+        );
+
+        onLoaded(
+          [...webLinter.rules.values()],
+          [
+            ...new Set([
+              window.ts.version,
+              ...sandboxInstance.supportedVersions,
+            ]),
+          ]
+            .filter(item =>
+              semverSatisfies(item, rootPackageJson.devDependencies.typescript),
+            )
+            .sort((a, b) => b.localeCompare(a)),
+        );
+
+        setServices({
+          sandboxInstance,
+          system,
+          webLinter,
+        });
+      }).catch, sandboxSingleton(props.ts).then |
+| await-expression | `useSandboxServices` | sandboxInstance.getWorkerProcess(), worker.getLibFiles() | *none* |
 
 
 ---
@@ -311,13 +436,6 @@
 // Delete files in vfs when a model is disposed in the editor (this is used only for ATA types) (x6)
 // Load the lib files from typescript to vfs (eg. es2020.d.ts) (x2)
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
 
 
 ---

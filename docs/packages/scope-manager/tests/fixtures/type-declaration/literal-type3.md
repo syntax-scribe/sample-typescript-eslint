@@ -2,28 +2,30 @@
 
 # 📄 `literal-type3.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 0 |
+| 📊 Variables & Constants | 0 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
 
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 0
-- **Interfaces**: 0
-- **Type Aliases**: 2
-
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/tests/fixtures/type-declaration/literal-type3.ts`**
-
-## 📦 Imports
-
-> No imports found in this file.
-
-
----
 
 ## Functions
 
@@ -41,20 +43,6 @@ declare function setAlignment(
 - **Parameters**:
   - `value: `${VerticalAlignment}-${HorizontalAlignment}``
 - **Return Type**: `void`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
 
 ---
 

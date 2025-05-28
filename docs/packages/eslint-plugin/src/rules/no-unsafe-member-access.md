@@ -2,18 +2,29 @@
 
 # 📄 `no-unsafe-member-access.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 2 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 7 |
+| 📊 Variables & Constants | 3 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 1 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 2
-- **Classes**: 0
-- **Imports**: 7
-- **Interfaces**: 0
-- **Type Aliases**: 0
+- [Enums](#enums)
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/no-unsafe-member-access.ts`**
@@ -29,6 +40,17 @@
 | `getParserServices` | `../util` |
 | `getThisExpression` | `../util` |
 | `isTypeAnyType` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `stateCache` | `Map<TSESTree.Node, State>` | const | `new Map<TSESTree.Node, State>()` | ✗ |
+| `state` | `State` | const | `isTypeAnyType(type) ? State.Unsafe : State.Safe` | ✗ |
+| `messageId` | `'unsafeMemberExpression' | 'unsafeThisMemberExpression'` | let/var | `'unsafeMemberExpression'` | ✗ |
 
 
 ---
@@ -136,23 +158,26 @@ function checkMemberExpression(node: TSESTree.MemberExpression): State {
 
 ---
 
-## Classes
+## Enums
 
-> No classes found in this file.
+### `const enum State`
 
+<details><summary>Enum Code</summary>
 
----
+```ts
+const enum State {
+  Unsafe = 1,
+  Safe = 2,
+}
+```
+</details>
 
-## Interfaces
+#### Members
 
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
+| Name | Value | Description |
+|------|-------|-------------|
+| `Unsafe` | `1` |  |
+| `Safe` | `2` |  |
 
 
 ---

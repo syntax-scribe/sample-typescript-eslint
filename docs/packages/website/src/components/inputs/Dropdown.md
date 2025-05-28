@@ -2,19 +2,29 @@
 
 # 📄 `Dropdown.tsx`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 3 |
+| 📊 Variables & Constants | 0 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 2 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 2 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [JSX Elements](#jsx-elements)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 3
-- **Interfaces**: 2
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/website/src/components/inputs/Dropdown.tsx`**
@@ -26,6 +36,27 @@
 | `clsx` | `clsx` |
 | `React` | `react` |
 | `styles` | `./Dropdown.module.css` |
+
+
+---
+
+## JSX Elements
+
+| Component | Type | Props | Children |
+|-----------|------|-------|----------|
+| `select` | element | className={clsx(styles.dropdown, props.className)}, disabled={props.disabled}, name={props.name}, onChange={(e): void => {
+        const selected = options.find(
+          item => String(item.value) === e.target.value,
+        );
+        if (selected) {
+          props.onChange(selected.value);
+        }
+      }}, value={String(props.value)} | {options.map(item => (
+        <option key={String(item.value)} value={String(item.value)}>
+          {item.label}
+        </option>
+      ))} |
+| `option` | element | key={String(item.value)}, value={String(item.value)} | {item.label} |
 
 
 ---
@@ -85,13 +116,6 @@ function Dropdown<T extends boolean | number | string>(
 
 ---
 
-## Classes
-
-> No classes found in this file.
-
-
----
-
 ## Interfaces
 
 ### `DropdownOption<T>`
@@ -139,13 +163,6 @@ export interface DropdownProps<T> {
 | `onChange` | `(value: T) => void` | ✗ |  |
 | `options` | `readonly (DropdownOption<T> | T)[]` | ✗ |  |
 | `value` | `T | undefined` | ✗ |  |
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

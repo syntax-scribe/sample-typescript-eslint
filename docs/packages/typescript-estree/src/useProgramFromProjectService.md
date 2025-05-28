@@ -2,18 +2,28 @@
 
 # 📄 `useProgramFromProjectService.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 9 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 13 |
+| 📊 Variables & Constants | 9 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 9
-- **Classes**: 0
-- **Imports**: 13
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/typescript-estree/src/useProgramFromProjectService.ts`**
@@ -35,6 +45,30 @@
 | `createNoProgram` | `./create-program/createSourceFile` |
 | `DEFAULT_EXTRA_FILE_EXTENSIONS` | `./create-program/shared` |
 | `DEFAULT_PROJECT_FILES_ERROR_EXPLANATION` | `./create-program/validateDefaultProjectForFilesGlob` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `RELOAD_THROTTLE_MS` | `250` | const | `250` | ✗ |
+| `serviceFileExtensions` | `WeakMap<ts.server.ProjectService, string[]>` | const | `new WeakMap<ts.server.ProjectService, string[]>()` | ✗ |
+| `currentServiceFileExtensions` | `string[]` | const | `serviceFileExtensions.get(service) ?? []` | ✗ |
+| `wasNotFound` | `string` | const | ``${parseSettings.filePath} was not found by the project service`` | ✗ |
+| `extraFileExtensions` | `string[]` | const | `parseSettings.extraFileExtensions` | ✗ |
+| `nonStandardExt` | `string` | const | ``${wasNotFound} because the extension for the file (\`${fileExtension}\`) is non-standard`` | ✗ |
+| `filePrintLimit` | `20` | const | `20` | ✗ |
+| `truncatedFileCount` | `number` | const | `defaultProjectMatchedFiles.size - filesToPrint.length` | ✗ |
+| `opened` | `any` | const | `hasFullTypeInformation &&
+    openClientFileFromProjectService(
+      defaultProjectMatchedFiles,
+      isDefaultProjectAllowed,
+      filePathAbsolute,
+      parseSettings,
+      serviceAndSettings,
+    )` | ✗ |
 
 
 ---
@@ -474,26 +508,5 @@ function filePathMatchedBy(
 - **Calls**:
   - `allowDefaultProject?.some`
   - `minimatch (from minimatch)`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

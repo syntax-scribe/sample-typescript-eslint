@@ -2,19 +2,29 @@
 
 # 📄 `no-unnecessary-condition.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 37 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 22 |
+| 📊 Variables & Constants | 18 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 5 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 37
-- **Classes**: 0
-- **Imports**: 22
-- **Interfaces**: 0
-- **Type Aliases**: 5
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/no-unnecessary-condition.ts`**
@@ -45,6 +55,50 @@
 | `NullThrowsReasons` | `../util` |
 | `findTruthinessAssertedArgument` | `../util/assertionFunctionUtils` |
 | `findTypeGuardAssertedArgument` | `../util/assertionFunctionUtils` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `nullishFlag` | `number` | const | `ts.TypeFlags.Undefined | ts.TypeFlags.Null` | ✗ |
+| `BOOL_OPERATORS` | `Set<"==" | "===" | "<" | ">" | "<=" | ">=" | "!=" | "!==">` | const | `new Set([
+  '<',
+  '>',
+  '<=',
+  '>=',
+  '==',
+  '===',
+  '!=',
+  '!==',
+] as const)` | ✗ |
+| `constantLoopConditionsAllowedLiterals` | `Set<unknown>` | const | `new Set<unknown>([
+  true,
+  false,
+  1,
+  0,
+])` | ✗ |
+| `property` | `any` | const | `node.property` | ✗ |
+| `messageId` | `MessageId | null` | let/var | `null` | ✗ |
+| `messageId` | `MessageId | null` | let/var | `null` | ✗ |
+| `UNDEFINED` | `any` | const | `ts.TypeFlags.Undefined` | ✗ |
+| `NULL` | `any` | const | `ts.TypeFlags.Null` | ✗ |
+| `VOID` | `any` | const | `ts.TypeFlags.Void` | ✗ |
+| `callback` | `any` | const | `node.arguments[0]` | ✗ |
+| `callbackBody` | `any` | const | `callback.body.body` | ✗ |
+| `hasFalsyReturnTypes` | `boolean` | let/var | `false` | ✗ |
+| `hasTruthyReturnTypes` | `boolean` | let/var | `false` | ✗ |
+| `lhsNode` | `any` | const | `node.type === AST_NODE_TYPES.CallExpression ? node.callee : node.object` | ✗ |
+| `property` | `any` | const | `node.property` | ✗ |
+| `isStringTypeName` | `boolean` | const | `getTypeName(checker, info.keyType) === 'string'` | ✗ |
+| `isOwnNullable` | `boolean` | const | `node.type === AST_NODE_TYPES.MemberExpression
+          ? !isMemberExpressionNullableOriginFromObject(node)
+          : node.type === AST_NODE_TYPES.CallExpression
+            ? !isCallExpressionNullableOriginFromCallee(node)
+            : true` | ✗ |
+| `nodeToCheck` | `any` | const | `node.type === AST_NODE_TYPES.CallExpression ? node.callee : node.object` | ✗ |
 
 
 ---
@@ -1460,20 +1514,6 @@ function normalizeAllowConstantLoopConditions(
   - `allowConstantLoopConditions: | AllowConstantLoopConditions
     | LegacyAllowConstantLoopConditions`
 - **Return Type**: `AllowConstantLoopConditions`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
 
 ---
 

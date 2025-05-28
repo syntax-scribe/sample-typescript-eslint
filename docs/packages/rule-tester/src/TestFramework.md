@@ -2,25 +2,45 @@
 
 # 📄 `TestFramework.ts`
 
-## 📚 Table of Contents
-
-- [Classes](#classes)
-- [Type Aliases](#type-aliases)
-
 ## 📊 Analysis Summary
 
-- **Functions**: 0
-- **Classes**: 1
-- **Imports**: 0
-- **Interfaces**: 0
-- **Type Aliases**: 5
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 0 |
+| 🧱 Classes | 1 |
+| 📦 Imports | 0 |
+| 📊 Variables & Constants | 9 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 5 |
+| 🎯 Enums | 0 |
+
+## 📚 Table of Contents
+
+- [Variables & Constants](#variables-constants)
+- [Classes](#classes)
+- [Type Aliases](#type-aliases)
 
 ## 🛠️ File Location:
 📂 **`packages/rule-tester/src/TestFramework.ts`**
 
-## 📦 Imports
+## Variables & Constants
 
-> No imports found in this file.
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `describe` | `RuleTesterTestFrameworkFunction | undefined` | let/var | `*not shown*` | ✗ |
+| `it` | `RuleTesterTestFrameworkItFunction | undefined` | let/var | `*not shown*` | ✗ |
+| `afterAll` | `AfterAll | undefined` | let/var | `*not shown*` | ✗ |
+| `OVERRIDE_AFTER_ALL` | `Maybe<AfterAll>` | let/var | `null` | ✗ |
+| `OVERRIDE_DESCRIBE` | `Maybe<RuleTesterTestFrameworkFunction>` | let/var | `null` | ✗ |
+| `OVERRIDE_DESCRIBE_SKIP` | `Maybe<RuleTesterTestFrameworkFunctionBase>` | let/var | `null` | ✗ |
+| `OVERRIDE_IT` | `Maybe<RuleTesterTestFrameworkItFunction>` | let/var | `null` | ✗ |
+| `OVERRIDE_IT_ONLY` | `Maybe<RuleTesterTestFrameworkFunctionBase>` | let/var | `null` | ✗ |
+| `OVERRIDE_IT_SKIP` | `Maybe<RuleTesterTestFrameworkFunctionBase>` | let/var | `null` | ✗ |
 
 
 ---
@@ -208,13 +228,6 @@ export abstract class TestFramework {
 }
 ```
 </details>
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
 
 
 ---

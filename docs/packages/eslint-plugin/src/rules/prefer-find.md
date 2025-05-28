@@ -2,19 +2,29 @@
 
 # 📄 `prefer-find.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 40 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 12 |
+| 📊 Variables & Constants | 6 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
-
-## 📊 Analysis Summary
-
-- **Functions**: 40
-- **Classes**: 0
-- **Imports**: 12
-- **Interfaces**: 1
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/prefer-find.ts`**
@@ -35,6 +45,20 @@
 | `isStaticMemberAccessOfValue` | `../util` |
 | `nullThrows` | `../util` |
 | `skipChainExpression` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `callee` | `any` | const | `node.callee` | ✗ |
+| `isBracketSyntaxForFilter` | `any` | const | `callee.computed` | ✗ |
+| `filterNode` | `any` | const | `callee.property` | ✗ |
+| `isAtLeastOneArrayishComponent` | `boolean` | let/var | `false` | ✗ |
+| `callee` | `any` | const | `node.callee` | ✗ |
+| `object` | `any` | const | `node.object` | ✗ |
 
 
 ---
@@ -1563,13 +1587,6 @@ function generateFixToReplaceFilterWithFind(
 
 ---
 
-## Classes
-
-> No classes found in this file.
-
-
----
-
 ## Interfaces
 
 ### `FilterExpressionData`
@@ -1590,13 +1607,6 @@ interface FilterExpressionData {
 |------|------|----------|-------------|
 | `filterNode` | `TSESTree.Node` | ✗ |  |
 | `isBracketSyntaxForFilter` | `boolean` | ✗ |  |
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

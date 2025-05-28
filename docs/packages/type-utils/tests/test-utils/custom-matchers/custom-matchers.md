@@ -2,18 +2,28 @@
 
 # 📄 `custom-matchers.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 28 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 13 |
+| 📊 Variables & Constants | 15 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 28
-- **Classes**: 0
-- **Imports**: 13
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/type-utils/tests/test-utils/custom-matchers/custom-matchers.ts`**
@@ -35,6 +45,36 @@
 | `isUnsafeAssignment` | `../../../src/index.js` |
 | `typeMatchesSpecifier` | `../../../src/index.js` |
 | `typeOrValueSpecifiersSchema` | `../../../src/index.js` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `DEFAULT_PARSER_OPTIONS` | `ParserOptions` | const | `{
+  disallowAutomaticSingleRunInference: true,
+  filePath: path.join(FIXTURES_DIR, 'file.ts'),
+  project: './tsconfig.json',
+  tsconfigRootDir: FIXTURES_DIR,
+} satisfies ParserOptions` | ✗ |
+| `negate` | `boolean` | const | `utils.flag(this, 'negate') ?? false` | ✗ |
+| `assertion` | `Assertion` | const | `new chai.Assertion(services, errorMessage, ssfi, true)` | ✗ |
+| `declaration` | `TSESTree.VariableDeclaration` | const | `ast.body[
+    declarationIndex
+  ] as TSESTree.VariableDeclaration` | ✗ |
+| `declarator` | `any` | const | `declaration.declarations[0]` | ✗ |
+| `declaration` | `TSESTree.TSTypeAliasDeclaration` | const | `ast.body[0] as TSESTree.TSTypeAliasDeclaration` | ✗ |
+| `expected` | `false` | const | `false` | ✗ |
+| `pass` | `boolean` | const | `actual === expected` | ✗ |
+| `ajv` | `any` | const | `new Ajv()` | ✗ |
+| `expected` | `true` | const | `true` | ✗ |
+| `pass` | `boolean` | const | `actual === expected` | ✗ |
+| `declaration` | `TSESTree.TSTypeAliasDeclaration` | const | `ast.body[0] as TSESTree.TSTypeAliasDeclaration` | ✗ |
+| `actual` | `{ receiver: any; sender: any; }` | const | `{ receiver: receiverType, sender: senderType }` | ✗ |
+| `expected` | `{ receiver: string; sender: string; }` | const | `{ receiver: receiverStr, sender: senderStr }` | ✗ |
+| `pass` | `boolean` | const | `receiverType === receiverStr && senderType === senderStr` | ✗ |
 
 
 ---
@@ -495,26 +535,5 @@ function getTypes(
 </details>
 
 - **Return Type**: `string`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

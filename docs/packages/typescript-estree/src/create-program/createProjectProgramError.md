@@ -2,18 +2,28 @@
 
 # 📄 `createProjectProgramError.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 3 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 4 |
+| 📊 Variables & Constants | 3 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 3
-- **Classes**: 0
-- **Imports**: 4
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/typescript-estree/src/create-program/createProjectProgramError.ts`**
@@ -26,6 +36,19 @@
 | `ParseSettings` | `../parseSettings` |
 | `describeFilePath` | `./describeFilePath` |
 | `DEFAULT_EXTRA_FILE_EXTENSIONS` | `./shared` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `describedPrograms` | `string` | const | `relativeProjects.length === 1
+      ? ` ${relativeProjects[0]}`
+      : `\n${relativeProjects.map(project => `- ${project}`).join('\n')}`` | ✗ |
+| `details` | `string[]` | const | `[]` | ✗ |
+| `nonStandardExt` | `string` | const | ``The extension for the file (\`${fileExtension}\`) is non-standard`` | ✗ |
 
 
 ---
@@ -180,26 +203,5 @@ function getErrorDetails(
   - `DEFAULT_EXTRA_FILE_EXTENSIONS.has`
   - `path.extname`
   - `extraFileExtensions.includes`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

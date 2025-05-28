@@ -2,18 +2,28 @@
 
 # 📄 `parse.test.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 11 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 6 |
+| 📊 Variables & Constants | 23 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 11
-- **Classes**: 0
-- **Imports**: 6
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/typescript-estree/tests/lib/parse.test.ts`**
@@ -28,6 +38,92 @@
 | `resolve` | `node:path` |
 | `TSESTreeOptions` | `../../src/parser-options` |
 | `clearGlobResolutionCache` | `../../src/parseSettings/resolveProjectList` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `sharedActual` | `any` | let/var | `await importOriginal()` | ✗ |
+| `ts` | `any` | let/var | `await importOriginal()` | ✗ |
+| `fastGlob` | `any` | let/var | `await importOriginal<typeof fastGlobModule>()` | ✗ |
+| `code` | `"var a = true"` | const | `'var a = true'` | ✗ |
+| `baseConfig` | `TSESTreeOptions` | const | `{
+      comment: true,
+      filePath: 'file.ts',
+      loc: true,
+      range: true,
+      tokens: true,
+    }` | ✗ |
+| `projectConfig` | `TSESTreeOptions` | const | `{
+      ...baseConfig,
+      project: './tsconfig.json',
+      tsconfigRootDir: FIXTURES_DIR,
+    }` | ✗ |
+| `config` | `TSESTreeOptions` | const | `{
+      comment: true,
+      disallowAutomaticSingleRunInference: true,
+      loc: true,
+      projectService: false,
+      range: true,
+      tokens: true,
+    }` | ✗ |
+| `code` | `"{ \"x\": 1 }" | "const x = <div />;" | "const x = 1"` | const | `ext === '.json'
+          ? '{ "x": 1 }'
+          : jsxContent
+            ? 'const x = <div />;'
+            : 'const x = 1'` | ✗ |
+| `result` | `| parser.ParseAndGenerateServicesResult<typeof config>
+          | undefined` | let/var | `*not shown*` | ✗ |
+| `config` | `TSESTreeOptions` | const | `{
+        comment: true,
+        loc: true,
+        projectService: false,
+        range: true,
+        tokens: true,
+      }` | ✗ |
+| `code` | `"await(1)"` | const | `'await(1)'` | ✗ |
+| `expressionType` | `any` | const | `(
+          ast.body[0] as parser.TSESTree.ExpressionStatement
+        ).expression.type` | ✗ |
+| `expressionType` | `any` | const | `(
+          result.ast.body[0] as parser.TSESTree.ExpressionStatement
+        ).expression.type` | ✗ |
+| `code` | `"var a = true"` | const | `'var a = true'` | ✗ |
+| `config` | `TSESTreeOptions` | const | `{
+        comment: true,
+        disallowAutomaticSingleRunInference: true,
+        loc: true,
+        range: true,
+        tokens: true,
+        tsconfigRootDir: PROJECT_DIR,
+      }` | ✗ |
+| `code` | `"var a = true"` | const | `'var a = true'` | ✗ |
+| `config` | `TSESTreeOptions` | const | `{
+          comment: true,
+          disallowAutomaticSingleRunInference: true,
+          loc: true,
+          project: ['./**/tsconfig.json', './**/tsconfig.extra.json'],
+          range: true,
+          tokens: true,
+          tsconfigRootDir: PROJECT_DIR,
+        }` | ✗ |
+| `code` | `"var a = true"` | const | `'var a = true'` | ✗ |
+| `config` | `TSESTreeOptions` | const | `{
+        comment: true,
+        disallowAutomaticSingleRunInference: true,
+        loc: true,
+        project: './**/tsconfig.json',
+        range: true,
+        tokens: true,
+        tsconfigRootDir: PROJECT_DIR,
+      }` | ✗ |
+| `ignore` | `string[]` | const | `['**/ignoreme/**']` | ✗ |
+| `project` | `string[]` | const | `['./**/tsconfig.json', './**/tsconfig.extra.json']` | ✗ |
+| `expectFastGlobCalls` | `number` | const | `project.length` | ✗ |
+| `code` | `"var a = true"` | const | `'var a = true'` | ✗ |
 
 
 ---
@@ -459,26 +555,5 @@ function doParse(lifetime: CacheDurationSeconds): void {
 </details>
 
 - **Return Type**: `() => void`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

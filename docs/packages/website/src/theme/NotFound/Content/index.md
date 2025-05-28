@@ -2,18 +2,29 @@
 
 # 📄 `index.tsx`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 3 |
+| 📊 Variables & Constants | 1 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 10 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
+- [JSX Elements](#jsx-elements)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 3
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/website/src/theme/NotFound/Content/index.tsx`**
@@ -25,6 +36,38 @@
 | `useLocation` | `@docusaurus/router` |
 | `React` | `react` |
 | `styles` | `./styles.module.css` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `pathNameQuoted` | `string[]` | const | `[...`'${location.pathname}'`]` | ✗ |
+
+
+---
+
+## JSX Elements
+
+| Component | Type | Props | Children |
+|-----------|------|-------|----------|
+| `main` | element | className="container margin-vert--xl" | <div> |
+| `div` | element | className="row" | <div> |
+| `div` | element | className="col col--8 col--offset-2" | <h1>, <p>, <p> |
+| `h1` | element | className={styles.title} | <div>, <strong>, {' '}, text: "is not defined." |
+| `div` | element | className={styles.code} | text: "$ npx eslint ." |
+| `strong` | element | *none* | {pathNameQuoted.map((letter, i) => (
+                <span className={styles.word} key={i}>
+                  {letter}
+                </span>
+              ))} |
+| `span` | element | className={styles.word}, key={i} | {letter} |
+| `p` | element | className="hero__subtitle" | text: "Looks like the page you're looking for doesn't exist. 😥" |
+| `p` | element | *none* | text: "If you were linked here within typescript-eslint.io, there's
+            probably a bug in the site. Please", {' '}, <a>, text: "." |
+| `a` | element | href="https://github.com/typescript-eslint/typescript-eslint/issues/new/choose" | text: "file an issue on GitHub" |
 
 
 ---
@@ -86,27 +129,6 @@ export default function NotFound(): React.JSX.Element {
 // https://github.com/sindresorhus/eslint-plugin-unicorn/issues/2521 (x2)
 // eslint-disable-next-line @typescript-eslint/no-misused-spread (x2)
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

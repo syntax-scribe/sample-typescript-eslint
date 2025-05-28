@@ -2,20 +2,30 @@
 
 # 📄 `related-getter-setter-pairs.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 2 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 5 |
+| 📊 Variables & Constants | 4 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 4 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 2
-- **Classes**: 0
-- **Imports**: 5
-- **Interfaces**: 1
-- **Type Aliases**: 4
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/related-getter-setter-pairs.ts`**
@@ -29,6 +39,18 @@
 | `createRule` | `../util` |
 | `getNameFromMember` | `../util` |
 | `getParserServices` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `methodPairsStack` | `Map<string, MethodPair>[]` | const | `[]` | ✗ |
+| `methodPairs` | `Map<string, MethodPair>` | const | `methodPairsStack[methodPairsStack.length - 1]` | ✗ |
+| `methodPairs` | `Map<string, MethodPair>` | const | `methodPairsStack[methodPairsStack.length - 1]` | ✗ |
+| `getter` | `any` | const | `pair.get` | ✗ |
 
 
 ---
@@ -79,13 +101,6 @@ function getMethodFromNode(node: GetMethodRaw | SetMethod) {
 - **Parameters**:
   - `node: GetMethodRaw | SetMethod`
 - **Return Type**: `any`
-
----
-
-## Classes
-
-> No classes found in this file.
-
 
 ---
 

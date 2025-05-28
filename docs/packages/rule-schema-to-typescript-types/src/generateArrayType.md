@@ -2,18 +2,28 @@
 
 # 📄 `generateArrayType.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 2 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 12 |
+| 📊 Variables & Constants | 8 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 2
-- **Classes**: 0
-- **Imports**: 12
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/rule-schema-to-typescript-types/src/generateArrayType.ts`**
@@ -34,6 +44,24 @@
 | `UnexpectedError` | `./errors` |
 | `generateType` | `./generateType` |
 | `getCommentLines` | `./getCommentLines` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `MAX_ITEMS_TO_TUPLIZE` | `20` | const | `20` | ✗ |
+| `minItems` | `any` | const | `schema.minItems ?? 0` | ✗ |
+| `maxItems` | `any` | const | `schema.maxItems != null && schema.maxItems < MAX_ITEMS_TO_TUPLIZE
+      ? schema.maxItems
+      : -1` | ✗ |
+| `hasMaxItems` | `boolean` | const | `maxItems >= 0` | ✗ |
+| `items` | `JSONSchema4[]` | const | `schema.items` | ✗ |
+| `spreadItemSchema` | `JSONSchema4 | null` | let/var | `null` | ✗ |
+| `spreadItem` | `AST` | const | `spreadItemSchema == null ? null : generateType(spreadItemSchema, refMap)` | ✗ |
+| `typesToUnion` | `AST[]` | const | `[]` | ✗ |
 
 
 ---
@@ -227,27 +255,6 @@ function createTupleType(
 ```
 // clone the array because we know we'll keep mutating it (x2)
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

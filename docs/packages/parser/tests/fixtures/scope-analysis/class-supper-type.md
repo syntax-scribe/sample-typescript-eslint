@@ -2,27 +2,29 @@
 
 # 📄 `class-supper-type.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 0 |
+| 🧱 Classes | 3 |
+| 📦 Imports | 0 |
+| 📊 Variables & Constants | 0 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Classes](#classes)
 
-## 📊 Analysis Summary
-
-- **Functions**: 0
-- **Classes**: 3
-- **Imports**: 0
-- **Interfaces**: 0
-- **Type Aliases**: 0
-
 ## 🛠️ File Location:
 📂 **`packages/parser/tests/fixtures/scope-analysis/class-supper-type.ts`**
-
-## 📦 Imports
-
-> No imports found in this file.
-
-
----
 
 ## 🔧 Functions
 
@@ -59,20 +61,6 @@ declare class Foo2 extends Bar<Baz> {}
 class Foo3 extends Bar<Baz> {}
 ```
 </details>
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

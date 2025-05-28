@@ -2,18 +2,29 @@
 
 # 📄 `index.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 2 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 18 |
+| 📊 Variables & Constants | 3 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 1 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
+- [Async/Await Patterns](#asyncawait-patterns)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 2
-- **Classes**: 0
-- **Imports**: 18
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/website/plugins/generated-rule-docs/index.ts`**
@@ -40,6 +51,30 @@
 | `insertRuleOptions` | `./insertions/insertRuleOptions` |
 | `insertWhenNotToUseIt` | `./insertions/insertWhenNotToUseIt` |
 | `removeSourceCodeNotice` | `./removeSourceCodeNotice` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `rule` | `any` | let/var | `pluginRules[file.stem]` | ✗ |
+| `eslintrc` | `string` | let/var | `rule.meta.docs.extendsBaseRule
+      ? insertBaseRuleReferences(page)
+      : await insertNewRuleReferences(page)` | ✗ |
+| `baseRule` | `any` | const | `typeof rule.meta.docs.extendsBaseRule === 'string'
+      ? rule.meta.docs.extendsBaseRule
+      : stem` | ✗ |
+
+
+---
+
+## Async/Await Patterns
+
+| Type | Function | Await Expressions | Promise Chains |
+|------|----------|-------------------|----------------|
+| await-expression | `generatedRuleDocs` | insertNewRuleReferences(page) | *none* |
 
 
 ---
@@ -149,26 +184,5 @@ function insertExtensionNotice(
   - `page.children.find`
   - `fromMarkdown (from mdast-util-from-markdown)`
   - `firstParagraph.children.unshift`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

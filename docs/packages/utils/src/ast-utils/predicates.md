@@ -2,18 +2,28 @@
 
 # 📄 `predicates.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 8 |
+| 📊 Variables & Constants | 2 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 8
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/utils/src/ast-utils/predicates.ts`**
@@ -30,6 +40,28 @@
 | `isNodeOfTypeWithConditions` | `./helpers` |
 | `isNotTokenOfTypeWithConditions` | `./helpers` |
 | `isTokenOfTypeWithConditions` | `./helpers` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `functionTypes` | `readonly [any, any, any]` | const | `[
+  AST_NODE_TYPES.ArrowFunctionExpression,
+  AST_NODE_TYPES.FunctionDeclaration,
+  AST_NODE_TYPES.FunctionExpression,
+] as const` | ✗ |
+| `functionTypeTypes` | `readonly [any, any, any, any, any, any, any]` | const | `[
+  AST_NODE_TYPES.TSCallSignatureDeclaration,
+  AST_NODE_TYPES.TSConstructorType,
+  AST_NODE_TYPES.TSConstructSignatureDeclaration,
+  AST_NODE_TYPES.TSDeclareFunction,
+  AST_NODE_TYPES.TSEmptyBodyFunctionExpression,
+  AST_NODE_TYPES.TSFunctionType,
+  AST_NODE_TYPES.TSMethodSignature,
+] as const` | ✗ |
 
 
 ---
@@ -64,26 +96,5 @@ export function isSetter(
 - **Parameters**:
   - `node: TSESTree.Node | undefined`
 - **Return Type**: `node is { kind: 'set' } & (TSESTree.MethodDefinition | TSESTree.Property)`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

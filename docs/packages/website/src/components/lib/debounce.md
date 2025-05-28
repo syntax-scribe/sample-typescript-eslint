@@ -2,24 +2,36 @@
 
 # 📄 `debounce.ts`
 
-## 📚 Table of Contents
-
-- [Functions](#functions)
-
 ## 📊 Analysis Summary
 
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 0
-- **Interfaces**: 0
-- **Type Aliases**: 0
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 0 |
+| 📊 Variables & Constants | 1 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
+## 📚 Table of Contents
+
+- [Variables & Constants](#variables-constants)
+- [Functions](#functions)
 
 ## 🛠️ File Location:
 📂 **`packages/website/src/components/lib/debounce.ts`**
 
-## 📦 Imports
+## Variables & Constants
 
-> No imports found in this file.
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `timeout` | `any` | let/var | `*not shown*` | ✗ |
 
 
 ---
@@ -62,27 +74,6 @@ export function debounce<X extends unknown[]>(
 // eslint-disable-next-line @typescript-eslint/no-explicit-any (x2)
 // eslint-disable-next-line @typescript-eslint/no-unsafe-argument (x3)
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

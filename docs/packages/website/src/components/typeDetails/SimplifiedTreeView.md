@@ -2,19 +2,30 @@
 
 # 📄 `SimplifiedTreeView.tsx`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 2 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 9 |
+| 📊 Variables & Constants | 1 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 7 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
+- [JSX Elements](#jsx-elements)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
-
-## 📊 Analysis Summary
-
-- **Functions**: 2
-- **Classes**: 0
-- **Imports**: 9
-- **Interfaces**: 1
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/website/src/components/typeDetails/SimplifiedTreeView.tsx`**
@@ -32,6 +43,40 @@
 | `PropertyName` | `../ast/PropertyName` |
 | `tsEnumToString` | `../ast/tsUtils` |
 | `getRange` | `../ast/utils` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `result` | `ts.Node[]` | const | `[]` | ✗ |
+
+
+---
+
+## JSX Elements
+
+| Component | Type | Props | Children |
+|-----------|------|-------|----------|
+| `div` | element | className={styles.nonExpand} | <span>, <div> |
+| `span` | element | className={selectedNode === value ? styles.selected : ''} | <PropertyName> |
+| `PropertyName` | component | className={styles.propName}, onClick={(): void => {
+            onSelect(value);
+          }}, onHover={onHover}, value={tsEnumToString('SyntaxKind', value.kind)} | *none* |
+| `div` | element | className={clsx(styles.subList, 'padding-left--md')} | {items.map((item, index) => (
+          <SimplifiedItem
+            key={index.toString()}
+            onHoverNode={onHoverNode}
+            onSelect={onSelect}
+            selectedNode={selectedNode}
+            value={item}
+          />
+        ))} |
+| `SimplifiedItem` | component | key={index.toString()}, onHoverNode={onHoverNode}, onSelect={onSelect}, selectedNode={selectedNode}, value={item} | *none* |
+| `div` | element | className={clsx(styles.list, 'padding-left--sm')} | <SimplifiedItem> |
+| `SimplifiedItem` | component | *none* | *none* |
 
 
 ---
@@ -146,13 +191,6 @@ export function SimplifiedTreeView(
 
 ---
 
-## Classes
-
-> No classes found in this file.
-
-
----
-
 ## Interfaces
 
 ### `SimplifiedTreeViewProps`
@@ -177,13 +215,6 @@ export interface SimplifiedTreeViewProps {
 | `onSelect` | `(value: ts.Node) => void` | ✗ |  |
 | `selectedNode` | `ts.Node | undefined` | ✗ |  |
 | `value` | `ts.Node` | ✗ |  |
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

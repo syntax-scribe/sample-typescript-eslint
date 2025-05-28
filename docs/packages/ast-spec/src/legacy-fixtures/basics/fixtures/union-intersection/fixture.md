@@ -2,24 +2,39 @@
 
 # 📄 `fixture.ts`
 
-## 📚 Table of Contents
-
-- [Type Aliases](#type-aliases)
-
 ## 📊 Analysis Summary
 
-- **Functions**: 0
-- **Classes**: 0
-- **Imports**: 0
-- **Interfaces**: 0
-- **Type Aliases**: 4
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 0 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 0 |
+| 📊 Variables & Constants | 4 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 4 |
+| 🎯 Enums | 0 |
+
+## 📚 Table of Contents
+
+- [Variables & Constants](#variables-constants)
+- [Type Aliases](#type-aliases)
 
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/legacy-fixtures/basics/fixtures/union-intersection/fixture.ts`**
 
-## 📦 Imports
+## Variables & Constants
 
-> No imports found in this file.
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `union` | `number | null | undefined` | let/var | `*not shown*` | ✗ |
+| `intersection` | `number & string` | let/var | `*not shown*` | ✗ |
+| `precedence1` | `number | (string & boolean)` | let/var | `*not shown*` | ✗ |
+| `precedence2` | `(number & string) | boolean` | let/var | `*not shown*` | ✗ |
 
 
 ---
@@ -27,20 +42,6 @@
 ## 🔧 Functions
 
 > No functions found in this file.
-
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
 
 
 ---

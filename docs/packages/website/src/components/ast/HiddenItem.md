@@ -2,19 +2,29 @@
 
 # 📄 `HiddenItem.tsx`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 5 |
+| 📊 Variables & Constants | 0 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 5 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [JSX Elements](#jsx-elements)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 5
-- **Interfaces**: 1
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/website/src/components/ast/HiddenItem.tsx`**
@@ -28,6 +38,37 @@
 | `React` | `react` |
 | `styles` | `./ASTViewer.module.css` |
 | `PropertyValue` | `./PropertyValue` |
+
+
+---
+
+## JSX Elements
+
+| Component | Type | Props | Children |
+|-----------|------|-------|----------|
+| `span` | element | className={styles.hidden} | {isArray && !isComplex ? (
+        value.map(([, item], index) => (
+          <span key={`${level}_[${index}]`}>
+            {index > 0 && ', '}
+            <PropertyValue value={item} />
+          </span>
+        ))
+      ) : isArray ? (
+        <>
+          {length} {length === 1 ? 'element' : 'elements'}
+        </>
+      ) : (
+        value.map(([key], index) => (
+          <span key={`${level}_[${index}]`}>
+            {index > 0 && ', '}
+            {key}
+          </span>
+        ))
+      )} |
+| `span` | element | key={`${level}_[${index}]`} | {index > 0 && ', '}, <PropertyValue> |
+| `PropertyValue` | component | value={item} | *none* |
+| `Fragment` | fragment | *none* | *none* |
+| `span` | element | key={`${level}_[${index}]`} | {index > 0 && ', '}, {key} |
 
 
 ---
@@ -106,13 +147,6 @@ export default function HiddenItem({
 
 ---
 
-## Classes
-
-> No classes found in this file.
-
-
----
-
 ## Interfaces
 
 ### `HiddenItemProps`
@@ -135,13 +169,6 @@ export interface HiddenItemProps {
 | `isArray` | `boolean` | ✓ |  |
 | `level` | `string` | ✗ |  |
 | `value` | `[string, unknown][]` | ✗ |  |
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

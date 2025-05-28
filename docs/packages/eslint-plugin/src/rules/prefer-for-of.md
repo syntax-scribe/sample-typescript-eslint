@@ -2,18 +2,28 @@
 
 # 📄 `prefer-for-of.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 8 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 5 |
+| 📊 Variables & Constants | 5 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 8
-- **Classes**: 0
-- **Imports**: 5
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/prefer-for-of.ts`**
@@ -27,6 +37,21 @@
 | `AST_NODE_TYPES` | `@typescript-eslint/utils` |
 | `createRule` | `../util` |
 | `isAssignee` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `expr` | `any` | const | `node.right` | ✗ |
+| `id` | `any` | const | `reference.identifier` | ✗ |
+| `node` | `any` | const | `id.parent` | ✗ |
+| `declarator` | `any` | const | `node.init.declarations[0] as
+          | TSESTree.VariableDeclarator
+          | undefined` | ✗ |
+| `indexName` | `any` | const | `declarator.id.name` | ✗ |
 
 
 ---
@@ -243,26 +268,5 @@ function isIndexOnlyUsedWithArray(
   - `indexVar.references.every`
   - `contains`
   - `isAssignee (from ../util)`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

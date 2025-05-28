@@ -2,19 +2,31 @@
 
 # 📄 `Jsx.vue`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 1 |
+| 📦 Imports | 3 |
+| 📊 Variables & Constants | 1 |
+| ✨ Decorators | 1 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 6 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
+- [Decorators](#decorators)
+- [JSX Elements](#jsx-elements)
 - [Functions](#functions)
 - [Classes](#classes)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 1
-- **Imports**: 3
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/integration-tests/fixtures/vue-jsx/Jsx.vue`**
@@ -26,6 +38,45 @@
 | `Vue` | `vue` |
 | `mapMutations` | `vuex` |
 | `Component` | `vue-property-decorator` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `path` | `any` | const | `'/'` | ✗ |
+
+
+---
+
+## Decorators
+
+| Name | Target | Target Type | Arguments |
+|------|--------|-------------|----------|
+| `@Component` | `Jsx` | class | {
+  created() {
+    this.toggleHeader(false);
+  },
+  methods: {
+    ...mapMutations('APP_SCOPE_NAME', ['toggleHeader']),
+  },
+} |
+
+
+---
+
+## JSX Elements
+
+| Component | Type | Props | Children |
+|-----------|------|-------|----------|
+| `div` | element | class="mg-notFound" | <div> |
+| `div` | element | class="fixed-center text-center" | <p>, <p>, <q-btn> |
+| `p` | element | *none* | text: "img goes here" |
+| `p` | element | class="text-faded" | text: "Sorry, nothing here...", <strong> |
+| `strong` | element | *none* | text: "(404)" |
+| `q-btn` | element | color="secondary", style="width:200px;", onClick={() => console.log(path)} | text: "Go back" |
 
 
 ---
@@ -147,20 +198,6 @@ render(): JSX.Element {
   }
 ```
 </details>
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

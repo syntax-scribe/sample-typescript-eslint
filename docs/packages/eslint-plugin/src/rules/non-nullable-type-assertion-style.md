@@ -2,18 +2,28 @@
 
 # 📄 `non-nullable-type-assertion-style.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 4 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 6 |
+| 📊 Variables & Constants | 1 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 4
-- **Classes**: 0
-- **Imports**: 6
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/non-nullable-type-assertion-style.ts`**
@@ -28,6 +38,18 @@
 | `getOperatorPrecedence` | `../util` |
 | `getParserServices` | `../util` |
 | `OperatorPrecedence` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `higherPrecedenceThanUnary` | `boolean` | const | `getOperatorPrecedence(
+              services.esTreeNodeToTSNodeMap.get(node.expression).kind,
+              ts.SyntaxKind.Unknown,
+            ) > OperatorPrecedence.Unary` | ✗ |
 
 
 ---
@@ -158,26 +180,5 @@
 - **Parameters**:
   - `node: TSESTree.TSAsExpression | TSESTree.TSTypeAssertion`
 - **Return Type**: `boolean`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

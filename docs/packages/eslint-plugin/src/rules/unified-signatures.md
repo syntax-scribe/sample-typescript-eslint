@@ -2,20 +2,30 @@
 
 # 📄 `unified-signatures.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 32 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 7 |
+| 📊 Variables & Constants | 32 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 2 |
+| 📑 Type Aliases | 9 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 32
-- **Classes**: 0
-- **Imports**: 7
-- **Interfaces**: 2
-- **Type Aliases**: 9
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/unified-signatures.ts`**
@@ -31,6 +41,70 @@
 | `arraysAreEqual` | `../util` |
 | `createRule` | `../util` |
 | `nullThrows` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `overloads` | `string` | const | `otherLine == null
+          ? 'These overloads'
+          : `This overload and the one on line ${otherLine}`` | ✗ |
+| `lineOfOtherOverload` | `any` | const | `only2 ? undefined : p0.loc.start.line` | ✗ |
+| `typeAnnotation0` | `any` | const | `isTSParameterProperty(p0)
+              ? p0.parameter.typeAnnotation
+              : p0.typeAnnotation` | ✗ |
+| `typeAnnotation1` | `any` | const | `isTSParameterProperty(p1)
+              ? p1.parameter.typeAnnotation
+              : p1.typeAnnotation` | ✗ |
+| `lineOfOtherOverload` | `any` | const | `only2
+              ? undefined
+              : otherSignature.loc.start.line` | ✗ |
+| `result` | `Failure[]` | const | `[]` | ✗ |
+| `signature0` | `any` | const | `(a as Partial<MethodDefinition>).value ?? a` | ✗ |
+| `signature1` | `any` | const | `(b as Partial<MethodDefinition>).value ?? b` | ✗ |
+| `aTypeParams` | `any` | const | `a.typeParameters != null ? a.typeParameters.params : undefined` | ✗ |
+| `bTypeParams` | `any` | const | `b.typeParameters != null ? b.typeParameters.params : undefined` | ✗ |
+| `firstParam1` | `TSESTree.Parameter` | const | `types1[0]` | ✗ |
+| `firstParam2` | `TSESTree.Parameter` | const | `types2[0]` | ✗ |
+| `a` | `TSESTree.Parameter` | const | `types1[index]` | ✗ |
+| `b` | `TSESTree.Parameter` | const | `types2[index]` | ✗ |
+| `sig1` | `any` | const | `a.params` | ✗ |
+| `sig2` | `any` | const | `b.params` | ✗ |
+| `longer` | `any` | const | `sig1.length < sig2.length ? sig2 : sig1` | ✗ |
+| `shorter` | `any` | const | `sig1.length < sig2.length ? sig1 : sig2` | ✗ |
+| `shorterSig` | `any` | const | `sig1.length < sig2.length ? a : b` | ✗ |
+| `sig1i` | `any` | const | `sig1[i]` | ✗ |
+| `sig2i` | `any` | const | `sig2[i]` | ✗ |
+| `typeAnnotation1` | `any` | const | `isTSParameterProperty(sig1i)
+          ? sig1i.parameter.typeAnnotation
+          : sig1i.typeAnnotation` | ✗ |
+| `typeAnnotation2` | `any` | const | `isTSParameterProperty(sig2i)
+          ? sig2i.parameter.typeAnnotation
+          : sig2i.typeAnnotation` | ✗ |
+| `set` | `Set<string>` | const | `new Set<string>()` | ✗ |
+| `typeName` | `any` | const | `type.typeName` | ✗ |
+| `typeAnnotationA` | `any` | const | `isTSParameterProperty(a)
+        ? a.parameter.typeAnnotation
+        : a.typeAnnotation` | ✗ |
+| `typeAnnotationB` | `any` | const | `isTSParameterProperty(b)
+        ? b.parameter.typeAnnotation
+        : b.typeAnnotation` | ✗ |
+| `optional` | `any` | const | `isTSParameterProperty(p)
+        ? p.parameter.optional
+        : p.optional` | ✗ |
+| `optionalA` | `any` | const | `isTSParameterProperty(a)
+        ? a.parameter.optional
+        : a.optional` | ✗ |
+| `optionalB` | `any` | const | `isTSParameterProperty(b)
+        ? b.parameter.optional
+        : b.optional` | ✗ |
+| `scopes` | `Scope[]` | const | `[]` | ✗ |
+| `currentScope` | `Scope | undefined` | let/var | `{
+      overloads: new Map<string, OverloadNode[]>(),
+    }` | ✗ |
 
 
 ---
@@ -1114,13 +1188,6 @@ function isGetterOrSetter(
     | TSESTree.TSAbstractMethodDefinition
     | TSESTree.TSMethodSignature`
 - **Return Type**: `boolean`
-
----
-
-## Classes
-
-> No classes found in this file.
-
 
 ---
 

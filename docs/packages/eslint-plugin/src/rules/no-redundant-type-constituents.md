@@ -2,20 +2,30 @@
 
 # 📄 `no-redundant-type-constituents.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 10 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 11 |
+| 📊 Variables & Constants | 14 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 3 |
+| 📑 Type Aliases | 1 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 10
-- **Classes**: 0
-- **Imports**: 11
-- **Interfaces**: 3
-- **Type Aliases**: 1
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/no-redundant-type-constituents.ts`**
@@ -35,6 +45,75 @@
 | `isTypeNeverType` | `../util` |
 | `isTypeTemplateLiteralType` | `../util` |
 | `isTypeUnknownType` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `literalToPrimitiveTypeFlags` | `{ readonly [x: number]: any; }` | const | `{
+  [ts.TypeFlags.BigIntLiteral]: ts.TypeFlags.BigInt,
+  [ts.TypeFlags.BooleanLiteral]: ts.TypeFlags.Boolean,
+  [ts.TypeFlags.NumberLiteral]: ts.TypeFlags.Number,
+  [ts.TypeFlags.StringLiteral]: ts.TypeFlags.String,
+  [ts.TypeFlags.TemplateLiteral]: ts.TypeFlags.String,
+} as const` | ✗ |
+| `literalTypeFlags` | `readonly [any, any, any, any, any]` | const | `[
+  ts.TypeFlags.BigIntLiteral,
+  ts.TypeFlags.BooleanLiteral,
+  ts.TypeFlags.NumberLiteral,
+  ts.TypeFlags.StringLiteral,
+  ts.TypeFlags.TemplateLiteral,
+] as const` | ✗ |
+| `primitiveTypeFlags` | `readonly [any, any, any, any]` | const | `[
+  ts.TypeFlags.BigInt,
+  ts.TypeFlags.Boolean,
+  ts.TypeFlags.Number,
+  ts.TypeFlags.String,
+] as const` | ✗ |
+| `primitiveTypeFlagNames` | `{ readonly [x: number]: "string" | "number" | "bigint" | "boolean"; }` | const | `{
+  [ts.TypeFlags.BigInt]: 'bigint',
+  [ts.TypeFlags.Boolean]: 'boolean',
+  [ts.TypeFlags.Number]: 'number',
+  [ts.TypeFlags.String]: 'string',
+} as const` | ✗ |
+| `primitiveTypeFlagTypes` | `{ readonly bigint: any; readonly boolean: any; readonly number: any; readonly string: any; }` | const | `{
+  bigint: ts.TypeFlags.BigIntLiteral,
+  boolean: ts.TypeFlags.BooleanLiteral,
+  number: ts.TypeFlags.NumberLiteral,
+  string: ts.TypeFlags.StringLiteral,
+} as const` | ✗ |
+| `keywordNodeTypesToTsTypes` | `Map<any, any>` | const | `new Map([
+  [TSESTree.AST_NODE_TYPES.TSAnyKeyword, ts.TypeFlags.Any],
+  [TSESTree.AST_NODE_TYPES.TSBigIntKeyword, ts.TypeFlags.BigInt],
+  [TSESTree.AST_NODE_TYPES.TSBooleanKeyword, ts.TypeFlags.Boolean],
+  [TSESTree.AST_NODE_TYPES.TSNeverKeyword, ts.TypeFlags.Never],
+  [TSESTree.AST_NODE_TYPES.TSNumberKeyword, ts.TypeFlags.Number],
+  [TSESTree.AST_NODE_TYPES.TSStringKeyword, ts.TypeFlags.String],
+  [TSESTree.AST_NODE_TYPES.TSUnknownKeyword, ts.TypeFlags.Unknown],
+])` | ✗ |
+| `typesCache` | `Map<TSESTree.TypeNode, TypeFlagsWithName[]>` | const | `new Map<TSESTree.TypeNode, TypeFlagsWithName[]>()` | ✗ |
+| `seenLiteralTypes` | `Map<any, string[]>` | const | `new Map<PrimitiveTypeFlag, string[]>()` | ✗ |
+| `seenPrimitiveTypes` | `Map<any, TSESTree.TypeNode[]>` | const | `new Map<
+          PrimitiveTypeFlag,
+          TSESTree.TypeNode[]
+        >()` | ✗ |
+| `seenUnionTypes` | `Map<TSESTree.TypeNode, TypeFlagsWithName[]>` | const | `new Map<
+          TSESTree.TypeNode,
+          TypeFlagsWithName[]
+        >()` | ✗ |
+| `primitive` | `number | undefined` | let/var | `undefined` | ✗ |
+| `seenLiteralTypes` | `Map<any, TypeNodeWithValue[]>` | const | `new Map<
+          PrimitiveTypeFlag,
+          TypeNodeWithValue[]
+        >()` | ✗ |
+| `seenPrimitiveTypes` | `Set<any>` | const | `new Set<PrimitiveTypeFlag>()` | ✗ |
+| `overriddenTypeNodes` | `Map<TSESTree.TypeNode, TypeFlagWithText[]>` | const | `new Map<
+          TSESTree.TypeNode,
+          TypeFlagWithText[]
+        >()` | ✗ |
 
 
 ---
@@ -479,13 +558,6 @@ function checkUnionBottomAndTopTypes(
 - **Calls**:
   - `context.report`
   - `isNodeInsideReturnType`
-
----
-
-## Classes
-
-> No classes found in this file.
-
 
 ---
 

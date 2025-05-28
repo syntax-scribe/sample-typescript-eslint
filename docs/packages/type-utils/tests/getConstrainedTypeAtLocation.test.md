@@ -2,17 +2,27 @@
 
 # 📄 `getConstrainedTypeAtLocation.test.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 0 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 4 |
+| 📊 Variables & Constants | 19 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
-
-## 📊 Analysis Summary
-
-- **Functions**: 0
-- **Classes**: 0
-- **Imports**: 4
-- **Interfaces**: 0
-- **Type Aliases**: 0
+- [Variables & Constants](#variables-constants)
 
 ## 🛠️ File Location:
 📂 **`packages/type-utils/tests/getConstrainedTypeAtLocation.test.ts`**
@@ -29,30 +39,52 @@
 
 ---
 
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `sourceCode` | `"\nfunction foo<T>(x: T);\n    "` | const | ``
+function foo<T>(x: T);
+    `` | ✗ |
+| `functionNode` | `TSESTree.FunctionDeclaration` | const | `ast.body[0] as TSESTree.FunctionDeclaration` | ✗ |
+| `parameterNode` | `any` | const | `functionNode.params[0]` | ✗ |
+| `sourceCode` | `"\nfunction foo<T extends unknown>(x: T);\n    "` | const | ``
+function foo<T extends unknown>(x: T);
+    `` | ✗ |
+| `functionNode` | `TSESTree.FunctionDeclaration` | const | `ast.body[0] as TSESTree.FunctionDeclaration` | ✗ |
+| `parameterNode` | `any` | const | `functionNode.params[0]` | ✗ |
+| `sourceCode` | `"\nfunction foo<T extends any>(x: T);\n    "` | const | ``
+function foo<T extends any>(x: T);
+    `` | ✗ |
+| `functionNode` | `TSESTree.FunctionDeclaration` | const | `ast.body[0] as TSESTree.FunctionDeclaration` | ✗ |
+| `parameterNode` | `any` | const | `functionNode.params[0]` | ✗ |
+| `sourceCode` | `"\nfunction foo<T extends string>(x: T);\n    "` | const | ``
+function foo<T extends string>(x: T);
+    `` | ✗ |
+| `functionNode` | `TSESTree.FunctionDeclaration` | const | `ast.body[0] as TSESTree.FunctionDeclaration` | ✗ |
+| `parameterNode` | `any` | const | `functionNode.params[0]` | ✗ |
+| `sourceCode` | `"\nfunction foo(x: string);\n    "` | const | ``
+function foo(x: string);
+    `` | ✗ |
+| `functionNode` | `TSESTree.FunctionDeclaration` | const | `ast.body[0] as TSESTree.FunctionDeclaration` | ✗ |
+| `parameterNode` | `any` | const | `functionNode.params[0]` | ✗ |
+| `sourceCode` | `"\nfunction foo<T extends string>() {\n  function bar<V extends T>(x: V) {\n  }\n}\n    "` | const | ``
+function foo<T extends string>() {
+  function bar<V extends T>(x: V) {
+  }
+}
+    `` | ✗ |
+| `outerFunctionNode` | `TSESTree.FunctionDeclaration` | const | `ast.body[0] as TSESTree.FunctionDeclaration` | ✗ |
+| `innerFunctionNode` | `TSESTree.FunctionDeclaration` | const | `outerFunctionNode.body
+      .body[0] as TSESTree.FunctionDeclaration` | ✗ |
+| `parameterNode` | `any` | const | `innerFunctionNode.params[0]` | ✗ |
+
+
+---
+
 ## 🔧 Functions
 
 > No functions found in this file.
-
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

@@ -2,20 +2,30 @@
 
 # 📄 `no-unused-vars.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 15 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 16 |
+| 📊 Variables & Constants | 21 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 5 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 15
-- **Classes**: 0
-- **Imports**: 16
-- **Interfaces**: 1
-- **Type Aliases**: 5
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/no-unused-vars.ts`**
@@ -40,6 +50,77 @@
 | `nullThrows` | `../util` |
 | `NullThrowsReasons` | `../util` |
 | `referenceContainsTypeQuery` | `../util/referenceContainsTypeQuery` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `MODULE_DECL_CACHE` | `Map<any, boolean>` | const | `new Map<
+      ModuleDeclarationWithBody | TSESTree.Program,
+      boolean
+    >()` | ✗ |
+| `options` | `TranslatedOptions` | const | `{
+        args: 'after-used',
+        caughtErrors: 'all',
+        ignoreClassWithStaticInitBlock: false,
+        ignoreRestSiblings: false,
+        reportUsedIgnorePattern: false,
+        vars: 'all',
+      }` | ✗ |
+| `additionalMessageData` | `string` | let/var | `''` | ✗ |
+| `additionalMessageData` | `string` | let/var | `''` | ✗ |
+| `additionalMessageData` | `string` | let/var | `''` | ✗ |
+| `def` | `any` | const | `variable.defs[0]` | ✗ |
+| `variables` | `{ used: boolean; variable: ScopeVariable; }[]` | const | `[
+        ...Array.from(analysisResults.unusedVariables, variable => ({
+          used: false,
+          variable,
+        })),
+        ...Array.from(analysisResults.usedVariables, variable => ({
+          used: true,
+          variable,
+        })),
+      ]` | ✗ |
+| `unusedVariablesReturn` | `ScopeVariable[]` | const | `[]` | ✗ |
+| `def` | `any` | const | `variable.defs[0]` | ✗ |
+| `moduleDecl` | `TSESTree.Program` | const | `nullThrows(
+          node.parent,
+          NullThrowsReasons.MissingParent,
+        ) as TSESTree.Program` | ✗ |
+| `moduleDecl` | `ModuleDeclarationWithBody` | const | `nullThrows(
+          node.parent.parent,
+          NullThrowsReasons.MissingParent,
+        ) as ModuleDeclarationWithBody` | ✗ |
+| `moduleDecl` | `ModuleDeclarationWithBody` | const | `nullThrows(
+          node.parent.parent,
+          NullThrowsReasons.MissingParent,
+        ) as ModuleDeclarationWithBody` | ✗ |
+| `moduleDecl` | `ModuleDeclarationWithBody` | const | `nullThrows(
+          node.parent.parent,
+          NullThrowsReasons.MissingParent,
+        ) as ModuleDeclarationWithBody` | ✗ |
+| `isImportUsedOnlyAsType` | `any` | const | `usedOnlyAsType &&
+              unusedVar.defs.some(
+                def => def.type === DefinitionType.ImportBinding,
+              )` | ✗ |
+| `id` | `any` | const | `writeReferences.length
+              ? writeReferences[writeReferences.length - 1].identifier
+              : unusedVar.identifiers[0]` | ✗ |
+| `messageId` | `"unusedVar" | "usedOnlyAsType"` | const | `usedOnlyAsType ? 'usedOnlyAsType' : 'unusedVar'` | ✗ |
+| `idLength` | `any` | const | `id.name.length` | ✗ |
+| `loc` | `{ start: any; end: { column: any; line: any; }; }` | const | `{
+              start,
+              end: {
+                column: start.column + idLength,
+                line: start.line,
+              },
+            }` | ✗ |
+| `directiveComment` | `any` | const | `unusedVar.eslintExplicitGlobalComments[0]` | ✗ |
+| `identifiers` | `TSESTree.Identifier[]` | const | `[]` | ✗ |
+| `visitor` | `any` | const | `new PatternVisitor({}, node, cb)` | ✗ |
 
 
 ---
@@ -903,13 +984,6 @@ function getStatementsOfNode(
 - **Parameters**:
   - `block: ModuleDeclarationWithBody | TSESTree.Program`
 - **Return Type**: `TSESTree.ProgramStatement[]`
-
----
-
-## Classes
-
-> No classes found in this file.
-
 
 ---
 

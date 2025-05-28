@@ -2,20 +2,30 @@
 
 # 📄 `explicitReturnTypeUtils.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 16 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 9 |
+| 📊 Variables & Constants | 6 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 2 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 16
-- **Classes**: 0
-- **Imports**: 9
-- **Interfaces**: 2
-- **Type Aliases**: 2
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/util/explicitReturnTypeUtils.ts`**
@@ -33,6 +43,21 @@
 | `isSetter` | `./astUtils` |
 | `isTypeAssertion` | `./astUtils` |
 | `getFunctionHeadLoc` | `./getFunctionHeadLoc` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `objectExpr` | `any` | const | `property.parent` | ✗ |
+| `parent` | `any` | const | `objectExpr.parent` | ✗ |
+| `body` | `any` | let/var | `node.body` | ✗ |
+| `ancestor` | `TSESTree.Node | undefined` | let/var | `node.parent` | ✗ |
+| `isReturnStatement` | `boolean` | const | `ancestor.type === AST_NODE_TYPES.ReturnStatement` | ✗ |
+| `isBodylessArrow` | `boolean` | const | `ancestor.type === AST_NODE_TYPES.ArrowFunctionExpression &&
+    ancestor.body.type !== AST_NODE_TYPES.BlockStatement` | ✗ |
 
 
 ---
@@ -664,13 +689,6 @@ export function ancestorHasReturnType(node: FunctionNode): boolean {
 // const x: Foo = () => {};
 // Assume that a typed variable types the function expression
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
 
 
 ---

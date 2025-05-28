@@ -2,20 +2,30 @@
 
 # 📄 `member-ordering.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 19 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 9 |
+| 📊 Variables & Constants | 29 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 15 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 19
-- **Classes**: 0
-- **Imports**: 9
-- **Interfaces**: 1
-- **Type Aliases**: 15
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/member-ordering.ts`**
@@ -33,6 +43,290 @@
 | `getNameFromIndexSignature` | `../util` |
 | `getNameFromMember` | `../util` |
 | `MemberNameType` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `neverConfig` | `JSONSchema.JSONSchema4` | const | `{
+  type: 'string',
+  enum: ['never'],
+}` | ✗ |
+| `defaultOrder` | `MemberType[]` | const | `[
+  // Index signature
+  'signature',
+  'call-signature',
+
+  // Fields
+  'public-static-field',
+  'protected-static-field',
+  'private-static-field',
+  '#private-static-field',
+
+  'public-decorated-field',
+  'protected-decorated-field',
+  'private-decorated-field',
+
+  'public-instance-field',
+  'protected-instance-field',
+  'private-instance-field',
+  '#private-instance-field',
+
+  'public-abstract-field',
+  'protected-abstract-field',
+
+  'public-field',
+  'protected-field',
+  'private-field',
+  '#private-field',
+
+  'static-field',
+  'instance-field',
+  'abstract-field',
+
+  'decorated-field',
+
+  'field',
+
+  // Static initialization
+  'static-initialization',
+
+  // Constructors
+  'public-constructor',
+  'protected-constructor',
+  'private-constructor',
+
+  'constructor',
+
+  // Accessors
+  'public-static-accessor',
+  'protected-static-accessor',
+  'private-static-accessor',
+  '#private-static-accessor',
+
+  'public-decorated-accessor',
+  'protected-decorated-accessor',
+  'private-decorated-accessor',
+
+  'public-instance-accessor',
+  'protected-instance-accessor',
+  'private-instance-accessor',
+  '#private-instance-accessor',
+
+  'public-abstract-accessor',
+  'protected-abstract-accessor',
+
+  'public-accessor',
+  'protected-accessor',
+  'private-accessor',
+  '#private-accessor',
+
+  'static-accessor',
+  'instance-accessor',
+  'abstract-accessor',
+
+  'decorated-accessor',
+
+  'accessor',
+
+  // Getters
+  'public-static-get',
+  'protected-static-get',
+  'private-static-get',
+  '#private-static-get',
+
+  'public-decorated-get',
+  'protected-decorated-get',
+  'private-decorated-get',
+
+  'public-instance-get',
+  'protected-instance-get',
+  'private-instance-get',
+  '#private-instance-get',
+
+  'public-abstract-get',
+  'protected-abstract-get',
+
+  'public-get',
+  'protected-get',
+  'private-get',
+  '#private-get',
+
+  'static-get',
+  'instance-get',
+  'abstract-get',
+
+  'decorated-get',
+
+  'get',
+
+  // Setters
+  'public-static-set',
+  'protected-static-set',
+  'private-static-set',
+  '#private-static-set',
+
+  'public-decorated-set',
+  'protected-decorated-set',
+  'private-decorated-set',
+
+  'public-instance-set',
+  'protected-instance-set',
+  'private-instance-set',
+  '#private-instance-set',
+
+  'public-abstract-set',
+  'protected-abstract-set',
+
+  'public-set',
+  'protected-set',
+  'private-set',
+  '#private-set',
+
+  'static-set',
+  'instance-set',
+  'abstract-set',
+
+  'decorated-set',
+
+  'set',
+
+  // Methods
+  'public-static-method',
+  'protected-static-method',
+  'private-static-method',
+  '#private-static-method',
+
+  'public-decorated-method',
+  'protected-decorated-method',
+  'private-decorated-method',
+
+  'public-instance-method',
+  'protected-instance-method',
+  'private-instance-method',
+  '#private-instance-method',
+
+  'public-abstract-method',
+  'protected-abstract-method',
+
+  'public-method',
+  'protected-method',
+  'private-method',
+  '#private-method',
+
+  'static-method',
+  'instance-method',
+  'abstract-method',
+
+  'decorated-method',
+
+  'method',
+]` | ✓ |
+| `allMemberTypes` | `BaseMemberType[]` | const | `[
+  ...new Set(
+    (
+      [
+        'readonly-signature',
+        'signature',
+        'readonly-field',
+        'field',
+        'method',
+        'call-signature',
+        'constructor',
+        'accessor',
+        'get',
+        'set',
+        'static-initialization',
+      ] as const
+    ).flatMap(type => [
+      type,
+
+      ...(['public', 'protected', 'private', '#private'] as const)
+        .flatMap<MemberType>(accessibility => [
+          type !== 'readonly-signature' &&
+          type !== 'signature' &&
+          type !== 'static-initialization' &&
+          type !== 'call-signature' &&
+          !(type === 'constructor' && accessibility === '#private')
+            ? `${accessibility}-${type}` // e.g. `public-field`
+            : [],
+
+          // Only class instance fields, methods, accessors, get and set can have decorators attached to them
+          accessibility !== '#private' &&
+          (type === 'readonly-field' ||
+            type === 'field' ||
+            type === 'method' ||
+            type === 'accessor' ||
+            type === 'get' ||
+            type === 'set')
+            ? [`${accessibility}-decorated-${type}`, `decorated-${type}`]
+            : [],
+
+          type !== 'constructor' &&
+          type !== 'readonly-signature' &&
+          type !== 'signature' &&
+          type !== 'call-signature'
+            ? (
+                [
+                  'static',
+                  'instance',
+                  // There is no `static-constructor` or `instance-constructor` or `abstract-constructor`
+                  ...(accessibility === '#private' ||
+                  accessibility === 'private'
+                    ? []
+                    : (['abstract'] as const)),
+                ] as const
+              ).flatMap(
+                scope =>
+                  [
+                    `${scope}-${type}`,
+                    `${accessibility}-${scope}-${type}`,
+                  ] as const,
+              )
+            : [],
+        ])
+        .flat(),
+    ]),
+  ),
+]` | ✗ |
+| `functionExpressions` | `any[]` | const | `[
+  AST_NODE_TYPES.FunctionExpression,
+  AST_NODE_TYPES.ArrowFunctionExpression,
+]` | ✗ |
+| `rank` | `number` | let/var | `-1` | ✗ |
+| `stack` | `BaseMemberType[]` | const | `[...memberGroups]` | ✗ |
+| `memberGroup` | `BaseMemberType` | const | `stack.shift()!` | ✗ |
+| `abstract` | `boolean` | const | `node.type === AST_NODE_TYPES.TSAbstractAccessorProperty ||
+    node.type === AST_NODE_TYPES.TSAbstractPropertyDefinition ||
+    node.type === AST_NODE_TYPES.TSAbstractMethodDefinition` | ✗ |
+| `scope` | `"abstract" | "instance" | "static"` | const | `'static' in node && node.static
+      ? 'static'
+      : abstract
+        ? 'abstract'
+        : 'instance'` | ✗ |
+| `memberGroups` | `BaseMemberType[]` | const | `[]` | ✗ |
+| `decorated` | `boolean` | const | `'decorators' in node && node.decorators.length > 0` | ✗ |
+| `groupedMembers` | `Member[][]` | const | `[]` | ✗ |
+| `previousRank` | `number | undefined` | let/var | `undefined` | ✗ |
+| `rankOfCurrentMember` | `number` | const | `memberRanks[index]` | ✗ |
+| `rankOfNextMember` | `number` | const | `memberRanks[index + 1]` | ✗ |
+| `lowest` | `number` | let/var | `ranks[ranks.length - 1]` | ✗ |
+| `lowestRank` | `MemberType` | const | `order[lowest]` | ✗ |
+| `lowestRanks` | `BaseMemberType[]` | const | `Array.isArray(lowestRank) ? lowestRank : [lowestRank]` | ✗ |
+| `previousRanks` | `number[]` | const | `[]` | ✗ |
+| `memberGroups` | `Member[][]` | const | `[]` | ✗ |
+| `isCorrectlySorted` | `boolean` | let/var | `true` | ✗ |
+| `rankLastMember` | `number` | const | `previousRanks[previousRanks.length - 1]` | ✗ |
+| `previousName` | `string` | let/var | `''` | ✗ |
+| `isCorrectlySorted` | `boolean` | let/var | `true` | ✗ |
+| `order` | `Order | undefined` | let/var | `*not shown*` | ✗ |
+| `memberTypes` | `string | MemberType[] | undefined` | let/var | `*not shown*` | ✗ |
+| `optionalityOrder` | `OptionalityOrder | undefined` | let/var | `*not shown*` | ✗ |
+| `hasAlphaSort` | `boolean` | const | `!!(order && order !== 'as-written')` | ✗ |
+| `hasAlphaSort` | `boolean` | const | `!!(order && order !== 'as-written')` | ✗ |
 
 
 ---
@@ -1132,13 +1426,6 @@ function validateMembersOrder(
 ```
 // Check order
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
 
 
 ---

@@ -2,24 +2,36 @@
 
 # 📄 `ts-estree.ts`
 
-## 📚 Table of Contents
-
-- [Interfaces](#interfaces)
-
 ## 📊 Analysis Summary
 
-- **Functions**: 0
-- **Classes**: 0
-- **Imports**: 0
-- **Interfaces**: 61
-- **Type Aliases**: 0
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 0 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 0 |
+| 📊 Variables & Constants | 0 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 1 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 61 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
+## 📚 Table of Contents
+
+- [Re-exports](#re-exports)
+- [Interfaces](#interfaces)
 
 ## 🛠️ File Location:
 📂 **`packages/types/src/ts-estree.ts`**
 
-## 📦 Imports
+## Re-exports
 
-> No imports found in this file.
+| Type | Source | Exported Names |
+|------|--------|----------------|
+| namespace | `./generated/ast-spec` | TSESTree |
 
 
 ---
@@ -27,13 +39,6 @@
 ## 🔧 Functions
 
 > No functions found in this file.
-
-
----
-
-## Classes
-
-> No classes found in this file.
 
 
 ---
@@ -1115,13 +1120,6 @@ interface ExportSpecifierWithStringOrLiteralLocal {
 | Name | Type | Optional | Description |
 |------|------|----------|-------------|
 | `parent` | `TSESTree.ExportNamedDeclaration` | ✗ |  |
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

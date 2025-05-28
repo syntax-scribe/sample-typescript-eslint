@@ -2,19 +2,30 @@
 
 # 📄 `isTypeReadonly.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 7 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 6 |
+| 📊 Variables & Constants | 5 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 1 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
-
-## 📊 Analysis Summary
-
-- **Functions**: 7
-- **Classes**: 0
-- **Imports**: 6
-- **Interfaces**: 1
-- **Type Aliases**: 0
+- [Enums](#enums)
 
 ## 🛠️ File Location:
 📂 **`packages/type-utils/src/isTypeReadonly.ts`**
@@ -29,6 +40,33 @@
 | `getTypeOfPropertyOfType` | `./propertyTypes` |
 | `typeMatchesSomeSpecifier` | `./TypeOrValueSpecifier` |
 | `typeOrValueSpecifiersSchema` | `./TypeOrValueSpecifier` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `readonlynessOptionsSchema` | `JSONSchema4` | const | `{
+  additionalProperties: false,
+  properties: {
+    allow: typeOrValueSpecifiersSchema,
+    treatMethodsAsReadonly: {
+      type: 'boolean',
+    },
+  },
+  type: 'object',
+} satisfies JSONSchema4` | ✓ |
+| `readonlynessOptionsDefaults` | `ReadonlynessOptions` | const | `{
+  allow: [],
+  treatMethodsAsReadonly: false,
+}` | ✓ |
+| `lastDeclaration` | `any` | const | `declarations != null && declarations.length > 0
+            ? declarations[declarations.length - 1]
+            : undefined` | ✗ |
+| `readonlyness` | `Readonlyness.Mutable | Readonlyness.Readonly` | const | `result ? Readonlyness.Readonly : Readonlyness.Mutable` | ✗ |
+| `readonlyness` | `Readonlyness.Mutable | Readonlyness.Readonly` | const | `result ? Readonlyness.Readonly : Readonlyness.Mutable` | ✗ |
 
 
 ---
@@ -574,13 +612,6 @@ export function isTypeReadonly(
 
 ---
 
-## Classes
-
-> No classes found in this file.
-
-
----
-
 ## Interfaces
 
 ### `ReadonlynessOptions`
@@ -605,9 +636,31 @@ export interface ReadonlynessOptions {
 
 ---
 
-## Type Aliases
+## Enums
 
-> No type aliases found in this file.
+### `const enum Readonlyness`
+
+<details><summary>Enum Code</summary>
+
+```ts
+const enum Readonlyness {
+  /** the type cannot be handled by the function */
+  UnknownType = 1,
+  /** the type is mutable */
+  Mutable = 2,
+  /** the type is readonly */
+  Readonly = 3,
+}
+```
+</details>
+
+#### Members
+
+| Name | Value | Description |
+|------|-------|-------------|
+| `UnknownType` | `1` | / the type cannot be handled by the function */ |
+| `Mutable` | `2` | / the type is mutable */ |
+| `Readonly` | `3` | / the type is readonly */ |
 
 
 ---

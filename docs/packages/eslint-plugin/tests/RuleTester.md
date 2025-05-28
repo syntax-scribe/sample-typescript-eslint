@@ -2,18 +2,28 @@
 
 # 📄 `RuleTester.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 2 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 2 |
+| 📊 Variables & Constants | 5 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 2
-- **Classes**: 0
-- **Imports**: 2
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/tests/RuleTester.ts`**
@@ -24,6 +34,30 @@
 |------|--------|
 | `InvalidTestCase` | `@typescript-eslint/rule-tester` |
 | `ValidTestCase` | `@typescript-eslint/rule-tester` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `lineOffset` | `1 | 2` | const | `options.code.startsWith('\n') ? 2 : 1` | ✗ |
+| `output` | `any` | const | `'output' in options && options.output
+      ? options.output.trim().split('\n')
+      : null` | ✗ |
+| `lineNum` | `any` | const | `i + lineOffset` | ✗ |
+| `errors` | `any` | const | `'errors' in options
+          ? options.errors.filter(e => e.line === lineNum)
+          : []` | ✗ |
+| `returnVal` | `any` | const | `{
+        ...options,
+        code,
+        errors: errors.map(e => ({
+          ...e,
+          line: 1,
+        })),
+      }` | ✗ |
 
 
 ---
@@ -72,26 +106,5 @@ export function batchedSingleLineTests<Options extends readonly unknown[]>(
 - **Parameters**:
   - `test: ValidTestCase<Options>`
 - **Return Type**: `ValidTestCase<Options>[]`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

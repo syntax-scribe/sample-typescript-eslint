@@ -2,19 +2,29 @@
 
 # 📄 `getWrappingFixer.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 7 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 5 |
+| 📊 Variables & Constants | 6 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
-
-## 📊 Analysis Summary
-
-- **Functions**: 7
-- **Classes**: 0
-- **Imports**: 5
-- **Interfaces**: 1
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/util/getWrappingFixer.ts`**
@@ -28,6 +38,20 @@
 | `AST_NODE_TYPES` | `@typescript-eslint/utils` |
 | `ASTUtils` | `@typescript-eslint/utils` |
 | `ESLintUtils` | `@typescript-eslint/utils` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `innerNodes` | `any[]` | const | `Array.isArray(innerNode) ? innerNode : [innerNode]` | ✗ |
+| `parent` | `any` | const | `node.parent` | ✗ |
+| `parent` | `any` | const | `node.parent!` | ✗ |
+| `block` | `any` | const | `parent.parent` | ✗ |
+| `previousStatement` | `any` | const | `block.body[statementIndex - 1]` | ✗ |
+| `parent` | `any` | const | `node.parent!` | ✗ |
 
 
 ---
@@ -456,13 +480,6 @@ function isObjectExpressionInOneLineReturn(
 
 ---
 
-## Classes
-
-> No classes found in this file.
-
-
----
-
 ## Interfaces
 
 ### `WrappingFixerParams`
@@ -500,13 +517,6 @@ interface WrappingFixerParams {
 | `node` | `TSESTree.Node` | ✗ |  |
 | `sourceCode` | `Readonly<TSESLint.SourceCode>` | ✗ |  |
 | `wrap` | `(...code: string[]) => string` | ✓ |  |
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

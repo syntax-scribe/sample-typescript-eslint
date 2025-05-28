@@ -2,19 +2,30 @@
 
 # 📄 `fixtures.test.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 3 |
+| 📊 Variables & Constants | 6 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 1 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 1 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
+- [Async/Await Patterns](#asyncawait-patterns)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 3
-- **Interfaces**: 0
-- **Type Aliases**: 1
 
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/tests/fixtures.test.ts`**
@@ -26,6 +37,44 @@
 | `path` | `node:path` |
 | `AnalyzeOptions` | `./test-utils` |
 | `parseAndAnalyze` | `./test-utils` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `FOUR_SLASH` | `RegExp` | const | `/^\/{4} +@(\w+) *= *(.+)$/` | ✗ |
+| `QUOTED_STRING` | `RegExp` | const | `/^["'](.+?)['"]$/` | ✗ |
+| `ALLOWED_OPTIONS` | `Map<string, ALLOWED_VALUE>` | const | `new Map<
+  keyof AnalyzeOptions,
+  ALLOWED_VALUE
+>([
+  ['globalReturn', ['boolean']],
+  ['impliedStrict', ['boolean']],
+  ['jsxFragmentName', ['string']],
+  ['jsxPragma', ['string']],
+  ['sourceType', ['string', new Set(['module', 'script'])]],
+])` | ✗ |
+| `contents` | `string` | let/var | `await fs.readFile(fixture.absolute, {
+          encoding: 'utf-8',
+        })` | ✗ |
+| `options` | `Record<string, unknown>` | let/var | `{
+          lib: [],
+        }` | ✗ |
+| `value` | `unknown` | let/var | `rawValue` | ✗ |
+
+
+---
+
+## Async/Await Patterns
+
+| Type | Function | Await Expressions | Promise Chains |
+|------|----------|-------------------|----------------|
+| await-expression | `nestDescribe` | fs.readFile(fixture.absolute, {
+          encoding: 'utf-8',
+        }), fs.mkdir(fixture.snapshotPath, { recursive: true }), expect(scopeManager).toMatchFileSnapshot(fixture.snapshotFile), expect(e).toMatchFileSnapshot(fixture.snapshotFile) | *none* |
 
 
 ---
@@ -185,20 +234,6 @@ function nestDescribe(
          * This is just a rudimentary "parser" for said comments.
          */
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
 
 
 ---

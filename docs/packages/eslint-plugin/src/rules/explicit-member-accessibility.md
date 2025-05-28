@@ -2,20 +2,30 @@
 
 # 📄 `explicit-member-accessibility.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 30 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 11 |
+| 📊 Variables & Constants | 17 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 3 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 30
-- **Classes**: 0
-- **Imports**: 11
-- **Interfaces**: 1
-- **Type Aliases**: 3
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/explicit-member-accessibility.ts`**
@@ -35,6 +45,34 @@
 | `getMemberHeadLoc` | `../util/getMemberHeadLoc` |
 | `getParameterPropertyHeadLoc` | `../util/getMemberHeadLoc` |
 | `rangeToLoc` | `../util/rangeToLoc` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `baseCheck` | `AccessibilityLevel` | const | `option.accessibility ?? 'explicit'` | ✗ |
+| `overrides` | `any` | const | `option.overrides ?? {}` | ✗ |
+| `ctorCheck` | `any` | const | `overrides.constructors ?? baseCheck` | ✗ |
+| `accessorCheck` | `any` | const | `overrides.accessors ?? baseCheck` | ✗ |
+| `methodCheck` | `any` | const | `overrides.methods ?? baseCheck` | ✗ |
+| `propCheck` | `any` | const | `overrides.properties ?? baseCheck` | ✗ |
+| `paramPropCheck` | `any` | const | `overrides.parameterProperties ?? baseCheck` | ✗ |
+| `ignoredMethodNames` | `Set<unknown>` | const | `new Set(option.ignoredMethodNames ?? [])` | ✗ |
+| `nodeType` | `string` | let/var | `'method definition'` | ✗ |
+| `check` | `AccessibilityLevel` | let/var | `baseCheck` | ✗ |
+| `rangeToRemove` | `TSESLint.AST.Range` | let/var | `*not shown*` | ✗ |
+| `keywordRange` | `TSESLint.AST.Range` | let/var | `*not shown*` | ✗ |
+| `token` | `any` | const | `tokens[i]` | ✗ |
+| `lastDecorator` | `any` | const | `node.decorators[node.decorators.length - 1]` | ✗ |
+| `nodeType` | `"class property"` | const | `'class property'` | ✗ |
+| `nodeType` | `"parameter property"` | const | `'parameter property'` | ✗ |
+| `nodeName` | `any` | const | `node.parameter.type === AST_NODE_TYPES.Identifier
+          ? node.parameter.name
+          : // has to be an Identifier or TSC will throw an error
+            (node.parameter.left as TSESTree.Identifier).name` | ✗ |
 
 
 ---
@@ -824,13 +862,6 @@ fixer => fixer.removeRange(publicKeyword.rangeToRemove)
 - **Return Type**: `any`
 - **Calls**:
   - `fixer.removeRange`
-
----
-
-## Classes
-
-> No classes found in this file.
-
 
 ---
 

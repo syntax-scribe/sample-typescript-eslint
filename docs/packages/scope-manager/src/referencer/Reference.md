@@ -2,20 +2,30 @@
 
 # 📄 `Reference.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 5 |
+| 🧱 Classes | 1 |
+| 📦 Imports | 4 |
+| 📊 Variables & Constants | 0 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 2 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
 - [Functions](#functions)
 - [Classes](#classes)
 - [Interfaces](#interfaces)
-
-## 📊 Analysis Summary
-
-- **Functions**: 5
-- **Classes**: 1
-- **Imports**: 4
-- **Interfaces**: 1
-- **Type Aliases**: 0
+- [Enums](#enums)
 
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/src/referencer/Reference.ts`**
@@ -358,9 +368,47 @@ export interface ReferenceImplicitGlobal {
 
 ---
 
-## Type Aliases
+## Enums
 
-> No type aliases found in this file.
+### `enum ReferenceFlag`
+
+<details><summary>Enum Code</summary>
+
+```ts
+export enum ReferenceFlag {
+  Read = 0x1,
+  Write = 0x2,
+  ReadWrite = 0x3,
+}
+```
+</details>
+
+#### Members
+
+| Name | Value | Description |
+|------|-------|-------------|
+| `Read` | `1` |  |
+| `Write` | `2` |  |
+| `ReadWrite` | `3` |  |
+
+### `enum ReferenceTypeFlag`
+
+<details><summary>Enum Code</summary>
+
+```ts
+export enum ReferenceTypeFlag {
+  Value = 0x1,
+  Type = 0x2,
+}
+```
+</details>
+
+#### Members
+
+| Name | Value | Description |
+|------|-------|-------------|
+| `Value` | `1` |  |
+| `Type` | `2` |  |
 
 
 ---

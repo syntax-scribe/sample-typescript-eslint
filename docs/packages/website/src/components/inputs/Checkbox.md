@@ -2,19 +2,29 @@
 
 # 📄 `Checkbox.tsx`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 2 |
+| 📊 Variables & Constants | 0 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 1 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [JSX Elements](#jsx-elements)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 2
-- **Interfaces**: 1
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/website/src/components/inputs/Checkbox.tsx`**
@@ -25,6 +35,17 @@
 |------|--------|
 | `useCallback` | `react` |
 | `React` | `react` |
+
+
+---
+
+## JSX Elements
+
+| Component | Type | Props | Children |
+|-----------|------|-------|----------|
+| `input` | element | checked={props.checked && !props.indeterminate}, className={props.className}, name={props.name}, onChange={(e): void =>
+        props.onChange(e.target.checked, props.value ?? '')
+      }, ref={checkboxRef}, type="checkbox" | *none* |
 
 
 ---
@@ -75,13 +96,6 @@ function Checkbox(props: CheckboxProps): React.JSX.Element {
 
 ---
 
-## Classes
-
-> No classes found in this file.
-
-
----
-
 ## Interfaces
 
 ### `CheckboxProps`
@@ -110,13 +124,6 @@ export interface CheckboxProps {
 | `name` | `string` | ✗ |  |
 | `onChange` | `(checked: boolean, value: string) => void` | ✗ |  |
 | `value` | `string` | ✓ |  |
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

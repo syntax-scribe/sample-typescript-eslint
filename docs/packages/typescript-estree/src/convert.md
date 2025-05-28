@@ -2,20 +2,30 @@
 
 # 📄 `convert.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 31 |
+| 🧱 Classes | 1 |
+| 📦 Imports | 36 |
+| 📊 Variables & Constants | 67 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 2 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Classes](#classes)
 - [Interfaces](#interfaces)
-
-## 📊 Analysis Summary
-
-- **Functions**: 31
-- **Classes**: 1
-- **Imports**: 36
-- **Interfaces**: 2
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/typescript-estree/src/convert.ts`**
@@ -60,6 +70,154 @@
 | `nodeIsPresent` | `./node-utils` |
 | `unescapeStringLiteralText` | `./node-utils` |
 | `AST_NODE_TYPES` | `./ts-estree` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `SyntaxKind` | `any` | const | `ts.SyntaxKind` | ✗ |
+| `loop` | `"for...in" | "for...of"` | const | `kind === ts.SyntaxKind.ForInStatement ? 'for...in' : 'for...of'` | ✗ |
+| `declaration` | `any` | const | `initializer.declarations[0]` | ✗ |
+| `func` | `any` | const | `getContainingFunction(node)!` | ✗ |
+| `start` | `any` | let/var | `*not shown*` | ✗ |
+| `end` | `any` | let/var | `*not shown*` | ✗ |
+| `warned` | `boolean` | let/var | `suppressWarnings` | ✗ |
+| `warned` | `boolean` | let/var | `false` | ✗ |
+| `id` | `TSESTree.BindingName` | const | `this.convertPattern(name) as TSESTree.BindingName` | ✗ |
+| `raw` | `any` | const | `child.expression.raw` | ✗ |
+| `newChild` | `any` | const | `child.expression` | ✗ |
+| `offset` | `1 | 2` | const | `parent?.kind === SyntaxKind.FunctionType ||
+      parent?.kind === SyntaxKind.ConstructorType
+        ? 2
+        : 1` | ✗ |
+| `annotationStartCol` | `number` | const | `child.getFullStart() - offset` | ✗ |
+| `range` | `TSESTree.Range` | const | `[annotationStartCol, child.end]` | ✗ |
+| `greaterThanToken` | `any` | const | `findNextToken(typeArguments, this.ast, this.ast)!` | ✗ |
+| `greaterThanToken` | `any` | const | `findNextToken(typeParameters, this.ast, this.ast)!` | ✗ |
+| `range` | `TSESTree.Range` | const | `[
+      typeParameters.pos - 1,
+      greaterThanToken.end,
+    ]` | ✗ |
+| `convertedParam` | `TSESTree.Parameter` | const | `this.convertChild(param) as TSESTree.Parameter` | ✗ |
+| `pattern` | `boolean` | const | `this.allowPattern` | ✗ |
+| `result` | `TSESTree.JSXTagNameExpression` | let/var | `*not shown*` | ✗ |
+| `isGenerator` | `boolean` | const | `!!node.asteriskToken` | ✗ |
+| `definite` | `boolean` | const | `!!node.exclamationToken` | ✗ |
+| `properties` | `TSESTree.Property[]` | const | `[]` | ✗ |
+| `result` | `| TSESTree.MethodDefinition
+          | TSESTree.Property
+          | TSESTree.TSAbstractMethodDefinition` | let/var | `*not shown*` | ✗ |
+| `methodDefinitionType` | `any` | const | `hasModifier(
+            SyntaxKind.AbstractKeyword,
+            node,
+          )
+            ? AST_NODE_TYPES.TSAbstractMethodDefinition
+            : AST_NODE_TYPES.MethodDefinition` | ✗ |
+| `constructorToken` | `any` | const | `(lastModifier && findNextToken(lastModifier, node, this.ast)) ??
+          node.getFirstToken()!` | ✗ |
+| `result` | `TSESTree.Property | TSESTree.RestElement` | let/var | `*not shown*` | ✗ |
+| `tail` | `boolean` | const | `node.kind === SyntaxKind.TemplateTail` | ✗ |
+| `parameter` | `TSESTree.BindingName | TSESTree.RestElement` | let/var | `*not shown*` | ✗ |
+| `result` | `TSESTree.AssignmentPattern | TSESTree.RestElement` | let/var | `*not shown*` | ✗ |
+| `heritageClauses` | `any` | const | `node.heritageClauses ?? []` | ✗ |
+| `classNodeType` | `any` | const | `node.kind === SyntaxKind.ClassDeclaration
+            ? AST_NODE_TYPES.ClassDeclaration
+            : AST_NODE_TYPES.ClassExpression` | ✗ |
+| `extendsClause` | `ts.HeritageClause | undefined` | let/var | `*not shown*` | ✗ |
+| `implementsClause` | `ts.HeritageClause | undefined` | let/var | `*not shown*` | ✗ |
+| `local` | `any` | const | `node.propertyName ?? node.name` | ✗ |
+| `left` | `TSESTree.Expression` | const | `this.convertChild(node.left) as TSESTree.Expression` | ✗ |
+| `computed` | `false` | const | `false` | ✗ |
+| `computed` | `true` | const | `true` | ✗ |
+| `typeArguments` | `any` | const | `node.typeArguments &&
+          this.convertTypeArgumentsToTypeParameterInstantiation(
+            node.typeArguments,
+            node,
+          )` | ✗ |
+| `typeArguments` | `any` | const | `node.typeArguments &&
+          this.convertTypeArgumentsToTypeParameterInstantiation(
+            node.typeArguments,
+            node,
+          )` | ✗ |
+| `value` | `bigint` | const | `typeof BigInt !== 'undefined' ? BigInt(bigint) : null` | ✗ |
+| `regex` | `any` | let/var | `null` | ✗ |
+| `expression` | `any` | const | `node.expression
+          ? this.convertChild(node.expression)
+          : this.createNode<TSESTree.JSXEmptyExpression>(node, {
+              type: AST_NODE_TYPES.JSXEmptyExpression,
+              range: [node.getStart(this.ast) + 1, node.getEnd() - 1],
+            })` | ✗ |
+| `type` | `any` | const | `node.kind === SyntaxKind.ConstructSignature
+            ? AST_NODE_TYPES.TSConstructSignatureDeclaration
+            : node.kind === SyntaxKind.CallSignature
+              ? AST_NODE_TYPES.TSCallSignatureDeclaration
+              : AST_NODE_TYPES.TSFunctionType` | ✗ |
+| `parentKind` | `any` | const | `parent.kind` | ✗ |
+| `type` | `any` | const | `parentKind === SyntaxKind.InterfaceDeclaration
+            ? AST_NODE_TYPES.TSInterfaceHeritage
+            : parentKind === SyntaxKind.HeritageClause
+              ? AST_NODE_TYPES.TSClassImplements
+              : AST_NODE_TYPES.TSInstantiationExpression` | ✗ |
+| `interfaceHeritageClauses` | `any` | const | `node.heritageClauses ?? []` | ✗ |
+| `interfaceExtends` | `TSESTree.TSInterfaceHeritage[]` | const | `[]` | ✗ |
+| `token` | `any` | const | `findNextToken(node.getFirstToken()!, node, this.ast)!` | ✗ |
+| `options` | `any` | let/var | `null` | ✗ |
+| `commaToken` | `any` | const | `findNextToken(node.argument, node, this.ast)!` | ✗ |
+| `openBraceToken` | `any` | const | `findNextToken(commaToken, node, this.ast)!` | ✗ |
+| `closeBraceToken` | `any` | const | `findNextToken(
+            node.attributes,
+            node,
+            this.ast,
+          )!` | ✗ |
+| `withOrAssertToken` | `any` | const | `findNextToken(
+            openBraceToken,
+            node,
+            this.ast,
+          )!` | ✗ |
+| `withOrAssertName` | `"assert" | "with"` | const | `withOrAssertToken.kind === ts.SyntaxKind.AssertKeyword
+              ? 'assert'
+              : 'with'` | ✗ |
+| `nextName` | `ts.Identifier` | const | `node.name as ts.Identifier` | ✗ |
+| `result` | `Omit<TSESTree.OptionalRangeAndLoc<T>, "parent">` | const | `data` | ✗ |
+| `customType` | `AST_NODE_TYPES` | const | ``TS${SyntaxKind[node.kind]}` as AST_NODE_TYPES` | ✗ |
+| `KEYS_TO_NOT_COPY` | `Set<string>` | const | `new Set([
+      '_children',
+      'decorators',
+      'end',
+      'flags',
+      'heritageClauses',
+      'illegalDecorators',
+      'jsDoc',
+      'kind',
+      'locals',
+      'localSymbol',
+      'modifierFlagsCache',
+      'modifiers',
+      'nextContainer',
+      'parent',
+      'pos',
+      'symbol',
+      'transformFlags',
+      'type',
+      'typeArguments',
+      'typeParameters',
+    ])` | ✗ |
+| `isNamespaceNode` | `boolean` | const | `ts.isModuleDeclaration(node) && !ts.isStringLiteral(node.name)` | ✗ |
+| `modifiers` | `ts.Modifier[]` | const | `isNamespaceNode
+      ? getNamespaceModifiers(node)
+      : getModifiers(node)` | ✗ |
+| `exportKeyword` | `ts.Modifier` | const | `modifiers[0]` | ✗ |
+| `nextModifier` | `ts.Modifier` | const | `modifiers[1]` | ✗ |
+| `declarationIsDefault` | `boolean` | const | `nextModifier?.kind === SyntaxKind.DefaultKeyword` | ✗ |
+| `varToken` | `any` | const | `declarationIsDefault
+        ? findNextToken(nextModifier, this.ast, this.ast)
+        : findNextToken(exportKeyword, this.ast, this.ast)` | ✗ |
+| `isType` | `boolean` | const | `result.type === AST_NODE_TYPES.TSInterfaceDeclaration ||
+        result.type === AST_NODE_TYPES.TSTypeAliasDeclaration` | ✗ |
+| `isDeclare` | `any` | const | `'declare' in result && result.declare` | ✗ |
 
 
 ---
@@ -12088,13 +12246,6 @@ export interface ASTMaps {
 |------|------|----------|-------------|
 | `esTreeNodeToTSNodeMap` | `ParserWeakMapESTreeToTSNode` | ✗ |  |
 | `tsNodeToESTreeNodeMap` | `ParserWeakMap<TSNode, TSESTree.Node>` | ✗ |  |
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

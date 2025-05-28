@@ -2,19 +2,29 @@
 
 # 📄 `Tooltip.tsx`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 3 |
+| 📊 Variables & Constants | 0 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 1 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [JSX Elements](#jsx-elements)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 3
-- **Interfaces**: 1
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/website/src/components/inputs/Tooltip.tsx`**
@@ -26,6 +36,20 @@
 | `clsx` | `clsx` |
 | `React` | `react` |
 | `styles` | `./Tooltip.module.css` |
+
+
+---
+
+## JSX Elements
+
+| Component | Type | Props | Children |
+|-----------|------|-------|----------|
+| `span` | element | aria-label={((props.open || props.hover) && props.text) || undefined}, className={clsx(
+        styles.tooltip,
+        props.position === 'right' ? styles.tooltipRight : styles.tooltipLeft,
+        props.open && styles.visible,
+        props.hover && styles.hover,
+      )} | {React.Children.map(props.children, child => child)} |
 
 
 ---
@@ -64,13 +88,6 @@ function Tooltip(props: TooltipProps): React.JSX.Element {
 
 ---
 
-## Classes
-
-> No classes found in this file.
-
-
----
-
 ## Interfaces
 
 ### `TooltipProps`
@@ -97,13 +114,6 @@ export interface TooltipProps {
 | `open` | `boolean` | ✓ |  |
 | `position` | `'left' | 'right'` | ✓ |  |
 | `text` | `string` | ✗ |  |
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

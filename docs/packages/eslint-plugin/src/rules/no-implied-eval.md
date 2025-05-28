@@ -2,18 +2,28 @@
 
 # 📄 `no-implied-eval.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 5 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 6 |
+| 📊 Variables & Constants | 3 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 5
-- **Classes**: 0
-- **Imports**: 6
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/no-implied-eval.ts`**
@@ -28,6 +38,22 @@
 | `getParserServices` | `../util` |
 | `isBuiltinSymbolLike` | `../util` |
 | `isReferenceToGlobalFunction` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `FUNCTION_CONSTRUCTOR` | `"Function"` | const | `'Function'` | ✗ |
+| `GLOBAL_CANDIDATES` | `Set<string>` | const | `new Set(['global', 'globalThis', 'window'])` | ✗ |
+| `EVAL_LIKE_FUNCTIONS` | `Set<string>` | const | `new Set([
+  'execScript',
+  'setImmediate',
+  'setInterval',
+  'setTimeout',
+])` | ✗ |
 
 
 ---
@@ -220,26 +246,5 @@ function checkImpliedEval(
   - `EVAL_LIKE_FUNCTIONS.has`
   - `isFunction`
   - `isReferenceToGlobalFunction (from ../util)`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

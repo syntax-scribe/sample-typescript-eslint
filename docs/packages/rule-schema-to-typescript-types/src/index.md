@@ -2,18 +2,29 @@
 
 # 📄 `index.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 3 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 7 |
+| 📊 Variables & Constants | 6 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 1 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
+- [Async/Await Patterns](#asyncawait-patterns)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 3
-- **Classes**: 0
-- **Imports**: 7
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/rule-schema-to-typescript-types/src/index.ts`**
@@ -29,6 +40,36 @@
 | `generateType` | `./generateType` |
 | `optimizeAST` | `./optimizeAST` |
 | `printTypeAlias` | `./printAST` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `refTypes` | `string[]` | let/var | `[]` | ✗ |
+| `types` | `AST[]` | let/var | `[]` | ✗ |
+| `optionsType` | `string` | let/var | `isArraySchema
+    ? printTypeAlias('Options', {
+        commentLines: [],
+        elements: types,
+        spreadType: null,
+        type: 'tuple',
+      })
+    : printTypeAlias('Options', types[0])` | ✗ |
+| `refTypes` | `string[]` | const | `[]` | ✗ |
+| `refMap` | `Map<string, string>` | const | `new Map<string, string>()` | ✗ |
+| `defs` | `any` | const | `schema.$defs ?? schema.definitions` | ✗ |
+
+
+---
+
+## Async/Await Patterns
+
+| Type | Function | Await Expressions | Promise Chains |
+|------|----------|-------------------|----------------|
+| async-function | `compile` | prettier.format(unformattedCode, await prettierConfig), prettierConfig | *none* |
 
 
 ---
@@ -176,26 +217,5 @@ function toPascalCase(key: string): string {
 - **Calls**:
   - `key[0].toUpperCase`
   - `key.substring`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

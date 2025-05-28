@@ -2,18 +2,28 @@
 
 # 📄 `getWatchProgramsForProjects.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 10 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 10 |
+| 📊 Variables & Constants | 20 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 10
-- **Classes**: 0
-- **Imports**: 10
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/typescript-estree/src/create-program/getWatchProgramsForProjects.ts`**
@@ -32,6 +42,62 @@
 | `createDefaultCompilerOptionsFromExtra` | `./shared` |
 | `createHash` | `./shared` |
 | `getCanonicalFileName` | `./shared` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `knownWatchProgramMap` | `Map<CanonicalPath, ts.WatchOfConfigFile<ts.BuilderProgram>>` | const | `new Map<
+  CanonicalPath,
+  ts.WatchOfConfigFile<ts.BuilderProgram>
+>()` | ✗ |
+| `fileWatchCallbackTrackingMap` | `Map<CanonicalPath, Set<ts.FileWatcherCallback>>` | const | `new Map<
+  CanonicalPath,
+  Set<ts.FileWatcherCallback>
+>()` | ✗ |
+| `folderWatchCallbackTrackingMap` | `Map<CanonicalPath, Set<ts.FileWatcherCallback>>` | const | `new Map<
+  CanonicalPath,
+  Set<ts.FileWatcherCallback>
+>()` | ✗ |
+| `programFileListCache` | `Map<CanonicalPath, Set<CanonicalPath>>` | const | `new Map<CanonicalPath, Set<CanonicalPath>>()` | ✗ |
+| `tsconfigLastModifiedTimestampCache` | `Map<CanonicalPath, number>` | const | `new Map<CanonicalPath, number>()` | ✗ |
+| `parsedFilesSeenHash` | `Map<CanonicalPath, string>` | const | `new Map<CanonicalPath, string>()` | ✗ |
+| `currentLintOperationState` | `{
+  code: string | ts.SourceFile;
+  filePath: CanonicalPath;
+}` | const | `{
+  code: '',
+  filePath: '' as CanonicalPath,
+}` | ✗ |
+| `fileList` | `Set<unknown>` | const | `new Set(
+    program.getRootFileNames().map(f => getCanonicalFileName(f)),
+  )` | ✗ |
+| `results` | `any[]` | const | `[]` | ✗ |
+| `currentProjectsFromSettings` | `Map<CanonicalPath, string>` | const | `new Map(parseSettings.projects)` | ✗ |
+| `updatedProgram` | `ts.Program | null` | let/var | `null` | ✗ |
+| `watchCompilerHost` | `WatchCompilerHostOfConfigFile<ts.BuilderProgram>` | const | `ts.createWatchCompilerHost(
+    tsconfigPath,
+    createDefaultCompilerOptionsFromExtra(parseSettings),
+    ts.sys,
+    ts.createAbstractBuilder,
+    diagnosticReporter,
+    // TODO: file issue on TypeScript to suggest making optional?
+    // eslint-disable-next-line @typescript-eslint/no-empty-function
+    /*reportWatchStatus*/ () => {},
+  ) as WatchCompilerHostOfConfigFile<ts.BuilderProgram>` | ✗ |
+| `oldReadFile` | `any` | const | `watchCompilerHost.readFile` | ✗ |
+| `fileContent` | `any` | const | `filePath === currentLintOperationState.filePath
+        ? getCodeText(currentLintOperationState.code)
+        : oldReadFile(filePath, encoding)` | ✗ |
+| `oldOnDirectoryStructureHostCreate` | `(host: CachedDirectoryStructureHost) => void` | const | `watchCompilerHost.onCachedDirectoryStructureHostCreate` | ✗ |
+| `oldReadDirectory` | `(path: string, extensions?: readonly string[], exclude?: readonly string[], include?: readonly string[], depth?: number) => string[]` | const | `host.readDirectory` | ✗ |
+| `lastModifiedAt` | `number` | const | `stat.mtimeMs` | ✗ |
+| `current` | `CanonicalPath | null` | let/var | `null` | ✗ |
+| `next` | `CanonicalPath` | let/var | `currentDir` | ✗ |
+| `hasCallback` | `boolean` | let/var | `false` | ✗ |
 
 
 ---
@@ -760,27 +826,6 @@ function maybeInvalidateProgram(
 // shouldn't happen, but just in case (x3)
 // deleted files means that the file list _has_ changed, so clear the cache (x4)
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

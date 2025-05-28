@@ -2,19 +2,29 @@
 
 # 📄 `no-magic-numbers.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 10 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 8 |
+| 📊 Variables & Constants | 5 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 10
-- **Classes**: 0
-- **Imports**: 8
-- **Interfaces**: 0
-- **Type Aliases**: 2
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/no-magic-numbers.ts`**
@@ -31,6 +41,45 @@
 | `createRule` | `../util` |
 | `deepMerge` | `../util` |
 | `getESLintCoreRule` | `../util/getESLintCoreRule` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `schema` | `JSONSchema4` | const | `deepMerge(
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-argument -- https://github.com/microsoft/TypeScript/issues/17002
+  Array.isArray(baseRule.meta.schema)
+    ? baseRule.meta.schema[0]
+    : baseRule.meta.schema,
+  {
+    properties: {
+      ignoreEnums: {
+        type: 'boolean',
+        description: 'Whether enums used in TypeScript are considered okay.',
+      },
+      ignoreNumericLiteralTypes: {
+        type: 'boolean',
+        description:
+          'Whether numbers used in TypeScript numeric literal types are considered okay.',
+      },
+      ignoreReadonlyClassProperties: {
+        type: 'boolean',
+        description: 'Whether `readonly` class properties are considered okay.',
+      },
+      ignoreTypeIndexes: {
+        type: 'boolean',
+        description: 'Whether numbers used to index types are okay.',
+      },
+    },
+  },
+) as unknown as JSONSchema4` | ✗ |
+| `ignored` | `Set<unknown>` | const | `new Set((options.ignore ?? []).map(normalizeIgnoreValue))` | ✗ |
+| `isAllowed` | `boolean | undefined` | let/var | `*not shown*` | ✗ |
+| `fullNumberNode` | `TSESTree.Literal | TSESTree.UnaryExpression` | let/var | `node` | ✗ |
+| `raw` | `any` | let/var | `node.raw` | ✗ |
 
 
 ---
@@ -376,20 +425,6 @@ function isAncestorTSIndexedAccessType(node: TSESTree.Literal): boolean {
 // Go up another level while we’re part of a type union (eg. 1 | 2) or
 // intersection (eg. 1 & 2)
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
 
 
 ---

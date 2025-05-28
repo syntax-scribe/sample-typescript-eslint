@@ -2,18 +2,28 @@
 
 # 📄 `custom-matchers.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 2 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 2 |
+| 📊 Variables & Constants | 4 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 2
-- **Classes**: 0
-- **Imports**: 2
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/tests/util/custom-matchers/custom-matchers.ts`**
@@ -24,6 +34,18 @@
 |------|--------|
 | `ParserResponse` | `../parsers/parser-types.js` |
 | `ParserResponseType` | `../parsers/parser-types.js` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `negate` | `boolean` | const | `utils.flag(this, 'negate') ?? false` | ✗ |
+| `assertion` | `Assertion` | const | `new chai.Assertion(thing, errorMessage, ssfi, true)` | ✗ |
+| `negate` | `boolean` | const | `utils.flag(this, 'negate') ?? false` | ✗ |
+| `assertion` | `Assertion` | const | `new chai.Assertion(thing, errorMessage, ssfi, true)` | ✗ |
 
 
 ---
@@ -112,26 +134,5 @@ function errorResponse(this: Chai.AssertionStatic, errorMessage?: string) {
         .property('type')
         .that.does.not.equals`
   - `assertion.to.have.property('type').that.equals`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

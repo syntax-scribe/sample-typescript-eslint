@@ -2,39 +2,35 @@
 
 # 📄 `parser-types.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 0 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 0 |
+| 📊 Variables & Constants | 0 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 5 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 2 |
+
 ## 📚 Table of Contents
 
 - [Interfaces](#interfaces)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 0
-- **Classes**: 0
-- **Imports**: 0
-- **Interfaces**: 5
-- **Type Aliases**: 2
+- [Enums](#enums)
 
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/tests/util/parsers/parser-types.ts`**
 
-## 📦 Imports
-
-> No imports found in this file.
-
-
----
-
 ## 🔧 Functions
 
 > No functions found in this file.
-
-
----
-
-## Classes
-
-> No classes found in this file.
 
 
 ---
@@ -220,6 +216,53 @@ type SnapshotPathFn = (i: number) => string;
 ```ts
 type ParserResponse = ParserResponseError | ParserResponseSuccess;
 ```
+
+
+---
+
+## Enums
+
+### `enum ErrorLabel`
+
+<details><summary>Enum Code</summary>
+
+```ts
+export enum ErrorLabel {
+  Babel = "Babel errored but TSESTree didn't",
+  Both = 'Both errored',
+  None = 'No errors',
+  TSESTree = "TSESTree errored but Babel didn't",
+}
+```
+</details>
+
+#### Members
+
+| Name | Value | Description |
+|------|-------|-------------|
+| `Babel` | `Babel errored but TSESTree didn't` |  |
+| `Both` | `Both errored` |  |
+| `None` | `No errors` |  |
+| `TSESTree` | `TSESTree errored but Babel didn't` |  |
+
+### `enum ParserResponseType`
+
+<details><summary>Enum Code</summary>
+
+```ts
+export enum ParserResponseType {
+  Error = 'Error',
+  NoError = 'NoError',
+}
+```
+</details>
+
+#### Members
+
+| Name | Value | Description |
+|------|-------|-------------|
+| `Error` | `Error` |  |
+| `NoError` | `NoError` |  |
 
 
 ---

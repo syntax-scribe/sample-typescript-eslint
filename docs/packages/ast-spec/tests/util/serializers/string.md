@@ -2,18 +2,28 @@
 
 # 📄 `string.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 2 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 1 |
+| 📊 Variables & Constants | 1 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 2
-- **Classes**: 0
-- **Imports**: 1
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/tests/util/serializers/string.ts`**
@@ -23,6 +33,29 @@
 | Name | Source |
 |------|--------|
 | `NewPlugin` | `@vitest/pretty-format` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `serializer` | `NewPlugin` | const | `{
+  serialize(
+    str: string,
+    // config,
+    // indentation,
+    // depth,
+    // refs,
+    // printer,
+  ) {
+    return `'${str.replaceAll(/'|\\/g, '\\$&')}'`;
+  },
+  test(val: unknown) {
+    return typeof val === 'string';
+  },
+}` | ✓ |
 
 
 ---
@@ -66,26 +99,5 @@ test(val: unknown) {
 - **Parameters**:
   - `val: unknown`
 - **Return Type**: `boolean`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

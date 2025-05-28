@@ -2,19 +2,29 @@
 
 # 📄 `no-unnecessary-type-constraint.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 3 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 6 |
+| 📊 Variables & Constants | 2 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 1 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 3
-- **Classes**: 0
-- **Imports**: 6
-- **Interfaces**: 0
-- **Type Aliases**: 1
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/no-unnecessary-type-constraint.ts`**
@@ -29,6 +39,19 @@
 | `extname` | `node:path` |
 | `MakeRequired` | `../util` |
 | `createRule` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `unnecessaryConstraints` | `Map<any, string>` | const | `new Map([
+      [AST_NODE_TYPES.TSAnyKeyword, 'any'],
+      [AST_NODE_TYPES.TSUnknownKeyword, 'unknown'],
+    ])` | ✗ |
+| `pathExt` | `ts.Extension` | const | `extname(filename).toLocaleLowerCase() as ts.Extension` | ✗ |
 
 
 ---
@@ -155,20 +178,6 @@ function shouldAddTrailingComma(): boolean {
 ```
 // Only <T>() => {} would need trailing comma
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
 
 
 ---

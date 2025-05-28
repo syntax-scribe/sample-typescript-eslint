@@ -2,18 +2,28 @@
 
 # 📄 `isUnsafeAssignment.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 2 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 4 |
+| 📊 Variables & Constants | 4 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 2
-- **Classes**: 0
-- **Imports**: 4
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/type-utils/src/isUnsafeAssignment.ts`**
@@ -26,6 +36,18 @@
 | `AST_NODE_TYPES` | `@typescript-eslint/utils` |
 | `isTypeAnyType` | `./predicates` |
 | `isTypeUnknownType` | `./predicates` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `typeArguments` | `any` | const | `type.typeArguments ?? []` | ✗ |
+| `receiverTypeArguments` | `any` | const | `receiver.typeArguments ?? []` | ✗ |
+| `arg` | `any` | const | `typeArguments[i]` | ✗ |
+| `receiverArg` | `any` | const | `receiverTypeArguments[i]` | ✗ |
 
 
 ---
@@ -207,27 +229,6 @@ function isUnsafeAssignmentWorker(
 // unfortunately Map's default empty constructor is typed to return `Map<any, any>` :(
 // https://github.com/typescript-eslint/typescript-eslint/issues/2109#issuecomment-634144396
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

@@ -2,19 +2,29 @@
 
 # 📄 `array-type.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 3 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 4 |
+| 📊 Variables & Constants | 18 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 3 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 3
-- **Classes**: 0
-- **Imports**: 4
-- **Interfaces**: 0
-- **Type Aliases**: 3
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/array-type.ts`**
@@ -27,6 +37,49 @@
 | `AST_NODE_TYPES` | `@typescript-eslint/utils` |
 | `createRule` | `../util` |
 | `isParenthesized` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `defaultOption` | `any` | const | `options.default` | ✗ |
+| `readonlyOption` | `any` | const | `options.readonly ?? defaultOption` | ✗ |
+| `isReadonly` | `boolean` | const | `node.parent.type === AST_NODE_TYPES.TSTypeOperator &&
+          node.parent.operator === 'readonly'` | ✗ |
+| `currentOption` | `any` | const | `isReadonly ? readonlyOption : defaultOption` | ✗ |
+| `messageId` | `"errorStringGeneric" | "errorStringGenericSimple"` | const | `currentOption === 'generic'
+            ? 'errorStringGeneric'
+            : 'errorStringGenericSimple'` | ✗ |
+| `errorNode` | `any` | const | `isReadonly ? node.parent : node` | ✗ |
+| `typeNode` | `any` | const | `node.elementType` | ✗ |
+| `arrayType` | `"ReadonlyArray" | "Array"` | const | `isReadonly ? 'ReadonlyArray' : 'Array'` | ✗ |
+| `isReadonlyWithGenericArrayType` | `boolean` | const | `node.typeName.name === 'Readonly' &&
+          node.typeArguments?.params[0].type === AST_NODE_TYPES.TSArrayType` | ✗ |
+| `isReadonlyArrayType` | `boolean` | const | `node.typeName.name === 'ReadonlyArray' ||
+          isReadonlyWithGenericArrayType` | ✗ |
+| `currentOption` | `any` | const | `isReadonlyArrayType
+          ? readonlyOption
+          : defaultOption` | ✗ |
+| `readonlyPrefix` | `"" | "readonly "` | const | `isReadonlyArrayType ? 'readonly ' : ''` | ✗ |
+| `typeParams` | `any` | const | `node.typeArguments?.params` | ✗ |
+| `messageId` | `"errorStringArray" | "errorStringArrayReadonly" | "errorStringArraySimple" | "errorStringArraySimpleReadonly"` | const | `currentOption === 'array'
+            ? isReadonlyWithGenericArrayType
+              ? 'errorStringArrayReadonly'
+              : 'errorStringArray'
+            : isReadonlyArrayType && node.typeName.name !== 'ReadonlyArray'
+              ? 'errorStringArraySimpleReadonly'
+              : 'errorStringArraySimple'` | ✗ |
+| `type` | `any` | const | `typeParams[0]` | ✗ |
+| `parentParens` | `boolean` | const | `readonlyPrefix &&
+          node.parent.type === AST_NODE_TYPES.TSArrayType &&
+          !isParenthesized(node.parent.elementType, context.sourceCode)` | ✗ |
+| `start` | `string` | const | ``${parentParens ? '(' : ''}${readonlyPrefix}${
+          typeParens ? '(' : ''
+        }`` | ✗ |
+| `end` | `string` | const | ``${typeParens ? ')' : ''}${isReadonlyWithGenericArrayType ? '' : `[]`}${parentParens ? ')' : ''}`` | ✗ |
 
 
 ---
@@ -161,20 +214,6 @@ function getMessageType(node: TSESTree.Node): string {
 - **Calls**:
   - `isSimpleType`
   - `context.sourceCode.getText`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
 
 ---
 

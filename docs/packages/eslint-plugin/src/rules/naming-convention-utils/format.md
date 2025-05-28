@@ -2,18 +2,28 @@
 
 # 📄 `format.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 9 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 1 |
+| 📊 Variables & Constants | 2 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 9
-- **Classes**: 0
-- **Imports**: 1
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/naming-convention-utils/format.ts`**
@@ -23,6 +33,25 @@
 | Name | Source |
 |------|--------|
 | `PredefinedFormats` | `./enums` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `wasUnderscore` | `boolean` | let/var | `false` | ✗ |
+| `PredefinedFormatToCheckFunction` | `Readonly<
+  Record<PredefinedFormats, (name: string) => boolean>
+>` | const | `{
+  [PredefinedFormats.camelCase]: isCamelCase,
+  [PredefinedFormats.PascalCase]: isPascalCase,
+  [PredefinedFormats.snake_case]: isSnakeCase,
+  [PredefinedFormats.strictCamelCase]: isStrictCamelCase,
+  [PredefinedFormats.StrictPascalCase]: isStrictPascalCase,
+  [PredefinedFormats.UPPER_CASE]: isUpperCase,
+}` | ✓ |
 
 
 ---
@@ -240,26 +269,5 @@ function validateUnderscores(name: string): boolean {
 - **Return Type**: `boolean`
 - **Calls**:
   - `name.startsWith`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

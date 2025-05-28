@@ -2,18 +2,28 @@
 
 # 📄 `insertWhenNotToUseIt.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 2 |
+| 📊 Variables & Constants | 2 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 2
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/website/plugins/generated-rule-docs/insertions/insertWhenNotToUseIt.ts`**
@@ -24,6 +34,22 @@
 |------|--------|
 | `RuleDocsPage` | `../RuleDocsPage` |
 | `nodeIsHeading` | `../../utils/nodes` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `hasExistingText` | `boolean` | const | `page.headingIndices.whenNotToUseIt < page.children.length - 1 &&
+    page.children[page.headingIndices.whenNotToUseIt + 1].type !== 'heading'` | ✗ |
+| `nextHeadingIndex` | `number` | const | `page.children.findIndex(
+      child => nodeIsHeading(child) && child.depth === 2,
+      page.headingIndices.whenNotToUseIt + 1,
+    ) +
+    page.headingIndices.whenNotToUseIt +
+    1` | ✗ |
 
 
 ---
@@ -70,26 +96,5 @@ export function insertWhenNotToUseIt(page: RuleDocsPage): void {
   - `page.children.findIndex`
   - `nodeIsHeading (from ../../utils/nodes)`
   - `page.spliceChildren`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

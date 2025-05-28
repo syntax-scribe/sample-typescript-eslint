@@ -2,19 +2,29 @@
 
 # 📄 `no-restricted-types.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 12 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 5 |
+| 📊 Variables & Constants | 4 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 3 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 12
-- **Classes**: 0
-- **Imports**: 5
-- **Interfaces**: 0
-- **Type Aliases**: 3
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/no-restricted-types.ts`**
@@ -28,6 +38,34 @@
 | `AST_NODE_TYPES` | `@typescript-eslint/utils` |
 | `createRule` | `../util` |
 | `objectReduceKey` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `TYPE_KEYWORDS` | `{ bigint: any; boolean: any; never: any; null: any; number: any; object: any; string: any; symbol: any; undefined: any; unknown: any; void: any; }` | const | `{
+  bigint: AST_NODE_TYPES.TSBigIntKeyword,
+  boolean: AST_NODE_TYPES.TSBooleanKeyword,
+  never: AST_NODE_TYPES.TSNeverKeyword,
+  null: AST_NODE_TYPES.TSNullKeyword,
+  number: AST_NODE_TYPES.TSNumberKeyword,
+  object: AST_NODE_TYPES.TSObjectKeyword,
+  string: AST_NODE_TYPES.TSStringKeyword,
+  symbol: AST_NODE_TYPES.TSSymbolKeyword,
+  undefined: AST_NODE_TYPES.TSUndefinedKeyword,
+  unknown: AST_NODE_TYPES.TSUnknownKeyword,
+  void: AST_NODE_TYPES.TSVoidKeyword,
+}` | ✗ |
+| `bannedTypes` | `Map<string, unknown>` | const | `new Map(
+      Object.entries(types).map(([type, data]) => [removeSpaces(type), data]),
+    )` | ✗ |
+| `fixWith` | `any` | const | `bannedType && typeof bannedType === 'object' && bannedType.fixWith` | ✗ |
+| `suggest` | `any` | const | `bannedType && typeof bannedType === 'object'
+          ? bannedType.suggest
+          : undefined` | ✗ |
 
 
 ---
@@ -276,20 +314,6 @@ function checkBannedTypes(
 - **Return Type**: `TSESLint.RuleFix`
 - **Calls**:
   - `fixer.replaceText`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
 
 ---
 

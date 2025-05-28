@@ -2,19 +2,29 @@
 
 # 📄 `jsonSchema.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 5 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 2 |
+| 📊 Variables & Constants | 6 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
-
-## 📊 Analysis Summary
-
-- **Functions**: 5
-- **Classes**: 0
-- **Imports**: 2
-- **Interfaces**: 1
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/website/src/components/lib/jsonSchema.ts`**
@@ -25,6 +35,37 @@
 |------|--------|
 | `JSONSchema4` | `@typescript-eslint/utils/json-schema` |
 | `CreateLinter` | `../linter/createLinter` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `defaultRuleSchema` | `JSONSchema4` | const | `{
+  enum: ['off', 'warn', 'error', 0, 1, 2],
+  type: ['string', 'number'],
+}` | ✗ |
+| `defaultRuleSchemaCopy` | `any` | const | `{ ...defaultRuleSchema }` | ✗ |
+| `properties` | `Record<string, JSONSchema4>` | const | `{}` | ✗ |
+| `allowedCategories` | `string[]` | const | `[
+    'Command-line Options',
+    'Projects',
+    'Compiler Diagnostics',
+    'Editor Support',
+    'Output Formatting',
+    'Watch and Build Modes',
+    'Source Map Options',
+  ]` | ✗ |
+| `filteredNames` | `string[]` | const | `[
+    'moduleResolution',
+    'moduleDetection',
+    'plugins',
+    'typeRoots',
+    'jsx',
+  ]` | ✗ |
+| `value` | `JSONSchema4 | undefined` | let/var | `*not shown*` | ✗ |
 
 
 ---
@@ -328,13 +369,6 @@ export function getTypescriptJsonSchema(): JSONSchema4 {
 
 ---
 
-## Classes
-
-> No classes found in this file.
-
-
----
-
 ## Interfaces
 
 ### `DescribedOptionDeclaration`
@@ -355,13 +389,6 @@ export interface DescribedOptionDeclaration extends ts.OptionDeclarations {
 |------|------|----------|-------------|
 | `category` | `NonNullable<ts.OptionDeclarations['category']>` | ✗ |  |
 | `description` | `NonNullable<ts.OptionDeclarations['description']>` | ✗ |  |
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

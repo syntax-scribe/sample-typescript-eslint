@@ -2,19 +2,29 @@
 
 # 📄 `createTestCases.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 5 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 9 |
+| 📊 Variables & Constants | 13 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 1 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 5
-- **Classes**: 0
-- **Imports**: 9
-- **Interfaces**: 0
-- **Type Aliases**: 1
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/tests/rules/naming-convention/cases/createTestCases.ts`**
@@ -32,6 +42,91 @@
 | `Selector` | `../../../../src/rules/naming-convention-utils` |
 | `rule` | `../../../../src/rules/naming-convention` |
 | `selectorTypeToMessageString` | `../../../../src/rules/naming-convention-utils` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `formatTestNames` | `Readonly<
+  Record<PredefinedFormatsString, Record<'invalid' | 'valid', string[]>>
+>` | const | `{
+  camelCase: {
+    invalid: ['snake_case', 'UPPER_CASE', 'UPPER', 'StrictPascalCase'],
+    valid: ['strictCamelCase', 'lower', 'camelCaseUNSTRICT'],
+  },
+  PascalCase: {
+    invalid: ['snake_case', 'UPPER_CASE', 'strictCamelCase'],
+    valid: [
+      'StrictPascalCase',
+      'Pascal',
+      'I18n',
+      'PascalCaseUNSTRICT',
+      'UPPER',
+    ],
+  },
+  snake_case: {
+    invalid: [
+      'UPPER_CASE',
+      'SNAKE_case_UNSTRICT',
+      'strictCamelCase',
+      'StrictPascalCase',
+    ],
+    valid: ['snake_case', 'lower'],
+  },
+  strictCamelCase: {
+    invalid: [
+      'snake_case',
+      'UPPER_CASE',
+      'UPPER',
+      'StrictPascalCase',
+      'camelCaseUNSTRICT',
+    ],
+    valid: ['strictCamelCase', 'lower'],
+  },
+  StrictPascalCase: {
+    invalid: [
+      'snake_case',
+      'UPPER_CASE',
+      'UPPER',
+      'strictCamelCase',
+      'PascalCaseUNSTRICT',
+    ],
+    valid: ['StrictPascalCase', 'Pascal', 'I18n'],
+  },
+  UPPER_CASE: {
+    invalid: [
+      'lower',
+      'snake_case',
+      'SNAKE_case_UNSTRICT',
+      'strictCamelCase',
+      'StrictPascalCase',
+    ],
+    valid: ['UPPER_CASE', 'UPPER'],
+  },
+}` | ✓ |
+| `REPLACE_REGEX` | `RegExp` | const | `/%/g` | ✗ |
+| `IGNORED_FILTER` | `{ match: boolean; regex: string; }` | const | `{
+  match: false,
+  regex: /.gnored/.source,
+}` | ✗ |
+| `format` | `("camelCase" | "strictCamelCase" | "PascalCase" | "StrictPascalCase" | "snake_case" | "UPPER_CASE")[]` | const | `[formatLoose as PredefinedFormatsString]` | ✗ |
+| `newCases` | `InvalidTestCase<MessageIds, Options>[]` | const | `[]` | ✗ |
+| `format` | `("camelCase" | "strictCamelCase" | "PascalCase" | "StrictPascalCase" | "snake_case" | "UPPER_CASE")[]` | const | `[formatLoose as PredefinedFormatsString]` | ✗ |
+| `selectors` | `IndividualAndMetaSelectorsString[]` | const | `Array.isArray(test.options.selector)
+              ? test.options.selector
+              : [test.options.selector]` | ✗ |
+| `errors` | `{
+              data?: { name: string; type: string };
+              messageId: MessageIds;
+            }[]` | const | `[]` | ✗ |
+| `prefixSingle` | `string[]` | const | `['MyPrefix']` | ✗ |
+| `prefixMulti` | `string[]` | const | `['MyPrefix1', 'MyPrefix2']` | ✗ |
+| `suffixSingle` | `string[]` | const | `['MySuffix']` | ✗ |
+| `suffixMulti` | `string[]` | const | `['MySuffix1', 'MySuffix2']` | ✗ |
+| `ruleTester` | `any` | const | `new RuleTester()` | ✗ |
 
 
 ---
@@ -955,20 +1050,6 @@ function createInvalidTestCases(): InvalidTestCase<MessageIds, Options>[] {
   - `test.code
                 .map(code => code.replaceAll(REPLACE_REGEX, preparedName))
                 .join`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
 
 ---
 

@@ -2,19 +2,29 @@
 
 # 📄 `no-array-delete.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 2 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 7 |
+| 📊 Variables & Constants | 5 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 1 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 2
-- **Classes**: 0
-- **Imports**: 7
-- **Interfaces**: 0
-- **Type Aliases**: 1
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/no-array-delete.ts`**
@@ -30,6 +40,19 @@
 | `createRule` | `../util` |
 | `getConstrainedTypeAtLocation` | `../util` |
 | `getParserServices` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `shouldHaveParentheses` | `boolean` | const | `property.type === AST_NODE_TYPES.SequenceExpression` | ✗ |
+| `nodeMap` | `any` | const | `services.esTreeNodeToTSNodeMap` | ✗ |
+| `key` | `any` | const | `shouldHaveParentheses ? `(${rawKey})` : rawKey` | ✗ |
+| `suggestion` | `string` | let/var | ``${target}.splice(${key}, 1)`` | ✗ |
+| `indentationCount` | `any` | const | `node.loc.start.column` | ✗ |
 
 
 ---
@@ -82,20 +105,6 @@ function isUnderlyingTypeArray(type: ts.Type): boolean {
 - **Parameters**:
   - `t: ts.Type`
 - **Return Type**: `boolean`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
 
 ---
 

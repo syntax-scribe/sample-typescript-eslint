@@ -2,19 +2,29 @@
 
 # 📄 `ConfigEslint.tsx`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 14 |
+| 📊 Variables & Constants | 0 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 1 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [JSX Elements](#jsx-elements)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 14
-- **Interfaces**: 1
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/website/src/components/config/ConfigEslint.tsx`**
@@ -37,6 +47,15 @@
 | `toJson` | `../lib/json` |
 | `shallowEqual` | `../lib/shallowEqual` |
 | `ConfigEditor` | `./ConfigEditor` |
+
+
+---
+
+## JSX Elements
+
+| Component | Type | Props | Children |
+|-----------|------|-------|----------|
+| `ConfigEditor` | component | className={className}, onChange={onChange}, options={options}, values={configObject} | *none* |
 
 
 ---
@@ -127,13 +146,6 @@ function ConfigEslint(props: ConfigEslintProps): React.JSX.Element {
 
 ---
 
-## Classes
-
-> No classes found in this file.
-
-
----
-
 ## Interfaces
 
 ### `ConfigEslintProps`
@@ -158,13 +170,6 @@ export interface ConfigEslintProps {
 | `config` | `string` | ✓ |  |
 | `onChange` | `(value: Partial<ConfigModel>) => void` | ✗ |  |
 | `ruleOptions` | `RuleDetails[]` | ✗ |  |
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

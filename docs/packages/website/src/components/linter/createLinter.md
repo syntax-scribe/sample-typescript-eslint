@@ -2,19 +2,29 @@
 
 # 📄 `createLinter.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 8 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 16 |
+| 📊 Variables & Constants | 12 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
-
-## 📊 Analysis Summary
-
-- **Functions**: 8
-- **Classes**: 0
-- **Imports**: 16
-- **Interfaces**: 1
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/website/src/components/linter/createLinter.ts`**
@@ -39,6 +49,36 @@
 | `defaultEslintConfig` | `./config` |
 | `PARSER_NAME` | `./config` |
 | `createParser` | `./createParser` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `rules` | `CreateLinter['rules']` | const | `new Map()` | ✗ |
+| `configs` | `Map<string, ClassicConfig.Config>` | const | `new Map(Object.entries(webLinterModule.configs))` | ✗ |
+| `compilerOptions` | `ts.CompilerOptions` | let/var | `{}` | ✗ |
+| `eslintConfig` | `ClassicConfig.Config` | const | `{ ...defaultEslintConfig }` | ✗ |
+| `code` | `any` | const | `system.readFile(filename) ?? '\n'` | ✗ |
+| `lintMessage` | `Linter.LintMessage` | const | `{
+        column: 1,
+        line: 1,
+        message: String(e instanceof Error ? e.stack : e),
+        nodeType: '',
+        ruleId: '',
+        severity: 2,
+        source: 'eslint',
+      }` | ✗ |
+| `node` | `TSESTree.Node` | const | `e.currentNode as TSESTree.Node` | ✗ |
+| `config` | `{ rules: {}; }` | const | `{ rules: {} }` | ✗ |
+| `cfgExtends` | `any` | const | `Array.isArray(cfg.extends)
+        ? cfg.extends
+        : [cfg.extends]` | ✗ |
+| `file` | `any` | const | `system.readFile(fileName) ?? '{}'` | ✗ |
+| `file` | `any` | const | `system.readFile(fileName) ?? '{}'` | ✗ |
+| `parsed` | `CompilerFlags` | const | `parseTSConfig(file).compilerOptions` | ✗ |
 
 
 ---
@@ -436,13 +476,6 @@ export function createLinter(
 
 ---
 
-## Classes
-
-> No classes found in this file.
-
-
----
-
 ## Interfaces
 
 ### `CreateLinter`
@@ -484,13 +517,6 @@ export interface CreateLinter {
       url?: string;
     }
   >` | ✗ |  |
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

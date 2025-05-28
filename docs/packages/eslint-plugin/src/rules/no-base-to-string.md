@@ -2,19 +2,30 @@
 
 # 📄 `no-base-to-string.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 9 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 7 |
+| 📊 Variables & Constants | 6 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 1 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 9
-- **Classes**: 0
-- **Imports**: 7
-- **Interfaces**: 0
-- **Type Aliases**: 2
+- [Enums](#enums)
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/no-base-to-string.ts`**
@@ -30,6 +41,22 @@
 | `getParserServices` | `../util` |
 | `getTypeName` | `../util` |
 | `nullThrows` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `ignoredTypeNames` | `any` | const | `option.ignoredTypeNames ?? []` | ✗ |
+| `toString` | `any` | const | `checker.getPropertyOfType(type, 'toString') ??
+        checker.getPropertyOfType(type, 'toLocaleString')` | ✗ |
+| `declaration` | `any` | const | `declarations[0]` | ✗ |
+| `isBaseToString` | `boolean` | const | `ts.isInterfaceDeclaration(declaration.parent) &&
+        declaration.parent.name.text === 'Object'` | ✗ |
+| `memberExpr` | `TSESTree.MemberExpression` | const | `node.parent as TSESTree.MemberExpression` | ✗ |
+| `memberExpr` | `TSESTree.MemberExpression` | const | `node.parent as TSESTree.MemberExpression` | ✗ |
 
 
 ---
@@ -431,20 +458,6 @@ function isBuiltInStringCall(node: TSESTree.CallExpression): boolean {
 
 ---
 
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
 ## Type Aliases
 
 ### `Options`
@@ -462,6 +475,32 @@ type Options = [
 ```ts
 type MessageIds = 'baseArrayJoin' | 'baseToString';
 ```
+
+
+---
+
+## Enums
+
+### `enum Usefulness`
+
+<details><summary>Enum Code</summary>
+
+```ts
+enum Usefulness {
+  Always = 'always',
+  Never = 'will',
+  Sometimes = 'may',
+}
+```
+</details>
+
+#### Members
+
+| Name | Value | Description |
+|------|-------|-------------|
+| `Always` | `always` |  |
+| `Never` | `will` |  |
+| `Sometimes` | `may` |  |
 
 
 ---

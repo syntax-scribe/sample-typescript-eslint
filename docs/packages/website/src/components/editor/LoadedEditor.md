@@ -2,19 +2,29 @@
 
 # 📄 `LoadedEditor.tsx`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 3 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 23 |
+| 📊 Variables & Constants | 5 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 1 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 3
-- **Classes**: 0
-- **Imports**: 23
-- **Interfaces**: 0
-- **Type Aliases**: 1
 
 ## 🛠️ File Location:
 📂 **`packages/website/src/components/editor/LoadedEditor.tsx`**
@@ -46,6 +56,42 @@
 | `parseLintResults` | `../linter/utils` |
 | `parseMarkers` | `../linter/utils` |
 | `createProvideCodeActions` | `./createProvideCodeActions` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `codeActions` | `any` | const | `useRef(new Map<string, LintCodeAction[]>()).current` | ✗ |
+| `tabsDefault` | `{ code: any; eslintrc: any; tsconfig: any; }` | const | `{
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+      code: editor.getModel()!,
+      eslintrc: monaco.editor.createModel(
+        eslintrc,
+        'json',
+        monaco.Uri.file('/.eslintrc'),
+      ),
+      tsconfig: monaco.editor.createModel(
+        tsconfig,
+        'json',
+        monaco.Uri.file('/tsconfig.json'),
+      ),
+    }` | ✗ |
+| `model` | `any` | const | `editor.getModel()!` | ✗ |
+| `newPath` | `string` | const | ``/input${fileType}`` | ✗ |
+| `closable` | `any[]` | const | `[
+      system.watchFile('/tsconfig.json', filename => {
+        onChange({ tsconfig: system.readFile(filename) });
+      }),
+      system.watchFile('/.eslintrc', filename => {
+        onChange({ eslintrc: system.readFile(filename) });
+      }),
+      system.watchFile('/input.*', filename => {
+        onChange({ code: system.readFile(filename) });
+      }),
+    ]` | ✗ |
 
 
 ---
@@ -534,20 +580,6 @@ function applyEdit(
 - **Return Type**: `string`
 - **Calls**:
   - `monaco.Uri.parse(`/rules/${name.replace('@', '')}.json`).toString`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
 
 ---
 

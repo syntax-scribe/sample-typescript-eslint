@@ -2,18 +2,29 @@
 
 # 📄 `persistentParse.test.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 8 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 6 |
+| 📊 Variables & Constants | 32 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 7 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
+- [Async/Await Patterns](#asyncawait-patterns)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 8
-- **Classes**: 0
-- **Imports**: 6
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/typescript-estree/tests/lib/persistentParse.test.ts`**
@@ -28,6 +39,117 @@
 | `clearWatchCaches` | `../../src/create-program/getWatchProgramsForProjects` |
 | `clearDefaultProjectMatchedFiles` | `../../src/parser` |
 | `parseAndGenerateServices` | `../../src/parser` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `CONTENTS` | `{ bar: string; 'bat/baz/bar': string; 'baz/bar': string; foo: string; number: string; object: string; string: string; }` | const | `{
+  bar: 'console.log("bar")',
+  'bat/baz/bar': 'console.log("bat/baz/bar")',
+  'baz/bar': 'console.log("baz bar")',
+  foo: 'console.log("foo")',
+  number: 'const foo = 1;',
+  object: '(() => { })();',
+  string: 'let a: "a" | "b";',
+}` | ✗ |
+| `homeOrTmpDir` | `string` | const | `os.tmpdir() || os.homedir()` | ✗ |
+| `tmpDirs` | `Set<string>` | const | `new Set<string>()` | ✗ |
+| `tmpDir` | `string` | let/var | `await fs.mkdtemp(`${tmpDirsParentDirectory}/`, {
+    encoding: 'utf-8',
+  })` | ✗ |
+| `tmpDir` | `string` | let/var | `await createTmpDir()` | ✗ |
+| `PROJECT_DIR` | `string` | let/var | `await setup(tsConfigIncludeAll)` | ✗ |
+| `PROJECT_DIR` | `string` | let/var | `await setup(tsConfigExcludeBar)` | ✗ |
+| `PROJECT_DIR` | `string` | let/var | `await setup(tsConfigIncludeAll, false)` | ✗ |
+| `PROJECT_DIR` | `string` | let/var | `await setup(tsConfigIncludeAll, false)` | ✗ |
+| `bazSlashBar` | `"baz/bar"` | let/var | `'baz/bar'` | ✗ |
+| `PROJECT_DIR` | `string` | let/var | `await setup(tsConfigIncludeAll)` | ✗ |
+| `bazSlashBar` | `"bat/baz/bar"` | let/var | `'bat/baz/bar'` | ✗ |
+| `PROJECT_DIR` | `string` | let/var | `await setup(tsConfigIncludeAll, true)` | ✗ |
+| `bazSlashBar` | `"baz/bar"` | let/var | `'baz/bar'` | ✗ |
+| `PROJECT_DIR` | `string` | let/var | `await setup(tsConfigExcludeBar)` | ✗ |
+| `PROJECT_DIR` | `string` | let/var | `await setup(tsConfigIncludeAll, false)` | ✗ |
+| `PROJECT_DIR` | `string` | let/var | `await setup(tsConfigIncludeAll, false)` | ✗ |
+| `tsConfigExcludeBar` | `{ exclude: string[]; include: string[]; }` | const | `{
+        exclude: ['./src/bar.ts'],
+        include: ['src'],
+      }` | ✗ |
+| `tsConfigIncludeAll` | `{ exclude: any[]; include: string[]; }` | const | `{
+        exclude: [],
+        include: ['src'],
+      }` | ✗ |
+| `tsConfigExcludeBar` | `{ exclude: string[]; include: string[]; }` | const | `{
+        exclude: ['./src/bar.ts'],
+        include: ['src/'],
+      }` | ✗ |
+| `tsConfigIncludeAll` | `{ exclude: any[]; include: string[]; }` | const | `{
+        exclude: [],
+        include: ['src/'],
+      }` | ✗ |
+| `tsConfigExcludeBar` | `{ exclude: string[]; }` | const | `{
+        exclude: ['./src/bar.ts'],
+      }` | ✗ |
+| `tsConfigIncludeAll` | `{}` | const | `{}` | ✗ |
+| `PROJECT_DIR` | `string` | let/var | `await setup({}, false)` | ✗ |
+| `PROJECT_DIR` | `string` | let/var | `await setup({}, false)` | ✗ |
+| `bazSlashBar` | `"baz/bar"` | let/var | `'baz/bar'` | ✗ |
+| `tsConfigExcludeBar` | `{ exclude: string[]; include: string[]; }` | const | `{
+        exclude: ['./src/bar.ts'],
+        include: ['./*', './**/*', './src/**/*'],
+      }` | ✗ |
+| `tsConfigIncludeAll` | `{ include: string[]; }` | const | `{
+        include: ['./*', './**/*', './src/**/*'],
+      }` | ✗ |
+| `moduleTypes` | `readonly ["None", "CommonJS", "AMD", "System", "UMD", "ES6", "ES2015", "ESNext"]` | const | `[
+      'None',
+      'CommonJS',
+      'AMD',
+      'System',
+      'UMD',
+      'ES6',
+      'ES2015',
+      'ESNext',
+    ] as const` | ✗ |
+| `testNames` | `readonly ["object", "number", "string", "foo"]` | const | `['object', 'number', 'string', 'foo'] as const` | ✗ |
+| `tsConfigIncludeAll` | `{ compilerOptions: { module: any; }; include: string[]; }` | const | `{
+        compilerOptions: { module },
+        include: ['./**/*'],
+      }` | ✗ |
+| `PROJECT_DIR` | `string` | let/var | `await setup(tsConfigIncludeAll)` | ✗ |
+
+
+---
+
+## Async/Await Patterns
+
+| Type | Function | Await Expressions | Promise Chains |
+|------|----------|-------------------|----------------|
+| async-function | `writeTSConfig` | fs.writeFile(
+    path.join(dirName, 'tsconfig.json'),
+    JSON.stringify(config, null, 2),
+    { encoding: 'utf-8' },
+  ) | *none* |
+| async-function | `writeFile` | fs.writeFile(
+    path.join(dirName, 'src', `${file}.ts`),
+    CONTENTS[file],
+    'utf-8',
+  ) | *none* |
+| async-function | `renameFile` | fs.rename(
+    path.join(dirName, 'src', `${src}.ts`),
+    path.join(dirName, 'src', `${dest}.ts`),
+  ) | *none* |
+| async-function | `createTmpDir` | fs.mkdtemp(`${tmpDirsParentDirectory}/`, {
+    encoding: 'utf-8',
+  }) | *none* |
+| async-function | `setup` | createTmpDir(), writeTSConfig(tmpDir, tsconfig), fs.mkdir(path.join(tmpDir, 'src'), { recursive: true }), fs.mkdir(path.join(tmpDir, 'src', 'baz'), { recursive: true }), writeFile(tmpDir, 'foo'), writeFile(tmpDir, 'bar') | *none* |
+| async-function | `exists` | fs.lstat(path.join(tmpDir, 'src', `${filename}.ts`)) | *none* |
+| await-expression | `baseTests` | setup(tsConfigIncludeAll), setup(tsConfigExcludeBar), setup(tsConfigIncludeAll, false), writeFile(PROJECT_DIR, 'bar'), setup(tsConfigIncludeAll, false), writeFile(PROJECT_DIR, bazSlashBar), setup(tsConfigIncludeAll), fs.mkdir(path.join(PROJECT_DIR, 'src', 'bat'), { recursive: true }), fs.mkdir(path.join(PROJECT_DIR, 'src', 'bat', 'baz'), {
+      recursive: true,
+    }), writeFile(PROJECT_DIR, bazSlashBar), setup(tsConfigIncludeAll, true), renameFile(PROJECT_DIR, 'bar', bazSlashBar), setup(tsConfigExcludeBar), writeTSConfig(PROJECT_DIR, tsConfigIncludeAll), setup(tsConfigIncludeAll, false), writeFile(PROJECT_DIR, 'bar'), expect(exists('bar', PROJECT_DIR)).resolves.toBe(true), setup(tsConfigIncludeAll, false), writeFile(PROJECT_DIR, 'bar'), expect(exists('bar')).resolves.toBe(true), expect(exists('bar', PROJECT_DIR)).resolves.toBe(true) | *none* |
 
 
 ---
@@ -408,27 +530,6 @@ function baseTests(
 // change the config file so it now includes all files (x2)
 // make sure that file is correctly created (x4)
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

@@ -2,18 +2,28 @@
 
 # 📄 `no-unsafe-return.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 14 |
+| 📊 Variables & Constants | 3 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 14
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/no-unsafe-return.ts`**
@@ -36,6 +46,20 @@
 | `isTypeUnknownType` | `../util` |
 | `isUnsafeAssignment` | `../util` |
 | `getParentFunctionNode` | `../util/getParentFunctionNode` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `functionType` | `any` | let/var | `ts.isFunctionExpression(functionTSNode) ||
+        ts.isArrowFunction(functionTSNode)
+          ? getContextualType(checker, functionTSNode)
+          : services.getTypeAtLocation(functionNode)` | ✗ |
+| `messageId` | `'unsafeReturn' | 'unsafeReturnThis'` | let/var | `'unsafeReturn'` | ✗ |
+| `argument` | `any` | const | `node.argument` | ✗ |
 
 
 ---
@@ -247,27 +271,6 @@ function checkReturn(
 // `return this` (x2)
 // If the function return type was not unknown/unknown[], mark usage as unsafeReturn.
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

@@ -2,25 +2,47 @@
 
 # 📄 `version-check.ts`
 
-## 📚 Table of Contents
-
-- [Functions](#functions)
-- [Type Aliases](#type-aliases)
-
 ## 📊 Analysis Summary
 
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 0
-- **Interfaces**: 0
-- **Type Aliases**: 1
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 0 |
+| 📊 Variables & Constants | 2 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 1 |
+| 🎯 Enums | 0 |
+
+## 📚 Table of Contents
+
+- [Variables & Constants](#variables-constants)
+- [Functions](#functions)
+- [Type Aliases](#type-aliases)
 
 ## 🛠️ File Location:
 📂 **`packages/typescript-estree/src/version-check.ts`**
 
-## 📦 Imports
+## Variables & Constants
 
-> No imports found in this file.
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `versions` | `readonly ["4.7", "4.8", "4.9", "5.0", "5.1", "5.2", "5.3", "5.4"]` | const | `[
+  '4.7',
+  '4.8',
+  '4.9',
+  '5.0',
+  '5.1',
+  '5.2',
+  '5.3',
+  '5.4',
+] as const` | ✗ |
+| `typescriptVersionIsAtLeast` | `Record<"4.7" | "4.8" | "4.9" | "5.0" | "5.1" | "5.2" | "5.3" | "5.4", boolean>` | const | `{} as Record<Versions, boolean>` | ✓ |
 
 
 ---
@@ -49,20 +71,6 @@ function semverCheck(version: string): boolean {
 - **Return Type**: `boolean`
 - **Calls**:
   - `semver.satisfies`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
 
 ---
 

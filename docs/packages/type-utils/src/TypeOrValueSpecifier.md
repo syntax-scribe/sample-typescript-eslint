@@ -2,20 +2,30 @@
 
 # 📄 `TypeOrValueSpecifier.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 2 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 5 |
+| 📊 Variables & Constants | 3 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 3 |
+| 📑 Type Aliases | 1 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 2
-- **Classes**: 0
-- **Imports**: 5
-- **Interfaces**: 3
-- **Type Aliases**: 1
 
 ## 🛠️ File Location:
 📂 **`packages/type-utils/src/TypeOrValueSpecifier.ts`**
@@ -29,6 +39,110 @@
 | `typeDeclaredInFile` | `./typeOrValueSpecifiers/typeDeclaredInFile` |
 | `typeDeclaredInLib` | `./typeOrValueSpecifiers/typeDeclaredInLib` |
 | `typeDeclaredInPackageDeclarationFile` | `./typeOrValueSpecifiers/typeDeclaredInPackageDeclarationFile` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `typeOrValueSpecifiersSchema` | `JSONSchema4` | const | `{
+  items: {
+    oneOf: [
+      {
+        type: 'string',
+      },
+      {
+        additionalProperties: false,
+        properties: {
+          from: {
+            enum: ['file'],
+            type: 'string',
+          },
+          name: {
+            oneOf: [
+              {
+                type: 'string',
+              },
+              {
+                items: {
+                  type: 'string',
+                },
+                minItems: 1,
+                type: 'array',
+                uniqueItems: true,
+              },
+            ],
+          },
+          path: {
+            type: 'string',
+          },
+        },
+        required: ['from', 'name'],
+        type: 'object',
+      },
+      {
+        additionalProperties: false,
+        properties: {
+          from: {
+            enum: ['lib'],
+            type: 'string',
+          },
+          name: {
+            oneOf: [
+              {
+                type: 'string',
+              },
+              {
+                items: {
+                  type: 'string',
+                },
+                minItems: 1,
+                type: 'array',
+                uniqueItems: true,
+              },
+            ],
+          },
+        },
+        required: ['from', 'name'],
+        type: 'object',
+      },
+      {
+        additionalProperties: false,
+        properties: {
+          from: {
+            enum: ['package'],
+            type: 'string',
+          },
+          name: {
+            oneOf: [
+              {
+                type: 'string',
+              },
+              {
+                items: {
+                  type: 'string',
+                },
+                minItems: 1,
+                type: 'array',
+                uniqueItems: true,
+              },
+            ],
+          },
+          package: {
+            type: 'string',
+          },
+        },
+        required: ['from', 'name', 'package'],
+        type: 'object',
+      },
+    ],
+  },
+  type: 'array',
+} as const satisfies JSONSchema4` | ✓ |
+| `symbol` | `any` | const | `type.getSymbol() ?? type.aliasSymbol` | ✗ |
+| `declarations` | `any` | const | `symbol?.getDeclarations() ?? []` | ✗ |
 
 
 ---
@@ -135,13 +249,6 @@ export function typeMatchesSpecifier(
 - **Return Type**: `boolean`
 - **Calls**:
   - `specifiers.some`
-
----
-
-## Classes
-
-> No classes found in this file.
-
 
 ---
 

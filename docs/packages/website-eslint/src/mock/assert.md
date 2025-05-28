@@ -2,25 +2,42 @@
 
 # 📄 `assert.js`
 
-## 📚 Table of Contents
-
-- [Functions](#functions)
-- [Classes](#classes)
-
 ## 📊 Analysis Summary
 
-- **Functions**: 2
-- **Classes**: 1
-- **Imports**: 0
-- **Interfaces**: 0
-- **Type Aliases**: 0
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 2 |
+| 🧱 Classes | 1 |
+| 📦 Imports | 0 |
+| 📊 Variables & Constants | 4 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
+## 📚 Table of Contents
+
+- [Variables & Constants](#variables-constants)
+- [Functions](#functions)
+- [Classes](#classes)
 
 ## 🛠️ File Location:
 📂 **`packages/website-eslint/src/mock/assert.js`**
 
-## 📦 Imports
+## Variables & Constants
 
-> No imports found in this file.
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `stackStartFunction` | `any` | let/var | `options.stackStartFunction || fail` | ✗ |
+| `err` | `Error` | let/var | `new Error()` | ✗ |
+| `out` | `string` | let/var | `err.stack` | ✗ |
+| `fn_name` | `any` | let/var | `typeof stackStartFunction === 'function'
+            ? stackStartFunction.name
+            : stackStartFunction.toString()` | ✗ |
 
 
 ---
@@ -123,20 +140,6 @@ class AssertionError extends Error {
 }
 ```
 </details>
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

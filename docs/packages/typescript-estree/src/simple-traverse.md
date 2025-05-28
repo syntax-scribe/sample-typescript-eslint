@@ -2,20 +2,30 @@
 
 # 📄 `simple-traverse.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 4 |
+| 🧱 Classes | 1 |
+| 📦 Imports | 3 |
+| 📊 Variables & Constants | 2 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 1 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Classes](#classes)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 4
-- **Classes**: 1
-- **Imports**: 3
-- **Interfaces**: 0
-- **Type Aliases**: 1
 
 ## 🛠️ File Location:
 📂 **`packages/typescript-estree/src/simple-traverse.ts`**
@@ -27,6 +37,16 @@
 | `VisitorKeys` | `@typescript-eslint/visitor-keys` |
 | `visitorKeys` | `@typescript-eslint/visitor-keys` |
 | `TSESTree` | `./ts-estree` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `keys` | `any` | const | `allVisitorKeys[node.type]` | ✗ |
+| `childOrChildren` | `TSESTree.Node` | const | `node[key]` | ✗ |
 
 
 ---
@@ -247,13 +267,6 @@ traverse(node: unknown, parent: TSESTree.Node | undefined): void {
   }
 ```
 </details>
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
 
 
 ---

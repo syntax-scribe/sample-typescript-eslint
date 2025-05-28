@@ -2,18 +2,28 @@
 
 # 📄 `custom-matchers.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 51 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 10 |
+| 📊 Variables & Constants | 8 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 45
-- **Classes**: 0
-- **Imports**: 10
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/tests/test-utils/custom-matchers/custom-matchers.ts`**
@@ -32,6 +42,28 @@
 | `Scope` | `../../../src/index.js` |
 | `ScopeType` | `../../../src/index.js` |
 | `analyze` | `../../../src/index.js` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `negate` | `boolean` | const | `utils.flag(this, 'negate') ?? false` | ✗ |
+| `assertion` | `Assertion` | const | `new chai.Assertion(scope, errorMessage, ssfi, true)` | ✗ |
+| `negate` | `boolean` | const | `utils.flag(this, 'negate') ?? false` | ✗ |
+| `assertion` | `Assertion` | const | `new chai.Assertion(definition, errorMessage, ssfi, true)` | ✗ |
+| `negate` | `boolean` | const | `utils.flag(this, 'negate') ?? false` | ✗ |
+| `assertion` | `Assertion` | const | `new chai.Assertion(node, errorMessage, ssfi, true)` | ✗ |
+| `DEFAULT_PARSER_OPTIONS` | `TSESTreeOptions` | const | `{
+  // the analyser requires ranges to work
+  range: true,
+} as const satisfies TSESTreeOptions` | ✗ |
+| `expectationResult` | `{ message: () => string; pass: boolean; }` | const | `{
+      message: () => ``,
+      pass: true,
+    }` | ✗ |
 
 
 ---
@@ -211,6 +243,36 @@ function nodeOfType(
 <details><summary>Code</summary>
 
 ```ts
+() => ``
+```
+</details>
+
+- **Return Type**: `string`
+### `message(): string`
+
+<details><summary>Code</summary>
+
+```ts
+() => ``
+```
+</details>
+
+- **Return Type**: `string`
+### `message(): string`
+
+<details><summary>Code</summary>
+
+```ts
+() => ``
+```
+</details>
+
+- **Return Type**: `string`
+### `message(): string`
+
+<details><summary>Code</summary>
+
+```ts
 () =>
                 `Expected both arrays${isNot ? ' not' : ''} to have the same length.`
 ```
@@ -400,6 +462,36 @@ function nodeOfType(
 ```ts
 () =>
         `Expected the name list array${isNot ? ' not' : ''} to be empty.`
+```
+</details>
+
+- **Return Type**: `string`
+### `message(): string`
+
+<details><summary>Code</summary>
+
+```ts
+() => ``
+```
+</details>
+
+- **Return Type**: `string`
+### `message(): string`
+
+<details><summary>Code</summary>
+
+```ts
+() => ``
+```
+</details>
+
+- **Return Type**: `string`
+### `message(): string`
+
+<details><summary>Code</summary>
+
+```ts
+() => ``
 ```
 </details>
 
@@ -632,26 +724,5 @@ function nodeOfType(
 </details>
 
 - **Return Type**: `string`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

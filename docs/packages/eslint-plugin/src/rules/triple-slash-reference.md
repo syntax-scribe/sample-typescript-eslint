@@ -2,19 +2,29 @@
 
 # 📄 `triple-slash-reference.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 4 |
+| 📊 Variables & Constants | 4 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 4
-- **Interfaces**: 0
-- **Type Aliases**: 2
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/triple-slash-reference.ts`**
@@ -27,6 +37,21 @@
 | `AST_NODE_TYPES` | `@typescript-eslint/utils` |
 | `AST_TOKEN_TYPES` | `@typescript-eslint/utils` |
 | `createRule` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `programNode` | `TSESTree.Node | undefined` | let/var | `*not shown*` | ✗ |
+| `references` | `{
+      comment: TSESTree.Comment;
+      importName: string;
+    }[]` | const | `[]` | ✗ |
+| `referenceRegExp` | `RegExp` | const | `/^\/\s*<reference\s*(types|path|lib)\s*=\s*["|'](.*)["|']/` | ✗ |
+| `reference` | `any` | const | `node.moduleReference` | ✗ |
 
 
 ---
@@ -60,20 +85,6 @@ function hasMatchingReference(source: TSESTree.Literal): void {
 - **Calls**:
   - `references.forEach`
   - `context.report`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
 
 ---
 

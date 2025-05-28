@@ -2,20 +2,30 @@
 
 # 📄 `PatternVisitor.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 13 |
+| 🧱 Classes | 1 |
+| 📦 Imports | 4 |
+| 📊 Variables & Constants | 1 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Classes](#classes)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 13
-- **Classes**: 1
-- **Imports**: 4
-- **Interfaces**: 0
-- **Type Aliases**: 2
 
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/src/referencer/PatternVisitor.ts`**
@@ -28,6 +38,15 @@
 | `AST_NODE_TYPES` | `@typescript-eslint/types` |
 | `VisitorOptions` | `./VisitorBase` |
 | `VisitorBase` | `./VisitorBase` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `nodeType` | `any` | const | `node.type` | ✗ |
 
 
 ---
@@ -664,13 +683,6 @@ protected TSTypeAnnotation(): void {
   }
 ```
 </details>
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
 
 
 ---

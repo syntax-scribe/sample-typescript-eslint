@@ -2,18 +2,28 @@
 
 # 📄 `prefer-includes.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 7 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 9 |
+| 📊 Variables & Constants | 14 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 7
-- **Classes**: 0
-- **Imports**: 9
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/prefer-includes.ts`**
@@ -31,6 +41,47 @@
 | `getParserServices` | `../util` |
 | `getStaticValue` | `../util` |
 | `isStaticMemberAccessOfValue` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `paramsA` | `any` | const | `nodeA.parameters` | ✗ |
+| `paramsB` | `any` | const | `nodeB.parameters` | ✗ |
+| `paramA` | `any` | const | `paramsA[i]` | ✗ |
+| `paramB` | `any` | const | `paramsB[i]` | ✗ |
+| `chars` | `any` | const | `pattern.alternatives[0].elements` | ✗ |
+| `EscapeMap` | `{ '\0': string; '\t': string; '\n': string; '\v': string; '\f': string; '\r': string; "'": string; '\\': string; }` | const | `{
+        '\0': '\\0',
+        '\t': '\\t',
+        '\n': '\\n',
+        '\v': '\\v',
+        '\f': '\\f',
+        '\r': '\\r',
+        "'": "\\'",
+        '\\': '\\\\',
+        // "\b" cause unexpected replacements
+        // '\b': '\\b',
+      }` | ✗ |
+| `replaceRegex` | `RegExp` | const | `new RegExp(Object.values(EscapeMap).join('|'), 'g')` | ✗ |
+| `callNode` | `TSESTree.CallExpression` | const | `node.parent as TSESTree.CallExpression` | ✗ |
+| `compareNode` | `TSESTree.BinaryExpression` | const | `(
+        callNode.parent.type === AST_NODE_TYPES.ChainExpression
+          ? callNode.parent.parent
+          : callNode.parent
+      ) as TSESTree.BinaryExpression` | ✗ |
+| `typeDecl` | `any` | const | `instanceofMethodDecl.parent` | ✗ |
+| `callNode` | `any` | const | `node.parent` | ✗ |
+| `argument` | `any` | const | `callNode.arguments[0]` | ✗ |
+| `argNode` | `any` | let/var | `callNode.arguments[0]` | ✗ |
+| `needsParen` | `boolean` | let/var | `argNode.type !== AST_NODE_TYPES.Literal &&
+              argNode.type !== AST_NODE_TYPES.TemplateLiteral &&
+              argNode.type !== AST_NODE_TYPES.Identifier &&
+              argNode.type !== AST_NODE_TYPES.MemberExpression &&
+              argNode.type !== AST_NODE_TYPES.CallExpression` | ✗ |
 
 
 ---
@@ -340,27 +391,6 @@ function checkArrayIndexOf(
 // and the two methods have the same parameters.
 // Report it. (x4)
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

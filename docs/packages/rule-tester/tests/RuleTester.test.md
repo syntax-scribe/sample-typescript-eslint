@@ -2,18 +2,28 @@
 
 # 📄 `RuleTester.test.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 78 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 10 |
+| 📊 Variables & Constants | 29 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 42
-- **Classes**: 0
-- **Imports**: 10
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/rule-tester/tests/RuleTester.test.ts`**
@@ -32,6 +42,238 @@
 | `ValidTestCase` | `../src` |
 | `RuleTesterTestFrameworkFunctionBase` | `../src/TestFramework` |
 | `RuleTester` | `../src/RuleTester` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `dependencyConstraints` | `any` | let/var | `await importOriginal()` | ✗ |
+| `actualParser` | `any` | let/var | `await importOriginal()` | ✗ |
+| `EMPTY_PROGRAM` | `TSESTree.Program` | const | `{
+  body: [],
+  comments: [],
+  loc: { end: { column: 0, line: 0 }, start: { column: 0, line: 0 } },
+  range: [0, 0],
+  sourceType: 'module',
+  tokens: [],
+  type: AST_NODE_TYPES.Program,
+}` | ✗ |
+| `NOOP_RULE` | `RuleModule<'error'>` | const | `{
+  create() {
+    return {};
+  },
+  defaultOptions: [],
+  meta: {
+    messages: {
+      error: 'error',
+    },
+    schema: [],
+    type: 'problem',
+  },
+}` | ✗ |
+| `ruleTester` | `RuleTester` | const | `new RuleTester({
+        languageOptions: {
+          parser,
+          parserOptions: {
+            project: 'tsconfig.json',
+            tsconfigRootDir: '/some/path/that/totally/exists/',
+          },
+        },
+      })` | ✗ |
+| `ruleTester` | `RuleTester` | const | `new RuleTester({
+        defaultFilenames: {
+          ts: 'set-in-constructor.ts',
+          tsx: 'react-set-in-constructor.tsx',
+        },
+        languageOptions: {
+          parser,
+          parserOptions: {
+            project: 'tsconfig.json',
+            tsconfigRootDir: '/some/path/that/totally/exists/',
+          },
+        },
+      })` | ✗ |
+| `callback` | `any` | const | `mockedAfterAll.mock.calls[0][0]` | ✗ |
+| `ruleTester` | `RuleTester` | const | `new RuleTester({
+      linterOptions: {
+        reportUnusedDisableDirectives: 0,
+      },
+    })` | ✗ |
+| `ruleTester` | `RuleTester` | const | `new RuleTester({
+      languageOptions: {
+        parser,
+        parserOptions: {
+          project: 'tsconfig.json',
+          tsconfigRootDir: '/some/path/that/totally/exists/',
+        },
+      },
+    })` | ✗ |
+| `ruleTester` | `RuleTester` | const | `new RuleTester({
+        languageOptions: { parser },
+      })` | ✗ |
+| `ruleTester` | `RuleTester` | const | `new RuleTester({
+          languageOptions: { parser },
+        })` | ✗ |
+| `ruleTester` | `RuleTester` | const | `new RuleTester({
+          languageOptions: { parser },
+        })` | ✗ |
+| `ruleTester` | `RuleTester` | const | `new RuleTester({
+        languageOptions: { parser },
+      })` | ✗ |
+| `ruleTester` | `RuleTester` | const | `new RuleTester({
+        languageOptions: { parser },
+      })` | ✗ |
+| `ruleTester` | `RuleTester` | const | `new RuleTester({
+        languageOptions: { parser },
+      })` | ✗ |
+| `ruleTester` | `RuleTester` | const | `new RuleTester({
+          dependencyConstraints: {
+            'totally-real-dependency': '999',
+          },
+          languageOptions: { parser },
+        })` | ✗ |
+| `ruleTester` | `RuleTester` | const | `new RuleTester({
+          dependencyConstraints: {
+            'totally-real-dependency': '10',
+          },
+          languageOptions: { parser },
+        })` | ✗ |
+| `ruleTester` | `RuleTester` | const | `new RuleTester()` | ✗ |
+| `ruleTester` | `RuleTester` | const | `new RuleTester()` | ✗ |
+| `noFooRule` | `RuleModule<'error'>` | const | `{
+    create(context) {
+      return {
+        'Identifier[name=foo]'(node): void {
+          context.report({
+            messageId: 'error',
+            node,
+          });
+        },
+      };
+    },
+    defaultOptions: [],
+    meta: {
+      messages: {
+        error: 'error',
+      },
+      schema: [],
+      type: 'problem',
+    },
+  }` | ✗ |
+| `ruleTester` | `RuleTester` | const | `new RuleTester()` | ✗ |
+| `ruleTester` | `RuleTester` | const | `new RuleTester()` | ✗ |
+| `rule` | `RuleModule<'error'>` | const | `{
+      create(context) {
+        return {
+          'Identifier[name=foo]'(node): void {
+            context.report({
+              messageId: 'error',
+              node,
+            });
+          },
+        };
+      },
+      defaultOptions: [],
+      meta: {
+        messages: {
+          error: 'error',
+        },
+        schema: [],
+        type: 'problem',
+      },
+    }` | ✗ |
+| `ruleTester` | `RuleTester` | const | `new RuleTester()` | ✗ |
+| `rule` | `RuleModule<'error'>` | const | `{
+      create(context) {
+        return {
+          'Identifier[name=foo]'(node): void {
+            context.report({
+              fix: fixer => fixer.replaceText(node, 'bar'),
+              messageId: 'error',
+              node,
+            });
+          },
+        };
+      },
+      defaultOptions: [],
+      meta: {
+        fixable: 'code',
+        messages: {
+          error: 'error',
+        },
+        schema: [],
+        type: 'problem',
+      },
+    }` | ✗ |
+| `ruleTester` | `RuleTester` | const | `new RuleTester()` | ✗ |
+| `rule` | `RuleModule<'error'>` | const | `{
+      create(context) {
+        return {
+          'Identifier[name=bar]'(node): void {
+            context.report({
+              fix: fixer => fixer.replaceText(node, 'baz'),
+              messageId: 'error',
+              node,
+            });
+          },
+          'Identifier[name=foo]'(node): void {
+            context.report({
+              fix: fixer => fixer.replaceText(node, 'bar'),
+              messageId: 'error',
+              node,
+            });
+          },
+        };
+      },
+      defaultOptions: [],
+      meta: {
+        fixable: 'code',
+        messages: {
+          error: 'error',
+        },
+        schema: [],
+        type: 'problem',
+      },
+    }` | ✗ |
+| `ruleTester` | `RuleTester` | const | `new RuleTester()` | ✗ |
+| `ruleModule` | `RuleModule<
+    'customErrorBar' | 'customErrorFoo',
+    [{ flag: 'bar' | 'foo' }?]
+  >` | const | `{
+    create(context) {
+      const [{ flag } = {}] = context.options;
+      return {
+        Identifier(node) {
+          if (node.name === 'foo' && flag === 'foo') {
+            context.report({ messageId: 'customErrorFoo', node });
+          }
+          if (node.name === 'bar' && flag === 'bar') {
+            context.report({ messageId: 'customErrorBar', node });
+          }
+        },
+      };
+    },
+    defaultOptions: [],
+    meta: {
+      messages: {
+        customErrorBar: 'Error custom Bar',
+        customErrorFoo: 'Error custom Foo',
+      },
+      schema: [
+        {
+          additionalProperties: false,
+          properties: {
+            flag: { enum: ['foo', 'bar'], type: 'string' },
+          },
+          type: 'object',
+        },
+      ],
+      type: 'suggestion',
+    },
+  }` | ✗ |
 
 
 ---
@@ -202,6 +444,510 @@ fixer => fixer.replaceText(node, 'bar')
 
 ```ts
 fixer => fixer.replaceText(node, 'bar')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'bar')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'bar')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'bar')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'bar')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'bar')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'bar')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'bar')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'bar')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'bar')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'bar')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'bar')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'bar')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'bar')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'bar')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'baz')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'baz')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'bar')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'bar')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'baz')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'baz')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'bar')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'bar')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'baz')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'baz')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'bar')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'bar')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'baz')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'baz')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'bar')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'bar')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'baz')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'baz')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'bar')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'bar')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'baz')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'baz')
 ```
 </details>
 
@@ -648,26 +1394,5 @@ function generateIncompatibleInvalidTestCase(): InvalidTestCase<
       'customErrorBar' | 'customErrorBaz',
       unknown[]
     >`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

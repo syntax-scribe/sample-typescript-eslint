@@ -2,19 +2,29 @@
 
 # 📄 `no-restricted-imports.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 10 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 14 |
+| 📊 Variables & Constants | 9 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 10
-- **Classes**: 0
-- **Imports**: 14
-- **Interfaces**: 0
-- **Type Aliases**: 2
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/no-restricted-imports.ts`**
@@ -37,6 +47,161 @@
 | `InferOptionsTypeFromRule` | `../util` |
 | `createRule` | `../util` |
 | `getESLintCoreRule` | `../util/getESLintCoreRule` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `baseSchema` | `{ anyOf: [unknown, { items: [{ properties: { paths: { items: { anyOf: [{ type: "string"; }, { properties: JSONSchema4ObjectSchema; required: string[]; type: "object"; }]; }; type: "array"; }; patterns: { anyOf: [{ items: { type: "string"; }; type: "array"; }, { ...; }]; }; }; type: "object"; }]; type: "array"; }]; }` | const | `baseRule.meta.schema as {
+  anyOf: [
+    unknown,
+    {
+      items: [
+        {
+          properties: {
+            paths: {
+              items: {
+                anyOf: [
+                  { type: 'string' },
+                  {
+                    properties: JSONSchema4ObjectSchema['properties'];
+                    required: string[];
+                    type: 'object';
+                  },
+                ];
+              };
+              type: 'array';
+            };
+            patterns: {
+              anyOf: [
+                { items: { type: 'string' }; type: 'array' },
+                {
+                  items: {
+                    properties: JSONSchema4ObjectSchema['properties'];
+                    required: string[];
+                    type: 'object';
+                  };
+                  type: 'array';
+                },
+              ];
+            };
+          };
+          type: 'object';
+        },
+      ];
+      type: 'array';
+    },
+  ];
+}` | ✗ |
+| `allowTypeImportsOptionSchema` | `JSONSchema4ObjectSchema['properties']` | const | `{
+  allowTypeImports: {
+    type: 'boolean',
+    description: 'Whether to allow type-only imports for a path.',
+  },
+}` | ✗ |
+| `arrayOfStringsOrObjects` | `JSONSchema4ArraySchema` | const | `{
+  type: 'array',
+  items: {
+    anyOf: [
+      { type: 'string' },
+      {
+        type: 'object',
+        additionalProperties: false,
+        properties: {
+          ...tryAccess(
+            () =>
+              baseSchema.anyOf[1].items[0].properties.paths.items.anyOf[1]
+                .properties,
+            undefined,
+          ),
+          ...allowTypeImportsOptionSchema,
+        },
+        required: tryAccess(
+          () =>
+            baseSchema.anyOf[1].items[0].properties.paths.items.anyOf[1]
+              .required,
+          undefined,
+        ),
+      },
+    ],
+  },
+  uniqueItems: true,
+}` | ✗ |
+| `arrayOfStringsOrObjectPatterns` | `JSONSchema4AnyOfSchema` | const | `{
+  anyOf: [
+    {
+      type: 'array',
+      items: {
+        type: 'string',
+      },
+      uniqueItems: true,
+    },
+    {
+      type: 'array',
+      items: {
+        type: 'object',
+        additionalProperties: false,
+        properties: {
+          ...tryAccess(
+            () =>
+              baseSchema.anyOf[1].items[0].properties.patterns.anyOf[1].items
+                .properties,
+            undefined,
+          ),
+          ...allowTypeImportsOptionSchema,
+        },
+        required: tryAccess(
+          () =>
+            baseSchema.anyOf[1].items[0].properties.patterns.anyOf[1].items
+              .required,
+          [],
+        ),
+      },
+      uniqueItems: true,
+    },
+  ],
+}` | ✗ |
+| `schema` | `JSONSchema4AnyOfSchema` | const | `{
+  anyOf: [
+    arrayOfStringsOrObjects,
+    {
+      type: 'array',
+      additionalItems: false,
+      items: [
+        {
+          type: 'object',
+          additionalProperties: false,
+          properties: {
+            paths: arrayOfStringsOrObjects,
+            patterns: arrayOfStringsOrObjectPatterns,
+          },
+        },
+      ],
+    },
+  ],
+}` | ✗ |
+| `allowedTypeImportPathNameSet` | `Set<string>` | const | `new Set<string>()` | ✗ |
+| `allowedImportTypeMatchers` | `Ignore[]` | const | `[]` | ✗ |
+| `allowedImportTypeRegexMatchers` | `RegExp[]` | const | `[]` | ✗ |
+| `synthesizedImport` | `TSESTree.ImportDeclaration` | const | `{
+            ...node,
+            type: AST_NODE_TYPES.ImportDeclaration,
+            assertions: [],
+            attributes: [],
+            source: node.moduleReference.expression,
+            specifiers: [
+              {
+                ...node.id,
+                type: AST_NODE_TYPES.ImportDefaultSpecifier,
+                local: node.id,
+                // @ts-expect-error -- parent types are incompatible but it's fine for the purposes of this extension
+                parent: node.id.parent,
+              },
+            ],
+          }` | ✗ |
 
 
 ---
@@ -282,20 +447,6 @@ function checkImportNode(node: TSESTree.ImportDeclaration): void {
   - `isAllowedTypeImportPath`
   - `isAllowedTypeImportPattern`
   - `rules.ImportDeclaration`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
 
 ---
 

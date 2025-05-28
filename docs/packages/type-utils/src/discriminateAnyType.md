@@ -2,18 +2,28 @@
 
 # 📄 `discriminateAnyType.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 2 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 2 |
+| 📊 Variables & Constants | 0 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 1 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 2
-- **Classes**: 0
-- **Imports**: 2
-- **Interfaces**: 0
-- **Type Aliases**: 0
+- [Enums](#enums)
 
 ## 🛠️ File Location:
 📂 **`packages/type-utils/src/discriminateAnyType.ts`**
@@ -126,23 +136,30 @@ function discriminateAnyTypeWorker(
 
 ---
 
-## Classes
+## Enums
 
-> No classes found in this file.
+### `enum AnyType`
 
+<details><summary>Enum Code</summary>
 
----
+```ts
+export enum AnyType {
+  Any,
+  PromiseAny,
+  AnyArray,
+  Safe,
+}
+```
+</details>
 
-## Interfaces
+#### Members
 
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
+| Name | Value | Description |
+|------|-------|-------------|
+| `Any` | *auto* |  |
+| `PromiseAny` | *auto* |  |
+| `AnyArray` | *auto* |  |
+| `Safe` | *auto* |  |
 
 
 ---

@@ -2,19 +2,30 @@
 
 # 📄 `ConfigTypeScript.tsx`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 13 |
+| 📊 Variables & Constants | 1 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 1 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
+- [JSX Elements](#jsx-elements)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 13
-- **Interfaces**: 1
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/website/src/components/config/ConfigTypeScript.tsx`**
@@ -36,6 +47,24 @@
 | `getTypescriptOptions` | `../lib/jsonSchema` |
 | `shallowEqual` | `../lib/shallowEqual` |
 | `ConfigEditor` | `./ConfigEditor` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `category` | `any` | const | `item.category.message` | ✗ |
+
+
+---
+
+## JSX Elements
+
+| Component | Type | Props | Children |
+|-----------|------|-------|----------|
+| `ConfigEditor` | component | className={className}, onChange={onChange}, options={options}, values={configObject} | *none* |
 
 
 ---
@@ -137,13 +166,6 @@ function ConfigTypeScript(props: ConfigTypeScriptProps): React.JSX.Element {
 
 ---
 
-## Classes
-
-> No classes found in this file.
-
-
----
-
 ## Interfaces
 
 ### `ConfigTypeScriptProps`
@@ -166,13 +188,6 @@ interface ConfigTypeScriptProps {
 | `className` | `string` | ✓ |  |
 | `config` | `string` | ✓ |  |
 | `onChange` | `(config: Partial<ConfigModel>) => void` | ✗ |  |
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

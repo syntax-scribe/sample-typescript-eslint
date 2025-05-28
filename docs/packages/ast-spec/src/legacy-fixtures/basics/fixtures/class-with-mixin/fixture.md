@@ -2,6 +2,23 @@
 
 # 📄 `fixture.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 2 |
+| 📦 Imports | 0 |
+| 📊 Variables & Constants | 0 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 1 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Functions](#functions)
@@ -9,23 +26,8 @@
 - [Interfaces](#interfaces)
 - [Type Aliases](#type-aliases)
 
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 2
-- **Imports**: 0
-- **Interfaces**: 1
-- **Type Aliases**: 1
-
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-mixin/fixture.ts`**
-
-## 📦 Imports
-
-> No imports found in this file.
-
-
----
 
 ## Functions
 

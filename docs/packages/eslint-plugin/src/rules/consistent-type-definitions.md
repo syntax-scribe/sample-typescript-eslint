@@ -2,18 +2,28 @@
 
 # 📄 `consistent-type-definitions.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 6 |
+| 📊 Variables & Constants | 3 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 6
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/consistent-type-definitions.ts`**
@@ -28,6 +38,54 @@
 | `createRule` | `../util` |
 | `nullThrows` | `../util` |
 | `NullThrowsReasons` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `typeNode` | `any` | const | `node.typeParameters ?? node.id` | ✗ |
+| `fixes` | `TSESLint.RuleFix[]` | const | `[]` | ✗ |
+| `fix` | `(fixer: TSESLint.RuleFixer) => TSESLint.RuleFix[]` | const | `isCurrentlyTraversedNodeWithinModuleDeclaration(node)
+            ? null
+            : (fixer: TSESLint.RuleFixer): TSESLint.RuleFix[] => {
+                const typeNode = node.typeParameters ?? node.id;
+                const fixes: TSESLint.RuleFix[] = [];
+
+                const firstToken = context.sourceCode.getTokenBefore(node.id);
+                if (firstToken) {
+                  fixes.push(fixer.replaceText(firstToken, 'type'));
+                  fixes.push(
+                    fixer.replaceTextRange(
+                      [typeNode.range[1], node.body.range[0]],
+                      ' = ',
+                    ),
+                  );
+                }
+
+                node.extends.forEach(heritage => {
+                  const typeIdentifier = context.sourceCode.getText(heritage);
+                  fixes.push(
+                    fixer.insertTextAfter(node.body, ` & ${typeIdentifier}`),
+                  );
+                });
+
+                if (
+                  node.parent.type === AST_NODE_TYPES.ExportDefaultDeclaration
+                ) {
+                  fixes.push(
+                    fixer.removeRange([node.parent.range[0], node.range[0]]),
+                    fixer.insertTextAfter(
+                      node.body,
+                      `\nexport default ${node.id.name}`,
+                    ),
+                  );
+                }
+
+                return fixes;
+              }` | ✗ |
 
 
 ---
@@ -69,26 +127,5 @@ function isCurrentlyTraversedNodeWithinModuleDeclaration(
   - `context.sourceCode
         .getAncestors(node)
         .some`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

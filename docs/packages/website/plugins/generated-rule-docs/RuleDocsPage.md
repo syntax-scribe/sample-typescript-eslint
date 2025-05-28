@@ -2,21 +2,31 @@
 
 # 📄 `RuleDocsPage.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 2 |
+| 🧱 Classes | 1 |
+| 📦 Imports | 4 |
+| 📊 Variables & Constants | 1 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 1 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Classes](#classes)
 - [Interfaces](#interfaces)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 2
-- **Classes**: 1
-- **Imports**: 4
-- **Interfaces**: 1
-- **Type Aliases**: 1
 
 ## 🛠️ File Location:
 📂 **`packages/website/plugins/generated-rule-docs/RuleDocsPage.ts`**
@@ -29,6 +39,20 @@
 | `fromMarkdown` | `mdast-util-from-markdown` |
 | `VFileWithStem` | `../utils/rules` |
 | `findHeadingIndex` | `../utils/rules` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `requiredHeadingNames` | `readonly ["How to Use", "Options", "When Not To Use It", "Related To"]` | const | `[
+  'How to Use',
+  'Options',
+  'When Not To Use It',
+  'Related To',
+] as const` | ✓ |
 
 
 ---

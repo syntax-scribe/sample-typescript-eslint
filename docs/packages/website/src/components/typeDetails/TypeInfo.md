@@ -2,19 +2,30 @@
 
 # 📄 `TypeInfo.tsx`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 3 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 5 |
+| 📊 Variables & Constants | 1 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 20 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 4 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
+- [JSX Elements](#jsx-elements)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
-
-## 📊 Analysis Summary
-
-- **Functions**: 3
-- **Classes**: 0
-- **Imports**: 5
-- **Interfaces**: 4
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/website/src/components/typeDetails/TypeInfo.tsx`**
@@ -28,6 +39,43 @@
 | `OnHoverNodeFn` | `../ast/types` |
 | `ASTViewer` | `../ast/ASTViewer` |
 | `astStyles` | `../ast/ASTViewer.module.css` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `info` | `InfoModel` | const | `{}` | ✗ |
+
+
+---
+
+## JSX Elements
+
+| Component | Type | Props | Children |
+|-----------|------|-------|----------|
+| `div` | element | className={astStyles.list} | <span>, <span>, <span> |
+| `span` | element | className={astStyles.propClass} | {props.label} |
+| `span` | element | *none* | text: ":" |
+| `span` | element | className={astStyles.propString} | {String(props.value)} |
+| `Fragment` | fragment | *none* | <h4> |
+| `h4` | element | className="padding--sm margin--none" | {props.label} |
+| `Fragment` | fragment | *none* | <ASTViewer> |
+| `SimpleField` | component | label="typeToString()", value={props.string} | *none* |
+| `ASTViewer` | component | onHoverNode={props.onHoverNode}, value={props.type} | *none* |
+| `div` | element | className={astStyles.list} | text: "None" |
+| `div` | element | *none* | text: "TypeChecker not available" |
+| `div` | element | *none* | *none* |
+| `Fragment` | fragment | *none* | <h4>, <ASTViewer>, <TypeGroup>, <TypeGroup>, <TypeGroup>, <TypeGroup>, <TypeGroup> |
+| `h4` | element | className="padding--sm margin--none" | text: "Node" |
+| `ASTViewer` | component | onHoverNode={onHoverNode}, value={value} | *none* |
+| `TypeGroup` | component | label="Type", onHoverNode={onHoverNode}, string={computed.typeString}, type={computed.type} | *none* |
+| `TypeGroup` | component | label="Contextual Type", onHoverNode={onHoverNode}, string={computed.contextualTypeString}, type={computed.contextualType} | *none* |
+| `TypeGroup` | component | label="Symbol", onHoverNode={onHoverNode}, type={computed.symbol} | *none* |
+| `TypeGroup` | component | label="Signature", onHoverNode={onHoverNode}, type={computed.signature} | *none* |
+| `TypeGroup` | component | label="FlowNode", onHoverNode={onHoverNode}, type={computed.flowNode} | *none* |
 
 
 ---
@@ -198,13 +246,6 @@ export function TypeInfo({
 
 ---
 
-## Classes
-
-> No classes found in this file.
-
-
----
-
 ## Interfaces
 
 ### `TypeInfoProps`
@@ -298,13 +339,6 @@ interface TypeGroupProps {
 | `onHoverNode` | `OnHoverNodeFn` | ✓ |  |
 | `string` | `string` | ✓ |  |
 | `type` | `unknown` | ✓ |  |
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

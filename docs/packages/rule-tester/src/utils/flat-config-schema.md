@@ -2,21 +2,31 @@
 
 # 📄 `flat-config-schema.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 10 |
+| 🧱 Classes | 4 |
+| 📦 Imports | 3 |
+| 📊 Variables & Constants | 21 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 3 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Classes](#classes)
 - [Interfaces](#interfaces)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 10
-- **Classes**: 4
-- **Imports**: 3
-- **Interfaces**: 1
-- **Type Aliases**: 3
 
 ## 🛠️ File Location:
 📂 **`packages/rule-tester/src/utils/flat-config-schema.ts`**
@@ -28,6 +38,319 @@
 | `Processor` | `@typescript-eslint/utils/ts-eslint` |
 | `SharedConfig` | `@typescript-eslint/utils/ts-eslint` |
 | `normalizeSeverityToNumber` | `./severity` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `ruleSeverities` | `Map<SharedConfig.RuleLevel, SharedConfig.Severity>` | const | `new Map<SharedConfig.RuleLevel, SharedConfig.Severity>([
+  ['error', 2],
+  ['off', 0],
+  ['warn', 1],
+  [0, 0],
+  [1, 1],
+  [2, 2],
+])` | ✗ |
+| `result` | `First & ObjectLike & Second` | const | `{
+    ...first,
+    ...second,
+  } as First & ObjectLike & Second` | ✗ |
+| `firstValue` | `object` | const | `(first as ObjectLike)[key] as object | undefined` | ✗ |
+| `secondValue` | `object` | const | `(second as ObjectLike)[key] as object | undefined` | ✗ |
+| `finalOptions` | `any[]` | const | `Array.isArray(ruleOptions)
+    ? [...ruleOptions]
+    : [ruleOptions]` | ✗ |
+| `booleanSchema` | `{ merge: string; validate: string; }` | const | `{
+  merge: 'replace',
+  validate: 'boolean',
+} satisfies ObjectPropertySchema` | ✗ |
+| `ALLOWED_SEVERITIES` | `Set<string | number>` | const | `new Set([0, 1, 2, 'error', 'off', 'warn'])` | ✗ |
+| `value` | `any` | const | `second ?? first` | ✗ |
+| `disableDirectiveSeveritySchema` | `ObjectPropertySchema<SharedConfig.RuleLevel>` | const | `{
+    merge(
+      first: boolean | SharedConfig.RuleLevel | undefined,
+      second: boolean | SharedConfig.RuleLevel | undefined,
+    ): SharedConfig.RuleLevel {
+      const value = second ?? first;
+
+      if (typeof value === 'boolean') {
+        return value ? 'warn' : 'off';
+      }
+
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+      return normalizeSeverityToNumber(value!);
+    },
+    validate(value: unknown) {
+      if (
+        !(
+          ALLOWED_SEVERITIES.has(value as number | string) ||
+          typeof value === 'boolean'
+        )
+      ) {
+        throw new TypeError(
+          'Expected one of: "error", "warn", "off", 0, 1, 2, or a boolean.',
+        );
+      }
+    },
+  }` | ✗ |
+| `deepObjectAssignSchema` | `{ merge<First extends ObjectLike, Second extends ObjectLike>(first?: First, second?: Second): First & Second; validate: string; }` | const | `{
+  merge<First extends ObjectLike, Second extends ObjectLike>(
+    first = {} as First,
+    second = {} as Second,
+  ): First & Second {
+    return deepMerge(first, second);
+  },
+  validate: 'object',
+}` | ✗ |
+| `languageOptionsSchema` | `{ merge(first?: ObjectLike, second?: ObjectLike): object; validate: string; }` | const | `{
+  merge(first: ObjectLike = {}, second: ObjectLike = {}): object {
+    const result = deepMerge(first, second);
+
+    for (const [key, value] of Object.entries(result)) {
+      /*
+       * Special case: Because the `parser` property is an object, it should
+       * not be deep merged. Instead, it should be replaced if it exists in
+       * the second object. To make this more generic, we just check for
+       * objects with methods and replace them if they exist in the second
+       * object.
+       */
+      if (isNonArrayObject(value)) {
+        if (hasMethod(value as ObjectLike)) {
+          result[key] = second[key] ?? first[key];
+          continue;
+        }
+
+        // for other objects, make sure we aren't reusing the same object
+        result[key] = { ...(result[key] as ObjectLike) };
+        continue;
+      }
+    }
+
+    return result;
+  },
+  validate: 'object',
+}` | ✗ |
+| `languageSchema` | `ObjectPropertySchema<PluginMemberName>` | const | `{
+  merge: 'replace',
+  validate: assertIsPluginMemberName,
+}` | ✗ |
+| `keys` | `Set<string>` | const | `new Set([...Object.keys(first), ...Object.keys(second)])` | ✗ |
+| `result` | `ObjectLike` | const | `{}` | ✗ |
+| `pluginsSchema` | `{ merge(first?: ObjectLike, second?: ObjectLike): object; validate(value: unknown): void; }` | const | `{
+  merge(first: ObjectLike = {}, second: ObjectLike = {}): object {
+    const keys = new Set([...Object.keys(first), ...Object.keys(second)]);
+    const result: ObjectLike = {};
+
+    // manually validate that plugins are not redefined
+    for (const key of keys) {
+      // avoid hairy edge case
+      if (key === '__proto__') {
+        continue;
+      }
+
+      if (key in first && key in second && first[key] !== second[key]) {
+        throw new TypeError(`Cannot redefine plugin "${key}".`);
+      }
+
+      result[key] = second[key] || first[key];
+    }
+
+    return result;
+  },
+  validate(value: unknown): void {
+    // first check the value to be sure it's an object
+    if (value == null || typeof value !== 'object') {
+      throw new TypeError('Expected an object.');
+    }
+
+    // make sure it's not an array, which would mean eslintrc-style is used
+    if (Array.isArray(value)) {
+      throw new IncompatiblePluginsError(value as string[]);
+    }
+
+    // second check the keys to make sure they are objects
+    for (const key of Object.keys(value)) {
+      // avoid hairy edge case
+      if (key === '__proto__') {
+        continue;
+      }
+
+      if (
+        (value as ObjectLike)[key] == null ||
+        typeof (value as ObjectLike)[key] !== 'object'
+      ) {
+        throw new TypeError(`Key "${key}": Expected an object.`);
+      }
+    }
+  },
+}` | ✗ |
+| `processorSchema` | `ObjectPropertySchema<Processor.LooseProcessorModule>` | const | `{
+  merge: 'replace',
+  validate(value: unknown) {
+    if (typeof value === 'string') {
+      assertIsPluginMemberName(value);
+    } else if (value && typeof value === 'object') {
+      if (
+        typeof (value as Processor.LooseProcessorModule).preprocess !==
+          'function' ||
+        typeof (value as Processor.LooseProcessorModule).postprocess !==
+          'function'
+      ) {
+        throw new TypeError(
+          'Object must have a preprocess() and a postprocess() method.',
+        );
+      }
+    } else {
+      throw new TypeError('Expected an object or a string.');
+    }
+  },
+}` | ✗ |
+| `result` | `ConfigRules` | const | `{
+      ...first,
+      ...second,
+    }` | ✗ |
+| `ruleOptions` | `SharedConfig.RuleLevelAndOptions` | const | `value[ruleId]` | ✗ |
+| `rulesSchema` | `{ merge(first?: ConfigRules, second?: ConfigRules): ConfigRules; validate(value: ConfigRules): void; }` | const | `{
+  merge(first: ConfigRules = {}, second: ConfigRules = {}): ConfigRules {
+    const result: ConfigRules = {
+      ...first,
+      ...second,
+    };
+
+    for (const ruleId of Object.keys(result)) {
+      try {
+        // avoid hairy edge case
+        if (ruleId === '__proto__') {
+          delete result.__proto__;
+          continue;
+        }
+
+        result[ruleId] = normalizeRuleOptions(result[ruleId]);
+
+        /*
+         * If either rule config is missing, then the correct
+         * config is already present and we just need to normalize
+         * the severity.
+         */
+        if (!(ruleId in first) || !(ruleId in second)) {
+          continue;
+        }
+
+        const firstRuleOptions = normalizeRuleOptions(first[ruleId]);
+        const secondRuleOptions = normalizeRuleOptions(second[ruleId]);
+
+        /*
+         * If the second rule config only has a severity (length of 1),
+         * then use that severity and keep the rest of the options from
+         * the first rule config.
+         */
+        if (secondRuleOptions.length === 1) {
+          result[ruleId] = [secondRuleOptions[0], ...firstRuleOptions.slice(1)];
+          continue;
+        }
+
+        /*
+         * In any other situation, then the second rule config takes
+         * precedence. That means the value at `result[ruleId]` is
+         * already correct and no further work is necessary.
+         */
+      } catch (ex) {
+        throw new Error(`Key "${ruleId}": ${(ex as Error).message}`, {
+          cause: ex,
+        });
+      }
+    }
+
+    return result;
+  },
+
+  validate(value: ConfigRules): void {
+    assertIsObject(value);
+
+    /*
+     * We are not checking the rule schema here because there is no
+     * guarantee that the rule definition is present at this point. Instead
+     * we wait and check the rule schema during the finalization step
+     * of calculating a config.
+     */
+    for (const ruleId of Object.keys(value)) {
+      // avoid hairy edge case
+      if (ruleId === '__proto__') {
+        continue;
+      }
+
+      const ruleOptions = value[ruleId];
+
+      assertIsRuleOptions(ruleId, ruleOptions);
+
+      if (Array.isArray(ruleOptions)) {
+        assertIsRuleSeverity(ruleId, ruleOptions[0]);
+      } else {
+        assertIsRuleSeverity(ruleId, ruleOptions);
+      }
+    }
+  },
+}` | ✗ |
+| `eslintrcKeys` | `string[]` | const | `[
+  'env',
+  'extends',
+  'globals',
+  'ignorePatterns',
+  'noInlineConfig',
+  'overrides',
+  'parser',
+  'parserOptions',
+  'reportUnusedDisableDirectives',
+  'root',
+]` | ✗ |
+| `flatConfigSchema` | `{ language: ObjectPropertySchema<`${string}/${string}`>; languageOptions: { merge(first?: ObjectLike, second?: ObjectLike): object; validate: string; }; ... 8 more ...; $schema: { ...; }; }` | const | `{
+  $schema: { type: 'string' },
+
+  // Original ESLint schemas from flat-config-schema.js
+
+  // eslintrc-style keys that should always error
+  ...Object.fromEntries(
+    eslintrcKeys.map(key => [key, createEslintrcErrorSchema(key)]),
+  ),
+
+  // flat config keys
+  language: languageSchema,
+  languageOptions: languageOptionsSchema,
+  linterOptions: {
+    schema: {
+      noInlineConfig: booleanSchema,
+      reportUnusedDisableDirectives: disableDirectiveSeveritySchema,
+    },
+  },
+  plugins: pluginsSchema,
+  processor: processorSchema,
+  rules: rulesSchema,
+  settings: deepObjectAssignSchema,
+
+  // not in ESLint source, but seemingly relevant?
+  defaultFilenames: {
+    additionalProperties: false,
+    properties: {
+      ts: { type: 'string' },
+      tsx: { type: 'string' },
+    },
+    required: ['ts', 'tsx'],
+    type: 'object',
+  },
+
+  // @typescript-eslint/rule-tester extensions
+
+  dependencyConstraints: {
+    additionalProperties: {
+      type: 'string',
+    },
+    type: 'object',
+  },
+  files: { items: { type: 'string' }, type: 'array' },
+}` | ✓ |
 
 
 ---

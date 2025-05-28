@@ -2,19 +2,29 @@
 
 # 📄 `base-cases.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 3 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 3 |
+| 📊 Variables & Constants | 4 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 3
-- **Classes**: 0
-- **Imports**: 3
-- **Interfaces**: 0
-- **Type Aliases**: 2
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/tests/rules/prefer-optional-chain/base-cases.ts`**
@@ -26,6 +36,22 @@
 | `InvalidTestCase` | `@typescript-eslint/rule-tester` |
 | `PreferOptionalChainMessageIds` | `../../../src/rules/prefer-optional-chain-utils/PreferOptionalChainOptions` |
 | `PreferOptionalChainOptions` | `../../../src/rules/prefer-optional-chain-utils/PreferOptionalChainOptions` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `skipIdsSet` | `Set<number>` | const | `new Set(skipIds)` | ✗ |
+| `skipSpecifiedIds` | `(
+    arg: ReturnType<typeof RawBaseCases>[number],
+  ) => boolean` | const | `skipIds.length === 0
+      ? (): boolean => true
+      : ({ id }): boolean => !skipIdsSet.has(id)` | ✗ |
+| `code` | `string` | const | ``// ${id}\n${declaration}\n${mutateCode(chain)}`` | ✗ |
+| `output` | `string` | const | ``// ${id}\n${declaration}\n${mutateOutput(outputChain)}`` | ✗ |
 
 
 ---
@@ -349,20 +375,6 @@ c => c
   - `mutateDeclaration`
   - `mutateCode`
   - `mutateOutput`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
 
 ---
 

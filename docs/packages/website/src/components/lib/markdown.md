@@ -2,18 +2,28 @@
 
 # 📄 `markdown.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 5 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 2 |
+| 📊 Variables & Constants | 3 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 5
-- **Classes**: 0
-- **Imports**: 2
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/website/src/components/lib/markdown.ts`**
@@ -24,6 +34,28 @@
 |------|--------|
 | `ConfigModel` | `../types` |
 | `parseESLintRC` | `./parseConfig` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `code` | `string` | const | ``### ${title}\n\n\`\`\`${type}\n${value}\n\`\`\``` | ✗ |
+| `onlyRuleName` | `string` | const | `ruleKeys.length === 1
+      ? ruleKeys[0].replace('@typescript-eslint/', '')
+      : 'rule name here'` | ✗ |
+| `params` | `{ 'eslint-config': string; labels: string; 'playground-link': string; 'repro-code': string; template: string; title: string; 'typescript-config': string; versions: string; }` | const | `{
+    'eslint-config': `module.exports = ${state.eslintrc}`,
+    labels: 'bug,package: eslint-plugin,triage',
+    'playground-link': document.location.toString(),
+    'repro-code': state.code,
+    template: '01-bug-report-plugin.yaml',
+    title: `Bug: [${onlyRuleName}] <short description of the issue>`,
+    'typescript-config': state.tsconfig,
+    versions: generateVersionsTable(state.ts),
+  }` | ✗ |
 
 
 ---
@@ -197,26 +229,5 @@ export function createMarkdownParams(state: ConfigModel): string {
   - `document.location.toString`
   - `generateVersionsTable`
   - `new URLSearchParams(params).toString`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

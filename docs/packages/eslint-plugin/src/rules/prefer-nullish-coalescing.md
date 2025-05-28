@@ -2,19 +2,29 @@
 
 # 📄 `prefer-nullish-coalescing.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 16 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 21 |
+| 📊 Variables & Constants | 19 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 3 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 16
-- **Classes**: 0
-- **Imports**: 21
-- **Interfaces**: 0
-- **Type Aliases**: 3
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/prefer-nullish-coalescing.ts`**
@@ -44,6 +54,49 @@
 | `getOperatorPrecedenceForNode` | `../util` |
 | `OperatorPrecedence` | `../util` |
 | `getWrappedCode` | `../util/getWrappedCode` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `nullishCoalescingLeftNode` | `TSESTree.Node | undefined` | let/var | `*not shown*` | ✗ |
+| `hasTruthinessCheck` | `boolean` | let/var | `false` | ✗ |
+| `hasNullCheckWithoutTruthinessCheck` | `boolean` | let/var | `false` | ✗ |
+| `hasUndefinedCheckWithoutTruthinessCheck` | `boolean` | let/var | `false` | ✗ |
+| `hasNullType` | `boolean` | const | `(flags & ts.TypeFlags.Null) !== 0` | ✗ |
+| `hasUndefinedType` | `boolean` | const | `(flags & ts.TypeFlags.Undefined) !== 0` | ✗ |
+| `rightOperandReplacement` | `string` | const | `isParenthesized(
+                    nullishBranch,
+                    context.sourceCode,
+                  )
+                    ? nullishBranchText
+                    : getWrappedCode(
+                        nullishBranchText,
+                        getOperatorPrecedenceForNode(nullishBranch),
+                        OperatorPrecedence.Coalesce,
+                      )` | ✗ |
+| `assignmentExpression` | `TSESTree.Expression | undefined` | let/var | `*not shown*` | ✗ |
+| `nullishCoalescingLeftNode` | `any` | const | `assignmentExpression.left` | ✗ |
+| `nullishCoalescingRightNode` | `any` | const | `assignmentExpression.right` | ✗ |
+| `isConsequentNodeBlockStatement` | `boolean` | const | `node.consequent.type === AST_NODE_TYPES.BlockStatement` | ✗ |
+| `commentsAfter` | `string` | const | `isConsequentNodeBlockStatement
+            ? formatComments(
+                context.sourceCode.getCommentsAfter(
+                  assignmentExpression.parent,
+                ),
+                '\n',
+              )
+            : ''` | ✗ |
+| `fixes` | `TSESLint.RuleFix[]` | const | `[]` | ✗ |
+| `parent` | `any` | const | `node.parent` | ✗ |
+| `parent` | `any` | const | `node.parent` | ✗ |
+| `seen` | `Set<any>` | const | `new Set<TSESTree.Node | undefined>()` | ✗ |
+| `queue` | `any[]` | const | `[node.parent, node.left, node.right]` | ✗ |
+| `operator` | `NullishCheckOperator | null` | let/var | `null` | ✗ |
+| `nodesInsideTestExpression` | `TSESTree.Node[]` | let/var | `[]` | ✗ |
 
 
 ---
@@ -1004,20 +1057,6 @@ function formatComments(
         : `/*${value}*/${separator}`,
     )
     .join`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
 
 ---
 

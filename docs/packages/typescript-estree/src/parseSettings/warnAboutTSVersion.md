@@ -2,18 +2,28 @@
 
 # 📄 `warnAboutTSVersion.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 3 |
+| 📊 Variables & Constants | 5 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 3
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/typescript-estree/src/parseSettings/warnAboutTSVersion.ts`**
@@ -25,6 +35,19 @@
 | `semver` | `semver` |
 | `ParseSettings` | `./index` |
 | `TYPESCRIPT_ESTREE_VERSION` | `../version` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `SUPPORTED_TYPESCRIPT_VERSIONS` | `">=4.8.4 <5.9.0"` | const | `'>=4.8.4 <5.9.0'` | ✓ |
+| `SUPPORTED_PRERELEASE_RANGES` | `string[]` | const | `[]` | ✗ |
+| `ACTIVE_TYPESCRIPT_VERSION` | `any` | const | `ts.version` | ✗ |
+| `warnedAboutTSVersion` | `boolean` | let/var | `false` | ✗ |
+| `border` | `"============="` | const | `'============='` | ✗ |
 
 
 ---
@@ -97,27 +120,6 @@ export function warnAboutTSVersion(
 // See https://github.com/typescript-eslint/typescript-eslint/issues/7896
 // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

@@ -2,18 +2,28 @@
 
 # 📄 `useProvidedPrograms.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 2 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 5 |
+| 📊 Variables & Constants | 2 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 2
-- **Classes**: 0
-- **Imports**: 5
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/typescript-estree/src/create-program/useProvidedPrograms.ts`**
@@ -27,6 +37,19 @@
 | `ParseSettings` | `../parseSettings` |
 | `ASTAndDefiniteProgram` | `./shared` |
 | `getAstFromProgram` | `./shared` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `astAndProgram` | `ASTAndDefiniteProgram | undefined` | let/var | `*not shown*` | ✗ |
+| `errorLines` | `string[]` | const | `[
+    `"parserOptions.${typeSource}" has been provided for @typescript-eslint/parser.`,
+    `The file was not found in any of the provided ${typeSources}: ${relativeFilePath}`,
+  ]` | ✗ |
 
 
 ---
@@ -130,26 +153,5 @@ export function createProgramFromConfigFile(
   - `getParsedConfigFile (from @typescript-eslint/tsconfig-utils)`
   - `ts.createCompilerHost`
   - `ts.createProgram`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

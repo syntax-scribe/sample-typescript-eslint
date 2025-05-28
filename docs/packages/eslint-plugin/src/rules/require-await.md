@@ -2,20 +2,30 @@
 
 # 📄 `require-await.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 16 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 13 |
+| 📊 Variables & Constants | 5 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 1 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 16
-- **Classes**: 0
-- **Imports**: 13
-- **Interfaces**: 1
-- **Type Aliases**: 1
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/require-await.ts`**
@@ -37,6 +47,39 @@
 | `needsPrecedingSemicolon` | `../util` |
 | `nullThrows` | `../util` |
 | `upperCaseFirst` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `scopeInfo` | `ScopeInfo | null` | let/var | `null` | ✗ |
+| `nodeWithAsyncKeyword` | `any` | const | `(node.parent.type === AST_NODE_TYPES.MethodDefinition &&
+            node.parent.value === node) ||
+          (node.parent.type === AST_NODE_TYPES.Property &&
+            node.parent.method &&
+            node.parent.value === node)
+            ? node.parent
+            : node` | ✗ |
+| `asyncRange` | `Readonly<AST.Range>` | const | `[
+          asyncToken.range[0],
+          nullThrows(
+            context.sourceCode.getTokenAfter(asyncToken, {
+              includeComments: true,
+            }),
+            'There will always be a token after the "async" keyword.',
+          ).range[0],
+        ] as const` | ✗ |
+| `addSemiColon` | `boolean` | const | `nextToken.type === AST_TOKEN_TYPES.Punctuator &&
+          (nextToken.value === '[' || nextToken.value === '(') &&
+          (nodeWithAsyncKeyword.type === AST_NODE_TYPES.MethodDefinition ||
+            isStartOfExpressionStatement(nodeWithAsyncKeyword)) &&
+          needsPrecedingSemicolon(context.sourceCode, nodeWithAsyncKeyword)` | ✗ |
+| `changes` | `{ range: AST.Range; replacement: string; }[]` | const | `[
+          { range: asyncRange, replacement: addSemiColon ? ';' : undefined },
+        ]` | ✗ |
 
 
 ---
@@ -590,13 +633,6 @@ function hasTypeName(
   - `typeReference: TSESTree.TSTypeReference`
   - `typeName: string`
 - **Return Type**: `boolean`
-
----
-
-## Classes
-
-> No classes found in this file.
-
 
 ---
 

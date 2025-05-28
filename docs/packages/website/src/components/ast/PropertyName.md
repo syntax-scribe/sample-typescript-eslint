@@ -2,19 +2,29 @@
 
 # 📄 `PropertyName.tsx`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 5 |
+| 📊 Variables & Constants | 0 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 1 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [JSX Elements](#jsx-elements)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 5
-- **Interfaces**: 1
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/website/src/components/ast/PropertyName.tsx`**
@@ -28,6 +38,15 @@
 | `Link` | `@docusaurus/Link` |
 | `useCallback` | `react` |
 | `React` | `react` |
+
+
+---
+
+## JSX Elements
+
+| Component | Type | Props | Children |
+|-----------|------|-------|----------|
+| `Link` | component | className={className}, href={`#${value}`}, onClick={onClick}, onKeyDown={onKeyDown}, onMouseEnter={onMouseEnter}, onMouseLeave={onMouseLeave}, role="button", tabIndex={onClickProp && 0} | {value} |
 
 
 ---
@@ -110,13 +129,6 @@ export default function PropertyName({
 
 ---
 
-## Classes
-
-> No classes found in this file.
-
-
----
-
 ## Interfaces
 
 ### `PropertyNameProps`
@@ -141,13 +153,6 @@ export interface PropertyNameProps {
 | `onClick` | `() => void` | ✓ |  |
 | `onHover` | `(e: boolean) => void` | ✓ |  |
 | `value` | `string` | ✓ |  |
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

@@ -2,19 +2,29 @@
 
 # 📄 `TypesDetails.tsx`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 12 |
+| 📊 Variables & Constants | 0 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 8 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [JSX Elements](#jsx-elements)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 12
-- **Interfaces**: 1
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/website/src/components/typeDetails/TypesDetails.tsx`**
@@ -35,6 +45,22 @@
 | `styles` | `../Playground.module.css` |
 | `SimplifiedTreeView` | `./SimplifiedTreeView` |
 | `TypeInfo` | `./TypeInfo` |
+
+
+---
+
+## JSX Elements
+
+| Component | Type | Props | Children |
+|-----------|------|-------|----------|
+| `PanelGroup` | component | autoSaveId="playground-types", direction="horizontal" | <Panel>, <PanelResizeHandle>, <Panel> |
+| `Panel` | component | className={styles.PanelColumn}, collapsible={true}, defaultSize={35}, id="simplifiedTree" | <div> |
+| `div` | element | className={styles.playgroundInfoContainer} | <SimplifiedTreeView> |
+| `SimplifiedTreeView` | component | onHoverNode={onHoverNode}, onSelect={setSelectedNode}, selectedNode={selectedNode}, value={value} | *none* |
+| `PanelResizeHandle` | component | className={styles.PanelResizeHandle} | *none* |
+| `Panel` | component | className={styles.PanelColumn}, collapsible={true}, id="typeInfo" | <div> |
+| `div` | element | className={styles.playgroundInfoContainer} | <TypeInfo> |
+| `TypeInfo` | component | onHoverNode={onHoverNode}, typeChecker={typeChecker}, value={selectedNode} | *none* |
 
 
 ---
@@ -118,13 +144,6 @@ export function TypesDetails({
 
 ---
 
-## Classes
-
-> No classes found in this file.
-
-
----
-
 ## Interfaces
 
 ### `TypesDetailsProps`
@@ -149,13 +168,6 @@ export interface TypesDetailsProps {
 | `onHoverNode` | `OnHoverNodeFn` | ✓ |  |
 | `typeChecker` | `ts.TypeChecker` | ✓ |  |
 | `value` | `ts.Node` | ✗ |  |
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

@@ -2,19 +2,29 @@
 
 # 📄 `no-empty-object-type.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 33 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 3 |
+| 📊 Variables & Constants | 4 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 4 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 33
-- **Classes**: 0
-- **Imports**: 3
-- **Interfaces**: 0
-- **Type Aliases**: 4
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/no-empty-object-type.ts`**
@@ -26,6 +36,24 @@
 | `TSESLint` | `@typescript-eslint/utils` |
 | `AST_NODE_TYPES` | `@typescript-eslint/utils` |
 | `createRule` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `allowWithNameTester` | `RegExp` | const | `allowWithName
+      ? new RegExp(allowWithName, 'u')
+      : undefined` | ✗ |
+| `extend` | `any` | const | `node.extends` | ✗ |
+| `typeParam` | `any` | const | `node.typeParameters
+                      ? context.sourceCode.getText(node.typeParameters)
+                      : ''` | ✗ |
+| `typeParam` | `any` | const | `node.typeParameters
+                      ? context.sourceCode.getText(node.typeParameters)
+                      : ''` | ✗ |
 
 
 ---
@@ -537,20 +565,6 @@
 - **Return Type**: `TSESLint.RuleFix`
 - **Calls**:
   - `fixer.replaceText`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
 
 ---
 

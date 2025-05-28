@@ -2,19 +2,29 @@
 
 # 📄 `rules.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 6 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 4 |
+| 📊 Variables & Constants | 2 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 1 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 6
-- **Classes**: 0
-- **Imports**: 4
-- **Interfaces**: 0
-- **Type Aliases**: 1
 
 ## 🛠️ File Location:
 📂 **`packages/website/plugins/utils/rules.ts`**
@@ -27,6 +37,19 @@
 | `RuleModule` | `@typescript-eslint/utils/ts-eslint` |
 | `VFile` | `vfile` |
 | `nodeIsHeading` | `./nodes` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `sourceUrlPrefix` | `"https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/"` | const | `'https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/'` | ✓ |
+| `childMatch` | `(node: mdast.PhrasingContent) => boolean` | const | `typeof contents === 'string'
+      ? (node: mdast.PhrasingContent): boolean =>
+          node.type === 'text' && node.value === contents
+      : contents` | ✗ |
 
 
 ---
@@ -175,20 +198,6 @@ export function findHeadingIndex(
   - `children.findIndex`
   - `nodeIsHeading (from ./nodes)`
   - `childMatch`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
 
 ---
 

@@ -2,18 +2,28 @@
 
 # 📄 `visitor-keys.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 0 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 2 |
+| 📊 Variables & Constants | 4 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 4 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 0
-- **Classes**: 0
-- **Imports**: 2
-- **Interfaces**: 0
-- **Type Aliases**: 4
 
 ## 🛠️ File Location:
 📂 **`packages/visitor-keys/src/visitor-keys.ts`**
@@ -28,23 +38,132 @@
 
 ---
 
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `FunctionType` | `readonly ["typeParameters", "params", "returnType"]` | const | `['typeParameters', 'params', 'returnType'] as const` | ✗ |
+| `AnonymousFunction` | `readonly ["typeParameters", "params", "returnType", "body"]` | const | `[...FunctionType, 'body'] as const` | ✗ |
+| `AbstractPropertyDefinition` | `readonly ["decorators", "key", "typeAnnotation"]` | const | `[
+    'decorators',
+    'key',
+    'typeAnnotation',
+  ] as const` | ✗ |
+| `additionalKeys` | `AdditionalKeys` | const | `{
+  AccessorProperty: SharedVisitorKeys.PropertyDefinition,
+  ArrayPattern: ['decorators', 'elements', 'typeAnnotation'],
+  ArrowFunctionExpression: SharedVisitorKeys.AnonymousFunction,
+  AssignmentPattern: ['decorators', 'left', 'right', 'typeAnnotation'],
+  CallExpression: ['callee', 'typeArguments', 'arguments'],
+  ClassDeclaration: SharedVisitorKeys.ClassDeclaration,
+  ClassExpression: SharedVisitorKeys.ClassDeclaration,
+  Decorator: ['expression'],
+  ExportAllDeclaration: ['exported', 'source', 'attributes'],
+  ExportNamedDeclaration: ['declaration', 'specifiers', 'source', 'attributes'],
+  FunctionDeclaration: SharedVisitorKeys.Function,
+  FunctionExpression: SharedVisitorKeys.Function,
+  Identifier: ['decorators', 'typeAnnotation'],
+  ImportAttribute: ['key', 'value'],
+  ImportDeclaration: ['specifiers', 'source', 'attributes'],
+  ImportExpression: ['source', 'options'],
+  JSXClosingFragment: [],
+  JSXOpeningElement: ['name', 'typeArguments', 'attributes'],
+  JSXOpeningFragment: [],
+  JSXSpreadChild: ['expression'],
+  MethodDefinition: ['decorators', 'key', 'value'],
+  NewExpression: ['callee', 'typeArguments', 'arguments'],
+  ObjectPattern: ['decorators', 'properties', 'typeAnnotation'],
+  PropertyDefinition: SharedVisitorKeys.PropertyDefinition,
+  RestElement: ['decorators', 'argument', 'typeAnnotation'],
+  StaticBlock: ['body'],
+  TaggedTemplateExpression: ['tag', 'typeArguments', 'quasi'],
+  TSAbstractAccessorProperty: SharedVisitorKeys.AbstractPropertyDefinition,
+  TSAbstractKeyword: [],
+  TSAbstractMethodDefinition: ['key', 'value'],
+  TSAbstractPropertyDefinition: SharedVisitorKeys.AbstractPropertyDefinition,
+  TSAnyKeyword: [],
+  TSArrayType: ['elementType'],
+  TSAsExpression: SharedVisitorKeys.AsExpression,
+  TSAsyncKeyword: [],
+  TSBigIntKeyword: [],
+  TSBooleanKeyword: [],
+  TSCallSignatureDeclaration: SharedVisitorKeys.FunctionType,
+  TSClassImplements: ['expression', 'typeArguments'],
+  TSConditionalType: ['checkType', 'extendsType', 'trueType', 'falseType'],
+  TSConstructorType: SharedVisitorKeys.FunctionType,
+  TSConstructSignatureDeclaration: SharedVisitorKeys.FunctionType,
+  TSDeclareFunction: SharedVisitorKeys.Function,
+  TSDeclareKeyword: [],
+  TSEmptyBodyFunctionExpression: ['id', ...SharedVisitorKeys.FunctionType],
+  TSEnumBody: ['members'],
+  TSEnumDeclaration: ['id', 'body'],
+  TSEnumMember: ['id', 'initializer'],
+  TSExportAssignment: ['expression'],
+  TSExportKeyword: [],
+  TSExternalModuleReference: ['expression'],
+  TSFunctionType: SharedVisitorKeys.FunctionType,
+  TSImportEqualsDeclaration: ['id', 'moduleReference'],
+  TSImportType: ['argument', 'qualifier', 'typeArguments', 'options'],
+  TSIndexedAccessType: ['indexType', 'objectType'],
+  TSIndexSignature: ['parameters', 'typeAnnotation'],
+  TSInferType: ['typeParameter'],
+  TSInstantiationExpression: ['expression', 'typeArguments'],
+  TSInterfaceBody: ['body'],
+  TSInterfaceDeclaration: ['id', 'typeParameters', 'extends', 'body'],
+  TSInterfaceHeritage: ['expression', 'typeArguments'],
+  TSIntersectionType: ['types'],
+  TSIntrinsicKeyword: [],
+  TSLiteralType: ['literal'],
+  TSMappedType: ['key', 'constraint', 'nameType', 'typeAnnotation'],
+  TSMethodSignature: ['typeParameters', 'key', 'params', 'returnType'],
+  TSModuleBlock: ['body'],
+  TSModuleDeclaration: ['id', 'body'],
+  TSNamedTupleMember: ['label', 'elementType'],
+  TSNamespaceExportDeclaration: ['id'],
+  TSNeverKeyword: [],
+  TSNonNullExpression: ['expression'],
+  TSNullKeyword: [],
+  TSNumberKeyword: [],
+  TSObjectKeyword: [],
+  TSOptionalType: ['typeAnnotation'],
+  TSParameterProperty: ['decorators', 'parameter'],
+  TSPrivateKeyword: [],
+  TSPropertySignature: ['typeAnnotation', 'key'],
+  TSProtectedKeyword: [],
+  TSPublicKeyword: [],
+  TSQualifiedName: ['left', 'right'],
+  TSReadonlyKeyword: [],
+  TSRestType: ['typeAnnotation'],
+  TSSatisfiesExpression: SharedVisitorKeys.AsExpression,
+  TSStaticKeyword: [],
+  TSStringKeyword: [],
+  TSSymbolKeyword: [],
+  TSTemplateLiteralType: ['quasis', 'types'],
+  TSThisType: [],
+  TSTupleType: ['elementTypes'],
+  TSTypeAliasDeclaration: ['id', 'typeParameters', 'typeAnnotation'],
+  TSTypeAnnotation: ['typeAnnotation'],
+  TSTypeAssertion: ['typeAnnotation', 'expression'],
+  TSTypeLiteral: ['members'],
+  TSTypeOperator: ['typeAnnotation'],
+  TSTypeParameter: ['name', 'constraint', 'default'],
+  TSTypeParameterDeclaration: ['params'],
+  TSTypeParameterInstantiation: ['params'],
+  TSTypePredicate: ['typeAnnotation', 'parameterName'],
+  TSTypeQuery: ['exprName', 'typeArguments'],
+  TSTypeReference: ['typeName', 'typeArguments'],
+  TSUndefinedKeyword: [],
+  TSUnionType: ['types'],
+  TSUnknownKeyword: [],
+  TSVoidKeyword: [],
+}` | ✗ |
+
+
+---
+
 ## 🔧 Functions
 
 > No functions found in this file.
-
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
 
 
 ---

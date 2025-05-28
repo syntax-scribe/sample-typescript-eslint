@@ -2,19 +2,29 @@
 
 # 📄 `getOperatorPrecedence.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 3 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 4 |
+| 📊 Variables & Constants | 0 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 1 |
+| 🎯 Enums | 1 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 3
-- **Classes**: 0
-- **Imports**: 4
-- **Interfaces**: 0
-- **Type Aliases**: 1
+- [Enums](#enums)
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/util/getOperatorPrecedence.ts`**
@@ -385,20 +395,6 @@ export function getBinaryOperatorPrecedence(
 
 ---
 
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
 ## Type Aliases
 
 ### `TSESTreeOperatorKind`
@@ -407,6 +403,240 @@ export function getBinaryOperatorPrecedence(
 type TSESTreeOperatorKind = | ValueOf<TSESTree.BinaryOperatorToText>
   | ValueOf<TSESTree.PunctuatorTokenToText>;
 ```
+
+
+---
+
+## Enums
+
+### `enum OperatorPrecedence`
+
+<details><summary>Enum Code</summary>
+
+```ts
+export enum OperatorPrecedence {
+  // Expression:
+  //     AssignmentExpression
+  //     Expression `,` AssignmentExpression
+  Comma,
+
+  // NOTE: `Spread` is higher than `Comma` due to how it is parsed in |ElementList|
+  // SpreadElement:
+  //     `...` AssignmentExpression
+  Spread,
+
+  // AssignmentExpression:
+  //     ConditionalExpression
+  //     YieldExpression
+  //     ArrowFunction
+  //     AsyncArrowFunction
+  //     LeftHandSideExpression `=` AssignmentExpression
+  //     LeftHandSideExpression AssignmentOperator AssignmentExpression
+  //
+  // NOTE: AssignmentExpression is broken down into several precedences due to the requirements
+  //       of the parenthesize rules.
+
+  // AssignmentExpression: YieldExpression
+  // YieldExpression:
+  //     `yield`
+  //     `yield` AssignmentExpression
+  //     `yield` `*` AssignmentExpression
+  Yield,
+
+  // AssignmentExpression: LeftHandSideExpression `=` AssignmentExpression
+  // AssignmentExpression: LeftHandSideExpression AssignmentOperator AssignmentExpression
+  // AssignmentOperator: one of
+  //     `*=` `/=` `%=` `+=` `-=` `<<=` `>>=` `>>>=` `&=` `^=` `|=` `**=`
+  Assignment,
+
+  // NOTE: `Conditional` is considered higher than `Assignment` here, but in reality they have
+  //       the same precedence.
+  // AssignmentExpression: ConditionalExpression
+  // ConditionalExpression:
+  //     ShortCircuitExpression
+  //     ShortCircuitExpression `?` AssignmentExpression `:` AssignmentExpression
+  // ShortCircuitExpression:
+  //     LogicalORExpression
+  //     CoalesceExpression
+  Conditional,
+
+  // CoalesceExpression:
+  //     CoalesceExpressionHead `??` BitwiseORExpression
+  // CoalesceExpressionHead:
+  //     CoalesceExpression
+  //     BitwiseORExpression
+  Coalesce = Conditional, // NOTE: This is wrong
+
+  // LogicalORExpression:
+  //     LogicalANDExpression
+  //     LogicalORExpression `||` LogicalANDExpression
+  LogicalOR,
+
+  // LogicalANDExpression:
+  //     BitwiseORExpression
+  //     LogicalANDExpression `&&` BitwiseORExpression
+  LogicalAND,
+
+  // BitwiseORExpression:
+  //     BitwiseXORExpression
+  //     BitwiseORExpression `^` BitwiseXORExpression
+  BitwiseOR,
+
+  // BitwiseXORExpression:
+  //     BitwiseANDExpression
+  //     BitwiseXORExpression `^` BitwiseANDExpression
+  BitwiseXOR,
+
+  // BitwiseANDExpression:
+  //     EqualityExpression
+  //     BitwiseANDExpression `^` EqualityExpression
+  BitwiseAND,
+
+  // EqualityExpression:
+  //     RelationalExpression
+  //     EqualityExpression `==` RelationalExpression
+  //     EqualityExpression `!=` RelationalExpression
+  //     EqualityExpression `===` RelationalExpression
+  //     EqualityExpression `!==` RelationalExpression
+  Equality,
+
+  // RelationalExpression:
+  //     ShiftExpression
+  //     RelationalExpression `<` ShiftExpression
+  //     RelationalExpression `>` ShiftExpression
+  //     RelationalExpression `<=` ShiftExpression
+  //     RelationalExpression `>=` ShiftExpression
+  //     RelationalExpression `instanceof` ShiftExpression
+  //     RelationalExpression `in` ShiftExpression
+  //     [+TypeScript] RelationalExpression `as` Type
+  Relational,
+
+  // ShiftExpression:
+  //     AdditiveExpression
+  //     ShiftExpression `<<` AdditiveExpression
+  //     ShiftExpression `>>` AdditiveExpression
+  //     ShiftExpression `>>>` AdditiveExpression
+  Shift,
+
+  // AdditiveExpression:
+  //     MultiplicativeExpression
+  //     AdditiveExpression `+` MultiplicativeExpression
+  //     AdditiveExpression `-` MultiplicativeExpression
+  Additive,
+
+  // MultiplicativeExpression:
+  //     ExponentiationExpression
+  //     MultiplicativeExpression MultiplicativeOperator ExponentiationExpression
+  // MultiplicativeOperator: one of `*`, `/`, `%`
+  Multiplicative,
+
+  // ExponentiationExpression:
+  //     UnaryExpression
+  //     UpdateExpression `**` ExponentiationExpression
+  Exponentiation,
+
+  // UnaryExpression:
+  //     UpdateExpression
+  //     `delete` UnaryExpression
+  //     `void` UnaryExpression
+  //     `typeof` UnaryExpression
+  //     `+` UnaryExpression
+  //     `-` UnaryExpression
+  //     `~` UnaryExpression
+  //     `!` UnaryExpression
+  //     AwaitExpression
+  // UpdateExpression:            // TODO: Do we need to investigate the precedence here?
+  //     `++` UnaryExpression
+  //     `--` UnaryExpression
+  Unary,
+
+  // UpdateExpression:
+  //     LeftHandSideExpression
+  //     LeftHandSideExpression `++`
+  //     LeftHandSideExpression `--`
+  Update,
+
+  // LeftHandSideExpression:
+  //     NewExpression
+  //     CallExpression
+  // NewExpression:
+  //     MemberExpression
+  //     `new` NewExpression
+  LeftHandSide,
+
+  // CallExpression:
+  //     CoverCallExpressionAndAsyncArrowHead
+  //     SuperCall
+  //     ImportCall
+  //     CallExpression Arguments
+  //     CallExpression `[` Expression `]`
+  //     CallExpression `.` IdentifierName
+  //     CallExpression TemplateLiteral
+  // MemberExpression:
+  //     PrimaryExpression
+  //     MemberExpression `[` Expression `]`
+  //     MemberExpression `.` IdentifierName
+  //     MemberExpression TemplateLiteral
+  //     SuperProperty
+  //     MetaProperty
+  //     `new` MemberExpression Arguments
+  Member,
+
+  // TODO: JSXElement?
+  // PrimaryExpression:
+  //     `this`
+  //     IdentifierReference
+  //     Literal
+  //     ArrayLiteral
+  //     ObjectLiteral
+  //     FunctionExpression
+  //     ClassExpression
+  //     GeneratorExpression
+  //     AsyncFunctionExpression
+  //     AsyncGeneratorExpression
+  //     RegularExpressionLiteral
+  //     TemplateLiteral
+  //     CoverParenthesizedExpressionAndArrowParameterList
+  Primary,
+
+  Highest = Primary,
+  Lowest = Comma,
+  // -1 is lower than all other precedences. Returning it will cause binary expression
+  // parsing to stop.
+  Invalid = -1,
+}
+```
+</details>
+
+#### Members
+
+| Name | Value | Description |
+|------|-------|-------------|
+| `Comma` | *auto* |  |
+| `Spread` | *auto* |  |
+| `Yield` | *auto* |  |
+| `Assignment` | *auto* |  |
+| `Conditional` | *auto* |  |
+| `Coalesce` | `Conditional` |  |
+| `LogicalOR` | *auto* |  |
+| `LogicalAND` | *auto* |  |
+| `BitwiseOR` | *auto* |  |
+| `BitwiseXOR` | *auto* |  |
+| `BitwiseAND` | *auto* |  |
+| `Equality` | *auto* |  |
+| `Relational` | *auto* |  |
+| `Shift` | *auto* |  |
+| `Additive` | *auto* |  |
+| `Multiplicative` | *auto* |  |
+| `Exponentiation` | *auto* |  |
+| `Unary` | *auto* |  |
+| `Update` | *auto* |  |
+| `LeftHandSide` | *auto* |  |
+| `Member` | *auto* |  |
+| `Primary` | *auto* |  |
+| `Highest` | `Primary` |  |
+| `Lowest` | `Comma` |  |
+| `Invalid` | `-1` |  |
 
 
 ---

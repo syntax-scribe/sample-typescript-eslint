@@ -2,20 +2,30 @@
 
 # 📄 `no-use-before-define.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 15 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 6 |
+| 📊 Variables & Constants | 11 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 15
-- **Classes**: 0
-- **Imports**: 6
-- **Interfaces**: 1
-- **Type Aliases**: 2
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/no-use-before-define.ts`**
@@ -30,6 +40,25 @@
 | `TSESLint` | `@typescript-eslint/utils` |
 | `createRule` | `../util` |
 | `referenceContainsTypeQuery` | `../util/referenceContainsTypeQuery` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `SENTINEL_TYPE` | `RegExp` | const | `/^(?:(?:Function|Class)(?:Declaration|Expression)|ArrowFunctionExpression|CatchClause|ImportDeclaration|ExportNamedDeclaration)$/` | ✗ |
+| `functions` | `boolean` | let/var | `true` | ✗ |
+| `classes` | `boolean` | let/var | `true` | ✗ |
+| `enums` | `boolean` | let/var | `true` | ✗ |
+| `variables` | `boolean` | let/var | `true` | ✗ |
+| `typedefs` | `boolean` | let/var | `true` | ✗ |
+| `ignoreTypeReferences` | `boolean` | let/var | `true` | ✗ |
+| `allowNamedExports` | `boolean` | let/var | `false` | ✗ |
+| `node` | `TSESTree.Node | undefined` | let/var | `variable.identifiers[0].parent` | ✗ |
+| `location` | `any` | const | `reference.identifier.range[1]` | ✗ |
+| `variable` | `any` | const | `reference.resolved` | ✗ |
 
 
 ---
@@ -580,13 +609,6 @@ function report(): void {
 - **Return Type**: `void`
 - **Calls**:
   - `context.report`
-
----
-
-## Classes
-
-> No classes found in this file.
-
 
 ---
 

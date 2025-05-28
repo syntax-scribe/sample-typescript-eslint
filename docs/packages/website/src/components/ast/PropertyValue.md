@@ -2,19 +2,29 @@
 
 # 📄 `PropertyValue.tsx`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 2 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 6 |
+| 📊 Variables & Constants | 0 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 3 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 2 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [JSX Elements](#jsx-elements)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
-
-## 📊 Analysis Summary
-
-- **Functions**: 2
-- **Classes**: 0
-- **Imports**: 6
-- **Interfaces**: 2
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/website/src/components/ast/PropertyValue.tsx`**
@@ -29,6 +39,20 @@
 | `React` | `react` |
 | `styles` | `./ASTViewer.module.css` |
 | `objType` | `./utils` |
+
+
+---
+
+## JSX Elements
+
+| Component | Type | Props | Children |
+|-----------|------|-------|----------|
+| `span` | element | className={model.className} | {!expand ? `${model.shortValue}...` : model.value}, {' '}, <Link> |
+| `Link` | component | className={styles.propEllipsis}, href="#read-more", onClick={(e): void => {
+            e.preventDefault();
+            setExpand(expand => !expand);
+          }} | {!expand ? '(read more)' : '(read less)'} |
+| `span` | element | className={model.className} | {model.value} |
 
 
 ---
@@ -146,13 +170,6 @@ function PropertyValue({ value }: PropertyValueProps): React.JSX.Element {
 
 ---
 
-## Classes
-
-> No classes found in this file.
-
-
----
-
 ## Interfaces
 
 ### `PropertyValueProps`
@@ -192,13 +209,6 @@ interface SimpleModel {
 | `className` | `string` | ✗ |  |
 | `shortValue` | `string` | ✓ |  |
 | `value` | `string` | ✗ |  |
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

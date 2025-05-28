@@ -2,19 +2,29 @@
 
 # 📄 `helpers.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 5 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 3 |
+| 📊 Variables & Constants | 2 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 5
-- **Classes**: 0
-- **Imports**: 3
-- **Interfaces**: 0
-- **Type Aliases**: 2
 
 ## 🛠️ File Location:
 📂 **`packages/utils/src/ast-utils/helpers.ts`**
@@ -26,6 +36,16 @@
 | `AST_NODE_TYPES` | `../ts-estree` |
 | `AST_TOKEN_TYPES` | `../ts-estree` |
 | `TSESTree` | `../ts-estree` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `entries` | `ObjectEntries<TSESTree.Node>` | const | `Object.entries(conditions) as ObjectEntries<TSESTree.Node>` | ✗ |
+| `entries` | `ObjectEntries<TSESTree.Token>` | const | `Object.entries(conditions) as ObjectEntries<TSESTree.Token>` | ✗ |
 
 
 ---
@@ -170,20 +190,6 @@
 - **Return Type**: `((
     token: TSESTree.Token | null | undefined,
   ) => token is Exclude<TSESTree.Token, Conditions & ExtractedToken>)`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
 
 ---
 

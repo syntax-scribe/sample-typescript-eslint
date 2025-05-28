@@ -2,18 +2,28 @@
 
 # 📄 `spec.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 0 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 5 |
+| 📊 Variables & Constants | 0 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 1 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Re-exports](#re-exports)
 - [Interfaces](#interfaces)
-
-## 📊 Analysis Summary
-
-- **Functions**: 0
-- **Classes**: 0
-- **Imports**: 5
-- **Interfaces**: 1
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/expression/AssignmentExpression/spec.ts`**
@@ -31,16 +41,18 @@
 
 ---
 
-## 🔧 Functions
+## Re-exports
 
-> No functions found in this file.
+| Type | Source | Exported Names |
+|------|--------|----------------|
+| namespace | `./AssignmentOperatorToText` | * |
 
 
 ---
 
-## Classes
+## 🔧 Functions
 
-> No classes found in this file.
+> No functions found in this file.
 
 
 ---
@@ -69,13 +81,6 @@ export interface AssignmentExpression extends BaseNode {
 | `left` | `Expression` | ✗ |  |
 | `operator` | `ValueOf<AssignmentOperatorToText>` | ✗ |  |
 | `right` | `Expression` | ✗ |  |
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

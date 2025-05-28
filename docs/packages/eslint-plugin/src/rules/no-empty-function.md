@@ -2,19 +2,29 @@
 
 # 📄 `no-empty-function.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 5 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 8 |
+| 📊 Variables & Constants | 4 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 5
-- **Classes**: 0
-- **Imports**: 8
-- **Interfaces**: 0
-- **Type Aliases**: 2
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/no-empty-function.ts`**
@@ -31,6 +41,56 @@
 | `createRule` | `../util` |
 | `deepMerge` | `../util` |
 | `getESLintCoreRule` | `../util/getESLintCoreRule` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `defaultOptions` | `Options` | const | `[
+  {
+    allow: [],
+  },
+]` | ✗ |
+| `schema` | `JSONSchema4` | const | `deepMerge(
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-argument -- https://github.com/microsoft/TypeScript/issues/17002
+  Array.isArray(baseRule.meta.schema)
+    ? baseRule.meta.schema[0]
+    : baseRule.meta.schema,
+  {
+    properties: {
+      allow: {
+        description:
+          'Locations and kinds of functions that are allowed to be empty.',
+        items: {
+          type: 'string',
+          enum: [
+            'functions',
+            'arrowFunctions',
+            'generatorFunctions',
+            'methods',
+            'generatorMethods',
+            'getters',
+            'setters',
+            'constructors',
+            'private-constructors',
+            'protected-constructors',
+            'asyncFunctions',
+            'asyncMethods',
+            'decoratedFunctions',
+            'overrideMethods',
+          ],
+        },
+      },
+    },
+  },
+) as unknown as JSONSchema4` | ✗ |
+| `parent` | `any` | const | `node.parent` | ✗ |
+| `decorators` | `any` | const | `node.parent.type === AST_NODE_TYPES.MethodDefinition
+            ? node.parent.decorators
+            : undefined` | ✗ |
 
 
 ---
@@ -204,20 +264,6 @@ function isAllowedEmptyOverrideMethod(
 - **Return Type**: `boolean`
 - **Calls**:
   - `isBodyEmpty`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
 
 ---
 

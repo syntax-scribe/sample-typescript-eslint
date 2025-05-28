@@ -2,20 +2,30 @@
 
 # 📄 `ScopeBase.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 16 |
+| 🧱 Classes | 1 |
+| 📦 Imports | 18 |
+| 📊 Variables & Constants | 16 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Classes](#classes)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 16
-- **Classes**: 1
-- **Imports**: 18
-- **Interfaces**: 0
-- **Type Aliases**: 2
 
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/src/scope/ScopeBase.ts`**
@@ -42,6 +52,61 @@
 | `ReferenceTypeFlag` | `../referencer/Reference` |
 | `Variable` | `../variable` |
 | `ScopeType` | `./ScopeType` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `body` | `TSESTree.BlockStatement | TSESTree.Program | null | undefined` | let/var | `*not shown*` | ✗ |
+| `functionBody` | `any` | const | `block as FunctionScope['block']` | ✗ |
+| `expr` | `any` | const | `stmt.expression` | ✗ |
+| `VARIABLE_SCOPE_TYPES` | `Set<ScopeType>` | const | `new Set([
+  ScopeType.classFieldInitializer,
+  ScopeType.classStaticBlock,
+  ScopeType.function,
+  ScopeType.global,
+  ScopeType.module,
+  ScopeType.tsModule,
+])` | ✗ |
+| `current` | `Scope` | let/var | `this as Scope | null` | ✗ |
+| `name` | `any` | const | `ref.identifier.name` | ✗ |
+| `isValidTypeReference` | `boolean` | const | `ref.isTypeReference && variable.isTypeVariable` | ✗ |
+| `isValidValueReference` | `boolean` | const | `ref.isValueReference && variable.isValueVariable` | ✗ |
+| `upperScopeAsScopeBase` | `Upper` | const | `upperScope` | ✗ |
+| `name` | `any` | const | `ref.identifier.name` | ✗ |
+| `defs` | `Definition[]` | const | `variable.defs` | ✗ |
+| `closeRef` | `(ref: Reference, scopeManager: ScopeManager) => void` | let/var | `*not shown*` | ✗ |
+| `name` | `string` | const | `typeof nameOrVariable === 'string' ? nameOrVariable : nameOrVariable.name` | ✗ |
+| `ref` | `Reference` | const | `new Reference(
+      node,
+      this as Scope,
+      ReferenceFlag.Read,
+      null,
+      null,
+      false,
+      ReferenceTypeFlag.Type | ReferenceTypeFlag.Value,
+    )` | ✗ |
+| `ref` | `Reference` | const | `new Reference(
+      node,
+      this as Scope,
+      ReferenceFlag.Read,
+      null,
+      null,
+      false,
+      ReferenceTypeFlag.Type,
+    )` | ✗ |
+| `ref` | `Reference` | const | `new Reference(
+      node,
+      this as Scope,
+      assign,
+      writeExpr,
+      maybeImplicitGlobal,
+      init,
+      ReferenceTypeFlag.Value,
+    )` | ✗ |
 
 
 ---
@@ -1254,13 +1319,6 @@ public referenceValue(
   }
 ```
 </details>
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
 
 
 ---

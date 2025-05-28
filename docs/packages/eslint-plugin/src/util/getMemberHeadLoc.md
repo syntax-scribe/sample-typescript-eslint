@@ -2,18 +2,28 @@
 
 # 📄 `getMemberHeadLoc.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 2 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 4 |
+| 📊 Variables & Constants | 5 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 2
-- **Classes**: 0
-- **Imports**: 4
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/util/getMemberHeadLoc.ts`**
@@ -26,6 +36,19 @@
 | `TSESTree` | `@typescript-eslint/utils` |
 | `nullThrows` | `@typescript-eslint/utils/eslint-utils` |
 | `NullThrowsReasons` | `@typescript-eslint/utils/eslint-utils` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `start` | `TSESTree.Position` | let/var | `*not shown*` | ✗ |
+| `lastDecorator` | `any` | const | `node.decorators[node.decorators.length - 1]` | ✗ |
+| `end` | `TSESTree.Position` | let/var | `*not shown*` | ✗ |
+| `start` | `TSESTree.Position` | let/var | `*not shown*` | ✗ |
+| `lastDecorator` | `any` | const | `node.decorators[node.decorators.length - 1]` | ✗ |
 
 
 ---
@@ -194,27 +217,6 @@ export function getParameterPropertyHeadLoc(
 // Parameter properties have a weirdly different AST structure (x2)
 // than other class members. (x2)
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

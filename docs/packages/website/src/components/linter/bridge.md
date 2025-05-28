@@ -2,18 +2,28 @@
 
 # 📄 `bridge.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 4 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 4 |
+| 📊 Variables & Constants | 4 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 4
-- **Classes**: 0
-- **Imports**: 4
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/website/src/components/linter/bridge.ts`**
@@ -26,6 +36,18 @@
 | `PlaygroundSystem` | `./types` |
 | `debounce` | `../lib/debounce` |
 | `getPathRegExp` | `./utils` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `files` | `Map<string, string>` | const | `new Map<string, string>()` | ✗ |
+| `fileWatcherCallbacks` | `Map<RegExp, Set<ts.FileWatcherCallback>>` | const | `new Map<RegExp, Set<ts.FileWatcherCallback>>()` | ✗ |
+| `system` | `any` | const | `vfs.createSystem(files) as PlaygroundSystem` | ✗ |
+| `cb` | `any` | const | `pollingInterval ? debounce(callback, pollingInterval) : callback` | ✗ |
 
 
 ---
@@ -197,26 +219,5 @@ export function createFileSystem(
   - `key.test`
   - `callbacks.forEach`
   - `cb`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

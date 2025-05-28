@@ -2,19 +2,29 @@
 
 # 📄 `explicit-module-boundary-types.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 13 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 15 |
+| 📊 Variables & Constants | 8 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 13
-- **Classes**: 0
-- **Imports**: 15
-- **Interfaces**: 0
-- **Type Aliases**: 2
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/explicit-module-boundary-types.ts`**
@@ -38,6 +48,28 @@
 | `checkFunctionReturnType` | `../util/explicitReturnTypeUtils` |
 | `doesImmediatelyReturnFunctionExpression` | `../util/explicitReturnTypeUtils` |
 | `isTypedFunctionExpression` | `../util/explicitReturnTypeUtils` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `checkedFunctions` | `Set<any>` | const | `new Set<FunctionNode>()` | ✗ |
+| `functionStack` | `FunctionNode[]` | const | `[]` | ✗ |
+| `functionReturnsMap` | `Map<any, TSESTree.ReturnStatement[]>` | const | `new Map<
+      FunctionNode,
+      TSESTree.ReturnStatement[]
+    >()` | ✗ |
+| `alreadyVisited` | `Set<TSESTree.Node>` | const | `new Set<TSESTree.Node>()` | ✗ |
+| `current` | `any` | const | `functionStack[functionStack.length - 1]` | ✗ |
+| `current` | `TSESTree.Node | undefined` | let/var | `node.parent` | ✗ |
+| `isConstructor` | `boolean` | const | `node.parent.type === AST_NODE_TYPES.MethodDefinition &&
+        node.parent.kind === 'constructor'` | ✗ |
+| `isSetAccessor` | `boolean` | const | `(node.parent.type === AST_NODE_TYPES.TSAbstractMethodDefinition ||
+          node.parent.type === AST_NODE_TYPES.MethodDefinition) &&
+        node.parent.kind === 'set'` | ✗ |
 
 
 ---
@@ -731,20 +763,6 @@ function checkFunction({
   - `checkFunctionReturnType (from ../util/explicitReturnTypeUtils)`
   - `context.report`
   - `checkParameters`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
 
 ---
 

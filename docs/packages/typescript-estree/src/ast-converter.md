@@ -2,18 +2,28 @@
 
 # 📄 `ast-converter.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 3 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 9 |
+| 📊 Variables & Constants | 1 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 3
-- **Classes**: 0
-- **Imports**: 9
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/typescript-estree/src/ast-converter.ts`**
@@ -31,6 +41,21 @@
 | `convertComments` | `./convert-comments` |
 | `convertTokens` | `./node-utils` |
 | `simpleTraverse` | `./simple-traverse` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `instance` | `Converter` | const | `new Converter(ast, {
+    allowInvalidAST: parseSettings.allowInvalidAST,
+    errorOnUnknownASTType: parseSettings.errorOnUnknownASTType,
+    shouldPreserveNodeMaps,
+    suppressDeprecatedPropertyWarnings:
+      parseSettings.suppressDeprecatedPropertyWarnings,
+  })` | ✗ |
 
 
 ---
@@ -201,27 +226,6 @@ node => {
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment -- TS 4.0 made this an error because the types aren't optional (x4)
 // @ts-expect-error (x4)
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

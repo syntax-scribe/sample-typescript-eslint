@@ -2,21 +2,31 @@
 
 # 📄 `node-utils.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 48 |
+| 🧱 Classes | 1 |
+| 📦 Imports | 7 |
+| 📊 Variables & Constants | 15 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 5 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Classes](#classes)
 - [Interfaces](#interfaces)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 48
-- **Classes**: 1
-- **Imports**: 7
-- **Interfaces**: 1
-- **Type Aliases**: 5
 
 ## 🛠️ File Location:
 📂 **`packages/typescript-estree/src/node-utils.ts`**
@@ -32,6 +42,81 @@
 | `AST_NODE_TYPES` | `./ts-estree` |
 | `AST_TOKEN_TYPES` | `./ts-estree` |
 | `typescriptVersionIsAtLeast` | `./version-check` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `isAtLeast50` | `boolean` | const | `typescriptVersionIsAtLeast['5.0']` | ✗ |
+| `SyntaxKind` | `any` | const | `ts.SyntaxKind` | ✗ |
+| `LOGICAL_OPERATORS` | `ReadonlySet<LogicalOperatorKind>` | const | `new Set([
+  SyntaxKind.AmpersandAmpersandToken,
+  SyntaxKind.BarBarToken,
+  SyntaxKind.QuestionQuestionToken,
+])` | ✗ |
+| `ASSIGNMENT_OPERATORS` | `ReadonlySet<AssignmentOperatorKind>` | const | `new Set([
+  ts.SyntaxKind.AmpersandAmpersandEqualsToken,
+  ts.SyntaxKind.AmpersandEqualsToken,
+  ts.SyntaxKind.AsteriskAsteriskEqualsToken,
+  ts.SyntaxKind.AsteriskEqualsToken,
+  ts.SyntaxKind.BarBarEqualsToken,
+  ts.SyntaxKind.BarEqualsToken,
+  ts.SyntaxKind.CaretEqualsToken,
+  ts.SyntaxKind.EqualsToken,
+  ts.SyntaxKind.GreaterThanGreaterThanEqualsToken,
+  ts.SyntaxKind.GreaterThanGreaterThanGreaterThanEqualsToken,
+  ts.SyntaxKind.LessThanLessThanEqualsToken,
+  ts.SyntaxKind.MinusEqualsToken,
+  ts.SyntaxKind.PercentEqualsToken,
+  ts.SyntaxKind.PlusEqualsToken,
+  ts.SyntaxKind.QuestionQuestionEqualsToken,
+  ts.SyntaxKind.SlashEqualsToken,
+])` | ✗ |
+| `BINARY_OPERATORS` | `ReadonlySet<BinaryOperatorKind>` | const | `new Set([
+  SyntaxKind.AmpersandAmpersandToken,
+  SyntaxKind.AmpersandToken,
+  SyntaxKind.AsteriskAsteriskToken,
+  SyntaxKind.AsteriskToken,
+  SyntaxKind.BarBarToken,
+  SyntaxKind.BarToken,
+  SyntaxKind.CaretToken,
+  SyntaxKind.EqualsEqualsEqualsToken,
+  SyntaxKind.EqualsEqualsToken,
+  SyntaxKind.ExclamationEqualsEqualsToken,
+  SyntaxKind.ExclamationEqualsToken,
+  SyntaxKind.GreaterThanEqualsToken,
+  SyntaxKind.GreaterThanGreaterThanGreaterThanToken,
+  SyntaxKind.GreaterThanGreaterThanToken,
+  SyntaxKind.GreaterThanToken,
+  SyntaxKind.InKeyword,
+  SyntaxKind.InstanceOfKeyword,
+  SyntaxKind.LessThanEqualsToken,
+  SyntaxKind.LessThanLessThanToken,
+  SyntaxKind.LessThanToken,
+  SyntaxKind.MinusToken,
+  SyntaxKind.PercentToken,
+  SyntaxKind.PlusToken,
+  SyntaxKind.SlashToken,
+])` | ✗ |
+| `shouldDiveInChildNode` | `boolean` | const | `(child.pos <= previousToken.pos && child.end > previousToken.end) ||
+        // previous token ends exactly at the beginning of child
+        child.pos === previousToken.end` | ✗ |
+| `current` | `ts.Node | undefined` | let/var | `node` | ✗ |
+| `codePoint` | `number` | const | `item[1] === 'x'
+          ? parseInt(item.slice(2), 16)
+          : parseInt(item.slice(1), 10)` | ✗ |
+| `keywordKind` | `ts.SyntaxKind | undefined` | let/var | `*not shown*` | ✗ |
+| `start` | `any` | const | `token.kind === SyntaxKind.JsxText
+      ? token.getFullStart()
+      : token.getStart(ast)` | ✗ |
+| `range` | `TSESTree.Range` | const | `[start, end]` | ✗ |
+| `result` | `TSESTree.Token[]` | const | `[]` | ✗ |
+| `thisParameter` | `any` | const | `signature.parameters[0]` | ✗ |
+| `grandparent` | `any` | const | `parent.parent` | ✗ |
+| `moduleDeclaration` | `ts.ModuleDeclaration` | let/var | `node` | ✗ |
 
 
 ---

@@ -2,17 +2,27 @@
 
 # 📄 `es6-destructuring-assignments.test.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 0 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 6 |
+| 📊 Variables & Constants | 38 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
-
-## 📊 Analysis Summary
-
-- **Functions**: 0
-- **Classes**: 0
-- **Imports**: 6
-- **Interfaces**: 0
-- **Type Aliases**: 0
+- [Variables & Constants](#variables-constants)
 
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/tests/eslint-scope/es6-destructuring-assignments.test.ts`**
@@ -31,30 +41,115 @@
 
 ---
 
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `scope` | `Scope` | let/var | `scopeManager.scopes[0]` | ✗ |
+| `scope` | `Scope` | let/var | `scopeManager.scopes[0]` | ✗ |
+| `scope` | `Scope` | let/var | `scopeManager.scopes[0]` | ✗ |
+| `scope` | `Scope` | let/var | `scopeManager.scopes[0]` | ✗ |
+| `scope` | `Scope` | let/var | `scopeManager.scopes[0]` | ✗ |
+| `scope` | `Scope` | let/var | `scopeManager.scopes[0]` | ✗ |
+| `scope` | `Scope` | let/var | `scopeManager.scopes[0]` | ✗ |
+| `scope` | `Scope` | let/var | `scopeManager.scopes[0]` | ✗ |
+| `scope` | `Scope` | let/var | `scopeManager.scopes[0]` | ✗ |
+| `scope` | `Scope` | let/var | `scopeManager.scopes[0]` | ✗ |
+| `expectedVariableNames` | `string[]` | const | `['arguments', 'a', 'b', 'c', 'd', 'rest']` | ✗ |
+| `expectedReferenceNames` | `string[]` | const | `['a', 'b', 'c', 'd', 'rest']` | ✗ |
+| `scope` | `Scope` | let/var | `scopeManager.scopes[0]` | ✗ |
+| `scope` | `Scope` | let/var | `scopeManager.scopes[0]` | ✗ |
+| `expectedVariableNames` | `string[]` | const | `[
+      'arguments',
+      'shorthand',
+      'a',
+      'b',
+      'c',
+      'd',
+      'e',
+      'world',
+    ]` | ✗ |
+| `expectedReferenceNames` | `string[]` | const | `[
+      'shorthand',
+      'a',
+      'b',
+      'c',
+      'd',
+      'e',
+      'world',
+    ]` | ✗ |
+| `scope` | `Scope` | let/var | `scopeManager.scopes[0]` | ✗ |
+| `scope` | `Scope` | let/var | `scopeManager.scopes[0]` | ✗ |
+| `scope` | `Scope` | let/var | `scopeManager.scopes[0]` | ✗ |
+| `expectedReferenceNames` | `string[]` | const | `['a', 'b', 'c', 'd', 'rest']` | ✗ |
+| `scope` | `Scope` | let/var | `scopeManager.scopes[0]` | ✗ |
+| `scope` | `Scope` | let/var | `scopeManager.scopes[0]` | ✗ |
+| `scope` | `Scope` | let/var | `scopeManager.scopes[0]` | ✗ |
+| `expectedReferenceNames` | `string[]` | const | `[
+      'shorthand',
+      'a',
+      'b',
+      'c',
+      'd',
+      'e',
+      'world',
+    ]` | ✗ |
+| `scope` | `Scope` | let/var | `scopeManager.scopes[0]` | ✗ |
+| `scope` | `Scope` | let/var | `scopeManager.scopes[0]` | ✗ |
+| `scope` | `Scope` | let/var | `scopeManager.scopes[0]` | ✗ |
+| `scope` | `Scope` | let/var | `scopeManager.scopes[0]` | ✗ |
+| `expectedVariableNames` | `string[]` | const | `[
+      'arguments',
+      'shorthand',
+      'a',
+      'b',
+      'c',
+      'd',
+      'e',
+      'world',
+    ]` | ✗ |
+| `scope` | `Scope` | let/var | `scopeManager.scopes[0]` | ✗ |
+| `expectedVariableNames` | `string[]` | const | `['arguments', 'a', 'b', 'c', 'd']` | ✗ |
+| `expectedReferenceNames` | `string[]` | const | `[
+      'a',
+      'b',
+      'c',
+      'd', // assign 20
+      'd', // assign array
+      'array',
+    ]` | ✗ |
+| `scope` | `Scope` | let/var | `scopeManager.scopes[0]` | ✗ |
+| `expectedVariableNames` | `string[]` | const | `['arguments', 'a', 'b', 'c', 'd']` | ✗ |
+| `expectedReferenceNames` | `string[]` | const | `[
+      'a', // assign array
+      'b', // assign array
+      'c', // assign array
+      'd', // assign e
+      'd', // assign array
+      'e',
+      'array',
+    ]` | ✗ |
+| `scope` | `Scope` | let/var | `scopeManager.scopes[0]` | ✗ |
+| `expectedVariableNames` | `string[]` | const | `['arguments', 'a', 'b', 'c', 'd']` | ✗ |
+| `expectedReferenceNames` | `string[]` | const | `[
+      'a', // assign array
+      'b', // assign array
+      'c', // assign f
+      'c', // assign array
+      'd', // assign f
+      'd', // assign e
+      'd', // assign array
+      'e',
+      'f',
+      'array',
+    ]` | ✗ |
+
+
+---
+
 ## 🔧 Functions
 
 > No functions found in this file.
-
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

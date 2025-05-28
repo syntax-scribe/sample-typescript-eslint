@@ -2,28 +2,30 @@
 
 # 📄 `fixture.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 2 |
+| 🧱 Classes | 1 |
+| 📦 Imports | 0 |
+| 📊 Variables & Constants | 0 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Functions](#functions)
 - [Classes](#classes)
 
-## 📊 Analysis Summary
-
-- **Functions**: 2
-- **Classes**: 1
-- **Imports**: 0
-- **Interfaces**: 0
-- **Type Aliases**: 0
-
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/class-with-two-methods-computed-constructor/fixture.ts`**
-
-## 📦 Imports
-
-> No imports found in this file.
-
-
----
 
 ## Functions
 
@@ -90,20 +92,6 @@ class A {
   }
 ```
 </details>
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

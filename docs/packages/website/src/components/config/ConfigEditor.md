@@ -2,20 +2,31 @@
 
 # 📄 `ConfigEditor.tsx`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 4 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 9 |
+| 📊 Variables & Constants | 1 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 14 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 4 |
+| 📑 Type Aliases | 1 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
+- [JSX Elements](#jsx-elements)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 4
-- **Classes**: 0
-- **Imports**: 9
-- **Interfaces**: 4
-- **Type Aliases**: 1
 
 ## 🛠️ File Location:
 📂 **`packages/website/src/components/config/ConfigEditor.tsx`**
@@ -33,6 +44,89 @@
 | `Dropdown` | `../inputs/Dropdown` |
 | `Text` | `../inputs/Text` |
 | `styles` | `./ConfigEditor.module.css` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `newConfig` | `{ [x: string]: unknown; }` | const | `{ ...values }` | ✗ |
+
+
+---
+
+## JSX Elements
+
+| Component | Type | Props | Children |
+|-----------|------|-------|----------|
+| `label` | element | className={styles.searchResult} | <span>, {item.type === 'boolean' ? (
+        <Checkbox
+          checked={Boolean(value)}
+          indeterminate={Boolean(value) && !isDefault(value, item.defaults)}
+          name={`config_${item.key}`}
+          onChange={(checked): void =>
+            onChange(
+              item.key,
+              checked ? (item.defaults?.[0] ?? true) : undefined,
+            )
+          }
+          value={item.key}
+        />
+      ) : (
+        item.enum && (
+          <Dropdown
+            name={`config_${item.key}`}
+            onChange={(value): void => onChange(item.key, value)}
+            options={item.enum}
+            value={String(value)}
+          />
+        )
+      )} |
+| `span` | element | className={styles.searchResultDescription} | <span>, {item.label && <br />}, {item.label && <span> {item.label}</span>} |
+| `span` | element | className={styles.searchResultName} | {item.key} |
+| `br` | element | *none* | *none* |
+| `span` | element | *none* | {item.label} |
+| `Checkbox` | component | checked={Boolean(value)}, indeterminate={Boolean(value) && !isDefault(value, item.defaults)}, name={`config_${item.key}`}, onChange={(checked): void =>
+            onChange(
+              item.key,
+              checked ? (item.defaults?.[0] ?? true) : undefined,
+            )
+          }, value={item.key} | *none* |
+| `Dropdown` | component | name={`config_${item.key}`}, onChange={(value): void => onChange(item.key, value)}, options={item.enum}, value={String(value)} | *none* |
+| `div` | element | className={clsx(
+        'thin-scrollbar',
+        styles.searchResultContainer,
+        className,
+      )} | <div>, {filteredOptions.map(group => (
+        <div key={group.heading}>
+          <h3 className={styles.searchResultGroup}>{group.heading}</h3>
+          <div>
+            {group.fields.map(item => (
+              <ConfigEditorField
+                item={item}
+                key={item.key}
+                onChange={onChange}
+                value={values[item.key]}
+              />
+            ))}
+          </div>
+        </div>
+      ))} |
+| `div` | element | className={styles.searchBar} | <Text> |
+| `Text` | component | name="config-filter", onChange={setFilter}, type="search", value={filter} | *none* |
+| `div` | element | key={group.heading} | <h3>, <div> |
+| `h3` | element | className={styles.searchResultGroup} | {group.heading} |
+| `div` | element | *none* | {group.fields.map(item => (
+              <ConfigEditorField
+                item={item}
+                key={item.key}
+                onChange={onChange}
+                value={values[item.key]}
+              />
+            ))} |
+| `ConfigEditorField` | component | item={item}, key={item.key}, onChange={onChange}, value={values[item.key]} | *none* |
 
 
 ---
@@ -248,13 +342,6 @@ function ConfigEditor({
 // Filter out falsy values from the new config (x2)
 // eslint-disable-next-line @typescript-eslint/no-dynamic-delete (x2)
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
 
 
 ---

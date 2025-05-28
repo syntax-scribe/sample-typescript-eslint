@@ -2,18 +2,28 @@
 
 # 📄 `getParserServices.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 2 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 3 |
+| 📊 Variables & Constants | 3 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 2
-- **Classes**: 0
-- **Imports**: 3
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/utils/src/eslint-utils/getParserServices.ts`**
@@ -25,6 +35,17 @@
 | `ParserServices` | `../ts-estree` |
 | `ParserServicesWithTypeInformation` | `../ts-estree` |
 | `parserSeemsToBeTSESLint` | `./parserSeemsToBeTSESLint` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `ERROR_MESSAGE_REQUIRES_PARSER_SERVICES` | `"You have used a rule which requires type information, but don't have parserOptions set to generate type information for this file. See https://typescript-eslint.io/getting-started/typed-linting for enabling linting with type information."` | const | `"You have used a rule which requires type information, but don't have parserOptions set to generate type information for this file. See https://typescript-eslint.io/getting-started/typed-linting for enabling linting with type information."` | ✗ |
+| `ERROR_MESSAGE_UNKNOWN_PARSER` | `"Note: detected a parser other than @typescript-eslint/parser. Make sure the parser is configured to forward \"parserOptions.project\" to @typescript-eslint/parser."` | const | `'Note: detected a parser other than @typescript-eslint/parser. Make sure the parser is configured to forward "parserOptions.project" to @typescript-eslint/parser.'` | ✗ |
+| `parser` | `string` | const | `context.parserPath || context.languageOptions.parser?.meta?.name` | ✗ |
 
 
 ---
@@ -84,26 +105,5 @@ function throwError(parser: string | undefined): never {
   ].filter`
   - `parserSeemsToBeTSESLint (from ./parserSeemsToBeTSESLint)`
   - `messages.join`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

@@ -2,20 +2,30 @@
 
 # 📄 `return-await.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 46 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 12 |
+| 📊 Variables & Constants | 15 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 3 |
+| 📑 Type Aliases | 3 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 46
-- **Classes**: 0
-- **Imports**: 12
-- **Interfaces**: 3
-- **Type Aliases**: 3
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/return-await.ts`**
@@ -36,6 +46,32 @@
 | `needsToBeAwaited` | `../util` |
 | `nullThrows` | `../util` |
 | `isHigherPrecedenceThanAwait` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `scopeInfoStack` | `ScopeInfo[]` | const | `[]` | ✗ |
+| `functionScope` | `any` | const | `scope.variableScope` | ✗ |
+| `declaration` | `any` | const | `variable.defs[0]` | ✗ |
+| `declaratorNode` | `any` | const | `declaration.node` | ✗ |
+| `declarationNode` | `TSESTree.VariableDeclaration` | const | `declaratorNode.parent as TSESTree.VariableDeclaration` | ✗ |
+| `__never` | `never` | const | `block` | ✗ |
+| `child` | `ts.Node` | let/var | `node` | ✗ |
+| `ancestor` | `any` | let/var | `node.parent as ts.Node | undefined` | ✗ |
+| `block` | `'catch' | 'finally' | 'try' | undefined` | let/var | `*not shown*` | ✗ |
+| `startAt` | `any` | const | `awaitToken.range[0]` | ✗ |
+| `endAt` | `any` | let/var | `awaitToken.range[1]` | ✗ |
+| `child` | `ts.Node` | let/var | `*not shown*` | ✗ |
+| `affectsErrorHandling` | `boolean` | const | `affectsExplicitErrorHandling(expression) ||
+        affectsExplicitResourceManagement(node)` | ✗ |
+| `useAutoFix` | `boolean` | const | `!affectsErrorHandling` | ✗ |
+| `shouldAwaitInCurrentContext` | `WhetherToAwait` | const | `affectsErrorHandling
+        ? ruleConfiguration.errorHandlingContext
+        : ruleConfiguration.ordinaryContext` | ✗ |
 
 
 ---
@@ -1117,13 +1153,6 @@ function getConfiguration(option: Option): RuleConfiguration {
 - **Parameters**:
   - `option: Option`
 - **Return Type**: `RuleConfiguration`
-
----
-
-## Classes
-
-> No classes found in this file.
-
 
 ---
 

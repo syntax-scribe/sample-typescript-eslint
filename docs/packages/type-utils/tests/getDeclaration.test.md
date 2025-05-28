@@ -2,18 +2,28 @@
 
 # 📄 `getDeclaration.test.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 11 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 3 |
+| 📊 Variables & Constants | 1 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 7
-- **Classes**: 0
-- **Imports**: 3
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/type-utils/tests/getDeclaration.test.ts`**
@@ -25,6 +35,15 @@
 | `TSESTree` | `@typescript-eslint/types` |
 | `ParserServicesWithTypeInformation` | `@typescript-eslint/typescript-estree` |
 | `getDeclaration` | `../src/index.js` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `node` | `TSESTree.Node` | const | `{} as TSESTree.Node` | ✗ |
 
 
 ---
@@ -47,6 +66,26 @@
 - **Parameters**:
   - `declarations: ts.Declaration[]`
 - **Return Type**: `ts.Symbol`
+### `getDeclarations(): ts.Declaration[]`
+
+<details><summary>Code</summary>
+
+```ts
+() => declarations
+```
+</details>
+
+- **Return Type**: `ts.Declaration[]`
+### `getDeclarations(): ts.Declaration[]`
+
+<details><summary>Code</summary>
+
+```ts
+() => declarations
+```
+</details>
+
+- **Return Type**: `ts.Declaration[]`
 ### `getDeclarations(): ts.Declaration[]`
 
 <details><summary>Code</summary>
@@ -109,6 +148,30 @@
 - **Parameters**:
   - `_: TSESTree.Node`
 - **Return Type**: `ts.Symbol`
+### `getSymbolAtLocation(_: TSESTree.Node): ts.Symbol`
+
+<details><summary>Code</summary>
+
+```ts
+(_: TSESTree.Node) => symbol
+```
+</details>
+
+- **Parameters**:
+  - `_: TSESTree.Node`
+- **Return Type**: `ts.Symbol`
+### `getSymbolAtLocation(_: TSESTree.Node): ts.Symbol`
+
+<details><summary>Code</summary>
+
+```ts
+(_: TSESTree.Node) => symbol
+```
+</details>
+
+- **Parameters**:
+  - `_: TSESTree.Node`
+- **Return Type**: `ts.Symbol`
 ### `mockDeclaration(): ts.Declaration`
 
 <details><summary>Code</summary>
@@ -121,26 +184,5 @@
 </details>
 
 - **Return Type**: `ts.Declaration`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

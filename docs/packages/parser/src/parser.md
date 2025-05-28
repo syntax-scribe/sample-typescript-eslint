@@ -2,19 +2,30 @@
 
 # 📄 `parser.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 4 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 14 |
+| 📊 Variables & Constants | 4 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 1 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 2 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
+- [Re-exports](#re-exports)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
-
-## 📊 Analysis Summary
-
-- **Functions**: 4
-- **Classes**: 0
-- **Imports**: 14
-- **Interfaces**: 2
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/parser/src/parser.ts`**
@@ -37,6 +48,46 @@
 | `visitorKeys` | `@typescript-eslint/visitor-keys` |
 | `debug` | `debug` |
 | `ScriptTarget` | `typescript` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `LIB_FILENAME_REGEX` | `RegExp` | const | `/lib\.(.+)\.d\.[cm]?ts$/` | ✗ |
+| `target` | `any` | const | `compilerOptions.target ?? ScriptTarget.ES5` | ✗ |
+| `tsestreeOptions` | `TSESTreeOptions` | const | `{
+    jsx: validateBoolean(parserOptions.ecmaFeatures.jsx),
+    ...(!warnOnUnsupportedTypeScriptVersion && { loggerFn: false }),
+    ...parserOptions,
+    // Override errorOnTypeScriptSyntacticAndSemanticIssues and set it to false to prevent use from user config
+    // https://github.com/typescript-eslint/typescript-eslint/issues/8681#issuecomment-2000411834
+    errorOnTypeScriptSyntacticAndSemanticIssues: false,
+    // comment, loc, range, and tokens should always be set for ESLint usage
+    // https://github.com/typescript-eslint/typescript-eslint/issues/8347
+    comment: true,
+    loc: true,
+    range: true,
+    tokens: true,
+  } satisfies TSESTreeOptions` | ✗ |
+| `analyzeOptions` | `AnalyzeOptions` | const | `{
+    globalReturn: parserOptions.ecmaFeatures.globalReturn,
+    jsxFragmentName: parserOptions.jsxFragmentName,
+    jsxPragma: parserOptions.jsxPragma,
+    lib: parserOptions.lib,
+    sourceType: parserOptions.sourceType,
+  }` | ✗ |
+
+
+---
+
+## Re-exports
+
+| Type | Source | Exported Names |
+|------|--------|----------------|
+| named | `@typescript-eslint/types` | ParserOptions |
 
 
 ---
@@ -286,13 +337,6 @@ export function parseForESLint(
 
 ---
 
-## Classes
-
-> No classes found in this file.
-
-
----
-
 ## Interfaces
 
 ### `ESLintProgram`
@@ -338,13 +382,6 @@ interface ParseForESLintResult {
 | `scopeManager` | `ScopeManager` | ✗ |  |
 | `services` | `ParserServices` | ✗ |  |
 | `visitorKeys` | `VisitorKeys` | ✗ |  |
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

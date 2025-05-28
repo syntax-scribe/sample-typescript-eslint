@@ -2,18 +2,28 @@
 
 # 📄 `spec.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 0 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 4 |
+| 📊 Variables & Constants | 0 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 1 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Re-exports](#re-exports)
 - [Interfaces](#interfaces)
-
-## 📊 Analysis Summary
-
-- **Functions**: 0
-- **Classes**: 0
-- **Imports**: 4
-- **Interfaces**: 1
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/token/PunctuatorToken/spec.ts`**
@@ -30,16 +40,18 @@
 
 ---
 
-## 🔧 Functions
+## Re-exports
 
-> No functions found in this file.
+| Type | Source | Exported Names |
+|------|--------|----------------|
+| namespace | `./PunctuatorTokenToText` | * |
 
 
 ---
 
-## Classes
+## 🔧 Functions
 
-> No classes found in this file.
+> No functions found in this file.
 
 
 ---
@@ -64,13 +76,6 @@ export interface PunctuatorToken extends BaseToken {
 |------|------|----------|-------------|
 | `type` | `AST_TOKEN_TYPES.Punctuator` | ✗ |  |
 | `value` | `ValueOf<PunctuatorTokenToText>` | ✗ |  |
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

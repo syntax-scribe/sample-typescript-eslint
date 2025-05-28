@@ -2,18 +2,28 @@
 
 # 📄 `parse-options.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 2 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 13 |
+| 📊 Variables & Constants | 3 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 2
-- **Classes**: 0
-- **Imports**: 13
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/naming-convention-utils/parse-options.ts`**
@@ -35,6 +45,54 @@
 | `UnderscoreOptions` | `./enums` |
 | `isMetaSelector` | `./shared` |
 | `createValidator` | `./validator` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `weight` | `number` | let/var | `0` | ✗ |
+| `normalizedOption` | `{ custom: { match: boolean; regex: RegExp; }; filter: { match: boolean; regex: RegExp; }; format: PredefinedFormats[]; leadingUnderscore: UnderscoreOptions; ... 5 more ...; modifierWeight: number; }` | const | `{
+    // format options
+    custom: option.custom
+      ? {
+          match: option.custom.match,
+          regex: new RegExp(option.custom.regex, 'u'),
+        }
+      : null,
+    filter:
+      option.filter != null
+        ? typeof option.filter === 'string'
+          ? {
+              match: true,
+              regex: new RegExp(option.filter, 'u'),
+            }
+          : {
+              match: option.filter.match,
+              regex: new RegExp(option.filter.regex, 'u'),
+            }
+        : null,
+    format: option.format ? option.format.map(f => PredefinedFormats[f]) : null,
+    leadingUnderscore:
+      option.leadingUnderscore != null
+        ? UnderscoreOptions[option.leadingUnderscore]
+        : null,
+    modifiers: option.modifiers?.map(m => Modifiers[m]) ?? null,
+    prefix: option.prefix && option.prefix.length > 0 ? option.prefix : null,
+    suffix: option.suffix && option.suffix.length > 0 ? option.suffix : null,
+    trailingUnderscore:
+      option.trailingUnderscore != null
+        ? UnderscoreOptions[option.trailingUnderscore]
+        : null,
+    types: option.types?.map(m => TypeModifiers[m]) ?? null,
+    // calculated ordering weight based on modifiers
+    modifierWeight: weight,
+  }` | ✗ |
+| `selectors` | `IndividualAndMetaSelectorsString[]` | const | `Array.isArray(option.selector)
+    ? option.selector
+    : [option.selector]` | ✗ |
 
 
 ---
@@ -156,26 +214,5 @@ export function parseOptions(context: Context): ParsedOptions {
   - `Object.fromEntries`
   - `getEnumNames(Selectors).map`
   - `createValidator (from ./validator)`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

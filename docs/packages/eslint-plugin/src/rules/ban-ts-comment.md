@@ -2,20 +2,30 @@
 
 # 📄 `ban-ts-comment.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 2 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 6 |
+| 📊 Variables & Constants | 8 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 2 |
+| 📑 Type Aliases | 3 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 2
-- **Classes**: 0
-- **Imports**: 6
-- **Interfaces**: 2
-- **Type Aliases**: 3
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/ban-ts-comment.ts`**
@@ -30,6 +40,22 @@
 | `createRule` | `../util` |
 | `getStringLength` | `../util` |
 | `nullThrows` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `defaultMinimumDescriptionLength` | `3` | const | `3` | ✗ |
+| `singleLinePragmaRegEx` | `RegExp` | const | `/^\/\/\/?\s*@ts-(?<directive>check|nocheck)(?<description>.*)$/` | ✗ |
+| `commentDirectiveRegExSingleLine` | `RegExp` | const | `/^\/*\s*@ts-(?<directive>expect-error|ignore)(?<description>.*)/` | ✗ |
+| `commentDirectiveRegExMultiLine` | `RegExp` | const | `/^\s*(?:\/|\*)*\s*@ts-(?<directive>expect-error|ignore)(?<description>.*)/` | ✗ |
+| `descriptionFormats` | `Map<string, RegExp>` | const | `new Map<string, RegExp>()` | ✗ |
+| `option` | `any` | const | `options[directive]` | ✗ |
+| `fullDirective` | `keyof OptionsShape` | const | ``ts-${directive}` as keyof OptionsShape` | ✗ |
+| `option` | `any` | const | `options[fullDirective]` | ✗ |
 
 
 ---
@@ -113,13 +139,6 @@ function findDirectiveInComment(
 - **Calls**:
   - `execDirectiveRegEx`
   - `comment.value.split`
-
----
-
-## Classes
-
-> No classes found in this file.
-
 
 ---
 

@@ -2,19 +2,29 @@
 
 # 📄 `test-utils.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 8 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 3 |
+| 📊 Variables & Constants | 3 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 1 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 8
-- **Classes**: 0
-- **Imports**: 3
-- **Interfaces**: 0
-- **Type Aliases**: 1
 
 ## 🛠️ File Location:
 📂 **`packages/typescript-estree/tests/test-utils/test-utils.ts`**
@@ -26,6 +36,17 @@
 | `ParseAndGenerateServicesResult` | `../../src` |
 | `TSESTreeOptions` | `../../src` |
 | `parseAndGenerateServices` | `../../src` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `node` | `{ [x: string]: unknown; }` | const | `{ ...oNode }` | ✗ |
+| `child` | `UnknownObject | UnknownObject[]` | const | `node[prop] as UnknownObject | UnknownObject[]` | ✗ |
+| `value` | `any[]` | const | `[]` | ✗ |
 
 
 ---
@@ -340,20 +361,6 @@ function visit(
 // Filter out omitted and undefined props from the node (x2)
 // eslint-disable-next-line @typescript-eslint/no-dynamic-delete (x2)
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
 
 
 ---

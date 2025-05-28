@@ -2,19 +2,29 @@
 
 # 📄 `init-declarations.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 8 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 6 |
+| 📊 Variables & Constants | 2 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 8
-- **Classes**: 0
-- **Imports**: 6
-- **Interfaces**: 0
-- **Type Aliases**: 2
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/init-declarations.ts`**
@@ -29,6 +39,23 @@
 | `InferOptionsTypeFromRule` | `../util` |
 | `createRule` | `../util` |
 | `getESLintCoreRule` | `../util/getESLintCoreRule` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `ancestor` | `TSESTree.Node | undefined` | let/var | `node.parent` | ✗ |
+| `end` | `TSESTree.Position` | const | `{
+    line: node.loc.start.line,
+    // `if (id.type === AST_NODE_TYPES.Identifier)` is a condition for
+    // reporting in the base rule (as opposed to things like destructuring
+    // assignment), so the type assertion should always be valid.
+    column:
+      node.loc.start.column + (node.id as TSESTree.Identifier).name.length,
+  }` | ✗ |
 
 
 ---
@@ -294,20 +321,6 @@ function getReportLoc(
 // reporting in the base rule (as opposed to things like destructuring (x2)
 // assignment), so the type assertion should always be valid. (x2)
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
 
 
 ---

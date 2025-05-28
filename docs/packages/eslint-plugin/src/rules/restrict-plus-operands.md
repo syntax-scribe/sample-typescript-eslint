@@ -2,19 +2,29 @@
 
 # 📄 `restrict-plus-operands.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 4 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 7 |
+| 📊 Variables & Constants | 2 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 4
-- **Classes**: 0
-- **Imports**: 7
-- **Interfaces**: 0
-- **Type Aliases**: 2
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/restrict-plus-operands.ts`**
@@ -30,6 +40,20 @@
 | `getTypeName` | `../util` |
 | `isTypeAnyType` | `../util` |
 | `isTypeFlagSet` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `stringLike` | `string` | const | `stringLikes.length
+      ? stringLikes.length === 1
+        ? `string, allowing a string + ${stringLikes[0]}`
+        : `string, allowing a string + any of: ${stringLikes.join(', ')}`
+      : 'string'` | ✗ |
+| `hadIndividualComplaint` | `boolean` | let/var | `false` | ✗ |
 
 
 ---
@@ -239,20 +263,6 @@ function isTypeFlagSetInUnion(type: ts.Type, flag: ts.TypeFlags): boolean {
     .unionConstituents(type)
     .some`
   - `tsutils.isTypeFlagSet`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
 
 ---
 

@@ -2,19 +2,29 @@
 
 # 📄 `no-inferrable-types.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 9 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 6 |
+| 📊 Variables & Constants | 6 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 3 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 9
-- **Classes**: 0
-- **Imports**: 6
-- **Interfaces**: 0
-- **Type Aliases**: 3
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/no-inferrable-types.ts`**
@@ -29,6 +39,38 @@
 | `nullThrows` | `../util` |
 | `NullThrowsReasons` | `../util` |
 | `skipChainExpression` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `keywordMap` | `{ [x: number]: string; }` | const | `{
+      [AST_NODE_TYPES.TSBigIntKeyword]: 'bigint',
+      [AST_NODE_TYPES.TSBooleanKeyword]: 'boolean',
+      [AST_NODE_TYPES.TSNullKeyword]: 'null',
+      [AST_NODE_TYPES.TSNumberKeyword]: 'number',
+      [AST_NODE_TYPES.TSStringKeyword]: 'string',
+      [AST_NODE_TYPES.TSSymbolKeyword]: 'symbol',
+      [AST_NODE_TYPES.TSUndefinedKeyword]: 'undefined',
+    }` | ✗ |
+| `unwrappedInit` | `any` | const | `hasUnaryPrefix(init, '-')
+            ? init.argument
+            : init` | ✗ |
+| `unwrappedInit` | `any` | const | `hasUnaryPrefix(init, '+', '-')
+            ? init.argument
+            : init` | ✗ |
+| `isRegExpLiteral` | `boolean` | const | `init.type === AST_NODE_TYPES.Literal &&
+              init.value instanceof RegExp` | ✗ |
+| `isRegExpNewCall` | `boolean` | const | `init.type === AST_NODE_TYPES.NewExpression &&
+              init.callee.type === AST_NODE_TYPES.Identifier &&
+              init.callee.name === 'RegExp'` | ✗ |
+| `type` | `string` | const | `typeNode.typeAnnotation.type === AST_NODE_TYPES.TSTypeReference
+          ? // TODO - if we add more references
+            'RegExp'
+          : keywordMap[typeNode.typeAnnotation.type]` | ✗ |
 
 
 ---
@@ -396,20 +438,6 @@ function inferrablePropertyVisitor(
 // will result in its value being the type, leading to
 // compile errors if the type is stripped.
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
 
 
 ---

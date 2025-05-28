@@ -2,18 +2,29 @@
 
 # 📄 `createProvideTwoslashInlay.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 5 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 2 |
+| 📊 Variables & Constants | 8 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 3 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
+- [Async/Await Patterns](#asyncawait-patterns)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 5
-- **Classes**: 0
-- **Imports**: 2
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/website/src/components/editor/createProvideTwoslashInlay.ts`**
@@ -24,6 +35,47 @@
 |------|--------|
 | `Monaco` | `monaco-editor` |
 | `SandboxInstance` | `./useSandboxServices` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `match` | `RegExpExecArray | null` | let/var | `null` | ✗ |
+| `matches` | `RegExpExecArray[]` | const | `[]` | ✗ |
+| `twoslashQueryRegex` | `RegExp` | const | `/^(\s*\/\/\s*\^\?)\s*$/gm` | ✗ |
+| `worker` | `TypeScriptWorker` | let/var | `await sandbox.getWorkerProcess()` | ✗ |
+| `results` | `Monaco.languages.InlayHint[]` | let/var | `[]` | ✗ |
+| `end` | `number` | let/var | `queryMatch.index + queryMatch[1].length - 1` | ✗ |
+| `inspectionPos` | `any` | let/var | `new sandbox.monaco.Position(
+          endPos.lineNumber - 1,
+          endPos.column,
+        )` | ✗ |
+| `hint` | `any` | let/var | `await (worker.getQuickInfoAtPosition(
+          `file://${model.uri.path}`,
+          inspectionOff,
+        ) as Promise<ts.QuickInfo | undefined>)` | ✗ |
+
+
+---
+
+## Async/Await Patterns
+
+| Type | Function | Await Expressions | Promise Chains |
+|------|----------|-------------------|----------------|
+| promise-chain | `createTwoslashInlayProvider` | *none* | Promise.all |
+| await-expression | `createTwoslashInlayProvider` | sandbox.getWorkerProcess(), Promise.all(
+        queryMatches.map(q => resolveInlayHint(q)),
+      ), (worker.getQuickInfoAtPosition(
+          `file://${model.uri.path}`,
+          inspectionOff,
+        ) as Promise<ts.QuickInfo | undefined>) | *none* |
+| async-function | `resolveInlayHint` | (worker.getQuickInfoAtPosition(
+          `file://${model.uri.path}`,
+          inspectionOff,
+        ) as Promise<ts.QuickInfo | undefined>) | *none* |
 
 
 ---
@@ -426,26 +478,5 @@ async (
           .join('')
           .replaceAll`
   - `text.slice`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

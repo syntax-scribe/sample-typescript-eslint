@@ -2,18 +2,29 @@
 
 # 📄 `String.tsx`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 2 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 17 |
+| 📊 Variables & Constants | 6 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 11 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
+- [JSX Elements](#jsx-elements)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 2
-- **Classes**: 0
-- **Imports**: 17
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/website/src/theme/CodeBlock/Content/String.tsx`**
@@ -39,6 +50,113 @@
 | `React` | `react` |
 | `TryInPlayground` | `../../MDXComponents/TryInPlayground` |
 | `styles` | `./styles.module.css` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `language` | `any` | const | `languageProp ?? parseLanguage(blockClassName) ?? defaultLanguage` | ✗ |
+| `title` | `any` | const | `parseCodeBlockTitle(metastring) || titleProp` | ✗ |
+| `showLineNumbers` | `any` | const | `showLineNumbersProp ?? containsLineNumbers(metastring)` | ✗ |
+| `lastLineOfCodeLength` | `any` | const | `codeLines.at(-1)?.length ?? 0` | ✗ |
+| `needsMorePadding` | `boolean` | const | `lastLineOfCodeLength > 50` | ✗ |
+| `eslintrcHashRegex` | `RegExp` | const | `/eslintrcHash=(?<quote>["'])(?<eslintrcHash>.*?)\1/` | ✗ |
+
+
+---
+
+## JSX Elements
+
+| Component | Type | Props | Children |
+|-----------|------|-------|----------|
+| `Container` | component | as="div", className={clsx(
+        blockClassName,
+        language &&
+          !blockClassName.includes(`language-${language}`) &&
+          `language-${language}`,
+      )} | {title && <div className={styles.codeBlockTitle}>{title}</div>}, <div> |
+| `div` | element | className={styles.codeBlockTitle} | {title} |
+| `div` | element | className={styles.codeBlockContent} | <Highlight>, {eslintrcHash && (
+          <TryInPlayground
+            className={clsx(
+              'button button--primary button--outline',
+              styles.playgroundButton,
+            )}
+            codeHash={lz.compressToEncodedURIComponent(copiedCode)}
+            eslintrcHash={eslintrcHash}
+            language={language}
+          >
+            Open in Playground
+          </TryInPlayground>
+        )}, <div> |
+| `Highlight` | component | code={code}, language={language ?? 'text'}, theme={prismTheme} | {({
+            className,
+            getLineProps,
+            getTokenProps,
+            tokens,
+          }): React.JSX.Element => (
+            <pre
+              className={clsx(className, styles.codeBlock, 'thin-scrollbar')}
+              ref={wordWrap.codeBlockRef}
+              // eslint-disable-next-line jsx-a11y/no-noninteractive-tabindex
+              tabIndex={0}
+            >
+              <code
+                className={clsx(
+                  styles.codeBlockLines,
+                  eslintrcHash &&
+                    needsMorePadding &&
+                    styles.codeBlockLinesMorePadding,
+                  showLineNumbers && styles.codeBlockLinesWithNumbering,
+                )}
+              >
+                {tokens.map((line, i) => (
+                  <Line
+                    classNames={lineClassNames[i]}
+                    getLineProps={getLineProps}
+                    getTokenProps={getTokenProps}
+                    key={i}
+                    line={line}
+                    showLineNumbers={showLineNumbers}
+                  />
+                ))}
+              </code>
+            </pre>
+          )} |
+| `pre` | element | className={clsx(className, styles.codeBlock, 'thin-scrollbar')}, ref={wordWrap.codeBlockRef}, tabIndex={0} | <code> |
+| `code` | element | className={clsx(
+                  styles.codeBlockLines,
+                  eslintrcHash &&
+                    needsMorePadding &&
+                    styles.codeBlockLinesMorePadding,
+                  showLineNumbers && styles.codeBlockLinesWithNumbering,
+                )} | {tokens.map((line, i) => (
+                  <Line
+                    classNames={lineClassNames[i]}
+                    getLineProps={getLineProps}
+                    getTokenProps={getTokenProps}
+                    key={i}
+                    line={line}
+                    showLineNumbers={showLineNumbers}
+                  />
+                ))} |
+| `Line` | component | classNames={lineClassNames[i]}, getLineProps={getLineProps}, getTokenProps={getTokenProps}, key={i}, line={line}, showLineNumbers={showLineNumbers} | *none* |
+| `TryInPlayground` | component | className={clsx(
+              'button button--primary button--outline',
+              styles.playgroundButton,
+            )}, codeHash={lz.compressToEncodedURIComponent(copiedCode)}, eslintrcHash={eslintrcHash}, language={language} | text: "Open in Playground" |
+| `div` | element | className={styles.buttonGroup} | {(wordWrap.isEnabled || wordWrap.isCodeScrollable) && (
+            <WordWrapButton
+              className={styles.codeButton}
+              isEnabled={wordWrap.isEnabled}
+              onClick={(): void => wordWrap.toggle()}
+            />
+          )}, <CopyButton> |
+| `WordWrapButton` | component | className={styles.codeButton}, isEnabled={wordWrap.isEnabled}, onClick={(): void => wordWrap.toggle()} | *none* |
+| `CopyButton` | component | className={styles.codeButton}, code={copiedCode} | *none* |
 
 
 ---
@@ -232,26 +350,5 @@ function parseEslintrc(metastring?: string): string {
 - **Return Type**: `string`
 - **Calls**:
   - `metastring?.match`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

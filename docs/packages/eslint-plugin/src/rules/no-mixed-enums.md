@@ -2,19 +2,30 @@
 
 # 📄 `no-mixed-enums.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 5 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 6 |
+| 📊 Variables & Constants | 3 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 1 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
-
-## 📊 Analysis Summary
-
-- **Functions**: 5
-- **Classes**: 0
-- **Imports**: 6
-- **Interfaces**: 1
-- **Type Aliases**: 0
+- [Enums](#enums)
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/no-mixed-enums.ts`**
@@ -29,6 +40,22 @@
 | `AST_NODE_TYPES` | `@typescript-eslint/utils` |
 | `createRule` | `../util` |
 | `getParserServices` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `found` | `CollectedDefinitions` | const | `{
+        imports: [],
+        previousSibling: undefined,
+      }` | ✗ |
+| `valueDeclaration` | `any` | const | `type.getSymbol()?.valueDeclaration` | ✗ |
+| `declarations` | `any` | const | `typeChecker
+          .getSymbolAtLocation(tsNode)!
+          .getDeclarations()!` | ✗ |
 
 
 ---
@@ -285,13 +312,6 @@ function getDesiredTypeForDefinition(
 
 ---
 
-## Classes
-
-> No classes found in this file.
-
-
----
-
 ## Interfaces
 
 ### `CollectedDefinitions`
@@ -316,9 +336,28 @@ interface CollectedDefinitions {
 
 ---
 
-## Type Aliases
+## Enums
 
-> No type aliases found in this file.
+### `enum AllowedType`
+
+<details><summary>Enum Code</summary>
+
+```ts
+enum AllowedType {
+  Number,
+  String,
+  Unknown,
+}
+```
+</details>
+
+#### Members
+
+| Name | Value | Description |
+|------|-------|-------------|
+| `Number` | *auto* |  |
+| `String` | *auto* |  |
+| `Unknown` | *auto* |  |
 
 
 ---

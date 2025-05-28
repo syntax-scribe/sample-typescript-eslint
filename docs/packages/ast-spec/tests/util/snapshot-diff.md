@@ -2,18 +2,28 @@
 
 # 📄 `snapshot-diff.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 4 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 2 |
+| 📊 Variables & Constants | 2 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 4
-- **Classes**: 0
-- **Imports**: 2
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/tests/util/snapshot-diff.ts`**
@@ -24,6 +34,25 @@
 |------|--------|
 | `format` | `@vitest/pretty-format` |
 | `diff` | `@vitest/utils/diff` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `NO_DIFF_MESSAGE` | `"Compared values have no visual difference."` | const | `'Compared values have no visual difference.'` | ✗ |
+| `OPTIONS` | `{ plugins: any[]; }` | const | `{
+    plugins: [
+      NodeSerializer.serializer,
+      // by default vitest will quote the string with double quotes
+      // this means the diff string will have double quotes escaped and look ugly
+      // this is a single-quote string serializer which won't clash with the outer double quotes
+      // so we get a nicer looking diff because of it!
+      StringSerializer.serializer,
+    ],
+  }` | ✗ |
 
 
 ---
@@ -162,26 +191,5 @@ export function diffHasChanges(diff: string): boolean {
 - **Return Type**: `boolean`
 - **Calls**:
   - `diff.includes`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

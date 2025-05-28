@@ -2,20 +2,30 @@
 
 # 📄 `no-misused-promises.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 26 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 11 |
+| 📊 Variables & Constants | 15 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 26
-- **Classes**: 0
-- **Imports**: 11
-- **Interfaces**: 1
-- **Type Aliases**: 2
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/no-misused-promises.ts`**
@@ -35,6 +45,69 @@
 | `isRestParameterDeclaration` | `../util` |
 | `nullThrows` | `../util` |
 | `NullThrowsReasons` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `checkedNodes` | `Set<TSESTree.Node>` | const | `new Set<TSESTree.Node>()` | ✗ |
+| `conditionalChecks` | `TSESLint.RuleListener` | const | `{
+      'CallExpression > MemberExpression': checkArrayPredicates,
+      ConditionalExpression: checkTestConditional,
+      DoWhileStatement: checkTestConditional,
+      ForStatement: checkTestConditional,
+      IfStatement: checkTestConditional,
+      LogicalExpression: checkConditional,
+      'UnaryExpression[operator="!"]'(node: TSESTree.UnaryExpression) {
+        checkConditional(node.argument, true);
+      },
+      WhileStatement: checkTestConditional,
+    }` | ✗ |
+| `voidReturnChecks` | `TSESLint.RuleListener` | const | `checksVoidReturn
+      ? {
+          ...(checksVoidReturn.arguments && {
+            CallExpression: checkArguments,
+            NewExpression: checkArguments,
+          }),
+          ...(checksVoidReturn.attributes && {
+            JSXAttribute: checkJSXAttribute,
+          }),
+          ...(checksVoidReturn.inheritedMethods && {
+            ClassDeclaration: checkClassLikeOrInterfaceNode,
+            ClassExpression: checkClassLikeOrInterfaceNode,
+            TSInterfaceDeclaration: checkClassLikeOrInterfaceNode,
+          }),
+          ...(checksVoidReturn.properties && {
+            Property: checkProperty,
+          }),
+          ...(checksVoidReturn.returns && {
+            ReturnStatement: checkReturnStatement,
+          }),
+          ...(checksVoidReturn.variables && {
+            AssignmentExpression: checkAssignment,
+            VariableDeclarator: checkVariableDeclaration,
+          }),
+        }
+      : {}` | ✗ |
+| `spreadChecks` | `TSESLint.RuleListener` | const | `{
+      SpreadElement: checkSpread,
+    }` | ✗ |
+| `parent` | `any` | const | `node.parent` | ✗ |
+| `functionNode` | `any` | const | `node.value` | ✗ |
+| `obj` | `any` | const | `tsNode.parent` | ✗ |
+| `functionNode` | `TSESTree.FunctionExpression` | const | `node.value as TSESTree.FunctionExpression` | ✗ |
+| `current` | `TSESTree.Node | undefined` | let/var | `node.parent` | ✗ |
+| `hasThenableSignature` | `boolean` | let/var | `false` | ✗ |
+| `thenableReturnIndices` | `Set<number>` | const | `new Set<number>()` | ✗ |
+| `voidReturnIndices` | `Set<number>` | const | `new Set<number>()` | ✗ |
+| `signatures` | `any` | const | `ts.isCallExpression(node)
+      ? subType.getCallSignatures()
+      : subType.getConstructSignatures()` | ✗ |
+| `decl` | `any` | const | `parameter.valueDeclaration` | ✗ |
+| `hadVoidReturn` | `boolean` | let/var | `false` | ✗ |
 
 
 ---
@@ -1384,13 +1457,6 @@ function isStaticMember(node: TSESTree.Node): boolean {
 - **Parameters**:
   - `node: TSESTree.Node`
 - **Return Type**: `boolean`
-
----
-
-## Classes
-
-> No classes found in this file.
-
 
 ---
 

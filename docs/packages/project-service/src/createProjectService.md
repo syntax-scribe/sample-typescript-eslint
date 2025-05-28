@@ -2,20 +2,31 @@
 
 # 📄 `createProjectService.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 47 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 3 |
+| 📊 Variables & Constants | 6 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 1 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 2 |
+| 📑 Type Aliases | 1 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
+- [Re-exports](#re-exports)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 25
-- **Classes**: 0
-- **Imports**: 3
-- **Interfaces**: 2
-- **Type Aliases**: 1
 
 ## 🛠️ File Location:
 📂 **`packages/project-service/src/createProjectService.ts`**
@@ -27,6 +38,98 @@
 | `ProjectServiceOptions` | `@typescript-eslint/types` |
 | `debug` | `debug` |
 | `getParsedConfigFileFromTSServer` | `./getParsedConfigFileFromTSServer.js` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `DEFAULT_PROJECT_MATCHED_FILES_THRESHOLD` | `8` | const | `8` | ✗ |
+| `options` | `any` | const | `{
+    defaultProject: 'tsconfig.json',
+    ...optionsRaw,
+  }` | ✗ |
+| `tsserver` | `any` | const | `require('typescript/lib/tsserverlibrary') as typeof ts` | ✗ |
+| `system` | `ts.server.ServerHost` | const | `{
+    ...tsserver.sys,
+    clearImmediate,
+    clearTimeout,
+    setImmediate,
+    setTimeout,
+    watchDirectory: createStubFileWatcher,
+    watchFile: createStubFileWatcher,
+
+    // We stop loading any TypeScript plugins by default, to prevent them from attaching disk watchers
+    // See https://github.com/typescript-eslint/typescript-eslint/issues/9905
+    ...(!options.loadTypeScriptPlugins && {
+      require: () => ({
+        error: {
+          message:
+            'TypeScript plugins are not required when using parserOptions.projectService.',
+        },
+        module: undefined,
+      }),
+    }),
+  }` | ✗ |
+| `logger` | `ts.server.Logger` | const | `{
+    close: doNothing,
+    endGroup: doNothing,
+    getLogFileName: (): undefined => undefined,
+    // The debug library doesn't use levels without creating a namespace for each.
+    // Log levels are not passed to the writer so we wouldn't be able to forward
+    // to a respective namespace.  Supporting would require an additional flag for
+    // granular control.  Defaulting to all levels for now.
+    hasLevel: (): boolean => true,
+    info(s) {
+      this.msg(s, tsserver.server.Msg.Info);
+    },
+    loggingEnabled: (): boolean =>
+      // if none of the debug namespaces are enabled, then don't enable logging in tsserver
+      logTsserverInfo.enabled ||
+      logTsserverErr.enabled ||
+      logTsserverPerf.enabled,
+    msg: (s, type) => {
+      switch (type) {
+        case tsserver.server.Msg.Err:
+          logTsserverErr(s);
+          break;
+        case tsserver.server.Msg.Perf:
+          logTsserverPerf(s);
+          break;
+        default:
+          logTsserverInfo(s);
+      }
+    },
+    perftrc(s) {
+      this.msg(s, tsserver.server.Msg.Perf);
+    },
+    startGroup: doNothing,
+  }` | ✗ |
+| `service` | `any` | const | `new tsserver.server.ProjectService({
+    cancellationToken: { isCancellationRequested: (): boolean => false },
+    eventHandler: logTsserverEvent.enabled
+      ? (e): void => {
+          logTsserverEvent(e);
+        }
+      : undefined,
+    host: system,
+    jsDocParsingMode,
+    logger,
+    session: undefined,
+    useInferredProjectPerProjectRoot: false,
+    useSingleInferredProject: false,
+  })` | ✗ |
+
+
+---
+
+## Re-exports
+
+| Type | Source | Exported Names |
+|------|--------|----------------|
+| named | `@typescript-eslint/types` | ProjectServiceOptions |
 
 
 ---
@@ -348,6 +451,303 @@ export function createProjectService({
 </details>
 
 - **Return Type**: `{ error: { message: string; }; module: any; }`
+### `require(): { error: { message: string; }; module: any; }`
+
+<details><summary>Code</summary>
+
+```ts
+() => ({
+        error: {
+          message:
+            'TypeScript plugins are not required when using parserOptions.projectService.',
+        },
+        module: undefined,
+      })
+```
+</details>
+
+- **Return Type**: `{ error: { message: string; }; module: any; }`
+### `require(): { error: { message: string; }; module: any; }`
+
+<details><summary>Code</summary>
+
+```ts
+() => ({
+        error: {
+          message:
+            'TypeScript plugins are not required when using parserOptions.projectService.',
+        },
+        module: undefined,
+      })
+```
+</details>
+
+- **Return Type**: `{ error: { message: string; }; module: any; }`
+### `require(): { error: { message: string; }; module: any; }`
+
+<details><summary>Code</summary>
+
+```ts
+() => ({
+        error: {
+          message:
+            'TypeScript plugins are not required when using parserOptions.projectService.',
+        },
+        module: undefined,
+      })
+```
+</details>
+
+- **Return Type**: `{ error: { message: string; }; module: any; }`
+### `require(): { error: { message: string; }; module: any; }`
+
+<details><summary>Code</summary>
+
+```ts
+() => ({
+        error: {
+          message:
+            'TypeScript plugins are not required when using parserOptions.projectService.',
+        },
+        module: undefined,
+      })
+```
+</details>
+
+- **Return Type**: `{ error: { message: string; }; module: any; }`
+### `require(): { error: { message: string; }; module: any; }`
+
+<details><summary>Code</summary>
+
+```ts
+() => ({
+        error: {
+          message:
+            'TypeScript plugins are not required when using parserOptions.projectService.',
+        },
+        module: undefined,
+      })
+```
+</details>
+
+- **Return Type**: `{ error: { message: string; }; module: any; }`
+### `require(): { error: { message: string; }; module: any; }`
+
+<details><summary>Code</summary>
+
+```ts
+() => ({
+        error: {
+          message:
+            'TypeScript plugins are not required when using parserOptions.projectService.',
+        },
+        module: undefined,
+      })
+```
+</details>
+
+- **Return Type**: `{ error: { message: string; }; module: any; }`
+### `getLogFileName(): undefined`
+
+<details><summary>Code</summary>
+
+```ts
+(): undefined => undefined
+```
+</details>
+
+- **Return Type**: `undefined`
+### `hasLevel(): boolean`
+
+<details><summary>Code</summary>
+
+```ts
+(): boolean => true
+```
+</details>
+
+- **Return Type**: `boolean`
+### `loggingEnabled(): boolean`
+
+<details><summary>Code</summary>
+
+```ts
+(): boolean =>
+      // if none of the debug namespaces are enabled, then don't enable logging in tsserver
+      logTsserverInfo.enabled ||
+      logTsserverErr.enabled ||
+      logTsserverPerf.enabled
+```
+</details>
+
+- **Return Type**: `boolean`
+- **Internal Comments**:
+```
+// if none of the debug namespaces are enabled, then don't enable logging in tsserver
+```
+
+### `msg(s: any, type: any): void`
+
+<details><summary>Code</summary>
+
+```ts
+(s, type) => {
+      switch (type) {
+        case tsserver.server.Msg.Err:
+          logTsserverErr(s);
+          break;
+        case tsserver.server.Msg.Perf:
+          logTsserverPerf(s);
+          break;
+        default:
+          logTsserverInfo(s);
+      }
+    }
+```
+</details>
+
+- **Parameters**:
+  - `s: any`
+  - `type: any`
+- **Return Type**: `void`
+- **Calls**:
+  - `logTsserverErr`
+  - `logTsserverPerf`
+  - `logTsserverInfo`
+### `getLogFileName(): undefined`
+
+<details><summary>Code</summary>
+
+```ts
+(): undefined => undefined
+```
+</details>
+
+- **Return Type**: `undefined`
+### `hasLevel(): boolean`
+
+<details><summary>Code</summary>
+
+```ts
+(): boolean => true
+```
+</details>
+
+- **Return Type**: `boolean`
+### `loggingEnabled(): boolean`
+
+<details><summary>Code</summary>
+
+```ts
+(): boolean =>
+      // if none of the debug namespaces are enabled, then don't enable logging in tsserver
+      logTsserverInfo.enabled ||
+      logTsserverErr.enabled ||
+      logTsserverPerf.enabled
+```
+</details>
+
+- **Return Type**: `boolean`
+- **Internal Comments**:
+```
+// if none of the debug namespaces are enabled, then don't enable logging in tsserver
+```
+
+### `msg(s: any, type: any): void`
+
+<details><summary>Code</summary>
+
+```ts
+(s, type) => {
+      switch (type) {
+        case tsserver.server.Msg.Err:
+          logTsserverErr(s);
+          break;
+        case tsserver.server.Msg.Perf:
+          logTsserverPerf(s);
+          break;
+        default:
+          logTsserverInfo(s);
+      }
+    }
+```
+</details>
+
+- **Parameters**:
+  - `s: any`
+  - `type: any`
+- **Return Type**: `void`
+- **Calls**:
+  - `logTsserverErr`
+  - `logTsserverPerf`
+  - `logTsserverInfo`
+### `getLogFileName(): undefined`
+
+<details><summary>Code</summary>
+
+```ts
+(): undefined => undefined
+```
+</details>
+
+- **Return Type**: `undefined`
+### `hasLevel(): boolean`
+
+<details><summary>Code</summary>
+
+```ts
+(): boolean => true
+```
+</details>
+
+- **Return Type**: `boolean`
+### `loggingEnabled(): boolean`
+
+<details><summary>Code</summary>
+
+```ts
+(): boolean =>
+      // if none of the debug namespaces are enabled, then don't enable logging in tsserver
+      logTsserverInfo.enabled ||
+      logTsserverErr.enabled ||
+      logTsserverPerf.enabled
+```
+</details>
+
+- **Return Type**: `boolean`
+- **Internal Comments**:
+```
+// if none of the debug namespaces are enabled, then don't enable logging in tsserver
+```
+
+### `msg(s: any, type: any): void`
+
+<details><summary>Code</summary>
+
+```ts
+(s, type) => {
+      switch (type) {
+        case tsserver.server.Msg.Err:
+          logTsserverErr(s);
+          break;
+        case tsserver.server.Msg.Perf:
+          logTsserverPerf(s);
+          break;
+        default:
+          logTsserverInfo(s);
+      }
+    }
+```
+</details>
+
+- **Parameters**:
+  - `s: any`
+  - `type: any`
+- **Return Type**: `void`
+- **Calls**:
+  - `logTsserverErr`
+  - `logTsserverPerf`
+  - `logTsserverInfo`
 ### `getLogFileName(): undefined`
 
 <details><summary>Code</summary>
@@ -589,13 +989,46 @@ export function createProjectService({
 </details>
 
 - **Return Type**: `boolean`
+### `isCancellationRequested(): boolean`
 
----
+<details><summary>Code</summary>
 
-## Classes
+```ts
+(): boolean => false
+```
+</details>
 
-> No classes found in this file.
+- **Return Type**: `boolean`
+### `isCancellationRequested(): boolean`
 
+<details><summary>Code</summary>
+
+```ts
+(): boolean => false
+```
+</details>
+
+- **Return Type**: `boolean`
+### `isCancellationRequested(): boolean`
+
+<details><summary>Code</summary>
+
+```ts
+(): boolean => false
+```
+</details>
+
+- **Return Type**: `boolean`
+### `isCancellationRequested(): boolean`
+
+<details><summary>Code</summary>
+
+```ts
+(): boolean => false
+```
+</details>
+
+- **Return Type**: `boolean`
 
 ---
 

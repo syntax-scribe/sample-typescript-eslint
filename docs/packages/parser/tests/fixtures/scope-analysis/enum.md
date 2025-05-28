@@ -2,23 +2,36 @@
 
 # 📄 `enum.ts`
 
-## 📚 Table of Contents
-
-
 ## 📊 Analysis Summary
 
-- **Functions**: 0
-- **Classes**: 0
-- **Imports**: 0
-- **Interfaces**: 0
-- **Type Aliases**: 0
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 0 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 0 |
+| 📊 Variables & Constants | 1 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 1 |
+
+## 📚 Table of Contents
+
+- [Variables & Constants](#variables-constants)
+- [Enums](#enums)
 
 ## 🛠️ File Location:
 📂 **`packages/parser/tests/fixtures/scope-analysis/enum.ts`**
 
-## 📦 Imports
+## Variables & Constants
 
-> No imports found in this file.
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `a` | `number` | const | `1` | ✗ |
 
 
 ---
@@ -30,23 +43,28 @@
 
 ---
 
-## Classes
+## Enums
 
-> No classes found in this file.
+### `enum E`
 
+<details><summary>Enum Code</summary>
 
----
+```ts
+enum E {
+  A = a,
+  B = a + 1,
+  C = A + B,
+}
+```
+</details>
 
-## Interfaces
+#### Members
 
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
+| Name | Value | Description |
+|------|-------|-------------|
+| `A` | `a` |  |
+| `B` | `a + 1` |  |
+| `C` | `A + B` |  |
 
 
 ---

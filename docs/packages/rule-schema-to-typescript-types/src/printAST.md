@@ -2,19 +2,29 @@
 
 # 📄 `printAST.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 6 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 3 |
+| 📊 Variables & Constants | 6 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 2 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
-
-## 📊 Analysis Summary
-
-- **Functions**: 6
-- **Classes**: 0
-- **Imports**: 3
-- **Interfaces**: 2
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/rule-schema-to-typescript-types/src/printAST.ts`**
@@ -26,6 +36,20 @@
 | `naturalCompare` | `natural-compare` |
 | `AST` | `./types` |
 | `TupleAST` | `./types` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `commentLines` | `string[]` | const | `[]` | ✗ |
+| `properties` | `any[]` | const | `[]` | ✗ |
+| `elements` | `any[]` | const | `[]` | ✗ |
+| `code` | `string` | const | ``${printComment(result)} | ${result.code}`` | ✗ |
+| `aElement` | `TupleAST` | const | `a.element` | ✗ |
+| `bElement` | `TupleAST` | const | `b.element as TupleAST` | ✗ |
 
 
 ---
@@ -316,13 +340,6 @@ function printAndMaybeParenthesise(ast: AST): CodeWithComments {
 
 ---
 
-## Classes
-
-> No classes found in this file.
-
-
----
-
 ## Interfaces
 
 ### `CodeWithComments`
@@ -362,13 +379,6 @@ interface Element {
 |------|------|----------|-------------|
 | `code` | `string` | ✗ |  |
 | `element` | `AST` | ✗ |  |
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

@@ -2,19 +2,29 @@
 
 # 📄 `no-explicit-any.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 106 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 4 |
+| 📊 Variables & Constants | 1 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 58
-- **Classes**: 0
-- **Imports**: 4
-- **Interfaces**: 0
-- **Type Aliases**: 2
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/no-explicit-any.ts`**
@@ -27,6 +37,37 @@
 | `TSESTree` | `@typescript-eslint/utils` |
 | `AST_NODE_TYPES` | `@typescript-eslint/utils` |
 | `createRule` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `fixOrSuggest` | `{
+          fix: TSESLint.ReportFixFunction | null;
+          suggest: TSESLint.ReportSuggestionArray<MessageIds> | null;
+        }` | const | `{
+          fix: null,
+          suggest: isKeyofAny
+            ? [
+                {
+                  messageId: 'suggestPropertyKey',
+                  fix: createPropertyKeyFixer(node),
+                },
+              ]
+            : [
+                {
+                  messageId: 'suggestUnknown',
+                  fix: fixer => fixer.replaceText(node, 'unknown'),
+                },
+                {
+                  messageId: 'suggestNever',
+                  fix: fixer => fixer.replaceText(node, 'never'),
+                },
+              ],
+        }` | ✗ |
 
 
 ---
@@ -1016,20 +1057,678 @@ fixer => fixer.replaceText(node, 'never')
 - **Return Type**: `any`
 - **Calls**:
   - `fixer.replaceText`
+### `fix(fixer: any): any`
 
----
+<details><summary>Code</summary>
 
-## Classes
+```ts
+fixer => fixer.replaceText(node, 'unknown')
+```
+</details>
 
-> No classes found in this file.
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
 
+<details><summary>Code</summary>
 
----
+```ts
+fixer => fixer.replaceText(node, 'unknown')
+```
+</details>
 
-## Interfaces
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
 
-> No interfaces found in this file.
+<details><summary>Code</summary>
 
+```ts
+fixer => fixer.replaceText(node, 'never')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'never')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'unknown')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'unknown')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'never')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'never')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'unknown')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'unknown')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'never')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'never')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'unknown')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'unknown')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'never')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'never')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'unknown')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'unknown')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'never')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'never')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'unknown')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'unknown')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'never')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'never')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'unknown')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'unknown')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'never')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'never')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'unknown')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'unknown')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'never')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'never')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'unknown')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'unknown')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'never')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'never')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'unknown')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'unknown')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'never')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'never')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'unknown')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'unknown')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'never')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'never')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'unknown')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'unknown')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'never')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
+### `fix(fixer: any): any`
+
+<details><summary>Code</summary>
+
+```ts
+fixer => fixer.replaceText(node, 'never')
+```
+</details>
+
+- **Parameters**:
+  - `fixer: any`
+- **Return Type**: `any`
+- **Calls**:
+  - `fixer.replaceText`
 
 ---
 

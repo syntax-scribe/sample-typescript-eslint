@@ -2,19 +2,29 @@
 
 # 📄 `GlobalScope.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 2 |
+| 🧱 Classes | 1 |
+| 📦 Imports | 12 |
+| 📊 Variables & Constants | 2 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Classes](#classes)
-
-## 📊 Analysis Summary
-
-- **Functions**: 2
-- **Classes**: 1
-- **Imports**: 12
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/src/scope/GlobalScope.ts`**
@@ -35,6 +45,16 @@
 | `ImplicitLibVariable` | `../variable` |
 | `ScopeBase` | `./ScopeBase` |
 | `ScopeType` | `./ScopeType` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `info` | `ReferenceImplicitGlobal` | const | `ref.maybeImplicitGlobal` | ✗ |
+| `node` | `TSESTree.BindingName` | const | `info.pattern` | ✗ |
 
 
 ---
@@ -241,20 +261,6 @@ public defineImplicitVariable(
   }
 ```
 </details>
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

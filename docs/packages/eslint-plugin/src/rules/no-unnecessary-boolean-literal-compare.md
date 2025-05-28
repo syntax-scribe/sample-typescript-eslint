@@ -2,20 +2,30 @@
 
 # 📄 `no-unnecessary-boolean-literal-compare.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 6 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 6 |
+| 📊 Variables & Constants | 5 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 3 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 6
-- **Classes**: 0
-- **Imports**: 6
-- **Interfaces**: 3
-- **Type Aliases**: 2
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/no-unnecessary-boolean-literal-compare.ts`**
@@ -30,6 +40,19 @@
 | `getConstraintInfo` | `../util` |
 | `getParserServices` | `../util` |
 | `isStrongPrecedenceNode` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `hasNonNullishType` | `boolean` | const | `nonNullishTypes.length > 0` | ✗ |
+| `hasNullableType` | `boolean` | const | `nonNullishTypes.length < types.length` | ✗ |
+| `negated` | `boolean` | const | `!comparisonType.isPositive` | ✗ |
+| `shouldNegate` | `boolean` | let/var | `comparison.negated !== comparison.literalBooleanInComparison` | ✗ |
+| `mutatedNode` | `any` | let/var | `isUnaryNegation ? node.parent : node` | ✗ |
 
 
 ---
@@ -266,13 +289,6 @@ function getEqualsKind(operator: string): EqualsKind | undefined {
 - **Parameters**:
   - `operator: string`
 - **Return Type**: `EqualsKind | undefined`
-
----
-
-## Classes
-
-> No classes found in this file.
-
 
 ---
 

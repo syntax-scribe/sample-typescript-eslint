@@ -2,18 +2,28 @@
 
 # 📄 `convert.test.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 6 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 5 |
+| 📊 Variables & Constants | 17 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 6
-- **Classes**: 0
-- **Imports**: 5
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/typescript-estree/tests/lib/convert.test.ts`**
@@ -27,6 +37,54 @@
 | `TSNode` | `../../src` |
 | `ConverterOptions` | `../../src/convert` |
 | `Converter` | `../../src/convert` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `instance` | `Converter` | const | `new Converter(ast)` | ✗ |
+| `instance` | `Converter` | const | `new Converter(ast)` | ✗ |
+| `instance` | `Converter` | const | `new Converter(ast)` | ✗ |
+| `instance` | `Converter` | const | `new Converter(ast)` | ✗ |
+| `instance` | `Converter` | const | `new Converter(ast)` | ✗ |
+| `instance` | `Converter` | const | `new Converter(ast, {
+        errorOnUnknownASTType: true,
+      })` | ✗ |
+| `instance` | `Converter` | const | `new Converter(ast, {
+      shouldPreserveNodeMaps: true,
+    })` | ✗ |
+| `instance` | `Converter` | const | `new Converter(ast, {
+      shouldPreserveNodeMaps: true,
+    })` | ✗ |
+| `instance` | `Converter` | const | `new Converter(ast, {
+      shouldPreserveNodeMaps: true,
+    })` | ✗ |
+| `instance` | `Converter` | const | `new Converter(ast, {
+        shouldPreserveNodeMaps: true,
+      })` | ✗ |
+| `tsNode` | `ts.KeywordToken<ts.SyntaxKind.AbstractKeyword>` | const | `{
+        ...ts.factory.createToken(ts.SyntaxKind.AbstractKeyword),
+        end: 10,
+        pos: 0,
+      }` | ✗ |
+| `jsDocCode` | `readonly ["const x: function(new: number, string);", "const x: function(this: number, string);", "var g: function(number, number): number;"]` | const | `[
+      'const x: function(new: number, string);',
+      'const x: function(this: number, string);',
+      'var g: function(number, number): number;',
+    ] as const` | ✗ |
+| `instance` | `Converter` | const | `new Converter(ast)` | ✗ |
+| `code` | `"const;"` | const | `'const;'` | ✗ |
+| `instance` | `Converter` | const | `new Converter(ast)` | ✗ |
+| `instance` | `Converter` | const | `new Converter(ast, {
+        allowInvalidAST: true,
+      })` | ✗ |
+| `instance` | `Converter` | const | `new Converter(ast, {
+          shouldPreserveNodeMaps: true,
+          ...converterOptions,
+        })` | ✗ |
 
 
 ---
@@ -205,26 +263,5 @@ function checkMaps(child: ts.Node | ts.SourceFile): void {
   - `code: string`
   - `tsToEsNode: (statement: S) => TSNode`
 - **Return Type**: `(converterOptions?: ConverterOptions) => TNode`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

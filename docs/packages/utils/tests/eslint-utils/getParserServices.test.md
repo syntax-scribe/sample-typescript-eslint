@@ -2,19 +2,29 @@
 
 # 📄 `getParserServices.test.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 4 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 5 |
+| 📊 Variables & Constants | 1 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 1 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 4
-- **Classes**: 0
-- **Imports**: 5
-- **Interfaces**: 0
-- **Type Aliases**: 1
 
 ## 🛠️ File Location:
 📂 **`packages/utils/tests/eslint-utils/getParserServices.test.ts`**
@@ -28,6 +38,24 @@
 | `TSESTree` | `../../src` |
 | `FlatConfig` | `../../src/ts-eslint` |
 | `ESLintUtils` | `../../src` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `defaults` | `Readonly<RuleContext<string, unknown[]>>` | const | `{
+  parserPath: '@typescript-eslint/parser/dist/index.js',
+  sourceCode: {
+    parserServices: {
+      esTreeNodeToTSNodeMap: new Map<TSESTree.Node, ts.Node>(),
+      program: {},
+      tsNodeToESTreeNodeMap: new Map<ts.Node, TSESTree.Node>(),
+    } as unknown as ParserServices,
+  },
+} as unknown as UnknownRuleContext` | ✗ |
 
 
 ---
@@ -95,20 +123,6 @@ Note: detected a parser other than @typescript-eslint/parser. Make sure the pars
 - **Parameters**:
   - `parser: string`
 - **Return Type**: `RegExp`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
 
 ---
 

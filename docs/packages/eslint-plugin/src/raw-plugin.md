@@ -2,17 +2,27 @@
 
 # 📄 `raw-plugin.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 0 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 30 |
+| 📊 Variables & Constants | 4 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
-
-## 📊 Analysis Summary
-
-- **Functions**: 0
-- **Classes**: 0
-- **Imports**: 30
-- **Interfaces**: 0
-- **Type Aliases**: 0
+- [Variables & Constants](#variables-constants)
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/raw-plugin.ts`**
@@ -55,30 +65,78 @@
 
 ---
 
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `parser` | `TSESLint.FlatConfig.Parser` | const | `{
+  meta: parserBase.meta,
+  parseForESLint: parserBase.parseForESLint,
+}` | ✗ |
+| `plugin` | `Linter.Plugin` | const | `{
+  // not fully initialized yet.
+  // See https://eslint.org/docs/latest/extend/plugins#configs-in-plugins
+  configs: {
+    all,
+    base,
+    'disable-type-checked': disableTypeChecked,
+    'eslint-recommended': eslintRecommended,
+    recommended,
+    /** @deprecated - please use "recommended-type-checked" instead. */
+    'recommended-requiring-type-checking': recommendedTypeChecked,
+    'recommended-type-checked': recommendedTypeChecked,
+    'recommended-type-checked-only': recommendedTypeCheckedOnly,
+    strict,
+    'strict-type-checked': strictTypeChecked,
+    'strict-type-checked-only': strictTypeCheckedOnly,
+    stylistic,
+    'stylistic-type-checked': stylisticTypeChecked,
+    'stylistic-type-checked-only': stylisticTypeCheckedOnly,
+  },
+  meta: {
+    name,
+    version,
+  },
+  rules,
+} satisfies Linter.Plugin` | ✗ |
+| `flatPlugin` | `FlatConfig.Plugin` | const | `plugin as FlatConfig.Plugin` | ✗ |
+| `flatConfigs` | `{ 'flat/all': FlatConfig.ConfigArray; 'flat/base': FlatConfig.Config; 'flat/disable-type-checked': FlatConfig.Config; 'flat/eslint-recommended': FlatConfig.Config; 'flat/recommended': FlatConfig.ConfigArray; 'flat/recommended-type-checked': FlatConfig.ConfigArray; 'flat/recommended-type-checked-only': FlatConfig.Con...` | const | `{
+  'flat/all': allFlat(flatPlugin, parser),
+  'flat/base': baseFlat(flatPlugin, parser),
+  'flat/disable-type-checked': disableTypeCheckedFlat(flatPlugin, parser),
+  'flat/eslint-recommended': eslintRecommendedFlat(flatPlugin, parser),
+  'flat/recommended': recommendedFlat(flatPlugin, parser),
+  'flat/recommended-type-checked': recommendedTypeCheckedFlat(
+    flatPlugin,
+    parser,
+  ),
+  'flat/recommended-type-checked-only': recommendedTypeCheckedOnlyFlat(
+    flatPlugin,
+    parser,
+  ),
+  'flat/strict': strictFlat(flatPlugin, parser),
+  'flat/strict-type-checked': strictTypeCheckedFlat(flatPlugin, parser),
+  'flat/strict-type-checked-only': strictTypeCheckedOnlyFlat(
+    flatPlugin,
+    parser,
+  ),
+  'flat/stylistic': stylisticFlat(flatPlugin, parser),
+  'flat/stylistic-type-checked': stylisticTypeCheckedFlat(flatPlugin, parser),
+  'flat/stylistic-type-checked-only': stylisticTypeCheckedOnlyFlat(
+    flatPlugin,
+    parser,
+  ),
+} satisfies Record<
+  `flat/${string}`,
+  TSESLint.FlatConfig.Config | TSESLint.FlatConfig.ConfigArray
+>` | ✗ |
+
+
+---
+
 ## 🔧 Functions
 
 > No functions found in this file.
-
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

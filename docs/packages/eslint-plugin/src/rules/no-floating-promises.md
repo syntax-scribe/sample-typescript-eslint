@@ -2,19 +2,29 @@
 
 # 📄 `no-floating-promises.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 42 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 16 |
+| 📊 Variables & Constants | 11 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 42
-- **Classes**: 0
-- **Imports**: 16
-- **Interfaces**: 0
-- **Type Aliases**: 2
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/no-floating-promises.ts`**
@@ -39,6 +49,29 @@
 | `parseCatchCall` | `../util/promiseUtils` |
 | `parseFinallyCall` | `../util/promiseUtils` |
 | `parseThenCall` | `../util/promiseUtils` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `messageBase` | `"Promises must be awaited, end with a call to .catch, or end with a call to .then with a rejection handler."` | const | `'Promises must be awaited, end with a call to .catch, or end with a call to .then with a rejection handler.'` | ✗ |
+| `messageBaseVoid` | `string` | const | `'Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler' +
+  ' or be explicitly marked as ignored with the `void` operator.'` | ✗ |
+| `messageRejectionHandler` | `"A rejection handler that is not a function will be ignored."` | const | `'A rejection handler that is not a function will be ignored.'` | ✗ |
+| `messagePromiseArray` | `"An array of Promises may be unintentional. Consider handling the promises' fulfillment or rejection with Promise.all or similar."` | const | `"An array of Promises may be unintentional. Consider handling the promises' fulfillment or rejection with Promise.all or similar."` | ✗ |
+| `messagePromiseArrayVoid` | `string` | const | `"An array of Promises may be unintentional. Consider handling the promises' fulfillment or rejection with Promise.all or similar," +
+  ' or explicitly marking the expression as ignored with the `void` operator.'` | ✗ |
+| `allowForKnownSafePromises` | `any` | const | `options.allowForKnownSafePromises!` | ✗ |
+| `allowForKnownSafeCalls` | `any` | const | `options.allowForKnownSafeCalls!` | ✗ |
+| `operator` | `any` | const | `ts.isBinaryExpression(node)
+        ? node.operatorToken.kind
+        : ts.SyntaxKind.Unknown` | ✗ |
+| `promiseHandlingMethodCall` | `{ onRejected?: any; object: TSESTree.Expression; }` | const | `parseCatchCall(node, context) ?? parseThenCall(node, context)` | ✗ |
+| `onRejected` | `any` | const | `promiseHandlingMethodCall.onRejected` | ✗ |
+| `arrayType` | `any` | const | `checker.getTypeArguments(ty)[0]` | ✗ |
 
 
 ---
@@ -1020,20 +1053,6 @@ function isFunctionParam(
   - `checker.getTypeOfSymbolAtLocation`
   - `tsutils.unionConstituents`
   - `t.getCallSignatures`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
 
 ---
 

@@ -2,20 +2,30 @@
 
 # 📄 `shared.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 7 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 4 |
+| 📊 Variables & Constants | 5 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 2 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 7
-- **Classes**: 0
-- **Imports**: 4
-- **Interfaces**: 2
-- **Type Aliases**: 2
 
 ## 🛠️ File Location:
 📂 **`packages/typescript-estree/src/create-program/shared.ts`**
@@ -28,6 +38,39 @@
 | `CORE_COMPILER_OPTIONS` | `@typescript-eslint/tsconfig-utils` |
 | `path` | `node:path` |
 | `ParseSettings` | `../parseSettings` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `DEFAULT_COMPILER_OPTIONS` | `ts.CompilerOptions` | const | `{
+  ...CORE_COMPILER_OPTIONS,
+  allowJs: true,
+  allowNonTsExtensions: true,
+  checkJs: true,
+}` | ✗ |
+| `DEFAULT_EXTRA_FILE_EXTENSIONS` | `Set<string>` | const | `new Set<string>([
+  ts.Extension.Cjs,
+  ts.Extension.Cts,
+  ts.Extension.Js,
+  ts.Extension.Jsx,
+  ts.Extension.Mjs,
+  ts.Extension.Mts,
+  ts.Extension.Ts,
+  ts.Extension.Tsx,
+])` | ✓ |
+| `useCaseSensitiveFileNames` | `any` | const | `ts.sys !== undefined ? ts.sys.useCaseSensitiveFileNames : true` | ✗ |
+| `correctPathCasing` | `(filePath: string) => string` | const | `useCaseSensitiveFileNames
+  ? (filePath: string): string => filePath
+  : (filePath: string): string => filePath.toLowerCase()` | ✗ |
+| `DEFINITION_EXTENSIONS` | `readonly [any, any, any]` | const | `[
+  ts.Extension.Dts,
+  ts.Extension.Dcts,
+  ts.Extension.Dmts,
+] as const` | ✗ |
 
 
 ---
@@ -215,13 +258,6 @@ export function createHash(content: string): string {
 // No ts.sys in browser environments.
 // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
 
 
 ---

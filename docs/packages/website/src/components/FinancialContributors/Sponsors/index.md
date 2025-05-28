@@ -2,19 +2,29 @@
 
 # 📄 `index.tsx`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 5 |
+| 📊 Variables & Constants | 0 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 5 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [JSX Elements](#jsx-elements)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 5
-- **Interfaces**: 1
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/website/src/components/FinancialContributors/Sponsors/index.tsx`**
@@ -28,6 +38,23 @@
 | `SponsorData` | `../types` |
 | `Sponsor` | `../Sponsor` |
 | `styles` | `./styles.module.css` |
+
+
+---
+
+## JSX Elements
+
+| Component | Type | Props | Children |
+|-----------|------|-------|----------|
+| `div` | element | className={clsx(styles.tierArea, className)} | <h3>, <ul> |
+| `h3` | element | *none* | {title} |
+| `ul` | element | className={clsx(styles.sponsorsTier, styles[`tier-${tier}`])} | {sponsors.map(sponsor => (
+          <li key={sponsor.id}>
+            <Sponsor includeName={includeName} sponsor={sponsor} />
+          </li>
+        ))} |
+| `li` | element | key={sponsor.id} | <Sponsor> |
+| `Sponsor` | component | includeName={includeName}, sponsor={sponsor} | *none* |
 
 
 ---
@@ -83,13 +110,6 @@ export function Sponsors({
 
 ---
 
-## Classes
-
-> No classes found in this file.
-
-
----
-
 ## Interfaces
 
 ### `SponsorsProps`
@@ -118,13 +138,6 @@ interface SponsorsProps {
 | `sponsors` | `SponsorData[]` | ✗ |  |
 | `tier` | `string` | ✗ |  |
 | `title` | `string` | ✗ |  |
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

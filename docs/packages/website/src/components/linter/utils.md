@@ -2,19 +2,29 @@
 
 # 📄 `utils.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 7 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 3 |
+| 📊 Variables & Constants | 6 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
-
-## 📊 Analysis Summary
-
-- **Functions**: 7
-- **Classes**: 0
-- **Imports**: 3
-- **Interfaces**: 1
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/website/src/components/linter/utils.ts`**
@@ -26,6 +36,50 @@
 | `TSESLint` | `@typescript-eslint/utils` |
 | `Monaco` | `monaco-editor` |
 | `ErrorGroup` | `../types` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `result` | `Record<string, ErrorGroup>` | const | `{}` | ✗ |
+| `fixers` | `{ fix(): void; isPreferred: boolean; message: string; }[]` | const | `fixes.get(uri)?.map(item => ({
+        fix(): void {
+          const model = editor.getModel();
+          if (model) {
+            editor.executeEdits('eslint', [createEditOperation(model, item)]);
+          }
+        },
+        isPreferred: item.isPreferred,
+        message: item.message,
+      })) ?? []` | ✗ |
+| `group` | `any` | const | `marker.owner === 'eslint'
+        ? code.value
+        : marker.owner === 'typescript'
+          ? 'TypeScript'
+          : marker.owner` | ✗ |
+| `markers` | `Monaco.editor.IMarkerData[]` | const | `[]` | ✗ |
+| `marker` | `Monaco.editor.IMarkerData` | const | `{
+      code: message.ruleId
+        ? {
+            target: ruleUri(message.ruleId),
+            value: message.ruleId,
+          }
+        : 'Internal error',
+      endColumn,
+      endLineNumber,
+      message: message.message,
+      severity:
+        message.severity === 2
+          ? 8 // MarkerSeverity.Error
+          : 4, // MarkerSeverity.Warning
+      source: 'ESLint',
+      startColumn,
+      startLineNumber,
+    }` | ✗ |
+| `fixes` | `LintCodeAction[]` | const | `[]` | ✗ |
 
 
 ---
@@ -329,13 +383,6 @@ export function getPathRegExp(path: string): RegExp {
 
 ---
 
-## Classes
-
-> No classes found in this file.
-
-
----
-
 ## Interfaces
 
 ### `LintCodeAction`
@@ -366,13 +413,6 @@ export interface LintCodeAction {
   }` | ✗ |  |
 | `isPreferred` | `boolean` | ✗ |  |
 | `message` | `string` | ✗ |  |
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
 
 
 ---

@@ -2,19 +2,29 @@
 
 # 📄 `no-confusing-void-expression.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 7 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 13 |
+| 📊 Variables & Constants | 9 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 4 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 7
-- **Classes**: 0
-- **Imports**: 13
-- **Interfaces**: 0
-- **Type Aliases**: 4
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/no-confusing-void-expression.ts`**
@@ -36,6 +46,25 @@
 | `nullThrows` | `../util` |
 | `NullThrowsReasons` | `../util` |
 | `getParentFunctionNode` | `../util/getParentFunctionNode` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `newNodeText` | `string` | const | ``void ${nodeText}`` | ✗ |
+| `arrowFunction` | `MakeRequired<TSESTree.ReturnStatement, "argument">` | const | `invalidAncestor` | ✗ |
+| `arrowBody` | `TSESTree.ReturnStatement` | const | `arrowFunction.body` | ✗ |
+| `newArrowBodyText` | `string` | const | ``{ ${arrowBodyText}; }`` | ✗ |
+| `returnValue` | `any` | const | `invalidAncestor.argument` | ✗ |
+| `newReturnStmtText` | `string` | let/var | ``${returnValueText};`` | ✗ |
+| `returnValue` | `any` | const | `invalidAncestor.argument` | ✗ |
+| `newReturnStmtText` | `string` | let/var | ``${returnValueText}; return;`` | ✗ |
+| `targetNode` | `any` | const | `node.type === AST_NODE_TYPES.ReturnStatement
+          ? node.argument
+          : node.body` | ✗ |
 
 
 ---
@@ -389,20 +418,6 @@ function isVoidReturningFunctionNode(
 //   -   If it is, get its contextual type and bail if we cannot. (x2)
 //   - Return based on whether the contextual type includes `void` or not (x2)
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
 
 
 ---

@@ -2,20 +2,31 @@
 
 # 📄 `gatherLogicalOperands.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 4 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 12 |
+| 📊 Variables & Constants | 10 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 2 |
+| 📑 Type Aliases | 1 |
+| 🎯 Enums | 3 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 4
-- **Classes**: 0
-- **Imports**: 12
-- **Interfaces**: 2
-- **Type Aliases**: 1
+- [Enums](#enums)
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/prefer-optional-chain-utils/gatherLogicalOperands.ts`**
@@ -36,6 +47,24 @@
 | `PreferOptionalChainOptions` | `./PreferOptionalChainOptions` |
 | `isReferenceToGlobalFunction` | `../../util` |
 | `isTypeFlagSet` | `../../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `NULLISH_FLAGS` | `number` | const | `ts.TypeFlags.Null | ts.TypeFlags.Undefined` | ✗ |
+| `allowedFlags` | `number` | let/var | `NULLISH_FLAGS | ts.TypeFlags.Object` | ✗ |
+| `result` | `Operand[]` | const | `[]` | ✗ |
+| `areMoreOperands` | `boolean` | const | `operand !== operands.at(-1)` | ✗ |
+| `argument` | `any` | const | `comparedExpression.argument` | ✗ |
+| `comparedName` | `any` | const | `comparedExpression` | ✗ |
+| `operands` | `TSESTree.Expression[]` | const | `[]` | ✗ |
+| `newlySeenLogicals` | `Set<TSESTree.LogicalExpression>` | const | `new Set<TSESTree.LogicalExpression>([node])` | ✗ |
+| `stack` | `TSESTree.Expression[]` | const | `[node.right, node.left]` | ✗ |
+| `current` | `TSESTree.Expression | undefined` | let/var | `*not shown*` | ✗ |
 
 
 ---
@@ -551,13 +580,6 @@ function getComparisonValueType(
 
 ---
 
-## Classes
-
-> No classes found in this file.
-
-
----
-
 ## Interfaces
 
 ### `ValidOperand`
@@ -612,6 +634,93 @@ export interface InvalidOperand {
 ```ts
 type Operand = InvalidOperand | ValidOperand;
 ```
+
+
+---
+
+## Enums
+
+### `const enum ComparisonValueType`
+
+<details><summary>Enum Code</summary>
+
+```ts
+const enum ComparisonValueType {
+  Null = 'Null', // eslint-disable-line @typescript-eslint/internal/prefer-ast-types-enum
+  Undefined = 'Undefined',
+  UndefinedStringLiteral = 'UndefinedStringLiteral',
+}
+```
+</details>
+
+#### Members
+
+| Name | Value | Description |
+|------|-------|-------------|
+| `Null` | `Null` |  |
+| `Undefined` | `Undefined` |  |
+| `UndefinedStringLiteral` | `UndefinedStringLiteral` |  |
+
+### `const enum OperandValidity`
+
+<details><summary>Enum Code</summary>
+
+```ts
+export const enum OperandValidity {
+  Valid = 'Valid',
+  Invalid = 'Invalid',
+}
+```
+</details>
+
+#### Members
+
+| Name | Value | Description |
+|------|-------|-------------|
+| `Valid` | `Valid` |  |
+| `Invalid` | `Invalid` |  |
+
+### `const enum NullishComparisonType`
+
+<details><summary>Enum Code</summary>
+
+```ts
+export const enum NullishComparisonType {
+  /** `x != null`, `x != undefined` */
+  NotEqualNullOrUndefined = 'NotEqualNullOrUndefined',
+  /** `x == null`, `x == undefined` */
+  EqualNullOrUndefined = 'EqualNullOrUndefined',
+
+  /** `x !== null` */
+  NotStrictEqualNull = 'NotStrictEqualNull',
+  /** `x === null` */
+  StrictEqualNull = 'StrictEqualNull',
+
+  /** `x !== undefined`, `typeof x !== 'undefined'` */
+  NotStrictEqualUndefined = 'NotStrictEqualUndefined',
+  /** `x === undefined`, `typeof x === 'undefined'` */
+  StrictEqualUndefined = 'StrictEqualUndefined',
+
+  /** `!x` */
+  NotBoolean = 'NotBoolean',
+  /** `x` */
+  Boolean = 'Boolean', // eslint-disable-line @typescript-eslint/internal/prefer-ast-types-enum
+}
+```
+</details>
+
+#### Members
+
+| Name | Value | Description |
+|------|-------|-------------|
+| `NotEqualNullOrUndefined` | `NotEqualNullOrUndefined` | / `x != null`, `x != undefined` */ |
+| `EqualNullOrUndefined` | `EqualNullOrUndefined` | / `x == null`, `x == undefined` */ |
+| `NotStrictEqualNull` | `NotStrictEqualNull` | / `x !== null` */ |
+| `StrictEqualNull` | `StrictEqualNull` | / `x === null` */ |
+| `NotStrictEqualUndefined` | `NotStrictEqualUndefined` | / `x !== undefined`, `typeof x !== 'undefined'` */ |
+| `StrictEqualUndefined` | `StrictEqualUndefined` | / `x === undefined`, `typeof x === 'undefined'` */ |
+| `NotBoolean` | `NotBoolean` | / `!x` */ |
+| `Boolean` | `Boolean` | / `x` */ |
 
 
 ---

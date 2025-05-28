@@ -2,20 +2,30 @@
 
 # 📄 `parser.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 7 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 21 |
+| 📊 Variables & Constants | 5 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 2 |
+| 📑 Type Aliases | 1 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 7
-- **Classes**: 0
-- **Imports**: 21
-- **Interfaces**: 2
-- **Type Aliases**: 1
 
 ## 🛠️ File Location:
 📂 **`packages/typescript-estree/src/parser.ts`**
@@ -45,6 +55,23 @@
 | `createParseSettings` | `./parseSettings/createParseSettings` |
 | `getFirstSemanticOrSyntacticError` | `./semantic-or-syntactic-errors` |
 | `useProgramFromProjectService` | `./useProgramFromProjectService` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `existingPrograms` | `Map<CanonicalPath, ts.Program>` | const | `new Map<CanonicalPath, ts.Program>()` | ✗ |
+| `defaultProjectMatchedFiles` | `Set<string>` | const | `new Set<string>()` | ✗ |
+| `parseAndGenerateServicesCalls` | `Record<string, number>` | let/var | `{}` | ✗ |
+| `hasFullTypeInformation` | `boolean` | const | `parseSettings.programs != null ||
+    parseSettings.projects.size > 0 ||
+    !!parseSettings.projectService` | ✗ |
+| `shouldPreserveNodeMaps` | `boolean` | const | `typeof parseSettings.preserveNodeMaps === 'boolean'
+      ? parseSettings.preserveNodeMaps
+      : true` | ✗ |
 
 
 ---
@@ -425,13 +452,6 @@ export function parseAndGenerateServices<
    * Return the converted AST and additional parser services
    */
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
 
 
 ---

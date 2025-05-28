@@ -2,19 +2,29 @@
 
 # 📄 `consistent-indexed-object-style.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 99 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 11 |
+| 📊 Variables & Constants | 14 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 99
-- **Classes**: 0
-- **Imports**: 11
-- **Interfaces**: 0
-- **Type Aliases**: 2
 
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/consistent-indexed-object-style.ts`**
@@ -34,6 +44,34 @@
 | `isNodeEqual` | `../util` |
 | `isParenthesized` | `../util` |
 | `nullThrows` | `../util` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `keyType` | `any` | const | `parameter.typeAnnotation` | ✗ |
+| `valueType` | `any` | const | `member.typeAnnotation` | ✗ |
+| `record` | `string` | const | `member.readonly
+                ? `Readonly<Record<${key}, ${value}>>`
+                : `Record<${key}, ${value}>`` | ✗ |
+| `typeName` | `any` | const | `node.typeName` | ✗ |
+| `params` | `any` | const | `node.typeArguments?.params` | ✗ |
+| `indexParam` | `any` | const | `params[0]` | ✗ |
+| `shouldFix` | `boolean` | const | `indexParam.type === AST_NODE_TYPES.TSStringKeyword ||
+            indexParam.type === AST_NODE_TYPES.TSNumberKeyword ||
+            indexParam.type === AST_NODE_TYPES.TSSymbolKeyword` | ✗ |
+| `genericTypes` | `string` | let/var | `''` | ✗ |
+| `key` | `any` | const | `node.key` | ✗ |
+| `constraint` | `any` | const | `node.constraint` | ✗ |
+| `parentId` | `any` | const | `findParentDeclaration(node)?.id` | ✗ |
+| `canFix` | `boolean` | const | `node.readonly !== '-'` | ✗ |
+| `valueType` | `any` | const | `node.typeAnnotation
+                  ? context.sourceCode.getText(node.typeAnnotation)
+                  : 'any'` | ✗ |
+| `recordText` | `string` | let/var | ``Record<${keyType}, ${valueType}>`` | ✗ |
 
 
 ---
@@ -2582,20 +2620,6 @@ function isDeeplyReferencingType(
 // check if the identifier is a reference of the type being checked
 // otherwise, follow its definition(s) (x2)
 ```
-
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
 
 
 ---

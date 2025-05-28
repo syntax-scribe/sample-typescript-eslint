@@ -2,20 +2,30 @@
 
 # 📄 `config-helper.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 3 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 1 |
+| 📊 Variables & Constants | 5 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 1 |
+| 📑 Type Aliases | 2 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
 - [Interfaces](#interfaces)
 - [Type Aliases](#type-aliases)
-
-## 📊 Analysis Summary
-
-- **Functions**: 3
-- **Classes**: 0
-- **Imports**: 1
-- **Interfaces**: 1
-- **Type Aliases**: 2
 
 ## 🛠️ File Location:
 📂 **`packages/typescript-eslint/src/config-helper.ts`**
@@ -25,6 +35,28 @@
 | Name | Source |
 |------|--------|
 | `TSESLint` | `@typescript-eslint/utils` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `config` | `{ name?: unknown; extends?: unknown; files?: unknown; ignores?: unknown; }` | const | `_config as {
+        name?: unknown;
+        extends?: unknown;
+        files?: unknown;
+        ignores?: unknown;
+      }` | ✗ |
+| `nameErrorPhrase` | `string` | const | `name != null ? `, named "${name}",` : ' (anonymous)'` | ✗ |
+| `nonObjectExtensions` | `any[]` | const | `[]` | ✗ |
+| `configArray` | `any[]` | const | `[]` | ✗ |
+| `extension` | `{ name?: unknown; files?: unknown; ignores?: unknown; }` | const | `_extension as {
+          name?: unknown;
+          files?: unknown;
+          ignores?: unknown;
+        }` | ✗ |
 
 
 ---
@@ -252,13 +284,6 @@ function isPossiblyGlobalIgnores(config: object): boolean {
 - **Calls**:
   - `Object.keys(config).every`
   - `['name', 'ignores'].includes`
-
----
-
-## Classes
-
-> No classes found in this file.
-
 
 ---
 

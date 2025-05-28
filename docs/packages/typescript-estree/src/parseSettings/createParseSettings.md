@@ -2,18 +2,28 @@
 
 # 📄 `createParseSettings.ts`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 6 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 17 |
+| 📊 Variables & Constants | 9 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 0 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 6
-- **Classes**: 0
-- **Imports**: 17
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/typescript-estree/src/parseSettings/createParseSettings.ts`**
@@ -39,6 +49,95 @@
 | `inferSingleRun` | `./inferSingleRun` |
 | `resolveProjectList` | `./resolveProjectList` |
 | `warnAboutTSVersion` | `./warnAboutTSVersion` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `TSCONFIG_MATCH_CACHE` | `ExpiringCache<string, string> | null` | let/var | `*not shown*` | ✗ |
+| `TSSERVER_PROJECT_SERVICE` | `ProjectServiceAndMetadata | null` | let/var | `null` | ✗ |
+| `JSDocParsingMode` | `{ readonly ParseAll: any; readonly ParseForTypeErrors: any; readonly ParseForTypeInfo: any; readonly ParseNone: any; }` | const | `{
+  ParseAll: ts.JSDocParsingMode?.ParseAll,
+  ParseForTypeErrors: ts.JSDocParsingMode?.ParseForTypeErrors,
+  ParseForTypeInfo: ts.JSDocParsingMode?.ParseForTypeInfo,
+  ParseNone: ts.JSDocParsingMode?.ParseNone,
+} as const` | ✗ |
+| `tsconfigRootDir` | `string` | const | `typeof tsestreeOptions.tsconfigRootDir === 'string'
+      ? tsestreeOptions.tsconfigRootDir
+      : process.cwd()` | ✗ |
+| `passedLoggerFn` | `boolean` | const | `typeof tsestreeOptions.loggerFn === 'function'` | ✗ |
+| `extension` | `ts.Extension` | const | `path.extname(filePath).toLowerCase() as ts.Extension` | ✗ |
+| `parseSettings` | `MutableParseSettings` | const | `{
+    loc: tsestreeOptions.loc === true,
+    range: tsestreeOptions.range === true,
+    allowInvalidAST: tsestreeOptions.allowInvalidAST === true,
+    code,
+    codeFullText,
+    comment: tsestreeOptions.comment === true,
+    comments: [],
+    debugLevel:
+      tsestreeOptions.debugLevel === true
+        ? new Set(['typescript-eslint'])
+        : Array.isArray(tsestreeOptions.debugLevel)
+          ? new Set(tsestreeOptions.debugLevel)
+          : new Set(),
+    errorOnTypeScriptSyntacticAndSemanticIssues: false,
+    errorOnUnknownASTType: tsestreeOptions.errorOnUnknownASTType === true,
+    extraFileExtensions:
+      Array.isArray(tsestreeOptions.extraFileExtensions) &&
+      tsestreeOptions.extraFileExtensions.every(ext => typeof ext === 'string')
+        ? tsestreeOptions.extraFileExtensions
+        : [],
+    filePath,
+    jsDocParsingMode,
+    jsx: tsestreeOptions.jsx === true,
+    log:
+      typeof tsestreeOptions.loggerFn === 'function'
+        ? tsestreeOptions.loggerFn
+        : tsestreeOptions.loggerFn === false
+          ? (): void => {} // eslint-disable-line @typescript-eslint/no-empty-function
+          : console.log, // eslint-disable-line no-console
+    preserveNodeMaps: tsestreeOptions.preserveNodeMaps !== false,
+    programs: Array.isArray(tsestreeOptions.programs)
+      ? tsestreeOptions.programs
+      : null,
+    projects: new Map(),
+    projectService:
+      tsestreeOptions.projectService ||
+      (tsestreeOptions.project &&
+        tsestreeOptions.projectService !== false &&
+        process.env.TYPESCRIPT_ESLINT_PROJECT_SERVICE === 'true')
+        ? populateProjectService(tsestreeOptions.projectService, {
+            jsDocParsingMode,
+            tsconfigRootDir,
+          })
+        : undefined,
+    setExternalModuleIndicator:
+      tsestreeOptions.sourceType === 'module' ||
+      (tsestreeOptions.sourceType == null && extension === ts.Extension.Mjs) ||
+      (tsestreeOptions.sourceType == null && extension === ts.Extension.Mts)
+        ? (file): void => {
+            file.externalModuleIndicator = true;
+          }
+        : undefined,
+    singleRun,
+    suppressDeprecatedPropertyWarnings:
+      tsestreeOptions.suppressDeprecatedPropertyWarnings ??
+      process.env.NODE_ENV !== 'test',
+    tokens: tsestreeOptions.tokens === true ? [] : null,
+    tsconfigMatchCache: (TSCONFIG_MATCH_CACHE ??= new ExpiringCache(
+      singleRun
+        ? 'Infinity'
+        : (tsestreeOptions.cacheLifetime?.glob ??
+          DEFAULT_TSCONFIG_CACHE_DURATION_SECONDS),
+    )),
+    tsconfigRootDir,
+  }` | ✗ |
+| `namespaces` | `any[]` | const | `[]` | ✗ |
+| `options` | `any` | const | `typeof optionsRaw === 'object' ? optionsRaw : {}` | ✗ |
 
 
 ---
@@ -352,26 +451,5 @@ function populateProjectService(
 - **Calls**:
   - `validateDefaultProjectForFilesGlob (from ../create-program/validateDefaultProjectForFilesGlob)`
   - `createProjectService (from @typescript-eslint/project-service)`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---

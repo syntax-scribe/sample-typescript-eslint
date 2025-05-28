@@ -2,18 +2,29 @@
 
 # 📄 `index.tsx`
 
+## 📊 Analysis Summary
+
+| Metric | Count |
+|--------|-------|
+| 🔧 Functions | 1 |
+| 🧱 Classes | 0 |
+| 📦 Imports | 7 |
+| 📊 Variables & Constants | 2 |
+| ✨ Decorators | 0 |
+| 🔄 Re-exports | 0 |
+| ⚡ Async/Await Patterns | 0 |
+| 💠 JSX Elements | 3 |
+| 🟢 Vue Composition API | 0 |
+| 📐 Interfaces | 0 |
+| 📑 Type Aliases | 0 |
+| 🎯 Enums | 0 |
+
 ## 📚 Table of Contents
 
 - [Imports](#imports)
+- [Variables & Constants](#variables-constants)
+- [JSX Elements](#jsx-elements)
 - [Functions](#functions)
-
-## 📊 Analysis Summary
-
-- **Functions**: 1
-- **Classes**: 0
-- **Imports**: 7
-- **Interfaces**: 0
-- **Type Aliases**: 0
 
 ## 🛠️ File Location:
 📂 **`packages/website/src/theme/BlogPostItem/Header/Title/index.tsx`**
@@ -29,6 +40,27 @@
 | `React` | `react` |
 | `Markdown` | `react-markdown` |
 | `styles` | `./styles.module.css` |
+
+
+---
+
+## Variables & Constants
+
+| Name | Type | Kind | Value | Exported |
+|------|------|------|-------|----------|
+| `TitleHeading` | `"h1" | "h2"` | const | `isBlogPostPage ? 'h1' : 'h2'` | ✗ |
+| `title` | `any` | const | `<Markdown>{titleRaw}</Markdown>` | ✗ |
+
+
+---
+
+## JSX Elements
+
+| Component | Type | Props | Children |
+|-----------|------|-------|----------|
+| `Markdown` | component | *none* | {titleRaw} |
+| `TitleHeading` | component | className={clsx(styles.title, className)} | {isBlogPostPage ? title : <Link to={permalink}>{title}</Link>} |
+| `Link` | component | to={permalink} | {title} |
 
 
 ---
@@ -66,26 +98,5 @@ export default function BlogPostItemHeaderTitle({
 - **Calls**:
   - `useBlogPost (from @docusaurus/plugin-content-blog/client)`
   - `clsx (from clsx)`
-
----
-
-## Classes
-
-> No classes found in this file.
-
-
----
-
-## Interfaces
-
-> No interfaces found in this file.
-
-
----
-
-## Type Aliases
-
-> No type aliases found in this file.
-
 
 ---
