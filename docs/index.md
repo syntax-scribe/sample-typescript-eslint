@@ -1,23 +1,41 @@
 # Table of Contents
 
+## 📊 Analysis Summary 
+
+| Metric | Count |
+|--------|-------|
+| 📁 Total Files | 2,454 |
+| 🧱 Classes | 313 |
+| 🔧 Functions | 4,611 |
+| 📦 Imports | 5,527 |
+| 📐 Interfaces | 700 |
+| 📑 Type Aliases | 915 |
+| 🎯 Enums | 66 |
+| ✨ Decorators | 28 |
+| 🔄 Re-exports | 467 |
+| ⚡ Async Patterns | 32 |
+| 💠 JSX Elements | 446 |
+| 📊 Variables | 3,170 |
+| 🔢 Line Count | 264,900 |
+
+
+
 ## Root
 
-??? note "Show Files"
+??? abstract "Root Configuration (1 files)"
 
     - [knip.md](./knip.md)
 
-## packages/ast-spec/src
+## packages
 
-??? note "Show Files"
+??? note "ast-spec/src (4 files)"
 
     - [ast-node-types.md](./packages/ast-spec/src/ast-node-types.md)
     - [ast-token-types.md](./packages/ast-spec/src/ast-token-types.md)
     - [utils.md](./packages/ast-spec/src/utils.md)
     - [index.md](./packages/ast-spec/src/index.md)
 
-## packages/ast-spec/src/base
-
-??? note "Show Files"
+??? note "ast-spec/src/base (16 files)"
 
     - [Accessibility.md](./packages/ast-spec/src/base/Accessibility.md)
     - [Range.md](./packages/ast-spec/src/base/Range.md)
@@ -36,117 +54,79 @@
     - [ClassBase.md](./packages/ast-spec/src/base/ClassBase.md)
     - [OptionalRangeAndLoc.md](./packages/ast-spec/src/base/OptionalRangeAndLoc.md)
 
-## packages/ast-spec/src/type/TSAbstractKeyword
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSAbstractKeyword (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSAbstractKeyword/spec.md)
 
-## packages/ast-spec/src/type/TSAnyKeyword
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSAnyKeyword (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSAnyKeyword/spec.md)
 
-## packages/ast-spec/src/type/TSArrayType
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSArrayType (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSArrayType/spec.md)
 
-## packages/ast-spec/src/type/TSAsyncKeyword
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSAsyncKeyword (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSAsyncKeyword/spec.md)
 
-## packages/ast-spec/src/type/TSBigIntKeyword
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSBigIntKeyword (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSBigIntKeyword/spec.md)
 
-## packages/ast-spec/src/type/TSBooleanKeyword
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSBooleanKeyword (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSBooleanKeyword/spec.md)
 
-## packages/ast-spec/src/type/TSConditionalType
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSConditionalType (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSConditionalType/spec.md)
 
-## packages/ast-spec/src/special/TSTypeParameter
-
-??? note "Show Files"
+??? note "ast-spec/src/special/TSTypeParameter (1 files)"
 
     - [spec.md](./packages/ast-spec/src/special/TSTypeParameter/spec.md)
 
-## packages/ast-spec/src/special/TSTypeParameterDeclaration
-
-??? note "Show Files"
+??? note "ast-spec/src/special/TSTypeParameterDeclaration (1 files)"
 
     - [spec.md](./packages/ast-spec/src/special/TSTypeParameterDeclaration/spec.md)
 
-## packages/ast-spec/src/special/PrivateIdentifier
-
-??? note "Show Files"
+??? note "ast-spec/src/special/PrivateIdentifier (1 files)"
 
     - [spec.md](./packages/ast-spec/src/special/PrivateIdentifier/spec.md)
 
-## packages/ast-spec/src/expression/MemberExpression
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/MemberExpression (1 files)"
 
     - [spec.md](./packages/ast-spec/src/expression/MemberExpression/spec.md)
 
-## packages/ast-spec/src/declaration/ClassDeclaration
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ClassDeclaration (1 files)"
 
     - [spec.md](./packages/ast-spec/src/declaration/ClassDeclaration/spec.md)
 
-## packages/ast-spec/src/expression/literal/StringLiteral
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/literal/StringLiteral (1 files)"
 
     - [spec.md](./packages/ast-spec/src/expression/literal/StringLiteral/spec.md)
 
-## packages/ast-spec/src/expression/literal/BigIntLiteral
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/literal/BigIntLiteral (1 files)"
 
     - [spec.md](./packages/ast-spec/src/expression/literal/BigIntLiteral/spec.md)
 
-## packages/ast-spec/src/expression/literal/BooleanLiteral
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/literal/BooleanLiteral (1 files)"
 
     - [spec.md](./packages/ast-spec/src/expression/literal/BooleanLiteral/spec.md)
 
-## packages/ast-spec/src/expression/literal/NullLiteral
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/literal/NullLiteral (1 files)"
 
     - [spec.md](./packages/ast-spec/src/expression/literal/NullLiteral/spec.md)
 
-## packages/ast-spec/src/expression/literal/NumberLiteral
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/literal/NumberLiteral (1 files)"
 
     - [spec.md](./packages/ast-spec/src/expression/literal/NumberLiteral/spec.md)
 
-## packages/ast-spec/src/expression/literal/RegExpLiteral
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/literal/RegExpLiteral (1 files)"
 
     - [spec.md](./packages/ast-spec/src/expression/literal/RegExpLiteral/spec.md)
 
-## packages/ast-spec/src/unions
-
-??? note "Show Files"
+??? note "ast-spec/src/unions (32 files)"
 
     - [Literal.md](./packages/ast-spec/src/unions/Literal.md)
     - [PropertyName.md](./packages/ast-spec/src/unions/PropertyName.md)
@@ -181,5863 +161,3911 @@
     - [PrimaryExpression.md](./packages/ast-spec/src/unions/PrimaryExpression.md)
     - [TSUnaryExpression.md](./packages/ast-spec/src/unions/TSUnaryExpression.md)
 
-## packages/ast-spec/src/special/ImportAttribute
-
-??? note "Show Files"
+??? note "ast-spec/src/special/ImportAttribute (1 files)"
 
     - [spec.md](./packages/ast-spec/src/special/ImportAttribute/spec.md)
 
-## packages/ast-spec/src/declaration
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration (2 files)"
 
     - [ExportAndImportKind.md](./packages/ast-spec/src/declaration/ExportAndImportKind.md)
     - [spec.md](./packages/ast-spec/src/declaration/spec.md)
 
-## packages/ast-spec/src/declaration/ExportAllDeclaration
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportAllDeclaration (1 files)"
 
     - [spec.md](./packages/ast-spec/src/declaration/ExportAllDeclaration/spec.md)
 
-## packages/ast-spec/src/declaration/FunctionDeclaration
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/FunctionDeclaration (1 files)"
 
     - [spec.md](./packages/ast-spec/src/declaration/FunctionDeclaration/spec.md)
 
-## packages/ast-spec/src/declaration/TSDeclareFunction
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSDeclareFunction (1 files)"
 
     - [spec.md](./packages/ast-spec/src/declaration/TSDeclareFunction/spec.md)
 
-## packages/ast-spec/src/element/TSEnumMember
-
-??? note "Show Files"
+??? note "ast-spec/src/element/TSEnumMember (1 files)"
 
     - [spec.md](./packages/ast-spec/src/element/TSEnumMember/spec.md)
 
-## packages/ast-spec/src/special/TSEnumBody
-
-??? note "Show Files"
+??? note "ast-spec/src/special/TSEnumBody (1 files)"
 
     - [spec.md](./packages/ast-spec/src/special/TSEnumBody/spec.md)
 
-## packages/ast-spec/src/declaration/TSEnumDeclaration
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSEnumDeclaration (1 files)"
 
     - [spec.md](./packages/ast-spec/src/declaration/TSEnumDeclaration/spec.md)
 
-## packages/ast-spec/src/special/TSExternalModuleReference
-
-??? note "Show Files"
+??? note "ast-spec/src/special/TSExternalModuleReference (1 files)"
 
     - [spec.md](./packages/ast-spec/src/special/TSExternalModuleReference/spec.md)
 
-## packages/ast-spec/src/expression/ThisExpression
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/ThisExpression (1 files)"
 
     - [spec.md](./packages/ast-spec/src/expression/ThisExpression/spec.md)
 
-## packages/ast-spec/src/type/TSQualifiedName
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSQualifiedName (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSQualifiedName/spec.md)
 
-## packages/ast-spec/src/declaration/TSImportEqualsDeclaration
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSImportEqualsDeclaration (1 files)"
 
     - [spec.md](./packages/ast-spec/src/declaration/TSImportEqualsDeclaration/spec.md)
 
-## packages/ast-spec/src/element/TSCallSignatureDeclaration
-
-??? note "Show Files"
+??? note "ast-spec/src/element/TSCallSignatureDeclaration (1 files)"
 
     - [spec.md](./packages/ast-spec/src/element/TSCallSignatureDeclaration/spec.md)
 
-## packages/ast-spec/src/element/TSConstructSignatureDeclaration
-
-??? note "Show Files"
+??? note "ast-spec/src/element/TSConstructSignatureDeclaration (1 files)"
 
     - [spec.md](./packages/ast-spec/src/element/TSConstructSignatureDeclaration/spec.md)
 
-## packages/ast-spec/src/element/TSIndexSignature
-
-??? note "Show Files"
+??? note "ast-spec/src/element/TSIndexSignature (1 files)"
 
     - [spec.md](./packages/ast-spec/src/element/TSIndexSignature/spec.md)
 
-## packages/ast-spec/src/element/TSMethodSignature
-
-??? note "Show Files"
+??? note "ast-spec/src/element/TSMethodSignature (1 files)"
 
     - [spec.md](./packages/ast-spec/src/element/TSMethodSignature/spec.md)
 
-## packages/ast-spec/src/element/TSPropertySignature
-
-??? note "Show Files"
+??? note "ast-spec/src/element/TSPropertySignature (1 files)"
 
     - [spec.md](./packages/ast-spec/src/element/TSPropertySignature/spec.md)
 
-## packages/ast-spec/src/special/TSInterfaceBody
-
-??? note "Show Files"
+??? note "ast-spec/src/special/TSInterfaceBody (1 files)"
 
     - [spec.md](./packages/ast-spec/src/special/TSInterfaceBody/spec.md)
 
-## packages/ast-spec/src/special/TSTypeParameterInstantiation
-
-??? note "Show Files"
+??? note "ast-spec/src/special/TSTypeParameterInstantiation (1 files)"
 
     - [spec.md](./packages/ast-spec/src/special/TSTypeParameterInstantiation/spec.md)
 
-## packages/ast-spec/src/special/TSInterfaceHeritage
-
-??? note "Show Files"
+??? note "ast-spec/src/special/TSInterfaceHeritage (1 files)"
 
     - [spec.md](./packages/ast-spec/src/special/TSInterfaceHeritage/spec.md)
 
-## packages/ast-spec/src/declaration/TSInterfaceDeclaration
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSInterfaceDeclaration (1 files)"
 
     - [spec.md](./packages/ast-spec/src/declaration/TSInterfaceDeclaration/spec.md)
 
-## packages/ast-spec/src/special/TSModuleBlock
-
-??? note "Show Files"
+??? note "ast-spec/src/special/TSModuleBlock (1 files)"
 
     - [spec.md](./packages/ast-spec/src/special/TSModuleBlock/spec.md)
 
-## packages/ast-spec/src/type/TSDeclareKeyword
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSDeclareKeyword (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSDeclareKeyword/spec.md)
 
-## packages/ast-spec/src/type/TSExportKeyword
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSExportKeyword (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSExportKeyword/spec.md)
 
-## packages/ast-spec/src/type/TSFunctionType
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSFunctionType (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSFunctionType/spec.md)
 
-## packages/ast-spec/src/expression/ObjectExpression
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/ObjectExpression (1 files)"
 
     - [spec.md](./packages/ast-spec/src/expression/ObjectExpression/spec.md)
 
-## packages/ast-spec/src/type/TSImportType
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSImportType (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSImportType/spec.md)
 
-## packages/ast-spec/src/type/TSIndexedAccessType
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSIndexedAccessType (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSIndexedAccessType/spec.md)
 
-## packages/ast-spec/src/type/TSInferType
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSInferType (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSInferType/spec.md)
 
-## packages/ast-spec/src/type/TSIntersectionType
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSIntersectionType (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSIntersectionType/spec.md)
 
-## packages/ast-spec/src/type/TSIntrinsicKeyword
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSIntrinsicKeyword (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSIntrinsicKeyword/spec.md)
 
-## packages/ast-spec/src/expression/UnaryExpression
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/UnaryExpression (1 files)"
 
     - [spec.md](./packages/ast-spec/src/expression/UnaryExpression/spec.md)
 
-## packages/ast-spec/src/expression/UpdateExpression
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/UpdateExpression (1 files)"
 
     - [spec.md](./packages/ast-spec/src/expression/UpdateExpression/spec.md)
 
-## packages/ast-spec/src/special/TemplateElement
-
-??? note "Show Files"
+??? note "ast-spec/src/special/TemplateElement (1 files)"
 
     - [spec.md](./packages/ast-spec/src/special/TemplateElement/spec.md)
 
-## packages/ast-spec/src/expression/TemplateLiteral
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/TemplateLiteral (1 files)"
 
     - [spec.md](./packages/ast-spec/src/expression/TemplateLiteral/spec.md)
 
-## packages/ast-spec/src/type/TSLiteralType
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSLiteralType (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSLiteralType/spec.md)
 
-## packages/ast-spec/src/type/TSMappedType
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSMappedType (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSMappedType/spec.md)
 
-## packages/ast-spec/src/type/TSNamedTupleMember
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSNamedTupleMember (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSNamedTupleMember/spec.md)
 
-## packages/ast-spec/src/type/TSNeverKeyword
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSNeverKeyword (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSNeverKeyword/spec.md)
 
-## packages/ast-spec/src/type/TSNullKeyword
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSNullKeyword (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSNullKeyword/spec.md)
 
-## packages/ast-spec/src/type/TSNumberKeyword
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSNumberKeyword (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSNumberKeyword/spec.md)
 
-## packages/ast-spec/src/type/TSObjectKeyword
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSObjectKeyword (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSObjectKeyword/spec.md)
 
-## packages/ast-spec/src/type/TSOptionalType
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSOptionalType (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSOptionalType/spec.md)
 
-## packages/ast-spec/src/type/TSPrivateKeyword
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSPrivateKeyword (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSPrivateKeyword/spec.md)
 
-## packages/ast-spec/src/type/TSProtectedKeyword
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSProtectedKeyword (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSProtectedKeyword/spec.md)
 
-## packages/ast-spec/src/type/TSPublicKeyword
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSPublicKeyword (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSPublicKeyword/spec.md)
 
-## packages/ast-spec/src/type/TSReadonlyKeyword
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSReadonlyKeyword (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSReadonlyKeyword/spec.md)
 
-## packages/ast-spec/src/type/TSRestType
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSRestType (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSRestType/spec.md)
 
-## packages/ast-spec/src/type/TSStaticKeyword
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSStaticKeyword (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSStaticKeyword/spec.md)
 
-## packages/ast-spec/src/type/TSStringKeyword
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSStringKeyword (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSStringKeyword/spec.md)
 
-## packages/ast-spec/src/type/TSSymbolKeyword
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSSymbolKeyword (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSSymbolKeyword/spec.md)
 
-## packages/ast-spec/src/type/TSTemplateLiteralType
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSTemplateLiteralType (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSTemplateLiteralType/spec.md)
 
-## packages/ast-spec/src/type/TSThisType
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSThisType (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSThisType/spec.md)
 
-## packages/ast-spec/src/type/TSTupleType
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSTupleType (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSTupleType/spec.md)
 
-## packages/ast-spec/src/type/TSTypeLiteral
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSTypeLiteral (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSTypeLiteral/spec.md)
 
-## packages/ast-spec/src/type/TSTypeOperator
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSTypeOperator (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSTypeOperator/spec.md)
 
-## packages/ast-spec/src/type/TSTypePredicate
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSTypePredicate (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSTypePredicate/spec.md)
 
-## packages/ast-spec/src/special/CatchClause
-
-??? note "Show Files"
+??? note "ast-spec/src/special/CatchClause (1 files)"
 
     - [spec.md](./packages/ast-spec/src/special/CatchClause/spec.md)
 
-## packages/ast-spec/src/element/AccessorProperty
-
-??? note "Show Files"
+??? note "ast-spec/src/element/AccessorProperty (1 files)"
 
     - [spec.md](./packages/ast-spec/src/element/AccessorProperty/spec.md)
 
-## packages/ast-spec/src/expression/FunctionExpression
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/FunctionExpression (1 files)"
 
     - [spec.md](./packages/ast-spec/src/expression/FunctionExpression/spec.md)
 
-## packages/ast-spec/src/element/MethodDefinition
-
-??? note "Show Files"
+??? note "ast-spec/src/element/MethodDefinition (1 files)"
 
     - [spec.md](./packages/ast-spec/src/element/MethodDefinition/spec.md)
 
-## packages/ast-spec/src/element/PropertyDefinition
-
-??? note "Show Files"
+??? note "ast-spec/src/element/PropertyDefinition (1 files)"
 
     - [spec.md](./packages/ast-spec/src/element/PropertyDefinition/spec.md)
 
-## packages/ast-spec/src/element/StaticBlock
-
-??? note "Show Files"
+??? note "ast-spec/src/element/StaticBlock (1 files)"
 
     - [spec.md](./packages/ast-spec/src/element/StaticBlock/spec.md)
 
-## packages/ast-spec/src/element/TSAbstractAccessorProperty
-
-??? note "Show Files"
+??? note "ast-spec/src/element/TSAbstractAccessorProperty (1 files)"
 
     - [spec.md](./packages/ast-spec/src/element/TSAbstractAccessorProperty/spec.md)
 
-## packages/ast-spec/src/element/TSAbstractMethodDefinition
-
-??? note "Show Files"
+??? note "ast-spec/src/element/TSAbstractMethodDefinition (1 files)"
 
     - [spec.md](./packages/ast-spec/src/element/TSAbstractMethodDefinition/spec.md)
 
-## packages/ast-spec/src/element/TSAbstractPropertyDefinition
-
-??? note "Show Files"
+??? note "ast-spec/src/element/TSAbstractPropertyDefinition (1 files)"
 
     - [spec.md](./packages/ast-spec/src/element/TSAbstractPropertyDefinition/spec.md)
 
-## packages/ast-spec/src/special/ClassBody
-
-??? note "Show Files"
+??? note "ast-spec/src/special/ClassBody (1 files)"
 
     - [spec.md](./packages/ast-spec/src/special/ClassBody/spec.md)
 
-## packages/ast-spec/src/special/EmptyStatement
-
-??? note "Show Files"
+??? note "ast-spec/src/special/EmptyStatement (1 files)"
 
     - [spec.md](./packages/ast-spec/src/special/EmptyStatement/spec.md)
 
-## packages/ast-spec/src/special/ExportSpecifier
-
-??? note "Show Files"
+??? note "ast-spec/src/special/ExportSpecifier (1 files)"
 
     - [spec.md](./packages/ast-spec/src/special/ExportSpecifier/spec.md)
 
-## packages/ast-spec/src/special/ImportDefaultSpecifier
-
-??? note "Show Files"
+??? note "ast-spec/src/special/ImportDefaultSpecifier (1 files)"
 
     - [spec.md](./packages/ast-spec/src/special/ImportDefaultSpecifier/spec.md)
 
-## packages/ast-spec/src/special/ImportNamespaceSpecifier
-
-??? note "Show Files"
+??? note "ast-spec/src/special/ImportNamespaceSpecifier (1 files)"
 
     - [spec.md](./packages/ast-spec/src/special/ImportNamespaceSpecifier/spec.md)
 
-## packages/ast-spec/src/special/ImportSpecifier
-
-??? note "Show Files"
+??? note "ast-spec/src/special/ImportSpecifier (1 files)"
 
     - [spec.md](./packages/ast-spec/src/special/ImportSpecifier/spec.md)
 
-## packages/ast-spec/src/token/BlockComment
-
-??? note "Show Files"
+??? note "ast-spec/src/token/BlockComment (1 files)"
 
     - [spec.md](./packages/ast-spec/src/token/BlockComment/spec.md)
 
-## packages/ast-spec/src/token/LineComment
-
-??? note "Show Files"
+??? note "ast-spec/src/token/LineComment (1 files)"
 
     - [spec.md](./packages/ast-spec/src/token/LineComment/spec.md)
 
-## packages/ast-spec/src/token/BooleanToken
-
-??? note "Show Files"
+??? note "ast-spec/src/token/BooleanToken (1 files)"
 
     - [spec.md](./packages/ast-spec/src/token/BooleanToken/spec.md)
 
-## packages/ast-spec/src/token/IdentifierToken
-
-??? note "Show Files"
+??? note "ast-spec/src/token/IdentifierToken (1 files)"
 
     - [spec.md](./packages/ast-spec/src/token/IdentifierToken/spec.md)
 
-## packages/ast-spec/src/token/JSXIdentifierToken
-
-??? note "Show Files"
+??? note "ast-spec/src/token/JSXIdentifierToken (1 files)"
 
     - [spec.md](./packages/ast-spec/src/token/JSXIdentifierToken/spec.md)
 
-## packages/ast-spec/src/token/JSXTextToken
-
-??? note "Show Files"
+??? note "ast-spec/src/token/JSXTextToken (1 files)"
 
     - [spec.md](./packages/ast-spec/src/token/JSXTextToken/spec.md)
 
-## packages/ast-spec/src/token/KeywordToken
-
-??? note "Show Files"
+??? note "ast-spec/src/token/KeywordToken (1 files)"
 
     - [spec.md](./packages/ast-spec/src/token/KeywordToken/spec.md)
 
-## packages/ast-spec/src/token/NullToken
-
-??? note "Show Files"
+??? note "ast-spec/src/token/NullToken (1 files)"
 
     - [spec.md](./packages/ast-spec/src/token/NullToken/spec.md)
 
-## packages/ast-spec/src/token/NumericToken
-
-??? note "Show Files"
+??? note "ast-spec/src/token/NumericToken (1 files)"
 
     - [spec.md](./packages/ast-spec/src/token/NumericToken/spec.md)
 
-## packages/ast-spec/src/token/PrivateIdentifierToken
-
-??? note "Show Files"
+??? note "ast-spec/src/token/PrivateIdentifierToken (1 files)"
 
     - [spec.md](./packages/ast-spec/src/token/PrivateIdentifierToken/spec.md)
 
-## packages/ast-spec/src/expression/AssignmentExpression
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/AssignmentExpression (2 files)"
 
     - [AssignmentOperatorToText.md](./packages/ast-spec/src/expression/AssignmentExpression/AssignmentOperatorToText.md)
     - [spec.md](./packages/ast-spec/src/expression/AssignmentExpression/spec.md)
 
-## packages/ast-spec/src/token/PunctuatorToken
-
-??? note "Show Files"
+??? note "ast-spec/src/token/PunctuatorToken (2 files)"
 
     - [PunctuatorTokenToText.md](./packages/ast-spec/src/token/PunctuatorToken/PunctuatorTokenToText.md)
     - [spec.md](./packages/ast-spec/src/token/PunctuatorToken/spec.md)
 
-## packages/ast-spec/src/token/RegularExpressionToken
-
-??? note "Show Files"
+??? note "ast-spec/src/token/RegularExpressionToken (1 files)"
 
     - [spec.md](./packages/ast-spec/src/token/RegularExpressionToken/spec.md)
 
-## packages/ast-spec/src/token/StringToken
-
-??? note "Show Files"
+??? note "ast-spec/src/token/StringToken (1 files)"
 
     - [spec.md](./packages/ast-spec/src/token/StringToken/spec.md)
 
-## packages/ast-spec/src/token/TemplateToken
-
-??? note "Show Files"
+??? note "ast-spec/src/token/TemplateToken (1 files)"
 
     - [spec.md](./packages/ast-spec/src/token/TemplateToken/spec.md)
 
-## packages/ast-spec/src/special/Program
-
-??? note "Show Files"
+??? note "ast-spec/src/special/Program (1 files)"
 
     - [spec.md](./packages/ast-spec/src/special/Program/spec.md)
 
-## packages/ast-spec/src/special/SwitchCase
-
-??? note "Show Files"
+??? note "ast-spec/src/special/SwitchCase (1 files)"
 
     - [spec.md](./packages/ast-spec/src/special/SwitchCase/spec.md)
 
-## packages/ast-spec/src/special/TSClassImplements
-
-??? note "Show Files"
+??? note "ast-spec/src/special/TSClassImplements (1 files)"
 
     - [spec.md](./packages/ast-spec/src/special/TSClassImplements/spec.md)
 
-## packages/ast-spec/src/special/VariableDeclarator
-
-??? note "Show Files"
+??? note "ast-spec/src/special/VariableDeclarator (1 files)"
 
     - [spec.md](./packages/ast-spec/src/special/VariableDeclarator/spec.md)
 
-## packages/ast-spec/src/special
-
-??? note "Show Files"
+??? note "ast-spec/src/special (1 files)"
 
     - [spec.md](./packages/ast-spec/src/special/spec.md)
 
-## packages/ast-spec/src/type/TSTypeQuery
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSTypeQuery (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSTypeQuery/spec.md)
 
-## packages/ast-spec/src/type/TSTypeReference
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSTypeReference (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSTypeReference/spec.md)
 
-## packages/ast-spec/src/type/TSUndefinedKeyword
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSUndefinedKeyword (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSUndefinedKeyword/spec.md)
 
-## packages/ast-spec/src/type/TSUnionType
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSUnionType (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSUnionType/spec.md)
 
-## packages/ast-spec/src/type/TSUnknownKeyword
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSUnknownKeyword (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSUnknownKeyword/spec.md)
 
-## packages/ast-spec/src/type/TSVoidKeyword
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSVoidKeyword (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSVoidKeyword/spec.md)
 
-## packages/ast-spec/src/type
-
-??? note "Show Files"
+??? note "ast-spec/src/type (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/spec.md)
 
-## packages/ast-spec/src/declaration/TSModuleDeclaration
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSModuleDeclaration (1 files)"
 
     - [spec.md](./packages/ast-spec/src/declaration/TSModuleDeclaration/spec.md)
 
-## packages/ast-spec/src/declaration/TSTypeAliasDeclaration
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSTypeAliasDeclaration (1 files)"
 
     - [spec.md](./packages/ast-spec/src/declaration/TSTypeAliasDeclaration/spec.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration (1 files)"
 
     - [spec.md](./packages/ast-spec/src/declaration/VariableDeclaration/spec.md)
 
-## packages/ast-spec/src/declaration/ExportDefaultDeclaration
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportDefaultDeclaration (1 files)"
 
     - [spec.md](./packages/ast-spec/src/declaration/ExportDefaultDeclaration/spec.md)
 
-## packages/ast-spec/src/declaration/ExportNamedDeclaration
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportNamedDeclaration (1 files)"
 
     - [spec.md](./packages/ast-spec/src/declaration/ExportNamedDeclaration/spec.md)
 
-## packages/ast-spec/src/declaration/ImportDeclaration
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ImportDeclaration (1 files)"
 
     - [spec.md](./packages/ast-spec/src/declaration/ImportDeclaration/spec.md)
 
-## packages/ast-spec/src/declaration/TSNamespaceExportDeclaration
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSNamespaceExportDeclaration (1 files)"
 
     - [spec.md](./packages/ast-spec/src/declaration/TSNamespaceExportDeclaration/spec.md)
 
-## packages/ast-spec/src/statement/BreakStatement
-
-??? note "Show Files"
+??? note "ast-spec/src/statement/BreakStatement (1 files)"
 
     - [spec.md](./packages/ast-spec/src/statement/BreakStatement/spec.md)
 
-## packages/ast-spec/src/statement/ContinueStatement
-
-??? note "Show Files"
+??? note "ast-spec/src/statement/ContinueStatement (1 files)"
 
     - [spec.md](./packages/ast-spec/src/statement/ContinueStatement/spec.md)
 
-## packages/ast-spec/src/statement/DebuggerStatement
-
-??? note "Show Files"
+??? note "ast-spec/src/statement/DebuggerStatement (1 files)"
 
     - [spec.md](./packages/ast-spec/src/statement/DebuggerStatement/spec.md)
 
-## packages/ast-spec/src/statement/DoWhileStatement
-
-??? note "Show Files"
+??? note "ast-spec/src/statement/DoWhileStatement (1 files)"
 
     - [spec.md](./packages/ast-spec/src/statement/DoWhileStatement/spec.md)
 
-## packages/ast-spec/src/statement/ExpressionStatement
-
-??? note "Show Files"
+??? note "ast-spec/src/statement/ExpressionStatement (1 files)"
 
     - [spec.md](./packages/ast-spec/src/statement/ExpressionStatement/spec.md)
 
-## packages/ast-spec/src/statement/ForInStatement
-
-??? note "Show Files"
+??? note "ast-spec/src/statement/ForInStatement (1 files)"
 
     - [spec.md](./packages/ast-spec/src/statement/ForInStatement/spec.md)
 
-## packages/ast-spec/src/statement/ForOfStatement
-
-??? note "Show Files"
+??? note "ast-spec/src/statement/ForOfStatement (1 files)"
 
     - [spec.md](./packages/ast-spec/src/statement/ForOfStatement/spec.md)
 
-## packages/ast-spec/src/statement/ForStatement
-
-??? note "Show Files"
+??? note "ast-spec/src/statement/ForStatement (1 files)"
 
     - [spec.md](./packages/ast-spec/src/statement/ForStatement/spec.md)
 
-## packages/ast-spec/src/statement/IfStatement
-
-??? note "Show Files"
+??? note "ast-spec/src/statement/IfStatement (1 files)"
 
     - [spec.md](./packages/ast-spec/src/statement/IfStatement/spec.md)
 
-## packages/ast-spec/src/statement/LabeledStatement
-
-??? note "Show Files"
+??? note "ast-spec/src/statement/LabeledStatement (1 files)"
 
     - [spec.md](./packages/ast-spec/src/statement/LabeledStatement/spec.md)
 
-## packages/ast-spec/src/statement/ReturnStatement
-
-??? note "Show Files"
+??? note "ast-spec/src/statement/ReturnStatement (1 files)"
 
     - [spec.md](./packages/ast-spec/src/statement/ReturnStatement/spec.md)
 
-## packages/ast-spec/src/statement/SwitchStatement
-
-??? note "Show Files"
+??? note "ast-spec/src/statement/SwitchStatement (1 files)"
 
     - [spec.md](./packages/ast-spec/src/statement/SwitchStatement/spec.md)
 
-## packages/ast-spec/src/statement/ThrowStatement
-
-??? note "Show Files"
+??? note "ast-spec/src/statement/ThrowStatement (1 files)"
 
     - [spec.md](./packages/ast-spec/src/statement/ThrowStatement/spec.md)
 
-## packages/ast-spec/src/statement/TryStatement
-
-??? note "Show Files"
+??? note "ast-spec/src/statement/TryStatement (1 files)"
 
     - [spec.md](./packages/ast-spec/src/statement/TryStatement/spec.md)
 
-## packages/ast-spec/src/statement/TSExportAssignment
-
-??? note "Show Files"
+??? note "ast-spec/src/statement/TSExportAssignment (1 files)"
 
     - [spec.md](./packages/ast-spec/src/statement/TSExportAssignment/spec.md)
 
-## packages/ast-spec/src/statement/WhileStatement
-
-??? note "Show Files"
+??? note "ast-spec/src/statement/WhileStatement (1 files)"
 
     - [spec.md](./packages/ast-spec/src/statement/WhileStatement/spec.md)
 
-## packages/ast-spec/src/statement/WithStatement
-
-??? note "Show Files"
+??? note "ast-spec/src/statement/WithStatement (1 files)"
 
     - [spec.md](./packages/ast-spec/src/statement/WithStatement/spec.md)
 
-## packages/ast-spec/src/statement/BlockStatement
-
-??? note "Show Files"
+??? note "ast-spec/src/statement/BlockStatement (1 files)"
 
     - [spec.md](./packages/ast-spec/src/statement/BlockStatement/spec.md)
 
-## packages/ast-spec/src/expression/TSEmptyBodyFunctionExpression
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/TSEmptyBodyFunctionExpression (1 files)"
 
     - [spec.md](./packages/ast-spec/src/expression/TSEmptyBodyFunctionExpression/spec.md)
 
-## packages/ast-spec/src/element/Property
-
-??? note "Show Files"
+??? note "ast-spec/src/element/Property (1 files)"
 
     - [spec.md](./packages/ast-spec/src/element/Property/spec.md)
 
-## packages/ast-spec/src/parameter/RestElement
-
-??? note "Show Files"
+??? note "ast-spec/src/parameter/RestElement (1 files)"
 
     - [spec.md](./packages/ast-spec/src/parameter/RestElement/spec.md)
 
-## packages/ast-spec/src/parameter/ObjectPattern
-
-??? note "Show Files"
+??? note "ast-spec/src/parameter/ObjectPattern (1 files)"
 
     - [spec.md](./packages/ast-spec/src/parameter/ObjectPattern/spec.md)
 
-## packages/ast-spec/src/parameter/AssignmentPattern
-
-??? note "Show Files"
+??? note "ast-spec/src/parameter/AssignmentPattern (1 files)"
 
     - [spec.md](./packages/ast-spec/src/parameter/AssignmentPattern/spec.md)
 
-## packages/ast-spec/src/parameter/ArrayPattern
-
-??? note "Show Files"
+??? note "ast-spec/src/parameter/ArrayPattern (1 files)"
 
     - [spec.md](./packages/ast-spec/src/parameter/ArrayPattern/spec.md)
 
-## packages/ast-spec/src/parameter/TSParameterProperty
-
-??? note "Show Files"
+??? note "ast-spec/src/parameter/TSParameterProperty (1 files)"
 
     - [spec.md](./packages/ast-spec/src/parameter/TSParameterProperty/spec.md)
 
-## packages/ast-spec/src/type/TSConstructorType
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSConstructorType (1 files)"
 
     - [spec.md](./packages/ast-spec/src/type/TSConstructorType/spec.md)
 
-## packages/ast-spec/src/special/TSTypeAnnotation
-
-??? note "Show Files"
+??? note "ast-spec/src/special/TSTypeAnnotation (1 files)"
 
     - [spec.md](./packages/ast-spec/src/special/TSTypeAnnotation/spec.md)
 
-## packages/ast-spec/src/expression/ArrowFunctionExpression
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/ArrowFunctionExpression (1 files)"
 
     - [spec.md](./packages/ast-spec/src/expression/ArrowFunctionExpression/spec.md)
 
-## packages/ast-spec/src/expression/AwaitExpression
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/AwaitExpression (1 files)"
 
     - [spec.md](./packages/ast-spec/src/expression/AwaitExpression/spec.md)
 
-## packages/ast-spec/src/expression/BinaryExpression
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/BinaryExpression (2 files)"
 
     - [BinaryOperatorToText.md](./packages/ast-spec/src/expression/BinaryExpression/BinaryOperatorToText.md)
     - [spec.md](./packages/ast-spec/src/expression/BinaryExpression/spec.md)
 
-## packages/ast-spec/src/expression/CallExpression
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/CallExpression (1 files)"
 
     - [spec.md](./packages/ast-spec/src/expression/CallExpression/spec.md)
 
-## packages/ast-spec/src/expression/TSNonNullExpression
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/TSNonNullExpression (1 files)"
 
     - [spec.md](./packages/ast-spec/src/expression/TSNonNullExpression/spec.md)
 
-## packages/ast-spec/src/expression/ChainExpression
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/ChainExpression (1 files)"
 
     - [spec.md](./packages/ast-spec/src/expression/ChainExpression/spec.md)
 
-## packages/ast-spec/src/expression/ClassExpression
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/ClassExpression (1 files)"
 
     - [spec.md](./packages/ast-spec/src/expression/ClassExpression/spec.md)
 
-## packages/ast-spec/src/expression/ConditionalExpression
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/ConditionalExpression (1 files)"
 
     - [spec.md](./packages/ast-spec/src/expression/ConditionalExpression/spec.md)
 
-## packages/ast-spec/src/expression/ImportExpression
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/ImportExpression (1 files)"
 
     - [spec.md](./packages/ast-spec/src/expression/ImportExpression/spec.md)
 
-## packages/ast-spec/src/jsx/JSXIdentifier
-
-??? note "Show Files"
+??? note "ast-spec/src/jsx/JSXIdentifier (1 files)"
 
     - [spec.md](./packages/ast-spec/src/jsx/JSXIdentifier/spec.md)
 
-## packages/ast-spec/src/jsx/JSXMemberExpression
-
-??? note "Show Files"
+??? note "ast-spec/src/jsx/JSXMemberExpression (1 files)"
 
     - [spec.md](./packages/ast-spec/src/jsx/JSXMemberExpression/spec.md)
 
-## packages/ast-spec/src/jsx/JSXNamespacedName
-
-??? note "Show Files"
+??? note "ast-spec/src/jsx/JSXNamespacedName (1 files)"
 
     - [spec.md](./packages/ast-spec/src/jsx/JSXNamespacedName/spec.md)
 
-## packages/ast-spec/src/jsx/JSXClosingElement
-
-??? note "Show Files"
+??? note "ast-spec/src/jsx/JSXClosingElement (1 files)"
 
     - [spec.md](./packages/ast-spec/src/jsx/JSXClosingElement/spec.md)
 
-## packages/ast-spec/src/jsx/JSXEmptyExpression
-
-??? note "Show Files"
+??? note "ast-spec/src/jsx/JSXEmptyExpression (1 files)"
 
     - [spec.md](./packages/ast-spec/src/jsx/JSXEmptyExpression/spec.md)
 
-## packages/ast-spec/src/jsx/JSXExpressionContainer
-
-??? note "Show Files"
+??? note "ast-spec/src/jsx/JSXExpressionContainer (1 files)"
 
     - [spec.md](./packages/ast-spec/src/jsx/JSXExpressionContainer/spec.md)
 
-## packages/ast-spec/src/jsx/JSXSpreadChild
-
-??? note "Show Files"
+??? note "ast-spec/src/jsx/JSXSpreadChild (1 files)"
 
     - [spec.md](./packages/ast-spec/src/jsx/JSXSpreadChild/spec.md)
 
-## packages/ast-spec/src/jsx/JSXAttribute
-
-??? note "Show Files"
+??? note "ast-spec/src/jsx/JSXAttribute (1 files)"
 
     - [spec.md](./packages/ast-spec/src/jsx/JSXAttribute/spec.md)
 
-## packages/ast-spec/src/jsx/JSXSpreadAttribute
-
-??? note "Show Files"
+??? note "ast-spec/src/jsx/JSXSpreadAttribute (1 files)"
 
     - [spec.md](./packages/ast-spec/src/jsx/JSXSpreadAttribute/spec.md)
 
-## packages/ast-spec/src/jsx/JSXOpeningElement
-
-??? note "Show Files"
+??? note "ast-spec/src/jsx/JSXOpeningElement (1 files)"
 
     - [spec.md](./packages/ast-spec/src/jsx/JSXOpeningElement/spec.md)
 
-## packages/ast-spec/src/jsx/JSXClosingFragment
-
-??? note "Show Files"
+??? note "ast-spec/src/jsx/JSXClosingFragment (1 files)"
 
     - [spec.md](./packages/ast-spec/src/jsx/JSXClosingFragment/spec.md)
 
-## packages/ast-spec/src/jsx/JSXOpeningFragment
-
-??? note "Show Files"
+??? note "ast-spec/src/jsx/JSXOpeningFragment (1 files)"
 
     - [spec.md](./packages/ast-spec/src/jsx/JSXOpeningFragment/spec.md)
 
-## packages/ast-spec/src/expression/JSXFragment
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/JSXFragment (1 files)"
 
     - [spec.md](./packages/ast-spec/src/expression/JSXFragment/spec.md)
 
-## packages/ast-spec/src/jsx/JSXText
-
-??? note "Show Files"
+??? note "ast-spec/src/jsx/JSXText (1 files)"
 
     - [spec.md](./packages/ast-spec/src/jsx/JSXText/spec.md)
 
-## packages/ast-spec/src/expression/JSXElement
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/JSXElement (1 files)"
 
     - [spec.md](./packages/ast-spec/src/expression/JSXElement/spec.md)
 
-## packages/ast-spec/src/expression/LogicalExpression
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/LogicalExpression (1 files)"
 
     - [spec.md](./packages/ast-spec/src/expression/LogicalExpression/spec.md)
 
-## packages/ast-spec/src/expression/MetaProperty
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/MetaProperty (1 files)"
 
     - [spec.md](./packages/ast-spec/src/expression/MetaProperty/spec.md)
 
-## packages/ast-spec/src/expression/NewExpression
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/NewExpression (1 files)"
 
     - [spec.md](./packages/ast-spec/src/expression/NewExpression/spec.md)
 
-## packages/ast-spec/src/expression/SequenceExpression
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/SequenceExpression (1 files)"
 
     - [spec.md](./packages/ast-spec/src/expression/SequenceExpression/spec.md)
 
-## packages/ast-spec/src/expression/Super
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/Super (1 files)"
 
     - [spec.md](./packages/ast-spec/src/expression/Super/spec.md)
 
-## packages/ast-spec/src/expression/TaggedTemplateExpression
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/TaggedTemplateExpression (1 files)"
 
     - [spec.md](./packages/ast-spec/src/expression/TaggedTemplateExpression/spec.md)
 
-## packages/ast-spec/src/expression/TSAsExpression
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/TSAsExpression (1 files)"
 
     - [spec.md](./packages/ast-spec/src/expression/TSAsExpression/spec.md)
 
-## packages/ast-spec/src/expression/TSInstantiationExpression
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/TSInstantiationExpression (1 files)"
 
     - [spec.md](./packages/ast-spec/src/expression/TSInstantiationExpression/spec.md)
 
-## packages/ast-spec/src/expression/TSSatisfiesExpression
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/TSSatisfiesExpression (1 files)"
 
     - [spec.md](./packages/ast-spec/src/expression/TSSatisfiesExpression/spec.md)
 
-## packages/ast-spec/src/expression/TSTypeAssertion
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/TSTypeAssertion (1 files)"
 
     - [spec.md](./packages/ast-spec/src/expression/TSTypeAssertion/spec.md)
 
-## packages/ast-spec/src/expression/YieldExpression
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/YieldExpression (1 files)"
 
     - [spec.md](./packages/ast-spec/src/expression/YieldExpression/spec.md)
 
-## packages/ast-spec/src/element/SpreadElement
-
-??? note "Show Files"
+??? note "ast-spec/src/element/SpreadElement (1 files)"
 
     - [spec.md](./packages/ast-spec/src/element/SpreadElement/spec.md)
 
-## packages/ast-spec/src/expression/ArrayExpression
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/ArrayExpression (1 files)"
 
     - [spec.md](./packages/ast-spec/src/expression/ArrayExpression/spec.md)
 
-## packages/ast-spec/src/expression/literal
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/literal (1 files)"
 
     - [spec.md](./packages/ast-spec/src/expression/literal/spec.md)
 
-## packages/ast-spec/src/expression
-
-??? note "Show Files"
+??? note "ast-spec/src/expression (1 files)"
 
     - [spec.md](./packages/ast-spec/src/expression/spec.md)
 
-## packages/ast-spec/src/special/Decorator
-
-??? note "Show Files"
+??? note "ast-spec/src/special/Decorator (1 files)"
 
     - [spec.md](./packages/ast-spec/src/special/Decorator/spec.md)
 
-## packages/ast-spec/src/expression/Identifier
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/Identifier (1 files)"
 
     - [spec.md](./packages/ast-spec/src/expression/Identifier/spec.md)
 
-## packages/ast-spec/src/declaration/ClassDeclaration/fixtures/_error_/export-missing-name
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ClassDeclaration/fixtures/_error_/export-missing-name (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ClassDeclaration/fixtures/_error_/export-missing-name/fixture.md)
 
-## packages/ast-spec/src/declaration/ClassDeclaration/fixtures/_error_/implements-non-identifier
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ClassDeclaration/fixtures/_error_/implements-non-identifier (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ClassDeclaration/fixtures/_error_/implements-non-identifier/fixture.md)
 
-## packages/ast-spec/src/declaration/ClassDeclaration/fixtures/_error_/missing-body
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ClassDeclaration/fixtures/_error_/missing-body (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ClassDeclaration/fixtures/_error_/missing-body/fixture.md)
 
-## packages/ast-spec/src/declaration/ClassDeclaration/fixtures/_error_/missing-extends-type-param
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ClassDeclaration/fixtures/_error_/missing-extends-type-param (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ClassDeclaration/fixtures/_error_/missing-extends-type-param/fixture.md)
 
-## packages/ast-spec/src/declaration/ClassDeclaration/fixtures/_error_/missing-type-param
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ClassDeclaration/fixtures/_error_/missing-type-param (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ClassDeclaration/fixtures/_error_/missing-type-param/fixture.md)
 
-## packages/ast-spec/src/declaration/ClassDeclaration/fixtures/_error_/non-identifier-name
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ClassDeclaration/fixtures/_error_/non-identifier-name (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ClassDeclaration/fixtures/_error_/non-identifier-name/fixture.md)
 
-## packages/ast-spec/src/declaration/ClassDeclaration/fixtures/_error_/non-identifier-type-param
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ClassDeclaration/fixtures/_error_/non-identifier-type-param (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ClassDeclaration/fixtures/_error_/non-identifier-type-param/fixture.md)
 
-## packages/ast-spec/src/declaration/ClassDeclaration/fixtures/abstract
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ClassDeclaration/fixtures/abstract (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ClassDeclaration/fixtures/abstract/fixture.md)
 
-## packages/ast-spec/src/declaration/ClassDeclaration/fixtures/declare
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ClassDeclaration/fixtures/declare (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ClassDeclaration/fixtures/declare/fixture.md)
 
-## packages/ast-spec/src/declaration/ClassDeclaration/fixtures/decorator-many
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ClassDeclaration/fixtures/decorator-many (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ClassDeclaration/fixtures/decorator-many/fixture.md)
 
-## packages/ast-spec/src/declaration/ClassDeclaration/fixtures/decorator-one
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ClassDeclaration/fixtures/decorator-one (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ClassDeclaration/fixtures/decorator-one/fixture.md)
 
-## packages/ast-spec/src/declaration/ClassDeclaration/fixtures/empty
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ClassDeclaration/fixtures/empty (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ClassDeclaration/fixtures/empty/fixture.md)
 
-## packages/ast-spec/src/declaration/ClassDeclaration/fixtures/extends
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ClassDeclaration/fixtures/extends (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ClassDeclaration/fixtures/extends/fixture.md)
 
-## packages/ast-spec/src/declaration/ClassDeclaration/fixtures/extends-literal
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ClassDeclaration/fixtures/extends-literal (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ClassDeclaration/fixtures/extends-literal/fixture.md)
 
-## packages/ast-spec/src/declaration/ClassDeclaration/fixtures/extends-type-param
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ClassDeclaration/fixtures/extends-type-param (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ClassDeclaration/fixtures/extends-type-param/fixture.md)
 
-## packages/ast-spec/src/declaration/ClassDeclaration/fixtures/implements-many
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ClassDeclaration/fixtures/implements-many (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ClassDeclaration/fixtures/implements-many/fixture.md)
 
-## packages/ast-spec/src/declaration/ClassDeclaration/fixtures/implements-one
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ClassDeclaration/fixtures/implements-one (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ClassDeclaration/fixtures/implements-one/fixture.md)
 
-## packages/ast-spec/src/declaration/ClassDeclaration/fixtures/type-param
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ClassDeclaration/fixtures/type-param (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ClassDeclaration/fixtures/type-param/fixture.md)
 
-## packages/ast-spec/src/declaration/ClassDeclaration/fixtures/type-parameters-extends-type-param
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ClassDeclaration/fixtures/type-parameters-extends-type-param (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ClassDeclaration/fixtures/type-parameters-extends-type-param/fixture.md)
 
-## packages/ast-spec/src/declaration/ClassDeclaration/fixtures/with-member-one
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ClassDeclaration/fixtures/with-member-one (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ClassDeclaration/fixtures/with-member-one/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportAllDeclaration/fixtures/_error_/missing-source
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportAllDeclaration/fixtures/_error_/missing-source (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportAllDeclaration/fixtures/_error_/missing-source/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportAllDeclaration/fixtures/_error_/non-string-source
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportAllDeclaration/fixtures/_error_/non-string-source (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportAllDeclaration/fixtures/_error_/non-string-source/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportAllDeclaration/fixtures/assertion
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportAllDeclaration/fixtures/assertion (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportAllDeclaration/fixtures/assertion/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportAllDeclaration/fixtures/kind-type
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportAllDeclaration/fixtures/kind-type (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportAllDeclaration/fixtures/kind-type/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportAllDeclaration/fixtures/named
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportAllDeclaration/fixtures/named (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportAllDeclaration/fixtures/named/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportAllDeclaration/fixtures/type-kind
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportAllDeclaration/fixtures/type-kind (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportAllDeclaration/fixtures/type-kind/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportAllDeclaration/fixtures/unnamed
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportAllDeclaration/fixtures/unnamed (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportAllDeclaration/fixtures/unnamed/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/_error_/enum
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/_error_/enum (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/_error_/enum/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/_error_/namespace
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/_error_/namespace (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/_error_/namespace/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/_error_/type-alias
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/_error_/type-alias (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/_error_/type-alias/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/_error_/variable-declaration
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/_error_/variable-declaration (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/_error_/variable-declaration/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/anonymous-class
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/anonymous-class (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/anonymous-class/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/anonymous-function
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/anonymous-function (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/anonymous-function/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/arrow-function-expression
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/arrow-function-expression (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/arrow-function-expression/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/class
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/class (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/class/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/class-expression
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/class-expression (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/class-expression/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/function
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/function (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/function/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/identifier
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/identifier (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/identifier/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/interface
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/interface (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/interface/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/literal
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/literal (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/literal/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/anonymous-class
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/anonymous-class (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/anonymous-class/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/anonymous-function-expression
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/anonymous-function-expression (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/anonymous-function-expression/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/arrow-function
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/arrow-function (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/arrow-function/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/assertion
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/assertion (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/assertion/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/braced-identifier-aliased-to-number-literal-with-source
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/braced-identifier-aliased-to-number-literal-with-source (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/braced-identifier-aliased-to-number-literal-with-source/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/braced-identifier-aliased-to-number-literal-without-source
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/braced-identifier-aliased-to-number-literal-without-source (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/braced-identifier-aliased-to-number-literal-without-source/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/braced-number-literal-with-source
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/braced-number-literal-with-source (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/braced-number-literal-with-source/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/braced-number-literal-without-source
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/braced-number-literal-without-source (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/braced-number-literal-without-source/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/braced-string-literal-aliased-to-identifier-without-source
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/braced-string-literal-aliased-to-identifier-without-source (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/braced-string-literal-aliased-to-identifier-without-source/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/braced-string-literal-aliased-to-number-literal-without-source
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/braced-string-literal-aliased-to-number-literal-without-source (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/braced-string-literal-aliased-to-number-literal-without-source/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/braced-string-literal-aliased-to-string-literal-without-source
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/braced-string-literal-aliased-to-string-literal-without-source (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/braced-string-literal-aliased-to-string-literal-without-source/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/braced-string-literal-many-without-source
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/braced-string-literal-many-without-source (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/braced-string-literal-many-without-source/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/braced-string-literal-without-source
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/braced-string-literal-without-source (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/braced-string-literal-without-source/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/class-expression
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/class-expression (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/class-expression/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/identifier-direct
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/identifier-direct (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/identifier-direct/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/literal-direct
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/literal-direct (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/literal-direct/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/braced-identifier-aliased-to-identifier-with-source
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportNamedDeclaration/fixtures/braced-identifier-aliased-to-identifier-with-source (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/braced-identifier-aliased-to-identifier-with-source/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/braced-identifier-aliased-to-identifier-without-source
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportNamedDeclaration/fixtures/braced-identifier-aliased-to-identifier-without-source (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/braced-identifier-aliased-to-identifier-without-source/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/braced-identifier-aliased-to-string-literal-with-source
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportNamedDeclaration/fixtures/braced-identifier-aliased-to-string-literal-with-source (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/braced-identifier-aliased-to-string-literal-with-source/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/braced-identifier-aliased-to-string-literal-without-source
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportNamedDeclaration/fixtures/braced-identifier-aliased-to-string-literal-without-source (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/braced-identifier-aliased-to-string-literal-without-source/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/braced-identifier-many-with-source
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportNamedDeclaration/fixtures/braced-identifier-many-with-source (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/braced-identifier-many-with-source/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/braced-identifier-many-without-source
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportNamedDeclaration/fixtures/braced-identifier-many-without-source (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/braced-identifier-many-without-source/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/braced-identifier-with-source
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportNamedDeclaration/fixtures/braced-identifier-with-source (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/braced-identifier-with-source/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/braced-identifier-without-source
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportNamedDeclaration/fixtures/braced-identifier-without-source (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/braced-identifier-without-source/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/braced-string-literal-aliased-to-identifier-with-source
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportNamedDeclaration/fixtures/braced-string-literal-aliased-to-identifier-with-source (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/braced-string-literal-aliased-to-identifier-with-source/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/braced-string-literal-many-with-source
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportNamedDeclaration/fixtures/braced-string-literal-many-with-source (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/braced-string-literal-many-with-source/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/braced-string-literal-with-source
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportNamedDeclaration/fixtures/braced-string-literal-with-source (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/braced-string-literal-with-source/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/class
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportNamedDeclaration/fixtures/class (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/class/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/declare-function
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportNamedDeclaration/fixtures/declare-function (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/declare-function/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/enum
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportNamedDeclaration/fixtures/enum (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/enum/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/function-declaration
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportNamedDeclaration/fixtures/function-declaration (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/function-declaration/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/interface
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportNamedDeclaration/fixtures/interface (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/interface/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/namespace
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportNamedDeclaration/fixtures/namespace (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/namespace/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/type-alias
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportNamedDeclaration/fixtures/type-alias (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/type-alias/fixture.md)
 
-## packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/variable-declaration
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ExportNamedDeclaration/fixtures/variable-declaration (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/variable-declaration/fixture.md)
 
-## packages/ast-spec/src/declaration/FunctionDeclaration/fixtures/_error_/missing-id-and-not-exported
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/FunctionDeclaration/fixtures/_error_/missing-id-and-not-exported (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/FunctionDeclaration/fixtures/_error_/missing-id-and-not-exported/fixture.md)
 
-## packages/ast-spec/src/declaration/FunctionDeclaration/fixtures/_error_/missing-type-param
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/FunctionDeclaration/fixtures/_error_/missing-type-param (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/FunctionDeclaration/fixtures/_error_/missing-type-param/fixture.md)
 
-## packages/ast-spec/src/declaration/FunctionDeclaration/fixtures/_error_/non-identifier-name
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/FunctionDeclaration/fixtures/_error_/non-identifier-name (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/FunctionDeclaration/fixtures/_error_/non-identifier-name/fixture.md)
 
-## packages/ast-spec/src/declaration/FunctionDeclaration/fixtures/_error_/non-identifier-type-param
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/FunctionDeclaration/fixtures/_error_/non-identifier-type-param (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/FunctionDeclaration/fixtures/_error_/non-identifier-type-param/fixture.md)
 
-## packages/ast-spec/src/declaration/FunctionDeclaration/fixtures/async
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/FunctionDeclaration/fixtures/async (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/FunctionDeclaration/fixtures/async/fixture.md)
 
-## packages/ast-spec/src/declaration/FunctionDeclaration/fixtures/empty
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/FunctionDeclaration/fixtures/empty (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/FunctionDeclaration/fixtures/empty/fixture.md)
 
-## packages/ast-spec/src/declaration/FunctionDeclaration/fixtures/generator
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/FunctionDeclaration/fixtures/generator (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/FunctionDeclaration/fixtures/generator/fixture.md)
 
-## packages/ast-spec/src/declaration/FunctionDeclaration/fixtures/param-many
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/FunctionDeclaration/fixtures/param-many (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/FunctionDeclaration/fixtures/param-many/fixture.md)
 
-## packages/ast-spec/src/declaration/FunctionDeclaration/fixtures/param-one
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/FunctionDeclaration/fixtures/param-one (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/FunctionDeclaration/fixtures/param-one/fixture.md)
 
-## packages/ast-spec/src/declaration/FunctionDeclaration/fixtures/returnType
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/FunctionDeclaration/fixtures/returnType (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/FunctionDeclaration/fixtures/returnType/fixture.md)
 
-## packages/ast-spec/src/declaration/FunctionDeclaration/fixtures/type-param-many
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/FunctionDeclaration/fixtures/type-param-many (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/FunctionDeclaration/fixtures/type-param-many/fixture.md)
 
-## packages/ast-spec/src/declaration/FunctionDeclaration/fixtures/type-param-one
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/FunctionDeclaration/fixtures/type-param-one (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/FunctionDeclaration/fixtures/type-param-one/fixture.md)
 
-## packages/ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/default-and-named-and-namespace
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/default-and-named-and-namespace (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/default-and-named-and-namespace/fixture.md)
 
-## packages/ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/default-number-literal
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/default-number-literal (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/default-number-literal/fixture.md)
 
-## packages/ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/default-string-literal
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/default-string-literal (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/default-string-literal/fixture.md)
 
-## packages/ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/named-and-namespace
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/named-and-namespace (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/named-and-namespace/fixture.md)
 
-## packages/ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/named-identifier-aliased-to-number-literal
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/named-identifier-aliased-to-number-literal (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/named-identifier-aliased-to-number-literal/fixture.md)
 
-## packages/ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/named-identifier-aliased-to-string-literal
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/named-identifier-aliased-to-string-literal (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/named-identifier-aliased-to-string-literal/fixture.md)
 
-## packages/ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/named-number-literal
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/named-number-literal (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/named-number-literal/fixture.md)
 
-## packages/ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/named-number-literal-aliased-to-identifier
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/named-number-literal-aliased-to-identifier (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/named-number-literal-aliased-to-identifier/fixture.md)
 
-## packages/ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/named-number-literal-aliased-to-number-literal
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/named-number-literal-aliased-to-number-literal (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/named-number-literal-aliased-to-number-literal/fixture.md)
 
-## packages/ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/named-number-literal-aliased-to-string-literal
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/named-number-literal-aliased-to-string-literal (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/named-number-literal-aliased-to-string-literal/fixture.md)
 
-## packages/ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/named-string-literal
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/named-string-literal (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/named-string-literal/fixture.md)
 
-## packages/ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/named-string-literal-aliased-to-number-literal
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/named-string-literal-aliased-to-number-literal (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/named-string-literal-aliased-to-number-literal/fixture.md)
 
-## packages/ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/named-string-literal-aliased-to-string-literal
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/named-string-literal-aliased-to-string-literal (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/named-string-literal-aliased-to-string-literal/fixture.md)
 
-## packages/ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/namespace-and-default
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/namespace-and-default (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/namespace-and-default/fixture.md)
 
-## packages/ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/namespace-and-named
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/namespace-and-named (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/namespace-and-named/fixture.md)
 
-## packages/ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/namespace-and-namespace
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/namespace-and-namespace (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/namespace-and-namespace/fixture.md)
 
-## packages/ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/namespace-non-identifier
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/namespace-non-identifier (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/namespace-non-identifier/fixture.md)
 
-## packages/ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/non-string-source
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/non-string-source (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/non-string-source/fixture.md)
 
-## packages/ast-spec/src/declaration/ImportDeclaration/fixtures/assertion
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ImportDeclaration/fixtures/assertion (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ImportDeclaration/fixtures/assertion/fixture.md)
 
-## packages/ast-spec/src/declaration/ImportDeclaration/fixtures/default
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ImportDeclaration/fixtures/default (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ImportDeclaration/fixtures/default/fixture.md)
 
-## packages/ast-spec/src/declaration/ImportDeclaration/fixtures/default-and-named-many
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ImportDeclaration/fixtures/default-and-named-many (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ImportDeclaration/fixtures/default-and-named-many/fixture.md)
 
-## packages/ast-spec/src/declaration/ImportDeclaration/fixtures/default-and-named-none
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ImportDeclaration/fixtures/default-and-named-none (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ImportDeclaration/fixtures/default-and-named-none/fixture.md)
 
-## packages/ast-spec/src/declaration/ImportDeclaration/fixtures/default-and-named-one
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ImportDeclaration/fixtures/default-and-named-one (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ImportDeclaration/fixtures/default-and-named-one/fixture.md)
 
-## packages/ast-spec/src/declaration/ImportDeclaration/fixtures/default-and-namespace
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ImportDeclaration/fixtures/default-and-namespace (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ImportDeclaration/fixtures/default-and-namespace/fixture.md)
 
-## packages/ast-spec/src/declaration/ImportDeclaration/fixtures/named-many
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ImportDeclaration/fixtures/named-many (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ImportDeclaration/fixtures/named-many/fixture.md)
 
-## packages/ast-spec/src/declaration/ImportDeclaration/fixtures/named-none
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ImportDeclaration/fixtures/named-none (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ImportDeclaration/fixtures/named-none/fixture.md)
 
-## packages/ast-spec/src/declaration/ImportDeclaration/fixtures/named-one
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ImportDeclaration/fixtures/named-one (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ImportDeclaration/fixtures/named-one/fixture.md)
 
-## packages/ast-spec/src/declaration/ImportDeclaration/fixtures/named-string-literal-aliased-to-identifier
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ImportDeclaration/fixtures/named-string-literal-aliased-to-identifier (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ImportDeclaration/fixtures/named-string-literal-aliased-to-identifier/fixture.md)
 
-## packages/ast-spec/src/declaration/ImportDeclaration/fixtures/side-effect
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/ImportDeclaration/fixtures/side-effect (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/ImportDeclaration/fixtures/side-effect/fixture.md)
 
-## packages/ast-spec/src/declaration/TSDeclareFunction/fixtures/_error_/async
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSDeclareFunction/fixtures/_error_/async (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSDeclareFunction/fixtures/_error_/async/fixture.md)
 
-## packages/ast-spec/src/declaration/TSDeclareFunction/fixtures/_error_/declare-with-body
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSDeclareFunction/fixtures/_error_/declare-with-body (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSDeclareFunction/fixtures/_error_/declare-with-body/fixture.md)
 
-## packages/ast-spec/src/declaration/TSDeclareFunction/fixtures/_error_/generator
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSDeclareFunction/fixtures/_error_/generator (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSDeclareFunction/fixtures/_error_/generator/fixture.md)
 
-## packages/ast-spec/src/declaration/TSDeclareFunction/fixtures/_error_/generator-ambient
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSDeclareFunction/fixtures/_error_/generator-ambient (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSDeclareFunction/fixtures/_error_/generator-ambient/fixture.md)
 
-## packages/ast-spec/src/declaration/TSDeclareFunction/fixtures/_error_/generator-overload
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSDeclareFunction/fixtures/_error_/generator-overload (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSDeclareFunction/fixtures/_error_/generator-overload/fixture.md)
 
-## packages/ast-spec/src/declaration/TSDeclareFunction/fixtures/_error_/missing-id-and-not-exported
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSDeclareFunction/fixtures/_error_/missing-id-and-not-exported (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSDeclareFunction/fixtures/_error_/missing-id-and-not-exported/fixture.md)
 
-## packages/ast-spec/src/declaration/TSDeclareFunction/fixtures/_error_/missing-type-param
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSDeclareFunction/fixtures/_error_/missing-type-param (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSDeclareFunction/fixtures/_error_/missing-type-param/fixture.md)
 
-## packages/ast-spec/src/declaration/TSDeclareFunction/fixtures/_error_/non-identifier-name
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSDeclareFunction/fixtures/_error_/non-identifier-name (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSDeclareFunction/fixtures/_error_/non-identifier-name/fixture.md)
 
-## packages/ast-spec/src/declaration/TSDeclareFunction/fixtures/_error_/non-identifier-type-param
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSDeclareFunction/fixtures/_error_/non-identifier-type-param (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSDeclareFunction/fixtures/_error_/non-identifier-type-param/fixture.md)
 
-## packages/ast-spec/src/declaration/TSDeclareFunction/fixtures/async-ambient
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSDeclareFunction/fixtures/async-ambient (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSDeclareFunction/fixtures/async-ambient/fixture.md)
 
-## packages/ast-spec/src/declaration/TSDeclareFunction/fixtures/async-overload
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSDeclareFunction/fixtures/async-overload (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSDeclareFunction/fixtures/async-overload/fixture.md)
 
-## packages/ast-spec/src/declaration/TSDeclareFunction/fixtures/empty
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSDeclareFunction/fixtures/empty (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSDeclareFunction/fixtures/empty/fixture.md)
 
-## packages/ast-spec/src/declaration/TSDeclareFunction/fixtures/param-many
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSDeclareFunction/fixtures/param-many (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSDeclareFunction/fixtures/param-many/fixture.md)
 
-## packages/ast-spec/src/declaration/TSDeclareFunction/fixtures/param-one
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSDeclareFunction/fixtures/param-one (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSDeclareFunction/fixtures/param-one/fixture.md)
 
-## packages/ast-spec/src/declaration/TSDeclareFunction/fixtures/returnType
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSDeclareFunction/fixtures/returnType (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSDeclareFunction/fixtures/returnType/fixture.md)
 
-## packages/ast-spec/src/declaration/TSDeclareFunction/fixtures/type-param-many
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSDeclareFunction/fixtures/type-param-many (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSDeclareFunction/fixtures/type-param-many/fixture.md)
 
-## packages/ast-spec/src/declaration/TSDeclareFunction/fixtures/type-param-one
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSDeclareFunction/fixtures/type-param-one (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSDeclareFunction/fixtures/type-param-one/fixture.md)
 
-## packages/ast-spec/src/declaration/TSDeclareFunction/fixtures/without-declare
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSDeclareFunction/fixtures/without-declare (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSDeclareFunction/fixtures/without-declare/fixture.md)
 
-## packages/ast-spec/src/declaration/TSEnumDeclaration/fixtures/_error_/decorator
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSEnumDeclaration/fixtures/_error_/decorator (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSEnumDeclaration/fixtures/_error_/decorator/fixture.md)
 
-## packages/ast-spec/src/declaration/TSEnumDeclaration/fixtures/_error_/missing-body
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSEnumDeclaration/fixtures/_error_/missing-body (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSEnumDeclaration/fixtures/_error_/missing-body/fixture.md)
 
-## packages/ast-spec/src/declaration/TSEnumDeclaration/fixtures/_error_/missing-id
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSEnumDeclaration/fixtures/_error_/missing-id (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSEnumDeclaration/fixtures/_error_/missing-id/fixture.md)
 
-## packages/ast-spec/src/declaration/TSEnumDeclaration/fixtures/_error_/non-identifier-name
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSEnumDeclaration/fixtures/_error_/non-identifier-name (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSEnumDeclaration/fixtures/_error_/non-identifier-name/fixture.md)
 
-## packages/ast-spec/src/declaration/TSEnumDeclaration/fixtures/const
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSEnumDeclaration/fixtures/const (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSEnumDeclaration/fixtures/const/fixture.md)
 
-## packages/ast-spec/src/declaration/TSEnumDeclaration/fixtures/declare
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSEnumDeclaration/fixtures/declare (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSEnumDeclaration/fixtures/declare/fixture.md)
 
-## packages/ast-spec/src/declaration/TSEnumDeclaration/fixtures/empty
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSEnumDeclaration/fixtures/empty (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSEnumDeclaration/fixtures/empty/fixture.md)
 
-## packages/ast-spec/src/declaration/TSEnumDeclaration/fixtures/with-member-one
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSEnumDeclaration/fixtures/with-member-one (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSEnumDeclaration/fixtures/with-member-one/fixture.md)
 
-## packages/ast-spec/src/declaration/TSImportEqualsDeclaration/fixtures/_error_/entity-name-invalid
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSImportEqualsDeclaration/fixtures/_error_/entity-name-invalid (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSImportEqualsDeclaration/fixtures/_error_/entity-name-invalid/fixture.md)
 
-## packages/ast-spec/src/declaration/TSImportEqualsDeclaration/fixtures/_error_/external-module-ref-non-string
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSImportEqualsDeclaration/fixtures/_error_/external-module-ref-non-string (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSImportEqualsDeclaration/fixtures/_error_/external-module-ref-non-string/fixture.md)
 
-## packages/ast-spec/src/declaration/TSImportEqualsDeclaration/fixtures/_error_/external-module-ref-non-string-2
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSImportEqualsDeclaration/fixtures/_error_/external-module-ref-non-string-2 (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSImportEqualsDeclaration/fixtures/_error_/external-module-ref-non-string-2/fixture.md)
 
-## packages/ast-spec/src/declaration/TSImportEqualsDeclaration/fixtures/_error_/external-module-ref-non-string-3
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSImportEqualsDeclaration/fixtures/_error_/external-module-ref-non-string-3 (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSImportEqualsDeclaration/fixtures/_error_/external-module-ref-non-string-3/fixture.md)
 
-## packages/ast-spec/src/declaration/TSImportEqualsDeclaration/fixtures/_error_/import-kind
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSImportEqualsDeclaration/fixtures/_error_/import-kind (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSImportEqualsDeclaration/fixtures/_error_/import-kind/fixture.md)
 
-## packages/ast-spec/src/declaration/TSImportEqualsDeclaration/fixtures/_error_/missing-id
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSImportEqualsDeclaration/fixtures/_error_/missing-id (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSImportEqualsDeclaration/fixtures/_error_/missing-id/fixture.md)
 
-## packages/ast-spec/src/declaration/TSImportEqualsDeclaration/fixtures/_error_/missing-reference
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSImportEqualsDeclaration/fixtures/_error_/missing-reference (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSImportEqualsDeclaration/fixtures/_error_/missing-reference/fixture.md)
 
-## packages/ast-spec/src/declaration/TSImportEqualsDeclaration/fixtures/entity-name-many
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSImportEqualsDeclaration/fixtures/entity-name-many (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSImportEqualsDeclaration/fixtures/entity-name-many/fixture.md)
 
-## packages/ast-spec/src/declaration/TSImportEqualsDeclaration/fixtures/entity-name-one
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSImportEqualsDeclaration/fixtures/entity-name-one (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSImportEqualsDeclaration/fixtures/entity-name-one/fixture.md)
 
-## packages/ast-spec/src/declaration/TSImportEqualsDeclaration/fixtures/external-module-ref-string
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSImportEqualsDeclaration/fixtures/external-module-ref-string (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSImportEqualsDeclaration/fixtures/external-module-ref-string/fixture.md)
 
-## packages/ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/_error_/decorator
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/_error_/decorator (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/_error_/decorator/fixture.md)
 
-## packages/ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/_error_/missing-body
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/_error_/missing-body (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/_error_/missing-body/fixture.md)
 
-## packages/ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/_error_/missing-extends
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/_error_/missing-extends (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/_error_/missing-extends/fixture.md)
 
-## packages/ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/_error_/missing-id
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/_error_/missing-id (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/_error_/missing-id/fixture.md)
 
-## packages/ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/_error_/missing-type-param
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/_error_/missing-type-param (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/_error_/missing-type-param/fixture.md)
 
-## packages/ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/_error_/non-identifier-extends
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/_error_/non-identifier-extends (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/_error_/non-identifier-extends/fixture.md)
 
-## packages/ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/_error_/non-identifier-name
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/_error_/non-identifier-name (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/_error_/non-identifier-name/fixture.md)
 
-## packages/ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/_error_/non-identifier-type-param
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/_error_/non-identifier-type-param (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/_error_/non-identifier-type-param/fixture.md)
 
-## packages/ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/declare
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/declare (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/declare/fixture.md)
 
-## packages/ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/empty
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/empty (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/empty/fixture.md)
 
-## packages/ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/extends-many
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/extends-many (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/extends-many/fixture.md)
 
-## packages/ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/extends-one
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/extends-one (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/extends-one/fixture.md)
 
-## packages/ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/type-param-many
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/type-param-many (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/type-param-many/fixture.md)
 
-## packages/ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/type-param-one
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/type-param-one (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/type-param-one/fixture.md)
 
-## packages/ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/with-member-one
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/with-member-one (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSInterfaceDeclaration/fixtures/with-member-one/fixture.md)
 
-## packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/_error_/module-invalid-id
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSModuleDeclaration/fixtures/_error_/module-invalid-id (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/_error_/module-invalid-id/fixture.md)
 
-## packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/_error_/module-missing-body
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSModuleDeclaration/fixtures/_error_/module-missing-body (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/_error_/module-missing-body/fixture.md)
 
-## packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/_error_/namespace-declare-no-body
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSModuleDeclaration/fixtures/_error_/namespace-declare-no-body (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/_error_/namespace-declare-no-body/fixture.md)
 
-## packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/_error_/namespace-id-literal
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSModuleDeclaration/fixtures/_error_/namespace-id-literal (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/_error_/namespace-id-literal/fixture.md)
 
-## packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/_error_/namespace-invalid-id
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSModuleDeclaration/fixtures/_error_/namespace-invalid-id (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/_error_/namespace-invalid-id/fixture.md)
 
-## packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/_error_/namespace-no-body
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSModuleDeclaration/fixtures/_error_/namespace-no-body (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/_error_/namespace-no-body/fixture.md)
 
-## packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/global
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSModuleDeclaration/fixtures/global (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/global/fixture.md)
 
-## packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/module-declare
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSModuleDeclaration/fixtures/module-declare (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/module-declare/fixture.md)
 
-## packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/module-declare-no-body
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSModuleDeclaration/fixtures/module-declare-no-body (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/module-declare-no-body/fixture.md)
 
-## packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/module-id-identifier
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSModuleDeclaration/fixtures/module-id-identifier (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/module-id-identifier/fixture.md)
 
-## packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/module-id-literal
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSModuleDeclaration/fixtures/module-id-literal (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/module-id-literal/fixture.md)
 
-## packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/module-id-qualified-name
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSModuleDeclaration/fixtures/module-id-qualified-name (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/module-id-qualified-name/fixture.md)
 
-## packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/module-nested-once
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSModuleDeclaration/fixtures/module-nested-once (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/module-nested-once/fixture.md)
 
-## packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/module-nested-once-declare
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSModuleDeclaration/fixtures/module-nested-once-declare (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/module-nested-once-declare/fixture.md)
 
-## packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/module-nested-twice
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSModuleDeclaration/fixtures/module-nested-twice (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/module-nested-twice/fixture.md)
 
-## packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/module-nested-twice-declare
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSModuleDeclaration/fixtures/module-nested-twice-declare (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/module-nested-twice-declare/fixture.md)
 
-## packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/namespace-declare
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSModuleDeclaration/fixtures/namespace-declare (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/namespace-declare/fixture.md)
 
-## packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/namespace-id-identifier
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSModuleDeclaration/fixtures/namespace-id-identifier (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/namespace-id-identifier/fixture.md)
 
-## packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/namespace-id-qualified-name
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSModuleDeclaration/fixtures/namespace-id-qualified-name (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/namespace-id-qualified-name/fixture.md)
 
-## packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/namespace-nested-once
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSModuleDeclaration/fixtures/namespace-nested-once (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/namespace-nested-once/fixture.md)
 
-## packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/namespace-nested-once-declare
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSModuleDeclaration/fixtures/namespace-nested-once-declare (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/namespace-nested-once-declare/fixture.md)
 
-## packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/namespace-nested-once-export
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSModuleDeclaration/fixtures/namespace-nested-once-export (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/namespace-nested-once-export/fixture.md)
 
-## packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/namespace-nested-once-export-declare
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSModuleDeclaration/fixtures/namespace-nested-once-export-declare (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/namespace-nested-once-export-declare/fixture.md)
 
-## packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/namespace-nested-twice
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSModuleDeclaration/fixtures/namespace-nested-twice (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/namespace-nested-twice/fixture.md)
 
-## packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/namespace-nested-twice-declare
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSModuleDeclaration/fixtures/namespace-nested-twice-declare (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/namespace-nested-twice-declare/fixture.md)
 
-## packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/namespace-nested-twice-export
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSModuleDeclaration/fixtures/namespace-nested-twice-export (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/namespace-nested-twice-export/fixture.md)
 
-## packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/namespace-nested-twice-export-declare
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSModuleDeclaration/fixtures/namespace-nested-twice-export-declare (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/namespace-nested-twice-export-declare/fixture.md)
 
-## packages/ast-spec/src/declaration/TSNamespaceExportDeclaration/fixtures/_error_/missing-id
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSNamespaceExportDeclaration/fixtures/_error_/missing-id (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSNamespaceExportDeclaration/fixtures/_error_/missing-id/fixture.md)
 
-## packages/ast-spec/src/declaration/TSNamespaceExportDeclaration/fixtures/_error_/non-identifier-name
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSNamespaceExportDeclaration/fixtures/_error_/non-identifier-name (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSNamespaceExportDeclaration/fixtures/_error_/non-identifier-name/fixture.md)
 
-## packages/ast-spec/src/declaration/TSNamespaceExportDeclaration/fixtures/valid
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSNamespaceExportDeclaration/fixtures/valid (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSNamespaceExportDeclaration/fixtures/valid/fixture.md)
 
-## packages/ast-spec/src/declaration/TSTypeAliasDeclaration/fixtures/_error_/decorator
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSTypeAliasDeclaration/fixtures/_error_/decorator (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSTypeAliasDeclaration/fixtures/_error_/decorator/fixture.md)
 
-## packages/ast-spec/src/declaration/TSTypeAliasDeclaration/fixtures/_error_/missing-type-parameter
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSTypeAliasDeclaration/fixtures/_error_/missing-type-parameter (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSTypeAliasDeclaration/fixtures/_error_/missing-type-parameter/fixture.md)
 
-## packages/ast-spec/src/declaration/TSTypeAliasDeclaration/fixtures/_error_/non-identifier-name
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSTypeAliasDeclaration/fixtures/_error_/non-identifier-name (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSTypeAliasDeclaration/fixtures/_error_/non-identifier-name/fixture.md)
 
-## packages/ast-spec/src/declaration/TSTypeAliasDeclaration/fixtures/_error_/non-identifier-type-parameter
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSTypeAliasDeclaration/fixtures/_error_/non-identifier-type-parameter (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSTypeAliasDeclaration/fixtures/_error_/non-identifier-type-parameter/fixture.md)
 
-## packages/ast-spec/src/declaration/TSTypeAliasDeclaration/fixtures/declare
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSTypeAliasDeclaration/fixtures/declare (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSTypeAliasDeclaration/fixtures/declare/fixture.md)
 
-## packages/ast-spec/src/declaration/TSTypeAliasDeclaration/fixtures/type-param-many
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSTypeAliasDeclaration/fixtures/type-param-many (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSTypeAliasDeclaration/fixtures/type-param-many/fixture.md)
 
-## packages/ast-spec/src/declaration/TSTypeAliasDeclaration/fixtures/type-param-one
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSTypeAliasDeclaration/fixtures/type-param-one (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSTypeAliasDeclaration/fixtures/type-param-one/fixture.md)
 
-## packages/ast-spec/src/declaration/TSTypeAliasDeclaration/fixtures/valid
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/TSTypeAliasDeclaration/fixtures/valid (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/TSTypeAliasDeclaration/fixtures/valid/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/const-destructure-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/const-destructure-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/const-destructure-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/const-destructure-type-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/const-destructure-type-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/const-destructure-type-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/const-id-definite-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/const-id-definite-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/const-id-definite-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/const-id-definite-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/const-id-definite-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/const-id-definite-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/const-id-definite-type-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/const-id-definite-type-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/const-id-definite-type-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/const-id-definite-type-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/const-id-definite-type-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/const-id-definite-type-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/const-id-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/const-id-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/const-id-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/const-id-type-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/const-id-type-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/const-id-type-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-const-destructure-type-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-const-destructure-type-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-const-destructure-type-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-const-id-definite-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-const-id-definite-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-const-id-definite-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-const-id-definite-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-const-id-definite-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-const-id-definite-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-const-id-definite-type-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-const-id-definite-type-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-const-id-definite-type-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-const-id-definite-type-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-const-id-definite-type-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-const-id-definite-type-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-const-id-type-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-const-id-type-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-const-id-type-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-let-destructure-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-let-destructure-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-let-destructure-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-let-destructure-type-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-let-destructure-type-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-let-destructure-type-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-let-id-definite-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-let-id-definite-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-let-id-definite-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-let-id-definite-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-let-id-definite-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-let-id-definite-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-let-id-definite-type-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-let-id-definite-type-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-let-id-definite-type-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-let-id-definite-type-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-let-id-definite-type-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-let-id-definite-type-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-let-id-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-let-id-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-let-id-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-let-id-type-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-let-id-type-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-let-id-type-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-using-destructure-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-using-destructure-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-using-destructure-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-using-destructure-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-using-destructure-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-using-destructure-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-using-destructure-type-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-using-destructure-type-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-using-destructure-type-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-using-destructure-type-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-using-destructure-type-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-using-destructure-type-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-using-id-definite-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-using-id-definite-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-using-id-definite-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-using-id-definite-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-using-id-definite-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-using-id-definite-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-using-id-definite-type-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-using-id-definite-type-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-using-id-definite-type-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-using-id-definite-type-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-using-id-definite-type-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-using-id-definite-type-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-using-id-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-using-id-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-using-id-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-using-id-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-using-id-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-using-id-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-using-id-type-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-using-id-type-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-using-id-type-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-using-id-type-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-using-id-type-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-using-id-type-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-var-destructure-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-var-destructure-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-var-destructure-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-var-destructure-type-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-var-destructure-type-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-var-destructure-type-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-var-id-definite-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-var-id-definite-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-var-id-definite-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-var-id-definite-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-var-id-definite-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-var-id-definite-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-var-id-definite-type-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-var-id-definite-type-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-var-id-definite-type-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-var-id-definite-type-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-var-id-definite-type-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-var-id-definite-type-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-var-id-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-var-id-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-var-id-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-var-id-type-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-var-id-type-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-var-id-type-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/decorator
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/decorator (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/decorator/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/let-destructure-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/let-destructure-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/let-destructure-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/let-destructure-type-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/let-destructure-type-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/let-destructure-type-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/let-id-definite-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/let-id-definite-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/let-id-definite-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/let-id-definite-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/let-id-definite-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/let-id-definite-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/let-id-definite-type-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/let-id-definite-type-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/let-id-definite-type-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/missing-id-with-value
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/missing-id-with-value (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/missing-id-with-value/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/no-variables
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/no-variables (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/no-variables/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/using-destructure-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/using-destructure-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/using-destructure-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/using-destructure-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/using-destructure-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/using-destructure-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/using-destructure-type-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/using-destructure-type-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/using-destructure-type-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/using-destructure-type-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/using-destructure-type-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/using-destructure-type-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/using-id-definite-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/using-id-definite-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/using-id-definite-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/using-id-definite-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/using-id-definite-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/using-id-definite-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/using-id-definite-type-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/using-id-definite-type-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/using-id-definite-type-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/using-id-definite-type-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/using-id-definite-type-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/using-id-definite-type-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/using-id-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/using-id-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/using-id-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/using-id-type-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/using-id-type-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/using-id-type-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/var-destructure-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/var-destructure-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/var-destructure-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/var-destructure-type-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/var-destructure-type-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/var-destructure-type-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/var-id-definite-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/var-id-definite-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/var-id-definite-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/var-id-definite-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/var-id-definite-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/var-id-definite-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/var-id-definite-type-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/var-id-definite-type-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/var-id-definite-type-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/await-using-multiple-declarations
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/await-using-multiple-declarations (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/await-using-multiple-declarations/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/await-using-with-value
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/await-using-with-value (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/await-using-with-value/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/const-destructure-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/const-destructure-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/const-destructure-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/const-destructure-type-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/const-destructure-type-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/const-destructure-type-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/const-id-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/const-id-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/const-id-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/const-id-type-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/const-id-type-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/const-id-type-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/declare-const-destructure-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/declare-const-destructure-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/declare-const-destructure-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/declare-const-destructure-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/declare-const-destructure-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/declare-const-destructure-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/declare-const-destructure-type-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/declare-const-destructure-type-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/declare-const-destructure-type-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/declare-const-id-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/declare-const-id-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/declare-const-id-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/declare-const-id-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/declare-const-id-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/declare-const-id-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/declare-const-id-type-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/declare-const-id-type-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/declare-const-id-type-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/declare-let-destructure-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/declare-let-destructure-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/declare-let-destructure-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/declare-let-destructure-type-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/declare-let-destructure-type-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/declare-let-destructure-type-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/declare-let-id-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/declare-let-id-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/declare-let-id-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/declare-let-id-type-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/declare-let-id-type-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/declare-let-id-type-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/declare-var-destructure-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/declare-var-destructure-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/declare-var-destructure-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/declare-var-destructure-type-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/declare-var-destructure-type-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/declare-var-destructure-type-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/declare-var-id-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/declare-var-id-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/declare-var-id-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/declare-var-id-type-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/declare-var-id-type-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/declare-var-id-type-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/let-destructure-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/let-destructure-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/let-destructure-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/let-destructure-type-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/let-destructure-type-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/let-destructure-type-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/let-id-definite-type-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/let-id-definite-type-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/let-id-definite-type-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/let-id-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/let-id-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/let-id-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/let-id-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/let-id-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/let-id-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/let-id-type-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/let-id-type-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/let-id-type-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/let-id-type-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/let-id-type-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/let-id-type-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/multiple-declarations
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/multiple-declarations (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/multiple-declarations/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/using-id-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/using-id-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/using-id-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/using-id-type-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/using-id-type-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/using-id-type-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/using-multiple-declarations
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/using-multiple-declarations (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/using-multiple-declarations/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/var-destructure-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/var-destructure-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/var-destructure-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/var-destructure-type-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/var-destructure-type-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/var-destructure-type-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/var-id-definite-type-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/var-id-definite-type-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/var-id-definite-type-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/var-id-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/var-id-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/var-id-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/var-id-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/var-id-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/var-id-no-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/var-id-type-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/var-id-type-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/var-id-type-init/fixture.md)
 
-## packages/ast-spec/src/declaration/VariableDeclaration/fixtures/var-id-type-no-init
-
-??? note "Show Files"
+??? note "ast-spec/src/declaration/VariableDeclaration/fixtures/var-id-type-no-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/declaration/VariableDeclaration/fixtures/var-id-type-no-init/fixture.md)
 
-## packages/ast-spec/src/element/AccessorProperty/fixtures/_error_/modifier-abstract-accessor-with-value
-
-??? note "Show Files"
+??? note "ast-spec/src/element/AccessorProperty/fixtures/_error_/modifier-abstract-accessor-with-value (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/element/AccessorProperty/fixtures/_error_/modifier-abstract-accessor-with-value/fixture.md)
 
-## packages/ast-spec/src/element/AccessorProperty/fixtures/_error_/modifier-abstract-property-with-value
-
-??? note "Show Files"
+??? note "ast-spec/src/element/AccessorProperty/fixtures/_error_/modifier-abstract-property-with-value (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/element/AccessorProperty/fixtures/_error_/modifier-abstract-property-with-value/fixture.md)
 
-## packages/ast-spec/src/element/AccessorProperty/fixtures/_error_/modifier-override-with-no-extends
-
-??? note "Show Files"
+??? note "ast-spec/src/element/AccessorProperty/fixtures/_error_/modifier-override-with-no-extends (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/element/AccessorProperty/fixtures/_error_/modifier-override-with-no-extends/fixture.md)
 
-## packages/ast-spec/src/element/AccessorProperty/fixtures/key-computed-complex
-
-??? note "Show Files"
+??? note "ast-spec/src/element/AccessorProperty/fixtures/key-computed-complex (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/element/AccessorProperty/fixtures/key-computed-complex/fixture.md)
 
-## packages/ast-spec/src/element/AccessorProperty/fixtures/key-computed-number
-
-??? note "Show Files"
+??? note "ast-spec/src/element/AccessorProperty/fixtures/key-computed-number (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/element/AccessorProperty/fixtures/key-computed-number/fixture.md)
 
-## packages/ast-spec/src/element/AccessorProperty/fixtures/key-computed-string
-
-??? note "Show Files"
+??? note "ast-spec/src/element/AccessorProperty/fixtures/key-computed-string (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/element/AccessorProperty/fixtures/key-computed-string/fixture.md)
 
-## packages/ast-spec/src/element/AccessorProperty/fixtures/key-number
-
-??? note "Show Files"
+??? note "ast-spec/src/element/AccessorProperty/fixtures/key-number (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/element/AccessorProperty/fixtures/key-number/fixture.md)
 
-## packages/ast-spec/src/element/AccessorProperty/fixtures/key-private
-
-??? note "Show Files"
+??? note "ast-spec/src/element/AccessorProperty/fixtures/key-private (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/element/AccessorProperty/fixtures/key-private/fixture.md)
 
-## packages/ast-spec/src/element/AccessorProperty/fixtures/key-string
-
-??? note "Show Files"
+??? note "ast-spec/src/element/AccessorProperty/fixtures/key-string (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/element/AccessorProperty/fixtures/key-string/fixture.md)
 
-## packages/ast-spec/src/element/AccessorProperty/fixtures/modifier-abstract
-
-??? note "Show Files"
+??? note "ast-spec/src/element/AccessorProperty/fixtures/modifier-abstract (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/element/AccessorProperty/fixtures/modifier-abstract/fixture.md)
 
-## packages/ast-spec/src/element/AccessorProperty/fixtures/modifier-declare
-
-??? note "Show Files"
+??? note "ast-spec/src/element/AccessorProperty/fixtures/modifier-declare (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/element/AccessorProperty/fixtures/modifier-declare/fixture.md)
 
-## packages/ast-spec/src/element/AccessorProperty/fixtures/modifier-override
-
-??? note "Show Files"
+??? note "ast-spec/src/element/AccessorProperty/fixtures/modifier-override (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/element/AccessorProperty/fixtures/modifier-override/fixture.md)
 
-## packages/ast-spec/src/element/AccessorProperty/fixtures/modifier-private
-
-??? note "Show Files"
+??? note "ast-spec/src/element/AccessorProperty/fixtures/modifier-private (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/element/AccessorProperty/fixtures/modifier-private/fixture.md)
 
-## packages/ast-spec/src/element/AccessorProperty/fixtures/modifier-protected
-
-??? note "Show Files"
+??? note "ast-spec/src/element/AccessorProperty/fixtures/modifier-protected (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/element/AccessorProperty/fixtures/modifier-protected/fixture.md)
 
-## packages/ast-spec/src/element/AccessorProperty/fixtures/modifier-public
-
-??? note "Show Files"
+??? note "ast-spec/src/element/AccessorProperty/fixtures/modifier-public (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/element/AccessorProperty/fixtures/modifier-public/fixture.md)
 
-## packages/ast-spec/src/element/AccessorProperty/fixtures/modifier-readonly
-
-??? note "Show Files"
+??? note "ast-spec/src/element/AccessorProperty/fixtures/modifier-readonly (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/element/AccessorProperty/fixtures/modifier-readonly/fixture.md)
 
-## packages/ast-spec/src/element/AccessorProperty/fixtures/modifier-static
-
-??? note "Show Files"
+??? note "ast-spec/src/element/AccessorProperty/fixtures/modifier-static (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/element/AccessorProperty/fixtures/modifier-static/fixture.md)
 
-## packages/ast-spec/src/element/AccessorProperty/fixtures/no-annotation-no-value
-
-??? note "Show Files"
+??? note "ast-spec/src/element/AccessorProperty/fixtures/no-annotation-no-value (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/element/AccessorProperty/fixtures/no-annotation-no-value/fixture.md)
 
-## packages/ast-spec/src/element/AccessorProperty/fixtures/no-annotation-with-value
-
-??? note "Show Files"
+??? note "ast-spec/src/element/AccessorProperty/fixtures/no-annotation-with-value (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/element/AccessorProperty/fixtures/no-annotation-with-value/fixture.md)
 
-## packages/ast-spec/src/element/AccessorProperty/fixtures/with-annotation-no-value
-
-??? note "Show Files"
+??? note "ast-spec/src/element/AccessorProperty/fixtures/with-annotation-no-value (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/element/AccessorProperty/fixtures/with-annotation-no-value/fixture.md)
 
-## packages/ast-spec/src/element/AccessorProperty/fixtures/with-annotation-with-value
-
-??? note "Show Files"
+??? note "ast-spec/src/element/AccessorProperty/fixtures/with-annotation-with-value (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/element/AccessorProperty/fixtures/with-annotation-with-value/fixture.md)
 
-## packages/ast-spec/src/element/MethodDefinition/fixtures/_error_/duplicated-accessibility-modifiers
-
-??? note "Show Files"
+??? note "ast-spec/src/element/MethodDefinition/fixtures/_error_/duplicated-accessibility-modifiers (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/element/MethodDefinition/fixtures/_error_/duplicated-accessibility-modifiers/fixture.md)
 
-## packages/ast-spec/src/element/MethodDefinition/fixtures/_error_/mixed-accessibility-modifiers
-
-??? note "Show Files"
+??? note "ast-spec/src/element/MethodDefinition/fixtures/_error_/mixed-accessibility-modifiers (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/element/MethodDefinition/fixtures/_error_/mixed-accessibility-modifiers/fixture.md)
 
-## packages/ast-spec/src/element/PropertyDefinition/fixtures/_error_/duplicated-accessibility-modifiers
-
-??? note "Show Files"
+??? note "ast-spec/src/element/PropertyDefinition/fixtures/_error_/duplicated-accessibility-modifiers (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/element/PropertyDefinition/fixtures/_error_/duplicated-accessibility-modifiers/fixture.md)
 
-## packages/ast-spec/src/element/PropertyDefinition/fixtures/_error_/mixed-accessibility-modifiers
-
-??? note "Show Files"
+??? note "ast-spec/src/element/PropertyDefinition/fixtures/_error_/mixed-accessibility-modifiers (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/element/PropertyDefinition/fixtures/_error_/mixed-accessibility-modifiers/fixture.md)
 
-## packages/ast-spec/src/element
-
-??? note "Show Files"
+??? note "ast-spec/src/element (1 files)"
 
     - [spec.md](./packages/ast-spec/src/element/spec.md)
 
-## packages/ast-spec/src/expression/ImportExpression/fixtures/_error_/extra-arguments
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/ImportExpression/fixtures/_error_/extra-arguments (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/expression/ImportExpression/fixtures/_error_/extra-arguments/fixture.md)
 
-## packages/ast-spec/src/expression/ImportExpression/fixtures/_error_/no-arguments
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/ImportExpression/fixtures/_error_/no-arguments (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/expression/ImportExpression/fixtures/_error_/no-arguments/fixture.md)
 
-## packages/ast-spec/src/expression/ObjectExpression/fixtures/_error_/missing-getter-body
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/ObjectExpression/fixtures/_error_/missing-getter-body (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/expression/ObjectExpression/fixtures/_error_/missing-getter-body/fixture.md)
 
-## packages/ast-spec/src/expression/ObjectExpression/fixtures/_error_/missing-method-body
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/ObjectExpression/fixtures/_error_/missing-method-body (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/expression/ObjectExpression/fixtures/_error_/missing-method-body/fixture.md)
 
-## packages/ast-spec/src/expression/ObjectExpression/fixtures/_error_/missing-setter-body
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/ObjectExpression/fixtures/_error_/missing-setter-body (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/expression/ObjectExpression/fixtures/_error_/missing-setter-body/fixture.md)
 
-## packages/ast-spec/src/expression/TSSatisfiesExpression/fixtures/array-array
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/TSSatisfiesExpression/fixtures/array-array (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/expression/TSSatisfiesExpression/fixtures/array-array/fixture.md)
 
-## packages/ast-spec/src/expression/TSSatisfiesExpression/fixtures/arrow-func-no-parentheses
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/TSSatisfiesExpression/fixtures/arrow-func-no-parentheses (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/expression/TSSatisfiesExpression/fixtures/arrow-func-no-parentheses/fixture.md)
 
-## packages/ast-spec/src/expression/TSSatisfiesExpression/fixtures/arrow-func-with-parentheses
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/TSSatisfiesExpression/fixtures/arrow-func-with-parentheses (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/expression/TSSatisfiesExpression/fixtures/arrow-func-with-parentheses/fixture.md)
 
-## packages/ast-spec/src/expression/TSSatisfiesExpression/fixtures/chained-satisfies
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/TSSatisfiesExpression/fixtures/chained-satisfies (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/expression/TSSatisfiesExpression/fixtures/chained-satisfies/fixture.md)
 
-## packages/ast-spec/src/expression/TSSatisfiesExpression/fixtures/conditional-no-parentheses
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/TSSatisfiesExpression/fixtures/conditional-no-parentheses (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/expression/TSSatisfiesExpression/fixtures/conditional-no-parentheses/fixture.md)
 
-## packages/ast-spec/src/expression/TSSatisfiesExpression/fixtures/conditional-with-parentheses
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/TSSatisfiesExpression/fixtures/conditional-with-parentheses (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/expression/TSSatisfiesExpression/fixtures/conditional-with-parentheses/fixture.md)
 
-## packages/ast-spec/src/expression/TSSatisfiesExpression/fixtures/identifier-keyword
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/TSSatisfiesExpression/fixtures/identifier-keyword (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/expression/TSSatisfiesExpression/fixtures/identifier-keyword/fixture.md)
 
-## packages/ast-spec/src/expression/TSSatisfiesExpression/fixtures/identifier-object-type
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/TSSatisfiesExpression/fixtures/identifier-object-type (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/expression/TSSatisfiesExpression/fixtures/identifier-object-type/fixture.md)
 
-## packages/ast-spec/src/expression/TSSatisfiesExpression/fixtures/identifier-tuple-type
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/TSSatisfiesExpression/fixtures/identifier-tuple-type (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/expression/TSSatisfiesExpression/fixtures/identifier-tuple-type/fixture.md)
 
-## packages/ast-spec/src/expression/TSSatisfiesExpression/fixtures/logical-no-parentheses
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/TSSatisfiesExpression/fixtures/logical-no-parentheses (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/expression/TSSatisfiesExpression/fixtures/logical-no-parentheses/fixture.md)
 
-## packages/ast-spec/src/expression/TSSatisfiesExpression/fixtures/logical-with-parentheses
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/TSSatisfiesExpression/fixtures/logical-with-parentheses (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/expression/TSSatisfiesExpression/fixtures/logical-with-parentheses/fixture.md)
 
-## packages/ast-spec/src/expression/TSSatisfiesExpression/fixtures/object-object-inner-parentheses
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/TSSatisfiesExpression/fixtures/object-object-inner-parentheses (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/expression/TSSatisfiesExpression/fixtures/object-object-inner-parentheses/fixture.md)
 
-## packages/ast-spec/src/expression/TSSatisfiesExpression/fixtures/object-object-outer-parentheses
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/TSSatisfiesExpression/fixtures/object-object-outer-parentheses (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/expression/TSSatisfiesExpression/fixtures/object-object-outer-parentheses/fixture.md)
 
-## packages/ast-spec/src/expression/UpdateExpression/fixtures/_error_/call-expr
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/UpdateExpression/fixtures/_error_/call-expr (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/expression/UpdateExpression/fixtures/_error_/call-expr/fixture.md)
 
-## packages/ast-spec/src/expression/UpdateExpression/fixtures/_error_/literal
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/UpdateExpression/fixtures/_error_/literal (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/expression/UpdateExpression/fixtures/_error_/literal/fixture.md)
 
-## packages/ast-spec/src/expression/UpdateExpression/fixtures/_error_/optional-chain
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/UpdateExpression/fixtures/_error_/optional-chain (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/expression/UpdateExpression/fixtures/_error_/optional-chain/fixture.md)
 
-## packages/ast-spec/src/expression/UpdateExpression/fixtures/_error_/optional-chain2
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/UpdateExpression/fixtures/_error_/optional-chain2 (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/expression/UpdateExpression/fixtures/_error_/optional-chain2/fixture.md)
 
-## packages/ast-spec/src/expression/UpdateExpression/fixtures/_error_/optional-chain3
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/UpdateExpression/fixtures/_error_/optional-chain3 (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/expression/UpdateExpression/fixtures/_error_/optional-chain3/fixture.md)
 
-## packages/ast-spec/src/expression/UpdateExpression/fixtures/_error_/paren-expr
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/UpdateExpression/fixtures/_error_/paren-expr (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/expression/UpdateExpression/fixtures/_error_/paren-expr/fixture.md)
 
-## packages/ast-spec/src/expression/UpdateExpression/fixtures/valid-assignment
-
-??? note "Show Files"
+??? note "ast-spec/src/expression/UpdateExpression/fixtures/valid-assignment (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/expression/UpdateExpression/fixtures/valid-assignment/fixture.md)
 
-## packages/ast-spec/src/jsx
-
-??? note "Show Files"
+??? note "ast-spec/src/jsx (1 files)"
 
     - [spec.md](./packages/ast-spec/src/jsx/spec.md)
 
-## packages/ast-spec/src/parameter
-
-??? note "Show Files"
+??? note "ast-spec/src/parameter (1 files)"
 
     - [spec.md](./packages/ast-spec/src/parameter/spec.md)
 
-## packages/ast-spec/src/statement
-
-??? note "Show Files"
+??? note "ast-spec/src/statement (1 files)"
 
     - [spec.md](./packages/ast-spec/src/statement/spec.md)
 
-## packages/ast-spec/src/token
-
-??? note "Show Files"
+??? note "ast-spec/src/token (1 files)"
 
     - [spec.md](./packages/ast-spec/src/token/spec.md)
 
-## packages/ast-spec/src/jsx/JSXAttribute/fixtures/element-non-self-closing
-
-??? note "Show Files"
+??? note "ast-spec/src/jsx/JSXAttribute/fixtures/element-non-self-closing (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/jsx/JSXAttribute/fixtures/element-non-self-closing/fixture.md)
 
-## packages/ast-spec/src/jsx/JSXAttribute/fixtures/element-self-closing
-
-??? note "Show Files"
+??? note "ast-spec/src/jsx/JSXAttribute/fixtures/element-self-closing (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/jsx/JSXAttribute/fixtures/element-self-closing/fixture.md)
 
-## packages/ast-spec/src/jsx/JSXNamespacedName/fixtures/component
-
-??? note "Show Files"
+??? note "ast-spec/src/jsx/JSXNamespacedName/fixtures/component (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/jsx/JSXNamespacedName/fixtures/component/fixture.md)
 
-## packages/ast-spec/src/jsx/JSXNamespacedName/fixtures/component-dashed
-
-??? note "Show Files"
+??? note "ast-spec/src/jsx/JSXNamespacedName/fixtures/component-dashed (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/jsx/JSXNamespacedName/fixtures/component-dashed/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/accessor-decorators/fixtures/accessor-decorator-factory-instance-member
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/accessor-decorators/fixtures/accessor-decorator-factory-instance-member (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/accessor-decorators/fixtures/accessor-decorator-factory-instance-member/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/accessor-decorators/fixtures/accessor-decorator-factory-static-member
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/accessor-decorators/fixtures/accessor-decorator-factory-static-member (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/accessor-decorators/fixtures/accessor-decorator-factory-static-member/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/accessor-decorators/fixtures/accessor-decorator-instance-member
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/accessor-decorators/fixtures/accessor-decorator-instance-member (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/accessor-decorators/fixtures/accessor-decorator-instance-member/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/accessor-decorators/fixtures/accessor-decorator-static-member
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/accessor-decorators/fixtures/accessor-decorator-static-member (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/accessor-decorators/fixtures/accessor-decorator-static-member/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/babylon-convergence/fixtures/type-parameter-whitespace-loc
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/babylon-convergence/fixtures/type-parameter-whitespace-loc (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/babylon-convergence/fixtures/type-parameter-whitespace-loc/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/babylon-convergence/fixtures/type-parameters
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/babylon-convergence/fixtures/type-parameters (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/babylon-convergence/fixtures/type-parameters/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/abstract-class-with-abstract-constructor
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/_error_/abstract-class-with-abstract-constructor (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/abstract-class-with-abstract-constructor/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/abstract-class-with-abstract-static-constructor
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/_error_/abstract-class-with-abstract-static-constructor (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/abstract-class-with-abstract-static-constructor/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/abstract-class-with-override-property
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/_error_/abstract-class-with-override-property (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/abstract-class-with-override-property/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/abstract-interface
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/_error_/abstract-interface (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/abstract-interface/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/await-without-async-function
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/_error_/await-without-async-function (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/await-without-async-function/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/class-private-identifier-field-with-accessibility-error
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/_error_/class-private-identifier-field-with-accessibility-error (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/class-private-identifier-field-with-accessibility-error/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/class-with-constructor-and-type-parameters
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/_error_/class-with-constructor-and-type-parameters (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/class-with-constructor-and-type-parameters/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/class-with-export-parameter-properties
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/_error_/class-with-export-parameter-properties (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/class-with-export-parameter-properties/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/class-with-implements-and-extends
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/_error_/class-with-implements-and-extends (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/class-with-implements-and-extends/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/class-with-static-parameter-properties
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/_error_/class-with-static-parameter-properties (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/class-with-static-parameter-properties/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/class-with-two-methods-computed-constructor
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/_error_/class-with-two-methods-computed-constructor (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/class-with-two-methods-computed-constructor/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/const-assertions
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/_error_/const-assertions (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/const-assertions/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/export-named-enum-computed-number
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/_error_/export-named-enum-computed-number (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/export-named-enum-computed-number/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/export-named-enum-computed-string
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/_error_/export-named-enum-computed-string (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/export-named-enum-computed-string/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/export-named-enum-computed-var-ref
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/_error_/export-named-enum-computed-var-ref (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/export-named-enum-computed-var-ref/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/export-with-import-assertions
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/_error_/export-with-import-assertions (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/export-with-import-assertions/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/import-type-error
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/_error_/import-type-error (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/import-type-error/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/interface-with-construct-signature-with-parameter-accessibility
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/_error_/interface-with-construct-signature-with-parameter-accessibility (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/interface-with-construct-signature-with-parameter-accessibility/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/new-target-in-arrow-function-body
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/_error_/new-target-in-arrow-function-body (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/new-target-in-arrow-function-body/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/var-with-definite-assignment
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/_error_/var-with-definite-assignment (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/var-with-definite-assignment/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/abstract-class-with-abstract-method
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/abstract-class-with-abstract-method (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/abstract-class-with-abstract-method/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/abstract-class-with-abstract-properties
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/abstract-class-with-abstract-properties (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/abstract-class-with-abstract-properties/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/abstract-class-with-abstract-readonly-property
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/abstract-class-with-abstract-readonly-property (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/abstract-class-with-abstract-readonly-property/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/abstract-class-with-declare-properties
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/abstract-class-with-declare-properties (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/abstract-class-with-declare-properties/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/abstract-class-with-optional-method
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/abstract-class-with-optional-method (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/abstract-class-with-optional-method/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/abstract-class-with-override-method
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/abstract-class-with-override-method (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/abstract-class-with-override-method/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/angle-bracket-type-assertion
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/angle-bracket-type-assertion (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/angle-bracket-type-assertion/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/angle-bracket-type-assertion-arrow-function
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/angle-bracket-type-assertion-arrow-function (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/angle-bracket-type-assertion-arrow-function/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/arrow-function-with-optional-parameter
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/arrow-function-with-optional-parameter (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/arrow-function-with-optional-parameter/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/arrow-function-with-type-parameters
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/arrow-function-with-type-parameters (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/arrow-function-with-type-parameters/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/async-function-expression
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/async-function-expression (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/async-function-expression/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/async-function-with-var-declaration
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/async-function-with-var-declaration (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/async-function-with-var-declaration/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/call-signatures
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/call-signatures (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/call-signatures/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/call-signatures-with-generics
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/call-signatures-with-generics (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/call-signatures-with-generics/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/cast-as-expression
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/cast-as-expression (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/cast-as-expression/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/cast-as-multi
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/cast-as-multi (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/cast-as-multi/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/cast-as-multi-assign
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/cast-as-multi-assign (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/cast-as-multi-assign/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/cast-as-operator
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/cast-as-operator (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/cast-as-operator/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/cast-as-simple
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/cast-as-simple (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/cast-as-simple/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/catch-clause-with-annotation
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/catch-clause-with-annotation (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/catch-clause-with-annotation/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/catch-clause-with-invalid-annotation
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/catch-clause-with-invalid-annotation (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/catch-clause-with-invalid-annotation/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-multi-line-keyword-abstract
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-multi-line-keyword-abstract (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-multi-line-keyword-abstract/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-multi-line-keyword-declare
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-multi-line-keyword-declare (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-multi-line-keyword-declare/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-private-identifier-field-with-annotation
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-private-identifier-field-with-annotation (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-private-identifier-field-with-annotation/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-private-identifier-readonly-field
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-private-identifier-readonly-field (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-private-identifier-readonly-field/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-static-blocks
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-static-blocks (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-static-blocks/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-accessibility-modifiers
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-with-accessibility-modifiers (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-accessibility-modifiers/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-constructor-and-modifier
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-with-constructor-and-modifier (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-constructor-and-modifier/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-constructor-and-parameter-property-with-modifiers
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-with-constructor-and-parameter-property-with-modifiers (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-constructor-and-parameter-property-with-modifiers/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-constructor-and-parameter-proptery-with-override-modifier
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-with-constructor-and-parameter-proptery-with-override-modifier (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-constructor-and-parameter-proptery-with-override-modifier/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-constructor-and-return-type
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-with-constructor-and-return-type (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-constructor-and-return-type/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-declare-properties
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-with-declare-properties (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-declare-properties/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-definite-assignment
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-with-definite-assignment (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-definite-assignment/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-extends-and-implements
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-with-extends-and-implements (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-extends-and-implements/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-extends-generic
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-with-extends-generic (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-extends-generic/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-extends-generic-multiple
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-with-extends-generic-multiple (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-extends-generic-multiple/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-generic-method
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-with-generic-method (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-generic-method/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-generic-method-default
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-with-generic-method-default (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-generic-method-default/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-implements
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-with-implements (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-implements/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-implements-generic
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-with-implements-generic (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-implements-generic/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-implements-generic-multiple
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-with-implements-generic-multiple (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-implements-generic-multiple/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-method
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-with-method (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-method/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-mixin
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-with-mixin (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-mixin/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-mixin-reference
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-with-mixin-reference (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-mixin-reference/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-optional-computed-method
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-with-optional-computed-method (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-optional-computed-method/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-optional-computed-property
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-with-optional-computed-property (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-optional-computed-property/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-optional-methods
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-with-optional-methods (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-optional-methods/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-optional-properties
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-with-optional-properties (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-optional-properties/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-optional-property-undefined
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-with-optional-property-undefined (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-optional-property-undefined/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-override-method
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-with-override-method (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-override-method/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-override-property
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-with-override-property (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-override-property/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-private-optional-property
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-with-private-optional-property (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-private-optional-property/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-private-parameter-properties
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-with-private-parameter-properties (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-private-parameter-properties/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-property-function
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-with-property-function (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-property-function/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-property-values
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-with-property-values (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-property-values/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-protected-parameter-properties
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-with-protected-parameter-properties (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-protected-parameter-properties/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-public-parameter-properties
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-with-public-parameter-properties (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-public-parameter-properties/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-readonly-parameter-properties
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-with-readonly-parameter-properties (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-readonly-parameter-properties/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-readonly-property
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-with-readonly-property (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-readonly-property/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-type-parameter
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-with-type-parameter (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-type-parameter/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-type-parameter-default
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-with-type-parameter-default (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-type-parameter-default/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-type-parameter-underscore
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/class-with-type-parameter-underscore (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/class-with-type-parameter-underscore/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/const-enum
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/const-enum (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/const-enum/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/declare-class-with-optional-method
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/declare-class-with-optional-method (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/declare-class-with-optional-method/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/declare-function
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/declare-function (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/declare-function/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/destructuring-assignment
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/destructuring-assignment (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/destructuring-assignment/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/destructuring-assignment-nested
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/destructuring-assignment-nested (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/destructuring-assignment-nested/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/destructuring-assignment-object
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/destructuring-assignment-object (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/destructuring-assignment-object/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/destructuring-assignment-property
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/destructuring-assignment-property (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/destructuring-assignment-property/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/directive-in-module
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/directive-in-module (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/directive-in-module/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/directive-in-namespace
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/directive-in-namespace (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/directive-in-namespace/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/dynamic-import-with-import-assertions
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/dynamic-import-with-import-assertions (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/dynamic-import-with-import-assertions/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/export-all-with-import-assertions
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/export-all-with-import-assertions (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/export-all-with-import-assertions/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/export-as-namespace
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/export-as-namespace (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/export-as-namespace/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/export-assignment
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/export-assignment (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/export-assignment/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/export-declare-const-named-enum
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/export-declare-const-named-enum (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/export-declare-const-named-enum/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/export-declare-named-enum
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/export-declare-named-enum (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/export-declare-named-enum/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/export-default-class-with-generic
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/export-default-class-with-generic (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/export-default-class-with-generic/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/export-default-class-with-multiple-generics
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/export-default-class-with-multiple-generics (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/export-default-class-with-multiple-generics/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/export-default-interface
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/export-default-interface (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/export-default-interface/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/export-named-class-with-generic
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/export-named-class-with-generic (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/export-named-class-with-generic/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/export-named-class-with-multiple-generics
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/export-named-class-with-multiple-generics (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/export-named-class-with-multiple-generics/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/export-named-enum
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/export-named-enum (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/export-named-enum/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/export-star-as-ns-from
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/export-star-as-ns-from (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/export-star-as-ns-from/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/export-type
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/export-type (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/export-type/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/export-type-as
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/export-type-as (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/export-type-as/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/export-type-from
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/export-type-from (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/export-type-from/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/export-type-from-as
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/export-type-from-as (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/export-type-from-as/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/export-type-star-from
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/export-type-star-from (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/export-type-star-from/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/function-anonymus-with-type-parameters
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/function-anonymus-with-type-parameters (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/function-anonymus-with-type-parameters/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/function-anynomus-with-return-type
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/function-anynomus-with-return-type (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/function-anynomus-with-return-type/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/function-overloads
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/function-overloads (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/function-overloads/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/function-with-await
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/function-with-await (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/function-with-await/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/function-with-object-type-with-optional-properties
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/function-with-object-type-with-optional-properties (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/function-with-object-type-with-optional-properties/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/function-with-object-type-without-annotation
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/function-with-object-type-without-annotation (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/function-with-object-type-without-annotation/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/function-with-type-parameters
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/function-with-type-parameters (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/function-with-type-parameters/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/function-with-type-parameters-that-have-comments
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/function-with-type-parameters-that-have-comments (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/function-with-type-parameters-that-have-comments/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/function-with-type-parameters-with-constraint
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/function-with-type-parameters-with-constraint (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/function-with-type-parameters-with-constraint/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/function-with-types
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/function-with-types (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/function-with-types/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/function-with-types-assignation
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/function-with-types-assignation (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/function-with-types-assignation/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/global-this
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/global-this (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/global-this/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/import-equal-declaration
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/import-equal-declaration (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/import-equal-declaration/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/import-equal-type-declaration
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/import-equal-type-declaration (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/import-equal-type-declaration/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/import-export-equal-declaration
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/import-export-equal-declaration (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/import-export-equal-declaration/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/import-export-equal-type-declaration
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/import-export-equal-type-declaration (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/import-export-equal-type-declaration/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/import-type-default
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/import-type-default (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/import-type-default/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/import-type-empty
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/import-type-empty (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/import-type-empty/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/import-type-named
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/import-type-named (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/import-type-named/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/import-type-named-as
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/import-type-named-as (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/import-type-named-as/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/import-type-star-as-ns
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/import-type-star-as-ns (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/import-type-star-as-ns/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/import-with-import-assertions
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/import-with-import-assertions (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/import-with-import-assertions/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/interface-extends
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/interface-extends (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/interface-extends/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/interface-extends-multiple
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/interface-extends-multiple (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/interface-extends-multiple/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/interface-type-parameters
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/interface-type-parameters (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/interface-type-parameters/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/interface-with-all-property-types
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/interface-with-all-property-types (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/interface-with-all-property-types/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/interface-with-extends-member-expression
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/interface-with-extends-member-expression (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/interface-with-extends-member-expression/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/interface-with-extends-type-parameters
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/interface-with-extends-type-parameters (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/interface-with-extends-type-parameters/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/interface-with-generic
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/interface-with-generic (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/interface-with-generic/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/interface-with-jsdoc
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/interface-with-jsdoc (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/interface-with-jsdoc/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/interface-with-method
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/interface-with-method (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/interface-with-method/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/interface-with-optional-properties
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/interface-with-optional-properties (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/interface-with-optional-properties/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/interface-without-type-annotation
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/interface-without-type-annotation (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/interface-without-type-annotation/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/intrinsic-keyword
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/intrinsic-keyword (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/intrinsic-keyword/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/keyof-operator
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/keyof-operator (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/keyof-operator/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/keyword-variables
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/keyword-variables (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/keyword-variables/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/nested-type-arguments
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/nested-type-arguments (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/nested-type-arguments/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/never-type-param
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/never-type-param (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/never-type-param/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/non-null-assertion-operator
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/non-null-assertion-operator (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/non-null-assertion-operator/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/null-and-undefined-type-annotations
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/null-and-undefined-type-annotations (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/null-and-undefined-type-annotations/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/nullish-coalescing
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/nullish-coalescing (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/nullish-coalescing/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/object-with-escaped-properties
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/object-with-escaped-properties (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/object-with-escaped-properties/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/object-with-typed-methods
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/object-with-typed-methods (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/object-with-typed-methods/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/optional-chain
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/optional-chain (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/optional-chain/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/optional-chain-call
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/optional-chain-call (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/optional-chain-call/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/optional-chain-call-with-non-null-assertion
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/optional-chain-call-with-non-null-assertion (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/optional-chain-call-with-non-null-assertion/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/optional-chain-call-with-parens
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/optional-chain-call-with-parens (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/optional-chain-call-with-parens/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/optional-chain-element-access
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/optional-chain-element-access (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/optional-chain-element-access/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/optional-chain-element-access-with-non-null-assertion
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/optional-chain-element-access-with-non-null-assertion (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/optional-chain-element-access-with-non-null-assertion/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/optional-chain-element-access-with-parens
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/optional-chain-element-access-with-parens (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/optional-chain-element-access-with-parens/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/optional-chain-with-non-null-assertion
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/optional-chain-with-non-null-assertion (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/optional-chain-with-non-null-assertion/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/optional-chain-with-parens
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/optional-chain-with-parens (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/optional-chain-with-parens/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/parenthesized-use-strict
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/parenthesized-use-strict (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/parenthesized-use-strict/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/private-fields-in-in
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/private-fields-in-in (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/private-fields-in-in/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/readonly-arrays
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/readonly-arrays (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/readonly-arrays/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/readonly-tuples
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/readonly-tuples (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/readonly-tuples/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/short-circuiting-assignment-and-and
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/short-circuiting-assignment-and-and (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/short-circuiting-assignment-and-and/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/short-circuiting-assignment-or-or
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/short-circuiting-assignment-or-or (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/short-circuiting-assignment-or-or/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/short-circuiting-assignment-question-question
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/short-circuiting-assignment-question-question (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/short-circuiting-assignment-question-question/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/symbol-type-param
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/symbol-type-param (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/symbol-type-param/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-alias-declaration
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/type-alias-declaration (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-alias-declaration/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-alias-declaration-export
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/type-alias-declaration-export (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-alias-declaration-export/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-alias-declaration-export-function-type
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/type-alias-declaration-export-function-type (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-alias-declaration-export-function-type/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-alias-declaration-export-object-type
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/type-alias-declaration-export-object-type (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-alias-declaration-export-object-type/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-alias-declaration-with-constrained-type-parameter
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/type-alias-declaration-with-constrained-type-parameter (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-alias-declaration-with-constrained-type-parameter/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-alias-object-without-annotation
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/type-alias-object-without-annotation (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-alias-object-without-annotation/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-assertion-in-arrow-function
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/type-assertion-in-arrow-function (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-assertion-in-arrow-function/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-assertion-in-function
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/type-assertion-in-function (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-assertion-in-function/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-assertion-in-interface
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/type-assertion-in-interface (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-assertion-in-interface/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-assertion-in-method
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/type-assertion-in-method (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-assertion-in-method/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-assertion-with-guard-in-arrow-function
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/type-assertion-with-guard-in-arrow-function (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-assertion-with-guard-in-arrow-function/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-assertion-with-guard-in-function
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/type-assertion-with-guard-in-function (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-assertion-with-guard-in-function/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-assertion-with-guard-in-interface
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/type-assertion-with-guard-in-interface (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-assertion-with-guard-in-interface/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-assertion-with-guard-in-method
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/type-assertion-with-guard-in-method (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-assertion-with-guard-in-method/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-guard-in-arrow-function
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/type-guard-in-arrow-function (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-guard-in-arrow-function/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-guard-in-function
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/type-guard-in-function (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-guard-in-function/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-guard-in-interface
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/type-guard-in-interface (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-guard-in-interface/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-guard-in-method
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/type-guard-in-method (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-guard-in-method/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-import-type
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/type-import-type (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-import-type/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-import-type-with-type-parameters-in-type-reference
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/type-import-type-with-type-parameters-in-type-reference (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-import-type-with-type-parameters-in-type-reference/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-parameters-comments
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/type-parameters-comments (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-parameters-comments/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-parameters-comments-heritage
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/type-parameters-comments-heritage (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-parameters-comments-heritage/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-reference-comments
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/type-reference-comments (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/type-reference-comments/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/typed-keyword-bigint
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/typed-keyword-bigint (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/typed-keyword-bigint/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/typed-keyword-boolean
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/typed-keyword-boolean (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/typed-keyword-boolean/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/typed-keyword-false
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/typed-keyword-false (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/typed-keyword-false/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/typed-keyword-never
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/typed-keyword-never (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/typed-keyword-never/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/typed-keyword-null
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/typed-keyword-null (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/typed-keyword-null/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/typed-keyword-number
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/typed-keyword-number (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/typed-keyword-number/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/typed-keyword-object
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/typed-keyword-object (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/typed-keyword-object/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/typed-keyword-string
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/typed-keyword-string (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/typed-keyword-string/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/typed-keyword-symbol
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/typed-keyword-symbol (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/typed-keyword-symbol/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/typed-keyword-true
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/typed-keyword-true (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/typed-keyword-true/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/typed-keyword-undefined
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/typed-keyword-undefined (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/typed-keyword-undefined/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/typed-keyword-unknown
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/typed-keyword-unknown (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/typed-keyword-unknown/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/typed-keyword-void
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/typed-keyword-void (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/typed-keyword-void/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/typed-method-signature
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/typed-method-signature (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/typed-method-signature/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/typed-this
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/typed-this (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/typed-this/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/union-intersection
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/union-intersection (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/union-intersection/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/unique-symbol
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/unique-symbol (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/unique-symbol/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/unknown-type-annotation
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/unknown-type-annotation (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/unknown-type-annotation/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/var-with-dotted-type
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/var-with-dotted-type (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/var-with-dotted-type/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/var-with-type
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/var-with-type (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/var-with-type/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/basics/fixtures/variable-declaration-type-annotation-spacing
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/basics/fixtures/variable-declaration-type-annotation-spacing (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/basics/fixtures/variable-declaration-type-annotation-spacing/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/class-decorators/fixtures/class-decorator
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/class-decorators/fixtures/class-decorator (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/class-decorators/fixtures/class-decorator/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/class-decorators/fixtures/class-decorator-factory
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/class-decorators/fixtures/class-decorator-factory (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/class-decorators/fixtures/class-decorator-factory/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/class-decorators/fixtures/class-parameter-property
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/class-decorators/fixtures/class-parameter-property (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/class-decorators/fixtures/class-parameter-property/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/class-decorators/fixtures/export-default-class-decorator
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/class-decorators/fixtures/export-default-class-decorator (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/class-decorators/fixtures/export-default-class-decorator/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/class-decorators/fixtures/export-named-class-decorator
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/class-decorators/fixtures/export-named-class-decorator (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/class-decorators/fixtures/export-named-class-decorator/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/comments/fixtures/type-assertion-regression-test
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/comments/fixtures/type-assertion-regression-test (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/comments/fixtures/type-assertion-regression-test/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/declare/fixtures/abstract-class
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/declare/fixtures/abstract-class (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/declare/fixtures/abstract-class/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/declare/fixtures/class
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/declare/fixtures/class (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/declare/fixtures/class/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/declare/fixtures/enum
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/declare/fixtures/enum (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/declare/fixtures/enum/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/declare/fixtures/function
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/declare/fixtures/function (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/declare/fixtures/function/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/declare/fixtures/interface
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/declare/fixtures/interface (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/declare/fixtures/interface/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/declare/fixtures/module
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/declare/fixtures/module (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/declare/fixtures/module/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/declare/fixtures/namespace
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/declare/fixtures/namespace (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/declare/fixtures/namespace/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/declare/fixtures/type-alias
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/declare/fixtures/type-alias (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/declare/fixtures/type-alias/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/declare/fixtures/variable
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/declare/fixtures/variable (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/declare/fixtures/variable/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/class-empty-extends
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/class-empty-extends (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/class-empty-extends/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/class-empty-extends-implements
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/class-empty-extends-implements (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/class-empty-extends-implements/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/class-extends-empty-implements
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/class-extends-empty-implements (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/class-extends-empty-implements/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/class-multiple-implements
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/class-multiple-implements (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/class-multiple-implements/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/decorator-on-enum-declaration
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/decorator-on-enum-declaration (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/decorator-on-enum-declaration/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/decorator-on-function
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/decorator-on-function (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/decorator-on-function/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/decorator-on-interface-declaration
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/decorator-on-interface-declaration (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/decorator-on-interface-declaration/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/decorator-on-variable
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/decorator-on-variable (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/decorator-on-variable/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/empty-type-arguments
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/empty-type-arguments (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/empty-type-arguments/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/empty-type-arguments-in-call-expression
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/empty-type-arguments-in-call-expression (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/empty-type-arguments-in-call-expression/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/empty-type-arguments-in-new-expression
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/empty-type-arguments-in-new-expression (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/empty-type-arguments-in-new-expression/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/empty-type-parameters
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/empty-type-parameters (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/empty-type-parameters/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/empty-type-parameters-in-arrow-function
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/empty-type-parameters-in-arrow-function (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/empty-type-parameters-in-arrow-function/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/empty-type-parameters-in-constructor
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/empty-type-parameters-in-constructor (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/empty-type-parameters-in-constructor/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/empty-type-parameters-in-function-expression
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/empty-type-parameters-in-function-expression (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/empty-type-parameters-in-function-expression/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/empty-type-parameters-in-method
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/empty-type-parameters-in-method (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/empty-type-parameters-in-method/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/empty-type-parameters-in-method-signature
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/empty-type-parameters-in-method-signature (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/empty-type-parameters-in-method-signature/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/enum-with-keywords
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/enum-with-keywords (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/enum-with-keywords/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/index-signature-parameters
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/index-signature-parameters (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/index-signature-parameters/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-empty-extends
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-empty-extends (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-empty-extends/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-implements
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-implements (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-implements/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-index-signature-export
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-index-signature-export (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-index-signature-export/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-index-signature-private
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-index-signature-private (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-index-signature-private/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-index-signature-protected
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-index-signature-protected (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-index-signature-protected/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-index-signature-public
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-index-signature-public (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-index-signature-public/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-index-signature-static
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-index-signature-static (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-index-signature-static/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-method-export
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-method-export (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-method-export/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-method-private
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-method-private (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-method-private/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-method-protected
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-method-protected (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-method-protected/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-method-public
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-method-public (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-method-public/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-method-readonly
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-method-readonly (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-method-readonly/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-method-static
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-method-static (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-method-static/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-multiple-extends
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-multiple-extends (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-multiple-extends/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-property-export
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-property-export (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-property-export/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-property-private
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-property-private (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-property-private/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-property-protected
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-property-protected (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-property-protected/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-property-public
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-property-public (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-property-public/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-property-static
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-property-static (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-property-static/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-property-with-default-value
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-property-with-default-value (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-property-with-default-value/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-with-no-body
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-with-no-body (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-with-no-body/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-with-optional-index-signature
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-with-optional-index-signature (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-with-optional-index-signature/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/object-assertion-not-allowed
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/object-assertion-not-allowed (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/object-assertion-not-allowed/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/object-optional-not-allowed
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/object-optional-not-allowed (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/object-optional-not-allowed/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/solo-const
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/solo-const (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/solo-const/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/expressions/fixtures/_error_/instantiation-expression
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/expressions/fixtures/_error_/instantiation-expression (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/expressions/fixtures/_error_/instantiation-expression/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/expressions/fixtures/call-expression-type-arguments
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/expressions/fixtures/call-expression-type-arguments (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/expressions/fixtures/call-expression-type-arguments/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/expressions/fixtures/new-expression-type-arguments
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/expressions/fixtures/new-expression-type-arguments (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/expressions/fixtures/new-expression-type-arguments/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/expressions/fixtures/optional-call-expression-type-arguments
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/expressions/fixtures/optional-call-expression-type-arguments (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/expressions/fixtures/optional-call-expression-type-arguments/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/expressions/fixtures/tagged-template-expression-type-arguments
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/expressions/fixtures/tagged-template-expression-type-arguments (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/expressions/fixtures/tagged-template-expression-type-arguments/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/method-decorators/fixtures/method-decorator-factory-instance-member
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/method-decorators/fixtures/method-decorator-factory-instance-member (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/method-decorators/fixtures/method-decorator-factory-instance-member/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/method-decorators/fixtures/method-decorator-factory-static-member
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/method-decorators/fixtures/method-decorator-factory-static-member (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/method-decorators/fixtures/method-decorator-factory-static-member/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/method-decorators/fixtures/method-decorator-instance-member
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/method-decorators/fixtures/method-decorator-instance-member (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/method-decorators/fixtures/method-decorator-instance-member/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/method-decorators/fixtures/method-decorator-static-member
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/method-decorators/fixtures/method-decorator-static-member (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/method-decorators/fixtures/method-decorator-static-member/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/namespaces-and-modules/fixtures/ambient-module-declaration-with-import
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/namespaces-and-modules/fixtures/ambient-module-declaration-with-import (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/namespaces-and-modules/fixtures/ambient-module-declaration-with-import/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/namespaces-and-modules/fixtures/declare-namespace-with-exported-function
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/namespaces-and-modules/fixtures/declare-namespace-with-exported-function (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/namespaces-and-modules/fixtures/declare-namespace-with-exported-function/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/namespaces-and-modules/fixtures/global-module-declaration
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/namespaces-and-modules/fixtures/global-module-declaration (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/namespaces-and-modules/fixtures/global-module-declaration/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/namespaces-and-modules/fixtures/module-with-default-exports
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/namespaces-and-modules/fixtures/module-with-default-exports (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/namespaces-and-modules/fixtures/module-with-default-exports/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/namespaces-and-modules/fixtures/nested-internal-module
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/namespaces-and-modules/fixtures/nested-internal-module (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/namespaces-and-modules/fixtures/nested-internal-module/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/namespaces-and-modules/fixtures/shorthand-ambient-module-declaration
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/namespaces-and-modules/fixtures/shorthand-ambient-module-declaration (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/namespaces-and-modules/fixtures/shorthand-ambient-module-declaration/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/parameter-decorators/fixtures/_error_/parameter-array-pattern-decorator
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/parameter-decorators/fixtures/_error_/parameter-array-pattern-decorator (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/parameter-decorators/fixtures/_error_/parameter-array-pattern-decorator/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/parameter-decorators/fixtures/_error_/parameter-rest-element-decorator
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/parameter-decorators/fixtures/_error_/parameter-rest-element-decorator (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/parameter-decorators/fixtures/_error_/parameter-rest-element-decorator/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/parameter-decorators/fixtures/parameter-decorator-constructor
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/parameter-decorators/fixtures/parameter-decorator-constructor (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/parameter-decorators/fixtures/parameter-decorator-constructor/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/parameter-decorators/fixtures/parameter-decorator-decorator-instance-member
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/parameter-decorators/fixtures/parameter-decorator-decorator-instance-member (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/parameter-decorators/fixtures/parameter-decorator-decorator-instance-member/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/parameter-decorators/fixtures/parameter-decorator-decorator-static-member
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/parameter-decorators/fixtures/parameter-decorator-decorator-static-member (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/parameter-decorators/fixtures/parameter-decorator-decorator-static-member/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/parameter-decorators/fixtures/parameter-decorator-instance-member
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/parameter-decorators/fixtures/parameter-decorator-instance-member (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/parameter-decorators/fixtures/parameter-decorator-instance-member/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/parameter-decorators/fixtures/parameter-decorator-static-member
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/parameter-decorators/fixtures/parameter-decorator-static-member (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/parameter-decorators/fixtures/parameter-decorator-static-member/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/parameter-decorators/fixtures/parameter-object-pattern-decorator
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/parameter-decorators/fixtures/parameter-object-pattern-decorator (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/parameter-decorators/fixtures/parameter-object-pattern-decorator/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/property-decorators/fixtures/property-decorator-factory-instance-member
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/property-decorators/fixtures/property-decorator-factory-instance-member (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/property-decorators/fixtures/property-decorator-factory-instance-member/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/property-decorators/fixtures/property-decorator-factory-static-member
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/property-decorators/fixtures/property-decorator-factory-static-member (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/property-decorators/fixtures/property-decorator-factory-static-member/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/property-decorators/fixtures/property-decorator-instance-member
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/property-decorators/fixtures/property-decorator-instance-member (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/property-decorators/fixtures/property-decorator-instance-member/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/property-decorators/fixtures/property-decorator-static-member
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/property-decorators/fixtures/property-decorator-static-member (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/property-decorators/fixtures/property-decorator-static-member/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/array-type
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/array-type (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/array-type/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/conditional
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/conditional (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/conditional/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/conditional-infer
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/conditional-infer (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/conditional-infer/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/conditional-infer-nested
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/conditional-infer-nested (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/conditional-infer-nested/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/conditional-infer-simple
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/conditional-infer-simple (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/conditional-infer-simple/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/conditional-infer-with-constraint
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/conditional-infer-with-constraint (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/conditional-infer-with-constraint/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/conditional-with-null
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/conditional-with-null (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/conditional-with-null/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/constructor
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/constructor (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/constructor/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/constructor-abstract
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/constructor-abstract (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/constructor-abstract/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/constructor-empty
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/constructor-empty (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/constructor-empty/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/constructor-generic
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/constructor-generic (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/constructor-generic/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/constructor-in-generic
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/constructor-in-generic (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/constructor-in-generic/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/constructor-with-rest
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/constructor-with-rest (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/constructor-with-rest/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/function
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/function (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/function/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/function-generic
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/function-generic (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/function-generic/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/function-in-generic
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/function-in-generic (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/function-in-generic/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/function-with-array-destruction
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/function-with-array-destruction (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/function-with-array-destruction/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/function-with-object-destruction
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/function-with-object-destruction (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/function-with-object-destruction/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/function-with-rest
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/function-with-rest (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/function-with-rest/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/function-with-this
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/function-with-this (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/function-with-this/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/index-signature
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/index-signature (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/index-signature/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/index-signature-readonly
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/index-signature-readonly (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/index-signature-readonly/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/index-signature-without-type
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/index-signature-without-type (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/index-signature-without-type/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/indexed
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/indexed (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/indexed/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/interface-with-accessors
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/interface-with-accessors (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/interface-with-accessors/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/intersection-type
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/intersection-type (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/intersection-type/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/literal-number
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/literal-number (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/literal-number/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/literal-number-negative
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/literal-number-negative (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/literal-number-negative/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/literal-string
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/literal-string (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/literal-string/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/mapped
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/mapped (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/mapped/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/mapped-named-type
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/mapped-named-type (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/mapped-named-type/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/mapped-readonly
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/mapped-readonly (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/mapped-readonly/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/mapped-readonly-minus
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/mapped-readonly-minus (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/mapped-readonly-minus/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/mapped-readonly-plus
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/mapped-readonly-plus (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/mapped-readonly-plus/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/mapped-untypped
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/mapped-untypped (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/mapped-untypped/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/nested-types
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/nested-types (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/nested-types/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/object-literal-type-with-accessors
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/object-literal-type-with-accessors (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/object-literal-type-with-accessors/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/optional-variance-in
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/optional-variance-in (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/optional-variance-in/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/optional-variance-in-and-out
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/optional-variance-in-and-out (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/optional-variance-in-and-out/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/optional-variance-in-out
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/optional-variance-in-out (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/optional-variance-in-out/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/optional-variance-out
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/optional-variance-out (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/optional-variance-out/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/parenthesized-type
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/parenthesized-type (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/parenthesized-type/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/reference
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/reference (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/reference/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/reference-generic
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/reference-generic (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/reference-generic/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/reference-generic-nested
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/reference-generic-nested (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/reference-generic-nested/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/template-literal-type-1
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/template-literal-type-1 (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/template-literal-type-1/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/template-literal-type-2
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/template-literal-type-2 (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/template-literal-type-2/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/template-literal-type-3
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/template-literal-type-3 (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/template-literal-type-3/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/template-literal-type-4
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/template-literal-type-4 (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/template-literal-type-4/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/this-type
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/this-type (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/this-type/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/this-type-expanded
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/this-type-expanded (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/this-type-expanded/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/tuple
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/tuple (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/tuple/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/tuple-empty
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/tuple-empty (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/tuple-empty/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/tuple-named
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/tuple-named (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/tuple-named/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/tuple-named-optional
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/tuple-named-optional (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/tuple-named-optional/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/tuple-named-rest
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/tuple-named-rest (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/tuple-named-rest/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/tuple-named-type
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/tuple-named-type (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/tuple-named-type/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/tuple-optional
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/tuple-optional (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/tuple-optional/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/tuple-rest
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/tuple-rest (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/tuple-rest/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/tuple-type
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/tuple-type (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/tuple-type/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/type-literal
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/type-literal (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/type-literal/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/type-operator
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/type-operator (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/type-operator/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/typeof
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/typeof (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/typeof/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/typeof-this
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/typeof-this (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/typeof-this/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/typeof-with-type-parameters
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/typeof-with-type-parameters (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/typeof-with-type-parameters/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/union-intersection
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/union-intersection (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/union-intersection/fixture.md)
 
-## packages/ast-spec/src/legacy-fixtures/types/fixtures/union-type
-
-??? note "Show Files"
+??? note "ast-spec/src/legacy-fixtures/types/fixtures/union-type (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/legacy-fixtures/types/fixtures/union-type/fixture.md)
 
-## packages/ast-spec/src/parameter/AssignmentPattern/fixtures/decorated-assignment-pattern-parameter
-
-??? note "Show Files"
+??? note "ast-spec/src/parameter/AssignmentPattern/fixtures/decorated-assignment-pattern-parameter (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/parameter/AssignmentPattern/fixtures/decorated-assignment-pattern-parameter/fixture.md)
 
-## packages/ast-spec/src/parameter/TSParameterProperty/fixtures/_error_/override-function-parameter
-
-??? note "Show Files"
+??? note "ast-spec/src/parameter/TSParameterProperty/fixtures/_error_/override-function-parameter (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/parameter/TSParameterProperty/fixtures/_error_/override-function-parameter/fixture.md)
 
-## packages/ast-spec/src/parameter/TSParameterProperty/fixtures/_error_/override-method-parameter
-
-??? note "Show Files"
+??? note "ast-spec/src/parameter/TSParameterProperty/fixtures/_error_/override-method-parameter (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/parameter/TSParameterProperty/fixtures/_error_/override-method-parameter/fixture.md)
 
-## packages/ast-spec/src/special/CatchClause/fixtures/_error_/with-initializer
-
-??? note "Show Files"
+??? note "ast-spec/src/special/CatchClause/fixtures/_error_/with-initializer (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/special/CatchClause/fixtures/_error_/with-initializer/fixture.md)
 
-## packages/ast-spec/src/special/Decorator/fixtures/decorator-class-member-super-with-parens
-
-??? note "Show Files"
+??? note "ast-spec/src/special/Decorator/fixtures/decorator-class-member-super-with-parens (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/special/Decorator/fixtures/decorator-class-member-super-with-parens/fixture.md)
 
-## packages/ast-spec/src/special/Decorator/fixtures/decorator-class-member-super-without-parens
-
-??? note "Show Files"
+??? note "ast-spec/src/special/Decorator/fixtures/decorator-class-member-super-without-parens (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/special/Decorator/fixtures/decorator-class-member-super-without-parens/fixture.md)
 
-## packages/ast-spec/src/special/ExportSpecifier/fixtures/_error_/literal-specifier
-
-??? note "Show Files"
+??? note "ast-spec/src/special/ExportSpecifier/fixtures/_error_/literal-specifier (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/special/ExportSpecifier/fixtures/_error_/literal-specifier/fixture.md)
 
-## packages/ast-spec/src/special/ExportSpecifier/fixtures/literal-specifier
-
-??? note "Show Files"
+??? note "ast-spec/src/special/ExportSpecifier/fixtures/literal-specifier (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/special/ExportSpecifier/fixtures/literal-specifier/fixture.md)
 
-## packages/ast-spec/src/special/ExportSpecifier/fixtures/type-only-export-specifiers
-
-??? note "Show Files"
+??? note "ast-spec/src/special/ExportSpecifier/fixtures/type-only-export-specifiers (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/special/ExportSpecifier/fixtures/type-only-export-specifiers/fixture.md)
 
-## packages/ast-spec/src/special/ExportSpecifier/fixtures/value-export-specifier
-
-??? note "Show Files"
+??? note "ast-spec/src/special/ExportSpecifier/fixtures/value-export-specifier (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/special/ExportSpecifier/fixtures/value-export-specifier/fixture.md)
 
-## packages/ast-spec/src/special/ImportSpecifier/fixtures/type-only-import-specifier
-
-??? note "Show Files"
+??? note "ast-spec/src/special/ImportSpecifier/fixtures/type-only-import-specifier (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/special/ImportSpecifier/fixtures/type-only-import-specifier/fixture.md)
 
-## packages/ast-spec/src/special/ImportSpecifier/fixtures/type-only-import-specifiers
-
-??? note "Show Files"
+??? note "ast-spec/src/special/ImportSpecifier/fixtures/type-only-import-specifiers (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/special/ImportSpecifier/fixtures/type-only-import-specifiers/fixture.md)
 
-## packages/ast-spec/src/special/TSTypeParameter/fixtures/arrow-const-modifier
-
-??? note "Show Files"
+??? note "ast-spec/src/special/TSTypeParameter/fixtures/arrow-const-modifier (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/special/TSTypeParameter/fixtures/arrow-const-modifier/fixture.md)
 
-## packages/ast-spec/src/special/TSTypeParameter/fixtures/arrow-const-modifier-extends
-
-??? note "Show Files"
+??? note "ast-spec/src/special/TSTypeParameter/fixtures/arrow-const-modifier-extends (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/special/TSTypeParameter/fixtures/arrow-const-modifier-extends/fixture.md)
 
-## packages/ast-spec/src/special/TSTypeParameter/fixtures/class-decl-const-in-modifier
-
-??? note "Show Files"
+??? note "ast-spec/src/special/TSTypeParameter/fixtures/class-decl-const-in-modifier (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/special/TSTypeParameter/fixtures/class-decl-const-in-modifier/fixture.md)
 
-## packages/ast-spec/src/special/TSTypeParameter/fixtures/class-decl-const-modifier
-
-??? note "Show Files"
+??? note "ast-spec/src/special/TSTypeParameter/fixtures/class-decl-const-modifier (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/special/TSTypeParameter/fixtures/class-decl-const-modifier/fixture.md)
 
-## packages/ast-spec/src/special/TSTypeParameter/fixtures/class-decl-const-modifier-extends
-
-??? note "Show Files"
+??? note "ast-spec/src/special/TSTypeParameter/fixtures/class-decl-const-modifier-extends (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/special/TSTypeParameter/fixtures/class-decl-const-modifier-extends/fixture.md)
 
-## packages/ast-spec/src/special/TSTypeParameter/fixtures/class-decl-const-modifier-multiple
-
-??? note "Show Files"
+??? note "ast-spec/src/special/TSTypeParameter/fixtures/class-decl-const-modifier-multiple (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/special/TSTypeParameter/fixtures/class-decl-const-modifier-multiple/fixture.md)
 
-## packages/ast-spec/src/special/TSTypeParameter/fixtures/class-decl-in-const-modifier
-
-??? note "Show Files"
+??? note "ast-spec/src/special/TSTypeParameter/fixtures/class-decl-in-const-modifier (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/special/TSTypeParameter/fixtures/class-decl-in-const-modifier/fixture.md)
 
-## packages/ast-spec/src/special/TSTypeParameter/fixtures/class-expr-const-in-modifier
-
-??? note "Show Files"
+??? note "ast-spec/src/special/TSTypeParameter/fixtures/class-expr-const-in-modifier (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/special/TSTypeParameter/fixtures/class-expr-const-in-modifier/fixture.md)
 
-## packages/ast-spec/src/special/TSTypeParameter/fixtures/class-expr-const-modifier
-
-??? note "Show Files"
+??? note "ast-spec/src/special/TSTypeParameter/fixtures/class-expr-const-modifier (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/special/TSTypeParameter/fixtures/class-expr-const-modifier/fixture.md)
 
-## packages/ast-spec/src/special/TSTypeParameter/fixtures/class-expr-const-modifier-extends
-
-??? note "Show Files"
+??? note "ast-spec/src/special/TSTypeParameter/fixtures/class-expr-const-modifier-extends (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/special/TSTypeParameter/fixtures/class-expr-const-modifier-extends/fixture.md)
 
-## packages/ast-spec/src/special/TSTypeParameter/fixtures/class-expr-const-modifier-multiple
-
-??? note "Show Files"
+??? note "ast-spec/src/special/TSTypeParameter/fixtures/class-expr-const-modifier-multiple (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/special/TSTypeParameter/fixtures/class-expr-const-modifier-multiple/fixture.md)
 
-## packages/ast-spec/src/special/TSTypeParameter/fixtures/class-expr-in-const-modifier
-
-??? note "Show Files"
+??? note "ast-spec/src/special/TSTypeParameter/fixtures/class-expr-in-const-modifier (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/special/TSTypeParameter/fixtures/class-expr-in-const-modifier/fixture.md)
 
-## packages/ast-spec/src/special/TSTypeParameter/fixtures/declare-func-const-modifier
-
-??? note "Show Files"
+??? note "ast-spec/src/special/TSTypeParameter/fixtures/declare-func-const-modifier (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/special/TSTypeParameter/fixtures/declare-func-const-modifier/fixture.md)
 
-## packages/ast-spec/src/special/TSTypeParameter/fixtures/func-decl-const-modifier
-
-??? note "Show Files"
+??? note "ast-spec/src/special/TSTypeParameter/fixtures/func-decl-const-modifier (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/special/TSTypeParameter/fixtures/func-decl-const-modifier/fixture.md)
 
-## packages/ast-spec/src/special/TSTypeParameter/fixtures/func-decl-const-modifier-extends
-
-??? note "Show Files"
+??? note "ast-spec/src/special/TSTypeParameter/fixtures/func-decl-const-modifier-extends (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/special/TSTypeParameter/fixtures/func-decl-const-modifier-extends/fixture.md)
 
-## packages/ast-spec/src/special/TSTypeParameter/fixtures/func-decl-const-modifier-multiple
-
-??? note "Show Files"
+??? note "ast-spec/src/special/TSTypeParameter/fixtures/func-decl-const-modifier-multiple (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/special/TSTypeParameter/fixtures/func-decl-const-modifier-multiple/fixture.md)
 
-## packages/ast-spec/src/special/TSTypeParameter/fixtures/func-expr-const-modifier
-
-??? note "Show Files"
+??? note "ast-spec/src/special/TSTypeParameter/fixtures/func-expr-const-modifier (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/special/TSTypeParameter/fixtures/func-expr-const-modifier/fixture.md)
 
-## packages/ast-spec/src/special/TSTypeParameter/fixtures/func-expr-const-modifier-extends
-
-??? note "Show Files"
+??? note "ast-spec/src/special/TSTypeParameter/fixtures/func-expr-const-modifier-extends (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/special/TSTypeParameter/fixtures/func-expr-const-modifier-extends/fixture.md)
 
-## packages/ast-spec/src/special/TSTypeParameter/fixtures/func-expr-const-modifier-multiple
-
-??? note "Show Files"
+??? note "ast-spec/src/special/TSTypeParameter/fixtures/func-expr-const-modifier-multiple (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/special/TSTypeParameter/fixtures/func-expr-const-modifier-multiple/fixture.md)
 
-## packages/ast-spec/src/special/TSTypeParameter/fixtures/interface-const-in-modifier-multiple
-
-??? note "Show Files"
+??? note "ast-spec/src/special/TSTypeParameter/fixtures/interface-const-in-modifier-multiple (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/special/TSTypeParameter/fixtures/interface-const-in-modifier-multiple/fixture.md)
 
-## packages/ast-spec/src/special/TSTypeParameter/fixtures/interface-const-modifier
-
-??? note "Show Files"
+??? note "ast-spec/src/special/TSTypeParameter/fixtures/interface-const-modifier (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/special/TSTypeParameter/fixtures/interface-const-modifier/fixture.md)
 
-## packages/ast-spec/src/special/TSTypeParameter/fixtures/interface-const-modifier-extends
-
-??? note "Show Files"
+??? note "ast-spec/src/special/TSTypeParameter/fixtures/interface-const-modifier-extends (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/special/TSTypeParameter/fixtures/interface-const-modifier-extends/fixture.md)
 
-## packages/ast-spec/src/special/TSTypeParameter/fixtures/interface-const-modifier-multiple
-
-??? note "Show Files"
+??? note "ast-spec/src/special/TSTypeParameter/fixtures/interface-const-modifier-multiple (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/special/TSTypeParameter/fixtures/interface-const-modifier-multiple/fixture.md)
 
-## packages/ast-spec/src/special/TSTypeParameter/fixtures/interface-in-const-modifier-multiple
-
-??? note "Show Files"
+??? note "ast-spec/src/special/TSTypeParameter/fixtures/interface-in-const-modifier-multiple (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/special/TSTypeParameter/fixtures/interface-in-const-modifier-multiple/fixture.md)
 
-## packages/ast-spec/src/special/TSTypeParameter/fixtures/method-const-modifiers
-
-??? note "Show Files"
+??? note "ast-spec/src/special/TSTypeParameter/fixtures/method-const-modifiers (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/special/TSTypeParameter/fixtures/method-const-modifiers/fixture.md)
 
-## packages/ast-spec/src/statement/ForInStatement/fixtures/_error_/using-initializer
-
-??? note "Show Files"
+??? note "ast-spec/src/statement/ForInStatement/fixtures/_error_/using-initializer (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/statement/ForInStatement/fixtures/_error_/using-initializer/fixture.md)
 
-## packages/ast-spec/src/statement/ForInStatement/fixtures/expr-init
-
-??? note "Show Files"
+??? note "ast-spec/src/statement/ForInStatement/fixtures/expr-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/statement/ForInStatement/fixtures/expr-init/fixture.md)
 
-## packages/ast-spec/src/statement/ForOfStatement/fixtures/_error_/decl-definite
-
-??? note "Show Files"
+??? note "ast-spec/src/statement/ForOfStatement/fixtures/_error_/decl-definite (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/statement/ForOfStatement/fixtures/_error_/decl-definite/fixture.md)
 
-## packages/ast-spec/src/statement/ForOfStatement/fixtures/_error_/decl-definite-using
-
-??? note "Show Files"
+??? note "ast-spec/src/statement/ForOfStatement/fixtures/_error_/decl-definite-using (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/statement/ForOfStatement/fixtures/_error_/decl-definite-using/fixture.md)
 
-## packages/ast-spec/src/statement/ForOfStatement/fixtures/_error_/decl-init
-
-??? note "Show Files"
+??? note "ast-spec/src/statement/ForOfStatement/fixtures/_error_/decl-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/statement/ForOfStatement/fixtures/_error_/decl-init/fixture.md)
 
-## packages/ast-spec/src/statement/ForOfStatement/fixtures/_error_/decl-multi
-
-??? note "Show Files"
+??? note "ast-spec/src/statement/ForOfStatement/fixtures/_error_/decl-multi (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/statement/ForOfStatement/fixtures/_error_/decl-multi/fixture.md)
 
-## packages/ast-spec/src/statement/ForOfStatement/fixtures/_error_/decl-type
-
-??? note "Show Files"
+??? note "ast-spec/src/statement/ForOfStatement/fixtures/_error_/decl-type (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/statement/ForOfStatement/fixtures/_error_/decl-type/fixture.md)
 
-## packages/ast-spec/src/statement/ForOfStatement/fixtures/_error_/expr-not-assignment-target
-
-??? note "Show Files"
+??? note "ast-spec/src/statement/ForOfStatement/fixtures/_error_/expr-not-assignment-target (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/statement/ForOfStatement/fixtures/_error_/expr-not-assignment-target/fixture.md)
 
-## packages/ast-spec/src/statement/ForOfStatement/fixtures/expr-init
-
-??? note "Show Files"
+??? note "ast-spec/src/statement/ForOfStatement/fixtures/expr-init (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/statement/ForOfStatement/fixtures/expr-init/fixture.md)
 
-## packages/ast-spec/src/statement/ForOfStatement/fixtures/using-declaration
-
-??? note "Show Files"
+??? note "ast-spec/src/statement/ForOfStatement/fixtures/using-declaration (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/statement/ForOfStatement/fixtures/using-declaration/fixture.md)
 
-## packages/ast-spec/src/statement/SwitchStatement/fixtures/_error_/multiple-default-cases
-
-??? note "Show Files"
+??? note "ast-spec/src/statement/SwitchStatement/fixtures/_error_/multiple-default-cases (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/statement/SwitchStatement/fixtures/_error_/multiple-default-cases/fixture.md)
 
-## packages/ast-spec/src/statement/ThrowStatement/fixtures/_error_/missing-argument
-
-??? note "Show Files"
+??? note "ast-spec/src/statement/ThrowStatement/fixtures/_error_/missing-argument (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/statement/ThrowStatement/fixtures/_error_/missing-argument/fixture.md)
 
-## packages/ast-spec/src/token/NumericToken/fixtures/bigint-literal
-
-??? note "Show Files"
+??? note "ast-spec/src/token/NumericToken/fixtures/bigint-literal (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/token/NumericToken/fixtures/bigint-literal/fixture.md)
 
-## packages/ast-spec/src/type/TSImportType/fixtures/_error_/type-import-type-with-import-attributes-assert
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSImportType/fixtures/_error_/type-import-type-with-import-attributes-assert (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/type/TSImportType/fixtures/_error_/type-import-type-with-import-attributes-assert/fixture.md)
 
-## packages/ast-spec/src/type/TSImportType/fixtures/type-import-type-with-import-attributes-with
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSImportType/fixtures/type-import-type-with-import-attributes-with (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/type/TSImportType/fixtures/type-import-type-with-import-attributes-with/fixture.md)
 
-## packages/ast-spec/src/type/TSMappedType/fixtures/_error_/with-member-after
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSMappedType/fixtures/_error_/with-member-after (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/type/TSMappedType/fixtures/_error_/with-member-after/fixture.md)
 
-## packages/ast-spec/src/type/TSMappedType/fixtures/_error_/with-member-before
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSMappedType/fixtures/_error_/with-member-before (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/type/TSMappedType/fixtures/_error_/with-member-before/fixture.md)
 
-## packages/ast-spec/src/type/TSMappedType/fixtures/no-modifiers
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSMappedType/fixtures/no-modifiers (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/type/TSMappedType/fixtures/no-modifiers/fixture.md)
 
-## packages/ast-spec/src/type/TSMappedType/fixtures/optional
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSMappedType/fixtures/optional (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/type/TSMappedType/fixtures/optional/fixture.md)
 
-## packages/ast-spec/src/type/TSMappedType/fixtures/optional-minus
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSMappedType/fixtures/optional-minus (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/type/TSMappedType/fixtures/optional-minus/fixture.md)
 
-## packages/ast-spec/src/type/TSMappedType/fixtures/optional-plus
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSMappedType/fixtures/optional-plus (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/type/TSMappedType/fixtures/optional-plus/fixture.md)
 
-## packages/ast-spec/src/type/TSMappedType/fixtures/readonly
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSMappedType/fixtures/readonly (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/type/TSMappedType/fixtures/readonly/fixture.md)
 
-## packages/ast-spec/src/type/TSMappedType/fixtures/readonly-minus
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSMappedType/fixtures/readonly-minus (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/type/TSMappedType/fixtures/readonly-minus/fixture.md)
 
-## packages/ast-spec/src/type/TSMappedType/fixtures/readonly-optional
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSMappedType/fixtures/readonly-optional (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/type/TSMappedType/fixtures/readonly-optional/fixture.md)
 
-## packages/ast-spec/src/type/TSMappedType/fixtures/readonly-plus
-
-??? note "Show Files"
+??? note "ast-spec/src/type/TSMappedType/fixtures/readonly-plus (1 files)"
 
     - [fixture.md](./packages/ast-spec/src/type/TSMappedType/fixtures/readonly-plus/fixture.md)
 
-## packages/ast-spec/tests
-
-??? note "Show Files"
+??? note "ast-spec/tests (5 files)"
 
     - [AssignmentOperatorToText.test-d.md](./packages/ast-spec/tests/AssignmentOperatorToText.test-d.md)
     - [BinaryOperatorToText.test-d.md](./packages/ast-spec/tests/BinaryOperatorToText.test-d.md)
@@ -6045,46 +4073,34 @@
     - [ast-node-types.test-d.md](./packages/ast-spec/tests/ast-node-types.test-d.md)
     - [fixtures.test.md](./packages/ast-spec/tests/fixtures.test.md)
 
-## packages/ast-spec/tests/util/parsers
-
-??? note "Show Files"
+??? note "ast-spec/tests/util/parsers (4 files)"
 
     - [parser-types.md](./packages/ast-spec/tests/util/parsers/parser-types.md)
     - [babel.md](./packages/ast-spec/tests/util/parsers/babel.md)
     - [typescript-estree-import.md](./packages/ast-spec/tests/util/parsers/typescript-estree-import.md)
     - [typescript-estree.md](./packages/ast-spec/tests/util/parsers/typescript-estree.md)
 
-## packages/ast-spec/tests/util
-
-??? note "Show Files"
+??? note "ast-spec/tests/util (3 files)"
 
     - [getErrorLabel.md](./packages/ast-spec/tests/util/getErrorLabel.md)
     - [serialize-error.md](./packages/ast-spec/tests/util/serialize-error.md)
     - [snapshot-diff.md](./packages/ast-spec/tests/util/snapshot-diff.md)
 
-## packages/ast-spec/tests/util/serializers
-
-??? note "Show Files"
+??? note "ast-spec/tests/util/serializers (3 files)"
 
     - [Node.md](./packages/ast-spec/tests/util/serializers/Node.md)
     - [string.md](./packages/ast-spec/tests/util/serializers/string.md)
     - [index.md](./packages/ast-spec/tests/util/serializers/index.md)
 
-## packages/ast-spec/tests/util/custom-matchers
-
-??? note "Show Files"
+??? note "ast-spec/tests/util/custom-matchers (1 files)"
 
     - [custom-matchers.md](./packages/ast-spec/tests/util/custom-matchers/custom-matchers.md)
 
-## packages/eslint-plugin/src/configs
-
-??? note "Show Files"
+??? note "eslint-plugin/src/configs (1 files)"
 
     - [eslint-recommended-raw.md](./packages/eslint-plugin/src/configs/eslint-recommended-raw.md)
 
-## packages/eslint-plugin/src/configs/eslintrc
-
-??? note "Show Files"
+??? note "eslint-plugin/src/configs/eslintrc (13 files)"
 
     - [all.md](./packages/eslint-plugin/src/configs/eslintrc/all.md)
     - [base.md](./packages/eslint-plugin/src/configs/eslintrc/base.md)
@@ -6100,9 +4116,7 @@
     - [stylistic-type-checked.md](./packages/eslint-plugin/src/configs/eslintrc/stylistic-type-checked.md)
     - [stylistic.md](./packages/eslint-plugin/src/configs/eslintrc/stylistic.md)
 
-## packages/eslint-plugin/src/configs/flat
-
-??? note "Show Files"
+??? note "eslint-plugin/src/configs/flat (13 files)"
 
     - [base.md](./packages/eslint-plugin/src/configs/flat/base.md)
     - [eslint-recommended.md](./packages/eslint-plugin/src/configs/flat/eslint-recommended.md)
@@ -6118,9 +4132,7 @@
     - [stylistic-type-checked.md](./packages/eslint-plugin/src/configs/flat/stylistic-type-checked.md)
     - [stylistic.md](./packages/eslint-plugin/src/configs/flat/stylistic.md)
 
-## packages/eslint-plugin/src/util
-
-??? note "Show Files"
+??? note "eslint-plugin/src/util (42 files)"
 
     - [escapeRegExp.md](./packages/eslint-plugin/src/util/escapeRegExp.md)
     - [astUtils.md](./packages/eslint-plugin/src/util/astUtils.md)
@@ -6165,9 +4177,7 @@
     - [promiseUtils.md](./packages/eslint-plugin/src/util/promiseUtils.md)
     - [assertionFunctionUtils.md](./packages/eslint-plugin/src/util/assertionFunctionUtils.md)
 
-## packages/eslint-plugin/src/rules
-
-??? note "Show Files"
+??? note "eslint-plugin/src/rules (132 files)"
 
     - [adjacent-overload-signatures.md](./packages/eslint-plugin/src/rules/adjacent-overload-signatures.md)
     - [array-type.md](./packages/eslint-plugin/src/rules/array-type.md)
@@ -6302,9 +4312,7 @@
     - [use-unknown-in-catch-callback-variable.md](./packages/eslint-plugin/src/rules/use-unknown-in-catch-callback-variable.md)
     - [index.md](./packages/eslint-plugin/src/rules/index.md)
 
-## packages/eslint-plugin/src/rules/naming-convention-utils
-
-??? note "Show Files"
+??? note "eslint-plugin/src/rules/naming-convention-utils (8 files)"
 
     - [enums.md](./packages/eslint-plugin/src/rules/naming-convention-utils/enums.md)
     - [types.md](./packages/eslint-plugin/src/rules/naming-convention-utils/types.md)
@@ -6315,15 +4323,11 @@
     - [schema.md](./packages/eslint-plugin/src/rules/naming-convention-utils/schema.md)
     - [index.md](./packages/eslint-plugin/src/rules/naming-convention-utils/index.md)
 
-## packages/eslint-plugin/src/rules/enum-utils
-
-??? note "Show Files"
+??? note "eslint-plugin/src/rules/enum-utils (1 files)"
 
     - [shared.md](./packages/eslint-plugin/src/rules/enum-utils/shared.md)
 
-## packages/eslint-plugin/src/rules/prefer-optional-chain-utils
-
-??? note "Show Files"
+??? note "eslint-plugin/src/rules/prefer-optional-chain-utils (5 files)"
 
     - [PreferOptionalChainOptions.md](./packages/eslint-plugin/src/rules/prefer-optional-chain-utils/PreferOptionalChainOptions.md)
     - [gatherLogicalOperands.md](./packages/eslint-plugin/src/rules/prefer-optional-chain-utils/gatherLogicalOperands.md)
@@ -6331,16 +4335,12 @@
     - [compareNodes.md](./packages/eslint-plugin/src/rules/prefer-optional-chain-utils/compareNodes.md)
     - [analyzeChain.md](./packages/eslint-plugin/src/rules/prefer-optional-chain-utils/analyzeChain.md)
 
-## packages/eslint-plugin/src
-
-??? note "Show Files"
+??? note "eslint-plugin/src (2 files)"
 
     - [raw-plugin.md](./packages/eslint-plugin/src/raw-plugin.md)
     - [index.md](./packages/eslint-plugin/src/index.md)
 
-## packages/eslint-plugin/tests
-
-??? note "Show Files"
+??? note "eslint-plugin/tests (9 files)"
 
     - [RuleTester.md](./packages/eslint-plugin/tests/RuleTester.md)
     - [areOptionsValid.md](./packages/eslint-plugin/tests/areOptionsValid.md)
@@ -6352,9 +4352,7 @@
     - [util.test.md](./packages/eslint-plugin/tests/util.test.md)
     - [worksWithStringlyTypedExtends.test.md](./packages/eslint-plugin/tests/worksWithStringlyTypedExtends.test.md)
 
-## packages/eslint-plugin/tests/eslint-rules
-
-??? note "Show Files"
+??? note "eslint-plugin/tests/eslint-rules (7 files)"
 
     - [arrow-parens.test.md](./packages/eslint-plugin/tests/eslint-rules/arrow-parens.test.md)
     - [no-dupe-args.test.md](./packages/eslint-plugin/tests/eslint-rules/no-dupe-args.test.md)
@@ -6364,9 +4362,7 @@
     - [prefer-const.test.md](./packages/eslint-plugin/tests/eslint-rules/prefer-const.test.md)
     - [strict.test.md](./packages/eslint-plugin/tests/eslint-rules/strict.test.md)
 
-## packages/eslint-plugin/tests/fixtures
-
-??? note "Show Files"
+??? note "eslint-plugin/tests/fixtures (9 files)"
 
     - [class.md](./packages/eslint-plugin/tests/fixtures/class.md)
     - [deprecated.md](./packages/eslint-plugin/tests/fixtures/deprecated.md)
@@ -6378,25 +4374,19 @@
     - [switch-exhaustiveness-check.md](./packages/eslint-plugin/tests/fixtures/switch-exhaustiveness-check.md)
     - [var-declaration.md](./packages/eslint-plugin/tests/fixtures/var-declaration.md)
 
-## packages/eslint-plugin/tests/fixtures/consistent-type-exports
-
-??? note "Show Files"
+??? note "eslint-plugin/tests/fixtures/consistent-type-exports (4 files)"
 
     - [index.md](./packages/eslint-plugin/tests/fixtures/consistent-type-exports/index.md)
     - [type-only-exports.md](./packages/eslint-plugin/tests/fixtures/consistent-type-exports/type-only-exports.md)
     - [type-only-reexport.md](./packages/eslint-plugin/tests/fixtures/consistent-type-exports/type-only-reexport.md)
     - [value-reexport.md](./packages/eslint-plugin/tests/fixtures/consistent-type-exports/value-reexport.md)
 
-## packages/eslint-plugin/tests/fixtures/unstrict
-
-??? note "Show Files"
+??? note "eslint-plugin/tests/fixtures/unstrict (2 files)"
 
     - [file.md](./packages/eslint-plugin/tests/fixtures/unstrict/file.md)
     - [react.md](./packages/eslint-plugin/tests/fixtures/unstrict/react.md)
 
-## packages/eslint-plugin/tests/rules
-
-??? note "Show Files"
+??? note "eslint-plugin/tests/rules (127 files)"
 
     - [adjacent-overload-signatures.test.md](./packages/eslint-plugin/tests/rules/adjacent-overload-signatures.test.md)
     - [array-type.test.md](./packages/eslint-plugin/tests/rules/array-type.test.md)
@@ -6526,16 +4516,12 @@
     - [unified-signatures.test.md](./packages/eslint-plugin/tests/rules/unified-signatures.test.md)
     - [use-unknown-in-catch-callback-variable.test.md](./packages/eslint-plugin/tests/rules/use-unknown-in-catch-callback-variable.test.md)
 
-## packages/eslint-plugin/tests/rules/class-methods-use-this
-
-??? note "Show Files"
+??? note "eslint-plugin/tests/rules/class-methods-use-this (2 files)"
 
     - [class-methods-use-this-core.test.md](./packages/eslint-plugin/tests/rules/class-methods-use-this/class-methods-use-this-core.test.md)
     - [class-methods-use-this.test.md](./packages/eslint-plugin/tests/rules/class-methods-use-this/class-methods-use-this.test.md)
 
-## packages/eslint-plugin/tests/rules/member-ordering
-
-??? note "Show Files"
+??? note "eslint-plugin/tests/rules/member-ordering (5 files)"
 
     - [member-ordering-alphabetically-case-insensitive-order.test.md](./packages/eslint-plugin/tests/rules/member-ordering/member-ordering-alphabetically-case-insensitive-order.test.md)
     - [member-ordering-alphabetically-order.test.md](./packages/eslint-plugin/tests/rules/member-ordering/member-ordering-alphabetically-order.test.md)
@@ -6543,9 +4529,7 @@
     - [member-ordering-natural-order.test.md](./packages/eslint-plugin/tests/rules/member-ordering/member-ordering-natural-order.test.md)
     - [member-ordering-optionalMembers.test.md](./packages/eslint-plugin/tests/rules/member-ordering/member-ordering-optionalMembers.test.md)
 
-## packages/eslint-plugin/tests/rules/naming-convention/cases
-
-??? note "Show Files"
+??? note "eslint-plugin/tests/rules/naming-convention/cases (17 files)"
 
     - [createTestCases.md](./packages/eslint-plugin/tests/rules/naming-convention/cases/createTestCases.md)
     - [accessor.test.md](./packages/eslint-plugin/tests/rules/naming-convention/cases/accessor.test.md)
@@ -6565,36 +4549,26 @@
     - [typeParameter.test.md](./packages/eslint-plugin/tests/rules/naming-convention/cases/typeParameter.test.md)
     - [variable.test.md](./packages/eslint-plugin/tests/rules/naming-convention/cases/variable.test.md)
 
-## packages/eslint-plugin/tests/rules/naming-convention
-
-??? note "Show Files"
+??? note "eslint-plugin/tests/rules/naming-convention (1 files)"
 
     - [naming-convention.test.md](./packages/eslint-plugin/tests/rules/naming-convention/naming-convention.test.md)
 
-## packages/eslint-plugin/tests/rules/no-shadow
-
-??? note "Show Files"
+??? note "eslint-plugin/tests/rules/no-shadow (2 files)"
 
     - [no-shadow-eslint.test.md](./packages/eslint-plugin/tests/rules/no-shadow/no-shadow-eslint.test.md)
     - [no-shadow.test.md](./packages/eslint-plugin/tests/rules/no-shadow/no-shadow.test.md)
 
-## packages/eslint-plugin/tests/rules/no-unused-vars
-
-??? note "Show Files"
+??? note "eslint-plugin/tests/rules/no-unused-vars (2 files)"
 
     - [no-unused-vars-eslint.test.md](./packages/eslint-plugin/tests/rules/no-unused-vars/no-unused-vars-eslint.test.md)
     - [no-unused-vars.test.md](./packages/eslint-plugin/tests/rules/no-unused-vars/no-unused-vars.test.md)
 
-## packages/eslint-plugin/tests/rules/prefer-optional-chain
-
-??? note "Show Files"
+??? note "eslint-plugin/tests/rules/prefer-optional-chain (2 files)"
 
     - [base-cases.md](./packages/eslint-plugin/tests/rules/prefer-optional-chain/base-cases.md)
     - [prefer-optional-chain.test.md](./packages/eslint-plugin/tests/rules/prefer-optional-chain/prefer-optional-chain.test.md)
 
-## packages/eslint-plugin/tests/util
-
-??? note "Show Files"
+??? note "eslint-plugin/tests/util (6 files)"
 
     - [getConstraintInfo.test.md](./packages/eslint-plugin/tests/util/getConstraintInfo.test.md)
     - [getValueOfLiteralType.test.md](./packages/eslint-plugin/tests/util/getValueOfLiteralType.test.md)
@@ -6603,16 +4577,12 @@
     - [isNodeEqual.test.md](./packages/eslint-plugin/tests/util/isNodeEqual.test.md)
     - [misc.test.md](./packages/eslint-plugin/tests/util/misc.test.md)
 
-## packages/eslint-plugin-internal/src/util
-
-??? note "Show Files"
+??? note "eslint-plugin-internal/src/util (2 files)"
 
     - [createRule.md](./packages/eslint-plugin-internal/src/util/createRule.md)
     - [index.md](./packages/eslint-plugin-internal/src/util/index.md)
 
-## packages/eslint-plugin-internal/src/rules
-
-??? note "Show Files"
+??? note "eslint-plugin-internal/src/rules (9 files)"
 
     - [debug-namespace.md](./packages/eslint-plugin-internal/src/rules/debug-namespace.md)
     - [eqeq-nullish.md](./packages/eslint-plugin-internal/src/rules/eqeq-nullish.md)
@@ -6624,27 +4594,19 @@
     - [prefer-ast-types-enum.md](./packages/eslint-plugin-internal/src/rules/prefer-ast-types-enum.md)
     - [index.md](./packages/eslint-plugin-internal/src/rules/index.md)
 
-## packages/eslint-plugin-internal/src
-
-??? note "Show Files"
+??? note "eslint-plugin-internal/src (1 files)"
 
     - [index.md](./packages/eslint-plugin-internal/src/index.md)
 
-## packages/eslint-plugin-internal/tests
-
-??? note "Show Files"
+??? note "eslint-plugin-internal/tests (1 files)"
 
     - [RuleTester.md](./packages/eslint-plugin-internal/tests/RuleTester.md)
 
-## packages/eslint-plugin-internal/tests/fixtures
-
-??? note "Show Files"
+??? note "eslint-plugin-internal/tests/fixtures (1 files)"
 
     - [file.md](./packages/eslint-plugin-internal/tests/fixtures/file.md)
 
-## packages/eslint-plugin-internal/tests/rules
-
-??? note "Show Files"
+??? note "eslint-plugin-internal/tests/rules (8 files)"
 
     - [debug-namespace.test.md](./packages/eslint-plugin-internal/tests/rules/debug-namespace.test.md)
     - [eqeq-nullish.test.md](./packages/eslint-plugin-internal/tests/rules/eqeq-nullish.test.md)
@@ -6655,66 +4617,48 @@
     - [plugin-test-formatting.test.md](./packages/eslint-plugin-internal/tests/rules/plugin-test-formatting.test.md)
     - [prefer-ast-types-enum.test.md](./packages/eslint-plugin-internal/tests/rules/prefer-ast-types-enum.test.md)
 
-## packages/integration-tests/fixtures/eslint-v8
-
-??? note "Show Files"
+??? note "integration-tests/fixtures/eslint-v8 (2 files)"
 
     - [.eslintrc.md](./packages/integration-tests/fixtures/eslint-v8/.eslintrc.md)
     - [index.md](./packages/integration-tests/fixtures/eslint-v8/index.md)
 
-## packages/integration-tests/fixtures/flat-config-types-@types__eslint-v8
-
-??? note "Show Files"
+??? note "integration-tests/fixtures/flat-config-types-@types__eslint-v8 (2 files)"
 
     - [dirname.cjs](./packages/integration-tests/fixtures/flat-config-types-@types__eslint-v8/dirname.cjs)
     - [eslint.config.md](./packages/integration-tests/fixtures/flat-config-types-@types__eslint-v8/eslint.config.md)
 
-## packages/integration-tests/fixtures/flat-config-types-@types__eslint-v9
-
-??? note "Show Files"
+??? note "integration-tests/fixtures/flat-config-types-@types__eslint-v9 (2 files)"
 
     - [dirname.cjs](./packages/integration-tests/fixtures/flat-config-types-@types__eslint-v9/dirname.cjs)
     - [eslint.config.md](./packages/integration-tests/fixtures/flat-config-types-@types__eslint-v9/eslint.config.md)
 
-## packages/integration-tests/fixtures/markdown
-
-??? note "Show Files"
+??? note "integration-tests/fixtures/markdown (1 files)"
 
     - [eslint.config.md](./packages/integration-tests/fixtures/markdown/eslint.config.md)
 
-## packages/integration-tests/fixtures/recommended-does-not-require-program
-
-??? note "Show Files"
+??? note "integration-tests/fixtures/recommended-does-not-require-program (2 files)"
 
     - [eslint.config.md](./packages/integration-tests/fixtures/recommended-does-not-require-program/eslint.config.md)
     - [index.md](./packages/integration-tests/fixtures/recommended-does-not-require-program/index.md)
 
-## packages/integration-tests/fixtures/vue-jsx
-
-??? note "Show Files"
+??? note "integration-tests/fixtures/vue-jsx (2 files)"
 
     - [Jsx.md](./packages/integration-tests/fixtures/vue-jsx/Jsx.md)
     - [eslint.config.md](./packages/integration-tests/fixtures/vue-jsx/eslint.config.md)
 
-## packages/integration-tests/fixtures/vue-sfc
-
-??? note "Show Files"
+??? note "integration-tests/fixtures/vue-sfc (4 files)"
 
     - [Hello.md](./packages/integration-tests/fixtures/vue-sfc/Hello.md)
     - [Utility.md](./packages/integration-tests/fixtures/vue-sfc/Utility.md)
     - [World.md](./packages/integration-tests/fixtures/vue-sfc/World.md)
     - [eslint.config.md](./packages/integration-tests/fixtures/vue-sfc/eslint.config.md)
 
-## packages/integration-tests/tools
-
-??? note "Show Files"
+??? note "integration-tests/tools (2 files)"
 
     - [pack-packages.md](./packages/integration-tests/tools/pack-packages.md)
     - [integration-test-base.md](./packages/integration-tests/tools/integration-test-base.md)
 
-## packages/integration-tests/tests
-
-??? note "Show Files"
+??? note "integration-tests/tests (7 files)"
 
     - [eslint-v8.test.md](./packages/integration-tests/tests/eslint-v8.test.md)
     - [flat-config-types-@types__eslint-v8.test.md](./packages/integration-tests/tests/flat-config-types-@types__eslint-v8.test.md)
@@ -6724,16 +4668,12 @@
     - [vue-jsx.test.md](./packages/integration-tests/tests/vue-jsx.test.md)
     - [vue-sfc.test.md](./packages/integration-tests/tests/vue-sfc.test.md)
 
-## packages/parser/src
-
-??? note "Show Files"
+??? note "parser/src (2 files)"
 
     - [parser.md](./packages/parser/src/parser.md)
     - [index.md](./packages/parser/src/index.md)
 
-## packages/parser/tests/fixtures/basics
-
-??? note "Show Files"
+??? note "parser/tests/fixtures/basics (9 files)"
 
     - [delete-expression.src.md](./packages/parser/tests/fixtures/basics/delete-expression.src.md)
     - [do-while-statements.src.md](./packages/parser/tests/fixtures/basics/do-while-statements.src.md)
@@ -6745,9 +4685,7 @@
     - [update-expression.src.md](./packages/parser/tests/fixtures/basics/update-expression.src.md)
     - [void-expression.src.md](./packages/parser/tests/fixtures/basics/void-expression.src.md)
 
-## packages/parser/tests/fixtures/scope-analysis
-
-??? note "Show Files"
+??? note "parser/tests/fixtures/scope-analysis (69 files)"
 
     - [535.md](./packages/parser/tests/fixtures/scope-analysis/535.md)
     - [abstract-class.md](./packages/parser/tests/fixtures/scope-analysis/abstract-class.md)
@@ -6819,45 +4757,33 @@
     - [types-union-intersection.src.md](./packages/parser/tests/fixtures/scope-analysis/types-union-intersection.src.md)
     - [types-union-type.src.md](./packages/parser/tests/fixtures/scope-analysis/types-union-type.src.md)
 
-## packages/parser/tests/fixtures/services
-
-??? note "Show Files"
+??? note "parser/tests/fixtures/services (1 files)"
 
     - [isolated-file.src.md](./packages/parser/tests/fixtures/services/isolated-file.src.md)
 
-## packages/parser/tests/test-utils
-
-??? note "Show Files"
+??? note "parser/tests/test-utils (2 files)"
 
     - [test-utils.md](./packages/parser/tests/test-utils/test-utils.md)
     - [ts-error-serializer.md](./packages/parser/tests/test-utils/ts-error-serializer.md)
 
-## packages/parser/tests/lib
-
-??? note "Show Files"
+??? note "parser/tests/lib (3 files)"
 
     - [parser.test.md](./packages/parser/tests/lib/parser.test.md)
     - [services.test.md](./packages/parser/tests/lib/services.test.md)
     - [tsx.test.md](./packages/parser/tests/lib/tsx.test.md)
 
-## packages/project-service/src
-
-??? note "Show Files"
+??? note "project-service/src (3 files)"
 
     - [getParsedConfigFileFromTSServer.md](./packages/project-service/src/getParsedConfigFileFromTSServer.md)
     - [createProjectService.md](./packages/project-service/src/createProjectService.md)
     - [index.md](./packages/project-service/src/index.md)
 
-## packages/project-service/tests
-
-??? note "Show Files"
+??? note "project-service/tests (2 files)"
 
     - [createProjectService.test.md](./packages/project-service/tests/createProjectService.test.md)
     - [getParsedConfigFileFromTSServer.test.md](./packages/project-service/tests/getParsedConfigFileFromTSServer.test.md)
 
-## packages/rule-schema-to-typescript-types/src
-
-??? note "Show Files"
+??? note "rule-schema-to-typescript-types/src (10 files)"
 
     - [errors.md](./packages/rule-schema-to-typescript-types/src/errors.md)
     - [types.md](./packages/rule-schema-to-typescript-types/src/types.md)
@@ -6870,9 +4796,7 @@
     - [printAST.md](./packages/rule-schema-to-typescript-types/src/printAST.md)
     - [index.md](./packages/rule-schema-to-typescript-types/src/index.md)
 
-## packages/rule-tester/src/types
-
-??? note "Show Files"
+??? note "rule-tester/src/types (5 files)"
 
     - [DependencyConstraint.md](./packages/rule-tester/src/types/DependencyConstraint.md)
     - [ValidTestCase.md](./packages/rule-tester/src/types/ValidTestCase.md)
@@ -6880,18 +4804,14 @@
     - [RuleTesterConfig.md](./packages/rule-tester/src/types/RuleTesterConfig.md)
     - [index.md](./packages/rule-tester/src/types/index.md)
 
-## packages/rule-tester/src
-
-??? note "Show Files"
+??? note "rule-tester/src (4 files)"
 
     - [TestFramework.md](./packages/rule-tester/src/TestFramework.md)
     - [RuleTester.md](./packages/rule-tester/src/RuleTester.md)
     - [noFormat.md](./packages/rule-tester/src/noFormat.md)
     - [index.md](./packages/rule-tester/src/index.md)
 
-## packages/rule-tester/src/utils
-
-??? note "Show Files"
+??? note "rule-tester/src/utils (16 files)"
 
     - [ajv.md](./packages/rule-tester/src/utils/ajv.md)
     - [cloneDeeplyExcludesParent.md](./packages/rule-tester/src/utils/cloneDeeplyExcludesParent.md)
@@ -6910,17 +4830,13 @@
     - [SourceCodeFixer.md](./packages/rule-tester/src/utils/SourceCodeFixer.md)
     - [validationHelpers.md](./packages/rule-tester/src/utils/validationHelpers.md)
 
-## packages/rule-tester/tests
-
-??? note "Show Files"
+??? note "rule-tester/tests (3 files)"
 
     - [RuleTester.test.md](./packages/rule-tester/tests/RuleTester.test.md)
     - [filename.test.md](./packages/rule-tester/tests/filename.test.md)
     - [flat-config-schema.test.md](./packages/rule-tester/tests/flat-config-schema.test.md)
 
-## packages/scope-manager/src
-
-??? note "Show Files"
+??? note "scope-manager/src (5 files)"
 
     - [ID.md](./packages/scope-manager/src/ID.md)
     - [assert.md](./packages/scope-manager/src/assert.md)
@@ -6928,9 +4844,7 @@
     - [analyze.md](./packages/scope-manager/src/analyze.md)
     - [index.md](./packages/scope-manager/src/index.md)
 
-## packages/scope-manager/src/definition
-
-??? note "Show Files"
+??? note "scope-manager/src/definition (15 files)"
 
     - [DefinitionType.md](./packages/scope-manager/src/definition/DefinitionType.md)
     - [DefinitionBase.md](./packages/scope-manager/src/definition/DefinitionBase.md)
@@ -6948,9 +4862,7 @@
     - [Definition.md](./packages/scope-manager/src/definition/Definition.md)
     - [index.md](./packages/scope-manager/src/definition/index.md)
 
-## packages/scope-manager/src/variable
-
-??? note "Show Files"
+??? note "scope-manager/src/variable (5 files)"
 
     - [VariableBase.md](./packages/scope-manager/src/variable/VariableBase.md)
     - [ESLintScopeVariable.md](./packages/scope-manager/src/variable/ESLintScopeVariable.md)
@@ -6958,9 +4870,7 @@
     - [ImplicitLibVariable.md](./packages/scope-manager/src/variable/ImplicitLibVariable.md)
     - [index.md](./packages/scope-manager/src/variable/index.md)
 
-## packages/scope-manager/src/referencer
-
-??? note "Show Files"
+??? note "scope-manager/src/referencer (10 files)"
 
     - [Reference.md](./packages/scope-manager/src/referencer/Reference.md)
     - [VisitorBase.md](./packages/scope-manager/src/referencer/VisitorBase.md)
@@ -6973,9 +4883,7 @@
     - [Referencer.md](./packages/scope-manager/src/referencer/Referencer.md)
     - [index.md](./packages/scope-manager/src/referencer/index.md)
 
-## packages/scope-manager/src/scope
-
-??? note "Show Files"
+??? note "scope-manager/src/scope (22 files)"
 
     - [ScopeType.md](./packages/scope-manager/src/scope/ScopeType.md)
     - [FunctionScope.md](./packages/scope-manager/src/scope/FunctionScope.md)
@@ -7000,9 +4908,7 @@
     - [BlockScope.md](./packages/scope-manager/src/scope/BlockScope.md)
     - [index.md](./packages/scope-manager/src/scope/index.md)
 
-## packages/scope-manager/src/lib
-
-??? note "Show Files"
+??? note "scope-manager/src/lib (108 files)"
 
     - [base-config.md](./packages/scope-manager/src/lib/base-config.md)
     - [decorators.md](./packages/scope-manager/src/lib/decorators.md)
@@ -7113,18 +5019,14 @@
     - [webworker.iterable.md](./packages/scope-manager/src/lib/webworker.iterable.md)
     - [index.md](./packages/scope-manager/src/lib/index.md)
 
-## packages/scope-manager/tests/test-utils
-
-??? note "Show Files"
+??? note "scope-manager/tests/test-utils (4 files)"
 
     - [getSpecificNode.md](./packages/scope-manager/tests/test-utils/getSpecificNode.md)
     - [misc.md](./packages/scope-manager/tests/test-utils/misc.md)
     - [parse.md](./packages/scope-manager/tests/test-utils/parse.md)
     - [index.md](./packages/scope-manager/tests/test-utils/index.md)
 
-## packages/scope-manager/tests/eslint-scope
-
-??? note "Show Files"
+??? note "scope-manager/tests/eslint-scope (29 files)"
 
     - [arguments.test.md](./packages/scope-manager/tests/eslint-scope/arguments.test.md)
     - [catch-scope.test.md](./packages/scope-manager/tests/eslint-scope/catch-scope.test.md)
@@ -7156,31 +5058,23 @@
     - [typescript.test.md](./packages/scope-manager/tests/eslint-scope/typescript.test.md)
     - [with-scope.test.md](./packages/scope-manager/tests/eslint-scope/with-scope.test.md)
 
-## packages/scope-manager/tests/fixtures/block
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/block (2 files)"
 
     - [inherited-scope.md](./packages/scope-manager/tests/fixtures/block/inherited-scope.md)
     - [scope.md](./packages/scope-manager/tests/fixtures/block/scope.md)
 
-## packages/scope-manager/tests/fixtures/call-expression
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/call-expression (3 files)"
 
     - [call-expression.md](./packages/scope-manager/tests/fixtures/call-expression/call-expression.md)
     - [type-parameters1.md](./packages/scope-manager/tests/fixtures/call-expression/type-parameters1.md)
     - [type-parameters2.md](./packages/scope-manager/tests/fixtures/call-expression/type-parameters2.md)
 
-## packages/scope-manager/tests/fixtures/catch
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/catch (2 files)"
 
     - [inherited-scope.md](./packages/scope-manager/tests/fixtures/catch/inherited-scope.md)
     - [scope.md](./packages/scope-manager/tests/fixtures/catch/scope.md)
 
-## packages/scope-manager/tests/fixtures/class/declaration
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/class/declaration (25 files)"
 
     - [abstract-accessor-property.md](./packages/scope-manager/tests/fixtures/class/declaration/abstract-accessor-property.md)
     - [abstract-property.md](./packages/scope-manager/tests/fixtures/class/declaration/abstract-property.md)
@@ -7208,9 +5102,7 @@
     - [static-with-constructor.md](./packages/scope-manager/tests/fixtures/class/declaration/static-with-constructor.md)
     - [type-reference.md](./packages/scope-manager/tests/fixtures/class/declaration/type-reference.md)
 
-## packages/scope-manager/tests/fixtures/class/expression
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/class/expression (8 files)"
 
     - [computed-member.md](./packages/scope-manager/tests/fixtures/class/expression/computed-member.md)
     - [extends.md](./packages/scope-manager/tests/fixtures/class/expression/extends.md)
@@ -7221,9 +5113,7 @@
     - [properties.md](./packages/scope-manager/tests/fixtures/class/expression/properties.md)
     - [self-reference-super.md](./packages/scope-manager/tests/fixtures/class/expression/self-reference-super.md)
 
-## packages/scope-manager/tests/fixtures/decorators
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/decorators (8 files)"
 
     - [accessor.md](./packages/scope-manager/tests/fixtures/decorators/accessor.md)
     - [class-deco-with-object-param.md](./packages/scope-manager/tests/fixtures/decorators/class-deco-with-object-param.md)
@@ -7234,18 +5124,14 @@
     - [parameter.md](./packages/scope-manager/tests/fixtures/decorators/parameter.md)
     - [typeof-this.md](./packages/scope-manager/tests/fixtures/decorators/typeof-this.md)
 
-## packages/scope-manager/tests/fixtures/destructuring
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/destructuring (4 files)"
 
     - [array-assignment.md](./packages/scope-manager/tests/fixtures/destructuring/array-assignment.md)
     - [array.md](./packages/scope-manager/tests/fixtures/destructuring/array.md)
     - [object-assignment.md](./packages/scope-manager/tests/fixtures/destructuring/object-assignment.md)
     - [object.md](./packages/scope-manager/tests/fixtures/destructuring/object.md)
 
-## packages/scope-manager/tests/fixtures/export
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/export (21 files)"
 
     - [all.md](./packages/scope-manager/tests/fixtures/export/all.md)
     - [default-type.md](./packages/scope-manager/tests/fixtures/export/default-type.md)
@@ -7269,9 +5155,7 @@
     - [type-inline.md](./packages/scope-manager/tests/fixtures/export/type-inline.md)
     - [type.md](./packages/scope-manager/tests/fixtures/export/type.md)
 
-## packages/scope-manager/tests/fixtures/functions/arrow/default-params
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/functions/arrow/default-params (8 files)"
 
     - [readable-ref-body-shadow.md](./packages/scope-manager/tests/fixtures/functions/arrow/default-params/readable-ref-body-shadow.md)
     - [readable-ref-const.md](./packages/scope-manager/tests/fixtures/functions/arrow/default-params/readable-ref-const.md)
@@ -7282,9 +5166,7 @@
     - [readable-ref-partial.md](./packages/scope-manager/tests/fixtures/functions/arrow/default-params/readable-ref-partial.md)
     - [writable-ref.md](./packages/scope-manager/tests/fixtures/functions/arrow/default-params/writable-ref.md)
 
-## packages/scope-manager/tests/fixtures/functions/arrow
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/functions/arrow (8 files)"
 
     - [inherited-scope.md](./packages/scope-manager/tests/fixtures/functions/arrow/inherited-scope.md)
     - [no-body.md](./packages/scope-manager/tests/fixtures/functions/arrow/no-body.md)
@@ -7295,9 +5177,7 @@
     - [type-predicate1.md](./packages/scope-manager/tests/fixtures/functions/arrow/type-predicate1.md)
     - [type-predicate2.md](./packages/scope-manager/tests/fixtures/functions/arrow/type-predicate2.md)
 
-## packages/scope-manager/tests/fixtures/functions/arrow/type-parameters
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/functions/arrow/type-parameters (5 files)"
 
     - [body-reference.md](./packages/scope-manager/tests/fixtures/functions/arrow/type-parameters/body-reference.md)
     - [param-reference.md](./packages/scope-manager/tests/fixtures/functions/arrow/type-parameters/param-reference.md)
@@ -7305,9 +5185,7 @@
     - [type-param-reference.md](./packages/scope-manager/tests/fixtures/functions/arrow/type-parameters/type-param-reference.md)
     - [type-parameter-declaration.md](./packages/scope-manager/tests/fixtures/functions/arrow/type-parameters/type-parameter-declaration.md)
 
-## packages/scope-manager/tests/fixtures/functions/function-declaration/default-params
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/functions/function-declaration/default-params (8 files)"
 
     - [readable-ref-body-shadow.md](./packages/scope-manager/tests/fixtures/functions/function-declaration/default-params/readable-ref-body-shadow.md)
     - [readable-ref-const.md](./packages/scope-manager/tests/fixtures/functions/function-declaration/default-params/readable-ref-const.md)
@@ -7318,9 +5196,7 @@
     - [readable-ref-partial.md](./packages/scope-manager/tests/fixtures/functions/function-declaration/default-params/readable-ref-partial.md)
     - [writable-ref.md](./packages/scope-manager/tests/fixtures/functions/function-declaration/default-params/writable-ref.md)
 
-## packages/scope-manager/tests/fixtures/functions/function-declaration
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/functions/function-declaration (9 files)"
 
     - [inherited-scope.md](./packages/scope-manager/tests/fixtures/functions/function-declaration/inherited-scope.md)
     - [name-shadowed-in-body.md](./packages/scope-manager/tests/fixtures/functions/function-declaration/name-shadowed-in-body.md)
@@ -7332,9 +5208,7 @@
     - [type-predicate1.md](./packages/scope-manager/tests/fixtures/functions/function-declaration/type-predicate1.md)
     - [type-predicate2.md](./packages/scope-manager/tests/fixtures/functions/function-declaration/type-predicate2.md)
 
-## packages/scope-manager/tests/fixtures/functions/function-declaration/type-parameters
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/functions/function-declaration/type-parameters (5 files)"
 
     - [body-reference.md](./packages/scope-manager/tests/fixtures/functions/function-declaration/type-parameters/body-reference.md)
     - [param-reference.md](./packages/scope-manager/tests/fixtures/functions/function-declaration/type-parameters/param-reference.md)
@@ -7342,9 +5216,7 @@
     - [type-param-reference.md](./packages/scope-manager/tests/fixtures/functions/function-declaration/type-parameters/type-param-reference.md)
     - [type-parameter-declaration.md](./packages/scope-manager/tests/fixtures/functions/function-declaration/type-parameters/type-parameter-declaration.md)
 
-## packages/scope-manager/tests/fixtures/functions/function-expression
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/functions/function-expression (8 files)"
 
     - [anonymous.md](./packages/scope-manager/tests/fixtures/functions/function-expression/anonymous.md)
     - [inherited-scope.md](./packages/scope-manager/tests/fixtures/functions/function-expression/inherited-scope.md)
@@ -7355,9 +5227,7 @@
     - [type-predicate1.md](./packages/scope-manager/tests/fixtures/functions/function-expression/type-predicate1.md)
     - [type-predicate2.md](./packages/scope-manager/tests/fixtures/functions/function-expression/type-predicate2.md)
 
-## packages/scope-manager/tests/fixtures/functions/function-expression/default-params
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/functions/function-expression/default-params (8 files)"
 
     - [readable-ref-body-shadow.md](./packages/scope-manager/tests/fixtures/functions/function-expression/default-params/readable-ref-body-shadow.md)
     - [readable-ref-const.md](./packages/scope-manager/tests/fixtures/functions/function-expression/default-params/readable-ref-const.md)
@@ -7368,9 +5238,7 @@
     - [readable-ref-partial.md](./packages/scope-manager/tests/fixtures/functions/function-expression/default-params/readable-ref-partial.md)
     - [writable-ref.md](./packages/scope-manager/tests/fixtures/functions/function-expression/default-params/writable-ref.md)
 
-## packages/scope-manager/tests/fixtures/functions/function-expression/type-parameters
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/functions/function-expression/type-parameters (5 files)"
 
     - [body-reference.md](./packages/scope-manager/tests/fixtures/functions/function-expression/type-parameters/body-reference.md)
     - [param-reference.md](./packages/scope-manager/tests/fixtures/functions/function-expression/type-parameters/param-reference.md)
@@ -7378,9 +5246,7 @@
     - [type-param-reference.md](./packages/scope-manager/tests/fixtures/functions/function-expression/type-parameters/type-param-reference.md)
     - [type-parameter-declaration.md](./packages/scope-manager/tests/fixtures/functions/function-expression/type-parameters/type-parameter-declaration.md)
 
-## packages/scope-manager/tests/fixtures/global-resolution/module
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/global-resolution/module (5 files)"
 
     - [class.md](./packages/scope-manager/tests/fixtures/global-resolution/module/class.md)
     - [function.md](./packages/scope-manager/tests/fixtures/global-resolution/module/function.md)
@@ -7388,9 +5254,7 @@
     - [variable-decl-let.md](./packages/scope-manager/tests/fixtures/global-resolution/module/variable-decl-let.md)
     - [variable-decl-var.md](./packages/scope-manager/tests/fixtures/global-resolution/module/variable-decl-var.md)
 
-## packages/scope-manager/tests/fixtures/global-resolution/script
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/global-resolution/script (5 files)"
 
     - [class.md](./packages/scope-manager/tests/fixtures/global-resolution/script/class.md)
     - [function.md](./packages/scope-manager/tests/fixtures/global-resolution/script/function.md)
@@ -7398,15 +5262,11 @@
     - [variable-decl-let.md](./packages/scope-manager/tests/fixtures/global-resolution/script/variable-decl-let.md)
     - [variable-decl-var.md](./packages/scope-manager/tests/fixtures/global-resolution/script/variable-decl-var.md)
 
-## packages/scope-manager/tests/fixtures/implicit
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/implicit (1 files)"
 
     - [implicit1.md](./packages/scope-manager/tests/fixtures/implicit/implicit1.md)
 
-## packages/scope-manager/tests/fixtures/import
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/import (12 files)"
 
     - [default.md](./packages/scope-manager/tests/fixtures/import/default.md)
     - [equals1.md](./packages/scope-manager/tests/fixtures/import/equals1.md)
@@ -7421,16 +5281,12 @@
     - [type-named-value.md](./packages/scope-manager/tests/fixtures/import/type-named-value.md)
     - [type-named.md](./packages/scope-manager/tests/fixtures/import/type-named.md)
 
-## packages/scope-manager/tests/fixtures/instantiation-expressions
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/instantiation-expressions (2 files)"
 
     - [type-arguments1.md](./packages/scope-manager/tests/fixtures/instantiation-expressions/type-arguments1.md)
     - [type-arguments2.md](./packages/scope-manager/tests/fixtures/instantiation-expressions/type-arguments2.md)
 
-## packages/scope-manager/tests/fixtures/jsx
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/jsx (13 files)"
 
     - [attribute-spread.md](./packages/scope-manager/tests/fixtures/jsx/attribute-spread.md)
     - [attribute.md](./packages/scope-manager/tests/fixtures/jsx/attribute.md)
@@ -7446,9 +5302,7 @@
     - [text.md](./packages/scope-manager/tests/fixtures/jsx/text.md)
     - [this-jsxidentifier.md](./packages/scope-manager/tests/fixtures/jsx/this-jsxidentifier.md)
 
-## packages/scope-manager/tests/fixtures/jsx/factory
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/jsx/factory (6 files)"
 
     - [default-jsxFragmentName.md](./packages/scope-manager/tests/fixtures/jsx/factory/default-jsxFragmentName.md)
     - [default-jsxPragma-fragment.md](./packages/scope-manager/tests/fixtures/jsx/factory/default-jsxPragma-fragment.md)
@@ -7457,23 +5311,17 @@
     - [jsxPragma-jsxFragmentName.md](./packages/scope-manager/tests/fixtures/jsx/factory/jsxPragma-jsxFragmentName.md)
     - [jsxPragma.md](./packages/scope-manager/tests/fixtures/jsx/factory/jsxPragma.md)
 
-## packages/scope-manager/tests/fixtures/member-expression
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/member-expression (1 files)"
 
     - [member-expression.md](./packages/scope-manager/tests/fixtures/member-expression/member-expression.md)
 
-## packages/scope-manager/tests/fixtures/new-expression
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/new-expression (3 files)"
 
     - [new-expression.md](./packages/scope-manager/tests/fixtures/new-expression/new-expression.md)
     - [type-parameters1.md](./packages/scope-manager/tests/fixtures/new-expression/type-parameters1.md)
     - [type-parameters2.md](./packages/scope-manager/tests/fixtures/new-expression/type-parameters2.md)
 
-## packages/scope-manager/tests/fixtures/ts-enum
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/ts-enum (6 files)"
 
     - [external-ref.md](./packages/scope-manager/tests/fixtures/ts-enum/external-ref.md)
     - [literal-member-ref.md](./packages/scope-manager/tests/fixtures/ts-enum/literal-member-ref.md)
@@ -7482,17 +5330,13 @@
     - [scope.md](./packages/scope-manager/tests/fixtures/ts-enum/scope.md)
     - [self-ref.md](./packages/scope-manager/tests/fixtures/ts-enum/self-ref.md)
 
-## packages/scope-manager/tests/fixtures/ts-module/declaration-merging
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/ts-module/declaration-merging (3 files)"
 
     - [class-namespace.md](./packages/scope-manager/tests/fixtures/ts-module/declaration-merging/class-namespace.md)
     - [function-namespace.md](./packages/scope-manager/tests/fixtures/ts-module/declaration-merging/function-namespace.md)
     - [namespace-variable.md](./packages/scope-manager/tests/fixtures/ts-module/declaration-merging/namespace-variable.md)
 
-## packages/scope-manager/tests/fixtures/ts-module
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/ts-module (8 files)"
 
     - [external-ref.md](./packages/scope-manager/tests/fixtures/ts-module/external-ref.md)
     - [global-augmentation.md](./packages/scope-manager/tests/fixtures/ts-module/global-augmentation.md)
@@ -7503,9 +5347,7 @@
     - [scope.md](./packages/scope-manager/tests/fixtures/ts-module/scope.md)
     - [self-ref.md](./packages/scope-manager/tests/fixtures/ts-module/self-ref.md)
 
-## packages/scope-manager/tests/fixtures/type-annotation
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/type-annotation (10 files)"
 
     - [parameter-array-destructure.md](./packages/scope-manager/tests/fixtures/type-annotation/parameter-array-destructure.md)
     - [parameter-default.md](./packages/scope-manager/tests/fixtures/type-annotation/parameter-default.md)
@@ -7518,33 +5360,25 @@
     - [variable-object-destructure.md](./packages/scope-manager/tests/fixtures/type-annotation/variable-object-destructure.md)
     - [variable-var.md](./packages/scope-manager/tests/fixtures/type-annotation/variable-var.md)
 
-## packages/scope-manager/tests/fixtures/type-assertion
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/type-assertion (3 files)"
 
     - [angle-bracket.md](./packages/scope-manager/tests/fixtures/type-assertion/angle-bracket.md)
     - [as.md](./packages/scope-manager/tests/fixtures/type-assertion/as.md)
     - [satisfies.md](./packages/scope-manager/tests/fixtures/type-assertion/satisfies.md)
 
-## packages/scope-manager/tests/fixtures/type-assertion/assignment
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/type-assertion/assignment (3 files)"
 
     - [angle-bracket-assignment.md](./packages/scope-manager/tests/fixtures/type-assertion/assignment/angle-bracket-assignment.md)
     - [as-assignment.md](./packages/scope-manager/tests/fixtures/type-assertion/assignment/as-assignment.md)
     - [non-null-assignment.md](./packages/scope-manager/tests/fixtures/type-assertion/assignment/non-null-assignment.md)
 
-## packages/scope-manager/tests/fixtures/type-assertion/increment
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/type-assertion/increment (3 files)"
 
     - [angle-bracket-increment.md](./packages/scope-manager/tests/fixtures/type-assertion/increment/angle-bracket-increment.md)
     - [as-increment.md](./packages/scope-manager/tests/fixtures/type-assertion/increment/as-increment.md)
     - [non-null-increment.md](./packages/scope-manager/tests/fixtures/type-assertion/increment/non-null-increment.md)
 
-## packages/scope-manager/tests/fixtures/type-declaration
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/type-declaration (37 files)"
 
     - [conditional-nested.md](./packages/scope-manager/tests/fixtures/type-declaration/conditional-nested.md)
     - [conditional1.md](./packages/scope-manager/tests/fixtures/type-declaration/conditional1.md)
@@ -7584,9 +5418,7 @@
     - [type3.md](./packages/scope-manager/tests/fixtures/type-declaration/type3.md)
     - [typeof-import-type-with-qualifier.md](./packages/scope-manager/tests/fixtures/type-declaration/typeof-import-type-with-qualifier.md)
 
-## packages/scope-manager/tests/fixtures/type-declaration/function
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/type-declaration/function (7 files)"
 
     - [constructor-generics1.md](./packages/scope-manager/tests/fixtures/type-declaration/function/constructor-generics1.md)
     - [constructor-generics2.md](./packages/scope-manager/tests/fixtures/type-declaration/function/constructor-generics2.md)
@@ -7596,17 +5428,13 @@
     - [function1.md](./packages/scope-manager/tests/fixtures/type-declaration/function/function1.md)
     - [function2.md](./packages/scope-manager/tests/fixtures/type-declaration/function/function2.md)
 
-## packages/scope-manager/tests/fixtures/type-declaration/function/params
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/type-declaration/function/params (3 files)"
 
     - [array-pattern.md](./packages/scope-manager/tests/fixtures/type-declaration/function/params/array-pattern.md)
     - [object-pattern.md](./packages/scope-manager/tests/fixtures/type-declaration/function/params/object-pattern.md)
     - [rest-element.md](./packages/scope-manager/tests/fixtures/type-declaration/function/params/rest-element.md)
 
-## packages/scope-manager/tests/fixtures/type-declaration/signatures
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/type-declaration/signatures (12 files)"
 
     - [call-generics.md](./packages/scope-manager/tests/fixtures/type-declaration/signatures/call-generics.md)
     - [call.md](./packages/scope-manager/tests/fixtures/type-declaration/signatures/call.md)
@@ -7621,9 +5449,7 @@
     - [property-computed-name2.md](./packages/scope-manager/tests/fixtures/type-declaration/signatures/property-computed-name2.md)
     - [property.md](./packages/scope-manager/tests/fixtures/type-declaration/signatures/property.md)
 
-## packages/scope-manager/tests/fixtures/type-declaration/type-parameters/interface
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/type-declaration/type-parameters/interface (5 files)"
 
     - [body-reference.md](./packages/scope-manager/tests/fixtures/type-declaration/type-parameters/interface/body-reference.md)
     - [extends-reference.md](./packages/scope-manager/tests/fixtures/type-declaration/type-parameters/interface/extends-reference.md)
@@ -7631,37 +5457,27 @@
     - [type-parameter-declaration-extends.md](./packages/scope-manager/tests/fixtures/type-declaration/type-parameters/interface/type-parameter-declaration-extends.md)
     - [type-parameter-declaration.md](./packages/scope-manager/tests/fixtures/type-declaration/type-parameters/interface/type-parameter-declaration.md)
 
-## packages/scope-manager/tests/fixtures/type-declaration/type-parameters
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/type-declaration/type-parameters (1 files)"
 
     - [tagged-template.md](./packages/scope-manager/tests/fixtures/type-declaration/type-parameters/tagged-template.md)
 
-## packages/scope-manager/tests/fixtures/type-declaration/type-parameters/type-decl
-
-??? note "Show Files"
+??? note "scope-manager/tests/fixtures/type-declaration/type-parameters/type-decl (4 files)"
 
     - [body-reference.md](./packages/scope-manager/tests/fixtures/type-declaration/type-parameters/type-decl/body-reference.md)
     - [type-param-reference.md](./packages/scope-manager/tests/fixtures/type-declaration/type-parameters/type-decl/type-param-reference.md)
     - [type-parameter-declaration-extends.md](./packages/scope-manager/tests/fixtures/type-declaration/type-parameters/type-decl/type-parameter-declaration-extends.md)
     - [type-parameter-declaration.md](./packages/scope-manager/tests/fixtures/type-declaration/type-parameters/type-decl/type-parameter-declaration.md)
 
-## packages/scope-manager/tests
-
-??? note "Show Files"
+??? note "scope-manager/tests (2 files)"
 
     - [fixtures.test.md](./packages/scope-manager/tests/fixtures.test.md)
     - [lib.test.md](./packages/scope-manager/tests/lib.test.md)
 
-## packages/scope-manager/tests/test-utils/custom-matchers
-
-??? note "Show Files"
+??? note "scope-manager/tests/test-utils/custom-matchers (1 files)"
 
     - [custom-matchers.md](./packages/scope-manager/tests/test-utils/custom-matchers/custom-matchers.md)
 
-## packages/scope-manager/tests/test-utils/serializers
-
-??? note "Show Files"
+??? note "scope-manager/tests/test-utils/serializers (8 files)"
 
     - [baseSerializer.md](./packages/scope-manager/tests/test-utils/serializers/baseSerializer.md)
     - [DefinitionBase.md](./packages/scope-manager/tests/test-utils/serializers/DefinitionBase.md)
@@ -7672,39 +5488,29 @@
     - [Variable.md](./packages/scope-manager/tests/test-utils/serializers/Variable.md)
     - [index.md](./packages/scope-manager/tests/test-utils/serializers/index.md)
 
-## packages/scope-manager/tests/types
-
-??? note "Show Files"
+??? note "scope-manager/tests/types (2 files)"
 
     - [reference-type.test.md](./packages/scope-manager/tests/types/reference-type.test.md)
     - [variable-definition.test.md](./packages/scope-manager/tests/types/variable-definition.test.md)
 
-## packages/tsconfig-utils/src
-
-??? note "Show Files"
+??? note "tsconfig-utils/src (3 files)"
 
     - [compilerOptions.md](./packages/tsconfig-utils/src/compilerOptions.md)
     - [getParsedConfigFile.md](./packages/tsconfig-utils/src/getParsedConfigFile.md)
     - [index.md](./packages/tsconfig-utils/src/index.md)
 
-## packages/tsconfig-utils/tests/lib
-
-??? note "Show Files"
+??? note "tsconfig-utils/tests/lib (1 files)"
 
     - [getParsedConfigFile.test.md](./packages/tsconfig-utils/tests/lib/getParsedConfigFile.test.md)
 
-## packages/type-utils/src/typeOrValueSpecifiers
-
-??? note "Show Files"
+??? note "type-utils/src/typeOrValueSpecifiers (4 files)"
 
     - [specifierNameMatches.md](./packages/type-utils/src/typeOrValueSpecifiers/specifierNameMatches.md)
     - [typeDeclaredInFile.md](./packages/type-utils/src/typeOrValueSpecifiers/typeDeclaredInFile.md)
     - [typeDeclaredInLib.md](./packages/type-utils/src/typeOrValueSpecifiers/typeDeclaredInLib.md)
     - [typeDeclaredInPackageDeclarationFile.md](./packages/type-utils/src/typeOrValueSpecifiers/typeDeclaredInPackageDeclarationFile.md)
 
-## packages/type-utils/src
-
-??? note "Show Files"
+??? note "type-utils/src (17 files)"
 
     - [TypeOrValueSpecifier.md](./packages/type-utils/src/TypeOrValueSpecifier.md)
     - [isSymbolFromDefaultLibrary.md](./packages/type-utils/src/isSymbolFromDefaultLibrary.md)
@@ -7724,9 +5530,7 @@
     - [requiresQuoting.md](./packages/type-utils/src/requiresQuoting.md)
     - [index.md](./packages/type-utils/src/index.md)
 
-## packages/type-utils/tests
-
-??? note "Show Files"
+??? note "type-utils/tests (11 files)"
 
     - [TypeOrValueSpecifier.test.md](./packages/type-utils/tests/TypeOrValueSpecifier.test.md)
     - [containsAllTypesByName.test.md](./packages/type-utils/tests/containsAllTypesByName.test.md)
@@ -7740,52 +5544,38 @@
     - [requiresQuoting.test.md](./packages/type-utils/tests/requiresQuoting.test.md)
     - [typeFlagUtils.test.md](./packages/type-utils/tests/typeFlagUtils.test.md)
 
-## packages/type-utils/tests/test-utils/custom-matchers
-
-??? note "Show Files"
+??? note "type-utils/tests/test-utils/custom-matchers (1 files)"
 
     - [custom-matchers.md](./packages/type-utils/tests/test-utils/custom-matchers/custom-matchers.md)
 
-## packages/type-utils/tests/fixtures
-
-??? note "Show Files"
+??? note "type-utils/tests/fixtures (1 files)"
 
     - [file.md](./packages/type-utils/tests/fixtures/file.md)
 
-## packages/types/src
-
-??? note "Show Files"
+??? note "types/src (4 files)"
 
     - [lib.md](./packages/types/src/lib.md)
     - [parser-options.md](./packages/types/src/parser-options.md)
     - [ts-estree.md](./packages/types/src/ts-estree.md)
     - [index.md](./packages/types/src/index.md)
 
-## packages/typescript-eslint/src
-
-??? note "Show Files"
+??? note "typescript-eslint/src (2 files)"
 
     - [config-helper.md](./packages/typescript-eslint/src/config-helper.md)
     - [index.md](./packages/typescript-eslint/src/index.md)
 
-## packages/typescript-eslint/tests
-
-??? note "Show Files"
+??? note "typescript-eslint/tests (2 files)"
 
     - [config-helper.test.md](./packages/typescript-eslint/tests/config-helper.test.md)
     - [configs.test.md](./packages/typescript-eslint/tests/configs.test.md)
 
-## packages/typescript-estree/src/ts-estree
-
-??? note "Show Files"
+??? note "typescript-estree/src/ts-estree (3 files)"
 
     - [ts-nodes.md](./packages/typescript-estree/src/ts-estree/ts-nodes.md)
     - [estree-to-ts-node-types.md](./packages/typescript-estree/src/ts-estree/estree-to-ts-node-types.md)
     - [index.md](./packages/typescript-estree/src/ts-estree/index.md)
 
-## packages/typescript-estree/src
-
-??? note "Show Files"
+??? note "typescript-estree/src (18 files)"
 
     - [version-check.md](./packages/typescript-estree/src/version-check.md)
     - [getModifiers.md](./packages/typescript-estree/src/getModifiers.md)
@@ -7806,15 +5596,11 @@
     - [index.md](./packages/typescript-estree/src/index.md)
     - [use-at-your-own-risk.md](./packages/typescript-estree/src/use-at-your-own-risk.md)
 
-## packages/typescript-estree/src/jsx
-
-??? note "Show Files"
+??? note "typescript-estree/src/jsx (1 files)"
 
     - [xhtml-entities.md](./packages/typescript-estree/src/jsx/xhtml-entities.md)
 
-## packages/typescript-estree/src/create-program
-
-??? note "Show Files"
+??? note "typescript-estree/src/create-program (11 files)"
 
     - [shared.md](./packages/typescript-estree/src/create-program/shared.md)
     - [WatchCompilerHostOfConfigFile.md](./packages/typescript-estree/src/create-program/WatchCompilerHostOfConfigFile.md)
@@ -7828,9 +5614,7 @@
     - [useProvidedPrograms.md](./packages/typescript-estree/src/create-program/useProvidedPrograms.md)
     - [validateDefaultProjectForFilesGlob.md](./packages/typescript-estree/src/create-program/validateDefaultProjectForFilesGlob.md)
 
-## packages/typescript-estree/src/parseSettings
-
-??? note "Show Files"
+??? note "typescript-estree/src/parseSettings (7 files)"
 
     - [ExpiringCache.md](./packages/typescript-estree/src/parseSettings/ExpiringCache.md)
     - [index.md](./packages/typescript-estree/src/parseSettings/index.md)
@@ -7840,93 +5624,67 @@
     - [warnAboutTSVersion.md](./packages/typescript-estree/src/parseSettings/warnAboutTSVersion.md)
     - [createParseSettings.md](./packages/typescript-estree/src/parseSettings/createParseSettings.md)
 
-## packages/typescript-estree/tests/fixtures/invalidFileErrors/js
-
-??? note "Show Files"
+??? note "typescript-estree/tests/fixtures/invalidFileErrors/js (4 files)"
 
     - [included01.md](./packages/typescript-estree/tests/fixtures/invalidFileErrors/js/included01.md)
     - [included02.md](./packages/typescript-estree/tests/fixtures/invalidFileErrors/js/included02.md)
     - [notIncluded01.md](./packages/typescript-estree/tests/fixtures/invalidFileErrors/js/notIncluded01.md)
     - [notIncluded02.md](./packages/typescript-estree/tests/fixtures/invalidFileErrors/js/notIncluded02.md)
 
-## packages/typescript-estree/tests/fixtures/invalidFileErrors/ts
-
-??? note "Show Files"
+??? note "typescript-estree/tests/fixtures/invalidFileErrors/ts (4 files)"
 
     - [included01.md](./packages/typescript-estree/tests/fixtures/invalidFileErrors/ts/included01.md)
     - [included02.md](./packages/typescript-estree/tests/fixtures/invalidFileErrors/ts/included02.md)
     - [notIncluded01.md](./packages/typescript-estree/tests/fixtures/invalidFileErrors/ts/notIncluded01.md)
     - [notIncluded02.md](./packages/typescript-estree/tests/fixtures/invalidFileErrors/ts/notIncluded02.md)
 
-## packages/typescript-estree/tests/fixtures/moduleResolver
-
-??? note "Show Files"
+??? note "typescript-estree/tests/fixtures/moduleResolver (3 files)"
 
     - [file.md](./packages/typescript-estree/tests/fixtures/moduleResolver/file.md)
     - [moduleResolver.md](./packages/typescript-estree/tests/fixtures/moduleResolver/moduleResolver.md)
     - [something.md](./packages/typescript-estree/tests/fixtures/moduleResolver/something.md)
 
-## packages/typescript-estree/tests/fixtures/projectFolderIgnoreList/ignoreme
-
-??? note "Show Files"
+??? note "typescript-estree/tests/fixtures/projectFolderIgnoreList/ignoreme (1 files)"
 
     - [file.md](./packages/typescript-estree/tests/fixtures/projectFolderIgnoreList/ignoreme/file.md)
 
-## packages/typescript-estree/tests/fixtures/projectFolderIgnoreList/includeme
-
-??? note "Show Files"
+??? note "typescript-estree/tests/fixtures/projectFolderIgnoreList/includeme (1 files)"
 
     - [file.md](./packages/typescript-estree/tests/fixtures/projectFolderIgnoreList/includeme/file.md)
 
-## packages/typescript-estree/tests/fixtures/projectReferences
-
-??? note "Show Files"
+??? note "typescript-estree/tests/fixtures/projectReferences (1 files)"
 
     - [file.md](./packages/typescript-estree/tests/fixtures/projectReferences/file.md)
 
-## packages/typescript-estree/tests/fixtures/projectTrue/nested/deep
-
-??? note "Show Files"
+??? note "typescript-estree/tests/fixtures/projectTrue/nested/deep (1 files)"
 
     - [included.md](./packages/typescript-estree/tests/fixtures/projectTrue/nested/deep/included.md)
 
-## packages/typescript-estree/tests/fixtures/projectTrue/nested
-
-??? note "Show Files"
+??? note "typescript-estree/tests/fixtures/projectTrue/nested (1 files)"
 
     - [included.md](./packages/typescript-estree/tests/fixtures/projectTrue/nested/included.md)
 
-## packages/typescript-estree/tests/fixtures/projectTrue
-
-??? note "Show Files"
+??? note "typescript-estree/tests/fixtures/projectTrue (1 files)"
 
     - [notIncluded.md](./packages/typescript-estree/tests/fixtures/projectTrue/notIncluded.md)
 
-## packages/typescript-estree/tests/fixtures/semanticInfo/badTSConfig
-
-??? note "Show Files"
+??? note "typescript-estree/tests/fixtures/semanticInfo/badTSConfig (1 files)"
 
     - [app.md](./packages/typescript-estree/tests/fixtures/semanticInfo/badTSConfig/app.md)
 
-## packages/typescript-estree/tests/fixtures/semanticInfo
-
-??? note "Show Files"
+??? note "typescript-estree/tests/fixtures/semanticInfo (4 files)"
 
     - [export-file.src.md](./packages/typescript-estree/tests/fixtures/semanticInfo/export-file.src.md)
     - [import-file.src.md](./packages/typescript-estree/tests/fixtures/semanticInfo/import-file.src.md)
     - [isolated-file.src.md](./packages/typescript-estree/tests/fixtures/semanticInfo/isolated-file.src.md)
     - [non-existent-estree-nodes.src.md](./packages/typescript-estree/tests/fixtures/semanticInfo/non-existent-estree-nodes.src.md)
 
-## packages/typescript-estree/tests/fixtures/simpleProject
-
-??? note "Show Files"
+??? note "typescript-estree/tests/fixtures/simpleProject (2 files)"
 
     - [file-jsx.md](./packages/typescript-estree/tests/fixtures/simpleProject/file-jsx.md)
     - [file.md](./packages/typescript-estree/tests/fixtures/simpleProject/file.md)
 
-## packages/typescript-estree/tests/lib
-
-??? note "Show Files"
+??? note "typescript-estree/tests/lib (17 files)"
 
     - [convert.test.md](./packages/typescript-estree/tests/lib/convert.test.md)
     - [createParseSettings.test.md](./packages/typescript-estree/tests/lib/createParseSettings.test.md)
@@ -7946,21 +5704,15 @@
     - [warn-on-unsupported-ts.test.md](./packages/typescript-estree/tests/lib/warn-on-unsupported-ts.test.md)
     - [withoutProjectParserOptions.test.md](./packages/typescript-estree/tests/lib/withoutProjectParserOptions.test.md)
 
-## packages/typescript-estree/tests/test-utils
-
-??? note "Show Files"
+??? note "typescript-estree/tests/test-utils (1 files)"
 
     - [test-utils.md](./packages/typescript-estree/tests/test-utils/test-utils.md)
 
-## packages/typescript-estree/tests/test-utils/custom-matchers
-
-??? note "Show Files"
+??? note "typescript-estree/tests/test-utils/custom-matchers (1 files)"
 
     - [custom-matchers.md](./packages/typescript-estree/tests/test-utils/custom-matchers/custom-matchers.md)
 
-## packages/utils/src/ast-utils/eslint-utils
-
-??? note "Show Files"
+??? note "utils/src/ast-utils/eslint-utils (6 files)"
 
     - [PatternMatcher.md](./packages/utils/src/ast-utils/eslint-utils/PatternMatcher.md)
     - [ReferenceTracker.md](./packages/utils/src/ast-utils/eslint-utils/ReferenceTracker.md)
@@ -7969,17 +5721,13 @@
     - [scopeAnalysis.md](./packages/utils/src/ast-utils/eslint-utils/scopeAnalysis.md)
     - [index.md](./packages/utils/src/ast-utils/eslint-utils/index.md)
 
-## packages/utils/src
-
-??? note "Show Files"
+??? note "utils/src (3 files)"
 
     - [ts-estree.md](./packages/utils/src/ts-estree.md)
     - [json-schema.md](./packages/utils/src/json-schema.md)
     - [index.md](./packages/utils/src/index.md)
 
-## packages/utils/src/ts-eslint
-
-??? note "Show Files"
+??? note "utils/src/ts-eslint (12 files)"
 
     - [AST.md](./packages/utils/src/ts-eslint/AST.md)
     - [ParserOptions.md](./packages/utils/src/ts-eslint/ParserOptions.md)
@@ -7994,26 +5742,20 @@
     - [RuleTester.md](./packages/utils/src/ts-eslint/RuleTester.md)
     - [index.md](./packages/utils/src/ts-eslint/index.md)
 
-## packages/utils/src/ts-eslint/eslint
-
-??? note "Show Files"
+??? note "utils/src/ts-eslint/eslint (3 files)"
 
     - [ESLintShared.md](./packages/utils/src/ts-eslint/eslint/ESLintShared.md)
     - [FlatESLint.md](./packages/utils/src/ts-eslint/eslint/FlatESLint.md)
     - [LegacyESLint.md](./packages/utils/src/ts-eslint/eslint/LegacyESLint.md)
 
-## packages/utils/src/ast-utils
-
-??? note "Show Files"
+??? note "utils/src/ast-utils (4 files)"
 
     - [helpers.md](./packages/utils/src/ast-utils/helpers.md)
     - [misc.md](./packages/utils/src/ast-utils/misc.md)
     - [predicates.md](./packages/utils/src/ast-utils/predicates.md)
     - [index.md](./packages/utils/src/ast-utils/index.md)
 
-## packages/utils/src/eslint-utils
-
-??? note "Show Files"
+??? note "utils/src/eslint-utils (8 files)"
 
     - [InferTypesFromRule.md](./packages/utils/src/eslint-utils/InferTypesFromRule.md)
     - [deepMerge.md](./packages/utils/src/eslint-utils/deepMerge.md)
@@ -8024,17 +5766,13 @@
     - [nullThrows.md](./packages/utils/src/eslint-utils/nullThrows.md)
     - [index.md](./packages/utils/src/eslint-utils/index.md)
 
-## packages/utils/src/ts-utils
-
-??? note "Show Files"
+??? note "utils/src/ts-utils (3 files)"
 
     - [isArray.md](./packages/utils/src/ts-utils/isArray.md)
     - [NoInfer.md](./packages/utils/src/ts-utils/NoInfer.md)
     - [index.md](./packages/utils/src/ts-utils/index.md)
 
-## packages/utils/tests/eslint-utils
-
-??? note "Show Files"
+??? note "utils/tests/eslint-utils (6 files)"
 
     - [RuleCreator.test.md](./packages/utils/tests/eslint-utils/RuleCreator.test.md)
     - [applyDefault.test.md](./packages/utils/tests/eslint-utils/applyDefault.test.md)
@@ -8043,51 +5781,37 @@
     - [nullThrows.test.md](./packages/utils/tests/eslint-utils/nullThrows.test.md)
     - [parserSeemsToBeTSESLint.test.md](./packages/utils/tests/eslint-utils/parserSeemsToBeTSESLint.test.md)
 
-## packages/utils/tests/ts-eslint
-
-??? note "Show Files"
+??? note "utils/tests/ts-eslint (2 files)"
 
     - [ESLint.test.md](./packages/utils/tests/ts-eslint/ESLint.test.md)
     - [Rule.test-d.md](./packages/utils/tests/ts-eslint/Rule.test-d.md)
 
-## packages/visitor-keys/src
-
-??? note "Show Files"
+??? note "visitor-keys/src (3 files)"
 
     - [get-keys.md](./packages/visitor-keys/src/get-keys.md)
     - [visitor-keys.md](./packages/visitor-keys/src/visitor-keys.md)
     - [index.md](./packages/visitor-keys/src/index.md)
 
-## packages/visitor-keys/tests
-
-??? note "Show Files"
+??? note "visitor-keys/tests (1 files)"
 
     - [visitor-keys.test.md](./packages/visitor-keys/tests/visitor-keys.test.md)
 
-## packages/website
-
-??? note "Show Files"
+??? note "website (3 files)"
 
     - [babel.config.md](./packages/website/babel.config.md)
     - [rulesMeta.md](./packages/website/rulesMeta.md)
     - [webpack.plugin.md](./packages/website/webpack.plugin.md)
 
-## packages/website/plugins/utils
-
-??? note "Show Files"
+??? note "website/plugins/utils (2 files)"
 
     - [nodes.md](./packages/website/plugins/utils/nodes.md)
     - [rules.md](./packages/website/plugins/utils/rules.md)
 
-## packages/website/plugins
-
-??? note "Show Files"
+??? note "website/plugins (1 files)"
 
     - [blog-footer.md](./packages/website/plugins/blog-footer.md)
 
-## packages/website/plugins/generated-rule-docs
-
-??? note "Show Files"
+??? note "website/plugins/generated-rule-docs (5 files)"
 
     - [RuleDocsPage.md](./packages/website/plugins/generated-rule-docs/RuleDocsPage.md)
     - [addESLintHashToCodeBlocksMeta.md](./packages/website/plugins/generated-rule-docs/addESLintHashToCodeBlocksMeta.md)
@@ -8095,9 +5819,7 @@
     - [removeSourceCodeNotice.md](./packages/website/plugins/generated-rule-docs/removeSourceCodeNotice.md)
     - [index.md](./packages/website/plugins/generated-rule-docs/index.md)
 
-## packages/website/plugins/generated-rule-docs/insertions
-
-??? note "Show Files"
+??? note "website/plugins/generated-rule-docs/insertions (6 files)"
 
     - [insertBaseRuleReferences.md](./packages/website/plugins/generated-rule-docs/insertions/insertBaseRuleReferences.md)
     - [insertNewRuleReferences.md](./packages/website/plugins/generated-rule-docs/insertions/insertNewRuleReferences.md)
@@ -8106,22 +5828,16 @@
     - [insertRuleOptions.md](./packages/website/plugins/generated-rule-docs/insertions/insertRuleOptions.md)
     - [insertWhenNotToUseIt.md](./packages/website/plugins/generated-rule-docs/insertions/insertWhenNotToUseIt.md)
 
-## packages/website/sidebars
-
-??? note "Show Files"
+??? note "website/sidebars (2 files)"
 
     - [sidebar.base.md](./packages/website/sidebars/sidebar.base.md)
     - [sidebar.rules.md](./packages/website/sidebars/sidebar.rules.md)
 
-## packages/website/src
-
-??? note "Show Files"
+??? note "website/src (1 files)"
 
     - [clientModules.md](./packages/website/src/clientModules.md)
 
-## packages/website/src/components/inputs
-
-??? note "Show Files"
+??? note "website/src/components/inputs (5 files)"
 
     - [Text.md](./packages/website/src/components/inputs/Text.md)
     - [Checkbox.md](./packages/website/src/components/inputs/Checkbox.md)
@@ -8129,9 +5845,7 @@
     - [Tooltip.md](./packages/website/src/components/inputs/Tooltip.md)
     - [CopyButton.md](./packages/website/src/components/inputs/CopyButton.md)
 
-## packages/website/src/components
-
-??? note "Show Files"
+??? note "website/src/components (7 files)"
 
     - [ESQueryFilter.md](./packages/website/src/components/ESQueryFilter.md)
     - [types.md](./packages/website/src/components/types.md)
@@ -8141,9 +5855,7 @@
     - [Playground.md](./packages/website/src/components/Playground.md)
     - [constants.md](./packages/website/src/components/constants.md)
 
-## packages/website/src/components/layout
-
-??? note "Show Files"
+??? note "website/src/components/layout (6 files)"
 
     - [AlertBlock.md](./packages/website/src/components/layout/AlertBlock.md)
     - [ActionLabel.md](./packages/website/src/components/layout/ActionLabel.md)
@@ -8152,23 +5864,17 @@
     - [EditorTabs.md](./packages/website/src/components/layout/EditorTabs.md)
     - [Loader.md](./packages/website/src/components/layout/Loader.md)
 
-## packages/website/src/components/FinancialContributors
-
-??? note "Show Files"
+??? note "website/src/components/FinancialContributors (3 files)"
 
     - [types.md](./packages/website/src/components/FinancialContributors/types.md)
     - [Sponsor.md](./packages/website/src/components/FinancialContributors/Sponsor.md)
     - [index.md](./packages/website/src/components/FinancialContributors/index.md)
 
-## packages/website/src/components/FinancialContributors/Sponsors
-
-??? note "Show Files"
+??? note "website/src/components/FinancialContributors/Sponsors (1 files)"
 
     - [index.md](./packages/website/src/components/FinancialContributors/Sponsors/index.md)
 
-## packages/website/src/hooks
-
-??? note "Show Files"
+??? note "website/src/hooks (5 files)"
 
     - [useDebouncedToggle.md](./packages/website/src/hooks/useDebouncedToggle.md)
     - [useClipboard.md](./packages/website/src/hooks/useClipboard.md)
@@ -8176,9 +5882,7 @@
     - [useHistorySelector.md](./packages/website/src/hooks/useHistorySelector.md)
     - [useRulesMeta.md](./packages/website/src/hooks/useRulesMeta.md)
 
-## packages/website/src/components/ast
-
-??? note "Show Files"
+??? note "website/src/components/ast (9 files)"
 
     - [types.md](./packages/website/src/components/ast/types.md)
     - [tsUtils.md](./packages/website/src/components/ast/tsUtils.md)
@@ -8190,9 +5894,7 @@
     - [selectedRange.md](./packages/website/src/components/ast/selectedRange.md)
     - [ASTViewer.md](./packages/website/src/components/ast/ASTViewer.md)
 
-## packages/website/src/components/lib
-
-??? note "Show Files"
+??? note "website/src/components/lib (10 files)"
 
     - [json.md](./packages/website/src/components/lib/json.md)
     - [parseConfig.md](./packages/website/src/components/lib/parseConfig.md)
@@ -8205,9 +5907,7 @@
     - [jsonSchema.md](./packages/website/src/components/lib/jsonSchema.md)
     - [has-own-property.md](./packages/website/src/components/lib/has-own-property.md)
 
-## packages/website/src/components/linter
-
-??? note "Show Files"
+??? note "website/src/components/linter (6 files)"
 
     - [types.md](./packages/website/src/components/linter/types.md)
     - [config.md](./packages/website/src/components/linter/config.md)
@@ -8216,17 +5916,13 @@
     - [utils.md](./packages/website/src/components/linter/utils.md)
     - [bridge.md](./packages/website/src/components/linter/bridge.md)
 
-## packages/website/src/components/config
-
-??? note "Show Files"
+??? note "website/src/components/config (3 files)"
 
     - [ConfigEditor.md](./packages/website/src/components/config/ConfigEditor.md)
     - [ConfigEslint.md](./packages/website/src/components/config/ConfigEslint.md)
     - [ConfigTypeScript.md](./packages/website/src/components/config/ConfigTypeScript.md)
 
-## packages/website/src/components/editor
-
-??? note "Show Files"
+??? note "website/src/components/editor (8 files)"
 
     - [EditorEmbed.md](./packages/website/src/components/editor/EditorEmbed.md)
     - [types.md](./packages/website/src/components/editor/types.md)
@@ -8237,69 +5933,49 @@
     - [LoadedEditor.md](./packages/website/src/components/editor/LoadedEditor.md)
     - [LoadingEditor.md](./packages/website/src/components/editor/LoadingEditor.md)
 
-## packages/website/src/components/hooks
-
-??? note "Show Files"
+??? note "website/src/components/hooks (2 files)"
 
     - [useResizeObserver.md](./packages/website/src/components/hooks/useResizeObserver.md)
     - [useHashState.md](./packages/website/src/components/hooks/useHashState.md)
 
-## packages/website/src/components/typeDetails
-
-??? note "Show Files"
+??? note "website/src/components/typeDetails (3 files)"
 
     - [SimplifiedTreeView.md](./packages/website/src/components/typeDetails/SimplifiedTreeView.md)
     - [TypeInfo.md](./packages/website/src/components/typeDetails/TypeInfo.md)
     - [TypesDetails.md](./packages/website/src/components/typeDetails/TypesDetails.md)
 
-## packages/website/src/components/RulesTable
-
-??? note "Show Files"
+??? note "website/src/components/RulesTable (1 files)"
 
     - [index.md](./packages/website/src/components/RulesTable/index.md)
 
-## packages/website/src/components/TypeScriptOverlap
-
-??? note "Show Files"
+??? note "website/src/components/TypeScriptOverlap (1 files)"
 
     - [index.md](./packages/website/src/components/TypeScriptOverlap/index.md)
 
-## packages/website/src/components/team
-
-??? note "Show Files"
+??? note "website/src/components/team (3 files)"
 
     - [TeamBio.md](./packages/website/src/components/team/TeamBio.md)
     - [TeamBioDivider.md](./packages/website/src/components/team/TeamBioDivider.md)
     - [TeamBioList.md](./packages/website/src/components/team/TeamBioList.md)
 
-## packages/website/src/pages
-
-??? note "Show Files"
+??? note "website/src/pages (2 files)"
 
     - [index.md](./packages/website/src/pages/index.md)
     - [play.md](./packages/website/src/pages/play.md)
 
-## packages/website/src/prism/language
-
-??? note "Show Files"
+??? note "website/src/prism/language (1 files)"
 
     - [jsonc.md](./packages/website/src/prism/language/jsonc.md)
 
-## packages/website/src/theme/BlogPostItem/Header/Title
-
-??? note "Show Files"
+??? note "website/src/theme/BlogPostItem/Header/Title (1 files)"
 
     - [index.md](./packages/website/src/theme/BlogPostItem/Header/Title/index.md)
 
-## packages/website/src/theme/BlogSidebar/Content
-
-??? note "Show Files"
+??? note "website/src/theme/BlogSidebar/Content (1 files)"
 
     - [index.md](./packages/website/src/theme/BlogSidebar/Content/index.md)
 
-## packages/website/src/theme/MDXComponents
-
-??? note "Show Files"
+??? note "website/src/theme/MDXComponents (7 files)"
 
     - [TryInPlayground.md](./packages/website/src/theme/MDXComponents/TryInPlayground.md)
     - [BaseRuleReference.md](./packages/website/src/theme/MDXComponents/BaseRuleReference.md)
@@ -8309,33 +5985,23 @@
     - [RuleAttributes.md](./packages/website/src/theme/MDXComponents/RuleAttributes.md)
     - [index.md](./packages/website/src/theme/MDXComponents/index.md)
 
-## packages/website/src/theme/CodeBlock/Content
-
-??? note "Show Files"
+??? note "website/src/theme/CodeBlock/Content (1 files)"
 
     - [String.md](./packages/website/src/theme/CodeBlock/Content/String.md)
 
-## packages/website/src/theme/NotFound/Content
-
-??? note "Show Files"
+??? note "website/src/theme/NotFound/Content (1 files)"
 
     - [index.md](./packages/website/src/theme/NotFound/Content/index.md)
 
-## packages/website/src/theme
-
-??? note "Show Files"
+??? note "website/src/theme (1 files)"
 
     - [prism-include-languages.md](./packages/website/src/theme/prism-include-languages.md)
 
-## packages/website-eslint/src
-
-??? note "Show Files"
+??? note "website-eslint/src (1 files)"
 
     - [index.md](./packages/website-eslint/src/index.md)
 
-## packages/website-eslint/src/mock
-
-??? note "Show Files"
+??? note "website-eslint/src/mock (9 files)"
 
     - [assert.md](./packages/website-eslint/src/mock/assert.md)
     - [empty.md](./packages/website-eslint/src/mock/empty.md)
@@ -8347,14 +6013,12 @@
     - [typescript.md](./packages/website-eslint/src/mock/typescript.md)
     - [util.md](./packages/website-eslint/src/mock/util.md)
 
-## tools/dummypkg
+## tools
 
-??? note "Show Files"
+??? note "dummypkg (1 files)"
 
     - [index.md](./tools/dummypkg/index.md)
 
-## tools/release
-
-??? note "Show Files"
+??? note "release (1 files)"
 
     - [changelog-renderer.md](./tools/release/changelog-renderer.md)
