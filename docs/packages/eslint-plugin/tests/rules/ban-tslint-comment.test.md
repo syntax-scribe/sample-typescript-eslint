@@ -80,10 +80,6 @@ console.log(woah);
 
 ---
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/website/src/prism/language/jsonc.js`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

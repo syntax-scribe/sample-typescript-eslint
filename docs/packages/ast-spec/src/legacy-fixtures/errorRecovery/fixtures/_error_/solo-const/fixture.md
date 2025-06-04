@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/solo-const/fixture.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

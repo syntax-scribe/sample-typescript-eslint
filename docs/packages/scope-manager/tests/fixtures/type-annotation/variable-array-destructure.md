@@ -26,10 +26,6 @@
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/tests/fixtures/type-annotation/variable-array-destructure.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

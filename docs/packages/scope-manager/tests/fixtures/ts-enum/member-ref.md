@@ -26,10 +26,6 @@
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/tests/fixtures/ts-enum/member-ref.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

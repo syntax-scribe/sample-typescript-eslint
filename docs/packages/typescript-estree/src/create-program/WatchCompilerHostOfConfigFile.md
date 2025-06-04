@@ -26,10 +26,6 @@
 ## 🛠️ File Location:
 📂 **`packages/typescript-estree/src/create-program/WatchCompilerHostOfConfigFile.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

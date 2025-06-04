@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/_error_/braced-identifier-aliased-to-number-literal-without-source/fixture.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

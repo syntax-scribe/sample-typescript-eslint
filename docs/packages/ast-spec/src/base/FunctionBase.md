@@ -42,10 +42,6 @@
 
 ---
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

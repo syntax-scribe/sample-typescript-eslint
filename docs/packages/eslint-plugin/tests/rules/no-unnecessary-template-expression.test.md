@@ -997,9 +997,5 @@ this code has trailing position template expression but it isn\\'t whitespace
 
 ---
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

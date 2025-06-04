@@ -26,10 +26,6 @@
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/interface-method-readonly/fixture.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/typescript-estree/tests/fixtures/simpleProject/file-jsx.tsx`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

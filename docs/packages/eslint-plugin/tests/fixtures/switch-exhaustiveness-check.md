@@ -26,10 +26,6 @@
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/tests/fixtures/switch-exhaustiveness-check.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

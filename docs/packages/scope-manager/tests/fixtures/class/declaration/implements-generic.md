@@ -28,10 +28,6 @@
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/tests/fixtures/class/declaration/implements-generic.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

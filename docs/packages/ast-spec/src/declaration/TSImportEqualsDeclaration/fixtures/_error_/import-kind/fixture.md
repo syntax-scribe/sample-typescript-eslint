@@ -26,10 +26,6 @@
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/declaration/TSImportEqualsDeclaration/fixtures/_error_/import-kind/fixture.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

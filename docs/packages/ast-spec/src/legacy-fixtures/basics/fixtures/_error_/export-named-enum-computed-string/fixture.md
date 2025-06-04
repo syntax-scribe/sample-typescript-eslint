@@ -26,10 +26,6 @@
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/legacy-fixtures/basics/fixtures/_error_/export-named-enum-computed-string/fixture.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

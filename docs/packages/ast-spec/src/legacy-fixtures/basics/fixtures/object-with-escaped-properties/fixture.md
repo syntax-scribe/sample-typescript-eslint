@@ -26,10 +26,6 @@
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/legacy-fixtures/basics/fixtures/object-with-escaped-properties/fixture.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

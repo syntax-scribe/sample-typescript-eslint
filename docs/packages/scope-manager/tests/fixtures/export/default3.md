@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/tests/fixtures/export/default3.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

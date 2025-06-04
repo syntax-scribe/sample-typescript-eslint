@@ -26,10 +26,6 @@
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/tests/fixtures/type-declaration/signatures/method-generics.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

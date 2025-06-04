@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/tests/fixtures/destructuring/array.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

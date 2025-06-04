@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/special/TSTypeParameter/fixtures/class-expr-const-in-modifier/fixture.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

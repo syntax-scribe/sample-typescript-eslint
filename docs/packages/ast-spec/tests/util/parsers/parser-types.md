@@ -28,10 +28,6 @@
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/tests/util/parsers/parser-types.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

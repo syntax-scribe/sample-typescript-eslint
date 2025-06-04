@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/declaration/TSImportEqualsDeclaration/fixtures/entity-name-many/fixture.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/statement/ForOfStatement/fixtures/expr-init/fixture.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

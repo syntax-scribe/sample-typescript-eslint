@@ -26,10 +26,6 @@
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/tests/fixtures/type-declaration/type-parameters/interface/type-parameter-declaration-extends.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

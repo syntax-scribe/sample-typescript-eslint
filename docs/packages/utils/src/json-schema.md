@@ -27,10 +27,6 @@
 ## 🛠️ File Location:
 📂 **`packages/utils/src/json-schema.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

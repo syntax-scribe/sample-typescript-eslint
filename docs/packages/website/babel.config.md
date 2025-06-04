@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/website/babel.config.js`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

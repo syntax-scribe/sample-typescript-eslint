@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/legacy-fixtures/namespaces-and-modules/fixtures/global-module-declaration/fixture.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

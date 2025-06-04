@@ -26,10 +26,6 @@
 ## 🛠️ File Location:
 📂 **`packages/parser/tests/fixtures/scope-analysis/type-assertions.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/typescript-estree/tests/fixtures/semanticInfo/export-file.src.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

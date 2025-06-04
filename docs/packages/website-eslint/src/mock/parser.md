@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/website-eslint/src/mock/parser.js`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

@@ -27,10 +27,6 @@
 ## 🛠️ File Location:
 📂 **`packages/rule-schema-to-typescript-types/src/types.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

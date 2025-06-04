@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/legacy-fixtures/expressions/fixtures/tagged-template-expression-type-arguments/fixture.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

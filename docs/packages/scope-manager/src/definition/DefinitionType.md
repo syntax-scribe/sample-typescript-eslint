@@ -26,10 +26,6 @@
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/src/definition/DefinitionType.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

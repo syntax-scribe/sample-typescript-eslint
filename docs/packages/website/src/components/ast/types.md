@@ -26,10 +26,6 @@
 ## 🛠️ File Location:
 📂 **`packages/website/src/components/ast/types.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

@@ -26,10 +26,6 @@
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/util/types.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

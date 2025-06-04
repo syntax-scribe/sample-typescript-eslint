@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/tests/fixtures/functions/arrow/no-body.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

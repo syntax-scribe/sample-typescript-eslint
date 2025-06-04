@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/_error_/namespace-invalid-id/fixture.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

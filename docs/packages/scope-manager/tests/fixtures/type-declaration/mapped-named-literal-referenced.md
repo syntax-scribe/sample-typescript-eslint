@@ -26,10 +26,6 @@
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/tests/fixtures/type-declaration/mapped-named-literal-referenced.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

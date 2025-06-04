@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/statement/ThrowStatement/fixtures/_error_/missing-argument/fixture.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

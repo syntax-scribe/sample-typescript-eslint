@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/declaration/TSNamespaceExportDeclaration/fixtures/_error_/non-identifier-name/fixture.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

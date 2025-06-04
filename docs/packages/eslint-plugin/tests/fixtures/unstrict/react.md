@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/tests/fixtures/unstrict/react.tsx`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

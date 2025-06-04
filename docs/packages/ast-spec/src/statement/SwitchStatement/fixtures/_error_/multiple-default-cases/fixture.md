@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/statement/SwitchStatement/fixtures/_error_/multiple-default-cases/fixture.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/statement/ForOfStatement/fixtures/using-declaration/fixture.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

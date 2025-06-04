@@ -27,10 +27,6 @@
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/tests/fixtures/class/declaration/abstract-property.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

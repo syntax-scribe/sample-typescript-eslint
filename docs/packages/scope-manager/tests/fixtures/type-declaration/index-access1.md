@@ -26,10 +26,6 @@
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/tests/fixtures/type-declaration/index-access1.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

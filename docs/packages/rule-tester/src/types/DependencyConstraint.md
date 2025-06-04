@@ -27,10 +27,6 @@
 ## 🛠️ File Location:
 📂 **`packages/rule-tester/src/types/DependencyConstraint.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

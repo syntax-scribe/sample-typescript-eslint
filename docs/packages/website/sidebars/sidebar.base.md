@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/website/sidebars/sidebar.base.js`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

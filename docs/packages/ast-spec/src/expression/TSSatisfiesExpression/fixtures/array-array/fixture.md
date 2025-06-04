@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/expression/TSSatisfiesExpression/fixtures/array-array/fixture.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

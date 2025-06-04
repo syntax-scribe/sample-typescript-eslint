@@ -26,10 +26,6 @@
 ## 🛠️ File Location:
 📂 **`packages/parser/tests/fixtures/scope-analysis/type-alias.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

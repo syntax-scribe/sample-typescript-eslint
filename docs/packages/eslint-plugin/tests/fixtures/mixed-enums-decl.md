@@ -26,10 +26,6 @@
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/tests/fixtures/mixed-enums-decl.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

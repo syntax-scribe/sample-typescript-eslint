@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/website/webpack.plugin.js`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

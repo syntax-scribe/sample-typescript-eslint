@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/declaration/TSImportEqualsDeclaration/fixtures/_error_/missing-reference/fixture.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

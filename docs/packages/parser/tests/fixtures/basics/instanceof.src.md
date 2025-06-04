@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/parser/tests/fixtures/basics/instanceof.src.js`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

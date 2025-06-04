@@ -26,10 +26,6 @@
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/tests/fixtures/export/equals3-type.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

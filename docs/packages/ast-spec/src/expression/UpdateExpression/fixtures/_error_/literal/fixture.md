@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/expression/UpdateExpression/fixtures/_error_/literal/fixture.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/statement/ForInStatement/fixtures/_error_/using-initializer/fixture.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

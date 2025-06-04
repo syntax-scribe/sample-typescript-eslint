@@ -26,10 +26,6 @@
 ## 🛠️ File Location:
 📂 **`packages/parser/tests/fixtures/scope-analysis/types-union-type.src.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

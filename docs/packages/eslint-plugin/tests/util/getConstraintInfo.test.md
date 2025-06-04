@@ -99,9 +99,5 @@ function foo<T>() {
 
 ---
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

@@ -26,10 +26,6 @@
 ## 🛠️ File Location:
 📂 **`packages/parser/tests/fixtures/scope-analysis/computed-properties-in-interface.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

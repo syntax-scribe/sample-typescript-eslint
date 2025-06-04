@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/legacy-fixtures/basics/fixtures/dynamic-import-with-import-assertions/fixture.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

@@ -26,10 +26,6 @@
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/tests/fixtures/export/named2-type.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

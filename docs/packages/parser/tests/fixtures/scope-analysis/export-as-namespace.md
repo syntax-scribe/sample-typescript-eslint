@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/parser/tests/fixtures/scope-analysis/export-as-namespace.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

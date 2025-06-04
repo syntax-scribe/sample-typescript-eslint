@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/declaration/TSImportEqualsDeclaration/fixtures/external-module-ref-string/fixture.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

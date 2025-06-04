@@ -27,10 +27,6 @@
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/tests/fixtures/type-declaration/signatures/method-computed-name2.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

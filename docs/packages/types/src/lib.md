@@ -26,10 +26,6 @@
 ## 🛠️ File Location:
 📂 **`packages/types/src/lib.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/typescript-estree/tests/fixtures/moduleResolver/file.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

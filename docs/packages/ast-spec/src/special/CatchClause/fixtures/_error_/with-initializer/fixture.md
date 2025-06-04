@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/special/CatchClause/fixtures/_error_/with-initializer/fixture.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

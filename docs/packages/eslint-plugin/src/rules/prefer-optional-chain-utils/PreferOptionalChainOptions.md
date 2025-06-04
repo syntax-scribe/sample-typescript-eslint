@@ -27,10 +27,6 @@
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/src/rules/prefer-optional-chain-utils/PreferOptionalChainOptions.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

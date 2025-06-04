@@ -82,9 +82,5 @@ function foo<T extends string>() {
 
 ---
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

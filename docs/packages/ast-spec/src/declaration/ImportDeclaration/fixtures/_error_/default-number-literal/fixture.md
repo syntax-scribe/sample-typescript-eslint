@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/declaration/ImportDeclaration/fixtures/_error_/default-number-literal/fixture.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

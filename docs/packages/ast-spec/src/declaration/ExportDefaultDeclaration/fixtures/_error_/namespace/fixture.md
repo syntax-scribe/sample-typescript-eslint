@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/declaration/ExportDefaultDeclaration/fixtures/_error_/namespace/fixture.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/type-utils/tests/fixtures/file.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

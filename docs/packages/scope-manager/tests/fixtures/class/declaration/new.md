@@ -26,10 +26,6 @@
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/tests/fixtures/class/declaration/new.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

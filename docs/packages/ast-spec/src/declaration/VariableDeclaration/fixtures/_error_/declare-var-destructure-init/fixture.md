@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/declaration/VariableDeclaration/fixtures/_error_/declare-var-destructure-init/fixture.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

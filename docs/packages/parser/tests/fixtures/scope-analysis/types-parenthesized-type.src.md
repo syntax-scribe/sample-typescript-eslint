@@ -26,10 +26,6 @@
 ## 🛠️ File Location:
 📂 **`packages/parser/tests/fixtures/scope-analysis/types-parenthesized-type.src.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

@@ -26,10 +26,6 @@
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/base/Accessibility.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

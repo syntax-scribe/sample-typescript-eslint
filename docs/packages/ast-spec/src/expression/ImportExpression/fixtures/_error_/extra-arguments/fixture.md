@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/expression/ImportExpression/fixtures/_error_/extra-arguments/fixture.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

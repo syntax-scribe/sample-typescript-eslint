@@ -26,10 +26,6 @@
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/tests/fixtures/type-declaration/function/params/object-pattern.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

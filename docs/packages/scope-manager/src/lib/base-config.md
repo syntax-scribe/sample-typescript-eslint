@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/src/lib/base-config.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

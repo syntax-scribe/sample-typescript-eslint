@@ -26,10 +26,6 @@
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/tests/fixtures/ts-enum/external-ref.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

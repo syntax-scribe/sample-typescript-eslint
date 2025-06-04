@@ -26,10 +26,6 @@
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/tests/fixtures/type-declaration/type-parameters/interface/body-reference.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

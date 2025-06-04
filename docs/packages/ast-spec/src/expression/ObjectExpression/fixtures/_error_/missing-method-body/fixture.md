@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/expression/ObjectExpression/fixtures/_error_/missing-method-body/fixture.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

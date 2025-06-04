@@ -27,10 +27,6 @@
 ## 🛠️ File Location:
 📂 **`packages/typescript-estree/src/ts-estree/ts-nodes.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

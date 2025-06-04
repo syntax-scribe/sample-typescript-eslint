@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`tools/dummypkg/index.js`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

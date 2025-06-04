@@ -26,10 +26,6 @@
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/tests/fixtures/global-resolution/module/class.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

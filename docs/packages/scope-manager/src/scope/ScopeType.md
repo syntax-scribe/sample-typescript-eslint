@@ -26,10 +26,6 @@
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/src/scope/ScopeType.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

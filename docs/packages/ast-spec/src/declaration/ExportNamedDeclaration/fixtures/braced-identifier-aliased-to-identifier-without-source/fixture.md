@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/declaration/ExportNamedDeclaration/fixtures/braced-identifier-aliased-to-identifier-without-source/fixture.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

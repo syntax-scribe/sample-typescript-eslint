@@ -26,10 +26,6 @@
 ## 🛠️ File Location:
 📂 **`packages/parser/tests/fixtures/scope-analysis/interface-type.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

@@ -28,10 +28,6 @@
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin/tests/fixtures/consistent-type-exports/type-only-exports.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

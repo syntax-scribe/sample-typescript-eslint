@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/parser/tests/fixtures/basics/new-with-member-expression.src.js`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

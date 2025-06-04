@@ -26,10 +26,6 @@
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/tests/fixtures/class/declaration/private-identifier.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

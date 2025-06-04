@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/eslint-plugin-internal/tests/fixtures/file.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

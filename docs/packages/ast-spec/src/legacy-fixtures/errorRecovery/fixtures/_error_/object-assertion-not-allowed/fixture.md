@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/legacy-fixtures/errorRecovery/fixtures/_error_/object-assertion-not-allowed/fixture.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

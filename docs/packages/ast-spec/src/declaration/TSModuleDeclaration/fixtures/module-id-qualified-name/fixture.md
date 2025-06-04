@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/declaration/TSModuleDeclaration/fixtures/module-id-qualified-name/fixture.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

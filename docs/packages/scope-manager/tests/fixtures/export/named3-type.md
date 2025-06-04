@@ -26,10 +26,6 @@
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/tests/fixtures/export/named3-type.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 

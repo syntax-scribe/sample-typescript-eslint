@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/special/ExportSpecifier/fixtures/_error_/literal-specifier/fixture.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/token/NumericToken/fixtures/bigint-literal/fixture.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

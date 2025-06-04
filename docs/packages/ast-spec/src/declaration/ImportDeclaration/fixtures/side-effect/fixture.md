@@ -25,9 +25,5 @@
 ## 🛠️ File Location:
 📂 **`packages/ast-spec/src/declaration/ImportDeclaration/fixtures/side-effect/fixture.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---

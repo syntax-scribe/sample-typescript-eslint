@@ -26,10 +26,6 @@
 ## 🛠️ File Location:
 📂 **`packages/utils/src/ts-utils/NoInfer.ts`**
 
-## 🔧 Functions
-
-> No functions found in this file.
-
 
 ---
 
