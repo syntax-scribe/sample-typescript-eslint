@@ -6,7 +6,6 @@
 |--------|-------|
 | 📁 Total Files | 1 |
 | 🧱 Classes | 1 |
-| 🔧 Functions | 0 |
 | 🔢 Line Count | 12 |
 
 

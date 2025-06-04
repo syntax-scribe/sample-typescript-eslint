@@ -6,18 +6,9 @@
 
 | Metric | Count |
 |--------|-------|
-| 🔧 Functions | 0 |
 | 🧱 Classes | 1 |
-| 📦 Imports | 0 |
 | 📊 Variables & Constants | 9 |
-| ✨ Decorators | 0 |
-| 🔄 Re-exports | 0 |
-| ⚡ Async/Await Patterns | 0 |
-| 💠 JSX Elements | 0 |
-| 🟢 Vue Composition API | 0 |
-| 📐 Interfaces | 0 |
 | 📑 Type Aliases | 5 |
-| 🎯 Enums | 0 |
 
 ## 📚 Table of Contents
 
@@ -41,9 +32,6 @@
 | `OVERRIDE_IT` | `Maybe<RuleTesterTestFrameworkItFunction>` | let/var | `null` | ✗ |
 | `OVERRIDE_IT_ONLY` | `Maybe<RuleTesterTestFrameworkFunctionBase>` | let/var | `null` | ✗ |
 | `OVERRIDE_IT_SKIP` | `Maybe<RuleTesterTestFrameworkFunctionBase>` | let/var | `null` | ✗ |
-
-
----
 
 
 ---

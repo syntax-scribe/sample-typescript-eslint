@@ -6,7 +6,6 @@
 |--------|-------|
 | 📁 Total Files | 15 |
 | 🧱 Classes | 12 |
-| 🔧 Functions | 0 |
 | 📦 Imports | 47 |
 | 📑 Type Aliases | 1 |
 | 🎯 Enums | 1 |

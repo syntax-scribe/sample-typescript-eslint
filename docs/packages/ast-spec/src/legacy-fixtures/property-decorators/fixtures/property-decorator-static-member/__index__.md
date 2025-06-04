@@ -6,7 +6,6 @@
 |--------|-------|
 | 📁 Total Files | 1 |
 | 🧱 Classes | 1 |
-| 🔧 Functions | 0 |
 | ✨ Decorators | 2 |
 | 🔢 Line Count | 8 |
 

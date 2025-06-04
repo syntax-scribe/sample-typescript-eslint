@@ -5,7 +5,6 @@
 | Metric | Count |
 |--------|-------|
 | 📁 Total Files | 5 |
-| 🔧 Functions | 0 |
 | 📦 Imports | 21 |
 | 📊 Variables | 20 |
 | 🔢 Line Count | 4,266 |

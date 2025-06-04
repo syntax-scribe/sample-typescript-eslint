@@ -5,7 +5,6 @@
 | Metric | Count |
 |--------|-------|
 | 📁 Total Files | 1 |
-| 🔧 Functions | 0 |
 | 💠 JSX Elements | 2 |
 | 🔢 Line Count | 2 |
 

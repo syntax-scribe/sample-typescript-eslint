@@ -5,7 +5,6 @@
 | Metric | Count |
 |--------|-------|
 | 📁 Total Files | 1 |
-| 🔧 Functions | 0 |
 | 🔄 Re-exports | 1 |
 | 🔢 Line Count | 2 |
 

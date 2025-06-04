@@ -5,7 +5,6 @@
 | Metric | Count |
 |--------|-------|
 | 📁 Total Files | 32 |
-| 🔧 Functions | 0 |
 | 📦 Imports | 441 |
 | 📑 Type Aliases | 39 |
 | 🔢 Line Count | 1,023 |

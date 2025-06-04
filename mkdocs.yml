@@ -7,6 +7,13 @@ theme:
     text: Merriweather Sans
     code: Red Hat Mono
   palette: 
+     - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+      primary: blue
+      accent: light blue
+      
     - scheme: slate
       toggle:
         icon: material/weather-sunny
@@ -14,12 +21,7 @@ theme:
       primary: blue
       accent: light blue
 
-    - scheme: default
-      toggle:
-        icon: material/weather-night
-        name: Light mode
-      primary: blue
-      accent: light blue
+   
 
   features:
     - navigation.expand
@@ -32,8 +34,7 @@ theme:
 plugins:
   - search
   - awesome-nav
-  - glightbox
-
+  
 markdown_extensions:
   - toc:
       permalink: true

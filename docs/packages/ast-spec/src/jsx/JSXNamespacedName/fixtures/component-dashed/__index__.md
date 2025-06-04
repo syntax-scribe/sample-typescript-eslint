@@ -5,7 +5,6 @@
 | Metric | Count |
 |--------|-------|
 | 📁 Total Files | 1 |
-| 🔧 Functions | 0 |
 | 📐 Interfaces | 1 |
 | 💠 JSX Elements | 2 |
 | 📊 Variables | 2 |

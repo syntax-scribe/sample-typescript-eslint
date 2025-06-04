@@ -6,18 +6,8 @@
 
 | Metric | Count |
 |--------|-------|
-| 🔧 Functions | 0 |
-| 🧱 Classes | 0 |
 | 📦 Imports | 1 |
 | 📊 Variables & Constants | 4 |
-| ✨ Decorators | 0 |
-| 🔄 Re-exports | 0 |
-| ⚡ Async/Await Patterns | 0 |
-| 💠 JSX Elements | 0 |
-| 🟢 Vue Composition API | 0 |
-| 📐 Interfaces | 0 |
-| 📑 Type Aliases | 0 |
-| 🎯 Enums | 0 |
 
 ## 📚 Table of Contents
 
@@ -44,9 +34,6 @@
 | `TYPES_NAME` | `"@typescript-eslint/types"` | const | `'@typescript-eslint/types'` | ✗ |
 | `UTILS_NAME` | `"@typescript-eslint/utils"` | const | `'@typescript-eslint/utils'` | ✗ |
 | `packageName` | `string | null` | let/var | `null` | ✗ |
-
-
----
 
 
 ---

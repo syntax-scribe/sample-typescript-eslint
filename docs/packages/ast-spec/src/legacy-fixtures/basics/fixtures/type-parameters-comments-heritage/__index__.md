@@ -6,7 +6,6 @@
 |--------|-------|
 | 📁 Total Files | 1 |
 | 🧱 Classes | 2 |
-| 🔧 Functions | 0 |
 | 📐 Interfaces | 2 |
 | 🔢 Line Count | 10 |
 

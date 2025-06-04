@@ -6,7 +6,6 @@
 |--------|-------|
 | 📁 Total Files | 4 |
 | 🧱 Classes | 1 |
-| 🔧 Functions | 0 |
 | 📦 Imports | 4 |
 | 📊 Variables | 2 |
 | 🔢 Line Count | 78 |

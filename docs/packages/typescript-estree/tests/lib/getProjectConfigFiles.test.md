@@ -6,18 +6,8 @@
 
 | Metric | Count |
 |--------|-------|
-| 🔧 Functions | 0 |
-| 🧱 Classes | 0 |
 | 📦 Imports | 4 |
 | 📊 Variables & Constants | 7 |
-| ✨ Decorators | 0 |
-| 🔄 Re-exports | 0 |
-| ⚡ Async/Await Patterns | 0 |
-| 💠 JSX Elements | 0 |
-| 🟢 Vue Composition API | 0 |
-| 📐 Interfaces | 0 |
-| 📑 Type Aliases | 0 |
-| 🎯 Enums | 0 |
 
 ## 📚 Table of Contents
 
@@ -54,9 +44,6 @@
 | `testCases` | `readonly [readonly [any], readonly [any], readonly [false]]` | const | `[[undefined], [null], [false]] as const` | ✗ |
 | `tsconfigMatchCache` | `ExpiringCache<string, string>` | const | `new ExpiringCache<string, string>(1)` | ✗ |
 | `tsconfigMatchCache` | `ExpiringCache<string, string>` | const | `new ExpiringCache<string, string>(1)` | ✗ |
-
-
----
 
 
 ---

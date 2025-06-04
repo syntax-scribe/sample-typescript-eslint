@@ -5,7 +5,6 @@
 | Metric | Count |
 |--------|-------|
 | 📁 Total Files | 12 |
-| 🔧 Functions | 0 |
 | 📑 Type Aliases | 22 |
 | 🎯 Enums | 2 |
 | 📊 Variables | 2 |

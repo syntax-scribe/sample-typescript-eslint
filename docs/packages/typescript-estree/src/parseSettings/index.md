@@ -6,18 +6,11 @@
 
 | Metric | Count |
 |--------|-------|
-| 🔧 Functions | 0 |
-| 🧱 Classes | 0 |
 | 📦 Imports | 4 |
-| 📊 Variables & Constants | 0 |
-| ✨ Decorators | 0 |
-| 🔄 Re-exports | 0 |
-| ⚡ Async/Await Patterns | 0 |
-| 💠 JSX Elements | 0 |
-| 🟢 Vue Composition API | 0 |
 | 📐 Interfaces | 1 |
 | 📑 Type Aliases | 2 |
 | 🎯 Enums | 2 |
+
 
 ## 📚 Table of Contents
 
@@ -37,9 +30,6 @@
 | `CanonicalPath` | `../create-program/shared` |
 | `TSESTree` | `../ts-estree` |
 | `CacheLike` | `./ExpiringCache` |
-
-
----
 
 
 ---

@@ -5,7 +5,6 @@
 | Metric | Count |
 |--------|-------|
 | 📁 Total Files | 6 |
-| 🔧 Functions | 0 |
 | 🎯 Enums | 6 |
 | 📊 Variables | 1 |
 | 🔢 Line Count | 31 |

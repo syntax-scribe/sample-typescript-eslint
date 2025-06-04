@@ -6,18 +6,7 @@
 
 | Metric | Count |
 |--------|-------|
-| 🔧 Functions | 0 |
-| 🧱 Classes | 0 |
-| 📦 Imports | 0 |
 | 📊 Variables & Constants | 3 |
-| ✨ Decorators | 0 |
-| 🔄 Re-exports | 0 |
-| ⚡ Async/Await Patterns | 0 |
-| 💠 JSX Elements | 0 |
-| 🟢 Vue Composition API | 0 |
-| 📐 Interfaces | 0 |
-| 📑 Type Aliases | 0 |
-| 🎯 Enums | 0 |
 
 ## 📚 Table of Contents
 
@@ -37,9 +26,6 @@
 }` | ✗ |
 | `unresolved1` | `{ (): any; <T>(): void; <T extends object = object>(): void; (): void; (a: number): number; (): void; (a: number): void; (): void; (a: number): void; <T>(): void; (a: number): number; (): void; (): void; }` | const | `f` | ✗ |
 | `unresolved2` | `any` | const | `method` | ✗ |
-
-
----
 
 
 ---

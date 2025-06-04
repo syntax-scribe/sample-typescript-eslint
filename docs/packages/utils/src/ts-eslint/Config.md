@@ -6,18 +6,9 @@
 
 | Metric | Count |
 |--------|-------|
-| 🔧 Functions | 0 |
-| 🧱 Classes | 0 |
 | 📦 Imports | 4 |
-| 📊 Variables & Constants | 0 |
-| ✨ Decorators | 0 |
-| 🔄 Re-exports | 0 |
-| ⚡ Async/Await Patterns | 0 |
-| 💠 JSX Elements | 0 |
-| 🟢 Vue Composition API | 0 |
 | 📐 Interfaces | 12 |
 | 📑 Type Aliases | 38 |
-| 🎯 Enums | 0 |
 
 ## 📚 Table of Contents
 
@@ -36,9 +27,6 @@
 | `ProcessorType` | `./Processor` |
 | `LooseRuleDefinition` | `./Rule` |
 | `SharedConfigurationSettings` | `./Rule` |
-
-
----
 
 
 ---

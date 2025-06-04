@@ -6,18 +6,9 @@
 
 | Metric | Count |
 |--------|-------|
-| 🔧 Functions | 0 |
-| 🧱 Classes | 0 |
-| 📦 Imports | 0 |
-| 📊 Variables & Constants | 0 |
-| ✨ Decorators | 0 |
-| 🔄 Re-exports | 0 |
-| ⚡ Async/Await Patterns | 0 |
-| 💠 JSX Elements | 0 |
-| 🟢 Vue Composition API | 0 |
-| 📐 Interfaces | 0 |
 | 📑 Type Aliases | 1 |
 | 🎯 Enums | 1 |
+
 
 ## 📚 Table of Contents
 
@@ -26,9 +17,6 @@
 
 ## 🛠️ File Location:
 📂 **`packages/scope-manager/tests/fixtures/type-declaration/signatures/method-computed-name2.ts`**
-
-
----
 
 ## Type Aliases
 

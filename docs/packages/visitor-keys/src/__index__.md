@@ -5,7 +5,6 @@
 | Metric | Count |
 |--------|-------|
 | 📁 Total Files | 3 |
-| 🔧 Functions | 0 |
 | 📦 Imports | 4 |
 | 📑 Type Aliases | 4 |
 | 🔄 Re-exports | 2 |

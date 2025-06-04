@@ -6,7 +6,6 @@
 |--------|-------|
 | 📁 Total Files | 3 |
 | 🧱 Classes | 1 |
-| 🔧 Functions | 0 |
 | 📑 Type Aliases | 1 |
 | 📊 Variables | 2 |
 | 🔢 Line Count | 11 |

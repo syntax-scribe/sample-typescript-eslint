@@ -6,18 +6,8 @@
 
 | Metric | Count |
 |--------|-------|
-| 🔧 Functions | 0 |
-| 🧱 Classes | 0 |
 | 📦 Imports | 4 |
 | 📊 Variables & Constants | 19 |
-| ✨ Decorators | 0 |
-| 🔄 Re-exports | 0 |
-| ⚡ Async/Await Patterns | 0 |
-| 💠 JSX Elements | 0 |
-| 🟢 Vue Composition API | 0 |
-| 📐 Interfaces | 0 |
-| 📑 Type Aliases | 0 |
-| 🎯 Enums | 0 |
 
 ## 📚 Table of Contents
 
@@ -78,9 +68,6 @@ function foo<T extends string>() {
 | `innerFunctionNode` | `TSESTree.FunctionDeclaration` | const | `outerFunctionNode.body
       .body[0] as TSESTree.FunctionDeclaration` | ✗ |
 | `parameterNode` | `any` | const | `innerFunctionNode.params[0]` | ✗ |
-
-
----
 
 
 ---

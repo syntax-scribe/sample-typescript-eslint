@@ -10,14 +10,9 @@
 | 🧱 Classes | 1 |
 | 📦 Imports | 9 |
 | 📊 Variables & Constants | 7 |
-| ✨ Decorators | 0 |
-| 🔄 Re-exports | 0 |
-| ⚡ Async/Await Patterns | 0 |
-| 💠 JSX Elements | 0 |
-| 🟢 Vue Composition API | 0 |
-| 📐 Interfaces | 0 |
 | 📑 Type Aliases | 2 |
 | 🎯 Enums | 1 |
+
 
 ## 📚 Table of Contents
 

@@ -6,7 +6,6 @@
 |--------|-------|
 | 📁 Total Files | 4 |
 | 🧱 Classes | 2 |
-| 🔧 Functions | 0 |
 | 📦 Imports | 1 |
 | 📐 Interfaces | 1 |
 | 📑 Type Aliases | 3 |

@@ -5,7 +5,6 @@
 | Metric | Count |
 |--------|-------|
 | 📁 Total Files | 1 |
-| 🔧 Functions | 0 |
 | 📑 Type Aliases | 4 |
 | 🔢 Line Count | 7 |
 
