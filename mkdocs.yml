@@ -7,7 +7,7 @@ theme:
     text: Merriweather Sans
     code: Red Hat Mono
   palette: 
-     - scheme: default
+    - scheme: default
       toggle:
         icon: material/weather-night
         name: Light mode
